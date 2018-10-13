@@ -24,5 +24,5 @@ def gd(max_iterations=20, b0=0, b1=0):
             print("Iteration: %3d | erreur=%5d b0=%20f , b1=%20f" % \
             (iteration, error, b0, b1))
     
-
+print("Gradient Descent with values: X={}, Y={}, ALPHA={}".format(X,Y,ALPHA))
 gd(max_iterations=30)
