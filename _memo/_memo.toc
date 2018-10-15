@@ -12,6 +12,11 @@
 \contentsline {subsubsection}{Entropie}{6}
 \contentsline {chapter}{\numberline {2}Recherche Op\IeC {\'e}rationnel}{8}
 \contentsline {chapter}{\numberline {3}Apprentissage par le pratique}{10}
+\contentsline {section}{\numberline {3.1}Rappel}{11}
+\contentsline {subsection}{\numberline {3.1.1}Matrices et calcules sur les Matrices}{11}
+\contentsline {subsubsection}{Addition}{11}
+\contentsline {subsubsection}{Multiplication}{11}
+\contentsline {subsubsection}{Transposer}{11}
 \contentsline {chapter}{\numberline {4}Repr\IeC {\'e}sentation des connaissances et raisonnement}{12}
 \contentsline {chapter}{\numberline {5}Outils formel}{14}
 \contentsline {chapter}{\numberline {6}XML}{16}
