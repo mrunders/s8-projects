@@ -1,43 +1,8 @@
-www
-
-
-------------------------------------------------------
-phdthesis
-
-author:Carmen Heine|title:Modell zur Produktion von Online-Hilfen.|year:2010|school:Aarhus University|pages:1-315|isbn:978-3-86596-263-8|ee:http://d-nb.info/996064095
-author:Gerd Hoff|title:Ein Verfahren zur thematisch spezialisierten Suche im Web und seine Realisierung im Prototypen HomePageSearch|year:2002|school:University of Trier, Germany|ee:http://ubt.opus.hbz-nrw.de/volltexte/2004/146/|ee:http://nbn-resolving.de/urn:nbn:de:hbz:385-1468|ee:http://d-nb.info/971713243
-author:Margo I. Seltzer|title:File System Performance and Transaction Support.|year:1992|school:University of California at Berkeley|url:http://db.cs.berkeley.edu/papers/ERL-M93-01.pdf
-author:Steffen Rothkugel|title:Towards Middleware Support for Mobile and Cellular Networks: core problems and illustrated approaches.|year:2002|school:Univ. Trier, FB 4, Informatik|ee:http://ubt.opus.hbz-nrw.de/volltexte/2004/210/|ee:http://nbn-resolving.de/urn:nbn:de:hbz:385-2109|ee:http://d-nb.info/971737843
-------------------------------------------------------
-inproceedings
-
-
-------------------------------------------------------
-incollection
-
-
-------------------------------------------------------
-person
-
-
-------------------------------------------------------
-proceedings
-
-
-------------------------------------------------------
-book
-
-
-------------------------------------------------------
-mastersthesis
-
-
-------------------------------------------------------
-article
-
-
-------------------------------------------------------
-data
-
-
-------------------------------------------------------
+============================
+author:Markus Casper|author:Gayane Grigoryan|author:Oliver Gronz|author:Oliver Gutjahr|author:G|author:ü|author:nther Heinemann|author:Rita Ley|author:Andreas Rock|
+============================
+author:Fabien Delorme|author:Nicolas Delestre|author:Jean-Pierre P|author:é|author:cuchet|
+author:Fabien Delorme|author:J|author:é|author:r|author:ô|author:me Lehuen|
+author:Nathalie Chetcuti-Sperandio|author:Fabien Delorme|author:Sylvain Lagrue|author:Denis Stackowiak|
+author:St|author:é|author:phane Cardon|author:Nathalie Chetcuti-Sperandio|author:Fabien Delorme|author:Sylvain Lagrue|
+author:Werner John|author:Dominik Ley|author:Joachim M|author:ü|author:ller|
