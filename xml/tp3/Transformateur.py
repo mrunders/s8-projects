@@ -47,6 +47,17 @@ class ItemSet():
 		for i in self.__data:
 			i.close()
 
+	def filter(self, pattern):
+		data = self.getData()
+		result = []
+		for line in data:
+			items = line.read()
+			if pattern in items:
+				for item in items.split(ELEMENT_DELIMITER):
+					if item != pattern:
+						result.append(item)
+
+		return result
 
 class TransformateurXML(xml.sax.ContentHandler):
 
@@ -81,7 +92,7 @@ class TransformateurXML(xml.sax.ContentHandler):
 	def characters(self, data):
 
 		if (data != '\n') and (self.__balise_name != None):
-			self.__itemSet[self.__balise_name].append(self.__current_balise.encode("utf-8"), data.encode("utf-8"), self.__pattern)
+			self.__itemSet[self.__balise_name].append(self.__current_balise, data.encode("utf-8"), self.__pattern)
 			
 	def parse(self, file_dir=XML_SOURCE_FILE):
 		
@@ -106,10 +117,17 @@ class TransformateurXML(xml.sax.ContentHandler):
 					file.write(i.read())
 					i.seek(0)
 
+	def getResult(self):
+		result = []
+		for i in self.__itemSet:
+			result.extend(i.filter(self.__pattern))
 
+		return result
 
 pattern="Fabien Delorme"
 t = TransformateurXML(pattern=pattern)
 atexit.register(t.freeData)
 a = t.parse()
 t.serialize()
+r = t.getResult()
+## r = ['Nicolas Delestre', 'Jean-Pierre P', '\xc3\xa9', 'cuchet', '\n', 'J', '\xc3\xa9', 'r', '\xc3\xb4', 'me Lehuen', '\n', 'Nathalie Chetcuti-Sperandio', 'Sylvain Lagrue', 'Denis Stackowiak', '\n', 'St', '\xc3\xa9', 'phane Cardon', 'Nathalie Chetcuti-Sperandio', 'Sylvain Lagrue', '\n']
