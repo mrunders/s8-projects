@@ -21,8 +21,6 @@ class ItemSet():
 			if value == pattern:
 				self.__pattern_in_last = True
 				
-			self.__data[-1].write(key)
-			self.__data[-1].write(KEY_VALUE_DELIMITER)
 			self.__data[-1].write(value)
 			self.__data[-1].write(ELEMENT_DELIMITER)
 	
@@ -103,7 +101,7 @@ class TransformateurXML(xml.sax.ContentHandler):
 		with open(RESULT_SET_FILE, "wt") as file:
 			for item in self.__itemSet:
 				data = item.getData()
-				file.write("============================\n")
+				file.write("\n")
 				for i in data:
 					file.write(i.read())
 					i.seek(0)

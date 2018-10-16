@@ -1,8 +1,4 @@
-============================
-author:Markus Casper|author:Gayane Grigoryan|author:Oliver Gronz|author:Oliver Gutjahr|author:G|author:ü|author:nther Heinemann|author:Rita Ley|author:Andreas Rock|
-============================
-author:Fabien Delorme|author:Nicolas Delestre|author:Jean-Pierre P|author:é|author:cuchet|
-author:Fabien Delorme|author:J|author:é|author:r|author:ô|author:me Lehuen|
-author:Nathalie Chetcuti-Sperandio|author:Fabien Delorme|author:Sylvain Lagrue|author:Denis Stackowiak|
-author:St|author:é|author:phane Cardon|author:Nathalie Chetcuti-Sperandio|author:Fabien Delorme|author:Sylvain Lagrue|
-author:Werner John|author:Dominik Ley|author:Joachim M|author:ü|author:ller|
+Fabien Delorme|Nicolas Delestre|Jean-Pierre P|é|cuchet|
+Fabien Delorme|J|é|r|ô|me Lehuen|
+Nathalie Chetcuti-Sperandio|Fabien Delorme|Sylvain Lagrue|Denis Stackowiak|
+St|é|phane Cardon|Nathalie Chetcuti-Sperandio|Fabien Delorme|Sylvain Lagrue|
