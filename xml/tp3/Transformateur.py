@@ -108,15 +108,14 @@ class TransformateurXML(xml.sax.ContentHandler):
 
 	def getResult(self):
 		result = []
-
 		for item in self.__itemSet:
 			for line in item.getData():
 				items = line.read()
-				if pattern in items:
+				if self.__pattern in items:
 					for item in items.split(ELEMENT_DELIMITER):
-						if item != pattern and item != END_OF_LINE and item not in result:
+						if item != self.__pattern and item != END_OF_LINE and item not in result:
 							result.append(item)
-
+		
 		print('"%s" has %d coauthors:' % (self.__pattern, len(result)))
 		for i in result:
 			print("- %s" % (i))
