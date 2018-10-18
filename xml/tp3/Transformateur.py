@@ -2,9 +2,8 @@
 import xml.sax
 import time
 import cStringIO
-import atexit
 
-SHOW_TIMER = True
+SHOW_TIMER = False
 
 XML_SOURCE_FILE = "./dblp.xml"
 RESULT_SET_FILE = "./resultSet.txt"
@@ -19,7 +18,6 @@ class ItemSet():
 		self.__pattern_in_last = False
 
 	def append(self, key, value, pattern, index=-1):
-		
 		if (key[0] == 'a' and key[1] == 'u'):
 			if value == pattern:
 				self.__pattern_in_last = True
@@ -28,7 +26,6 @@ class ItemSet():
 			self.__data[-1].write(ELEMENT_DELIMITER)
 	
 	def newLine(self):
-		
 		if self.__pattern_in_last:
 			self.__data[-1].write(END_OF_LINE)
 			self.__data.append(cStringIO.StringIO())
@@ -40,14 +37,12 @@ class ItemSet():
 		self.__data[-1].seek(0)
 		
 	def getData(self):
-
 		for i in self.__data:
 			i.seek(0)
 
 		return self.__data
 		
 	def freeData(self):
-		
 		for i in self.__data:
 			i.close()
 
@@ -56,38 +51,30 @@ class TransformateurXML(xml.sax.ContentHandler):
 	ITEMSET_NAME = ["article","inproceedings"]
 
 	def __init__(self, pattern):
-
-		self.__itemSet = []
+		self.__itemSet = ItemSet()
 		self.__balise_name = None
 		self.__current_balise = None
 		self.__parser = xml.sax.make_parser()
 		self.__pattern = pattern
-
-		for item in range(len(self.ITEMSET_NAME)):
-			self.__itemSet.append(ItemSet())
 	
 	def startElement(self, name, attrs):
-
 		try:
 			self.__balise_name = self.ITEMSET_NAME.index(name)
-			self.__itemSet[self.__balise_name].newLine()
+			self.__itemSet.newLine()
 		except ValueError:
 			index_value = None
 
 		self.__current_balise = name
 		
 	def endElement(self, name):
-		
 		if name in self.ITEMSET_NAME:
 			self.__balise_name = None
 	
 	def characters(self, data):
-
 		if (data != END_OF_LINE) and (self.__balise_name != None):
-			self.__itemSet[self.__balise_name].append(self.__current_balise, data.encode("utf-8"), self.__pattern)
+			self.__itemSet.append(self.__current_balise, data.encode("utf-8"), self.__pattern)
 			
 	def parse(self, file_dir=XML_SOURCE_FILE):
-		
 		if SHOW_TIMER:
 			ts = time.time()
 			print("start parsing")
@@ -102,30 +89,36 @@ class TransformateurXML(xml.sax.ContentHandler):
 		return self.__itemSet
 
 	def freeData(self):
-
-		for i in self.__itemSet:
-			i.freeData()
+		self.__itemSet.freeData()
 
 	def getResult(self):
 		result = []
-		for item in self.__itemSet:
-			for line in item.getData():
-				items = line.read()
-				if self.__pattern in items:
-					for item in items.split(ELEMENT_DELIMITER):
-						if item != self.__pattern and item != END_OF_LINE and item not in result:
-							result.append(item)
-		
-		print('"%s" has %d coauthors:' % (self.__pattern, len(result)))
-		for i in result:
-			print("- %s" % (i))
+		x = []
+		i = 0
+		for line in self.__itemSet.getData():
+			items = line.read()
+			if self.__pattern in items:
+				for item in items.split(ELEMENT_DELIMITER):
+					if item != self.__pattern and item != END_OF_LINE:
+						result.append(item)
 
-		return result
+		while i < len(result):
+			x.append(result[i])
+			i += 1
+			while i < len(result) and not result[i][0].isupper():
+				x[-1] += result[i]
+				i += 1
+			if x.index(x[-1]) < len(x)-1:
+				x.pop()
+
+		print('"%s" has %d coauthors:' % (self.__pattern, len(x)))
+		for i in x:
+			print(i)
+
 
 pattern="Fabien Delorme"
 t = TransformateurXML(pattern=pattern)
-atexit.register(t.freeData)
-a = t.parse()
-r = t.getResult()
+t.parse()
+t.getResult()
+t.freeData()
 
-## r = ['Nicolas Delestre', 'Jean-Pierre P', '\xc3\xa9', 'cuchet', 'J', '\xc3\xa9', 'r', '\xc3\xb4', 'me Lehuen', 'Nathalie Chetcuti-Sperandio', 'Sylvain Lagrue', 'Denis Stackowiak', 'St', '\xc3\xa9', 'phane Cardon', 'Nathalie Chetcuti-Sperandio', 'Sylvain Lagrue']
