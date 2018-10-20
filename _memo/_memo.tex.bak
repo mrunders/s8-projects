@@ -24,12 +24,11 @@
 \pagebreak
 
 \input{fdd}
-\input{ro}
 \input{ap}
-\input{rcr}
 \input{of}
+\input{rcr}
+\input{ro}
 \input{xml}
-\input{an}
 
 \end{document}
 

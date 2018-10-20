@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 OCT 2018 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 OCT 2018 16:40
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -855,38 +855,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--133
 Chapter 3.
 [18
 
-]
-Overfull \hbox (2.41646pt too wide) in paragraph at lines 34--35
+] [19] <img/of-coupure.png, id=91, 294.09875pt x 243.91125pt>
+File: img/of-coupure.png Graphic file (type png)
+
+<use img/of-coupure.png>
+Package pdftex.def Info: img/of-coupure.png used on input line 35.
+(pdftex.def)             Requested size: 88.2303pt x 73.17393pt.
+ <img/of-ou.png, id=92, 281.05pt x 136.51pt>
+File: img/of-ou.png Graphic file (type png)
+
+<use img/of-ou.png>
+Package pdftex.def Info: img/of-ou.png used on input line 37.
+(pdftex.def)             Requested size: 84.31564pt x 40.95331pt.
+ <img/of-monotomie.png, id=93, 175.65625pt x 198.7425pt>
+File: img/of-monotomie.png Graphic file (type png)
+
+<use img/of-monotomie.png>
+Package pdftex.def Info: img/of-monotomie.png used on input line 39.
+(pdftex.def)             Requested size: 52.69727pt x 59.6232pt.
+
+Overfull \hbox (2.41646pt too wide) in paragraph at lines 44--45
 []\T1/cmr/m/n/12 si avec que
  []
 
-[19] <img/of-arbre-shannon_1.png, id=91, 438.63875pt x 427.5975pt>
+[20 <./img/of-coupure.png (PNG copy)> <./img/of-ou.png (PNG copy)> <./img/of-mo
+notomie.png (PNG copy)>] [21]
+<img/of-arbre-shannon_1.png, id=100, 438.63875pt x 427.5975pt>
 File: img/of-arbre-shannon_1.png Graphic file (type png)
 
 <use img/of-arbre-shannon_1.png>
-Package pdftex.def Info: img/of-arbre-shannon_1.png used on input line 53.
+Package pdftex.def Info: img/of-arbre-shannon_1.png used on input line 86.
 (pdftex.def)             Requested size: 175.45238pt x 171.03596pt.
- [20 <./img/of-arbre-shannon_1.png (PNG copy)>]) [21] (rcr.tex
-Chapter 4.
-[22
 
-]) [23] (ro.tex
-Chapter 5.
+<img/of-remplacement.png, id=101, 350.30875pt x 156.585pt>
+File: img/of-remplacement.png Graphic file (type png)
+
+<use img/of-remplacement.png>
+Package pdftex.def Info: img/of-remplacement.png used on input line 90.
+(pdftex.def)             Requested size: 280.24738pt x 125.26816pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+[22 <./img/of-arbre-shannon_1.png (PNG copy)> <./img/of-remplacement.png (PNG c
+opy)>]) [23] (rcr.tex
+Chapter 4.
 [24
 
-]) [25] (xml.tex
-Chapter 6.
+]) [25] (ro.tex
+Chapter 5.
 [26
 
-]) [27] (_memo.aux) ) 
+]) [27] (xml.tex
+Chapter 6.
+[28
+
+]) [29] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11578 strings out of 493323
- 188955 string characters out of 3139963
+ 11598 strings out of 493323
+ 189385 string characters out of 3139963
  256281 words of memory out of 3000000
- 14926 multiletter control sequences out of 15000+200000
+ 14942 multiletter control sequences out of 15000+200000
  19360 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,40p,444b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,13n,40p,444b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecrm0800.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
 our\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts
@@ -906,9 +944,9 @@ onts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr
 ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles
 /MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on _memo.pdf (30 pages, 313420 bytes).
+Output written on _memo.pdf (32 pages, 376660 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
+ 500 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
