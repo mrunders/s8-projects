@@ -1,12 +1,9 @@
 
 import xml.sax
-import time
 import cStringIO
-
-SHOW_TIMER = False
+import sys
 
 XML_SOURCE_FILE = "./dblp.xml"
-RESULT_SET_FILE = "./resultSet.txt"
 ELEMENT_DELIMITER = "|"
 KEY_VALUE_DELIMITER = ":"
 END_OF_LINE = "\n"
@@ -75,17 +72,8 @@ class TransformateurXML(xml.sax.ContentHandler):
 			self.__itemSet.append(self.__current_balise, data.encode("utf-8"), self.__pattern)
 			
 	def parse(self, file_dir=XML_SOURCE_FILE):
-		if SHOW_TIMER:
-			ts = time.time()
-			print("start parsing")
-
 		self.__parser.setContentHandler(self)
 		self.__parser.parse(file_dir)
-
-		if SHOW_TIMER:
-			ts = time.time() - ts
-			print("Process executed in %f min" %  (ts / 60))
-
 		return self.__itemSet
 
 	def freeData(self):
@@ -113,12 +101,11 @@ class TransformateurXML(xml.sax.ContentHandler):
 
 		print('"%s" has %d coauthors:' % (self.__pattern, len(x)))
 		for i in x:
-			print(i)
+			print("-" + i)
 
 
-pattern="Fabien Delorme"
-t = TransformateurXML(pattern=pattern)
-t.parse()
+t = TransformateurXML(pattern=sys.args[1])
+t.parse(file_dir=sys.args[2])
 t.getResult()
 t.freeData()
 

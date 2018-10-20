@@ -6,6 +6,9 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{pstricks}
+\usepackage{enumitem}
+
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
 \title{Memo pour l'année}
 \author{LAURENT Thomas}

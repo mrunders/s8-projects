@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  17 OCT 2018 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 OCT 2018 12:55
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -640,6 +640,14 @@ File: pstricks.tex 2017/05/22 v2.73a `PSTricks' (tvz,hv)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pstricks\pst-fp.tex)
 File: pst-fp.tex 2017/05/22 v2.73a `PST-fp' (hv)
 )
+(E:\ProgramFiles\MikTex2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip46
+\enit@outerparindent=\dimen156
+\enit@toks=\toks38
+\enit@inbox=\box34
+\enitdp@description=\count140
+)
 
 LaTeX Warning: Unused global option(s):
     [french].
@@ -647,31 +655,31 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count140
-\scratchdimen=\dimen156
-\scratchbox=\box34
-\nofMPsegments=\count141
-\nofMParguments=\count142
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count143
-\MPscratchDim=\dimen157
-\MPnumerator=\count144
-\makeMPintoPDFobject=\count145
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count141
+\scratchdimen=\dimen157
+\scratchbox=\box35
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen158
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks40
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -717,13 +725,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count146
-LaTeX Font Info:    Try loading font information for U+msa on input line 15.
+\c@lstlisting=\count147
+LaTeX Font Info:    Try loading font information for U+msa on input line 18.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 15.
+LaTeX Font Info:    Try loading font information for U+msb on input line 18.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -748,21 +756,20 @@ Chapter 1.
 [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
 [3]
-Overfull \hbox (9.46484pt too wide) in paragraph at lines 65--67
-[]\T1/cmr/m/n/12 : Par-ti-tion-ner récur-sive-ment les don-
- []
-
-
-Overfull \hbox (6.28651pt too wide) in paragraph at lines 67--69
-[]\T1/cmr/m/n/12 : Théorie math-é-ma-tique ayant pour ob-jet l'étude
+Overfull \hbox (1.63753pt too wide) in paragraph at lines 65--67
+[]\T1/cmr/m/n/12 : Par-ti-tion-ner récur-sive-ment les
  []
 
 [4]
+Overfull \hbox (2.20287pt too wide) in paragraph at lines 76--77
+[]\T1/cmr/m/n/12 : Soient X et Y deux vari-ables aléa-
+ []
+
 
 LaTeX Warning: Command \' invalid in math mode on input line 86.
 
@@ -776,6 +783,14 @@ LaTeX Warning: Command \' invalid in math mode on input line 94.
 Missing character: There is no é in font cmr12!
 Missing character: There is no é in font cmr12!
 
+Overfull \hbox (10.43161pt too wide) in paragraph at lines 94--95
+[]\T1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \O
+T1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M\O
+T1/cmr/m/n/12 1) + \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT
+1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 =
+ []
+
+
 LaTeX Warning: Command \' invalid in math mode on input line 95.
 
 Missing character: There is no é in font cmr12!
@@ -783,81 +798,95 @@ Missing character: There is no é in font cmr12!
 LaTeX Warning: Command \' invalid in math mode on input line 95.
 
 Missing character: There is no é in font cmr12!
+
+Overfull \hbox (0.8123pt too wide) in paragraph at lines 95--96
+[]\T1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \O
+T1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M\O
+T1/cmr/m/n/12 2)\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT1/
+cmr/m/n/12 =
+ []
+
 [5] [6]
-Overfull \hbox (19.56253pt too wide) in paragraph at lines 157--158
+Overfull \hbox (37.18735pt too wide) in paragraph at lines 157--158
 []\T1/cmr/m/n/12 = $\OMS/cmsy/m/n/12   [][] \OML/cmm/m/it/12 freq\OT1/cmr/m/n/1
 2 (\OML/cmm/m/it/12 a[]; T\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12
  log[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 freq\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a
 []; T\OT1/cmr/m/n/12 )) = \OML/cmm/m/it/12 EntropiedeA$ 
  []
 
-) [7] (ro.tex
+) [7] (ap.tex [8]
 Chapter 2.
-[8
+[9
 
-]) [9] (ap.tex
-Chapter 3.
-[10
+]
+Overfull \hbox (17.09692pt too wide) in paragraph at lines 50--53
+[]\T1/cmr/m/n/12 : $[] []$ 
+ []
 
-] [11]
+[10]
 
 LaTeX Warning: Command \' invalid in math mode on input line 68.
 
 Missing character: There is no é in font cmr12!
 
-Overfull \hbox (106.72855pt too wide) in paragraph at lines 68--69
+Overfull \hbox (55.51585pt too wide) in paragraph at lines 68--69
 []\T1/cmr/m/n/12 : Quand les vari-ables en sor-tie sont des Classe $\OT1/cmr/m/
-n/12 (\OML/cmm/m/it/12 Blue; Rouge; Vert; Carr; Homme\OT1/cmr/m/n/12 )$ 
+n/12 (\OML/cmm/m/it/12 Vert; Carr; Homme\OT1/cmr/m/n/12 )$ 
  []
 
 
 LaTeX Warning: Command \' invalid in math mode on input line 69.
 
 Missing character: There is no é in font cmr12!
-
-Overfull \hbox (78.81157pt too wide) in paragraph at lines 69--70
-[]\T1/cmr/m/n/12 : Quand les vari-ables en sor-tie sont des valeur numérique $\
-OT1/cmr/m/n/12 (\OML/cmm/m/it/12 euro; poids; quantits\OT1/cmr/m/n/12 )$ 
- []
-
-[12] [13] [14]
-<img/ap-linear-regression_1.png, id=74, 640.3925pt x 720.6925pt>
+[11] [12] [13]
+<img/ap-linear-regression_1.png, id=71, 640.3925pt x 720.6925pt>
 File: img/ap-linear-regression_1.png Graphic file (type png)
 
 <use img/ap-linear-regression_1.png>
 Package pdftex.def Info: img/ap-linear-regression_1.png used on input line 103.
 
 (pdftex.def)             Requested size: 192.11923pt x 216.20941pt.
- [15 <./img/ap-linear-regression_1.png (PNG copy)>]
+ [14 <./img/ap-linear-regression_1.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
 
-) [16] (rcr.tex
+[15] [16]) [17] (of.tex
+Chapter 3.
+[18
+
+]
+Overfull \hbox (2.41646pt too wide) in paragraph at lines 34--35
+[]\T1/cmr/m/n/12 si avec que
+ []
+
+[19] <img/of-arbre-shannon_1.png, id=91, 438.63875pt x 427.5975pt>
+File: img/of-arbre-shannon_1.png Graphic file (type png)
+
+<use img/of-arbre-shannon_1.png>
+Package pdftex.def Info: img/of-arbre-shannon_1.png used on input line 53.
+(pdftex.def)             Requested size: 175.45238pt x 171.03596pt.
+ [20 <./img/of-arbre-shannon_1.png (PNG copy)>]) [21] (rcr.tex
 Chapter 4.
-[17
+[22
 
-]) [18] (of.tex
+]) [23] (ro.tex
 Chapter 5.
-[19
+[24
 
-]) [20] (xml.tex
+]) [25] (xml.tex
 Chapter 6.
-[21
+[26
 
-]) [22] (an.tex
-Chapter 7.
-[23
-
-]) [24] (_memo.aux) ) 
+]) [27] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11296 strings out of 493323
- 184105 string characters out of 3139963
- 249029 words of memory out of 3000000
- 14646 multiletter control sequences out of 15000+200000
+ 11578 strings out of 493323
+ 188955 string characters out of 3139963
+ 256281 words of memory out of 3000000
+ 14926 multiletter control sequences out of 15000+200000
  19360 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,40p,423b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,13n,40p,444b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecrm0800.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
 our\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts
@@ -877,9 +906,9 @@ onts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr
 ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles
 /MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on _memo.pdf (27 pages, 273458 bytes).
+Output written on _memo.pdf (30 pages, 313420 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
+ 484 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

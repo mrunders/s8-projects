@@ -53,13 +53,7 @@ Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\\
 \includegraphics[scale=0.4]{img/of-arbre-shannon_1.png} 
 L'ensemble des modèles de $\phi$ sont toutes les interprétation où la feuille vaut la valeur $T$.
 \pagebreak
+\subsubsection{Réduction et optimisations}
 
-\subsection{Notion de impliquant premier }
-
-ggg
-
-\subsection{Système de Hilbertein}
-
-ggg
 
 \pagebreak

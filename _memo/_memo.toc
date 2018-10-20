@@ -10,25 +10,36 @@
 \contentsline {subsection}{\numberline {1.3.1}crit\IeC {\`e}res de s\IeC {\'e}lection C4.5}{4}
 \contentsline {subsubsection}{Rappel sur les probabilis\IeC {\'e}es}{5}
 \contentsline {subsubsection}{Entropie}{6}
-\contentsline {chapter}{\numberline {2}Recherche Op\IeC {\'e}rationnel}{8}
-\contentsline {chapter}{\numberline {3}Apprentissage par le pratique}{10}
-\contentsline {section}{\numberline {3.1}Rappel}{11}
-\contentsline {subsection}{\numberline {3.1.1}Matrices et calcules sur les Matrices}{11}
-\contentsline {subsubsection}{Addition}{11}
-\contentsline {subsubsection}{Multiplication}{11}
-\contentsline {subsubsection}{Transposer}{11}
-\contentsline {subsubsection}{Inverse}{11}
-\contentsline {section}{\numberline {3.2}Algorithms Learn a Mapping From Input to Output}{12}
-\contentsline {subsection}{\numberline {3.2.1}linear ML algorithms}{12}
-\contentsline {subsection}{\numberline {3.2.2}Supervised machine learning}{12}
-\contentsline {subsection}{\numberline {3.2.3}Unsupervised machine learning}{12}
-\contentsline {subsection}{\numberline {3.2.4}semi-supervised machine leaning}{12}
-\contentsline {subsection}{\numberline {3.2.5}Overview of dias and variance}{13}
-\contentsline {section}{\numberline {3.3}Overfitting and Underfitting}{14}
-\contentsline {section}{\numberline {3.4}Linear Algorithms}{15}
-\contentsline {subsection}{\numberline {3.4.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{15}
-\contentsline {subsection}{\numberline {3.4.2}Least squares linear regression}{16}
-\contentsline {chapter}{\numberline {4}Repr\IeC {\'e}sentation des connaissances et raisonnement}{17}
-\contentsline {chapter}{\numberline {5}Outils formel}{19}
-\contentsline {chapter}{\numberline {6}XML}{21}
-\contentsline {chapter}{\numberline {7}Anglais}{23}
+\contentsline {chapter}{\numberline {2}Apprentissage par le pratique}{9}
+\contentsline {section}{\numberline {2.1}Rappel}{10}
+\contentsline {subsection}{\numberline {2.1.1}Matrices et calcules sur les Matrices}{10}
+\contentsline {subsubsection}{Addition}{10}
+\contentsline {subsubsection}{Multiplication}{10}
+\contentsline {subsubsection}{Transposer}{10}
+\contentsline {subsubsection}{Inverse}{10}
+\contentsline {section}{\numberline {2.2}Algorithms Learn a Mapping From Input to Output}{11}
+\contentsline {subsection}{\numberline {2.2.1}linear ML algorithms}{11}
+\contentsline {subsection}{\numberline {2.2.2}Supervised machine learning}{11}
+\contentsline {subsection}{\numberline {2.2.3}Unsupervised machine learning}{11}
+\contentsline {subsection}{\numberline {2.2.4}semi-supervised machine leaning}{11}
+\contentsline {subsection}{\numberline {2.2.5}Overview of dias and variance}{12}
+\contentsline {section}{\numberline {2.3}Overfitting and Underfitting}{13}
+\contentsline {section}{\numberline {2.4}Linear Algorithms}{14}
+\contentsline {subsection}{\numberline {2.4.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{14}
+\contentsline {subsection}{\numberline {2.4.2}Least squares linear regression}{15}
+\contentsline {subsection}{\numberline {2.4.3}Gradient Descent}{16}
+\contentsline {section}{\numberline {2.5}Logistic Regression}{17}
+\contentsline {subsection}{\numberline {2.5.1}Logistic function}{17}
+\contentsline {subsection}{\numberline {2.5.2}Logistic regression predicts probabolities}{17}
+\contentsline {chapter}{\numberline {3}Outils formel}{18}
+\contentsline {section}{\numberline {3.1}Logique classique des propositions}{19}
+\contentsline {subsection}{\numberline {3.1.1}Vocabulaire}{19}
+\contentsline {subsection}{\numberline {3.1.2}Propri\IeC {\'e}t\IeC {\'e}s de l'op\IeC {\'e}rateur Models}{19}
+\contentsline {subsection}{\numberline {3.1.3}Ensemble de connecteurs fonctionnement complet}{20}
+\contentsline {subsection}{\numberline {3.1.4}D\IeC {\'e}composition de Shannon}{20}
+\contentsline {subsection}{\numberline {3.1.5}Arbre de Shannon, ROBDD}{20}
+\contentsline {subsection}{\numberline {3.1.6}Notion de impliquant premier }{21}
+\contentsline {subsection}{\numberline {3.1.7}Syst\IeC {\`e}me de Hilbertein}{21}
+\contentsline {chapter}{\numberline {4}Repr\IeC {\'e}sentation des connaissances et raisonnement}{22}
+\contentsline {chapter}{\numberline {5}Recherche Op\IeC {\'e}rationnel}{24}
+\contentsline {chapter}{\numberline {6}XML}{26}
