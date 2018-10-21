@@ -96,14 +96,52 @@ Soit un arbre $D$ ayant comme nœud un sous arbre du type infixe $\alpha = (x \R
 $(D^{`} = D_{\alpha \leftarrow \beta} \equiv D$)\\
 
 \subsection{Notion de impliquant premier }
+Les impliquant premier sont des sous formules des formules original tel que ces sous formules soit plus petite que la formule d'origine elle conserve les même modèles:\\
+En circuit combinatoire les algo sont appelé  Table de Karnaugh ou Quine-McCluskey.
 
-ggg
+\subsubsection{Table de Karnaugh}
+Appliquer l'algorithme avec la formule S = $\neg a b \neg c d + a \neg b \neg c \neg d + b \neg d$\\
 
-\subsection{Système de Hilbertein}
+\begin{tabular}{l|l|l|l|l}
+  \hline
+  S & $\neg a \neg b$ & $\neg a b$ & $ab$ & $a \neg b$\\
+  \hline
+  $\neg c \neg d$ & X & X & X & X \\
+  $ \neg c d $ & $ $ & X & X & $ $ \\
+  $cd$ & $ $ & X & X & $ $ \\
+  $c \neg d$ & X & X & X & X \\
+  \hline
+\end{tabular}\\
+
+les impliquant premier de S sont $b \neg d$\\
+
+\subsubsection{Calcule arithmétique}
+En logique, les impliquant premier sont calculer que à partir d'une formule en mode CNF transposé en DNF et ensuite détransposé en CNF.
+
+\begin{description}
+\item[$\phi$] = $(a \wedge b \wedge c) \vee ( \neg b \wedge c)$
+\item[$\phi$] = $(a \vee \neg b) \wedge (a \vee c) \wedge ( b \vee \neg b) \wedge (b \vee c) \wedge (c \vee  \neg b ) \wedge (c \vee c)$
+\item[$\phi$] = $(a \vee \neg b) \wedge (a \vee c) \wedge (b \vee c) \wedge (c \vee \neg b) \wedge c$
+\item[$\phi$] = $(a \vee \neg b) \wedge c$
+\item[$\phi$] = $(a \wedge c) \vee (\neg b \wedge c)$ sont les impliquant premier.
+\end{description}
+
+Via une table de Karnaugh:\\
+\begin{tabular}{l|l|l|l|l}
+  \hline
+  $\phi$ & $\neg a \neg b$ & $\neg a b$ & $ab$ & $a \neg b$\\
+  \hline
+  $\neg c$ & $ $ & $ $ & $ $ & $ $ \\
+  $c$ & X & $ $ & X & X \\
+  \hline
+\end{tabular}\\
+Égal à $(a \wedge c) \vee (\neg b \wedge c)$.
+
+\subsection{Système de Hilbertien}
 
 gg
 
-\subsection{Forte complétude}
+\subsection{Forte complétude OU théorème de finitude}
 
 g
 

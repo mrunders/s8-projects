@@ -26,8 +26,8 @@
 \input{fdd}
 \input{ap}
 \input{of}
-\input{rcr}
 \input{ro}
+\input{rcr}
 \input{xml}
 
 \end{document}

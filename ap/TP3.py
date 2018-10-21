@@ -6,6 +6,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import KFold, LeaveOneOut
 from sklearn.model_selection import ShuffleSplit
 
+from sklearn.metrics import accuracy_score, log_loss, roc_curve, confusion_matrix, classification_report
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
 DEFAULT_URL = "https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data"
 COLUMNS_DELIMITER = ','
 DEFAULT_COLUMNS_HEADER = ["number", "Clump Thickness", \
@@ -29,7 +32,6 @@ def fluxToStringIO(flux):
 def stringIOToNumpyArray(str):
     return numpy.genfromtxt(str, delimiter=COLUMNS_DELIMITER, dtype=numpy.float64)
 
-#### Complet functions
 def urlToNumpyArray(url=DEFAULT_URL):
     return stringIOToNumpyArray(fluxToStringIO(getFluxFromUrl(url)))
 
@@ -39,6 +41,7 @@ def fileToNumpyArray(file):
 def x_ySplit(array):
     return numpy.hsplit(array, [1, 13])
 
+## Evaluation
 def eval_traintest(*args):
     return train_test_split(*args)
 
@@ -72,6 +75,32 @@ def eval_random_split(x_array, y_array):
         train.append(train_i)
     
     return train, test
+
+## Performance Metrics
+def accuracy(y_p, y_t, normalized=False):
+    return accuracy_score(y_t, y_p, normalize=normalized)
+
+def logloss(y_p, y_t):
+    return log_loss(y_p, y_t)
+
+def roc_curve(y_p, y_t):
+    return roc_curve(y_t, y_p, pos_label=2)
+
+def matrice_confusion(y_p, y_t):
+    return confusion_matrix(y_t, y_p)
+
+def classification(y_p, y_t, target_names):
+    return classification_report(y_t, y_p, target_names=target_names)
+
+def absolute_error(y_p, y_t, multioutput=None):
+    return mean_absolute_error(y_t, y_p, multioutput=multioutput)
+
+def squared_error(y_p, y_t):
+    return mean_squared_error(y_t, y_p)
+
+def r2score(y_p, y_t, multioutput=None):
+    return r2_score(y_t, y_p, multioutput=multioutput)
+
 
 array = urlToNumpyArray()
 y_array, x_array = x_ySplit(array)

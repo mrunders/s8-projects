@@ -42,8 +42,16 @@
 \contentsline {subsubsection}{Remplacement ou v\IeC {\'e}rifonctionnalit\IeC {\'e}}{22}
 \contentsline {subsubsection}{Substitution}{22}
 \contentsline {subsection}{\numberline {3.1.7}Notion de impliquant premier }{23}
-\contentsline {subsection}{\numberline {3.1.8}Syst\IeC {\`e}me de Hilbertein}{23}
-\contentsline {subsection}{\numberline {3.1.9}Forte compl\IeC {\'e}tude}{23}
-\contentsline {chapter}{\numberline {4}Repr\IeC {\'e}sentation des connaissances et raisonnement}{24}
-\contentsline {chapter}{\numberline {5}Recherche Op\IeC {\'e}rationnel}{26}
-\contentsline {chapter}{\numberline {6}XML}{28}
+\contentsline {subsubsection}{Table de Karnaugh}{23}
+\contentsline {subsubsection}{Calcule arithm\IeC {\'e}tique}{23}
+\contentsline {subsection}{\numberline {3.1.8}Syst\IeC {\`e}me de Hilbertien}{24}
+\contentsline {subsection}{\numberline {3.1.9}Forte compl\IeC {\'e}tude OU th\IeC {\'e}or\IeC {\`e}me de finitude}{24}
+\contentsline {chapter}{\numberline {4}Recherche Op\IeC {\'e}rationnel}{25}
+\contentsline {section}{\numberline {4.1}Rappel}{26}
+\contentsline {subsection}{\numberline {4.1.1}Pivot de gauss}{26}
+\contentsline {section}{\numberline {4.2}Introduction \IeC {\`a} la PL}{26}
+\contentsline {subsection}{\numberline {4.2.1}Mod\IeC {\`e}le lin\IeC {\'e}aire continus \IeC {\`a} 2 variables}{26}
+\contentsline {subsubsection}{Recherche de solutions}{27}
+\contentsline {subsubsection}{recherche de la solution optimal}{28}
+\contentsline {chapter}{\numberline {5}Repr\IeC {\'e}sentation des connaissances et raisonnement}{29}
+\contentsline {chapter}{\numberline {6}XML}{31}

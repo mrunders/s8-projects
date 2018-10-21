@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 OCT 2018 16:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  21 OCT 2018 14:16
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -904,24 +904,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--97
  []
 
 [22 <./img/of-arbre-shannon_1.png (PNG copy)> <./img/of-remplacement.png (PNG c
-opy)>]) [23] (rcr.tex
+opy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--115
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[23]) [24] (ro.tex
 Chapter 4.
-[24
+[25
 
-]) [25] (ro.tex
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+[26] <img/ro-pl-2var_0.png, id=118, 491.8375pt x 434.62375pt>
+File: img/ro-pl-2var_0.png Graphic file (type png)
+
+<use img/ro-pl-2var_0.png>
+Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 62.
+(pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
+ [27 <./img/ro-pl-2var_0.png (PNG copy)>]
+<img/ro-pl-2var_1.png, id=122, 491.8375pt x 434.62375pt>
+File: img/ro-pl-2var_1.png Graphic file (type png)
+
+<use img/ro-pl-2var_1.png>
+Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 75.
+(pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
+
+ []
+
+) [28 <./img/ro-pl-2var_1.png (PNG copy)>] (rcr.tex
 Chapter 5.
-[26
+[29
 
-]) [27] (xml.tex
+]) [30] (xml.tex
 Chapter 6.
-[28
+[31
 
-]) [29] (_memo.aux) ) 
+]) [32] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11598 strings out of 493323
- 189385 string characters out of 3139963
+ 11608 strings out of 493323
+ 189615 string characters out of 3139963
  256281 words of memory out of 3000000
- 14942 multiletter control sequences out of 15000+200000
+ 14950 multiletter control sequences out of 15000+200000
  19360 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,13n,40p,444b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -944,9 +987,9 @@ onts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr
 ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles
 /MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on _memo.pdf (32 pages, 376660 bytes).
+Output written on _memo.pdf (35 pages, 409448 bytes).
 PDF statistics:
- 500 PDF objects out of 1000 (max. 8388607)
+ 521 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
