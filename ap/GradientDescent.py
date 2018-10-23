@@ -46,7 +46,7 @@ def p_i2(beta, x):
 def e_i2(beta, x):
     return 1 / ( 1 + math.exp(-p_i2(beta,x)))
 
-def gradient_descent_n(xarrays, default_beta_values=0, max_iterations=20, yarrays=[], alpha=0.01, func=p_i):
+def gradient_descent_n(xarrays, func, default_beta_values=0, max_iterations=20, yarrays=[], alpha=0.01):
 
     iteration = 0
 
@@ -64,7 +64,11 @@ def gradient_descent_n(xarrays, default_beta_values=0, max_iterations=20, yarray
             if iteration == max_iterations:
                 return
 
-            error = func(beta,xarrays[i]) - yarrays[i]
+            p_i = func(beta, xarrays[i])
+
+            error =  p_i - yarrays[i]
+            ##error = (yarrays[i] - p_i) * p_i * ( 1 - p_i )
+
             for b in range(len(beta)):
                 beta[b] = beta[b] - error * xarrays[i][b] * alpha
 
