@@ -3,7 +3,6 @@ import xml.sax
 import cStringIO
 import sys
 
-XML_SOURCE_FILE = "./dblp.xml"
 ELEMENT_DELIMITER = "|"
 KEY_VALUE_DELIMITER = ":"
 END_OF_LINE = "\n"
@@ -11,7 +10,7 @@ END_OF_LINE = "\n"
 class ItemSet():
 
 	def __init__(self):
-		self.__data = [cStringIO.StringIO()]
+		self.__data = [""]
 		self.__pattern_in_last = False
 
 	def append(self, key, value, pattern, index=-1):
@@ -19,24 +18,18 @@ class ItemSet():
 			if value == pattern:
 				self.__pattern_in_last = True
 				
-			self.__data[-1].write(value)
-			self.__data[-1].write(ELEMENT_DELIMITER)
+			self.__data[-1] += value + ELEMENT_DELIMITER
 	
 	def newLine(self):
 		if self.__pattern_in_last:
-			self.__data[-1].write(END_OF_LINE)
-			self.__data.append(cStringIO.StringIO())
+			self.__data[-1] += END_OF_LINE
+			self.__data.append("")
 		else:
-			self.__data[-1].close()
-			self.__data[-1] = cStringIO.StringIO()
+			self.__data[-1] = ""
 
 		self.__pattern_in_last = False
-		self.__data[-1].seek(0)
 		
 	def getData(self):
-		for i in self.__data:
-			i.seek(0)
-
 		return self.__data
 		
 	def freeData(self):
@@ -69,9 +62,9 @@ class TransformateurXML(xml.sax.ContentHandler):
 	
 	def characters(self, data):
 		if (data != END_OF_LINE) and (self.__balise_name != None):
-			self.__itemSet.append(self.__current_balise, data.encode("utf-8"), self.__pattern)
+			self.__itemSet.append(self.__current_balise, data, self.__pattern)
 			
-	def parse(self, file_dir=XML_SOURCE_FILE):
+	def parse(self, file_dir):
 		self.__parser.setContentHandler(self)
 		self.__parser.parse(file_dir)
 		return self.__itemSet
@@ -83,8 +76,7 @@ class TransformateurXML(xml.sax.ContentHandler):
 		result = []
 		x = []
 		i = 0
-		for line in self.__itemSet.getData():
-			items = line.read()
+		for items in self.__itemSet.getData():
 			if self.__pattern in items:
 				for item in items.split(ELEMENT_DELIMITER):
 					if item != self.__pattern and item != END_OF_LINE:
@@ -99,13 +91,14 @@ class TransformateurXML(xml.sax.ContentHandler):
 			if x.index(x[-1]) < len(x)-1:
 				x.pop()
 
+                print("\n\n")
 		print('"%s" has %d coauthors:' % (self.__pattern, len(x)))
 		for i in x:
 			print("-" + i)
 
 
-t = TransformateurXML(pattern=sys.args[1])
-t.parse(file_dir=sys.args[2])
+t = TransformateurXML(pattern=sys.argv[1])
+t.parse(file_dir=sys.argv[2])
 t.getResult()
-t.freeData()
+## t.freeData()
 
