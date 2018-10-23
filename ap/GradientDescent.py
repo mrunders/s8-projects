@@ -1,8 +1,6 @@
 
 import math
 
-p_i = (lambda b0,b1,b2,x1,x2 : b0 + b1 * x1 + b2 * x2)
-e_i = (lambda b0,b1,b2,x1,x2 : 1 / ( 1 + math.exp(-p_i(b0,b1,b2,x1,x2))))
 ALPHA = 0.01
 
 X=[1,2,4,3,5]
@@ -16,63 +14,61 @@ XXX = [4.66,5.50,4.70,5.93,5.73,5.02,4.80,4.42,5.11,6.37,2.89,4.66,5.60,4.90,5.0
 YYY = [0 for i in range(20)]
 YYY.extend([1 for i in range(20)])
 
+#############################################################
+## 
+##  > Logic regrassion with probability
+##
+#############################################################
+
 def mean_value(x, n=20):
     return (1 / n) * sum(x)
 
 def variance(x, u, n=40, K=2):
-    s = 0
-    for xx in x:
-        s += (xx - mean_value(x))**2
-    
-    return (1 / (n-K)) * s
+    return (1 / (n-K)) * reduce(lambda xx,y: xx - mean_value(xx)**2, x)
 
 def discrimine(x, k=20):
     u = mean_value(x)
     o = variance(x,u)
     return x * (u/o**2) - (u**2/2*o**2) + math.log(1/2)
 
-def gd_2d(max_iterations=20, b0=0, b1=0):
+#############################################################
+## 
+##  > Generic Gradient descent Algorithm
+##
+#############################################################
+
+def p_i2(beta, x):
+    res = 0
+    for i in range(len(beta)):
+        res += beta[i]*x[i]
+    return res
+
+def e_i2(beta, x):
+    return 1 / ( 1 + math.exp(-p_i2(beta,x)))
+
+def gradient_descent_n(xarrays, default_beta_values=0, max_iterations=20, yarrays=[], alpha=0.01, func=p_i):
 
     iteration = 0
+
+    xarrays = zip(*xarrays)
+    for xx in range(len(xarrays)):
+        xarrays[xx] = list(xarrays[xx])
+        xarrays[xx].insert(0, 1)
     
-    print("Gradient Descent with values: X={}, Y={}, ALPHA={}".format(X,Y,ALPHA))
+    beta = [0 for i in xarrays[0]]
+    
+    print("Gradient Descent with values: X={}, Y={}, ALPHA={}".format(xarrays,yarrays,alpha))
     while(True):
-        for i in range(len(X)):
+        for i in range(len(yarrays)):
 
             if iteration == max_iterations:
                 return
 
-            x = X[i]
-            y = Y[i]
-            error = p_i(b0,b1,0,x1,0) - y
-            b0 = b0 - error * x * ALPHA
-            b1 = b1 - error * ALPHA
+            error = func(beta,xarrays[i]) - yarrays[i]
+            for b in range(len(beta)):
+                beta[b] = beta[b] - error * xarrays[i][b] * alpha
 
             iteration += 1
-            print("Iteration: %3d | erreur=%20f b0=%20f , b1=%20f" % \
-            (iteration, error, b0, b1))
+            print(("Iteration: %3d | erreur:%20f Beta: {}" % (iteration, error)).format(beta) )       
 
-def gd_3d(max_iterations=20, b0=0, b1=0, b2=0, func=p_i):
-
-    iteration = 0
-
-    print("Gradient Descent with values: X1={}, X2={}, Y={}, ALPHA={}".format(XX1,XX2,YY,ALPHA))
-    while(True):
-        for i in range(len(XX1)):
-
-            if iteration == max_iterations:
-                return
-
-            x1 = XX1[i]
-            x2 = XX2[i]
-            y = YY[i]
-
-            p = func(b0,b1,b2,x1,x2)
-            error = (y - p) * p * ( 1 - p )
-            b0 = b0 - error * ALPHA
-            b1 = b1 - error * x1 * ALPHA
-            b2 = b2 - error * x2 * ALPHA			
-
-            iteration += 1
-            print("Iteration: %3d | erreur=%20f b0=%20f , b1=%20f, b2=%20f" % \
-            (iteration, error, b0, b1, b2))
+gradient_descent_n(xarrays=[XX1, XX2], yarrays=YY, default_beta_values=0, max_iterations=20, alpha=0.01, func=p_i2)
