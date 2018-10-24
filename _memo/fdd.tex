@@ -1,9 +1,37 @@
-\chapter{Fouille de donnée}
+\part{Fouille de donnée}
 \pagebreak
 
-\section{Pré traitement des données}
-\subsection{Nettoyage des données}
-\subsubsection{Caractéristiques descriptives}
+\chapter{Rappel sur les probabilisées}
+
+\begin{description}
+\item[Quelques rappels de probabilités]: Soient X et Y deux variables aléatoires discrètes prenant leurs valeurs dans DX={x1,..,xn} et DY={y1,..,ym} respectivement.  
+\item[$P(x_i)$] = $\frac{|x_i|}{\sum_{j=1}^n |x_j|}$
+\item[] $\sum_{i=1}^n P(x_i) = 1$
+\item[$P(x_i | y_i)$] = $\frac{P(x_i,y_i)}{p(y_i)}$
+\item[$P(x_i,y_i)$] = $p(x_i) * p(y_i)$ Si X et Y sont indépendantes
+\item[règle de chainage $P(x_1,x_2,x_3,...x_n$] = $p(x_1)*p(x_2|x_1)*...*p(x_n|x_{n-1}..x_1)$
+\item[distribution conditionnel] $ \forall x in X, \forall y in Y => P(x|y)$
+\end{description}
+
+Exemple:
+\begin{description}
+\item[]: $\begin{pmatrix}
+  Année & Sexe & \# & \%  \\
+   M1 & M  & 25  &  25/55   \\
+   M1 & F  & 4 &  4/55  \\
+   M2 & M  & 25  & 25/55   \\
+   M2 & F  & 1  &  1/55  \\
+\end{pmatrix}$
+\item[]
+\begin{description}
+\item[$P(sexe=M)$] = $P(Sexe=M et Année=M1) + P(Sexe=M et Année=M2) = 50/55$
+\item[$P(Année=M2 | sexe=M)$] = $P(Sexe=M et Année=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
+\end{description}
+\end{description}
+
+\chapter{Pré traitement des données}
+\section{Nettoyage des données}
+\subsection{Caractéristiques descriptives}
 
 Objectifs: Résumer, décrire certains aspects (tendances, variation, dispersion…) des données en utilisant certaines mesures :
 
@@ -19,7 +47,7 @@ Objectifs: Résumer, décrire certains aspects (tendances, variation, dispersion
 \end{description}
 \end{center}
 
-\subsection{Normalisation}
+\section{Normalisation}
 
 \begin{description}
 \item[Min-max]: $v_n = \frac{v-v_{min}}{v_{max} - v_{min}}$
@@ -29,9 +57,9 @@ Objectifs: Résumer, décrire certains aspects (tendances, variation, dispersion
 \end{description}
 
 \pagebreak
-\section{Classification}
-\subsection{Évaluation des classifieurs}
-\subsubsection{Matrice de confusion}
+\chapter{Classification}
+\section{Évaluation des classifieurs}
+\subsection{Matrice de confusion}
 \begin{description}
 \item[Percent of correct classification]:
 \begin{description}
@@ -54,9 +82,8 @@ Exemple:\\
 \item[PCC(\%)] = $ \frac{0+60+23+5}{100} * 100 = 88\% $ 
 \end{description}
 
-\pagebreak
-\section{Arbre de décision}
-\subsection{critères de sélection C4.5}
+\chapter{Arbre de décision}
+\section{critères de sélection C4.5}
 
 Construction d’un arbre de décision C4.5  La construction d'un arbre de décision avec C4.5 passe par deux phases:  
 \begin{description}
@@ -69,35 +96,7 @@ Construction d’un arbre de décision C4.5  La construction d'un arbre de déci
 \item[Entropie]: Mesure la quantité d’incertitude dans une distribution de probabilités.
 \end{description}
 
-\pagebreak
-\subsubsection{Rappel sur les probabilisées}
-
-\begin{description}
-\item[Quelques rappels de probabilités]: Soient X et Y deux variables aléatoires discrètes prenant leurs valeurs dans DX={x1,..,xn} et DY={y1,..,ym} respectivement.  
-\item[$P(x_i)$] = $\frac{|x_i|}{\sum_{j=1}^n |x_j|}$
-\item[] $\sum_{i=1}^n P(x_i) = 1$
-\item[$P(x_i | y_i)$] = $\frac{P(x_i,y_i)}{p(y_i)}$
-\item[$P(x_i,y_i)$] = $p(x_i) * p(y_i)$ Si X et Y sont indépendantes
-\end{description}
-
-Exemple:
-\begin{description}
-\item[]: $\begin{pmatrix}
-  Année & Sexe & \# & \%  \\
-   M1 & M  & 25  &  25/55   \\
-   M1 & F  & 4 &  4/55  \\
-   M2 & M  & 25  & 25/55   \\
-   M2 & F  & 1  &  1/55  \\
-\end{pmatrix}$
-\item[]
-\begin{description}
-\item[$P(sexe=M)$] = $P(Sexe=M et Année=M1) + P(Sexe=M et Année=M2) = 50/55$
-\item[$P(Année=M2 | sexe=M)$] = $P(Sexe=M et Année=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
-\end{description}
-\end{description}
-
-\pagebreak
-\subsubsection{Entropie}
+\subsection{Entropie}
 \begin{description}
 \item[Entropie]: Mesure la quantité d’incertitude (manque d’information) dans une distribution de probabilités.   Soit X une variable aléatoire discrète prenant ses valeurs dans $DX={x1,..,xn}$. Soit P la distribution de probabilités associée à X.   
 \item[$H(X)$] = $- \sum_{i=1}^n p(x_i) * log_2(p(x_i))$
@@ -138,7 +137,7 @@ Propriétés:
 \item[Exemple]: $[0.2, 0.1, 0.3, 0.4]: H(X,Y) = 1.85$
 \end{description}
 
-\pagebreak
+
 Critère de sélection: Gain d'information:
 \begin{description}
 \item[$GAIN(T,A)$] = $Info(T) - Info(T|A)$
@@ -154,7 +153,33 @@ Critère de sélection: Gain Ration:
 \item[] Le gain d’information favorise les attributs ayant de larges domaines.
 \item[] Le ratio de gain utilise le gain d’information avec un facteur pénalisant les attributs ayant des domaines trop larges.
 \item[$GainRatio(T,A)$] = $\frac{Gain(T,A)}{Split_Info(T,A)}$
-\item[Avec $Split_Info(T,A)$] = $- \sum_{a_{j \in A}} freq(a_j,T)*log_2(freq(a_j,T)) = Entropie de A$
+\item[Avec $Split_Info(T,A)$] = $- \sum_{a_{j \in A}} freq(a_j,T)*log_2(freq(a_j,T)) = $Entropie de A.
 \end{description}
+
+\section{critères d'arrêt}
+
+\subsection{Critères d'arrêt}
+\begin{description}
+\item[] Si tout les objets d'une partition appartiennent à une même classes
+\item[] Si il n'y a plus aucun attributs à tester
+\item[] si le nœud est vide (càd feuille de l'arbre)
+\item[] Absence d'apport informationnel (le grain est négatif ou nul)
+\end{description}
+
+\subsection{critères d'arrêt: Paramètre utilisateur}
+\begin{description}
+\item[] Nombre d'objets minimum par feuille
+\item[] Taille, profondeur de l'arbre
+\item[] Temps de construction de l'arbre
+\end{description}
+
+\section{Élagage}
+L'élagage vient diminuer la longueur de l'arbre:\\
+
+\pagebreak
+\chapter{Classificateur bayésiens}
+
+
+
 
 \pagebreak

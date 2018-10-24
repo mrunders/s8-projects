@@ -1,10 +1,10 @@
-j\chapter{Apprentissage par le pratique}
+\part{Apprentissage par le pratique}
 \pagebreak
 
-\section{Rappel}
-\subsection{Matrices et calcules sur les Matrices}
+\chapter{Rappel}
+\section{Matrices et calcules sur les Matrices}
 
-\subsubsection{Addition}
+\subsection{Addition}
 
 $\left(\begin{array}{cc}
 1 & 3 \\ 1 & 0 \\ 1 & 2 \end{array} \right)$
@@ -18,7 +18,7 @@ $\left(\begin{array}{cc}
 $\left(\begin{array}{cc}
 1 & 3 \\ 8 & 5 \\ 3 & 3 \end{array} \right) $
 
-\subsubsection{Multiplication}
+\subsection{Multiplication}
 
 $\begin{array}{c@{\ }c}
 &
@@ -33,7 +33,7 @@ $\begin{array}{c@{\ }c}
 
 $(1 * 5) + (2 * 7) = 19$
 
-\subsubsection{Transposer}
+\subsection{Transposer}
 
 $\left(\begin{array}{ccc}
 1 & 3 & 5 \\ 2 & 4 & 6 \end{array} \right) $
@@ -41,7 +41,7 @@ $\left(\begin{array}{ccc}
 $\left(\begin{array}{cc}
 1 & 2 \\ 3 & 4 \\ 5 & 6 \end{array} \right) $
 
-\subsubsection{Inverse}
+\subsection{Inverse}
 \begin{description}
 \item[Soit une matrice 2x2 comme]:
 $\left(\begin{array}{ccc}
@@ -52,8 +52,8 @@ $ \frac{1}{D} \left(\begin{array}{ccc}
 d & -b \\ -c & a \end{array} \right) $
 \end{description}
 
-\section{Algorithms Learn a Mapping From Input to Output}
-\subsection{linear ML algorithms}
+\chapter{Algorithms Learn a Mapping From Input to Output}
+\section{linear ML algorithms}
 
 \begin{description}
 \item[] Simplifier les processus d'apprentissage et réduire la fonction sur ce qu'on connait
@@ -62,24 +62,24 @@ d & -b \\ -c & a \end{array} \right) $
 \item[] Et X1,X2,X3 sont les valeurs en Input.
 \end{description}
 
-\subsection{Supervised machine learning}
+\section{Supervised machine learning}
 L'apprentissage supervisé peut se diviser en 2 partis
 \begin{description}
 \item[Classification]: Quand les variables en sortie sont des Classe $(Vert, Carré, Homme)$
 \item[Regression]: Quand les variables en sortie sont des valeur numérique $(euro, poids, quantités)$
 \end{description}
 
-\subsection{Unsupervised machine learning}
+\section{Unsupervised machine learning}
 Les problèmes de l'apprentissage non supervisé sont:
 \begin{description}
 \item[Clustering]: L'art de faire des paquet d'éléments qui ont des points commun, comme regrouper les clients par paquet de choses qu'ils ont le plus en commun.
 \item[Association]: Associer des règles d'apprentissage pour décrire une portion du data, comme une personne qui a acheté un item A et qui est aussi tenté par acheter un item B
 \end{description}
 
-\subsection{semi-supervised machine leaning}
+\section{semi-supervised machine leaning}
 L'apprentissage semi supervisé c'est avoir un bonne quantité de données en input X, et un peu de data avec le label Y.
 
-\subsection{Overview of dias and variance}
+\section{Overview of dias and variance}
 La prédiction des erreurs pour les algorithmes sont regroupé en 3 points:
 \begin{description}
 \item[Bias Error]:  Simplifier l'hypothèse fait par le modèls pour faire une fonction d'apprentissage plus facile.
@@ -87,17 +87,21 @@ La prédiction des erreurs pour les algorithmes sont regroupé en 3 points:
 \item[Irreductible Error]: Ne peut pas être réduit
 \end{description}
 
-\pagebreak
-\section{Overfitting and Underfitting}
-dddddddd
+\chapter{Overfitting and Underfitting}
+\section{Overfitting}
+L'overfitting intervient lorsque le modèle sur apprend des connaissances,
+Lorsque l'on sur apprend nous prenons en compte les points plus éloigné de la droite de la fonction.\\
+On peut illustrer l'overfitting en codant un algorithme qui prend en compte les points bleu et rouges de la figure $\textit{ap-linear-regression\_1}$ ce dessous.\\
 
+\section{Underfitting}
+C'est l'inverse de l'overfitting, pas assez de données pour pouvoir généraliser le base de connaissance.\\
 \pagebreak
-\section{Linear Algorithms}
+\chapter{Linear Algorithms}
 
 Soit X l'ensemble des variables indépendantes sur l'axe des l'abscisse et
 Y l'ensemble des variable dépendantes sur l'axe des ordonnée.
 
-\subsection{Régression linéaire}
+\section{Régression linéaire}
 Étant donné un plan à deux dimensions où l'abscisse contient les point d'entrée X et l'ordonnée contient les points de sortie Y, et un nouage de points précédaient acquitté de tout point éloigné du nuage.
 
 \includegraphics[scale=0.3]{img/ap-linear-regression_1.png}
@@ -105,7 +109,8 @@ $Figure ap-linear-regression_1$
 
 \begin{description}
 \item[Avec]: y  = $\beta_0 + \beta_1 x$
-\item[Pour un hyperPlan (3d)]: y = $\beta_0 + \beta_1 x_1 + ... \beta_n x_n$
+\item[Pour un hyperPlan (3d)]: y = $\beta_0 + \beta_1 x_1 + \beta_2 x_2$
+\item[$P-I_n$]: y = $\beta_0 + \beta_1 x_1 + ... \beta_n x_n$
 \end{description}
 
 Exemple:
@@ -115,7 +120,7 @@ Exemple:
 \end{description}
 
 \pagebreak
-\subsection{Least squares linear regression}
+\section{Least squares linear regression}
 Calculer la régression linéaire avec la méthode Least squares:\\
 Soit:
 \begin{description}
@@ -149,7 +154,7 @@ Calculer tout les écarts des $x_i \in X$ par rapport à Xm (resp Y):\\
 \item[$ \beta_0 $]: $Ym = \beta_0 + \beta_1 * Xm$ : $4 = \beta_0 + .6 * 3$ : $4= \beta_0 + 1.8$ : $\beta_0 = 2.2$
 \end{description}
 \pagebreak
-\subsection{Gradient Descent}
+\section{Gradient Descent}
 Soit:
 \begin{description}
 \item[X] = $[1,2,4,3,5]$
@@ -184,8 +189,8 @@ En appliquant l'algorithme des calcules des $\beta_i$:\\
   \hline
 \end{tabular}
 \pagebreak
-\section{Logistic Regression}
-\subsection{Logistic function}
+\chapter{Logistic Regression}
+\section{Logistic function}
 
 Soit:
 \begin{description}
@@ -195,12 +200,29 @@ Soit:
 La fonction de logique de régression, les valeur d'entrée X sont combiné en utilisant les coefficient de valeur pour prédire une sortie Y. Cette sortie sera une valeur binaire.
 
 \begin{description}
-\item[$p(x)$] = $ \frac{1}{1 + e^{-(\beta_0 + \beta_1 * x}}$
+\item[$p(x)$] = $ \frac{1}{1 + e^{-(P-I_n)}}$
 \item[Note]: $p(x)$ peut être interprété comme une fonction de probabilité $P(X) = P[Y=1 | X)$.
 \item[$\beta_0 + \beta_1 * x$] = $ ln(\frac{P(x)}{1 - P(x)})$ aussi appelé odds.
 \end{description}
 
-\subsection{Logistic regression predicts probabolities}
+\section{Linear Discriminant Analysis}
+L'analyse discriminante linéaire fait partie des techniques d'analyse discriminante prédictive, il s'agit de prédire l'appartenance d'un individu à une classe prédéfinie à partir de ses caractéristiques mesurées à l'aide de variables prédictives.\\
+A notre disposition, un échantillon de $n$ observations réparties dans $\Bbbk$ groupes d'effectifs $n_{\Bbbk}$.\\
+\begin{description}
+\item[Noté $Y$] les variables prédire $\{y1, ... y_{\Bbbk}\}$
+\item[$J$] variables prédictives $X = (X_1, ... X_j)$
+\item[$\mu_{\Bbbk}$] la moyenne (ou $\textit{mean}$ en anglais) valant $lambda(list) -> \frac{\sum list[i]}{taille(list)}$
+\item[$\sigma^2$] la variance de toutes les classes $\frac{\sum_{i=1}^n (x_i - \mu_{\Bbbk})^2}{n - \Bbbk}$
+\item[la fonction discriminante pour la classe $\Bbbk$ avec $x$ donné] $D_{\Bbbk} (x) = x * \frac{\mu_{\Bbbk}}{\omega^2} - \frac{\mu_{\Bbbk}^2}{2x\omega^2} + ln(P(k))$
+\item[Où $P(k)$] vaut la probabilité appliqué aux valeurs de $Y$
+\end{description}
 
+\subsection{la règles bayésienne}
+L'objectif est de produire une règle d'affection $X(\omega) \rightarrow Y(\omega)$ qui permet de prédire, pour une observation $\omega$ donné, sa valeur associé de $Y$ à partir des valeurs prises par $X$. via une probabilité\\
+\begin{description}
+\item[$P(Y=y_{\Bbbk})$] = $\frac{P(Y=y_{Bbbk})*P(X|Y=y_{\Bbbk})}{\sum_{i=1}^{\Bbbk} P(Y=y_i)*P(X|Y=y_i)}$
+\item[Où $P(Y=y_{\Bbbk})$] est la probabilité à $priori$ d'appartenance à une classe
+\item[$P(X|Y=y_{\Bbbk})$] représente la fonction de densité des X conditionnellement à la classe $y_{\Bbbk}$
+\end{description}
 
 \pagebreak

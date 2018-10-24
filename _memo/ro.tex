@@ -1,8 +1,8 @@
-\chapter{Recherche Opérationnel}
+\part{Recherche Opérationnel}
 \pagebreak
 
-\section{Rappel}
-\subsection{Pivot de gauss}
+\chapter{Rappel}
+\section{Pivot de gauss}
 
 $ L1 et L2 =
 \begin{cases}
@@ -29,7 +29,7 @@ $8x + 40 = 160$\\
 $8x = 120$\\
 $x = 15$\\
 
-\section{Introduction à la PL}
+\chapter{Introduction à la PL}
 
 Construire une modèle linéaire, c'est donc:
 \begin{description}
@@ -38,9 +38,8 @@ Construire une modèle linéaire, c'est donc:
 \item[déterminer]: les contraintes du modèle 
 \end{description}
 
-\subsection{Modèle linéaire continus à 2 variables}
+\section{Modèle linéaire continus à 2 variables}
 Soit le modèle linéaire suivantes:
-\pagebreak
 \begin{description}
 \item[Déterminer] $(x,y) \in \Im^2$
 \item[Minimisant] $z = 1000x + 1200y$
@@ -55,12 +54,12 @@ Soit le modèle linéaire suivantes:
 \end{description}
 \end{description}
 
-\subsubsection{Recherche de solutions}
+\subsection{Recherche de solutions}
 Après avoir tracé graphiquement tout les points:\\
 Pour chaque contrainte, tracer la droite et repérer le demi plan des solution: exemple pour (5) et (6), x et y doivent être supérieurs ou égal à 0, d'où le demi plan des solution sont toutes les valeurs positives.\\
 La partie En vert représente la région admissible, quelque soit le point choisis dans ce vert, aucune contrainte ne sera violé.\\
 \includegraphics[scale=0.55]{img/ro-pl-2var_0.png} 
-\subsubsection{recherche de la solution optimal}
+\subsection{recherche de la solution optimal}
 
 Changer l'équation $z$ tel que $z$ soit égal à $0$
 \begin{description}
@@ -74,5 +73,110 @@ Traçons la droite $(0,0)$, $(1200,-1000)$
 \end{description}
 \includegraphics[scale=0.55]{img/ro-pl-2var_1.png} \\
 Dans cette exemple le point (15,10) est le point extrême maximal pour l'équation z.\\
+\pagebreak
+\chapter{Le simplexe}
+Soit le modèle linéaire suivantes:
+\begin{description}
+\item[Déterminer] $(x,y) \in \Im^2$
+\item[Maximisant] $Z = 3x + 7y$
+\item[sous les contraintes]:
+\begin{description}
+\item[] (1) $ -x + y \leq 3$
+\item[] (2) $ y \leq 8$
+\item[] (3) $ 2x - y \leq 28$
+\item[] (5) $ 0 \leq x$
+\item[] (6) $ 0 \leq y$
+\end{description}
+\end{description}
+
+\section{Initialisation du simplexe}
+Pour chaque expression du type $(1)(2)(3)$ intégrer un $e_i$ pour la transformer en équation.\\
+On appel les $e_1$ des variables d'accumulation, Ce qui fait\\
+\begin{description}
+\item[Déterminer] $(x,y,e_1,e_2,e_3) \in \Im^5$
+\item[Maximisant] $Z = 3x + 7y$
+\item[sous les contraintes]:
+\begin{description}
+\item[] (1) $ -x + y + e_1 = 3$
+\item[] (2) $ y + e_2 = 8$
+\item[] (3) $ 2x - y + e_3 = 28$
+\item[] (5) $ 0 \leq x$
+\item[] (6) $ 0 \leq y$
+\item[] (7) $ e_1,e_2,e_3 \geq 0$
+\end{description}
+\end{description}
+
+\section{Canonicité du modèle}
+Soit les valeurs (pour la première itération)
+\begin{description}
+\item[Hors Base] $(x,y)$
+\item[Base] $(e_1,e_2,e_3)$
+\end{description}
+
+Un modèle est canonique que si:
+\begin{description}
+\item[si toutes les variables de Base] ne sont pas dans Z.
+\end{description}
+
+\section{Premier itération}
+\subsection{Choix de la variable entrante}
+$(x,y)$ sont deux choix possible, le tout est de choisir une bonne heuristique, comme celle du meilleur gain marginale, ou via la comparaison (en mode graphique):\\
+$Y$ sera choisit, donc $Y$ sera notre variable entrante.\\
+
+\subsection{Choix de la variable sortante}
+Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (car $Y$ est la variable entrante)\\
+\pagebreak
+\begin{description}
+\item[] $ -x + y + e_1 = 3$ donne $\frac{3}{1} = 3$ (1 car $y$ = $1*y$)
+\item[] $ y + e_2 = 8$ donne $\frac{8}{1} = 8$
+\item[] $ 2x - y + e_3 = 28$ donne $\frac{28}{1} = 28$
+\end{description}
+Prendre le minimum des variables, donc se sera $3$.\\
+la variable présente dans la Base sera prise comme variable sortante, dans notre cas $e_1$.\\
+
+\subsection{pivotage}
+On choisis l'équation associé à la variable $e_1$ pour définir la variable entrante $y$.\\
+On n'a:
+\begin{description}
+\item[$y$] = $x - e_1 + 3$
+\end{description}
+
+Puis on crée les nouvelles équations via le nouveau $y$:
+\begin{description}
+\item[$Z = 3x + 7y$] devient
+\begin{description}
+\item[$Z$] = $3x + 7(x - e_1 + 3)$
+\item[$Z$] = $10x - 7e_1 + 27$
+\end{description}
+\item[$x - e_1 = 3$] est déjà normalisé
+\item[$y + e_2 = 8$] devient
+\begin{description}
+\item[$8$] = $x -e_1 + 3 + e_2$
+\item[$5$] = $x - e_1 + e_2$
+\end{description}
+\item[$2x - y + e_3 = 28$] devient
+\begin{description}
+\item[$28$] = $2x + (x - e_1 + 3) + e_3$
+\item[$25$] = $3x - e_1 + e_3$
+\end{description}
+\end{description}
+\pagebreak
+\subsection{Nouveau modèle}
+Après cette étape nous voila avec un nouveau modèle:
+\begin{description}
+\item[Déterminer] $(x,y,e_1,e_2,e_3) \in \Im^5$
+\item[Maximisant] $Z = 10x - 7e_1 + 21$
+\item[sous les contraintes]:
+\begin{description}
+\item[] (1) $-x + y + e_1 = 3$
+\item[] (2) $x - e_1 + e_2 = 5$
+\item[] (3) $3x - e_1 + e_3 = 25$
+\item[] (5) $ 0 \leq x$
+\item[] (6) $ 0 \leq y$
+\item[] (7) $ e_1,e_2,e_3 \geq 0$
+\end{description}
+\end{description}
+
+A ne pas oublier de vérifier la canonicité du modèle.\\
 
 \pagebreak

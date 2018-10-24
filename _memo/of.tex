@@ -1,8 +1,8 @@
-\chapter{Outils formel}
+\part{Outils formel}
 \pagebreak
 
-\section{Logique classique des propositions}
-\subsection{Vocabulaire}
+\chapter{Logique classique des propositions}
+\section{Vocabulaire}
 
 \begin{description}
 \item[Déduction] $\models \alpha$ ssi$ \neg \alpha$ est contradictoire
@@ -24,7 +24,7 @@
 \item[$phi \equiv \psi$] sont logiquement équivalents ssi$ phi \models \psi$ et $psi \models \phi$
 \end{description}
 
-\subsection{Propriétés de l'opérateur Models}
+\section{Propriétés de l'opérateur Models}
 
 \begin{description}
 \item[$a \models b$] $=== M(a) \subseteq M(b)$
@@ -39,7 +39,7 @@
 \item[] \includegraphics[scale=0.3]{img/of-monotomie.png}
 \end{description}
 
-\subsection{Ensemble de connecteurs fonctionnellement complet}
+\section{Ensemble de connecteurs fonctionnellement complet}
 \begin{description}
 \item[On dit qu'un ensemble est fonctionnellement complet] si avec que les connecteurs de cette ensemble on peut exprimer toutes les formules d'un monde.
 \item[$\{\neg, \wedge\}$] est fonctionnellement complet pour la logique propositionnel classique
@@ -51,7 +51,7 @@
 \end{description}
 \end{description}
 
-\subsection{Preuve par induction structurelle sur un ensemble de connecteurs non fonctionnellement complet}
+\section{Preuve par induction structurelle sur un ensemble de connecteurs non fonctionnellement complet}
 
 Soit $ \forall P \in \{ \wedge, \vee \}_{ps}$, vérifier P:
 \begin{description}
@@ -68,7 +68,7 @@ Soit $ \forall P \in \{ \wedge, \vee \}_{ps}$, vérifier P:
 \end{description}
 \end{description}
 
-\subsection{Décomposition de Shannon}
+\section{Décomposition de Shannon}
 \begin{description}
 \item[On note $\phi [x \leftarrow 0 ) $ ] la formule obtenue en substituant dans $\phi$ la constante faux à toutes les occurrences du symbole propositionnel x.
 \item[On note $\phi [x \leftarrow 1 ) $ ] la formule obtenue en substituant dans $\phi$ la constante vrai à toutes les occurrences du symbole propositionnel x.
@@ -80,26 +80,26 @@ La décomposition de Shannon de $\phi$ suivant x est la formule:
 \end{description}
 
 \pagebreak
-\subsection{Arbre de Shannon, ROBDD}
+\section{Arbre de Shannon, ROBDD}
 Étant donnée un ordre strict total $x_1 < x_2 < x_3$ sur $Var(\phi ) = \{x_1, ..... X_n\}$\\
 Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\\
 \includegraphics[scale=0.4]{img/of-arbre-shannon_1.png} \\
 L'ensemble des modèles de $\phi$ sont toutes les interprétation où la feuille vaut la valeur $T$.
 
-\subsubsection{Remplacement ou vérifonctionnalité}
+\subsection{Remplacement ou vérifonctionnalité}
 \includegraphics[scale=0.8]{img/of-remplacement.png} \\
 
 $\phi \equiv \phi^{`}$ quelque soit la valeur de x (vrai ou faux).
 
-\subsubsection{Substitution}
+\subsection{Substitution}
 Soit un arbre $D$ ayant comme nœud un sous arbre du type infixe $\alpha = (x \Rightarrow y)$ et un sous arbre de substitution $\beta = (\neg x \Rightarrow \neg y)$\\
 $(D^{`} = D_{\alpha \leftarrow \beta} \equiv D$)\\
 
-\subsection{Notion de impliquant premier }
+\section{Notion de impliquant premier }
 Les impliquant premier sont des sous formules des formules original tel que ces sous formules soit plus petite que la formule d'origine elle conserve les même modèles:\\
 En circuit combinatoire les algo sont appelé  Table de Karnaugh ou Quine-McCluskey.
 
-\subsubsection{Table de Karnaugh}
+\subsection{Table de Karnaugh}
 Appliquer l'algorithme avec la formule S = $\neg a b \neg c d + a \neg b \neg c \neg d + b \neg d$\\
 
 \begin{tabular}{l|l|l|l|l}
@@ -115,7 +115,7 @@ Appliquer l'algorithme avec la formule S = $\neg a b \neg c d + a \neg b \neg c 
 
 les impliquant premier de S sont $b \neg d$\\
 
-\subsubsection{Calcule arithmétique}
+\subsection{Calcule arithmétique}
 En logique, les impliquant premier sont calculer que à partir d'une formule en mode CNF transposé en DNF et ensuite détransposé en CNF.
 
 \begin{description}
@@ -137,11 +137,11 @@ Via une table de Karnaugh:\\
 \end{tabular}\\
 Égal à $(a \wedge c) \vee (\neg b \wedge c)$.
 
-\subsection{Système de Hilbertien}
+\section{Système de Hilbertien}
 
 gg
 
-\subsection{Forte complétude OU théorème de finitude}
+\section{Forte complétude OU théorème de finitude}
 
 g
 
