@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  24 OCT 2018 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  25 OCT 2018 22:17
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -747,11 +747,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
-] [2])
+] [2] [3])
 \tf@toc=\write3
 \openout3 = `_memo.toc'.
 
- [3] (fdd.tex [1
+ [4] (fdd.tex [1
 
 ]
 Chapter 1.
@@ -887,7 +887,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
 ]
 Chapter 9.
-<img/ap-linear-regression_1.png, id=85, 640.3925pt x 720.6925pt>
+<img/ap-linear-regression_1.png, id=88, 640.3925pt x 720.6925pt>
 File: img/ap-linear-regression_1.png Graphic file (type png)
 
 <use img/ap-linear-regression_1.png>
@@ -921,19 +921,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--223
 Chapter 11.
 [24
 
-] <img/of-coupure.png, id=113, 294.09875pt x 243.91125pt>
+] <img/of-coupure.png, id=116, 294.09875pt x 243.91125pt>
 File: img/of-coupure.png Graphic file (type png)
 
 <use img/of-coupure.png>
 Package pdftex.def Info: img/of-coupure.png used on input line 35.
 (pdftex.def)             Requested size: 88.2303pt x 73.17393pt.
- <img/of-ou.png, id=114, 281.05pt x 136.51pt>
+ <img/of-ou.png, id=117, 281.05pt x 136.51pt>
 File: img/of-ou.png Graphic file (type png)
 
 <use img/of-ou.png>
 Package pdftex.def Info: img/of-ou.png used on input line 37.
 (pdftex.def)             Requested size: 84.31564pt x 40.95331pt.
- <img/of-monotomie.png, id=115, 175.65625pt x 198.7425pt>
+ <img/of-monotomie.png, id=118, 175.65625pt x 198.7425pt>
 File: img/of-monotomie.png Graphic file (type png)
 
 <use img/of-monotomie.png>
@@ -955,7 +955,12 @@ Overfull \hbox (6.42444pt too wide) in paragraph at lines 54--54
 \T1/cmr/bx/n/17.28 en-sem-ble de con-necteurs non fonc-tion-nelle-
  []
 
-[26] [27] <img/of-arbre-shannon_1.png, id=126, 438.63875pt x 427.5975pt>
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+<img/of-arbre-shannon_1.png, id=126, 438.63875pt x 427.5975pt>
 File: img/of-arbre-shannon_1.png Graphic file (type png)
 
 <use img/of-arbre-shannon_1.png>
@@ -966,106 +971,151 @@ Package pdftex.def Info: img/of-arbre-shannon_1.png used on input line 86.
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
-Package pdftex.def Info: img/of-remplacement.png used on input line 90.
-(pdftex.def)             Requested size: 280.24738pt x 125.26816pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-
- []
-
-[28 <./img/of-arbre-shannon_1.png (PNG copy)> <./img/of-remplacement.png (PNG c
-opy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Package pdftex.def Info: img/of-remplacement.png used on input line 92.
+(pdftex.def)             Requested size: 262.73091pt x 117.43845pt.
+ [27 <./img/of-arbre-shannon_1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--115
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
-[29]) [30] (ro.tex [31
+[28 <./img/of-remplacement.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
-]
+ []
+
+[29]
 Chapter 12.
+<img/of-occ-1.png, id=137, 317.185pt x 297.11pt>
+File: img/of-occ-1.png Graphic file (type png)
+ <use img/of-occ-1.png>
+Package pdftex.def Info: img/of-occ-1.png used on input line 159.
+(pdftex.def)             Requested size: 190.31245pt x 178.26736pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
+[30
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
+ <./img/of-occ-1.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-[32
+[31] <img/of-fo-sem.png, id=144, 165.61874pt x 161.60374pt>
+File: img/of-fo-sem.png Graphic file (type png)
+
+<use img/of-fo-sem.png>
+Package pdftex.def Info: img/of-fo-sem.png used on input line 189.
+(pdftex.def)             Requested size: 66.2463pt x 64.64035pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--216
+
+ []
+
+<img/of-fo-sem_2.png, id=145, 165.61874pt x 200.75pt>
+File: img/of-fo-sem_2.png Graphic file (type png)
+
+<use img/of-fo-sem_2.png>
+Package pdftex.def Info: img/of-fo-sem_2.png used on input line 218.
+(pdftex.def)             Requested size: 66.2463pt x 80.29857pt.
+ [32 <./img/of-fo-sem.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+
+ []
+
+) (ro.tex [33 <./img/of-fo-sem_2.png (PNG copy)>] [34
 
 ]
 Chapter 13.
-<img/ro-pl-2var_0.png, id=143, 491.8375pt x 434.62375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+[35
+
+]
+Chapter 14.
+<img/ro-pl-2var_0.png, id=159, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [33
+ [36
 
 ]
-<img/ro-pl-2var_1.png, id=148, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=163, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [34 <./img/ro-pl-2var_0.png (PNG copy)>] [35 <./img/ro-pl-2var_1.png (PNG copy
+ [37 <./img/ro-pl-2var_0.png (PNG copy)>] [38 <./img/ro-pl-2var_1.png (PNG copy
 )>]
-Chapter 14.
+Chapter 15.
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[36
+[39
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
-[37]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-) [39] (rcr.tex
-Chapter 15.
-[40
 
-]) [41] (xml.tex
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+
+ []
+
+[42] [43]) (rcr.tex [44]
 Chapter 16.
-[42
+[45
 
-]) [43] (_memo.aux) ) 
+]) [46] (xml.tex
+Chapter 17.
+[47
+
+]) [48] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11614 strings out of 493323
- 189679 string characters out of 3139963
+ 11632 strings out of 493323
+ 190028 string characters out of 3139963
  255281 words of memory out of 3000000
- 14953 multiletter control sequences out of 15000+200000
+ 14968 multiletter control sequences out of 15000+200000
  21417 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,13n,40p,444b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1091,9 +1141,9 @@ amFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/Mik
 Tex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/font
 s/type1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/typ
 e1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (47 pages, 453200 bytes).
+Output written on _memo.pdf (53 pages, 482645 bytes).
 PDF statistics:
- 619 PDF objects out of 1000 (max. 8388607)
+ 642 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

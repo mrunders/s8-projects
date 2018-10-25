@@ -124,7 +124,7 @@ $(x,y)$ sont deux choix possible, le tout est de choisir une bonne heuristique, 
 $Y$ sera choisit, donc $Y$ sera notre variable entrante.\\
 
 \subsection{Choix de la variable sortante}
-Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (car $Y$ est la variable entrante)\\
+Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (devant être positif (car $Y$ est la variable entrante)\\
 \pagebreak
 \begin{description}
 \item[] $ -x + y + e_1 = 3$ donne $\frac{3}{1} = 3$ (1 car $y$ = $1*y$)
@@ -143,18 +143,18 @@ On n'a:
 
 Puis on crée les nouvelles équations via le nouveau $y$:
 \begin{description}
-\item[$Z = 3x + 7y$ devient] 
+\item[$Z = 3x + 7y$] devient
 \begin{description}
 \item[$Z$] = $3x + 7(x - e_1 + 3)$
 \item[$Z$] = $10x - 7e_1 + 27$
 \end{description}
-\item[$x - e_1 + 3$] est déjà normalisé
-\item[$y + e_2 = 8$ devient]
+\item[$x - e_1 = 3$] est déjà normalisé
+\item[$y + e_2 = 8$] devient
 \begin{description}
 \item[$8$] = $x -e_1 + 3 + e_2$
 \item[$5$] = $x - e_1 + e_2$
 \end{description}
-\item[$2x - y + e_3 = 28$ devient]
+\item[$2x - y + e_3 = 28$] devient
 \begin{description}
 \item[$28$] = $2x + (x - e_1 + 3) + e_3$
 \item[$25$] = $3x - e_1 + e_3$
@@ -175,8 +175,67 @@ Après cette étape nous voila avec un nouveau modèle:
 \item[] (6) $ 0 \leq y$
 \item[] (7) $ e_1,e_2,e_3 \geq 0$
 \end{description}
+\item[Variable hors base] = $x,e_1$
+\item[Variable Base] = $y,e_2,e_3$
+\item[Avec comme solution admissible] $(0,3,0,5,25) Z=21$
 \end{description}
+
 
 A ne pas oublier de vérifier la canonicité du modèle.\\
 
+\section{Seconde itération}
+\subsection{Choix de la variable entrante}
+$X$ sera choisit, donc $X$ sera notre variable entrante.\\
+
+\subsection{Choix de la variable sortante}
+\begin{description}
+\item[] $\frac{5}{1} = 5$
+\item[] $\frac{25}{3} = 8.3$
+\end{description}
+Prendre le minimum des variables, donc se sera $5$, donc $e_2$.\\
+
+\subsection{pivotage}
+\begin{description}
+\item[$x$] = $e_1 - e_2 + 5$
+\end{description}
+
+Puis on crée les nouvelles équations via le nouveau $y$:
+\begin{description}
+\item[$Z = 10x - 7e_1 + 27$] devient
+\begin{description}
+\item[$Z$] = $10(e_1 - e_2 + 5) - 7e_1 + 27$
+\item[$Z$] = $3e_1 - 10e_2 + 71$
+\end{description}
+\item[$-x + y + e_1 = 3$] devient
+\begin{description}
+\item[$3$] = $-(e_1 - e_2 + 5) + y + e_1$
+\item[$8$] = $y + e_2$
+\end{description}
+\item[$3x - e_1 + e_3 = 25$] devient
+\begin{description}
+\item[$25$] = $3(e_1 - e_2 + 5) -e_1 + e_3$
+\item[$10$] = $2e_1 - 3e_2 + e_3$
+\end{description}
+\end{description}
+\pagebreak
+\subsection{Nouveau modèle}
+Après cette étape nous voila avec un nouveau modèle:
+\begin{description}
+\item[Déterminer] $(x,y,e_1,e_2,e_3) \in \Im^5$
+\item[Maximisant] $Z = 3e_1 - 10x + 71$
+\item[sous les contraintes]:
+\begin{description}
+\item[] (1) $y + e_2 = 8$
+\item[] (2) $x - e_1 + e_2 = 5$
+\item[] (3) $2e_1 - 3e_2 + e_3 = 10$
+\item[] (5) $ 0 \leq x$
+\item[] (6) $ 0 \leq y$
+\item[] (7) $ e_1,e_2,e_3 \geq 0$
+\end{description}
+\item[Variable hors base] = $e_2,e_1$
+\item[Variable Base] = $y,x,e_3$
+\item[Avec comme solution admissible] $(5,8,0,0,10) Z=71$
+\end{description}
+
+A ne pas oublier de vérifier la canonicité du modèle.\\
 \pagebreak
