@@ -139,10 +139,40 @@ Via une table de Karnaugh:\\
 
 \section{Système de Hilbertien}
 
-gg
+g
 
-\section{Forte complétude OU théorème de finitude}
+\section{théorème de finitude}
 
 g
+
+\chapter{Logique classique et prédicat du premier ordre}
+\section{Syntaxe via les arbres}
+$\phi$ = 
+\includegraphics[scale=0.6]{img/of-occ-1.png} 
+\subsection{Occurrences libre}
+Une occurrence libre est une variable n'ayant aucun quantificateur associé de son noeud à la racine de l'arbre.\\
+par exemple le noeud $y$ ayant un comme contour un losange vert est une occurrence libre, elle sera instancié que lors de l'interprétation de $\phi$.\\
+\subsection{Occurrences liée}
+Une occurrence liée est une variable ayant un quantificateur associé, comme:
+\begin{description}
+\item[la variable $x$ entouré d'un rond rouge] est définit via le quantificateur $\forall x$ présent dans ces noeuds parent
+\item[la variable $x$ entouré d'un rond violet] est définit par le quantificateur de ces parents $\forall x$
+\item[la variable $y$ entouré d'un rond orange] via le quantificateur $\exists y$
+\end{description}
+A noté que les $x$ entouré d'un rond de couleurs rouge sont diffèrent des $x$ entouré avec un rond orange, donc on peut tout bien renommer les $x$ de couleur orangé en $z$ sans changer le sens de $\phi$.\\
+Les occurrences liée se lient sur leur premier père le définissant, comme le $y$ orange qui se définit que sur le $\exists y$ le plus proche de lui.\\
+\subsection{Occurrences quantifié}
+Les occurrences quantifié sont toutes les variable positionné derrière un quantificateur, celle ci montre comme dans la logique classique, le $\forall$ (où quelque soit) ou $\exists$ (où il existe au moins un).\\
+On peut noter que sur la figure ci dessus il y a un $\exists y$ qui n'est pas associé à un $y$ en feuille, on peut s'en débarrasser sans changer le sens de $\phi$.
+
+\subsection{Vocabulaire}
+\begin{description}
+\item[Formule fermée] est une formule de $FORM_{L}$ qui ne contient aucune variable libre.
+\item[Formule instanciée] est une formule qui ne contient aucune occurrence libre ou liée de symbole de variable
+\end{description}
+
+\section{sémantique}
+
+
 
 \pagebreak
