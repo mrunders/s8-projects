@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  25 OCT 2018 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  26 OCT 2018 19:57
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -747,7 +747,12 @@ Non-PDF special ignored!
 Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
-] [2] [3])
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]  
+ []
+
+[3])
 \tf@toc=\write3
 \openout3 = `_memo.toc'.
 
@@ -1034,7 +1039,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--225
 
  []
 
-) (ro.tex [33 <./img/of-fo-sem_2.png (PNG copy)>] [34
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+) [33 <./img/of-fo-sem_2.png (PNG copy)>] (ro.tex [34
 
 ]
 Chapter 13.
@@ -1102,15 +1117,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[42] [43]) (rcr.tex [44]
+[42] [43]) (rcr.tex [44] [45
+
+]
 Chapter 16.
-[45
 
-]) [46] (xml.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
+[46
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
+
+ []
+
+[47]) [48] (xml.tex
 Chapter 17.
-[47
+[49
 
-]) [48] (_memo.aux) ) 
+]) [50] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
  11632 strings out of 493323
  190028 string characters out of 3139963
@@ -1139,11 +1171,12 @@ ic/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts
 ><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Progr
 amFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/Mik
 Tex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/font
-s/type1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/typ
-e1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (53 pages, 482645 bytes).
+s/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pu
+blic/amsfonts/symbols/msbm7.pfb>
+Output written on _memo.pdf (55 pages, 499167 bytes).
 PDF statistics:
- 642 PDF objects out of 1000 (max. 8388607)
+ 654 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -184,8 +184,8 @@ On peut noter que sur la figure ci dessus il y a un $\exists y$ qui n'est pas as
 \section{Sémantique}
 Soit $t$ un terme de $TERM_L$, la sémantique de $t$ dans l'interprétation de $I$ pour l'assignation $X_i$ noté $[|t|](I)(X_i)$ est l'élément de $D_i$ défini inductivement.
 
-$\phi$ = \\
 \begin{center}
+$\phi$ = \\
 \includegraphics[scale=0.4]{img/of-fo-sem.png} 
 \end{center}
 
@@ -214,14 +214,25 @@ On peut calculer cette sous formule en appliquant chaque terme dans l'interprét
 $\| x + 2 \| (I)(X_i)$ = $+_i ( \| x \| (I)(X_i), \| 2 \| (I) (X_i))$ = $+_i (5,3) = 8$\\
 $\| \phi \| (I)(X_i) =$ $ =_i(8,10) = 0 (faux)$\\
 
-$\psi$ = \\
 \begin{center}
 \includegraphics[scale=0.4]{img/of-fo-sem_2.png} 
+$\psi$ = \\
 \end{center}
-
-$\| \phi \| (I)(X_i)[x \leftarrow 7]) =$\\
+$\| \psi \| (I)(X_i)[x \leftarrow 7]) =$\\
 $ =_i ( +_i (\| x\| (I)(X_i [x \leftarrow 7 ]), 3), \| y \| (I)(X_i[x \leftarrow 7])) = $\\
 $ =_i ( +_i (7,3), 10) = $\\
-$^=_i (10,10) = 1(vrai)$\\
+$ =_i (10,10) = 1(vrai)$\\
+
+Le quantificateur $\forall$ ou $\exists$ est plus prioritaire que les variables assigné dans $X_i$.\\
+
+Soit $\phi$ la formule $\phi$ ci dessus, la formule interprété avec deux assignations différente:
+\begin{description}
+\item[$X_i^1$] $x \rightarrow 5, y \rightarrow 10$
+\item[$X_i^2$] $x \rightarrow 6, y \rightarrow 10$
+\end{description}
+
+L'interprétation de $\phi$ avec $X_i^1$ est équivalent à $\phi$ avec $X_i^2$ car le symbole de quantification $\exists$ est plus prioritaire que les assignations.\\
+
+
 
 \pagebreak

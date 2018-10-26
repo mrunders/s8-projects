@@ -42,7 +42,7 @@ $\ell_{ALC}, C \sqsubseteq C, \sqsupseteq C$\\
 
 \subsection{Sémantique}
 \begin{description}
-\item[$\iota \Vdash C \sqsubseteq D$] $(\iota satisfait C \sqsubseteq D)$ si $C^I \subseteq D^I$
+\item[$\iota \Vdash C \sqsubseteq D$] $(\iota satisfait C \sqsubseteq D)$ si $C^I \sqseteq D^I$
 \item[$\iota \Vdash C \equiv D$] $\iota \Vdash C \sqsubseteq D$ et $\iota \Vdash C \sqsupseteq D$
 \end{description}
 
@@ -55,21 +55,18 @@ $\ell_{ALC}, C \sqsubseteq C, \sqsupseteq C$\\
 \section{TBoxes et ABoxes}
 Soit une base de connaissance $KB = \langle T,A \rangle$ où:
 \begin{description}
-\item[$T = $] 
+\item[] 
 $\begin{cases}
 EmpStud \equiv Student \sqcap Employee \\
 Student \sqcap \neg Employee \sqsubseteq \neg \exists pays.Tax \\
 EmpStud \sqcap \neg Parent \sqsubseteq \exists pays.Tax \\
 EmpStud \sqcap Parent \sqsubseteq \neg \exists pays.Tax \\
-\exists worksFor.Company \sqsubseteq Employee
-\end{cases}$
-\item[$A = $]
-$\begin{cases}
-ibm:Company \\
-mary :Parent \\
-john:EmpStud \\
-(john,ibm):worksFor \\
 \end{cases}$
 \end{description}
 
+
+
+ EmpStuduParentv¬∃pays.Tax, ∃worksFor.CompanyvEmployee
+A=
+ibm:Company, mary :Parent, john:EmpStud, (john,ibm):worksFor
 \pagebreak

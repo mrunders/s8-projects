@@ -81,5 +81,13 @@
 \contentsline {subsection}{\numberline {15.4.2}Choix de la variable sortante}{42}
 \contentsline {subsection}{\numberline {15.4.3}pivotage}{43}
 \contentsline {subsection}{\numberline {15.4.4}Nouveau mod\IeC {\`e}le}{44}
-\contentsline {chapter}{\numberline {16}Repr\IeC {\'e}sentation des connaissances et raisonnement}{45}
-\contentsline {chapter}{\numberline {17}XML}{47}
+\contentsline {part}{V\hspace {1em}Repr\IeC {\'e}sentation des connaissances et raisonnement}{45}
+\contentsline {chapter}{\numberline {16}Introduction \IeC {\`a} la logique de description}{46}
+\contentsline {section}{\numberline {16.1}Attributive Language with Complement}{46}
+\contentsline {subsection}{\numberline {16.1.1}S\IeC {\'e}mantique}{46}
+\contentsline {subsection}{\numberline {16.1.2}Propri\IeC {\'e}t\IeC {\'e}s}{47}
+\contentsline {section}{\numberline {16.2}Logique de description}{47}
+\contentsline {subsection}{\numberline {16.2.1}S\IeC {\'e}mantique}{47}
+\contentsline {subsection}{\numberline {16.2.2}Assertions}{47}
+\contentsline {section}{\numberline {16.3}TBoxes et ABoxes}{48}
+\contentsline {chapter}{\numberline {17}XML}{49}
