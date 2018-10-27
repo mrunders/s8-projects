@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  26 OCT 2018 19:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  27 OCT 2018 11:21
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -648,6 +648,55 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box34
 \enitdp@description=\count140
 )
+(E:\ProgramFiles\MikTex2.9\tex\latex\tools\multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count141
+\mult@box=\box35
+\multicol@leftmargin=\dimen157
+\c@unbalance=\count142
+\c@collectmore=\count143
+\doublecol@number=\count144
+\multicoltolerance=\count145
+\multicolpretolerance=\count146
+\full@width=\dimen158
+\page@free=\dimen159
+\premulticols=\dimen160
+\postmulticols=\dimen161
+\multicolsep=\skip47
+\multicolbaselineskip=\skip48
+\partial@page=\box36
+\last@line=\box37
+\maxbalancingoverflow=\dimen162
+\mult@rightbox=\box38
+\mult@grightbox=\box39
+\mult@gfirstbox=\box40
+\mult@firstbox=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\c@columnbadness=\count147
+\c@finalcolumnbadness=\count148
+\last@try=\dimen163
+\multicolovershoot=\dimen164
+\multicolundershoot=\dimen165
+\mult@nat@firstbox=\box59
+\colbreak@box=\box60
+\mc@col@check@num=\count149
+)
 
 LaTeX Warning: Unused global option(s):
     [french].
@@ -655,30 +704,30 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count141
-\scratchdimen=\dimen157
-\scratchbox=\box35
-\nofMPsegments=\count142
-\nofMParguments=\count143
+\scratchcounter=\count150
+\scratchdimen=\dimen166
+\scratchbox=\box61
+\nofMPsegments=\count151
+\nofMParguments=\count152
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count144
-\MPscratchDim=\dimen158
-\MPnumerator=\count145
-\makeMPintoPDFobject=\count146
+\MPscratchCnt=\count153
+\MPscratchDim=\dimen167
+\MPnumerator=\count154
+\makeMPintoPDFobject=\count155
 \everyMPtoPDFconversion=\toks40
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -725,13 +774,13 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count147
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+\c@lstlisting=\count156
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1122,32 +1171,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 ]
 Chapter 16.
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
 [46
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 30--32
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--42
-
- []
-
-[47]) [48] (xml.tex
+] [47]
 Chapter 17.
-[49
 
-]) [50] (_memo.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
+
+ []
+
+[48
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+[49]) [50] (xml.tex
+Chapter 18.
+[51
+
+]) [52] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11632 strings out of 493323
- 190028 string characters out of 3139963
- 255281 words of memory out of 3000000
- 14968 multiletter control sequences out of 15000+200000
+ 11745 strings out of 493323
+ 191747 string characters out of 3139963
+ 259835 words of memory out of 3000000
+ 15077 multiletter control sequences out of 15000+200000
  21417 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,13n,40p,444b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1174,9 +1227,9 @@ Tex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/font
 s/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pu
 blic/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (55 pages, 499167 bytes).
+Output written on _memo.pdf (57 pages, 501688 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
+ 660 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

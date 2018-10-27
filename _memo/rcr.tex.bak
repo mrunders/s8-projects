@@ -1,6 +1,29 @@
 \part{Représentation des connaissances et raisonnement}
 \pagebreak
 
+\chapter{Logique propositionnel}
+\section{Vocabulaire}
+Les $Logiques propositionnel$ sont définit via les symboles suivant:\\
+$\top, \bot, C, \neg C, C \wedge C, C \vee C, C \Rightarrow C$ \\
+
+\begin{description}
+\item[Littéral] est un atome ou la négation d'un atome
+\item[Clause] est une disjonction de littéraux
+\item[Cube] est une conjonction de littéraux
+\item[CNF] est une forme normal conjonctive (une conjonction de clauses)
+\item[DNF] est une forme normal disjonctive (une disjonction de cubes)
+\end{description}
+
+\section{cohérence d'un ensemble de clauses}
+Soit K un ensemble de clauses pouvant être réduit via les axiomes:
+\begin{description}
+\item[] $x \vee x \vee y_1 \vee ... y_n \equiv x \vee y_1 \vee ... y_n$
+\item[] $x \vee \neg x \vee y_1 \vee ... y_n \equiv `top$
+\item[] $x \vee \top \equiv \top$
+\item[] $x \vee \bot \equiv x$
+\item[] Si K est vide alors K est c
+\end{description}
+
 \chapter{Introduction à la logique de description}
 \section{Attributive Language with Complement}
 
@@ -27,14 +50,20 @@ Tuple $\iota =_{def} \langle \delta^I, .^I \rangle$ où
 \end{description}
 
 \subsection{Propriétés}
-Pour toutes les interprétations $\iota = \langle \Delta^I, .^I \rangle$, et pour tout $C,D \in \ell_{ALC}$:\\
+\begin{multicols}{2}
+[
+Pour toutes les interprétations $\iota = \langle \Delta^I, .^I \rangle$, et pour tout $C,D \in \ell_{ALC}$:
+]
 \begin{description}
 \item[$(\neg \neg C)^I$] $= C^I$
 \item[$(\neg (C \sqcap D))^I$] $= ( \neg C \sqcup \neg D)^I$
 \item[$(\neg (C \sqcup D))^I$] $= ( \neg C \sqcap \neg D)^I$
 \item[$(\neg \forall r.C)^I$] $= (\exists r.\neg C)^I$
 \item[$(\neg \exists r.C)^I$] $= (\forall r.\neg C)^I$
+\item[$\exists r. \bot $] $\equiv \bot $
+\item[$\forall r. \top $] $\equiv \top $
 \end{description}
+\end{multicols}
 
 \section{Logique de description}
 Définit via les symboles suivant:\\
@@ -42,7 +71,7 @@ $\ell_{ALC}, C \sqsubseteq C, \sqsupseteq C$\\
 
 \subsection{Sémantique}
 \begin{description}
-\item[$\iota \Vdash C \sqsubseteq D$] $(\iota satisfait C \sqsubseteq D)$ si $C^I \sqseteq D^I$
+\item[$\iota \Vdash C \sqsubseteq D$] $(\iota satisfait C \sqsubseteq D)$ si $C^I \subseteq D^I$
 \item[$\iota \Vdash C \equiv D$] $\iota \Vdash C \sqsubseteq D$ et $\iota \Vdash C \sqsupseteq D$
 \end{description}
 
@@ -55,18 +84,20 @@ $\ell_{ALC}, C \sqsubseteq C, \sqsupseteq C$\\
 \section{TBoxes et ABoxes}
 Soit une base de connaissance $KB = \langle T,A \rangle$ où:
 \begin{description}
-\item[] 
+\item[$T = $] 
 $\begin{cases}
 EmpStud \equiv Student \sqcap Employee \\
 Student \sqcap \neg Employee \sqsubseteq \neg \exists pays.Tax \\
 EmpStud \sqcap \neg Parent \sqsubseteq \exists pays.Tax \\
 EmpStud \sqcap Parent \sqsubseteq \neg \exists pays.Tax \\
+\exists worksFor.Company \sqsubseteq Employee
+\end{cases}$
+\item[$A = $]
+$\begin{cases}
+ibm:Company \\
+mary :Parent \\
+john:EmpStud \\
+(john,ibm):worksFor \\
 \end{cases}$
 \end{description}
-
-
-
- EmpStuduParentv¬∃pays.Tax, ∃worksFor.CompanyvEmployee
-A=
-ibm:Company, mary :Parent, john:EmpStud, (john,ibm):worksFor
 \pagebreak

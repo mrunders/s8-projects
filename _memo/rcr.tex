@@ -1,6 +1,32 @@
 \part{Représentation des connaissances et raisonnement}
 \pagebreak
 
+\chapter{Logique propositionnel}
+\section{Vocabulaire}
+Les $Logiques propositionnel$ sont définit via les symboles suivant:\\
+$\top, \bot, C, \neg C, C \wedge C, C \vee C, C \Rightarrow C$ \\
+
+\begin{description}
+\item[Littéral] est un atome ou la négation d'un atome
+\item[Clause] est une disjonction de littéraux
+\item[Cube] est une conjonction de littéraux
+\item[CNF] est une forme normal conjonctive (une conjonction de clauses)
+\item[DNF] est une forme normal disjonctive (une disjonction de cubes)
+\end{description}
+
+\section{cohérence d'un ensemble de clauses}
+Soit K un ensemble de clauses pouvant être réduit via les axiomes:
+\begin{description}
+\item[] $x \vee x \vee y_1 \vee ... y_n \equiv x \vee y_1 \vee ... y_n$
+\item[] $x \vee \neg x \vee y_1 \vee ... y_n \equiv `top$
+\item[] $x \vee \top \equiv \top$
+\item[] $x \vee \bot \equiv x$
+\item[] Si K est vide alors K est cohérente
+\item[] Si $\bot \in $ K alors K est incohérente
+\item[] $K_{x \leftarrow \top}$ est le résultat du remplacement des occurrences de $x$ par $\top$
+\item[] $K_{x \leftarrow \bot}$ est le résultat du remplacement des occurrences de $x$ par $\bot$
+\end{description}
+
 \chapter{Introduction à la logique de description}
 \section{Attributive Language with Complement}
 
@@ -27,14 +53,20 @@ Tuple $\iota =_{def} \langle \delta^I, .^I \rangle$ où
 \end{description}
 
 \subsection{Propriétés}
-Pour toutes les interprétations $\iota = \langle \Delta^I, .^I \rangle$, et pour tout $C,D \in \ell_{ALC}$:\\
+\begin{multicols}{2}
+[
+Pour toutes les interprétations $\iota = \langle \Delta^I, .^I \rangle$, et pour tout $C,D \in \ell_{ALC}$:
+]
 \begin{description}
 \item[$(\neg \neg C)^I$] $= C^I$
 \item[$(\neg (C \sqcap D))^I$] $= ( \neg C \sqcup \neg D)^I$
 \item[$(\neg (C \sqcup D))^I$] $= ( \neg C \sqcap \neg D)^I$
 \item[$(\neg \forall r.C)^I$] $= (\exists r.\neg C)^I$
 \item[$(\neg \exists r.C)^I$] $= (\forall r.\neg C)^I$
+\item[$\exists r. \bot $] $\equiv \bot $
+\item[$\forall r. \top $] $\equiv \top $
 \end{description}
+\end{multicols}
 
 \section{Logique de description}
 Définit via les symboles suivant:\\
@@ -71,5 +103,4 @@ john:EmpStud \\
 (john,ibm):worksFor \\
 \end{cases}$
 \end{description}
-
 \pagebreak
