@@ -93,4 +93,12 @@
 \contentsline {subsection}{\numberline {17.2.1}S\IeC {\'e}mantique}{49}
 \contentsline {subsection}{\numberline {17.2.2}Assertions}{49}
 \contentsline {section}{\numberline {17.3}TBoxes et ABoxes}{50}
-\contentsline {chapter}{\numberline {18}XML}{51}
+\contentsline {subsection}{\numberline {17.3.1}Subsumption}{50}
+\contentsline {subsection}{\numberline {17.3.2}Classification}{50}
+\contentsline {subsection}{\numberline {17.3.3}Instance checking}{51}
+\contentsline {subsection}{\numberline {17.3.4}Retrieval}{51}
+\contentsline {subsection}{\numberline {17.3.5}Equivalance of concept}{51}
+\contentsline {subsection}{\numberline {17.3.6}Concept satisfiability}{51}
+\contentsline {subsection}{\numberline {17.3.7}ABox consistency}{52}
+\contentsline {subsection}{\numberline {17.3.8}R\IeC {\'e}duction et consistance}{52}
+\contentsline {chapter}{\numberline {18}XML}{53}

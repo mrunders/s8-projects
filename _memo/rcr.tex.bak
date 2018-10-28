@@ -21,7 +21,10 @@ Soit K un ensemble de clauses pouvant être réduit via les axiomes:
 \item[] $x \vee \neg x \vee y_1 \vee ... y_n \equiv `top$
 \item[] $x \vee \top \equiv \top$
 \item[] $x \vee \bot \equiv x$
-\item[] Si K est vide alors K est c
+\item[] Si K est vide alors K est cohérente
+\item[] Si $\bot \in $ K alors K est incohérente
+\item[] $K_{x \leftarrow \top}$ est le résultat du remplacement des occurrences de $x$ par $\top$
+\item[] $K_{x \leftarrow \bot}$ est le résultat du remplacement des occurrences de $x$ par $\bot$
 \end{description}
 
 \chapter{Introduction à la logique de description}
@@ -86,18 +89,99 @@ Soit une base de connaissance $KB = \langle T,A \rangle$ où:
 \begin{description}
 \item[$T = $] 
 $\begin{cases}
-EmpStud \equiv Student \sqcap Employee \\
-Student \sqcap \neg Employee \sqsubseteq \neg \exists pays.Tax \\
-EmpStud \sqcap \neg Parent \sqsubseteq \exists pays.Tax \\
-EmpStud \sqcap Parent \sqsubseteq \neg \exists pays.Tax \\
-\exists worksFor.Company \sqsubseteq Employee
+\cblue{EmpStud} \equiv \cblue{Student} \sqcap \cblue{Employee} \\
+\cblue{Student} \sqcap \neg \cblue{Employee} \sqsubseteq \neg \exists  \cviolet{pays}.\cblue{Tax} \\
+\cblue{EmpStud} \sqcap \neg \cblue{Parent} \sqsubseteq \exists  \cviolet{pays}.\cblue{Tax} \\
+\cblue{EmpStud} \sqcap \cblue{Parent} \sqsubseteq \neg \exists \cviolet{pays}.\cblue{Tax} \\
+\exists \cviolet{worksFor}.\cblue{Company} \sqsubseteq \cblue{Employee}
 \end{cases}$
 \item[$A = $]
 $\begin{cases}
-ibm:Company \\
-mary :Parent \\
-john:EmpStud \\
-(john,ibm):worksFor \\
+\corange{ibm}: \cblue{Company} \\
+\corange{mary} : \cblue{Parent} \\
+\corange{john}: \cblue{EmpStud} \\
+\corange{(john,ibm)}:\cviolet{workFor} \\
 \end{cases}$
 \end{description}
+
+\subsection{Subsumption}
+D'après la TBoxes et la ABoxes ci dessus, dire que A subsume B c'est dire que A est plus spécifique que B:
+\begin{description}
+\item[] Does $\cblue{EmpStud}$ subsume $\cblue{Student} \sqcap \cblue{Employe}$ ? : yes
+\item[] Does $\cblue{Student} \sqcap \cblue{Parent}$ subsume $\cblue{EmpStud} \sqcap \cblue{Parent}$ ? : yes
+\item[] Does $\exists \cviolet{pays}.\bot$ subsume $\cblue{EmpStud}$ ? : No
+\end{description}
+
+\subsection{Classification}
+Les schémas de classification aide pour trouver les subsumptions:
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A)                    {$\cblue{EmpStud}$};
+  \node[state]         (B) [below left of=A]  {$\cblue{Student}$};
+  \node[state]         (C) [below right of=A] {$\cblue{Employes}$};
+  \node[state]         (D) [right of=C]       {$\cblue{Tax}$};
+  \node[state]         (E) [right of=D]       {$\cblue{Company}$};
+  \node[state]         (F) [right of=E]       {$\cblue{Parent}$};
+
+  \path (A) edge              node {} (B)
+            edge              node {} (C);
+\end{tikzpicture}
+
+\subsection{Instance checking}
+On n'a
+\begin{description}
+\item[$\corange{ibm}$] est une instance de $\cblue{Company}$
+\item[$\corange{mary}$] est une instance de $\cblue{Parent}$
+\item[$\corange{john}$] est une instance de $\cblue{EmpStud, Student, Employee}$
+\item[$\corange{john}$] n'est pas une instance de $\cblue{\neg Parent}$
+\item[$\corange{(john,ibm)}$] est une instance de $\cviolet{workFor}$
+\end{description}
+
+\subsection{Retrieval}
+\begin{description}
+\item[$\cblue{Student}$] $? \{ \corange{john} \}$
+\item[$\neg \exists \cviolet{pays}.\cblue{Tax}$] $? \{ \corange{mary} \}$
+\item[$\neg ( \neg \cblue{Employes} \sqcap \exists \cviolet{pays}.\cblue{Tax})$] $? \{ \corange{john}, \corange{mary} \}$
+\item[$\forall \cviolet{worksFor}.\cblue{Company}$] $? \{ \}$
+\item[$\cblue{Employee} \sqcup \forall \cviolet{pays} . \neg \cblue{Tax} \sqcup \cblue{Company}$] $? \{ \corange{ibm}, \corange{john}, \corange{mary} \}$
+\item[$\neg \cblue{Tax} \sqcup \exists \cviolet{pays} . \bot \sqcup \forall \cviolet{workdFor} . \forall \cviolet{pays} . \top$] $? \{ \corange{ibm}, \corange{john}, \corange{mary} \}$
+\end{description}
+
+\subsection{Equivalance of concept}
+\begin{description}
+\item[Are $\cblue{Student} \sqcap \cblue{Employee} \sqcap \neg \cblue{EmpStud}$ and $\exists \cviolet{worksFor}.\bot$] équivalent? $Yes$
+\item[Are $\cblue{Student} \sqcap \forall \cviolet{worksFor}.\neg \cblue{Company}$ and $\cblue{Student} \sqcap \neg \cblue{Employee}$] équivalent? $No$
+\end{description}
+
+\subsection{Concept satisfiability}
+\begin{description}
+\item[$\cblue{EmpStud} \sqcap \cblue{Parent} \sqcap \exists \cviolet{pays}.\top $] satisfiable? $Yep$
+\item[$\neg \forall \cviolet{worksFor}.\neg \cblue{Company} \sqcap \neg \cblue{Employee} $] satisfiable? $No$
+\item[$\cblue{Employee} \sqcap \cblue{Company} $] satisfiable ? $Yep$
+\end{description}
+
+\subsection{ABox consistency}
+\begin{description}
+\item[Is $A_2 = A \cup \{\corange{john} : \exists \cviolet{worksFor}.\neg \cblue{Company} \} $] consistent wrt $T$ ? : $Yes$
+\item[Is $A_3 = A \cup \{\corange{mary} : \exists \cviolet{pays}.\cblue{Tax} \} $] consistent wrt $T$ ? : $No$
+\end{description}
+
+\subsection{Réduction et consistance}
+Soit $KB = \langle T,A \rangle , C, D \in \iota_{ALC}, a \in I and a^` $ new in $KB$\\
+\begin{description}
+\item[Concept subsumption wrt $T$]: $KB \vDash C \sqsubseteq D$ ssi $\langle T, A \cup \{ a^` : C \sqcap \neg D \} \rangle$ est inconsistant
+\item[Instance chacking]: $KB \vDash a : C$ ssi $\langle T, A \cup \{ a : \neg C \} \rangle$ est inconsistant
+\item[Concept satisfiability wrt $T$]: $C$ est satisfiable wrt $T$ ssi $\langle T,A \cup \{ a^` : C \} \rangle$ est consistent
+
+\begin{description}
+\item[$KB \vDash \cblue{EmpStud} \sqcap \cblue{Parent} \sqsubseteq \neg \exists \cviolet{pays}.\cblue{Tax} \sqcap \cblue{Employee} ?$] $KB \cup \{ \corange{a} : \cblue{EmpStud} \sqcap \cblue{Parent} \sqcap (\exists \cviolet{pays}.\cblue{Tax} \sqcup \neg \cblue{Employee} ) \} \vDash \bot ?,$ for $\corange{a}$ new
+\item[$KB \vDash \corange{john} : \cblue{Student} \sqcap \exists \cviolet{empBy}.\top ?$] $KB \cup \{ \corange{john} : \neg (\cblue{Student} \sqcap \exists \cviolet{empBy}.\top)\} \vDash \bot ?$
+\item[Is $\cblue{EmpStud} \sqcap \neg \exists \cviolet{pays}
+\end{description}
+
+\end{description}
+
 \pagebreak

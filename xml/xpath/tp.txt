@@ -1,0 +1,42 @@
+Ecrire les expressions XPath qui retournent (le noeud contextuel est la racine) : 
+
+    tous les noeuds éléments de nom attr
+    "movie/filmography/*/attr"
+
+    tous les noeuds éléments qui ont un attribut order
+    "movie/filmography/*[@order]"
+
+    le fils de nom attr de cast
+    "movie/filmography/cast/attr"
+
+    le premier fils de nom name d'un Composer
+    "movie/filmography/Composer/name[position()=1]"
+
+    le noeud attribut de nom Crew (attribut de filmography)
+    "movie/filmography/@Crew"
+
+    le quatrième fils de filmography
+    "movie/filmography/*[position()=4]"
+
+    les quatre premiers fils de filmography
+    "movie/filmography/*[position()<=4]"
+
+    les noeuds attributs de nom order
+    "movie/filmography/*/@order"
+
+Le noeud contextuel est maintenant remainder pour toutes les questions suivantes~:
+
+    retournez le sous-arbre de racine Editor
+    "../editor"
+
+    le nombre d'acteurs de premier plan (cités dans cast)
+    "count(../cast/name)"
+
+    le nombre total de comédiens (cast, remainder, miscellaneous)
+    "count(movie/filmography/cast/name | movie/filmography/remainder/name | movie/filmography/Miscellaneous/name)"
+
+    une chaîne de caractères présentant le film : titre (année) - réalisateur
+    "concat(movie/title/text(), ' (', movie/year/text(), ') - ', movie/filmography/Director/name)"
+
+    l'ensemble des intervenants dont le prénom est Bob
+    ?

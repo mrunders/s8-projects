@@ -184,10 +184,22 @@ On peut noter que sur la figure ci dessus il y a un $\exists y$ qui n'est pas as
 \section{Sémantique}
 Soit $t$ un terme de $TERM_L$, la sémantique de $t$ dans l'interprétation de $I$ pour l'assignation $X_i$ noté $[|t|](I)(X_i)$ est l'élément de $D_i$ défini inductivement.
 
-\begin{center}
-$\phi$ = \\
-\includegraphics[scale=0.4]{img/of-fo-sem.png} 
-\end{center}
+$\phi = $\\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (B)                    {$=$};
+  \node[state]         (C) [below left of=B]  {$+$};
+  \node[state]         (D) [below left of=C]  {$x$};
+  \node[state]         (E) [below right of=C] {$2$};
+  \node[state]         (F) [below right of=B] {$y$};
+
+  \path (B) edge 			  node {} (C)
+        	edge 			  node {} (F)
+        (C) edge 			  node {} (D)
+        	edge 			  node {} (E);
+\end{tikzpicture}
 
 \begin{description}
 \item[$=$] $\in \Re$ d'arriter 2
@@ -214,10 +226,26 @@ On peut calculer cette sous formule en appliquant chaque terme dans l'interprét
 $\| x + 2 \| (I)(X_i)$ = $+_i ( \| x \| (I)(X_i), \| 2 \| (I) (X_i))$ = $+_i (5,3) = 8$\\
 $\| \phi \| (I)(X_i) =$ $ =_i(8,10) = 0 (faux)$\\
 
-\begin{center}
-\includegraphics[scale=0.4]{img/of-fo-sem_2.png} 
+
 $\psi$ = \\
-\end{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A)                    {$\exists x$};
+  \node[state]         (B) [below of=A]       {$=$};
+  \node[state]         (C) [below left of=B]  {$+$};
+  \node[state]         (D) [below left of=C]  {$x$};
+  \node[state]         (E) [below right of=C] {$2$};
+  \node[state]         (F) [below right of=B] {$y$};
+
+  \path (A) edge              node {} (B)
+        (B) edge 			  node {} (C)
+        	edge 			  node {} (F)
+        (C) edge 			  node {} (D)
+        	edge 			  node {} (E);
+\end{tikzpicture}
+
 $\| \psi \| (I)(X_i)[x \leftarrow 7]) =$\\
 $ =_i ( +_i (\| x\| (I)(X_i [x \leftarrow 7 ]), 3), \| y \| (I)(X_i[x \leftarrow 7])) = $\\
 $ =_i ( +_i (7,3), 10) = $\\

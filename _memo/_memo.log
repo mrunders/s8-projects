@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  27 OCT 2018 11:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 OCT 2018 13:23
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -697,6 +697,263 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box60
 \mc@col@check@num=\count149
 )
+(E:\ProgramFiles\MikTex2.9\tex\latex\tools\verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read1
+)
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\frontendlayer\tikz.sty
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\basiclayer\pgf.sty
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks41
+\pgfutil@tempdima=\dimen166
+\pgfutil@tempdimb=\dimen167
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+\pgfutil@abb=\box61
+
+(E:\ProgramFiles\MikTex2.9\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfkeys.code.tex)
+\pgf@x=\dimen168
+\pgf@y=\dimen169
+\pgf@xa=\dimen170
+\pgf@ya=\dimen171
+\pgf@xb=\dimen172
+\pgf@yb=\dimen173
+\pgf@xc=\dimen174
+\pgf@yc=\dimen175
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count150
+\c@pgf@countb=\count151
+\c@pgf@countc=\count152
+\c@pgf@countd=\count153
+\t@pgf@toka=\toks42
+\t@pgf@tokb=\toks43
+\t@pgf@tokc=\toks44
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+))) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count154
+\pgfsyssoftpath@bigbuffer@items=\count155
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\math\pgfmath.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code
+.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count156
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.
+tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen194
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.co
+de.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepathprocessing.cod
+e.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen198
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen199
+\pgf@sys@shading@range@num=\count157
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box65
+)) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoretransparency.code.
+tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box66
+) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen256
+\pgf@nodesepend=\dimen257
+)
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\utilities\pgffor.sty
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\utilities\pgfkeys.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfkeys.code.tex))
+(E:\ProgramFiles\MikTex2.9\tex\latex\pgf\math\pgfmath.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\math\pgfmath.code.tex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\math\pgfmath.code.tex)
+\pgffor@iter=\dimen258
+\pgffor@skip=\dimen259
+\pgffor@stack=\toks45
+\pgffor@toks=\toks46
+))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.cod
+e.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count158
+\pgfplotmarksize=\dimen260
+)
+\tikz@lastx=\dimen261
+\tikz@lasty=\dimen262
+\tikz@lastxsaved=\dimen263
+\tikz@lastysaved=\dimen264
+\tikzleveldistance=\dimen265
+\tikzsiblingdistance=\dimen266
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count159
+\tikznumberofchildren=\count160
+\tikznumberofcurrentchild=\count161
+\tikz@fig@count=\count162
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count163
+\pgfmatrixcurrentcolumn=\count164
+\pgf@matrix@numberofcolumns=\count165
+)
+\tikz@expandcount=\count166
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+raryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen267
+))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+raryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v3.0.1a (rcs-revision 1.3)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+raryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
+)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.mu
+ltipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+
+\pgfnodepartlowerbox=\box71
+\pgfnodeparttwobox=\box72
+\pgfnodepartthreebox=\box73
+\pgfnodepartfourbox=\box74
+\pgfnodeparttwentybox=\box75
+\pgfnodepartnineteenbox=\box76
+\pgfnodeparteighteenbox=\box77
+\pgfnodepartseventeenbox=\box78
+\pgfnodepartsixteenbox=\box79
+\pgfnodepartfifteenbox=\box80
+\pgfnodepartfourteenbox=\box81
+\pgfnodepartthirteenbox=\box82
+\pgfnodeparttwelvebox=\box83
+\pgfnodepartelevenbox=\box84
+\pgfnodeparttenbox=\box85
+\pgfnodepartninebox=\box86
+\pgfnodeparteightbox=\box87
+\pgfnodepartsevenbox=\box88
+\pgfnodepartsixbox=\box89
+\pgfnodepartfivebox=\box90
+)))
 
 LaTeX Warning: Unused global option(s):
     [french].
@@ -704,31 +961,31 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count150
-\scratchdimen=\dimen166
-\scratchbox=\box61
-\nofMPsegments=\count151
-\nofMParguments=\count152
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count153
-\MPscratchDim=\dimen167
-\MPnumerator=\count154
-\makeMPintoPDFobject=\count155
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count167
+\scratchdimen=\dimen268
+\scratchbox=\box91
+\nofMPsegments=\count168
+\nofMParguments=\count169
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count170
+\MPscratchDim=\dimen269
+\MPnumerator=\count171
+\makeMPintoPDFobject=\count172
+\everyMPtoPDFconversion=\toks48
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -774,13 +1031,15 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count156
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+\c@lstlisting=\count173
+
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -802,8 +1061,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--84
  []
 
 [3])
-\tf@toc=\write3
-\openout3 = `_memo.toc'.
+\tf@toc=\write4
+\openout4 = `_memo.toc'.
 
  [4] (fdd.tex [1
 
@@ -941,7 +1200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
 ]
 Chapter 9.
-<img/ap-linear-regression_1.png, id=88, 640.3925pt x 720.6925pt>
+<img/ap-linear-regression_1.png, id=91, 640.3925pt x 720.6925pt>
 File: img/ap-linear-regression_1.png Graphic file (type png)
 
 <use img/ap-linear-regression_1.png>
@@ -975,19 +1234,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--223
 Chapter 11.
 [24
 
-] <img/of-coupure.png, id=116, 294.09875pt x 243.91125pt>
+] <img/of-coupure.png, id=119, 294.09875pt x 243.91125pt>
 File: img/of-coupure.png Graphic file (type png)
 
 <use img/of-coupure.png>
 Package pdftex.def Info: img/of-coupure.png used on input line 35.
 (pdftex.def)             Requested size: 88.2303pt x 73.17393pt.
- <img/of-ou.png, id=117, 281.05pt x 136.51pt>
+ <img/of-ou.png, id=120, 281.05pt x 136.51pt>
 File: img/of-ou.png Graphic file (type png)
 
 <use img/of-ou.png>
 Package pdftex.def Info: img/of-ou.png used on input line 37.
 (pdftex.def)             Requested size: 84.31564pt x 40.95331pt.
- <img/of-monotomie.png, id=118, 175.65625pt x 198.7425pt>
+ <img/of-monotomie.png, id=121, 175.65625pt x 198.7425pt>
 File: img/of-monotomie.png Graphic file (type png)
 
 <use img/of-monotomie.png>
@@ -1014,14 +1273,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
  []
 
-<img/of-arbre-shannon_1.png, id=126, 438.63875pt x 427.5975pt>
+<img/of-arbre-shannon_1.png, id=129, 438.63875pt x 427.5975pt>
 File: img/of-arbre-shannon_1.png Graphic file (type png)
 
 <use img/of-arbre-shannon_1.png>
 Package pdftex.def Info: img/of-arbre-shannon_1.png used on input line 86.
 (pdftex.def)             Requested size: 175.45238pt x 171.03596pt.
 
-<img/of-remplacement.png, id=127, 350.30875pt x 156.585pt>
+<img/of-remplacement.png, id=130, 350.30875pt x 156.585pt>
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
@@ -1049,7 +1308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
 [29]
 Chapter 12.
-<img/of-occ-1.png, id=137, 317.185pt x 297.11pt>
+<img/of-occ-1.png, id=140, 317.185pt x 297.11pt>
 File: img/of-occ-1.png Graphic file (type png)
  <use img/of-occ-1.png>
 Package pdftex.def Info: img/of-occ-1.png used on input line 159.
@@ -1066,39 +1325,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-[31] <img/of-fo-sem.png, id=144, 165.61874pt x 161.60374pt>
-File: img/of-fo-sem.png Graphic file (type png)
-
-<use img/of-fo-sem.png>
-Package pdftex.def Info: img/of-fo-sem.png used on input line 189.
-(pdftex.def)             Requested size: 66.2463pt x 64.64035pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 225--228
 
  []
 
-<img/of-fo-sem_2.png, id=145, 165.61874pt x 200.75pt>
-File: img/of-fo-sem_2.png Graphic file (type png)
-
-<use img/of-fo-sem_2.png>
-Package pdftex.def Info: img/of-fo-sem_2.png used on input line 218.
-(pdftex.def)             Requested size: 66.2463pt x 80.29857pt.
- [32 <./img/of-fo-sem.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 221--225
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
-) [33 <./img/of-fo-sem_2.png (PNG copy)>] (ro.tex [34
+) [33] (ro.tex [34
 
 ]
 Chapter 13.
@@ -1116,7 +1363,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--31
 
 ]
 Chapter 14.
-<img/ro-pl-2var_0.png, id=159, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_0.png, id=160, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
@@ -1125,7 +1372,7 @@ Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
  [36
 
 ]
-<img/ro-pl-2var_1.png, id=163, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=164, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
@@ -1191,19 +1438,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[49]) [50] (xml.tex
-Chapter 18.
-[51
+[49]
+Overfull \hbox (54.45921pt too wide) in paragraph at lines 131--132
+[][] 
+ []
 
-]) [52] (_memo.aux) ) 
+[50]
+Overfull \hbox (23.76093pt too wide) in paragraph at lines 155--156
+[]\T1/cmr/m/n/12 équivalent? $\OML/cmm/m/it/12 Yes$ 
+ []
+
+
+Overfull \hbox (38.79239pt too wide) in paragraph at lines 156--157
+[]\T1/cmr/m/n/12 équivalent?
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
+
+ []
+
+) [52] (xml.tex
+Chapter 18.
+[53
+
+]) [54] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 11745 strings out of 493323
- 191747 string characters out of 3139963
- 259835 words of memory out of 3000000
- 15077 multiletter control sequences out of 15000+200000
+ 17423 strings out of 493323
+ 332301 string characters out of 3139963
+ 401910 words of memory out of 3000000
+ 20586 multiletter control sequences out of 15000+200000
  21417 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,40p,444b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,13n,68p,444b,724s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
 appen\ec\dpi600\ecti1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
 our\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts
@@ -1227,9 +1494,9 @@ Tex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/font
 s/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pu
 blic/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (57 pages, 501688 bytes).
+Output written on _memo.pdf (59 pages, 510267 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
+ 673 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
