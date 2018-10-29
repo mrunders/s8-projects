@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 OCT 2018 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 OCT 2018 20:12
 entering extended mode
 **./rcr.tex
 (rcr.tex
@@ -2492,10 +2492,10 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-<argument> \textcolor 
-                      
-l.92 \textcolor
-               {blue}{EmpStud} \equiv \textcolor{blue}{Student} \sqcap \text...
+<argument> \cblue 
+                  
+l.92 \cblue
+           {EmpStud} \equiv \cblue{Student} \sqcap \cblue{Employee} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2503,8 +2503,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 \textcolor{blue}{EmpStud} \equiv \textcolor
-                                                {blue}{Student} \sqcap \text...
+l.92 \cblue{EmpStud} \equiv \cblue
+                                  {Student} \sqcap \cblue{Employee} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2512,8 +2512,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.92 ...textcolor{blue}{Student} \sqcap \textcolor
-                                                  {blue}{Employee} \\
+l.92 ...Stud} \equiv \cblue{Student} \sqcap \cblue
+                                                  {Employee} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2521,10 +2521,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.93 \textcolor
-               {blue}{Student} \sqcap \neg \textcolor{blue}{Employee} \sqsub...
+<recently read> \cblue 
+                       
+l.93 \cblue
+           {Student} \sqcap \neg \cblue{Employee} \sqsubseteq \neg \exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2532,8 +2532,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.93 ...olor{blue}{Student} \sqcap \neg \textcolor
-                                                  {blue}{Employee} \sqsubset...
+l.93 \cblue{Student} \sqcap \neg \cblue
+                                       {Employee} \sqsubseteq \neg \exists  ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2541,8 +2541,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.93 ...oyee} \sqsubseteq \neg \exists  \textcolor
-                                                  {violet}{pays}.\textcolor{...
+l.93 ...ployee} \sqsubseteq \neg \exists  \cviolet
+                                                  {pays}.\cblue{Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2550,8 +2550,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.93 ...xists  \textcolor{violet}{pays}.\textcolor
-                                                  {blue}{Tax} \\
+l.93 ...bseteq \neg \exists  \cviolet{pays}.\cblue
+                                                  {Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2559,10 +2559,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.94 \textcolor
-               {blue}{EmpStud} \sqcap \neg \textcolor{blue}{Parent} \sqsubse...
+<recently read> \cblue 
+                       
+l.94 \cblue
+           {EmpStud} \sqcap \neg \cblue{Parent} \sqsubseteq \exists  \cviole...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2570,8 +2570,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.94 ...olor{blue}{EmpStud} \sqcap \neg \textcolor
-                                                  {blue}{Parent} \sqsubseteq...
+l.94 \cblue{EmpStud} \sqcap \neg \cblue
+                                       {Parent} \sqsubseteq \exists  \cviole...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2579,8 +2579,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.94 ...e}{Parent} \sqsubseteq \exists  \textcolor
-                                                  {violet}{pays}.\textcolor{...
+l.94 ...blue{Parent} \sqsubseteq \exists  \cviolet
+                                                  {pays}.\cblue{Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2588,8 +2588,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.94 ...xists  \textcolor{violet}{pays}.\textcolor
-                                                  {blue}{Tax} \\
+l.94 ...\sqsubseteq \exists  \cviolet{pays}.\cblue
+                                                  {Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2597,10 +2597,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.95 \textcolor
-               {blue}{EmpStud} \sqcap \textcolor{blue}{Parent} \sqsubseteq \...
+<recently read> \cblue 
+                       
+l.95 \cblue
+           {EmpStud} \sqcap \cblue{Parent} \sqsubseteq \neg \exists \cviolet...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2608,8 +2608,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.95 \textcolor{blue}{EmpStud} \sqcap \textcolor
-                                                {blue}{Parent} \sqsubseteq \...
+l.95 \cblue{EmpStud} \sqcap \cblue
+                                  {Parent} \sqsubseteq \neg \exists \cviolet...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2617,8 +2617,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.95 ...arent} \sqsubseteq \neg \exists \textcolor
-                                                  {violet}{pays}.\textcolor{...
+l.95 ...{Parent} \sqsubseteq \neg \exists \cviolet
+                                                  {pays}.\cblue{Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2626,8 +2626,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.95 ...exists \textcolor{violet}{pays}.\textcolor
-                                                  {blue}{Tax} \\
+l.95 ...ubseteq \neg \exists \cviolet{pays}.\cblue
+                                                  {Tax} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2635,8 +2635,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.96 \exists \textcolor
-                       {violet}{worksFor}.\textcolor{blue}{Company} \sqsubse...
+l.96 \exists \cviolet
+                     {worksFor}.\cblue{Company} \sqsubseteq \cblue{Employee}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2644,8 +2644,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.96 ...ts \textcolor{violet}{worksFor}.\textcolor
-                                                  {blue}{Company} \sqsubsete...
+l.96 \exists \cviolet{worksFor}.\cblue
+                                      {Company} \sqsubseteq \cblue{Employee}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2653,8 +2653,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.96 ...olor{blue}{Company} \sqsubseteq \textcolor
-                                                  {blue}{Employee}
+l.96 ...rksFor}.\cblue{Company} \sqsubseteq \cblue
+                                                  {Employee}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2662,73 +2662,73 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (80.96042pt too wide) in paragraph at lines 91--98
-[] [][] \OMS/cmsy/m/n/10 
+Overfull \hbox (63.10735pt too wide) in paragraph at lines 91--98
+[] [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (60.03836pt too wide) in paragraph at lines 91--98
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (42.18529pt too wide) in paragraph at lines 91--98
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (62.2247pt too wide) in paragraph at lines 91--98
-[][][] 
+Overfull \hbox (44.37163pt too wide) in paragraph at lines 91--98
+[][] 
  []
 
 
-Overfull \hbox (60.03836pt too wide) in paragraph at lines 91--98
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (42.18529pt too wide) in paragraph at lines 91--98
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (79.4469pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 :[][] v
+Overfull \hbox (61.59383pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 :[] v
  []
 
 
-Overfull \hbox (96.29948pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 :9[][]\OML/cmm/m/it/10 :[][][] 
+Overfull \hbox (53.50009pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 :9[]\OML/cmm/m/it/10 :[][] 
  []
 
 
-Overfull \hbox (67.53833pt too wide) in paragraph at lines 91--98
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (49.68526pt too wide) in paragraph at lines 91--98
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (67.2293pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 :[][] v
+Overfull \hbox (49.37622pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 :[] v
  []
 
 
-Overfull \hbox (89.6328pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 9[][]\OML/cmm/m/it/10 :[][][] 
+Overfull \hbox (46.8334pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 9[]\OML/cmm/m/it/10 :[][] 
  []
 
 
-Overfull \hbox (67.53833pt too wide) in paragraph at lines 91--98
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (49.68526pt too wide) in paragraph at lines 91--98
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (60.5626pt too wide) in paragraph at lines 91--98
-[][] \OMS/cmsy/m/n/10 v
+Overfull \hbox (42.70953pt too wide) in paragraph at lines 91--98
+[] \OMS/cmsy/m/n/10 v
  []
 
 
-Overfull \hbox (96.29948pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 :9[][]\OML/cmm/m/it/10 :[][][] 
+Overfull \hbox (53.50009pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 :9[]\OML/cmm/m/it/10 :[][] 
  []
 
 
-Overfull \hbox (149.48845pt too wide) in paragraph at lines 91--98
-\OMS/cmsy/m/n/10 9[][]\OML/cmm/m/it/10 :[][] \OMS/cmsy/m/n/10 v
+Overfull \hbox (106.68906pt too wide) in paragraph at lines 91--98
+\OMS/cmsy/m/n/10 9[]\OML/cmm/m/it/10 :[] \OMS/cmsy/m/n/10 v
  []
 
 
-Overfull \hbox (62.2247pt too wide) in paragraph at lines 91--98
-[][]$ 
+Overfull \hbox (44.37163pt too wide) in paragraph at lines 91--98
+[]$ 
  []
 
 
@@ -2744,10 +2744,10 @@ Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-<argument> \textcolor 
-                      
-l.100 \textcolor
-                {orange}{ibm}: \textcolor{blue}{Company} \\
+<argument> \corange 
+                    
+l.100 \corange
+              {ibm}: \cblue{Company} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2755,8 +2755,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.100 \textcolor{orange}{ibm}: \textcolor
-                                         {blue}{Company} \\
+l.100 \corange{ibm}: \cblue
+                           {Company} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2764,10 +2764,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.101 \textcolor
-                {orange}{mary} : \textcolor{blue}{Parent} \\
+<recently read> \corange 
+                         
+l.101 \corange
+              {mary} : \cblue{Parent} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2775,8 +2775,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.101 \textcolor{orange}{mary} : \textcolor
-                                           {blue}{Parent} \\
+l.101 \corange{mary} : \cblue
+                             {Parent} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2784,10 +2784,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.102 \textcolor
-                {orange}{john}: \textcolor{blue}{EmpStud} \\
+<recently read> \corange 
+                         
+l.102 \corange
+              {john}: \cblue{EmpStud} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2795,8 +2795,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.102 \textcolor{orange}{john}: \textcolor
-                                          {blue}{EmpStud} \\
+l.102 \corange{john}: \cblue
+                            {EmpStud} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2804,10 +2804,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.103 \textcolor
-                {orange}{(john,ibm)}:\textcolor{violet}{workFor} \\
+<recently read> \corange 
+                         
+l.103 \corange
+              {(john,ibm)}:\cviolet{workFor} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2815,8 +2815,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.103 \textcolor{orange}{(john,ibm)}:\textcolor
-                                               {violet}{workFor} \\
+l.103 \corange{(john,ibm)}:\cviolet
+                                   {workFor} \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2837,43 +2837,43 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (62.31525pt too wide) in paragraph at lines 99--106
-[] [][] \OT1/cmr/m/n/10 :
+Overfull \hbox (31.60568pt too wide) in paragraph at lines 99--106
+[] [] \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (60.92401pt too wide) in paragraph at lines 99--106
-[][][] 
+Overfull \hbox (43.07094pt too wide) in paragraph at lines 99--106
+[][] 
  []
 
 
-Overfull \hbox (60.38205pt too wide) in paragraph at lines 99--106
-[][] \OT1/cmr/m/n/10 :
+Overfull \hbox (29.67249pt too wide) in paragraph at lines 99--106
+[] \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (50.0071pt too wide) in paragraph at lines 99--106
-[][][] 
+Overfull \hbox (32.15402pt too wide) in paragraph at lines 99--106
+[][] 
  []
 
 
-Overfull \hbox (57.56671pt too wide) in paragraph at lines 99--106
-[][] \OT1/cmr/m/n/10 :
+Overfull \hbox (26.85715pt too wide) in paragraph at lines 99--106
+[] \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (60.87164pt too wide) in paragraph at lines 99--106
-[][][] 
+Overfull \hbox (43.01857pt too wide) in paragraph at lines 99--106
+[][] 
  []
 
 
-Overfull \hbox (86.30585pt too wide) in paragraph at lines 99--106
-[][] \OT1/cmr/m/n/10 :
+Overfull \hbox (55.59628pt too wide) in paragraph at lines 99--106
+[] \OT1/cmr/m/n/10 :
  []
 
 
-Overfull \hbox (64.98807pt too wide) in paragraph at lines 99--106
-[][][] 
+Overfull \hbox (40.04175pt too wide) in paragraph at lines 99--106
+[][] 
  []
 
 ! Undefined control sequence.
@@ -3021,7 +3021,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.110 \item[]
-              Does $\textcolor{blue}{EmpStud}$ subsume $\textcolor{blue}{Stu...
+              Does $\cblue{EmpStud}$ subsume $\cblue{Student} \sqcap \cblue{...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3031,10 +3031,10 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.110 \item[] Does $\textcolor
-                              {blue}{EmpStud}$ subsume $\textcolor{blue}{Stu...
+<recently read> \cblue 
+                       
+l.110 \item[] Does $\cblue
+                          {EmpStud}$ subsume $\cblue{Student} \sqcap \cblue{...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3049,10 +3049,10 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.110 ...color{blue}{EmpStud}$ subsume $\textcolor
-                                                  {blue}{Student} \sqcap \te...
+<recently read> \cblue 
+                       
+l.110 ...[] Does $\cblue{EmpStud}$ subsume $\cblue
+                                                  {Student} \sqcap \cblue{Em...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3060,8 +3060,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.110 ...extcolor{blue}{Student} \sqcap \textcolor
-                                                  {blue}{Employe}$ ? : yes
+l.110 ...}$ subsume $\cblue{Student} \sqcap \cblue
+                                                  {Employe}$ ? : yes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3074,18 +3074,18 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (60.87164pt too wide) in paragraph at lines 110--111
-[][]$
+Overfull \hbox (43.01857pt too wide) in paragraph at lines 110--111
+[]$
  []
 
 
-Overfull \hbox (60.03836pt too wide) in paragraph at lines 110--111
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (42.18529pt too wide) in paragraph at lines 110--111
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (57.56844pt too wide) in paragraph at lines 110--111
-[][]$
+Overfull \hbox (39.71536pt too wide) in paragraph at lines 110--111
+[]$
  []
 
 
@@ -3096,7 +3096,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.111 \item[]
-              Does $\textcolor{blue}{Student} \sqcap \textcolor{blue}{Parent...
+              Does $\cblue{Student} \sqcap \cblue{Parent}$ subsume $\cblue{E...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3106,10 +3106,10 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.111 \item[] Does $\textcolor
-                              {blue}{Student} \sqcap \textcolor{blue}{Parent...
+<recently read> \cblue 
+                       
+l.111 \item[] Does $\cblue
+                          {Student} \sqcap \cblue{Parent}$ subsume $\cblue{E...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3117,8 +3117,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.111 ...extcolor{blue}{Student} \sqcap \textcolor
-                                                  {blue}{Parent}$ subsume $\...
+l.111 \item[] Does $\cblue{Student} \sqcap \cblue
+                                                 {Parent}$ subsume $\cblue{E...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3133,10 +3133,10 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.111 ...tcolor{blue}{Parent}$ subsume $\textcolor
-                                                  {blue}{EmpStud} \sqcap \te...
+<recently read> \cblue 
+                       
+l.111 ...t} \sqcap \cblue{Parent}$ subsume $\cblue
+                                                  {EmpStud} \sqcap \cblue{Pa...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3144,8 +3144,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.111 ...extcolor{blue}{EmpStud} \sqcap \textcolor
-                                                  {blue}{Parent}$ ? : yes
+l.111 ...}$ subsume $\cblue{EmpStud} \sqcap \cblue
+                                                  {Parent}$ ? : yes
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3158,23 +3158,23 @@ Missing character: There is no y in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (60.03836pt too wide) in paragraph at lines 111--112
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (42.18529pt too wide) in paragraph at lines 111--112
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (50.0071pt too wide) in paragraph at lines 111--112
-[][]$
+Overfull \hbox (32.15402pt too wide) in paragraph at lines 111--112
+[]$
  []
 
 
-Overfull \hbox (67.53833pt too wide) in paragraph at lines 111--112
-[][] \OMS/cmsy/m/n/10 u
+Overfull \hbox (49.68526pt too wide) in paragraph at lines 111--112
+[] \OMS/cmsy/m/n/10 u
  []
 
 
-Overfull \hbox (50.0071pt too wide) in paragraph at lines 111--112
-[][]$
+Overfull \hbox (32.15402pt too wide) in paragraph at lines 111--112
+[]$
  []
 
 
@@ -3185,7 +3185,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.112 \item[]
-              Does $\exists \textcolor{violet}{pays}.\bot$ subsume $\textcol...
+              Does $\exists \cviolet{pays}.\bot$ subsume $\cblue{EmpStud}$ ?...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3195,8 +3195,8 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.112 \item[] Does $\exists \textcolor
-                                      {violet}{pays}.\bot$ subsume $\textcol...
+l.112 \item[] Does $\exists \cviolet
+                                    {pays}.\bot$ subsume $\cblue{EmpStud}$ ?...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3211,10 +3211,10 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.112 ...r{violet}{pays}.\bot$ subsume $\textcolor
-                                                  {blue}{EmpStud}$ ? : No
+<recently read> \cblue 
+                       
+l.112 ...ists \cviolet{pays}.\bot$ subsume $\cblue
+                                                  {EmpStud}$ ? : No
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3239,13 +3239,13 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (61.32372pt too wide) in paragraph at lines 112--114
-\OMS/cmsy/m/n/10 9[][]\OML/cmm/m/it/10 :\OMS/cmsy/m/n/10 ?$
+Overfull \hbox (36.3774pt too wide) in paragraph at lines 112--114
+\OMS/cmsy/m/n/10 9[]\OML/cmm/m/it/10 :\OMS/cmsy/m/n/10 ?$
  []
 
 
-Overfull \hbox (60.87164pt too wide) in paragraph at lines 112--114
-[][]$
+Overfull \hbox (43.01857pt too wide) in paragraph at lines 112--114
+[]$
  []
 
 ! Undefined control sequence.
@@ -3491,7 +3491,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 118--121
 
 ! Undefined control sequence.
 l.122   \node
-             [state] 		   (A)                    {$\textcolor{blue}{EmpStud}$};
+             [state] 		   (A)                    {$\cblue{EmpStud}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3506,8 +3506,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.122   \node[
-              state] 		   (A)                    {$\textcolor{blue}{EmpStud}$};
-
+              state] 		   (A)                    {$\cblue{EmpStud}$};
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3522,10 +3521,10 @@ Missing character: There is no ( in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no ) in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.122 ... 		   (A)                    {$\textcolor
-                                                  {blue}{EmpStud}$};
+<recently read> \cblue 
+                       
+l.122 ...ate] 		   (A)                    {$\cblue
+                                                  {EmpStud}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3535,7 +3534,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
 l.123   \node
-             [state]         (B) [below left of=A]  {$\textcolor{blue}{Stude...
+             [state]         (B) [below left of=A]  {$\cblue{Student}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3568,10 +3567,10 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.123 ...      (B) [below left of=A]  {$\textcolor
-                                                  {blue}{Student}$};
+<recently read> \cblue 
+                       
+l.123 ...]         (B) [below left of=A]  {$\cblue
+                                                  {Student}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3581,7 +3580,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
 l.124   \node
-             [state]         (C) [below right of=A] {$\textcolor{blue}{Emplo...
+             [state]         (C) [below right of=A] {$\cblue{Employes}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3615,10 +3614,10 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no A in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.124 ...      (C) [below right of=A] {$\textcolor
-                                                  {blue}{Employes}$};
+<recently read> \cblue 
+                       
+l.124 ...]         (C) [below right of=A] {$\cblue
+                                                  {Employes}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3628,7 +3627,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
 l.125   \node
-             [state]         (D) [right of=C]       {$\textcolor{blue}{Tax}$};
+             [state]         (D) [right of=C]       {$\cblue{Tax}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3657,10 +3656,10 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.125 ...      (D) [right of=C]       {$\textcolor
-                                                  {blue}{Tax}$};
+<recently read> \cblue 
+                       
+l.125 ...]         (D) [right of=C]       {$\cblue
+                                                  {Tax}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3670,7 +3669,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
 l.126   \node
-             [state]         (E) [right of=D]       {$\textcolor{blue}{Compa...
+             [state]         (E) [right of=D]       {$\cblue{Company}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3699,10 +3698,10 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.126 ...      (E) [right of=D]       {$\textcolor
-                                                  {blue}{Company}$};
+<recently read> \cblue 
+                       
+l.126 ...]         (E) [right of=D]       {$\cblue
+                                                  {Company}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3712,7 +3711,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
 l.127   \node
-             [state]         (F) [right of=E]       {$\textcolor{blue}{Paren...
+             [state]         (F) [right of=E]       {$\cblue{Parent}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3741,10 +3740,10 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no E in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.127 ...      (F) [right of=E]       {$\textcolor
-                                                  {blue}{Parent}$};
+<recently read> \cblue 
+                       
+l.127 ...]         (F) [right of=E]       {$\cblue
+                                                  {Parent}$};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3758,33 +3757,33 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 122--128
  []
 
 
-Overfull \hbox (60.87164pt too wide) in paragraph at lines 122--128
-[][]$
+Overfull \hbox (43.01857pt too wide) in paragraph at lines 122--128
+[]$
  []
 
 
-Overfull \hbox (53.37167pt too wide) in paragraph at lines 122--128
-[][]$
+Overfull \hbox (35.5186pt too wide) in paragraph at lines 122--128
+[]$
  []
 
 
-Overfull \hbox (62.25594pt too wide) in paragraph at lines 122--128
-[][]$
+Overfull \hbox (44.40286pt too wide) in paragraph at lines 122--128
+[]$
  []
 
 
-Overfull \hbox (36.08688pt too wide) in paragraph at lines 122--128
-[][]$
+Overfull \hbox (18.23381pt too wide) in paragraph at lines 122--128
+[]$
  []
 
 
-Overfull \hbox (60.92401pt too wide) in paragraph at lines 122--128
-[][]$
+Overfull \hbox (43.07094pt too wide) in paragraph at lines 122--128
+[]$
  []
 
 
-Overfull \hbox (50.0071pt too wide) in paragraph at lines 122--128
-[][]$ 
+Overfull \hbox (32.15402pt too wide) in paragraph at lines 122--128
+[]$ 
  []
 
 ! Undefined control sequence.
@@ -3919,8 +3918,96 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 \item[$\textcolor{orange}{ibm}$]
-                                       est une instance de $\textcolor{blue}...
+l.136 \item[$\corange{ibm}$]
+                             est une instance de $\cblue{Company}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+<recently read> \cblue 
+                       
+l.136 ...orange{ibm}$] est une instance de $\cblue
+                                                  {Company}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (43.07094pt too wide) in paragraph at lines 136--137
+[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \item[$\corange{mary}$]
+                              est une instance de $\cblue{Parent}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+<recently read> \cblue 
+                       
+l.137 ...range{mary}$] est une instance de $\cblue
+                                                  {Parent}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (32.15402pt too wide) in paragraph at lines 137--138
+[]$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \item[$\corange{john}$]
+                              est une instance de $\cblue{EmpStud, Student, ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3942,10 +4029,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.136 ...e}{ibm}$] est une instance de $\textcolor
-                                                  {blue}{Company}$
+<recently read> \cblue 
+                       
+l.138 ...range{john}$] est une instance de $\cblue
+                                                  {EmpStud, Student, Employee}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3953,8 +4040,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (60.92401pt too wide) in paragraph at lines 136--137
-[][]$ 
+Overfull \hbox (131.79762pt too wide) in paragraph at lines 138--139
+[]$ 
  []
 
 
@@ -3964,99 +4051,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \item[$\textcolor{orange}{mary}$]
-                                        est une instance de $\textcolor{blue...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.137 ...}{mary}$] est une instance de $\textcolor
-                                                  {blue}{Parent}$
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (50.0071pt too wide) in paragraph at lines 137--138
-[][]$ 
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.138 \item[$\textcolor{orange}{john}$]
-                                        est une instance de $\textcolor{blue...
-
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.138 ...}{john}$] est une instance de $\textcolor
-                                                  {blue}{EmpStud, Student, E...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (149.6507pt too wide) in paragraph at lines 138--139
-[][]$ 
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.139 \item[$\textcolor{orange}{john}$]
-                                        n'est pas une instance de $\textcolo...
-
+l.139 \item[$\corange{john}$]
+                              n'est pas une instance de $\cblue{\neg Parent}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4082,10 +4078,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.139 ...}$] n'est pas une instance de $\textcolor
-                                                  {blue}{\neg Parent}$
+<recently read> \cblue 
+                       
+l.139 ...john}$] n'est pas une instance de $\cblue
+                                                  {\neg Parent}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4093,8 +4089,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (56.67378pt too wide) in paragraph at lines 139--140
-[][]$ 
+Overfull \hbox (38.82071pt too wide) in paragraph at lines 139--140
+[]$ 
  []
 
 
@@ -4104,9 +4100,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.140 \item[$\textcolor{orange}{(john,ibm)}$]
-                                              est une instance de $\textcolo...
-
+l.140 \item[$\corange{(john,ibm)}$]
+                                    est une instance de $\cviolet{workFor}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4127,10 +4122,10 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 ! Undefined control sequence.
-<recently read> \textcolor 
-                           
-l.140 ...n,ibm)}$] est une instance de $\textcolor
-                                                  {violet}{workFor}$
+<recently read> \cviolet 
+                         
+l.140 ...ohn,ibm)}$] est une instance de $\cviolet
+                                                  {workFor}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4151,8 +4146,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (64.98807pt too wide) in paragraph at lines 140--142
-[][]$
+Overfull \hbox (40.04175pt too wide) in paragraph at lines 140--142
+[]$
  []
 
 ! Undefined control sequence.
@@ -4210,14 +4205,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 \item[$\textcolor{blue}{Student}$]
-                                         $? \{ \textcolor{orange}{john} \}$
+l.145 \item[$\cblue{Student}$]
+                               $? \{ \corange{john} \}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.145 ...xtcolor{blue}{Student}$] $? \{ \textcolor
-                                                  {orange}{john} \}$
+l.145 \item[$\cblue{Student}$] $? \{ \corange
+                                             {john} \}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4225,8 +4220,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (66.73347pt too wide) in paragraph at lines 145--146
-\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[][]g$ 
+Overfull \hbox (36.02391pt too wide) in paragraph at lines 145--146
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[]g$ 
  []
 
 
@@ -4236,15 +4231,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 ...lor{violet}{pays}.\textcolor{blue}{Tax}$]
-                                                   $? \{ \textcolor{orange}{...
-
+l.146 ...\neg \exists \cviolet{pays}.\cblue{Tax}$]
+                                                   $? \{ \corange{mary} \}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.146 ....\textcolor{blue}{Tax}$] $? \{ \textcolor
-                                                  {orange}{mary} \}$
+l.146 ...violet{pays}.\cblue{Tax}$] $? \{ \corange
+                                                  {mary} \}$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4252,8 +4246,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (69.54881pt too wide) in paragraph at lines 146--147
-\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[][]g$ 
+Overfull \hbox (38.83925pt too wide) in paragraph at lines 146--147
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[]g$ 
  []
 
 
@@ -4264,14 +4258,136 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.147 ...cap \exists \cviolet{pays}.\cblue{Tax})$]
-                                                   $?$
+                                                   $? \{ \corange{john}, \co...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.147 ...iolet{pays}.\cblue{Tax})$] $? \{ \corange
+                                                  {john}, \corange{mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.147 ...ue{Tax})$] $? \{ \corange{john}, \corange
+                                                  {mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (64.58531pt too wide) in paragraph at lines 147--148
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; []\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 ...rall \cviolet{worksFor}.\cblue{Company}$]
+                                                   $? \{ \}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (4.72223pt too wide) in paragraph at lines 147--148
-\OT1/cmr/m/n/10 ?$ 
+Overfull \hbox (14.72226pt too wide) in paragraph at lines 148--149
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 fg$ 
  []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149 ...\neg \cblue{Tax} \sqcup \cblue{Company}$]
+                                                   $? \{ \corange{ibm}, \cor...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.149 ...} \sqcup \cblue{Company}$] $? \{ \corange
+                                                  {ibm}, \corange{john}, \co...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149 ...{Company}$] $? \{ \corange{ibm}, \corange
+                                                  {john}, \corange{mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.149 ...{ \corange{ibm}, \corange{john}, \corange
+                                                  {mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (85.54665pt too wide) in paragraph at lines 149--150
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; []; []\OMS/cmsy/m/n/10 
+g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150 ...rkdFor} . \forall \cviolet{pays} . \top$]
+                                                   $? \{ \corange{ibm}, \cor...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.150 ...ll \cviolet{pays} . \top$] $? \{ \corange
+                                                  {ibm}, \corange{john}, \co...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150 ...s} . \top$] $? \{ \corange{ibm}, \corange
+                                                  {john}, \corange{mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.150 ...{ \corange{ibm}, \corange{john}, \corange
+                                                  {mary} \}$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 ! LaTeX Error: \begin{document} ended by \end{description}.
@@ -4280,11 +4396,1484 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{description}
+l.151 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+Overfull \hbox (85.54665pt too wide) in paragraph at lines 150--152
+\OT1/cmr/m/n/10 ?\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; []; []\OMS/cmsy/m/n/10 
+g$
+ []
+
+! Undefined control sequence.
+l.153 \subsection
+                 {Equivalance of concept}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.153 \subsection{E
+                   quivalance of concept}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.154 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 153--155
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 ...}$ and $\exists \cviolet{worksFor}.\bot$]
+                                                   Ã©quivalent? $Yes$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+Overfull \hbox (17.37155pt too wide) in paragraph at lines 155--156
+\OML/cmm/m/it/10 Yes$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.156 ...e{Student} \sqcap \neg \cblue{Employee}$]
+                                                   Ã©quivalent? $No$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (13.9722pt too wide) in paragraph at lines 156--158
+\OML/cmm/m/it/10 No$
+ []
+
+! Undefined control sequence.
+l.159 \subsection
+                 {Concept satisfiability}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.159 \subsection{C
+                   oncept satisfiability}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 159--161
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 ...nt} \sqcap \exists \cviolet{pays}.\top $]
+                                                   satisfiable? $Yep$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+Overfull \hbox (17.7153pt too wide) in paragraph at lines 161--162
+\OML/cmm/m/it/10 Yep$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162 ...{Company} \sqcap \neg \cblue{Employee} $]
+                                                   satisfiable? $No$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+Overfull \hbox (13.9722pt too wide) in paragraph at lines 162--163
+\OML/cmm/m/it/10 No$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 ...cblue{Employee} \sqcap \cblue{Company} $]
+                                                   satisfiable ? $Yep$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ? in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (17.7153pt too wide) in paragraph at lines 163--165
+\OML/cmm/m/it/10 Yep$
+ []
+
+! Undefined control sequence.
+l.166 \subsection
+                 {ABox consistency}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 \subsection{A
+                   Box consistency}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 166--168
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 ...olet{worksFor}.\neg \cblue{Company} \} $]
+                                                   consistent wrt $T$ ? : $Yes$
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ? in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 168--169
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (17.37155pt too wide) in paragraph at lines 168--169
+\OML/cmm/m/it/10 Yes$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169 ... \exists \cviolet{pays}.\cblue{Tax} \} $]
+                                                   consistent wrt $T$ ? : $No$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ? in font nullfont!
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 169--171
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (13.9722pt too wide) in paragraph at lines 169--171
+\OML/cmm/m/it/10 No$
+ []
+
+! Undefined control sequence.
+l.172 \subsection
+                 {RÃ©duction et consistance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.172 \subsection{R
+                   Ã©duction et consistance}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 172--175
+[]
+ []
+
+
+Overfull \hbox (27.85065pt too wide) in paragraph at lines 172--175
+\OML/cmm/m/it/10 KB \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (60.59642pt too wide) in paragraph at lines 172--175
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 T; A\OMS/cmsy/m/n/10 i\OML/cmm/m/it/10 ; C; 
+D \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (40.94011pt too wide) in paragraph at lines 172--175
+\OML/cmm/m/it/10 []; a \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (5.18054pt too wide) in paragraph at lines 172--175
+\OML/cmm/m/it/10 I$
+ []
+
+
+Overfull \hbox (8.04979pt too wide) in paragraph at lines 172--175
+\OML/cmm/m/it/10 a[]$
+ []
+
+
+Overfull \hbox (17.29514pt too wide) in paragraph at lines 172--175
+\OML/cmm/m/it/10 KB$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.175 \item[Concept subsumption wrt $T$]
+                                        : $KB \vDash C \sqsubseteq D$ ssi $\...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.175 ...[Concept subsumption wrt $T$]: $KB \vDash
+                                                   C \sqsubseteq D$ ssi $\la...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+
+Overfull \hbox (35.71313pt too wide) in paragraph at lines 175--176
+\OML/cmm/m/it/10 KBC \OMS/cmsy/m/n/10 v
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 175--176
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (29.17711pt too wide) in paragraph at lines 175--176
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 T; A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (18.6053pt too wide) in paragraph at lines 175--176
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (14.52917pt too wide) in paragraph at lines 175--176
+\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (24.11255pt too wide) in paragraph at lines 175--176
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 D\OMS/cmsy/m/n/10 gi$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 \item[Instance chacking]
+                              : $KB \vDash a : C$ ssi $\langle T, A \cup \{ ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no : in font nullfont!
+! Undefined control sequence.
+l.176 \item[Instance chacking]: $KB \vDash
+                                           a : C$ ssi $\langle T, A \cup \{ ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+
+Overfull \hbox (28.13652pt too wide) in paragraph at lines 176--177
+\OML/cmm/m/it/10 KBa \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 176--177
+\OML/cmm/m/it/10 C$
+ []
+
+
+Overfull \hbox (29.17711pt too wide) in paragraph at lines 176--177
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 T; A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 176--177
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (23.41809pt too wide) in paragraph at lines 176--177
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 gi$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \item[Concept satisfiability wrt $T$]
+                                           : $C$ est satisfiable wrt $T$ ssi...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no : in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 177--180
+\OML/cmm/m/it/10 C$
+ []
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 177--180
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (29.17711pt too wide) in paragraph at lines 177--180
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 T; A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (18.6053pt too wide) in paragraph at lines 177--180
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (16.7514pt too wide) in paragraph at lines 177--180
+\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 gi$
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ...s}.\cblue{Tax} \sqcap \cblue{Employee} $]
+                                                  ?\\ $\ KB \cup \{ \corange...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ? in font nullfont!
+! Undefined control sequence.
+l.180 ...ue{Employee} $]?\\ $\ KB \cup \{ \corange
+                                                  {a} : \cblue{EmpStud} \sqc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ... $]?\\ $\ KB \cup \{ \corange{a} : \cblue
+                                                  {EmpStud} \sqcap \cblue{Pa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ...orange{a} : \cblue{EmpStud} \sqcap \cblue
+                                                  {Parent} \sqcap (\exists \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ...p \cblue{Parent} \sqcap (\exists \cviolet
+                                                  {pays}.\cblue{Tax} \sqcup ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ...nt} \sqcap (\exists \cviolet{pays}.\cblue
+                                                  {Tax} \sqcup \neg \cblue{E...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ...olet{pays}.\cblue{Tax} \sqcup \neg \cblue
+                                                  {Employee} ) \} \vDash \bo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.180 ... \sqcup \neg \cblue{Employee} ) \} \vDash
+                                                   \bot ?,$ for $\corange{a}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<recently read> \corange 
+                         
+l.180 ...loyee} ) \} \vDash \bot ?,$ for $\corange
+                                                  {a}$ new
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+
+Overfull \hbox (23.96182pt too wide) in paragraph at lines 180--181
+\OML/cmm/m/it/10 KB \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 180--181
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (49.68526pt too wide) in paragraph at lines 180--181
+[] \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (38.82071pt too wide) in paragraph at lines 180--181
+[] \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (57.38899pt too wide) in paragraph at lines 180--181
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 9[]\OML/cmm/m/it/10 :[] \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (75.20505pt too wide) in paragraph at lines 180--181
+\OMS/cmsy/m/n/10 :[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g?\OT1/cmr/m/n/10 ?\OML/c
+mm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 180--181
+\OML/cmm/m/it/10 a$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181 ...t} \sqcap \exists \cviolet{empBy}.\top $]
+                                                  ?\\  $\ KB \cup \{ \corang...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ? in font nullfont!
+! Undefined control sequence.
+l.181 ...empBy}.\top $]?\\  $\ KB \cup \{ \corange
+                                                  {john} : \neg (\cblue{Stud...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.181 ... KB \cup \{ \corange{john} : \neg (\cblue
+                                                  {Student} \sqcap \exists \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.181 ... (\cblue{Student} \sqcap \exists \cviolet
+                                                  {empBy}.\top)\} \vDash \bo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.181 ...ap \exists \cviolet{empBy}.\top)\} \vDash
+                                                   \bot ?$
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (23.96182pt too wide) in paragraph at lines 181--182
+\OML/cmm/m/it/10 KB \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (31.85716pt too wide) in paragraph at lines 181--182
+\OMS/cmsy/m/n/10 f[] \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (52.74088pt too wide) in paragraph at lines 181--182
+\OMS/cmsy/m/n/10 :\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (69.31616pt too wide) in paragraph at lines 181--182
+\OMS/cmsy/m/n/10 9[]\OML/cmm/m/it/10 :\OMS/cmsy/m/n/10 >\OT1/cmr/m/n/10 )\OMS/c
+msy/m/n/10 g?\OT1/cmr/m/n/10 ?$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 ...pays}.\cblue{Tax}$ satisfiable wrt $KB$ ]
+                                                  ?\\ $\ KB \cup \{ \corange...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ? in font nullfont!
+! Undefined control sequence.
+l.182 ...able wrt $KB$ ]?\\ $\ KB \cup \{ \corange
+                                                  {a} : \cblue{EmpStud} \sqc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.182 ...$ ]?\\ $\ KB \cup \{ \corange{a} : \cblue
+                                                  {EmpStud} \sqcap \neg \exi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.182 ...lue{EmpStud} \sqcap \neg \exists \cviolet
+                                                  {pays}.\cblue{Tax} \nvDash...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.182 ...\sqcap \neg \exists \cviolet{pays}.\cblue
+                                                  {Tax} \nvDash \bot ?,$ for...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.182 ...exists \cviolet{pays}.\cblue{Tax} \nvDash
+                                                   \bot ?,$ for $\corange{a}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<recently read> \corange 
+                         
+l.182 ...cblue{Tax} \nvDash \bot ?,$ for $\corange
+                                                  {a}$ new
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (23.96182pt too wide) in paragraph at lines 182--184
+\OML/cmm/m/it/10 KB \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 182--184
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (49.68526pt too wide) in paragraph at lines 182--184
+[] \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (68.77791pt too wide) in paragraph at lines 182--184
+\OMS/cmsy/m/n/10 :9[]\OML/cmm/m/it/10 :[]\OMS/cmsy/m/n/10 ?\OT1/cmr/m/n/10 ?\OM
+L/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (5.28589pt too wide) in paragraph at lines 182--184
+\OML/cmm/m/it/10 a$
+ []
+
+! Undefined control sequence.
+l.185 \chapter
+              {MÃ©thode des Tableau pour les ALC}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 \chapter{M
+                Ã©thode des Tableau pour les ALC}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.186 \section
+              {Pre processing}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+! Undefined control sequence.
+l.187 \subsection
+                 {RÃ©Ã©criture}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 185--190
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \item[]
+              $C \sqsubseteq D$ dans $T$ en $\top \sqsubseteq \neg C \sqcup D$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (18.418pt too wide) in paragraph at lines 190--192
+\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 v
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--192
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 190--192
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (18.33331pt too wide) in paragraph at lines 190--192
+\OMS/cmsy/m/n/10 > v
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 190--192
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--192
+\OML/cmm/m/it/10 D$
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 C
+       hanger la $KB$ en $NNF$ ($\neg occurs only in front of concept names)$
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ( in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 193--195
+[]
+ []
+
+
+Overfull \hbox (17.29514pt too wide) in paragraph at lines 193--195
+\OML/cmm/m/it/10 KB$
+ []
+
+
+Overfull \hbox (26.0694pt too wide) in paragraph at lines 193--195
+\OML/cmm/m/it/10 NNF$
+ []
+
+
+Overfull \hbox (166.25589pt too wide) in paragraph at lines 193--195
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 occursonlyinfrontofconceptnames\OT1/cmr/m/n/
+10 )$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \item[$\neg \neg C$]
+                           $\rightarrow C$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 195--196
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 195--196
+\OML/cmm/m/it/10 C$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \item[$\neg (C \sqcap D)$]
+                                 $\rightarrow \neg C \sqcup \neg D$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 196--197
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 196--197
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 196--197
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 D$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \item[$\neg (C \sqcup D)$]
+                                 $\rightarrow \neg C \sqcap \neg D$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 197--198
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 197--198
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 197--198
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 D$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \item[$\neg (\exists r.C)$]
+                                  $\rightarrow \forall r.\neg C$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 198--199
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (27.09634pt too wide) in paragraph at lines 198--199
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \item[$\neg (\forall r.C)$]
+                                  $\rightarrow \exists r.\neg C$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 199--201
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (27.09634pt too wide) in paragraph at lines 199--201
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C$
+ []
 
 )
 ! Emergency stop.
@@ -4294,11 +5883,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 21 strings out of 493323
- 211 string characters out of 3139963
- 66648 words of memory out of 3000000
- 3659 multiletter control sequences out of 15000+200000
+ 22 strings out of 493323
+ 214 string characters out of 3139963
+ 71648 words of memory out of 3000000
+ 3660 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 19i,4n,14p,161b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 19i,4n,14p,330b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

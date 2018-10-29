@@ -170,18 +170,104 @@ On n'a
 \end{description}
 
 \subsection{Réduction et consistance}
-Soit $KB = \langle T,A \rangle , C, D \in \iota_{ALC}, a \in I and a^` $ new in $KB$\\
+Soit $KB = \langle T,A \rangle , C, D \in \iota_{ALC}, a \in I$ and $ a^` $ new in $KB$\\
 \begin{description}
 \item[Concept subsumption wrt $T$]: $KB \vDash C \sqsubseteq D$ ssi $\langle T, A \cup \{ a^` : C \sqcap \neg D \} \rangle$ est inconsistant
 \item[Instance chacking]: $KB \vDash a : C$ ssi $\langle T, A \cup \{ a : \neg C \} \rangle$ est inconsistant
 \item[Concept satisfiability wrt $T$]: $C$ est satisfiable wrt $T$ ssi $\langle T,A \cup \{ a^` : C \} \rangle$ est consistent
-
+\end{description}
 \begin{description}
 \item[$KB \vDash \cblue{EmpStud} \sqcap \cblue{Parent} \sqsubseteq \neg \exists \cviolet{pays}.\cblue{Tax} \sqcap \cblue{Employee} $]?\\ $\ KB \cup \{ \corange{a} : \cblue{EmpStud} \sqcap \cblue{Parent} \sqcap (\exists \cviolet{pays}.\cblue{Tax} \sqcup \neg \cblue{Employee} ) \} \vDash \bot ?,$ for $\corange{a}$ new
 \item[$KB \vDash \corange{john} : \cblue{Student} \sqcap \exists \cviolet{empBy}.\top $]?\\  $\ KB \cup \{ \corange{john} : \neg (\cblue{Student} \sqcap \exists \cviolet{empBy}.\top)\} \vDash \bot ?$
 \item[Is $\cblue{EmpStud} \sqcap \neg \exists \cviolet{pays}.\cblue{Tax}$ satisfiable wrt $KB$ ]?\\ $\ KB \cup \{ \corange{a} : \cblue{EmpStud} \sqcap \neg \exists \cviolet{pays}.\cblue{Tax} \nvDash \bot ?,$ for $\corange{a}$ new
 \end{description}
 
+\chapter{Méthode des Tableau pour les ALC}
+\section{Pre processing}
+\subsection{Réécriture}
+Réécrite chaque:
+\begin{description}
+\item[] $C \sqsubseteq D$ dans $T$ en $\top \sqsubseteq \neg C \sqcup D$
+\item[] $A \sqsubseteq \exists r.B$ en $\top \sqsubseteq \neg A \sqcup \exists r.B$
+\end{description}
+\ \\
+Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
+\begin{description}
+\item[$\neg \neg C$] $\rightarrow C$
+\item[$\neg (C \sqcap D)$] $\rightarrow \neg C \sqcup \neg D$
+\item[$\neg (C \sqcup D)$] $\rightarrow \neg C \sqcap \neg D$
+\item[$\neg (\exists r.C)$] $\rightarrow \forall r.\neg C$
+\item[$\neg (\forall r.C)$] $\rightarrow \exists r.\neg C$
 \end{description}
 
+\subsection{Vocabulaire}
+\begin{description}
+\item[Blocage/Blocking] l'apparition d'une boucle infini dans le déroulement de l'algorithme 
+\item[Clash] Quand il existe une contradiction d'un noeud feuille vers l'un de ses ascendant
+\end{description}
+
+\subsection{Règles d'expansion}
+\begin{description}
+\item[$\sqsubseteq_{T} -$] rule\\
+\begin{description}
+\item[Si $a : C \in A, \top \sqsubseteq D \in T$ et $a : D \notin A$] alors\\ $A := A \cup \{ a : D \}$
+\end{description}
+\item[$\sqcap -$]rule\\
+\begin{description}
+\item[Si $a : C \sqcap D \in A$ et $\{ a : C, a : D \nsubseteq A$] alors\\ $A := A \cup \{ a : C, a : D\}$
+\end{description}
+\item[$\sqcup -$]rule\\
+\begin{description}
+\item[Si $a : C \sqcup D \in A$ et $\{ a : C, a : D \} \cap A = \varnothing$] alors\\ $A := A \cup \{a : E\},$ for some $E \in \{C,D\}$
+\end{description}
+\item[$\exists -$]rule\\
+\begin{description}
+\item[Si $a : \exists R.C \in A$ et il n'y a pas de $b$ st $\{(a,b) : R, b : C\} \subseteq A$ et]
+\item[$a $ n'est pas en en blocage] alors\\ $A := A \cup \{(a,c) : R,c : C \},$ for $c$ new in $A$
+\end{description}
+\item[$\forall -$]rule\\
+\begin{description}
+\item[Si $\{a : \forall R.C, (a,b) : R\} \subseteq A$ et $b : C \notin A$] alors\\ $A := A \cup \{b : C \}$
+\end{description}
+\end{description}
+
+\section{Exemple}
+\begin{description}
+\item[$T$] = $\{ A \sqsubseteq \exists r.B \}$ $\equiv$ $\{\top \sqsubseteq \neg A \sqcup \exists r.B \}$
+\item[$A$] = $\{a : A \sqcap B, a : \forall r.\forall r.C \}$
+\end{description}
+
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\{ \crouge{a : A \sqcap B}, a : \forall r.\forall r.C \}$}
+    child { node {$\{ \cviolet{a:A},a:B\}$}
+      child { node {$\{a: \neg A \sqcup \exists r.B \}$}
+        child { node {$\{ \cviolet{a: \neg A }\}$} }
+        child { node {$\{ a : \exists r.B \}$} 
+          child { node {$\{ (a,x) : r,x B \}$} 
+            child { node {$\{ x : \forall r.C\}$}
+              child { node {$\{x : \neg A \sqcup \exists r.B \}$}
+                child { node {$\{ x : \neg A \}$} }
+                child { node {$\{x : \exists r.B \}$}
+                  child { node {$\{(x,y) : r,y B \}$ }
+                    child { node {$\{y : C \}$}
+                      child { node {$\{ y: \neg A \sqcup \exists r.B \}$}
+                        child { node {$\{ a : \neg A \}$} }
+                        child { node {$\{ y : \exists r.B \}$}
+                          child { node {y est bloqué par z} }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          } 
+       	}
+      }
+    };
+\end{tikzpicture}
+}
 \pagebreak

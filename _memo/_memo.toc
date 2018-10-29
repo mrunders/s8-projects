@@ -101,4 +101,10 @@
 \contentsline {subsection}{\numberline {17.3.6}Concept satisfiability}{51}
 \contentsline {subsection}{\numberline {17.3.7}ABox consistency}{52}
 \contentsline {subsection}{\numberline {17.3.8}R\IeC {\'e}duction et consistance}{52}
-\contentsline {chapter}{\numberline {18}XML}{53}
+\contentsline {chapter}{\numberline {18}M\IeC {\'e}thode des Tableau pour les ALC}{53}
+\contentsline {section}{\numberline {18.1}Pre processing}{53}
+\contentsline {subsection}{\numberline {18.1.1}R\IeC {\'e}\IeC {\'e}criture}{53}
+\contentsline {subsection}{\numberline {18.1.2}Vocabulaire}{54}
+\contentsline {subsection}{\numberline {18.1.3}R\IeC {\`e}gles d'expansion}{54}
+\contentsline {section}{\numberline {18.2}Exemple}{55}
+\contentsline {chapter}{\numberline {19}XML}{56}
