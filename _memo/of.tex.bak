@@ -81,10 +81,38 @@ La décomposition de Shannon de $\phi$ suivant x est la formule:
 
 \section{Arbre de Shannon, ROBDD}
 Étant donnée un ordre strict total $x_1 < x_2 < x_3$ sur $Var(\phi ) = \{x_1, ..... X_n\}$\\
-Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\\
-\begin{center}
-\includegraphics[scale=0.4]{img/of-arbre-shannon_1.png} \\
-\end{center}
+Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\
+\begin{tikzpicture}[
+  level distance=20mm,
+  text depth=.1em,
+  text height=.8em,
+  level 1/.style={sibling distance=20em},
+  level 2/.style={sibling distance=10em},
+  level 3/.style={sibling distance=3em},
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$x_1$}
+    child { node {$[x_1 \leftarrow \bot]$\\$x_2 \vee (x_2 \wedge x_3)$\\$x_2$} 
+      child { node {$[x_2 \leftarrow \bot]$\\$x_3$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\top$ }}
+      }
+      child { node {$[x_2 \leftarrow \top]$\\$\top$\\$x_3$}
+        child { node {$\top$ }}
+        child { node {$\top$ }}
+      }
+    }
+    child { node {$[x_1 \leftarrow \top]$\\$-x_2 \wedge x_3$\\$x_2$}
+      child { node {$[x_2 \leftarrow \bot]$\\$x_3$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\top$ }}
+      }
+      child { node {$[x_2 \leftarrow \top]$\\$\bot$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\bot$ }}
+      }
+    };
+\end{tikzpicture}
 L'ensemble des modèles de $\phi$ sont toutes les interprétation où la feuille vaut la valeur $T$.
 
 \subsection{Remplacement ou vérifonctionnalité}
@@ -184,10 +212,22 @@ On peut noter que sur la figure ci dessus il y a un $\exists y$ qui n'est pas as
 \section{Sémantique}
 Soit $t$ un terme de $TERM_L$, la sémantique de $t$ dans l'interprétation de $I$ pour l'assignation $X_i$ noté $[|t|](I)(X_i)$ est l'élément de $D_i$ défini inductivement.
 
-\begin{center}
-$\phi$ = \\
-\includegraphics[scale=0.4]{img/of-fo-sem.png} 
-\end{center}
+$\phi = $\\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (B)                    {$=$};
+  \node[state]         (C) [below left of=B]  {$+$};
+  \node[state]         (D) [below left of=C]  {$x$};
+  \node[state]         (E) [below right of=C] {$2$};
+  \node[state]         (F) [below right of=B] {$y$};
+
+  \path (B) edge 			  node {} (C)
+        	edge 			  node {} (F)
+        (C) edge 			  node {} (D)
+        	edge 			  node {} (E);
+\end{tikzpicture}
 
 \begin{description}
 \item[$=$] $\in \Re$ d'arriter 2
@@ -214,10 +254,26 @@ On peut calculer cette sous formule en appliquant chaque terme dans l'interprét
 $\| x + 2 \| (I)(X_i)$ = $+_i ( \| x \| (I)(X_i), \| 2 \| (I) (X_i))$ = $+_i (5,3) = 8$\\
 $\| \phi \| (I)(X_i) =$ $ =_i(8,10) = 0 (faux)$\\
 
-\begin{center}
-\includegraphics[scale=0.4]{img/of-fo-sem_2.png} 
+
 $\psi$ = \\
-\end{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=1.5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A)                    {$\exists x$};
+  \node[state]         (B) [below of=A]       {$=$};
+  \node[state]         (C) [below left of=B]  {$+$};
+  \node[state]         (D) [below left of=C]  {$x$};
+  \node[state]         (E) [below right of=C] {$2$};
+  \node[state]         (F) [below right of=B] {$y$};
+
+  \path (A) edge              node {} (B)
+        (B) edge 			  node {} (C)
+        	edge 			  node {} (F)
+        (C) edge 			  node {} (D)
+        	edge 			  node {} (E);
+\end{tikzpicture}
+
 $\| \psi \| (I)(X_i)[x \leftarrow 7]) =$\\
 $ =_i ( +_i (\| x\| (I)(X_i [x \leftarrow 7 ]), 3), \| y \| (I)(X_i[x \leftarrow 7])) = $\\
 $ =_i ( +_i (7,3), 10) = $\\

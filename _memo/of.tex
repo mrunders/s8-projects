@@ -81,10 +81,38 @@ La décomposition de Shannon de $\phi$ suivant x est la formule:
 
 \section{Arbre de Shannon, ROBDD}
 Étant donnée un ordre strict total $x_1 < x_2 < x_3$ sur $Var(\phi ) = \{x_1, ..... X_n\}$\\
-Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\\
-\begin{center}
-\includegraphics[scale=0.4]{img/of-arbre-shannon_1.png} \\
-\end{center}
+Et une formule $\phi = (\neg x_1 \wedge x_2) \vee ( \neg x2 \wedge x_3)$\\
+\begin{tikzpicture}[
+  level distance=20mm,
+  text depth=.1em,
+  text height=.8em,
+  level 1/.style={sibling distance=20em},
+  level 2/.style={sibling distance=10em},
+  level 3/.style={sibling distance=3em},
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$x_1$}
+    child { node {$[x_1 \leftarrow \bot]$\\$x_2 \vee (x_2 \wedge x_3)$\\$x_2$} 
+      child { node {$[x_2 \leftarrow \bot]$\\$x_3$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\top$ }}
+      }
+      child { node {$[x_2 \leftarrow \top]$\\$\top$\\$x_3$}
+        child { node {$\top$ }}
+        child { node {$\top$ }}
+      }
+    }
+    child { node {$[x_1 \leftarrow \top]$\\$-x_2 \wedge x_3$\\$x_2$}
+      child { node {$[x_2 \leftarrow \bot]$\\$x_3$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\top$ }}
+      }
+      child { node {$[x_2 \leftarrow \top]$\\$\bot$\\$x_3$}
+        child { node {$\bot$ }}
+        child { node {$\bot$ }}
+      }
+    };
+\end{tikzpicture}
 L'ensemble des modèles de $\phi$ sont toutes les interprétation où la feuille vaut la valeur $T$.
 
 \subsection{Remplacement ou vérifonctionnalité}

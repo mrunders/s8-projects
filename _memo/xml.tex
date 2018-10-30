@@ -1,5 +1,83 @@
-\chapter{XML}
+\part{XML}
 \pagebreak
-uuuuu
+
+\chapter{DTD}
+
+\begin{description}
+\item[inclusion dans xml] $<!DOCTYPE$ $nom$ $SYSTEM$ $"fichier.dtd">$
+\item[] $<!ELEMENT <$nom de la balise$> (<contenue>)>$
+\item[$contenue$]:
+\begin{description}
+\item[] $($\#$PCDATA)$ du texte
+\item[] $(objet+)$ au moins un objet 
+\item[] $(objet?)$ au plus un objet
+\item[] $(objet*)$ de zero à infini
+\item[] $(objet,aliment)$ un objet et une aliment (dans l'ordre)
+\item[] $(objet|aliment)$ l'un des deux
+\end{description}
+
+\item[] $<!ATTRIBUT <$nom de la balise$> <$ clef $> <$ contenue $> [$\#$REQUIRED | $\#$IMPLIED] >$
+\end{description}
+
+\pagebreak
+\chapter{XSD}
+\lstset{language=XML}
+\begin{lstlisting}
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="age" type="xs:integer" />
+	<xs:element name="prenom" type="xs:string" />
+	<xs:element name="pseudo" type="xs:string" />
+		
+	<xs:element name=Personnage">$
+		<xs:complexType>
+			<xs:sequence>
+			  <xs:element ref="age">
+			  <xs:element ref="name" maxOccurs="2">
+			</>
+		</>
+	</>
+	
+	<xs:element name=Joueur">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choise minOccurs="1" maxOccurs="2">
+				  <xs:element ref="pseudo">
+				  <xs:element ref="prenom">
+				</>
+			</>
+		</>
+	</>
+	
+	<xs:complexType name="Liste">
+	  <xs:sequence>
+	    <xs:element ref="Joueur" maxOccurs="UNBOUNDED">
+		</>
+	</>
+
+	<xs:element name="photo" type="xs:string">
+	  <xs:attribute name="resolution" type="xs:integer"/>
+	  <xs:attribute name="type" type="xs:string" default="img/jpg"/>
+	</xs:element>
+
+</xs:schema>
+\end{lstlisting}
+\pagebreak
+
+\chapter{XPATH}
+
+\begin{description}
+\item[tous les noeuds éléments de nom attr] $"movie/filmography/*/attr"$
+\item[tous les noeuds éléments qui ont un attribut order] $"movie/filmography/*[@order]"$
+\item[les noeuds attributs de nom order] $"movie/filmography/*/@order"$
+\item[le quatrième fils de filmography]\ \\ $"movie/filmography/*[position()=4]"$
+\item[le noeud attribut de nom Crew (attribut de filmography)]\ \\ $"movie/filmography/@Crew"$
+\item[les quatre premiers fils de filmography]\ \\ $"movie/filmography/*[position()<=4]"$
+\item[retournez le sous-arbre parent et aller dans Editor] $"../editor"$
+\item[le nombre total de comédiens (cast, remainder)]\ \\ $"count(movie/filmography/cast/name$ | $movie/filmography/remainder/name)"$
+\item[une chaîne de caractères présentant le film : titre (année) - réalisateur]
+    $"concat(movie/title/text(), ' (', movie/year/text(), ') - ', movie/film/Director/name)"$
+\end{description}
 
 \pagebreak

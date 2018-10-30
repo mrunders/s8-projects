@@ -1,6 +1,7 @@
 \documentclass[french, 12pt]{report}
 \usepackage[latin1, utf8]{inputenc}
 \usepackage[T1]{fontenc} 
+\usepackage{color}
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{amssymb}
@@ -9,6 +10,7 @@
 \usepackage{enumitem}
 \usepackage{multicol}
 \usepackage{verbatim}
+\usepackage{listings}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
 
@@ -18,6 +20,30 @@
 \newcommand{\corange}[1]{ \textcolor{orange}{#1}}
 \newcommand{\cviolet}[1]{ \textcolor{violet}{#1}}
 \newcommand{\crouge}[1]{ \textcolor{red}{#1}}
+
+%% -------------------------  XML
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+%% ------------------------ END XML
 
 \title{Memo pour l'année}
 \author{LAURENT Thomas}

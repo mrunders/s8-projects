@@ -227,7 +227,7 @@ Critère de sélection: Gain Ration:
 \item[Calculer] $P(N=\top,P=\top,A=\bot,M=\top)$
 \item[$=$] $P(N=\top) * P(P=\top|N=\top) * P(A=\bot|N=\top,P=\top) * \linebreak P(M=\top|N=\top,P=\top,A=\bot)$
 \item[$=$] $ .5\ *\ .4\ *\ \frac{P(N=\top,P=\top)P(A=\bot)}{P(N=\top,P=\top)}\ *\ \frac{P(N=\top,P=\top,A=\bot)*P(M=\top)}{P(N=\top,P=\top,A=\bot)}$
-\item[$=$] $ .5\ *\ .4\ *\ 1\ *\ $
+\item[$=$] $ .5\ *\ .4\ *\ 1\ *\ ?$
 \end{description}
 
 \pagebreak

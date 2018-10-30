@@ -254,7 +254,7 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
                   child { node {$\{(x,y) : r,y B \}$ }
                     child { node {$\{y : C \}$}
                       child { node {$\{ y: \neg A \sqcup \exists r.B \}$}
-                        child { node {$\{ a : \neg A \}$} }
+                        child { node {$\{ y : \neg A \}$} }
                         child { node {$\{ y : \exists r.B \}$}
                           child { node {y est bloqué par z} }
                         }
@@ -267,6 +267,51 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
           } 
        	}
       }
+    };
+\end{tikzpicture}
+}
+\pagebreak
+
+\section{Exemple 2}
+\begin{description}
+\item[$T$] = $\{ A \sqsubseteq \exists r.B \}$ $\equiv$ $\{\top \sqsubseteq \neg A \sqcup \exists r.B \}$
+\item[$A$] = $\{ a : A \sqcap B, a : \forall r.(A \sqcap \forall r.A) \}$
+\end{description}
+
+\scalebox{0.7}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\{ \crouge{a : A \sqcap B}, a : \forall r.(A \sqcap \forall r.A) \}$}
+    child { node {$\{ \cviolet{a : A}, a : B \}$}
+      child { node { $\{ a : \neg A \sqcup \exists r.B \}$ }
+	    child { node {$\{ \cviolet{a : \neg A} \}$}}
+	    child { node {$\{ a : \exists r.B \}$}
+	      child { node {$\{ (a,x) : r,xB \}$}
+	        child { node {$\{ x : A \sqcap \forall r.A \}$}
+	          child { node {$\{ \cviolet{x : A,} x : \forall r.A \}$} 
+	            child { node {$\{ x : \neg A \sqcup \exists r.B \}$ }
+				  child { node {$\{ \cviolet{x : \neg A} \}$ } }
+				  child { node {$\{ x : \exists r.B \} $}
+				    child { node {$\{ (x,y) : r,yB \}$}
+	        		  child { node {$\{ y : A \sqcap \forall r.A \}$}
+	          		    child { node {$\{ \cviolet{y : A,} y : \forall r.A \}$} 
+	            		  child { node {$\{ y : \neg A \sqcup \exists r.B \}$ }
+				  			child { node {$\{ \cviolet{y : \neg A} \}$ } }
+				  			child { node {$\{ y : \exists r.B \} $}
+				  			  child { node { $...InfinitLoop...$ } }
+				  			}	            
+	           			  }
+	          			}
+	        		  }
+	      			}
+				  }	            
+	            }
+	          }
+	        }
+	      }
+	    }
+      }    
     };
 \end{tikzpicture}
 }

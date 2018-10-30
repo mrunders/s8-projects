@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 OCT 2018 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  30 OCT 2018 15:19
 entering extended mode
 **./rcr.tex
 (rcr.tex
@@ -5642,59 +5642,62 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 
+Overfull \hbox (18.418pt too wide) in paragraph at lines 190--191
+\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 v
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--191
+\OML/cmm/m/it/10 D$
+ []
+
+
+Overfull \hbox (7.23265pt too wide) in paragraph at lines 190--191
+\OML/cmm/m/it/10 T$
+ []
+
+
+Overfull \hbox (18.33331pt too wide) in paragraph at lines 190--191
+\OMS/cmsy/m/n/10 > v
+ []
+
+
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 190--191
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--191
+\OML/cmm/m/it/10 D$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \item[]
+              $A \sqsubseteq \exists r.B$ en $\top \sqsubseteq \neg A \sqcup...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+
 ! LaTeX Error: \begin{document} ended by \end{description}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 \end{description}
+l.192 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-
-Overfull \hbox (18.418pt too wide) in paragraph at lines 190--192
-\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 v
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--192
-\OML/cmm/m/it/10 D$
- []
-
-
-Overfull \hbox (7.23265pt too wide) in paragraph at lines 190--192
-\OML/cmm/m/it/10 T$
- []
-
-
-Overfull \hbox (18.33331pt too wide) in paragraph at lines 190--192
-\OMS/cmsy/m/n/10 > v
- []
-
-
-Overfull \hbox (21.19586pt too wide) in paragraph at lines 190--192
-\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
- []
-
-
-Overfull \hbox (8.55695pt too wide) in paragraph at lines 190--192
-\OML/cmm/m/it/10 D$
- []
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 C
-       hanger la $KB$ en $NNF$ ($\neg occurs only in front of concept names)$
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no C in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -5708,6 +5711,38 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no ( in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ) in font nullfont!
 
 ! LaTeX Error: Environment description undefined.
 
@@ -5715,31 +5750,50 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \begin{description}
+l.195 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 193--195
-[]
+Overfull \hbox (18.05553pt too wide) in paragraph at lines 191--196
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 v
  []
 
 
-Overfull \hbox (17.29514pt too wide) in paragraph at lines 193--195
+Overfull \hbox (20.65398pt too wide) in paragraph at lines 191--196
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B$
+ []
+
+
+Overfull \hbox (18.33331pt too wide) in paragraph at lines 191--196
+\OMS/cmsy/m/n/10 > v
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 191--196
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (20.65398pt too wide) in paragraph at lines 191--196
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B$
+ []
+
+
+Overfull \hbox (17.29514pt too wide) in paragraph at lines 191--196
 \OML/cmm/m/it/10 KB$
  []
 
 
-Overfull \hbox (26.0694pt too wide) in paragraph at lines 193--195
+Overfull \hbox (26.0694pt too wide) in paragraph at lines 191--196
 \OML/cmm/m/it/10 NNF$
  []
 
 
-Overfull \hbox (166.25589pt too wide) in paragraph at lines 193--195
-\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 occursonlyinfrontofconceptnames\OT1/cmr/m/n/
-10 )$ 
+Overfull \hbox (6.66669pt too wide) in paragraph at lines 191--196
+\OMS/cmsy/m/n/10 :$
  []
 
 
@@ -5749,18 +5803,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.195 \item[$\neg \neg C$]
+l.196 \item[$\neg \neg C$]
                            $\rightarrow C$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 195--196
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 196--197
 \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 195--196
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 196--197
 \OML/cmm/m/it/10 C$ 
  []
 
@@ -5771,35 +5825,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 \item[$\neg (C \sqcap D)$]
+l.197 \item[$\neg (C \sqcap D)$]
                                  $\rightarrow \neg C \sqcup \neg D$
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 196--197
-\OMS/cmsy/m/n/10 !
- []
-
-
-Overfull \hbox (21.19586pt too wide) in paragraph at lines 196--197
-\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
- []
-
-
-Overfull \hbox (15.22363pt too wide) in paragraph at lines 196--197
-\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 D$ 
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.197 \item[$\neg (C \sqcup D)$]
-                                 $\rightarrow \neg C \sqcap \neg D$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5810,7 +5837,7 @@ Overfull \hbox (10.00002pt too wide) in paragraph at lines 197--198
 
 
 Overfull \hbox (21.19586pt too wide) in paragraph at lines 197--198
-\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 u
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 t
  []
 
 
@@ -5825,8 +5852,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.198 \item[$\neg (\exists r.C)$]
-                                  $\rightarrow \forall r.\neg C$
+l.198 \item[$\neg (C \sqcup D)$]
+                                 $\rightarrow \neg C \sqcap \neg D$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5836,7 +5863,34 @@ Overfull \hbox (10.00002pt too wide) in paragraph at lines 198--199
  []
 
 
-Overfull \hbox (27.09634pt too wide) in paragraph at lines 198--199
+Overfull \hbox (21.19586pt too wide) in paragraph at lines 198--199
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (15.22363pt too wide) in paragraph at lines 198--199
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 D$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 \item[$\neg (\exists r.C)$]
+                                  $\rightarrow \forall r.\neg C$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 199--200
+\OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (27.09634pt too wide) in paragraph at lines 199--200
 \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C$ 
  []
 
@@ -5847,7 +5901,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 \item[$\neg (\forall r.C)$]
+l.200 \item[$\neg (\forall r.C)$]
                                   $\rightarrow \exists r.\neg C$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5859,21 +5913,1769 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.200 \end{description}
+l.201 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (10.00002pt too wide) in paragraph at lines 199--201
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 200--202
 \OMS/cmsy/m/n/10 !
  []
 
 
-Overfull \hbox (27.09634pt too wide) in paragraph at lines 199--201
+Overfull \hbox (27.09634pt too wide) in paragraph at lines 200--202
 \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 C$
  []
+
+! Undefined control sequence.
+l.203 \subsection
+                 {Vocabulaire}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 \subsection{V
+                   ocabulaire}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no V in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.204 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 203--205
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205 \item[Blocage/Blocking]
+                              l'apparition d'une boucle infini dans le d√©ro...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.206 \item[Clash]
+                   Quand il existe une contradiction d'un noeud feuille vers...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no Q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.209 \subsection
+                 {R√®gles d'expansion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209 \subsection{R
+                   √®gles d'expansion}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no ® in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no ' in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 209--211
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \item[$\sqsubseteq_{T} -$]
+                                 rule\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 ...\sqsubseteq D \in T$ et $a : D \notin A$]
+                                                   alors\\ $A := A \cup \{ a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.214 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 213--215
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 213--215
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 213--215
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (13.55696pt too wide) in paragraph at lines 213--215
+\OML/cmm/m/it/10 D\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 \item[$\sqcap -$]
+                       rule\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.216 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 ...\in A$ et $\{ a : C, a : D \nsubseteq A$]
+                                                   alors\\ $A := A \cup \{ a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 217--219
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 217--219
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 217--219
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (22.59273pt too wide) in paragraph at lines 217--219
+\OML/cmm/m/it/10 C; a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (13.55696pt too wide) in paragraph at lines 217--219
+\OML/cmm/m/it/10 D\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219 \item[$\sqcup -$]
+                       rule\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221 ...\{ a : C, a : D \} \cap A = \varnothing$]
+                                                   alors\\ $A := A \cup \{a ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 221--223
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 221--223
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 221--223
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (15.73611pt too wide) in paragraph at lines 221--223
+\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (17.40271pt too wide) in paragraph at lines 221--223
+\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (30.30832pt too wide) in paragraph at lines 221--223
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 C; D\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 \item[$\exists -$]
+                        rule\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 ...st $\{(a,b) : R, b : C\} \subseteq A$ et]
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 \item[$a $ n'est pas en en blocage]
+                                          alors\\ $A := A \cup \{(a,c) : R,c...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (32.39117pt too wide) in paragraph at lines 226--228
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; c\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (21.99762pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 R; c \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (15.64029pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ;$
+ []
+
+
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 c$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 226--228
+\OML/cmm/m/it/10 A$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 \item[$\forall -$]
+                        rule\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.230 ...) : R\} \subseteq A$ et $b : C \notin A$]
+                                                   alors\\ $A := A \cup \{b ...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.231 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.232 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.83331pt too wide) in paragraph at lines 230--233
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 :=
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 230--233
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 [
+ []
+
+
+Overfull \hbox (14.84717pt too wide) in paragraph at lines 230--233
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 b \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (12.8625pt too wide) in paragraph at lines 230--233
+\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 g$
+ []
+
+! Undefined control sequence.
+l.234 \section
+              {Exemple}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \section{E
+                xemple}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 234--236
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236 \item[$T$]
+                 = $\{ A \sqsubseteq \exists r.B \}$ $\equiv$ $\{\top \sqsub...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no = in font nullfont!
+
+Overfull \hbox (23.05554pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 v
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (23.33333pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 f> v
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 236--237
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237 \item[$A$]
+                 = $\{a : A \sqcap B, a : \forall r.\forall r.C \}$
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no = in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 237--239
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 237--239
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (23.3726pt too wide) in paragraph at lines 237--239
+\OML/cmm/m/it/10 B; a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (37.99684pt too wide) in paragraph at lines 237--239
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:C\OMS
+/cmsy/m/n/10 g$
+ []
+
+! Undefined control sequence.
+l.240 \scalebox
+               {0.9}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.240 \scalebox{0
+                 .9}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.241 \begin{tikzpicture}
+                         [sibling distance=10em,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.244   \node
+              {$\{ \crouge{a : A \sqcap B}, a : \forall r.\forall r.C \}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.244   \node {$\{ \crouge
+                          {a : A \sqcap B}, a : \forall r.\forall r.C \}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.245     child { node {$\{ \cviolet
+                                    {a:A},a:B\}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.247         child { node {$\{ \cviolet
+                                        {a: \neg A }\}$} }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no √ in font nullfont!
+Missing character: There is no © in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.271 \end{tikzpicture}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 240--274
+[]
+ []
+
+
+Overfull \hbox (60.60275pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (37.99684pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:C\OMS
+/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (41.40492pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f[]\OML/cmm/m/it/10 ; a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (13.08682pt too wide) in paragraph at lines 240--274
+\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (37.78583pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f[]g$
+ []
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (33.77888pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a; x\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (27.48032pt too wide) in paragraph at lines 240--274
+\OML/cmm/m/it/10 r; xB\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (25.42967pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:C\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (33.7546pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) :
+ []
+
+
+Overfull \hbox (27.02664pt too wide) in paragraph at lines 240--274
+\OML/cmm/m/it/10 r; yB\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (12.8625pt too wide) in paragraph at lines 240--274
+\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (15.81711pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 y \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 240--274
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.274 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+! Undefined control sequence.
+l.275 \section
+              {Exemple 2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \section{E
+                xemple 2}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no 2 in font nullfont!
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.276 \begin{description}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 275--277
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.277 \item[$T$]
+                 = $\{ A \sqsubseteq \exists r.B \}$ $\equiv$ $\{\top \sqsub...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no = in font nullfont!
+
+Overfull \hbox (23.05554pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 v
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 $
+ []
+
+
+Overfull \hbox (23.33333pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 f> v
+ []
+
+
+Overfull \hbox (20.83339pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 t
+ []
+
+
+Overfull \hbox (25.65399pt too wide) in paragraph at lines 277--278
+\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 r:B\OMS/cmsy/m/n/10 g$ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 \item[$A$]
+                 = $\{ a : A \sqcap B, a : \forall r.(A \sqcap \forall r.A) \}$
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no = in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{description}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 \end{description}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (15.8414pt too wide) in paragraph at lines 278--280
+\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (14.1667pt too wide) in paragraph at lines 278--280
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 u
+ []
+
+
+Overfull \hbox (23.3726pt too wide) in paragraph at lines 278--280
+\OML/cmm/m/it/10 B; a \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (30.62277pt too wide) in paragraph at lines 278--280
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/c
+msy/m/n/10 u
+ []
+
+
+Overfull \hbox (28.9561pt too wide) in paragraph at lines 278--280
+\OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 r:A\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g$
+ []
+
+! Undefined control sequence.
+l.281 \scalebox
+               {0.9}{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 \scalebox{0
+                 .9}{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 \begin{tikzpicture}
+                         [sibling distance=10em,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ] in font nullfont!
+! Undefined control sequence.
+l.285   \node
+              {$\{ \crouge{a : A \sqcap B}, a : \forall r.(A \sqcap \forall ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.285   \node {$\{ \crouge
+                          {a : A \sqcap B}, a : \forall r.(A \sqcap \forall ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.286     child { node {$\{ \cviolet
+                                    {a : A}, a : B \}$}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.288 	    child { node {$\{ \cviolet
+                                     {a : \neg A} \}$}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+! LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.300 \end{tikzpicture}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 )
 ! Emergency stop.
@@ -5883,10 +7685,10 @@ Overfull \hbox (27.09634pt too wide) in paragraph at lines 199--201
 
  
 Here is how much of TeX's memory you used:
- 22 strings out of 493323
- 214 string characters out of 3139963
- 71648 words of memory out of 3000000
- 3660 multiletter control sequences out of 15000+200000
+ 25 strings out of 493323
+ 243 string characters out of 3139963
+ 76648 words of memory out of 3000000
+ 3662 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  19i,4n,14p,330b,115s stack positions out of 5000i,500n,10000p,200000b,50000s
