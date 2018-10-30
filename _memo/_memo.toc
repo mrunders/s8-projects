@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Crit\IeC {\`e}res d'arr\IeC {\^e}t}{8}
 \contentsline {subsection}{\numberline {4.2.2}crit\IeC {\`e}res d'arr\IeC {\^e}t: Param\IeC {\`e}tre utilisateur}{9}
 \contentsline {chapter}{\numberline {5}Classificateur bay\IeC {\'e}siens}{10}
-\contentsline {part}{II\hspace {1em}Apprentissage par le pratique}{13}
+\contentsline {part}{II\hspace {1em}Apprentissage automatique par la pratique}{13}
 \contentsline {chapter}{\numberline {6}Rappel}{14}
 \contentsline {section}{\numberline {6.1}Matrices et calcules sur les Matrices}{14}
 \contentsline {subsection}{\numberline {6.1.1}Addition}{14}
@@ -107,7 +107,9 @@
 \contentsline {subsection}{\numberline {18.1.3}R\IeC {\`e}gles d'expansion}{56}
 \contentsline {section}{\numberline {18.2}Exemple}{57}
 \contentsline {section}{\numberline {18.3}Exemple 2}{58}
-\contentsline {part}{VI\hspace {1em}XML}{59}
-\contentsline {chapter}{\numberline {19}DTD}{60}
-\contentsline {chapter}{\numberline {20}XSD}{61}
-\contentsline {chapter}{\numberline {21}XPATH}{63}
+\contentsline {chapter}{\numberline {19}Logique presque tout}{59}
+\contentsline {section}{\numberline {19.1}Syst\IeC {\`e}me P}{60}
+\contentsline {part}{VI\hspace {1em}XML}{61}
+\contentsline {chapter}{\numberline {20}DTD}{62}
+\contentsline {chapter}{\numberline {21}XSD}{63}
+\contentsline {chapter}{\numberline {22}XPATH}{65}

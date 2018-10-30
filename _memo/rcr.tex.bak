@@ -278,7 +278,7 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
 \item[$A$] = $\{ a : A \sqcap B, a : \forall r.(A \sqcap \forall r.A) \}$
 \end{description}
 
-\scalebox{0.9}{
+\scalebox{0.7}{
 \begin{tikzpicture}[sibling distance=10em,
   every node/.style = {scale=1,
     draw=none, align=center}]]
@@ -293,6 +293,18 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
 	            child { node {$\{ x : \neg A \sqcup \exists r.B \}$ }
 				  child { node {$\{ \cviolet{x : \neg A} \}$ } }
 				  child { node {$\{ x : \exists r.B \} $}
+				    child { node {$\{ (x,y) : r,yB \}$}
+	        		  child { node {$\{ y : A \sqcap \forall r.A \}$}
+	          		    child { node {$\{ \cviolet{y : A,} y : \forall r.A \}$} 
+	            		  child { node {$\{ y : \neg A \sqcup \exists r.B \}$ }
+				  			child { node {$\{ \cviolet{y : \neg A} \}$ } }
+				  			child { node {$\{ y : \exists r.B \} $}
+				  			  child { node { $...InfinitLoop...$ } }
+				  			}	            
+	           			  }
+	          			}
+	        		  }
+	      			}
 				  }	            
 	            }
 	          }
@@ -303,4 +315,80 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
     };
 \end{tikzpicture}
 }
+
+\chapter{Logique presque tout}
+
+Soit le nouvelle opérateur binaire $\Subset$ disent pour $\crouge{presque\ tout}$ A est dans B.\\
+
+\begin{description}
+\item[Bonne distribution]:\\
+\scalebox{0.5}{
+\begin{tikzpicture}
+\fill[white](-4,-1) rectangle (4,4);
+\fill[opacity=0.5,red] (0,0) ++(90:2) circle (2);
+\fill[opacity=0.5,blue] (0,0) ++(45:2) circle (2);
+\fill[opacity=0.5,green] (0,0) ++(70:1.5) circle (1);
+\node[draw=none] at (-1,3) {$\alpha$};
+\node[draw=none] at (2.5,1.5) {$\beta$};
+\node[draw=none] at (0.5,1.5) {$\alpha \cap \gamma$};
+\end{tikzpicture}}
+\item[Mauvaise distribution]:\\
+\scalebox{0.5}{
+\begin{tikzpicture}
+\fill[white](-4,-1) rectangle (4,4);
+\fill[opacity=0.5,red] (0,0) ++(115:2) circle (2);
+\fill[opacity=0.5,blue] (0,0) ++(45:2) circle (2);
+\fill[opacity=0.5,green] (0,0) ++(135:2.5) circle (1);
+\node[draw=none] at (-1,3) {$\alpha$};
+\node[draw=none] at (2.5,1.5) {$\beta$};
+\node[draw=none] at (-2,1.7) {$\alpha \cap \gamma$};
+\end{tikzpicture}}
+\item[Cas général]:\\
+\scalebox{0.5}{
+\begin{tikzpicture}
+\fill[white](-4,-1) rectangle (4,4);
+\fill[opacity=0.5,red] (0,0) ++(115:2) circle (2);
+\fill[opacity=0.5,blue] (0,0) ++(45:2) circle (2);
+\fill[opacity=0.5,green] (0,0) ++(115:2) circle (1);
+\node[draw=none] at (-1,3) {$\alpha$};
+\node[draw=none] at (2.5,1.5) {$\beta$};
+\node[draw=none] at (-1,1.7) {$\alpha \cap \gamma$};
+\end{tikzpicture}}
+\end{description}
+
+\section{Système P}
+\begin{description}
+\item[Réflexivité]:
+\begin{description}
+\item[Almost all]: $\alpha \almost \alpha$
+\item[ensembliste]: $A \Subset A$
+\end{description}
+\item[Équilibrage à gauche]:
+\begin{description}
+\item[Almost all]: Si $\models \alpha \Leftrightarrow \beta$ et $\alpha \almost \gamma$ alors $\beta \almost \gamma$
+\item[ensembliste]: Si $A = B$ et $A \Subset C$ alors $B \Subset C$
+\end{description}
+\item[Équilibrage à droite]:
+\begin{description}
+\item[Almost all]: Si $\alpha \models \beta$ et $\gamma \almost \alpha$ alors $\gamma \almost \beta$
+\item[ensembliste]: Si $A \subseteq B$ et $C \Subset A$ alors $C \Subset B$
+\end{description}
+\item[Coupure]:
+\begin{description}
+\item[Almost all]: Si $(\alpha \wedge \beta) \almost \gamma$ et $\alpha \almost \beta$ alors $\alpha \almost \gamma$
+\item[ensembliste]: Si $(A \cap B) \Subset C$ et $A \Subset B$ alors $A \Subset C$
+\end{description}
+\item[Monotonie]:
+\begin{description}
+\item[Almost all]: Si $\alpha \almost \beta$ et $\alpha \almost \gamma$ alors $\alpha \wedge \beta \almost \gamma$
+\item[ensembliste]: Si $A \Subset B$ et $A \Subset C$ alors $(A \cap B) \Subset C$
+\end{description}
+\item[Ou]:
+\begin{description}
+\item[Almost all]: Si $\alpha \almost \gamma$ et $\beta \almost \gamma$ alors $\alpha \vee \beta \almost \gamma$
+\item[ensembliste]: Si $A \Subset C$ et $B \Subset C$ alors $(A \cup B) \Subset C$
+\end{description}
+\end{description}
+
+
 \pagebreak

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  30 OCT 2018 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  30 OCT 2018 20:03
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -970,18 +970,18 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -1043,12 +1043,12 @@ G,.JBIG2,.JB2,.eps]
 \c@lstlisting=\count173
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1499,10 +1499,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 Missing character: There is no ] in font nullfont!
  [57]
 Missing character: There is no ] in font nullfont!
-) (xml.tex [58] [59
+ [58]
+Chapter 19.
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+[59
+
+]) [60] (xml.tex [61
 
 ]
-Chapter 19.
+Chapter 20.
 
 Overfull \hbox (103.25266pt too wide) in paragraph at lines 19--20
 []$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\T1/cmr/m/n/1
@@ -1512,10 +1521,10 @@ Overfull \hbox (103.25266pt too wide) in paragraph at lines 19--20
 12 IMPLIED\OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[60
+[62
 
 ]
-Chapter 20.
+Chapter 21.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 (E:\ProgramFiles\MikTex2.9\tex\latex\base\t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1525,7 +1534,7 @@ Overfull \hbox (28.56113pt too wide) in paragraph at lines 45--46
 ][][][][] 
  []
 
-[61
+[63
 
 ]
 Overfull \hbox (48.31744pt too wide) in paragraph at lines 61--62
@@ -1533,8 +1542,8 @@ Overfull \hbox (48.31744pt too wide) in paragraph at lines 61--62
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[62]
-Chapter 21.
+[64]
+Chapter 22.
 
 Overfull \hbox (9.11034pt too wide) in paragraph at lines 71--72
 []$\OT1/cmr/m/n/12 "\OML/cmm/m/it/12 movie=filmography= \OMS/cmsy/m/n/12  \OML
@@ -1573,14 +1582,14 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 80--81
  )"$ 
  []
 
-) [63
+) [65
 
 ] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 18071 strings out of 493323
- 344756 string characters out of 3139963
- 433669 words of memory out of 3000000
- 21226 multiletter control sequences out of 15000+200000
+ 18083 strings out of 493323
+ 344949 string characters out of 3139963
+ 433684 words of memory out of 3000000
+ 21238 multiletter control sequences out of 15000+200000
  21730 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,79p,444b,3462s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1608,9 +1617,9 @@ kTex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (69 pages, 530914 bytes).
+Output written on _memo.pdf (71 pages, 535728 bytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
+ 776 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
