@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  30 OCT 2018 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  31 OCT 2018 08:56
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1508,7 +1508,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
 [59
 
-]) [60] (xml.tex [61
+] [60]
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
+
+ []
+
+
+Overfull \hbox (33.45607pt too wide) in paragraph at lines 416--418
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--418
+
+ []
+
+[61]) [62] (xml.tex [63
 
 ]
 Chapter 20.
@@ -1521,7 +1541,7 @@ Overfull \hbox (103.25266pt too wide) in paragraph at lines 19--20
 12 IMPLIED\OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[62
+[64
 
 ]
 Chapter 21.
@@ -1534,7 +1554,7 @@ Overfull \hbox (28.56113pt too wide) in paragraph at lines 45--46
 ][][][][] 
  []
 
-[63
+[65
 
 ]
 Overfull \hbox (48.31744pt too wide) in paragraph at lines 61--62
@@ -1542,7 +1562,7 @@ Overfull \hbox (48.31744pt too wide) in paragraph at lines 61--62
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[64]
+[66]
 Chapter 22.
 
 Overfull \hbox (9.11034pt too wide) in paragraph at lines 71--72
@@ -1582,7 +1602,7 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 80--81
  )"$ 
  []
 
-) [65
+) [67
 
 ] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
@@ -1617,9 +1637,9 @@ kTex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fon
 ts/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (71 pages, 535728 bytes).
+Output written on _memo.pdf (73 pages, 539817 bytes).
 PDF statistics:
- 776 PDF objects out of 1000 (max. 8388607)
+ 786 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

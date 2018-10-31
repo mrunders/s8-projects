@@ -109,7 +109,9 @@
 \contentsline {section}{\numberline {18.3}Exemple 2}{58}
 \contentsline {chapter}{\numberline {19}Logique presque tout}{59}
 \contentsline {section}{\numberline {19.1}Syst\IeC {\`e}me P}{60}
-\contentsline {part}{VI\hspace {1em}XML}{61}
-\contentsline {chapter}{\numberline {20}DTD}{62}
-\contentsline {chapter}{\numberline {21}XSD}{63}
-\contentsline {chapter}{\numberline {22}XPATH}{65}
+\contentsline {subsection}{\numberline {19.1.1}Exemple}{61}
+\contentsline {subsection}{\numberline {19.1.2}Caract\IeC {\'e}riser Syst\IeC {\`e}me P}{62}
+\contentsline {part}{VI\hspace {1em}XML}{63}
+\contentsline {chapter}{\numberline {20}DTD}{64}
+\contentsline {chapter}{\numberline {21}XSD}{65}
+\contentsline {chapter}{\numberline {22}XPATH}{67}
