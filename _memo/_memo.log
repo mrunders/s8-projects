@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  31 OCT 2018 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  1 NOV 2018 15:37
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -342,13 +342,6 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(E:\ProgramFiles\MikTex2.9\tex\latex\base\fontenc.sty
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-(E:\ProgramFiles\MikTex2.9\tex\latex\base\t1enc.def
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (E:\ProgramFiles\MikTex2.9\tex\latex\graphics\color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -970,18 +963,18 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -1043,12 +1036,12 @@ G,.JBIG2,.JB2,.eps]
 \c@lstlisting=\count173
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 56.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+LaTeX Font Info:    Try loading font information for U+msb on input line 56.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1065,7 +1058,12 @@ Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 83--83
+Overfull \hbox (5.33537pt too wide) in paragraph at lines 85--85
+[]\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []  
  []
 
@@ -1078,223 +1076,199 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--83
 ]
 Chapter 1.
 
-Overfull \hbox (2.20287pt too wide) in paragraph at lines 7--8
-[]\T1/cmr/m/n/12 : Soient X et Y deux vari-ables aléa-
+Overfull \hbox (5.63202pt too wide) in paragraph at lines 7--8
+\OT1/cmr/m/n/12 aleatoires discretes prenant leurs valeurs dans DX=x1,..,xn e
+t DY=y1,..,ym
  []
 
 
-Overfull \hbox (4.43pt too wide) in paragraph at lines 12--13
-[]\T1/cmr/m/n/12 = $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1
-/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/
-it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/
-12  \OML/cmm/m/it/12 ::: \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 
-(\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]::x[]\OT1/cmr/m/n/12
- )$ 
+Overfull \hbox (4.45865pt too wide) in paragraph at lines 12--13
+[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT
+1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n
+/12  \OML/cmm/m/it/12 ::: \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12
+ (\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]::x[]\OT1/cmr/m/n/1
+2 )$ 
  []
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 19.
-
-Missing character: There is no é in font cmr12!
-
-LaTeX Warning: Command \' invalid in math mode on input line 27.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 27.
-
-Missing character: There is no é in font cmr12!
-Missing character: There is no é in font cmr12!
-
-Overfull \hbox (10.43161pt too wide) in paragraph at lines 27--28
-[]\T1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \O
-T1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M\O
-T1/cmr/m/n/12 1) + \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT
-1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 =
+Overfull \hbox (21.32593pt too wide) in paragraph at lines 31--32
+[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
+OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
+\OT1/cmr/m/n/12 1) + \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
+OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 =
  []
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 28.
-
-Missing character: There is no é in font cmr12!
-
-LaTeX Warning: Command \' invalid in math mode on input line 28.
-
-Missing character: There is no é in font cmr12!
-
-Overfull \hbox (0.8123pt too wide) in paragraph at lines 28--29
-[]\T1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \O
-T1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnne \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M\O
-T1/cmr/m/n/12 2)\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT1/
-cmr/m/n/12 =
+Overfull \hbox (11.70662pt too wide) in paragraph at lines 32--33
+[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
+OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
+\OT1/cmr/m/n/12 2)\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT
+1/cmr/m/n/12 =
  []
 
 [2
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 51.
+ (E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+ [3]
 Chapter 2.
-[3
+[4
 
-] [4]
+] [5]
 Chapter 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
- []
-
-[5
-
-]
-Chapter 4.
-
-Overfull \hbox (1.63753pt too wide) in paragraph at lines 92--94
-[]\T1/cmr/m/n/12 : Par-ti-tion-ner récur-sive-ment les
  []
 
 [6
 
-] [7]
-Overfull \hbox (10.42786pt too wide) in paragraph at lines 156--157
-[]\T1/cmr/m/n/12 = $\OMS/cmsy/m/n/12   [][] \OML/cmm/m/it/12 freq\OT1/cmr/m/n/1
-2 (\OML/cmm/m/it/12 a[]; T\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12
- log[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 freq\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a
-[]; T\OT1/cmr/m/n/12 )) =$\T1/cmr/m/n/12 Entropie
+]
+Chapter 4.
+
+Overfull \hbox (1.7259pt too wide) in paragraph at lines 121--123
+[]\OT1/cmr/m/n/12 : Par-ti-tion-ner recursivement les
  []
 
-[8] [9]
+
+Overfull \hbox (3.44138pt too wide) in paragraph at lines 130--131
+\OT1/cmr/m/n/12 dans une dis-tri-bu-tion de prob-a-bilites. Soit X une vari-ab
+le aleatoire discrete
+ []
+
+[7
+
+] [8]
+Overfull \hbox (11.94879pt too wide) in paragraph at lines 185--186
+[]\OT1/cmr/m/n/12 = $\OMS/cmsy/m/n/12   [][] \OML/cmm/m/it/12 freq\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 a[]; T\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/1
+2 log[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 freq\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+a[]; T\OT1/cmr/m/n/12 )) =$Entropie
+ []
+
+[9] [10]
 Chapter 5.
 
-Overfull \hbox (6.23676pt too wide) in paragraph at lines 225--227
+Overfull \hbox (6.2433pt too wide) in paragraph at lines 254--256
 [] 
  []
 
-[10
+[11
 
 ]
-Overfull \vbox (38.28146pt too high) has occurred while \output is active []
+Overfull \vbox (38.28828pt too high) has occurred while \output is active []
 
 
-[11]) [12] (ap.tex [13
+[12]) [13] (ap.tex [14
 
 ]
 Chapter 6.
-[14
+[15
 
 ]
-Overfull \hbox (17.09692pt too wide) in paragraph at lines 50--53
-[]\T1/cmr/m/n/12 : $[] []$ 
+Overfull \hbox (17.17168pt too wide) in paragraph at lines 50--53
+[]\OT1/cmr/m/n/12 : $[] []$ 
  []
 
-[15]
+[16]
 Chapter 7.
 
-LaTeX Warning: Command \' invalid in math mode on input line 68.
-
-Missing character: There is no é in font cmr12!
-
-Overfull \hbox (55.51585pt too wide) in paragraph at lines 68--69
-[]\T1/cmr/m/n/12 : Quand les vari-ables en sor-tie sont des Classe $\OT1/cmr/m/
-n/12 (\OML/cmm/m/it/12 Vert; Carr; Homme\OT1/cmr/m/n/12 )$ 
+Overfull \hbox (61.03465pt too wide) in paragraph at lines 68--69
+[]\OT1/cmr/m/n/12 : Quand les vari-ables en sor-tie sont des Classe $(\OML/cmm/
+m/it/12 Vert; Carre; Homme\OT1/cmr/m/n/12 )$ 
  []
 
+[17
 
-LaTeX Warning: Command \' invalid in math mode on input line 69.
-
-Missing character: There is no é in font cmr12!
-[16
-
-] [17]
+] [18]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
-[18
+[19
 
 ]
 Chapter 9.
-<img/ap-linear-regression_1.png, id=100, 640.3925pt x 720.6925pt>
+<img/ap-linear-regression_1.png, id=98, 640.3925pt x 720.6925pt>
 File: img/ap-linear-regression_1.png Graphic file (type png)
 
 <use img/ap-linear-regression_1.png>
 Package pdftex.def Info: img/ap-linear-regression_1.png used on input line 107.
 
 (pdftex.def)             Requested size: 192.11923pt x 216.20941pt.
- [19
+ [20
 
- <./img/ap-linear-regression_1.png (PNG copy)>] [20]
+ <./img/ap-linear-regression_1.png (PNG copy)>] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 136--138
 
  []
 
-[21] [22]
+[22] [23]
 Chapter 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--212
 
  []
 
-[23
+[24
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 221--223
 
  []
 
-) [24] (of.tex [25
+) [25] (of.tex [26
 
 ]
 Chapter 11.
-[26
+[27
 
-] <img/of-coupure.png, id=129, 294.09875pt x 243.91125pt>
+] <img/of-coupure.png, id=126, 294.09875pt x 243.91125pt>
 File: img/of-coupure.png Graphic file (type png)
 
 <use img/of-coupure.png>
 Package pdftex.def Info: img/of-coupure.png used on input line 35.
 (pdftex.def)             Requested size: 88.2303pt x 73.17393pt.
- <img/of-ou.png, id=130, 281.05pt x 136.51pt>
+ <img/of-ou.png, id=127, 281.05pt x 136.51pt>
 File: img/of-ou.png Graphic file (type png)
 
 <use img/of-ou.png>
 Package pdftex.def Info: img/of-ou.png used on input line 37.
 (pdftex.def)             Requested size: 84.31564pt x 40.95331pt.
- <img/of-monotomie.png, id=131, 175.65625pt x 198.7425pt>
+ <img/of-monotomie.png, id=128, 175.65625pt x 198.7425pt>
 File: img/of-monotomie.png Graphic file (type png)
 
 <use img/of-monotomie.png>
 Package pdftex.def Info: img/of-monotomie.png used on input line 39.
 (pdftex.def)             Requested size: 52.69727pt x 59.6232pt.
 
-Overfull \hbox (10.88536pt too wide) in paragraph at lines 42--42
-[]\T1/cmr/bx/n/17.28 Ensemble de con-necteurs fonc-tion-nelle-ment
+Overfull \hbox (2.50609pt too wide) in paragraph at lines 44--45
+[]\OT1/cmr/m/n/12 si avec que
  []
 
-
-Overfull \hbox (2.41646pt too wide) in paragraph at lines 44--45
-[]\T1/cmr/m/n/12 si avec que
- []
-
-[27 <./img/of-coupure.png (PNG copy)> <./img/of-ou.png (PNG copy)> <./img/of-mo
-notomie.png (PNG copy)>]
-Overfull \hbox (6.42444pt too wide) in paragraph at lines 54--54
-\T1/cmr/bx/n/17.28 en-sem-ble de con-necteurs non fonc-tion-nelle-
- []
-
-[28]
+[28 <./img/of-coupure.png (PNG copy)> <./img/of-ou.png (PNG copy)> <./img/of-mo
+notomie.png (PNG copy)>] [29]
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (18.73495pt too wide) in paragraph at lines 83--117
+Overfull \hbox (18.82834pt too wide) in paragraph at lines 83--117
 []
  []
 
-<img/of-remplacement.png, id=138, 350.30875pt x 156.585pt>
+<img/of-remplacement.png, id=135, 350.30875pt x 156.585pt>
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
 Package pdftex.def Info: img/of-remplacement.png used on input line 120.
 (pdftex.def)             Requested size: 262.73091pt x 117.43845pt.
- [29]
+ [30]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
@@ -1309,14 +1283,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[30 <./img/of-remplacement.png (PNG copy)>]
+[31 <./img/of-remplacement.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[31]
+[32]
 Chapter 12.
-<img/of-occ-1.png, id=149, 317.185pt x 297.11pt>
+<img/of-occ-1.png, id=146, 317.185pt x 297.11pt>
 File: img/of-occ-1.png Graphic file (type png)
  <use img/of-occ-1.png>
 Package pdftex.def Info: img/of-occ-1.png used on input line 187.
@@ -1326,19 +1300,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
-[32
+[33
 
  <./img/of-occ-1.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 253--256
 
  []
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 277--281
 
  []
@@ -1353,7 +1327,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-) [35] (ro.tex [36
+) [36] (ro.tex [37
 
 ]
 Chapter 13.
@@ -1367,26 +1341,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--31
 
  []
 
-[37
+[38
 
 ]
 Chapter 14.
-<img/ro-pl-2var_0.png, id=169, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_0.png, id=166, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [38
+ [39
 
 ]
-<img/ro-pl-2var_1.png, id=173, 491.8375pt x 434.62375pt>
+Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
+[]\OT1/cmr/m/n/12 : est la droite (rouge) la plus haute touchant un point extr^
+eme,
+ []
+
+<img/ro-pl-2var_1.png, id=170, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [39 <./img/ro-pl-2var_0.png (PNG copy)>] [40 <./img/ro-pl-2var_1.png (PNG copy
+ [40 <./img/ro-pl-2var_0.png (PNG copy)>] [41 <./img/ro-pl-2var_1.png (PNG copy
 )>]
 Chapter 15.
 
@@ -1394,34 +1373,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[41
+[42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 130--136
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--196
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-[44] [45]) (rcr.tex [46] [47
+[46] [47]) (rcr.tex [48] [49
 
 ]
 Chapter 16.
@@ -1430,45 +1414,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[48
+[50
 
-] [49]
+] [51]
 Chapter 17.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[50
+[52
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[51]
-Overfull \hbox (54.45921pt too wide) in paragraph at lines 131--132
+[53]
+Overfull \hbox (54.46117pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-[52]
-Overfull \hbox (23.76093pt too wide) in paragraph at lines 155--156
-[]\T1/cmr/m/n/12 équivalent? $\OML/cmm/m/it/12 Yes$ 
+[54]
+Overfull \hbox (23.78946pt too wide) in paragraph at lines 155--156
+[]\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
 
 
-Overfull \hbox (38.79239pt too wide) in paragraph at lines 156--157
-[]\T1/cmr/m/n/12 équivalent?
+Overfull \hbox (38.8198pt too wide) in paragraph at lines 156--157
+[]\OT1/cmr/m/n/12 equivalent?
  []
 
-[53]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-[54]
+[56]
 Chapter 18.
-[55
+[57
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 211--213
@@ -1495,20 +1479,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[56]
+[58]
 Missing character: There is no ] in font nullfont!
- [57]
+ [59]
 Missing character: There is no ] in font nullfont!
- [58]
+ [60]
 Chapter 19.
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[59
+[61
 
-] [60]
+] [62]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
@@ -1519,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 409--411
  []
 
 
-Overfull \hbox (33.45607pt too wide) in paragraph at lines 416--418
+Overfull \hbox (33.17897pt too wide) in paragraph at lines 416--418
 []
  []
 
@@ -1528,68 +1512,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-[61]) [62] (xml.tex [63
+[63]) [64] (xml.tex [65
 
 ]
 Chapter 20.
 
-Overfull \hbox (103.25266pt too wide) in paragraph at lines 19--20
-[]$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\T1/cmr/m/n/1
-2 nom de la balise$\OML/cmm/m/it/12 ><$ \T1/cmr/m/n/12 clef $\OML/cmm/m/it/12 >
-<$ \T1/cmr/m/n/12 con-tenue $\OML/cmm/m/it/12 > \OT1/cmr/m/n/12 [$\T1/cmr/m/n/1
-2 #$\OML/cmm/m/it/12 REQUIRED\OMS/cmsy/m/n/12 j$\T1/cmr/m/n/12 #$\OML/cmm/m/it/
-12 IMPLIED\OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
+Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
+[]$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\OT1/cmr/m/n/
+12 nom de la balise$\OML/cmm/m/it/12 ><$ \OT1/cmr/m/n/12 clef $\OML/cmm/m/it/12
+ ><$ \OT1/cmr/m/n/12 con-tenue $\OML/cmm/m/it/12 > \OT1/cmr/m/n/12 [$#$\OML/cmm
+/m/it/12 REQUIRED\OMS/cmsy/m/n/12 j$\OT1/cmr/m/n/12 #$\OML/cmm/m/it/12 IMPLIED\
+OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[64
+[66
 
 ]
 Chapter 21.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
-(E:\ProgramFiles\MikTex2.9\tex\latex\base\t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (28.56113pt too wide) in paragraph at lines 45--46
+
+Overfull \hbox (28.66399pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
  []
 
-[65
+[67
 
 ]
-Overfull \hbox (48.31744pt too wide) in paragraph at lines 61--62
+Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[66]
+[68]
 Chapter 22.
 
-Overfull \hbox (9.11034pt too wide) in paragraph at lines 71--72
+Overfull \hbox (9.16443pt too wide) in paragraph at lines 71--72
 []$\OT1/cmr/m/n/12 "\OML/cmm/m/it/12 movie=filmography= \OMS/cmsy/m/n/12  \OML
 /cmm/m/it/12 =attr\OT1/cmr/m/n/12 "$ 
  []
 
 
-Overfull \hbox (54.84373pt too wide) in paragraph at lines 72--73
+Overfull \hbox (54.91687pt too wide) in paragraph at lines 72--73
 []$\OT1/cmr/m/n/12 "\OML/cmm/m/it/12 movie=filmography= \OMS/cmsy/m/n/12 
  []
 
 
-Overfull \hbox (6.67957pt too wide) in paragraph at lines 73--74
+Overfull \hbox (6.72887pt too wide) in paragraph at lines 73--74
 []$\OT1/cmr/m/n/12 "\OML/cmm/m/it/12 movie=filmography= \OMS/cmsy/m/n/12  \OML
 /cmm/m/it/12 =\OT1/cmr/m/n/12 @\OML/cmm/m/it/12 order\OT1/cmr/m/n/12 "$ 
  []
 
 
-Overfull \hbox (53.27724pt too wide) in paragraph at lines 78--79
+Overfull \hbox (61.76523pt too wide) in paragraph at lines 78--79
 \OT1/cmr/m/n/12 "\OML/cmm/m/it/12 count\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 movie=
-filmography=cast=name$ \T1/cmr/m/n/12 | $\OML/cmm/m/it/12 movie=filmography=rem
-ainder=name\OT1/cmr/m/n/12 )"$ 
+filmography=cast=name$ \OT1/cmr/m/n/12 | $\OML/cmm/m/it/12 movie=filmography=re
+mainder=name\OT1/cmr/m/n/12 )"$ 
  []
 
 
-Overfull \hbox (50.3449pt too wide) in paragraph at lines 80--81
+Overfull \hbox (50.44698pt too wide) in paragraph at lines 80--81
 []
  []
 
@@ -1602,44 +1583,37 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 80--81
  )"$ 
  []
 
-) [67
+) [69
 
 ] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 18083 strings out of 493323
- 344949 string characters out of 3139963
- 433684 words of memory out of 3000000
- 21238 multiletter control sequences out of 15000+200000
- 21730 words of font info for 58 fonts, out of 3000000 for 9000
+ 17870 strings out of 493323
+ 343055 string characters out of 3139963
+ 432608 words of memory out of 3000000
+ 21039 multiletter control sequences out of 15000+200000
+ 14226 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,79p,444b,3462s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\
-ec\dpi600\ectt1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecti1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\lj
-four\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\pc\AppData\Local\MiKTeX\2.9\font
-s\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\pc\AppData\Local\MiKTeX\2
-.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\pc\AppData\Local\M
-iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\pc\AppData\
-Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\pc\A
-ppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk> <C:\Use
-rs\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> 
-<C:\Users\pc\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm20
-74.pk><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/
-ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Progra
-mFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles/Mik
-Tex2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfont
-s/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Prog
-ramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/Mi
-kTex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fon
-ts/type1/public/amsfonts/symbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (73 pages, 539817 bytes).
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/P
+rogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Program
+Files/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles/MikT
+ex2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Progra
+mFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/Mik
+Tex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfon
+ts/cm/cmtt12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols
+/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm
+10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+>
+Output written on _memo.pdf (75 pages, 437629 bytes).
 PDF statistics:
- 786 PDF objects out of 1000 (max. 8388607)
+ 327 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  30 OCT 2018 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  1 NOV 2018 15:36
 entering extended mode
 **./fdd.tex
 (fdd.tex
@@ -482,192 +482,59 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.18 \item[]
-            : $\begin{pmatrix}
+            :
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no : in font nullfont!
-! Misplaced alignment tab character &.
-l.19   Année &
-                Sexe & \# & \%  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19   Année & Sexe &
-                       \# & \%  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.19   Année & Sexe & \# &
-                            \%  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20    M1 &
-             M  & 25  &  25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20    M1 & M  &
-                  25  &  25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.20    M1 & M  & 25  &
-                         25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.21    M1 &
-             F  & 4 &  4/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.21    M1 & F  &
-                  4 &  4/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.21    M1 & F  & 4 &
-                       4/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.22    M2 &
-             M  & 25  & 25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.22    M2 & M  &
-                  25  & 25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.22    M2 & M  & 25  &
-                        25/55   \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.23    M2 &
-             F  & 1  &  1/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.23    M2 & F  &
-                  1  &  1/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.23    M2 & F  & 1  &
-                        1/55  \\
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no � in font cmr10!
-Missing character: There is no � in font cmr10!
-
-Overfull \hbox (75.34149pt too wide) in paragraph at lines 18--25
-[] \OML/cmm/m/it/10 nneSexe\OT1/cmr/m/n/10 #%[] 
- []
-
-
-Overfull \hbox (61.58344pt too wide) in paragraph at lines 18--25
-\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2525\OML/c
-mm/m/it/10 =\OT1/cmr/m/n/10 55[] 
- []
-
-
-Overfull \hbox (48.6112pt too wide) in paragraph at lines 18--25
-\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 44\OML/cmm
-/m/it/10 =\OT1/cmr/m/n/10 55[] 
- []
-
-
-Overfull \hbox (61.58344pt too wide) in paragraph at lines 18--25
-\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2525\OML/c
-mm/m/it/10 =\OT1/cmr/m/n/10 55[] 
- []
-
-
-Overfull \hbox (48.6112pt too wide) in paragraph at lines 18--25
-\OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 11\OML/cmm
-/m/it/10 =\OT1/cmr/m/n/10 55[] 
- []
-
+Missing character: There is no A in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no � in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no # in font nullfont!
+Missing character: There is no % in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -675,7 +542,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \item[]
+l.29 \item[]
             
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -687,7 +554,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 \begin{description}
+l.30 \begin{description}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -700,49 +567,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \item[$P(sexe=M)$]
-                        = $P(Sexe=M et Année=M1) + P(Sexe=M et Année=M2) =...
+l.31 \item[$P(sexe=M)$]
+                        = $P(Sexe=M et Annee=M1) + P(Sexe=M et Annee=M2) = 5...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
-Missing character: There is no � in font cmr10!
-Missing character: There is no � in font cmr10!
-Missing character: There is no � in font cmr10!
-Missing character: There is no � in font cmr10!
 
-Overfull \hbox (43.98956pt too wide) in paragraph at lines 27--28
+Overfull \hbox (43.98956pt too wide) in paragraph at lines 31--32
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Sexe \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.77553pt too wide) in paragraph at lines 27--28
-\OML/cmm/m/it/10 MetAnne \OT1/cmr/m/n/10 =
+Overfull \hbox (58.4318pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 MetAnnee \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (27.45837pt too wide) in paragraph at lines 27--28
+Overfull \hbox (27.45837pt too wide) in paragraph at lines 31--32
 \OML/cmm/m/it/10 M\OT1/cmr/m/n/10 1) +
  []
 
 
-Overfull \hbox (43.98956pt too wide) in paragraph at lines 27--28
+Overfull \hbox (43.98956pt too wide) in paragraph at lines 31--32
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Sexe \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.77553pt too wide) in paragraph at lines 27--28
-\OML/cmm/m/it/10 MetAnne \OT1/cmr/m/n/10 =
+Overfull \hbox (58.4318pt too wide) in paragraph at lines 31--32
+\OML/cmm/m/it/10 MetAnnee \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.23608pt too wide) in paragraph at lines 27--28
+Overfull \hbox (30.23608pt too wide) in paragraph at lines 31--32
 \OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2) =
  []
 
 
-Overfull \hbox (25.00008pt too wide) in paragraph at lines 27--28
+Overfull \hbox (25.00008pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/n/10 50\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 55$ 
  []
 
@@ -753,7 +616,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \item[$P(Année=M2 | sexe=M)$]
+l.32 \item[$P(Année=M2 | sexe=M)$]
                                     = $P(Sexe=M et Année=M2) / P(Sexe=M) = ...
 
 Try typing  <return>  to proceed.
@@ -769,7 +632,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \end{description}
+l.33 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -782,50 +645,208 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 \end{description}
+l.34 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (43.98956pt too wide) in paragraph at lines 28--31
+Overfull \hbox (43.98956pt too wide) in paragraph at lines 32--35
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Sexe \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (53.77553pt too wide) in paragraph at lines 28--31
+Overfull \hbox (53.77553pt too wide) in paragraph at lines 32--35
 \OML/cmm/m/it/10 MetAnne \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (68.67015pt too wide) in paragraph at lines 28--31
+Overfull \hbox (68.67015pt too wide) in paragraph at lines 32--35
 \OML/cmm/m/it/10 M\OT1/cmr/m/n/10 2)\OML/cmm/m/it/10 =P\OT1/cmr/m/n/10 (\OML/cm
 m/m/it/10 Sexe \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (25.23607pt too wide) in paragraph at lines 28--31
+Overfull \hbox (25.23607pt too wide) in paragraph at lines 32--35
 \OML/cmm/m/it/10 M\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (36.30003pt too wide) in paragraph at lines 28--31
+Overfull \hbox (36.30003pt too wide) in paragraph at lines 32--35
 []\OML/cmm/m/it/10 =[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (20.92776pt too wide) in paragraph at lines 28--31
+Overfull \hbox (20.92776pt too wide) in paragraph at lines 32--35
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (6.38612pt too wide) in paragraph at lines 28--31
+Overfull \hbox (6.38612pt too wide) in paragraph at lines 32--35
 []$
  []
 
 ! Undefined control sequence.
-l.32 \chapter
+l.36 \section
+             {Exemple}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \section{E
+               xemple}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+
+! LaTeX Error: Environment multicols undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \begin{multicols}
+                      {2}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--49
+[]
+ []
+
+
+Overfull \hbox (49.72351pt too wide) in paragraph at lines 36--49
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \begin{itemize}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--50
+[] 
+ []
+
+
+Overfull \hbox (35.91437pt too wide) in paragraph at lines 51--52
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 51--52
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 40$ 
+ []
+
+
+Overfull \hbox (47.46994pt too wide) in paragraph at lines 52--53
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/c
+mm/m/it/10 b[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 52--53
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4$ 
+ []
+
+
+Overfull \hbox (47.46994pt too wide) in paragraph at lines 53--54
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/c
+mm/m/it/10 b[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 53--54
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4$ 
+ []
+
+
+Overfull \hbox (35.91437pt too wide) in paragraph at lines 54--55
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 54--55
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 60$ 
+ []
+
+
+Overfull \hbox (47.46994pt too wide) in paragraph at lines 55--56
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/c
+mm/m/it/10 b[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 55--56
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6$ 
+ []
+
+
+Overfull \hbox (47.46994pt too wide) in paragraph at lines 56--57
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]\OMS/cmsy/m/n/10 j\OML/c
+mm/m/it/10 b[]\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 56--57
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 6$ 
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{multicols}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \end{multicols}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.61 \chapter
              {Pré traitement des données}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -840,7 +861,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 \chapter{P
+l.61 \chapter{P
                ré traitement des données}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -871,7 +892,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.33 \section
+l.62 \section
              {Nettoyage des données}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -900,7 +921,7 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.34 \subsection
+l.63 \subsection
                 {Caractéristiques descriptives}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -938,7 +959,7 @@ Missing character: There is no v in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 32--35
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--64
 []
  []
 
@@ -949,7 +970,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 O
+l.65 O
       bjectifs: Résumer, décrire certains aspects (tendances, variation, d...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1072,7 +1093,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 36--37
+Overfull \hbox (20.0pt too wide) in paragraph at lines 65--66
 []
  []
 
@@ -1083,13 +1104,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 \begin{center}
+l.67 \begin{center}
                    
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 38--38
+Overfull \hbox (20.0pt too wide) in paragraph at lines 67--67
 [] 
  []
 
@@ -1100,7 +1121,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \begin{description}
+l.68 \begin{description}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1129,7 +1150,7 @@ Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
 <recently read> \overset 
                          
-l.40 \item[Moyenne (espérance)]: $\overset
+l.69 \item[Moyenne (espérance)]: $\overset
                                            {\_}{x}=\frac{1}{n} \sum_{i=1}^n ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1138,12 +1159,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (16.27078pt too wide) in paragraph at lines 40--41
+Overfull \hbox (16.27078pt too wide) in paragraph at lines 69--70
  []\OML/cmm/m/it/10 x \OT1/cmr/m/n/10 = 
  []
 
 
-Overfull \hbox (43.73105pt too wide) in paragraph at lines 40--41
+Overfull \hbox (43.73105pt too wide) in paragraph at lines 69--70
  [] [][] \OML/cmm/m/it/10 x[]$ 
  []
 
@@ -1159,7 +1180,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.41 ... $\frac{1}{n} \sum_{i=1}^n |x_i - \overset
+l.70 ... $\frac{1}{n} \sum_{i=1}^n |x_i - \overset
                                                   {\_}{x} |$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1168,12 +1189,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (54.28664pt too wide) in paragraph at lines 41--42
+Overfull \hbox (54.28664pt too wide) in paragraph at lines 70--71
  [] [][] \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10   
  []
 
 
-Overfull \hbox (8.49306pt too wide) in paragraph at lines 41--42
+Overfull \hbox (8.49306pt too wide) in paragraph at lines 70--71
  []\OML/cmm/m/it/10 x\OMS/cmsy/m/n/10 j$ 
  []
 
@@ -1187,7 +1208,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.42 ...= \frac{1}{n} \sum_{i=1}^n (x_i - \overset
+l.71 ...= \frac{1}{n} \sum_{i=1}^n (x_i - \overset
                                                   {\_}{x} )^2$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1196,17 +1217,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (15.76152pt too wide) in paragraph at lines 42--43
+Overfull \hbox (15.76152pt too wide) in paragraph at lines 71--72
  \OML/cmm/m/it/10 v \OT1/cmr/m/n/10 = 
  []
 
 
-Overfull \hbox (53.73112pt too wide) in paragraph at lines 42--43
+Overfull \hbox (53.73112pt too wide) in paragraph at lines 71--72
  [] [][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10   
  []
 
 
-Overfull \hbox (14.0903pt too wide) in paragraph at lines 42--43
+Overfull \hbox (14.0903pt too wide) in paragraph at lines 71--72
  []\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )[]$ 
  []
 
@@ -1221,7 +1242,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.43 ...t{\frac{1}{n} \sum_{i=1}^n (x_i - \overset
+l.72 ...t{\frac{1}{n} \sum_{i=1}^n (x_i - \overset
                                                   {\_}{x} )^2} = \sqrt{\frac...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1230,7 +1251,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.43 ...\frac{1}{n}(\sum_{i=1}^n x_i^2) - \overset
+l.72 ...\frac{1}{n}(\sum_{i=1}^n x_i^2) - \overset
                                                   {\_}{x}^2 }$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1239,17 +1260,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (25.4826pt too wide) in paragraph at lines 43--44
+Overfull \hbox (25.4826pt too wide) in paragraph at lines 72--73
  \OML/cmm/m/it/10 x \OT1/cmr/m/n/10 := 
  []
 
 
-Overfull \hbox (92.82129pt too wide) in paragraph at lines 43--44
+Overfull \hbox (92.82129pt too wide) in paragraph at lines 72--73
  [] \OT1/cmr/m/n/10 = 
  []
 
 
-Overfull \hbox (83.42262pt too wide) in paragraph at lines 43--44
+Overfull \hbox (83.42262pt too wide) in paragraph at lines 72--73
  []$ 
  []
 
@@ -1364,20 +1385,20 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no x in font nullfont!
 
-! LaTeX Error: \begin{center} on input line 38 ended by \end{description}.
+! LaTeX Error: \begin{center} on input line 67 ended by \end{description}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \end{description}
+l.76 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.50 \section
+l.79 \section
              {Normalisation}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1399,7 +1420,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 50--51
+Overfull \hbox (20.0pt too wide) in paragraph at lines 79--80
 [] 
  []
 
@@ -1410,7 +1431,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 \begin{description}
+l.81 \begin{description}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1423,19 +1444,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.53 \item[Min-max]
+l.82 \item[Min-max]
                    : $v_n = \frac{v-v_{min}}{v_{max} - v_{min}}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.84607pt too wide) in paragraph at lines 53--54
+Overfull \hbox (20.84607pt too wide) in paragraph at lines 82--83
 \OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (44.83269pt too wide) in paragraph at lines 53--54
+Overfull \hbox (44.83269pt too wide) in paragraph at lines 82--83
 []$ 
  []
 
@@ -1446,7 +1467,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \item[Min-max dans l'intervalle [A,B]
+l.83 \item[Min-max dans l'intervalle [A,B]
                                           ]: $v_n = \frac{v-v_{min}}{v_{max}...
 
 Try typing  <return>  to proceed.
@@ -1455,27 +1476,27 @@ If that doesn't work, type  X <return>  to quit.
 Missing character: There is no ] in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.84607pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.84607pt too wide) in paragraph at lines 83--84
 \OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (49.8327pt too wide) in paragraph at lines 54--55
+Overfull \hbox (49.8327pt too wide) in paragraph at lines 83--84
 [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (19.75351pt too wide) in paragraph at lines 54--55
+Overfull \hbox (19.75351pt too wide) in paragraph at lines 83--84
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (19.16672pt too wide) in paragraph at lines 54--55
+Overfull \hbox (19.16672pt too wide) in paragraph at lines 83--84
 \OML/cmm/m/it/10 A\OT1/cmr/m/n/10 ) +
  []
 
 
-Overfull \hbox (7.50002pt too wide) in paragraph at lines 54--55
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 83--84
 \OML/cmm/m/it/10 A$ 
  []
 
@@ -1486,19 +1507,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 \item[Z-Score]
+l.84 \item[Z-Score]
                    : $v_n = \frac{v - moyenne}{ecart_type}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.84607pt too wide) in paragraph at lines 55--56
+Overfull \hbox (20.84607pt too wide) in paragraph at lines 84--85
 \OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (45.72617pt too wide) in paragraph at lines 55--56
+Overfull \hbox (45.72617pt too wide) in paragraph at lines 84--85
 []$ 
  []
 
@@ -1509,7 +1530,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \item[Decimal scaling]
+l.85 \item[Decimal scaling]
                            : $v_n = \frac{v}{100^j}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1522,19 +1543,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.57 \end{description}
+l.86 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.84607pt too wide) in paragraph at lines 56--58
+Overfull \hbox (20.84607pt too wide) in paragraph at lines 85--87
 \OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (18.09424pt too wide) in paragraph at lines 56--58
+Overfull \hbox (18.09424pt too wide) in paragraph at lines 85--87
 []$
  []
 
@@ -1550,7 +1571,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.60 \chapter
+l.89 \chapter
              {Classification}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1560,7 +1581,7 @@ or  <return>  to continue without it.
 ! Undefined control sequence.
 <recently read> \chapter 
                          
-l.60 \chapter
+l.89 \chapter
              {Classification}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1583,7 +1604,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.61 \section
+l.90 \section
              {Évaluation des classifieurs}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1618,7 +1639,7 @@ Missing character: There is no u in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.62 \subsection
+l.91 \subsection
                 {Matrice de confusion}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1651,14 +1672,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 \begin{description}
+l.92 \begin{description}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 60--64
+Overfull \hbox (20.0pt too wide) in paragraph at lines 89--93
 []
  []
 
@@ -1669,7 +1690,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.64 \item[Percent of correct classification]
+l.93 \item[Percent of correct classification]
                                              :
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1682,7 +1703,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65 \begin{description}
+l.94 \begin{description}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1695,24 +1716,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.66 \item[PCC(\%)]
+l.95 \item[PCC(\%)]
                    : $ = \frac{N_c}{N_t} * 100$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (7.7778pt too wide) in paragraph at lines 66--67
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 95--96
 \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (17.4812pt too wide) in paragraph at lines 66--67
+Overfull \hbox (17.4812pt too wide) in paragraph at lines 95--96
 [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (15.00005pt too wide) in paragraph at lines 66--67
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 95--96
 \OT1/cmr/m/n/10 100$ 
  []
 
@@ -1723,7 +1744,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67 \item[$N_c$]
+l.96 \item[$N_c$]
                  : nombre d'instances correctement classées
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1774,7 +1795,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.68 \item[$N_t$]
+l.97 \item[$N_t$]
                  : nombre d'instances testées $(N_t = |D_{test}|)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1812,7 +1833,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 \end{description}
+l.98 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1825,19 +1846,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 \end{description}
+l.99 \end{description}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (25.99997pt too wide) in paragraph at lines 68--71
+Overfull \hbox (25.99997pt too wide) in paragraph at lines 97--100
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (31.83376pt too wide) in paragraph at lines 68--71
+Overfull \hbox (31.83376pt too wide) in paragraph at lines 97--100
 \OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 D[]\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )$
  []
 
@@ -1856,14 +1877,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \begin{description}
-                        
+l.102 \begin{description}
+                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 72--74
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--103
 [] 
  []
 
@@ -1874,15 +1895,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.74 \item[]
-            : $\begin{pmatrix}
+l.103 \item[]
+             : $\begin{pmatrix}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no : in font nullfont!
 ! Misplaced alignment tab character &.
-l.75   \_  &
-             c1 & c2 & c3 & c4 \\
+l.104   \_  &
+              c1 & c2 & c3 & c4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1891,8 +1912,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.75   \_  & c1 &
-                  c2 & c3 & c4 \\
+l.104   \_  & c1 &
+                   c2 & c3 & c4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1901,8 +1922,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.75   \_  & c1 & c2 &
-                       c3 & c4 \\
+l.104   \_  & c1 & c2 &
+                        c3 & c4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1911,8 +1932,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.75   \_  & c1 & c2 & c3 &
-                            c4 \\
+l.104   \_  & c1 & c2 & c3 &
+                             c4 \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1921,8 +1942,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.76    c1 &
-             0  & 1  &  0 & 0  \\
+l.105    c1 &
+              0  & 1  &  0 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1931,8 +1952,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.76    c1 & 0  &
-                  1  &  0 & 0  \\
+l.105    c1 & 0  &
+                   1  &  0 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1941,8 +1962,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.76    c1 & 0  & 1  &
-                        0 & 0  \\
+l.105    c1 & 0  & 1  &
+                         0 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1951,8 +1972,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.76    c1 & 0  & 1  &  0 &
-                            0  \\
+l.105    c1 & 0  & 1  &  0 &
+                             0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1961,8 +1982,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.77    c2 &
-             1  & 60 &  0 & 1  \\
+l.106    c2 &
+              1  & 60 &  0 & 1  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1971,8 +1992,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.77    c2 & 1  &
-                  60 &  0 & 1  \\
+l.106    c2 & 1  &
+                   60 &  0 & 1  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1981,8 +2002,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.77    c2 & 1  & 60 &
-                        0 & 1  \\
+l.106    c2 & 1  & 60 &
+                         0 & 1  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1991,8 +2012,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.77    c2 & 1  & 60 &  0 &
-                            1  \\
+l.106    c2 & 1  & 60 &  0 &
+                             1  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2001,8 +2022,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.78    c3 &
-             0  & 1  & 23 & 0  \\
+l.107    c3 &
+              0  & 1  & 23 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2011,8 +2032,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.78    c3 & 0  &
-                  1  & 23 & 0  \\
+l.107    c3 & 0  &
+                   1  & 23 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2021,8 +2042,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.78    c3 & 0  & 1  &
-                       23 & 0  \\
+l.107    c3 & 0  & 1  &
+                        23 & 0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2031,8 +2052,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.78    c3 & 0  & 1  & 23 &
-                            0  \\
+l.107    c3 & 0  & 1  & 23 &
+                             0  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2041,8 +2062,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.79    c4 &
-             1  & 0  &  7 & 5  \\
+l.108    c4 &
+              1  & 0  &  7 & 5  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2051,8 +2072,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.79    c4 & 1  &
-                  0  &  7 & 5  \\
+l.108    c4 & 1  &
+                   0  &  7 & 5  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2061,8 +2082,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.79    c4 & 1  & 0  &
-                        7 & 5  \\
+l.108    c4 & 1  & 0  &
+                         7 & 5  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2071,8 +2092,8 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.79    c4 & 1  & 0  &  7 &
-                            5  \\
+l.108    c4 & 1  & 0  &  7 &
+                             5  \\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2081,28 +2102,28 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Overfull \hbox (50.08798pt too wide) in paragraph at lines 74--81
+Overfull \hbox (50.08798pt too wide) in paragraph at lines 103--110
 [] \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 2\OML/c
 mm/m/it/10 c\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 c\OT1/cmr/m/n/10 4[] 
  []
 
 
-Overfull \hbox (29.32764pt too wide) in paragraph at lines 74--81
+Overfull \hbox (29.32764pt too wide) in paragraph at lines 103--110
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 10100[] 
  []
 
 
-Overfull \hbox (34.32765pt too wide) in paragraph at lines 74--81
+Overfull \hbox (34.32765pt too wide) in paragraph at lines 103--110
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 216001[] 
  []
 
 
-Overfull \hbox (34.32765pt too wide) in paragraph at lines 74--81
+Overfull \hbox (34.32765pt too wide) in paragraph at lines 103--110
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 301230[] 
  []
 
 
-Overfull \hbox (29.32764pt too wide) in paragraph at lines 74--81
+Overfull \hbox (29.32764pt too wide) in paragraph at lines 103--110
 \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 41075[] 
  []
 
@@ -2113,8 +2134,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.81 \item[Taux d'erreurs]
-                          : 100-PCC
+l.110 \item[Taux d'erreurs]
+                           : 100-PCC
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2133,8 +2154,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.82 \item[PCC(\%)]
-                    = $ \frac{0+60+23+5}{100} * 100 = 88\% $
+l.111 \item[PCC(\%)]
+                     = $ \frac{0+60+23+5}{100} * 100 = 88\% $
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2146,30 +2167,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.83 \end{description}
-                      
+l.112 \end{description}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (49.73354pt too wide) in paragraph at lines 82--84
+Overfull \hbox (49.73354pt too wide) in paragraph at lines 111--113
 [] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (25.55556pt too wide) in paragraph at lines 82--84
+Overfull \hbox (25.55556pt too wide) in paragraph at lines 111--113
 \OT1/cmr/m/n/10 100 =
  []
 
 
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 82--84
+Overfull \hbox (18.33339pt too wide) in paragraph at lines 111--113
 \OT1/cmr/m/n/10 88%$
  []
 
 ! Undefined control sequence.
-l.85 \chapter
-             {Arbre de décision}
+l.114 \chapter
+              {Arbre de décision}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2193,8 +2214,8 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 ! Undefined control sequence.
-l.86 \section
-             {critères de sélection C4.5}
+l.115 \section
+              {critères de sélection C4.5}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2227,7 +2248,7 @@ Missing character: There is no 4 in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no 5 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 85--87
+Overfull \hbox (20.0pt too wide) in paragraph at lines 114--116
 []
  []
 
@@ -2337,14 +2358,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \begin{description}
-                        
+l.118 \begin{description}
+                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 88--90
+Overfull \hbox (20.0pt too wide) in paragraph at lines 117--119
 []
  []
 
@@ -2355,8 +2376,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 \item[Phase d'expansion]
-                             : La construction se fait selon l'approche desc...
+l.119 \item[Phase d'expansion]
+                              : La construction se fait selon l'approche des...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2463,8 +2484,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.91 \item[Phase d'élagage]
-                            : Pour optimiser la taille l'arbre et son pouvoi...
+l.120 \item[Phase d'élagage]
+                             : Pour optimiser la taille l'arbre et son pouvo...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2622,8 +2643,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92 \item[Approche de construction d’un AD]
-                                              : Partitionner récursivement ...
+l.121 \item[Approche de construction d’un AD]
+                                               : Partitionner récursivement...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2908,8 +2929,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 \item[Théorie de l’information]
-                                       : Théorie mathématique ayant pour o...
+l.123 \item[Théorie de l’information]
+                                        : Théorie mathématique ayant pour ...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3050,8 +3071,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.96 \item[Entropie]
-                    : Mesure la quantité d’incertitude dans une distribut...
+l.125 \item[Entropie]
+                     : Mesure la quantité d’incertitude dans une distribu...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3131,15 +3152,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.97 \end{description}
-                      
+l.126 \end{description}
+                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.99 \subsection
-                {Entropie}
+l.128 \subsection
+                 {Entropie}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3161,14 +3182,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.100 \begin{description}
+l.129 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 99--101
+Overfull \hbox (20.0pt too wide) in paragraph at lines 128--130
 [] 
  []
 
@@ -3179,7 +3200,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.101 \item[Entropie]
+l.130 \item[Entropie]
                      : Mesure la quantité d’incertitude (manque d’infor...
 
 Try typing  <return>  to proceed.
@@ -3381,12 +3402,12 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no X in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (28.18188pt too wide) in paragraph at lines 101--102
+Overfull \hbox (28.18188pt too wide) in paragraph at lines 130--131
 \OML/cmm/m/it/10 DX \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (36.8773pt too wide) in paragraph at lines 101--102
+Overfull \hbox (36.8773pt too wide) in paragraph at lines 130--131
 []$
  []
 
@@ -3397,20 +3418,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102 \item[$H(X)$]
+l.131 \item[$H(X)$]
                     = $- \sum_{i=1}^n p(x_i) * log_2(p(x_i))$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (61.9746pt too wide) in paragraph at lines 102--103
+Overfull \hbox (61.9746pt too wide) in paragraph at lines 131--132
 \OMS/cmsy/m/n/10   [][] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]
 \OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (46.91502pt too wide) in paragraph at lines 102--103
+Overfull \hbox (46.91502pt too wide) in paragraph at lines 131--132
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x[]\OT1/cmr/m/n/10 ))$ 
  []
@@ -3422,7 +3443,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \item[]
+l.132 \item[]
               Par convention, quand $p(x) = 0, 0*log(0) = 0$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3453,29 +3474,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.104 \end{description}
+l.133 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (29.07983pt too wide) in paragraph at lines 103--105
+Overfull \hbox (29.07983pt too wide) in paragraph at lines 132--134
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (19.44446pt too wide) in paragraph at lines 103--105
+Overfull \hbox (19.44446pt too wide) in paragraph at lines 132--134
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (36.4896pt too wide) in paragraph at lines 103--105
+Overfull \hbox (36.4896pt too wide) in paragraph at lines 132--134
 \OML/cmm/m/it/10 log\OT1/cmr/m/n/10 (0) =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 103--105
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 132--134
 \OT1/cmr/m/n/10 0$
  []
 
@@ -3494,14 +3515,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.107 \begin{description}
+l.136 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 106--108
+Overfull \hbox (20.0pt too wide) in paragraph at lines 135--137
 [] 
  []
 
@@ -3512,7 +3533,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.108 \item[]
+l.137 \item[]
               $\begin{tabular}{|l|c|r|}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3544,7 +3565,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.117 \item[$H(X)$]
+l.146 \item[$H(X)$]
                     = $-p(x_1)*log_2(p(x_1))-p(x_2)*log_2(p(x_2))-p(x_3)*log...
 
 Try typing  <return>  to proceed.
@@ -3552,37 +3573,37 @@ If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (35.78827pt too wide) in paragraph at lines 117--118
+Overfull \hbox (35.78827pt too wide) in paragraph at lines 146--147
 \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/c
 mr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (55.84967pt too wide) in paragraph at lines 117--118
+Overfull \hbox (55.84967pt too wide) in paragraph at lines 146--147
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x[]\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (28.01047pt too wide) in paragraph at lines 117--118
+Overfull \hbox (28.01047pt too wide) in paragraph at lines 146--147
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/c
 msy/m/n/10 
  []
 
 
-Overfull \hbox (55.84967pt too wide) in paragraph at lines 117--118
+Overfull \hbox (55.84967pt too wide) in paragraph at lines 146--147
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x[]\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10  
  []
 
 
-Overfull \hbox (28.01047pt too wide) in paragraph at lines 117--118
+Overfull \hbox (28.01047pt too wide) in paragraph at lines 146--147
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) \OMS/c
 msy/m/n/10 
  []
 
 
-Overfull \hbox (48.07187pt too wide) in paragraph at lines 117--118
+Overfull \hbox (48.07187pt too wide) in paragraph at lines 146--147
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x[]\OT1/cmr/m/n/10 ))$ 
  []
@@ -3594,7 +3615,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.118 \item[$H(X)$]
+l.147 \item[$H(X)$]
                     = $-3(\frac{1}{3}*log_2(\frac{1}{3})) = log_2(3) = 1.58$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3607,29 +3628,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.119 \end{description}
+l.148 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (28.05286pt too wide) in paragraph at lines 118--120
+Overfull \hbox (28.05286pt too wide) in paragraph at lines 147--149
 \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 3([] \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (45.89195pt too wide) in paragraph at lines 118--120
+Overfull \hbox (45.89195pt too wide) in paragraph at lines 147--149
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 ([])) =
  []
 
 
-Overfull \hbox (40.61694pt too wide) in paragraph at lines 118--120
+Overfull \hbox (40.61694pt too wide) in paragraph at lines 147--149
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (3) =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 118--120
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 147--149
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 58$
  []
 
@@ -3654,14 +3675,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.122 \begin{description}
+l.151 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 121--123
+Overfull \hbox (20.0pt too wide) in paragraph at lines 150--152
 [] 
  []
 
@@ -3672,23 +3693,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.123 \item[]
+l.152 \item[]
               $[\frac{1}{2}, \frac{1}{4}, \frac{1}{4}]: H(X) = 1.5$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (39.15826pt too wide) in paragraph at lines 123--124
+Overfull \hbox (39.15826pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ; []; []\OT1/cmr/m/n/10 ] :
  []
 
 
-Overfull \hbox (36.52771pt too wide) in paragraph at lines 123--124
+Overfull \hbox (36.52771pt too wide) in paragraph at lines 152--153
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 123--124
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 152--153
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5$ 
  []
 
@@ -3699,24 +3720,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.124 \item[]
+l.153 \item[]
               $[1, 0, 0]: H(X) = 0$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (34.99994pt too wide) in paragraph at lines 124--125
+Overfull \hbox (34.99994pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/n/10 [1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/c
 mr/m/n/10 0] :
  []
 
 
-Overfull \hbox (36.52771pt too wide) in paragraph at lines 124--125
+Overfull \hbox (36.52771pt too wide) in paragraph at lines 153--154
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 124--125
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 153--154
 \OT1/cmr/m/n/10 0$ 
  []
 
@@ -3727,7 +3748,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \item[]
+l.154 \item[]
               $[\frac{1}{2}, \frac{1}{2}]: H(X) = 1$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3739,24 +3760,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \end{description}
+l.155 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (28.32773pt too wide) in paragraph at lines 125--127
+Overfull \hbox (28.32773pt too wide) in paragraph at lines 154--156
 \OT1/cmr/m/n/10 [[]\OML/cmm/m/it/10 ; []\OT1/cmr/m/n/10 ] :
  []
 
 
-Overfull \hbox (36.52771pt too wide) in paragraph at lines 125--127
+Overfull \hbox (36.52771pt too wide) in paragraph at lines 154--156
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 125--127
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 154--156
 \OT1/cmr/m/n/10 1$
  []
 
@@ -3780,14 +3801,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.129 \begin{description}
+l.158 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 128--130
+Overfull \hbox (20.0pt too wide) in paragraph at lines 157--159
 [] 
  []
 
@@ -3798,7 +3819,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.130 \item[$H(X)$]
+l.159 \item[$H(X)$]
                     >= 0
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3813,7 +3834,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.131 \item[$H(X)$]
+l.160 \item[$H(X)$]
                     est maximale pour une distribution uniforme (toutes les ...
 
 Try typing  <return>  to proceed.
@@ -3901,7 +3922,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.132 \end{description}
+l.161 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3914,7 +3935,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.134 \begin{description}
+l.163 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -3927,7 +3948,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.135 \item[Entropie conjointe]
+l.164 \item[Entropie conjointe]
                                : L’entropie conjointe de deux variables al...
 
 Try typing  <return>  to proceed.
@@ -4050,20 +4071,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.136 \item[$H(X,Y)$]
+l.165 \item[$H(X,Y)$]
                       = $- \sum_{i,j=1}^n p(x_i,y_i) * log_2(p(x_i,y_i))$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (80.73967pt too wide) in paragraph at lines 136--137
+Overfull \hbox (80.73967pt too wide) in paragraph at lines 165--166
 \OMS/cmsy/m/n/10   [][] \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]
 ; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (59.59154pt too wide) in paragraph at lines 136--137
+Overfull \hbox (59.59154pt too wide) in paragraph at lines 165--166
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/
 cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))$ 
  []
@@ -4075,7 +4096,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.137 \item[Exemple]
+l.166 \item[Exemple]
                     : $[0.2, 0.1, 0.3, 0.4]: H(X,Y) = 1.85$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4088,14 +4109,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \end{description}
+l.167 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (75.55557pt too wide) in paragraph at lines 137--139
+Overfull \hbox (75.55557pt too wide) in paragraph at lines 166--168
 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/cm
 r/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
  0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/c
@@ -4103,12 +4124,12 @@ mm/m/it/10 :\OT1/cmr/m/n/10 4] :
  []
 
 
-Overfull \hbox (48.44435pt too wide) in paragraph at lines 137--139
+Overfull \hbox (48.44435pt too wide) in paragraph at lines 166--168
 \OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X; Y\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (17.77783pt too wide) in paragraph at lines 137--139
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 166--168
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 85$
  []
 
@@ -4158,14 +4179,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.142 \begin{description}
+l.171 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 141--143
+Overfull \hbox (20.0pt too wide) in paragraph at lines 170--172
 []
  []
 
@@ -4176,20 +4197,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.143 \item[$GAIN(T,A)$]
+l.172 \item[$GAIN(T,A)$]
                          = $Info(T) - Info(T|A)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (44.79063pt too wide) in paragraph at lines 143--144
+Overfull \hbox (44.79063pt too wide) in paragraph at lines 172--173
 \OML/cmm/m/it/10 Info\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 ) \OMS/
 cmsy/m/n/10  
  []
 
 
-Overfull \hbox (47.29063pt too wide) in paragraph at lines 143--144
+Overfull \hbox (47.29063pt too wide) in paragraph at lines 172--173
 \OML/cmm/m/it/10 Info\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OMS/cmsy/m/n/10 j\OML/
 cmm/m/it/10 A\OT1/cmr/m/n/10 )$ 
  []
@@ -4201,7 +4222,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.144 \item[Avec $Info(T)$]
+l.173 \item[Avec $Info(T)$]
                            : Entropie au niveau de T (avant de partitionner)
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4254,20 +4275,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145 \item[$Info(T)$]
+l.174 \item[$Info(T)$]
                        = $-\sum_{c_i} freq(c_i,T)*log_2(freq(c_i,T))$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (81.26076pt too wide) in paragraph at lines 145--146
+Overfull \hbox (81.26076pt too wide) in paragraph at lines 174--175
 \OMS/cmsy/m/n/10   [][] \OML/cmm/m/it/10 freq\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 c[]; T\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (72.41393pt too wide) in paragraph at lines 145--146
+Overfull \hbox (72.41393pt too wide) in paragraph at lines 174--175
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 freq\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 c[]; T\OT1/cmr/m/n/10 ))$ 
  []
@@ -4279,19 +4300,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.146 \item[Avec $freq(c_i,T)$]
+l.175 \item[Avec $freq(c_i,T)$]
                                 = $p(c_i) = \frac{|c_i|}{|T|}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (31.02141pt too wide) in paragraph at lines 146--147
+Overfull \hbox (31.02141pt too wide) in paragraph at lines 175--176
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 c[]\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (13.89159pt too wide) in paragraph at lines 146--147
+Overfull \hbox (13.89159pt too wide) in paragraph at lines 175--176
 []$ 
  []
 
@@ -4302,7 +4323,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 \item[Avec $Info(T|A)$]
+l.176 \item[Avec $Info(T|A)$]
                               l'entropie conditionnelle de T une fois partit...
 
 Try typing  <return>  to proceed.
@@ -4390,7 +4411,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \item[$Info(T|A)$]
+l.177 \item[$Info(T|A)$]
                          = $ \sum_{a_{j \in A}} freq(a_j,T) * Info(T | a_j)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4403,20 +4424,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{description}
+l.178 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (84.89377pt too wide) in paragraph at lines 148--150
+Overfull \hbox (84.89377pt too wide) in paragraph at lines 177--179
 [][] \OML/cmm/m/it/10 freq\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 a[]; T\OT1/cmr/m/n/
 10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (49.29007pt too wide) in paragraph at lines 148--150
+Overfull \hbox (49.29007pt too wide) in paragraph at lines 177--179
 \OML/cmm/m/it/10 Info\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OMS/cmsy/m/n/10 j\OML/
 cmm/m/it/10 a[]\OT1/cmr/m/n/10 )$
  []
@@ -4460,14 +4481,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.152 \begin{description}
+l.181 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 151--153
+Overfull \hbox (20.0pt too wide) in paragraph at lines 180--182
 []
  []
 
@@ -4478,7 +4499,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \item[]
+l.182 \item[]
               Le gain d’information favorise les attributs ayant de larges...
 
 Try typing  <return>  to proceed.
@@ -4554,7 +4575,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.154 \item[]
+l.183 \item[]
               Le ratio de gain utilise le gain d’information avec un facte...
 
 Try typing  <return>  to proceed.
@@ -4671,14 +4692,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \item[$GainRatio(T,A)$]
+l.184 \item[$GainRatio(T,A)$]
                               = $\frac{Gain(T,A)}{Split_Info(T,A)}$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no = in font nullfont!
 
-Overfull \hbox (57.83505pt too wide) in paragraph at lines 155--156
+Overfull \hbox (57.83505pt too wide) in paragraph at lines 184--185
 []$ 
  []
 
@@ -4689,7 +4710,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \item[Avec $Split_Info(T,A)$]
+l.185 \item[Avec $Split_Info(T,A)$]
                                     = $- \sum_{a_{j \in A}} freq(a_j,T)*log_...
 
 Try typing  <return>  to proceed.
@@ -4715,26 +4736,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \end{description}
+l.186 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (94.3382pt too wide) in paragraph at lines 156--158
+Overfull \hbox (94.3382pt too wide) in paragraph at lines 185--187
 \OMS/cmsy/m/n/10   [][] \OML/cmm/m/it/10 freq\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 a[]; T\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (84.81204pt too wide) in paragraph at lines 156--158
+Overfull \hbox (84.81204pt too wide) in paragraph at lines 185--187
 \OML/cmm/m/it/10 log[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 freq\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 a[]; T\OT1/cmr/m/n/10 )) =$
  []
 
 ! Undefined control sequence.
-l.159 \section
+l.188 \section
               {critères d'arrêt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4760,12 +4781,12 @@ Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no t in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 159--160
+Overfull \hbox (20.0pt too wide) in paragraph at lines 188--189
 []
  []
 
 ! Undefined control sequence.
-l.161 \subsection
+l.190 \subsection
                  {Critères d'arrêt}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -4797,14 +4818,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162 \begin{description}
+l.191 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 161--163
+Overfull \hbox (20.0pt too wide) in paragraph at lines 190--192
 [] 
  []
 
@@ -4815,7 +4836,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.163 \item[]
+l.192 \item[]
               Si tout les objets d'une partition appartiennent à une même ...
 
 Try typing  <return>  to proceed.
@@ -4887,7 +4908,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.164 \item[]
+l.193 \item[]
               Si il n'y a plus aucun attributs à tester
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4933,7 +4954,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.165 \item[]
+l.194 \item[]
               si le nœud est vide (càd feuille de l'arbre)
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -4983,7 +5004,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166 \item[]
+l.195 \item[]
               Absence d'apport informationnel (le grain est négatif ou nul)
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5049,14 +5070,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 \end{description}
+l.196 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.169 \subsection
+l.198 \subsection
                  {critères d'arrêt: Paramètre utilisateur}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5110,14 +5131,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.170 \begin{description}
+l.199 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 169--171
+Overfull \hbox (20.0pt too wide) in paragraph at lines 198--200
 []
  []
 
@@ -5128,7 +5149,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.171 \item[]
+l.200 \item[]
               Nombre d'objets minimum par feuille
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5171,7 +5192,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.172 \item[]
+l.201 \item[]
               Taille, profondeur de l'arbre
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5209,7 +5230,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.173 \item[]
+l.202 \item[]
               Temps de construction de l'arbre
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -5249,14 +5270,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.174 \end{description}
+l.203 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.176 \chapter
+l.205 \chapter
               {Classificateur bayésiens}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5289,7 +5310,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
-l.177 \scalebox
+l.206 \scalebox
                {0.8}{
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5307,7 +5328,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.178 \begin{tikzpicture}
+l.207 \begin{tikzpicture}
                          [->,>=stealth',shorten >=1pt,auto,node distance=8cm,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5374,7 +5395,7 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.180   \tikzstyle
+l.209   \tikzstyle
                   {every state}=[fill=white,draw=none,text=black]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5427,12 +5448,12 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 176--181
+Overfull \hbox (20.0pt too wide) in paragraph at lines 205--210
 []
  []
 
 ! Undefined control sequence.
-l.182   \node
+l.211   \node
              [state]		   (A)                    {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5462,7 +5483,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.190   \node
+l.219   \node
              [state]         (B) [below left of=A]  {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5514,7 +5535,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.199   \node
+l.228   \node
              [state]         (C) [below right of=A] {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5568,7 +5589,7 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no 4 in font nullfont!
 Missing character: There is no ; in font nullfont!
 ! Undefined control sequence.
-l.208   \node
+l.237   \node
              [state]         (D) [below right of=B] {
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5636,32 +5657,32 @@ Missing character: There is no 9 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 182--219
+Overfull \hbox (20.0pt too wide) in paragraph at lines 211--248
 []
  []
 
 
-Overfull \hbox (51.85422pt too wide) in paragraph at lines 182--219
+Overfull \hbox (51.85422pt too wide) in paragraph at lines 211--248
 [] 
  []
 
 
-Overfull \hbox (84.55115pt too wide) in paragraph at lines 182--219
+Overfull \hbox (84.55115pt too wide) in paragraph at lines 211--248
 [] 
  []
 
 
-Overfull \hbox (67.89206pt too wide) in paragraph at lines 182--219
+Overfull \hbox (67.89206pt too wide) in paragraph at lines 211--248
 [] 
  []
 
 
-Overfull \hbox (128.07506pt too wide) in paragraph at lines 182--219
+Overfull \hbox (128.07506pt too wide) in paragraph at lines 211--248
 [] 
  []
 
 ! Undefined control sequence.
-l.220   \path
+l.249   \path
               (A) edge              node {} (B)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -5730,7 +5751,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.224 \end{tikzpicture}
+l.253 \end{tikzpicture}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -5743,14 +5764,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.226 \begin{description}
+l.255 \begin{description}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 220--227
+Overfull \hbox (20.0pt too wide) in paragraph at lines 249--256
 []
  []
 
@@ -5761,33 +5782,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227 \item[Calculer]
+l.256 \item[Calculer]
                       $P(N=\top,P=\top,A=\bot,M=\top)$
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (31.37842pt too wide) in paragraph at lines 227--228
+Overfull \hbox (31.37842pt too wide) in paragraph at lines 256--257
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.58676pt too wide) in paragraph at lines 227--228
+Overfull \hbox (30.58676pt too wide) in paragraph at lines 256--257
 \OMS/cmsy/m/n/10 >\OML/cmm/m/it/10 ; P \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.27774pt too wide) in paragraph at lines 227--228
+Overfull \hbox (30.27774pt too wide) in paragraph at lines 256--257
 \OMS/cmsy/m/n/10 >\OML/cmm/m/it/10 ; A \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (33.56938pt too wide) in paragraph at lines 227--228
+Overfull \hbox (33.56938pt too wide) in paragraph at lines 256--257
 \OMS/cmsy/m/n/10 ?\OML/cmm/m/it/10 ; M \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (11.6667pt too wide) in paragraph at lines 227--228
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 256--257
 \OMS/cmsy/m/n/10 >\OT1/cmr/m/n/10 )$ 
  []
 
@@ -5798,79 +5819,79 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \item[$=$]
+l.257 \item[$=$]
                  $P(N=\top) * P(P=\top|N=\top) * P(A=\bot|N=\top,P=\top) * \...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (31.37842pt too wide) in paragraph at lines 228--229
+Overfull \hbox (31.37842pt too wide) in paragraph at lines 257--258
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 228--229
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (30.06248pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.06248pt too wide) in paragraph at lines 257--258
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.23607pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.23607pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >j\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 228--229
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (29.75346pt too wide) in paragraph at lines 228--229
+Overfull \hbox (29.75346pt too wide) in paragraph at lines 257--258
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.23607pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.23607pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 ?j\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.58676pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.58676pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OML/cmm/m/it/10 ; P \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (16.66672pt too wide) in paragraph at lines 228--229
+Overfull \hbox (16.66672pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (33.0451pt too wide) in paragraph at lines 228--229
+Overfull \hbox (33.0451pt too wide) in paragraph at lines 257--258
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.23607pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.23607pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >j\OML/cmm/m/it/10 N \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.58676pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.58676pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OML/cmm/m/it/10 ; P \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (30.27774pt too wide) in paragraph at lines 228--229
+Overfull \hbox (30.27774pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 >\OML/cmm/m/it/10 ; A \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (11.6667pt too wide) in paragraph at lines 228--229
+Overfull \hbox (11.6667pt too wide) in paragraph at lines 257--258
 \OMS/cmsy/m/n/10 ?\OT1/cmr/m/n/10 )$ 
  []
 
@@ -5881,29 +5902,29 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.229 \item[$=$]
-                 $ .5\ *\ \frac{P(N=\top)P(P=\top)}{P(N=\top)}\ *\ \frac{P(N...
+l.258 \item[$=$]
+                 $ .5\ *\ .4\ *\ \frac{P(N=\top,P=\top)P(A=\bot)}{P(N=\top,P...
 
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 229--230
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 258--259
 \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5  \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (70.2658pt too wide) in paragraph at lines 229--230
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 258--259
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4  \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (91.04364pt too wide) in paragraph at lines 258--259
 []  \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (91.04364pt too wide) in paragraph at lines 229--230
-[]  \OMS/cmsy/m/n/10 
- []
-
-
-Overfull \hbox (113.28119pt too wide) in paragraph at lines 229--230
+Overfull \hbox (113.28119pt too wide) in paragraph at lines 258--259
 []$ 
  []
 
@@ -5914,9 +5935,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.230 \item[$=$]
-                 $ .5\ *\ \frac{P(N=\top)P(P=\top)}{P(N=\top)}\ *\ \frac{P(N...
-
+l.259 \item[$=$]
+                 $ .5\ *\ .4\ *\ 1\ *\ $
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5927,30 +5947,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.231 \end{description}
+l.260 \end{description}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 230--232
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 259--261
 \OML/cmm/m/it/10 :\OT1/cmr/m/n/10 5  \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (70.2658pt too wide) in paragraph at lines 230--232
-[]  \OMS/cmsy/m/n/10 
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 259--261
+\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 4  \OMS/cmsy/m/n/10 
  []
 
 
-Overfull \hbox (122.01802pt too wide) in paragraph at lines 230--232
-[]  \OMS/cmsy/m/n/10 
- []
-
-
-Overfull \hbox (113.28119pt too wide) in paragraph at lines 230--232
-[]$
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 259--261
+\OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10  $
  []
 
 )
@@ -5961,10 +5976,10 @@ Overfull \hbox (113.28119pt too wide) in paragraph at lines 230--232
 
  
 Here is how much of TeX's memory you used:
- 19 strings out of 493323
- 205 string characters out of 3139963
- 70648 words of memory out of 3000000
- 3656 multiletter control sequences out of 15000+200000
+ 23 strings out of 493323
+ 242 string characters out of 3139963
+ 69648 words of memory out of 3000000
+ 3660 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  19i,11n,14p,274b,115s stack positions out of 5000i,500n,10000p,200000b,50000s

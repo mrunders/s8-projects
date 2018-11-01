@@ -125,7 +125,7 @@ Un modèle est canonique que si:
 \item[] (3) $3x - e_1 + e_3 = 25$
 \item[Variable hors base] = $x,e_1$
 \item[Variable Base] = $y,e_2,e_3$
-\item[Avec comme solution admissible] $A\ Deduire (x,y,e_1,e_2,e_3)$
+\item[Avec comme solution admissible] $A\ Déduire (x,y,e_1,e_2,e_3)$
 \end{description}
 \ \\
 Pour toute variable présente dans l'ensemble $Hors\ base$ la valeur admissible est égal à $0$\\

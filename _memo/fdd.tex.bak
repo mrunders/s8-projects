@@ -29,6 +29,31 @@ Exemple:
 \end{description}
 \end{description}
 
+\section{Exemple}
+\begin{multicols}{2}
+[]
+\begin{tabular}{ll|l}
+  \hline
+  $A$&$B$&$P(AB)$\\
+  \hline
+  $a_1$&$b_1$&.1\\
+  $a_2$&$b_1$&.15\\
+  $a_1$&$b_2$&.3\\
+  $a_2$&$b_2$&.45\\
+  \hline
+\end{tabular}
+
+\begin{itemize}
+\item $P(a_1) = .40$
+\item $P(a_1|b_1) = .4$
+\item $P(a_1|b_2) = .4$
+\item $P(a_2) = .60$
+\item $P(a_2|b_2) = .6$
+\item $P(a_2|b_2) = .6$
+\end{itemize}
+
+\end{multicols}
+
 \chapter{Pré traitement des données}
 \section{Nettoyage des données}
 \subsection{Caractéristiques descriptives}
@@ -227,7 +252,7 @@ Critère de sélection: Gain Ration:
 \item[Calculer] $P(N=\top,P=\top,A=\bot,M=\top)$
 \item[$=$] $P(N=\top) * P(P=\top|N=\top) * P(A=\bot|N=\top,P=\top) * \linebreak P(M=\top|N=\top,P=\top,A=\bot)$
 \item[$=$] $ .5\ *\ .4\ *\ \frac{P(N=\top,P=\top)P(A=\bot)}{P(N=\top,P=\top)}\ *\ \frac{P(N=\top,P=\top,A=\bot)*P(M=\top)}{P(N=\top,P=\top,A=\bot)}$
-\item[$=$] $ .5\ *\ .4\ *\ 1\ *\ ?$
+\item[$=$] $ .5\ *\ .4\ *\ 1\ *\ $
 \end{description}
 
 \pagebreak

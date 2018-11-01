@@ -389,31 +389,31 @@ Soit le nouvelle opérateur binaire $\Subset$ disent pour $\crouge{presque\ tout
 \item[ensembliste]: Si $A \Subset C$ et $B \Subset C$ alors $(A \cup B) \Subset C$
 \end{description}
 \end{description}
-
+\pagebreak
 \subsection{Exemple}
 Soit:
 \begin{description}
-\item[$Q$} : être québécoises 
+\item[$Q$] : être québécoises 
 \item[$C$] : être canadiens
 \item[$F$] : le fait de parler français 
-\item[$A$} : le fait de parler anglais 
-\item($S$] : le fait d'aimer le sirop d'érable
+\item[$A$] : le fait de parler anglais 
+\item[$S$] : le fait d'aimer le sirop d'érable
 \end{description}
-
+\ \\
 \begin{description}
 \item[Presque tout les canadiens ne parlent pas le français]: $C \almost \neg F$
 \item[Presque tout les québécois parlent le français]: $Q \almost F$
 \item[Les québécois aiment le sirop d'érable]: $Q \Rightarrow S \equiv Q \almost S$
 \item[Les québécois sont canadiens] $Q \Rightarrow C \equiv Q \almost C$
 \end{description}
-
+\ \\
 \begin{description}
-\item[Presque tout les québécois canadiens parlent le français] 
+\item[Presque tout les québécois canadiens parlent le français]\ 
 \begin{description}
 \item[Nous avons] $Q \almost C$ et $Q \almost F$
 \item[Avec la monotonie on obtient] $Q \wedge C \almost F$
 \end{description}
-\item[Presque tout les québécois canadiens parlent le français ou l'anglais]
+\item[Presque tout les québécois canadiens parlent le français ou l'anglais]\ 
 \begin{description}
 \item[Avec] $Q \wedge C \almost F$
 \item[Par ailleurs nous avons] $F \models F \vee A$
@@ -441,30 +441,30 @@ Soit la basse de connaissance:
 Pour une formule de type $A \Rightarrow B$ dans $\Delta$ dire si il existe une interprétation qui vérifie $A \Rightarrow B$ et qui satisfait chacune des règles de $\Delta$ et $W$
 ]
 \begin{description}
-\item[Pour la formule] $C \Rightarrow \neg F$
+\item[Pour la formule] $C \Rightarrow \neg F$ est satisfait
 \item[$\Delta$]
 \begin{description}
-\item[] $\vorange{C^1} \Rightarrow \neg \cviolet{F^0}$
+\item[] $\corange{C^1} \Rightarrow \neg \cviolet{F^0}$
 \item[] $\cblue{Q^0} \Rightarrow \cviolet{F^0}$
 \end{description}
 \item[$W$]
 \begin{description}
 \item[] $\cblue{Q^0} \Rightarrow S^s$
-\item[] $\cblue{Q^0} \Rightarrow \vorange{C^1}$
+\item[] $\cblue{Q^0} \Rightarrow \corange{C^1}$
 \end{description}
 \end{description}
 
 \begin{description}
-\item[Pour la formule] $Q \Rightarrow F$
+\item[Pour la formule] $Q \Rightarrow F$ n'est pas satisfait
 \item[$\Delta$]
 \begin{description}
-\item[] $C \Rightarrow \neg F$
-\item[] $\cblue{Q^1} \Rightarrow F$
+\item[] $\corange{C^1} \Rightarrow \neg \cviolet{F^1} \equiv \neg \top \vee \bot$
+\item[] $\cblue{Q^1} \Rightarrow \cviolet{F^1}$
 \end{description}
 \item[$W$]
 \begin{description}
-\item[] $\cblue{Q^1} \Rightarrow S$
-\item[] $Q \Rightarrow C$
+\item[] $\cblue{Q^1} \Rightarrow S^s$
+\item[] $\cblue{Q^1} \Rightarrow \corange{C^1}$
 \end{description}
 \end{description}
 
