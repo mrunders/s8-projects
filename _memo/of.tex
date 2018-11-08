@@ -249,7 +249,7 @@ Avec une assignation tel que:
 \item[$ $] $x \rightarrow 5$
 \item[$ $] $y \rightarrow 10$
 \end{itemize}
-
+\pagebreak
 On peut calculer cette sous formule en appliquant chaque terme dans l'interprétation $I$ pour un assignent $X_i$:\\
 $\| x + 2 \| (I)(X_i)$ = $+_i ( \| x \| (I)(X_i), \| 2 \| (I) (X_i))$ = $+_i (5,3) = 8$\\
 $\| \phi \| (I)(X_i) =$ $ =_i(8,10) = 0 (faux)$\\
@@ -288,7 +288,207 @@ Soit $\phi$ la formule $\phi$ ci dessus, la formule interprété avec deux assig
 \end{description}
 
 L'interprétation de $\phi$ avec $X_i^1$ est équivalent à $\phi$ avec $X_i^2$ car le symbole de quantification $\exists$ est plus prioritaire que les assignations.\\
+\pagebreak
+\section{Formule polie}
+\begin{multicols}{2}
+[
+Une formule polie est une formule qui pour un nom de variable x, ne porte pas plusieurs significations. Pour se faire il suffit de renommer les variables.\\
+La formule de gauche n'est pas sous forme polie, mais celle de droite l'ai:
+]
+\scalebox{0.5}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall x}$}
+    child { node {$=>$}
+      child { node { $\corange{\exists x}$ }
+      	child { node {$\wedge$}
+      	  child { node {$P$}
+      	    child { node {$\corange{x}$} }
+      	    child { node {$y$} }
+      	  }
+        child { node {$\cblue{\exists y}$}
+          child { node {$Q$}
+            child { node {$\cblue{y}$} }
+          }
+        }
+      }
+    }
+    child { node { $\cviolet{\forall y}$ }
+      child[missing] {node {}}
+      child { node {$P$ }
+      	  child { node {$\crouge{x}$} }
+      	  child { node {$\cviolet{y}$} }
+      	}
+      }    
+    };
+\end{tikzpicture}}
+\scalebox{0.5}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall x'}$}
+    child { node {$=>$}
+      child { node { $\corange{\exists x}$ }
+      	child { node {$\wedge$}
+      	  child { node {$P$}
+      	    child { node {$\corange{x}$} }
+      	    child { node {$y$} }
+      	  }
+        child { node {$\cblue{\exists y'}$}
+          child { node {$Q$}
+            child { node {$\cblue{y'}$} }
+          }
+        }
+      }
+    }
+    child { node { $\cviolet{\forall y''}$ }
+      child[missing] {node {}}
+      child { node {$P$ }
+         child { node {$\crouge{x'}$} }
+         child { node {$\cviolet{y''}$} }
+      	}
+      }    
+    };
+\end{tikzpicture}}
+\end{multicols}
 
+\section{Équivalences remarquables}
+Pour tout $\phi , \psi \in FORM_L$ et $x,y \in X$
+\begin{description}
+\item[Dualité] $\forall x \phi \equiv \neg \exists x \neg \phi$
+\item[] $\forall x ( \phi \wedge \psi ) \equiv (\forall x \phi) \wedge (\forall x \psi)$
+\item[] $\exists x ( \phi \vee \psi ) \equiv (\exists x \phi) \vee (\exists x \psi)$
+\item[Si $x$ n'est pas libre dans $\psi$ et Q = $\forall$ ou $\exists$ alors]:\\
+\begin{description}
+\item[] $Qx \phi \equiv \phi$
+\item[] $Qx(\phi \wedge \psi) \equiv (Qx \phi) \wedge \psi)$
+\item[] $Qx(\phi \vee \psi) \equiv (Qx \phi) \vee \psi)$
+\end{description}
+\item[] $\forall x \forall y \phi \equiv \forall y \forall x$
+\item[] $\exists x \exists y \phi \equiv \exists y \exists x$
+\end{description}
 
+\pagebreak
+\section{Forme Prénexe}
+\begin{multicols}{2}
+[
+La mise en forme prénexe se fait en transformant la formule en forme polie puis en remontant tout les quantificateurs en haut de l'arbre en fessant attention que lorsqu'on remonte un quantificateur par de la une négation, on applique le duel sur le quantificateur, Et aussi il faut garder l'ordre des quantificateur par rapport à la profondeur de leur sous arbre:\\
+(Rappel que $A=>B \equiv \neg A \vee B$):
+]
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall x}$}
+    child { node {$=>$}
+      child { node {$\corange{\exists z}$}
+        child { node {$\cblue{\forall a}$ } 
+          child { node {$...$}}
+        }
+      }
+      child { node {$\cviolet{\forall y}$}
+        child { node {$\wedge$}
+          child { node {$x$}}
+          child { node {$y$}}
+        }
+      }
+    };
+\end{tikzpicture}}
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=8em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall  x}$}
+    child { node {$\corange{\forall z}$}
+ 	  child { node {$\cblue{\exists a}$ }
+ 	    child { node {$\cviolet{\forall y}$}
+ 	      child { node {$=>$}
+ 	        child { node {$...$} }
+ 	        child { node {$\wedge$}
+              child { node {$x$}}
+              child { node {$y$}}
+            }
+          }
+        }
+      }
+    };
+\end{tikzpicture}
+}
+\end{multicols}
+La partie contenant tout les quantificateurs s'appelle le Prefix et la partie sans quantificateurs s'appelle la Matrice.\\\\
+Si dans la formule ci dessus on aurait changé le $=>$ par un $\vee$ (ou autre chose sans signe de négation) les quantificateurs de couleur $\corange{orange}$ et $\blue{bleu}$ ne serait pas "dualisé", mais conserveront l'ordre de leurs profondeur.\\\\
+Pareil si on remplace dans la formule le $=>$ par un $\vee$ (ou autre chose sans signe de négation) et on s'intéresse exclusivement au quantificateur $\corange{orange}$ et $\cviolet{violet}$, ($\{\corange{\exists z}, \vee , \cviolet{\forall y}\}$) l'ordre de parcourt des sous arbres n'a aucune importance sur l'arbre final, $(GRD)$ ou $(DRG)$.
+\pagebreak
 
+\section{Scalénisation}
+\begin{multicols}{2}
+[Soit la formule suivante, scaléniser une formule c'est pour tout quantificateurs $\exists y$ dépendant d'un quantificateur $\forall x$, $y$ peut se déduire via une fonction:]
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=8em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall  x}$}
+    child { node {$\corange{\exists y}$}
+ 	  child { node {$P$ }
+ 	    child { node {$\crouge{x}$}}
+ 	    child { node {$\corange{y}$}}
+      }
+    };
+\end{tikzpicture}
+}
+
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=8em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\crouge{\forall  x}$}
+ 	  child { node {$P$ }
+ 	    child { node {$\crouge{x}$}}
+ 	    child { node {$func$}
+ 	      child { node {$\corange{y}$}}
+ 	    }
+    };
+\end{tikzpicture}
+}
+\end{multicols}
+
+\section{Forme propositionnelle}
+L'ensemble $SFP(\phi)$ des sous-formules premières de $\phi \in FORM_L$ est défini inductivement par:
+\begin{description}
+\item[] Si $\phi$ est un atome ou une formule du type $\forall \psi$ ou $\exists \psi$ alors $SFP\phi) = \{\phi\}$
+\item[] Si $\phi$ est une formule du type $\neg \psi$ alors $SFP(\phi) = SFP(\psi)$
+\item[] Si $\phi$ est une formule du type $\psi \wedge \theta$ ou $\psi \vee \theta$ ou $\psi => \theta$ alors $SFP(\phi) = SFP(\psi) \cup SFP(\theta)$
+\item[Si la formule propositionnelle $\phi$ est propositionnellement valide] alors $\phi$ est valide
+\end{description}
+
+\begin{multicols}{2}
+[]
+\scalebox{0.9}{
+\begin{tikzpicture}[sibling distance=8em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$=>$}
+ 	  child { node {$\crouge{\forall x}$ }
+ 	    child { node {$\crouge{P}$}
+ 	      child { node {$\crouge{x}$}}
+ 	    }
+ 	  }
+ 	  child { node {$\wedge$}
+ 	    child { node {$\crouge{\forall x}$}
+ 	      child { node {$\crouge{P}$}
+ 	        child { node {$\crouge{x}$}}
+ 	      } 
+ 	    }
+ 	    child { node {$\corange{\exists y}$}
+ 	      child { node {$\corange{Q}$}
+ 	        child { node {$\corange{y}$}}
+ 	      } 
+ 	    }
+    };
+\end{tikzpicture}
+}
+$SFP(\phi)$ = $\{$ formules de couleur $\crouge{rouge}$, formules de couleur $\corange{orange}\}\ $,\\ $\phi$ est propositionnellement équivalent à $A => (A \vee B)$ qui est propositionnellement valide donc $\phi$ est valide
+
+\end{multicols}
 \pagebreak

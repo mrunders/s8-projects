@@ -9,23 +9,28 @@
 \item[] $\sum_{i=1}^n P(x_i) = 1$
 \item[$P(x_i | y_i)$] = $\frac{P(x_i,y_i)}{p(y_i)}$
 \item[$P(x_i,y_i)$] = $p(x_i) * p(y_i)$ Si X et Y sont indépendantes
+\item[règle de bayes] = $P(x_i|y_i) = \frac{P(y_i|x_i)*p(x_i)}{p(y_i)}$
 \item[règle de chainage $P(x_1,x_2,x_3,...x_n$] = $p(x_1)*p(x_2|x_1)*...*p(x_n|x_{n-1}..x_1)$
-\item[distribution conditionnel] $ \forall x in X, \forall y in Y => P(x|y)$
+\item[distribution conditionnel] $ \forall x \in X, \forall y \in Y => P(x|y)$
 \end{description}
 
 Exemple:
 \begin{description}
-\item[]: $\begin{pmatrix}
+\item[]: 
+\begin{tabular}{ll|ll}
+  \hline
   Année & Sexe & \# & \%  \\
+  \hline
    M1 & M  & 25  &  25/55   \\
    M1 & F  & 4 &  4/55  \\
    M2 & M  & 25  & 25/55   \\
    M2 & F  & 1  &  1/55  \\
-\end{pmatrix}$
+  \hline
+\end{tabular}
 \item[]
 \begin{description}
-\item[$P(sexe=M)$] = $P(Sexe=M et Année=M1) + P(Sexe=M et Année=M2) = 50/55$
-\item[$P(Année=M2 | sexe=M)$] = $P(Sexe=M et Année=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
+\item[$P(sexe=M)$] = $P(Sexe=M et Annee=M1) + P(Sexe=M et Annee=M2) = 50/55$
+\item[$P(Annee=M2 | sexe=M)$] = $P(Sexe=M et Annee=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
 \end{description}
 \end{description}
 
@@ -58,19 +63,15 @@ Exemple:
 \section{Nettoyage des données}
 \subsection{Caractéristiques descriptives}
 
-Objectifs: Résumer, décrire certains aspects (tendances, variation, dispersion…) des données en utilisant certaines mesures :
-
-\begin{center}
 \begin{description}
 \item[Moyenne (espérance)]: $\overset{\_}{x}=\frac{1}{n} \sum_{i=1}^n x_i$
 \item[Ecart moyen]: $\frac{1}{n} \sum_{i=1}^n |x_i - \overset{\_}{x} |$
 \item[Variance]: $v = \frac{1}{n} \sum_{i=1}^n (x_i - \overset{\_}{x} )^2$
 \item[Ecart type]: $\alpha x := \sqrt{\frac{1}{n} \sum_{i=1}^n (x_i - \overset{\_}{x} )^2} = \sqrt{\frac{1}{n}(\sum_{i=1}^n x_i^2) - \overset{\_}{x}^2 }$
-\item[Médiane]: Valeur se trouvant au milieu d’une série de données ordonnées
+\item[Médiane]: Valeur se trouvant au milieu de données ordonnées
 \item[Mode]:Valeur la plus fréquente 
 \item[Amplitude]:min, max
 \end{description}
-\end{center}
 
 \section{Normalisation}
 
@@ -96,16 +97,25 @@ Objectifs: Résumer, décrire certains aspects (tendances, variation, dispersion
 
 Exemple:\\
 \begin{description}
-\item[]: $\begin{pmatrix}
+\item[]: $
+  \begin{tabular}{l|llll}
+  \hline
   \_  & c1 & c2 & c3 & c4 \\
+  \hline
    c1 & 0  & 1  &  0 & 0  \\
    c2 & 1  & 60 &  0 & 1  \\
    c3 & 0  & 1  & 23 & 0  \\
    c4 & 1  & 0  &  7 & 5  \\
-\end{pmatrix}$
+  \hline
+  \end{tabular}$
 \item[Taux d'erreurs]: 100-PCC
 \item[PCC(\%)] = $ \frac{0+60+23+5}{100} * 100 = 88\% $ 
+\item[Coût d'erreur] = $\sum_1^n cout(class_{reelle}, classe_{predite})$
+\item[coût d'erreur moyen] = $\frac{cout derreur}{N_{erreurs}}$
+\item[$Rappel(C_i)$] = $\frac{N_{c\_i}}{N_{t\_i}} * 100$ $(Horizontal)Ex:$ $Rappel(C_3)=(23/24)\%$
+\item[$Precision(C_i)$] = $\frac{N_{c\_i}}{N_{i}} * 100$ $(Vertical) Ex:$ $Precision(C_3)=(23/30)\%$
 \end{description}
+
 
 \chapter{Arbre de décision}
 \section{critères de sélection C4.5}
@@ -198,8 +208,9 @@ Critère de sélection: Gain Ration:
 \item[] Temps de construction de l'arbre
 \end{description}
 
-\chapter{Classificateur bayésiens}
-\scalebox{0.8}{
+\chapter{Réseau bayésiens}
+\section{Classifieur bayésiens}
+\scalebox{0.7}{
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=8cm,
                     semithick]
   \tikzstyle{every state}=[fill=white,draw=none,text=black]
@@ -255,4 +266,105 @@ Critère de sélection: Gain Ration:
 \item[$=$] $ .5\ *\ .4\ *\ 1\ *\ $
 \end{description}
 
+\pagebreak
+\section{Construction et classification avec des réseaux Bayésiens}
+Soit le jeu de donnée suivant:
+
+\begin{tabular}{l|llll}
+  \hline
+   $ $ & Couleur & Type & Origine & volée \\
+  \hline
+  1 & rouge & sport & locale & oui\\
+  2 & rouge & sport & locale & non\\
+  3 & rouge & sport & locale & oui\\
+  4 & jaune & sport & locale & non\\
+  5 & jaune & sport & importée & oui\\
+  6 & jaune & 4x4 & importée & non\\
+  7 & jaune & 4x4 & importée & oui\\
+  8 & jaune & 4x4 & locale & non\\
+  9 & rouge & 4x4 & importée & non\\
+  10 & rouge & sport & importée & oui\\
+  \hline
+\end{tabular}
+
+\subsection{Construction d'un réseau bayésien naïf}
+soit la variable de classe nommé "Volée": 
+
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=6cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]		   (A)                    {
+    \begin{tabular}{l|ll}
+      $ Volee $ & $\top$ & $\bot$\\
+      \hline 
+      $X$ & 5/10 & 5/10\\
+	\end{tabular}\\
+  };
+  \node[state]         (B) [below left of=A]  {      
+     \begin{tabular}{l|ll}
+         $ Couleur$ & $\top$& $\bot$ \\
+         \hline
+         $rouge$& 3/5 & 2/5\\
+         $jaune$& 2/5 & 3/5\\
+	  \end{tabular}\\
+  };
+  \node[state]         (C) [below right of=A] {     
+  	\begin{tabular}{l|ll}
+        $ Type$ & $\top$ & $\bot$ \\
+        \hline
+        $Sport$& 4/5 & 2/5\\
+        $4x4$ & 1/5 & 3/5\\
+	  \end{tabular}\\
+   };
+  \node[state]         (D) [below right of=B] {     
+  	\begin{tabular}{l|ll}
+        $Origine$ & $\top$ & $\bot$ \\
+        \hline
+        $Locale$ & 2/5 & 3/5\\
+        $Importee$&3/5 & 2/5\\
+	  \end{tabular}\\
+   };
+
+  \path (A) edge              node {} (B)
+            edge              node {} (C)
+            edge              node {} (D);
+\end{tikzpicture}
+}
+
+\subsection{Règle de classification bayésienne}
+$classes = max
+\begin{cases}
+P(Volee=\top | Rouge, 4x4, Importee)\\
+P(Volee=\bot | Rouge, 4x4, Importee)
+\end{cases}$
+
+\subsection{Règle de décision}
+\begin{description}
+\item[$P(V|CTO)$] = $P(VCTO)$ car indépendantes
+\item[$        $] = $P(C|v)*P(T|V)*P(O|V)*P(V)$
+\end{description}
+
+\subsection{Observation de classe}
+Avec l'observation suivante (Rouge, 4x4, Importée) la classe associée à cette observation est:
+\begin{description}
+\item[$P(Volee=Non,Rouge,4x4,Importee)$] = $P(Rouge|Non)*P(4x4|Non)*P(Importee|Non)*P(Non)$
+\item[$                               $] = $2/5 * 3/5 * 2/5 * 1/2$
+\end{description}
+\begin{description}
+\item[$P(Volee=Oui,Rouge,4x4,Importee)$] = $P(Rouge|Oui)*P(4x4|Oui)*P(Importee|Oui)*P(Oui)$
+\item[$                               $] = $ $
+\end{description}
+
+\ \\
+Avec l'observation incomplète suivante (Jaune, Sport) la classe associée à cette observation est:
+\begin{description}
+\item[$P(Volee=Non,Jaune,Sport)$] = $P(Jaune|Non)*P(Sport|Non)* \sum P(\theta|Non)*P(Non)$
+\item[$                               $] = $2/5 * 4/5 * 1 * 1/2$
+\end{description}
+\begin{description}
+\item[$P(Volee=Oui,Jaune,Sport)$] = $P(Jaune|Oui)*P(Sport|Oui)*\sum P(\theta|Oui)*P(Oui)$
+\item[$                               $] = $ $
+\end{description}
 \pagebreak

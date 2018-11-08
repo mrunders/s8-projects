@@ -1,6 +1,5 @@
 \documentclass[french, 12pt]{report}
 \usepackage[latin1, utf8]{inputenc}
-\usepackage[T1]{fontenc} 
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{listings}

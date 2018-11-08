@@ -39,4 +39,4 @@ Le noeud contextuel est maintenant remainder pour toutes les questions suivantes
     "concat(movie/title/text(), ' (', movie/year/text(), ') - ', movie/filmography/Director/name)"
 
     l'ensemble des intervenants dont le prénom est Bob
-    ?
+    "string(//remainder//*[contains(text(), 'Bob')])"
