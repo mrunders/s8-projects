@@ -421,7 +421,7 @@ Soit:
 \end{description}
 \end{description}
 
-\subsection{Caractériser Système P}
+\section{Tolérance du Système P}
 Soit la basse de connaissance:
 \begin{description}
 \item[$\Delta$]
@@ -467,8 +467,122 @@ Pour une formule de type $A \Rightarrow B$ dans $\Delta$ dire si il existe une i
 \item[] $\cblue{Q^1} \Rightarrow \corange{C^1}$
 \end{description}
 \end{description}
-
-
 \end{multicols}
 
+\section{Stratification du système P}
+$\Delta$ stratifiable (ou cohérente) c'est le fait de pouvoir diviser $\Delta$ en $\Delta_i$.\\
+$\Delta_i$ est plus général que $\Delta_{i+1}$\\
+\begin{tikzpicture}[sibling distance=7em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$\Delta$}
+    child { node {$\Delta_1$} }
+    child { node {$\Delta_2$} }
+    child { node {$\Delta_3$} }
+    child { node {$\Delta_4$} }
+    child { node {$\Delta_n$} 
+    };
+\end{tikzpicture}\\
+Si $\alpha \rightarrow \beta$ est une conséquences de $\Delta$, alors $\{\alpha \rightarrow \neg \beta \} \cup \Delta$ est incohérente.
+A chaque tour dans $\Delta$ appliquer la tolérances et si il y a une interprétation, bouger la formule dans $\Delta_i$, Si $\Delta_i$ est vide alors ce n'est pas stratifiable, si $\Delta$ est vide alors c'est stratifiable.
+\pagebreak
+
+\section{Exemple de stratification possible}
+\subsection{Initialisation}
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, Q \rightarrow F \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\alpha \rightarrow \beta$] = $ (Q \wedge C) \rightarrow \neg F$
+\end{description}
+
+\subsection{Première itération}
+On n'a:
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, Q \rightarrow F, (Q \wedge C) \rightarrow F \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ \}$
+\end{description}
+\ \\
+Pour $\crouge{C^1 \rightarrow \neg F^0}$ est toléré par l'algorithme donc transféré dans $\Delta_1$ à la fin du tour:
+\begin{description}
+\item[$\Delta$] = $\{ \crouge{C^1 \rightarrow \neg F^0}, Q^0 \rightarrow F^0, (Q^0 \wedge C^1) \rightarrow F^0 \}$
+\item[$W$] = $\{ Q^0 => S^s, Q^0 => C^1 \}$
+\item[$\Delta_1$] = $\{  \}$
+\end{description}
+\ \\
+Pour $\crouge{Q \rightarrow F}, \crouge{(Q \wedge C) \rightarrow F}$ ne sont pas toléré par l'algorithme:
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, \crouge{Q \rightarrow F}, \crouge{(Q \wedge C) \rightarrow F} \}$
+\item[$W$] = $\{ Q => S, Q => C \}$
+\item[$\Delta_1$] = $\{  \}$
+\end{description}
+
+\subsection{Seconde itération}
+On n'a:
+\begin{description}
+\item[$\Delta$] = $\{ Q \rightarrow F, (Q \wedge C) \rightarrow F \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ C \rightarrow \neg F \}$
+\item[$\Delta_2$] = $\{ \}$
+\end{description}
+\ \\
+Pour $\crouge{ Q \rightarrow F }$ et $\crouge{ (Q \wedge C) \rightarrow F }$ sont toléré donc seront transféré dans $\Delta_2$ à la fin du tour:
+\begin{description}
+\item[$\Delta$] = $\{  \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ C \rightarrow \neg F \}$
+\item[$\Delta_2$] = $\{ Q \rightarrow F, (Q \wedge C) \rightarrow F \}$
+\end{description}
+\ \\
+$\Delta$ est vide donc $\{\alpha \rightarrow \neg \beta \} \cup \Delta$ est stratifiable.
+\pagebreak
+\section{Exemple de stratification non possible}
+
+\subsection{Initialisation}
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, Q \rightarrow F \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\alpha \rightarrow \beta$] = $ ( Q \wedge C) \rightarrow (F \vee A)$
+\end{description}
+
+\subsection{Première itération}
+On n'a:
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, Q \rightarrow F, ( Q \wedge C) \rightarrow (\neg F \wedge \neg A) \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ \}$
+\end{description}
+\ \\
+Pour $\crouge{C^1 \rightarrow \neg F^0}$ est toléré par l'algorithme donc transféré dans $\Delta_1$ à la fin du tour:
+\begin{description}
+\item[$\Delta$] = $\{ \crouge{C^1 \rightarrow \neg F^0}, Q^0 \rightarrow F^0, ( Q^0 \wedge C^1) \rightarrow (\neg F^0 \wedge \neg A^a) \}$
+\item[$W$] = $\{ Q^0 => S^s, Q^0 => C^1 \}$
+\item[$\Delta_1$] = $\{  \}$
+\end{description}
+\ \\
+Pour $\crouge{Q \rightarrow F}, \crouge{( Q \wedge C) \rightarrow (\neg F \wedge \neg A)}$ ne sont pas toléré par l'algorithme:
+\begin{description}
+\item[$\Delta$] = $\{ C \rightarrow \neg F, \crouge{Q \rightarrow F}, \crouge{( Q \wedge C) \rightarrow (\neg F \wedge \neg A)} \}$
+\item[$W$] = $\{ Q => S, Q => C \}$
+\item[$\Delta_1$] = $\{  \}$
+\end{description}
+
+\subsection{Seconde itération}
+On n'a:
+\begin{description}
+\item[$\Delta$] = $\{ Q \rightarrow F, (Q \wedge C) \rightarrow (\neg F \wedge \neg A) \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ C \rightarrow \neg F \}$
+\item[$\Delta_2$] = $\{ \}$
+\end{description}
+\ \\
+Pour $\crouge{ Q \rightarrow F }$ et $\crouge{ ( Q \wedge C) \rightarrow (\neg F \wedge \neg A) }$ ne sont pas toléré:
+\begin{description}
+\item[$\Delta$] = $\{ Q \rightarrow F, (Q \wedge C) \rightarrow (\neg F \wedge \neg A \}$
+\item[$W$] = $\{ Q => S, Q => C\}$
+\item[$\Delta_1$] = $\{ C \rightarrow \neg F \}$
+\item[$\Delta_2$] = $\{ \}$
+\end{description}
+\ \\
+$\Delta_2$ est vide donc $\{\alpha \rightarrow \neg \beta \} \cup \Delta$ n'est pas stratifiable.
 \pagebreak
