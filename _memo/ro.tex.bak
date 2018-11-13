@@ -125,7 +125,7 @@ Un modèle est canonique que si:
 \item[] (3) $3x - e_1 + e_3 = 25$
 \item[Variable hors base] = $x,e_1$
 \item[Variable Base] = $y,e_2,e_3$
-\item[Avec comme solution admissible] $A\ Déduire (x,y,e_1,e_2,e_3)$
+\item[Avec comme solution admissible] $A\ Deduire (x,y,e_1,e_2,e_3)$
 \end{description}
 \ \\
 Pour toute variable présente dans l'ensemble $Hors\ base$ la valeur admissible est égal à $0$\\
@@ -134,27 +134,27 @@ Les 3 dernières valeurs sont les résultat des équations (soit $3$, $5$ et $25
 Pour chaque équation nous lisons les termes de droit à gauche et ignorons ceux qui sont dans l'ensemble $Hors\ Base$:\\
 Donc solution admissible = $(0, 3, 0, 5, 25)$\\
 
-\section{Premier itération}
+\section{Exemple simple Premier itération}
 \subsection{Choix de la variable entrante}
 $(x,y)$ sont deux choix possible, le tout est de choisir une bonne heuristique, comme celle du meilleur gain marginale, ou via la comparaison (en mode graphique):\\
 $Y$ sera choisit, donc $Y$ sera notre variable entrante.\\
 
 \subsection{Choix de la variable sortante}
 Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (devant être positif (car $Y$ est la variable entrante)\\
-\pagebreak
+
 \begin{description}
-\item[] $ -x + y + e_1 = 3$ donne $\frac{3}{1} = 3$ (1 car $y$ = $1*y$)
+\item[] $ -x + y + e_1 = 3$ donne $\frac{3}{\crouge{1}} = 3$ (1 car $y$ = $1*y$)
 \item[] $ y + e_2 = 8$ donne $\frac{8}{1} = 8$
 \item[] $ 2x - y + e_3 = 28$ donne $\frac{28}{1} = 28$
 \end{description}
 Prendre le minimum des variables, donc se sera $3$.\\
 la variable présente dans la Base sera prise comme variable sortante, dans notre cas $e_1$.\\
-
+\pagebreak
 \subsection{pivotage}
 On choisis l'équation associé à la variable $e_1$ pour définir la variable entrante $y$.\\
 On n'a:
 \begin{description}
-\item[$y$] = $x - e_1 + 3$
+\item[$y$] = $\crouge{1}*(x - e_1 + 3)$
 \end{description}
 
 Puis on crée les nouvelles équations via le nouveau $y$:
@@ -176,7 +176,6 @@ Puis on crée les nouvelles équations via le nouveau $y$:
 \item[$25$] = $3x - e_1 + e_3$
 \end{description}
 \end{description}
-\pagebreak
 \subsection{Nouveau modèle}
 Après cette étape nous voila avec un nouveau modèle:
 \begin{description}
@@ -199,20 +198,20 @@ Après cette étape nous voila avec un nouveau modèle:
 
 A ne pas oublier de vérifier la canonicité du modèle.\\
 
-\section{Seconde itération}
+\section{Exemple simple Seconde itération}
 \subsection{Choix de la variable entrante}
 $X$ sera choisit, donc $X$ sera notre variable entrante.\\
 
 \subsection{Choix de la variable sortante}
 \begin{description}
-\item[] $\frac{5}{1} = 5$
+\item[] $\frac{5}{\crouge{1}} = 5$
 \item[] $\frac{25}{3} = 8.3$
 \end{description}
 Prendre le minimum des variables, donc se sera $5$, donc $e_2$.\\
 
 \subsection{pivotage}
 \begin{description}
-\item[$x$] = $e_1 - e_2 + 5$
+\item[$x$] = $\crouge{1}*(e_1 - e_2 + 5)$
 \end{description}
 
 Puis on crée les nouvelles équations via le nouveau $y$:
@@ -233,7 +232,7 @@ Puis on crée les nouvelles équations via le nouveau $y$:
 \item[$10$] = $2e_1 - 3e_2 + e_3$
 \end{description}
 \end{description}
-\pagebreak
+
 \subsection{Nouveau modèle}
 Après cette étape nous voila avec un nouveau modèle:
 \begin{description}
@@ -254,4 +253,35 @@ Après cette étape nous voila avec un nouveau modèle:
 \end{description}
 
 A ne pas oublier de vérifier la canonicité du modèle.\\
+
+\section{Exemple simple, troisième itération}
+\begin{description}
+\item[La variable entrante est] $e_1$
+\item[La variable sortante est] $e_3$ car
+\item[] $\frac{8}{0}$ est NULL
+\item[] $\frac{5}{1}$ car négatif
+\item[] $\frac{10}{2} = 5$
+\end{description}
+
+\subsection{Nouveau modèle}
+\begin{description}
+\item[Déterminer] $(x,y,e_1,e_2,e_3) \in \Im^5$
+\item[Maximisant] $Z = 86 - \frac{11}{2}e_2 - \frac{3e_3}{2}$
+\item[sous les contraintes]:
+\begin{description}
+\item[] (1) $- \frac{1}{2}e_2 + \frac{e_3}{2} + e1 = 10$
+\item[] (2) $e_2 + y = 8$
+\item[] (3) $e_1 - \frac{3}{2}e_2 + \frac{e_3}{2} = 5$
+\item[] (5) $ 0 \leq x$
+\item[] (6) $ 0 \leq y$
+\item[] (7) $ e_1,e_2,e_3 \geq 0$
+\end{description}
+\item[Variable hors base] = $e_2,e_3$
+\item[Variable Base] = $y,x,e_1$
+\item[Avec comme solution admissible] $(10,8,5,0,0) Z=86$
+\end{description}
+
+\section{Exemple simple, dernière itération}
+Stop car $e_2$ et $e_3$ sont inférieur à 0 dans $Z$.
+
 \pagebreak

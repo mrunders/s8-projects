@@ -102,21 +102,28 @@ Soit X l'ensemble des variables indépendantes sur l'axe des l'abscisse et
 Y l'ensemble des variable dépendantes sur l'axe des ordonnée.
 
 \section{Régression linéaire}
-Étant donné un plan à deux dimensions où l'abscisse contient les point d'entrée X et l'ordonnée contient les points de sortie Y, et un nouage de points précédaient acquitté de tout point éloigné du nuage.
+Étant donné un plan à deux dimensions où l'abscisse contient les point d'entrée X et l'ordonnée contient les points de sortie Y, et un nouage de points précédaient acquitté de tout point éloigné du nuage.\\
 
-\includegraphics[scale=0.3]{img/ap-linear-regression_1.png}
-$Figure ap-linear-regression_1$
-
+\scalebox{0.7}{
+\begin{tikzpicture}
+  \begin{axis} [
+      xlabel     = X, % label x axis
+      ylabel     = Y, % label y axis
+      axis lines = left, %set the position of the axes
+      clip       = false, 
+      xmin       = 0,
+      ymin       = 0,
+    ]
+    \addplot [color=black] coordinates { (0,0)(10,10) };
+    \addplot [only marks, mark=*, color=blue] coordinates {(1,2)(2.5,3)(5,6)(4,3)(8,9)(6,4)(3,4)(7,6) };
+    \addplot [only marks, mark=*, color=red] coordinates {(1,9)(8,1)(9,1.5) };
+  \end{axis}
+\end{tikzpicture}
+}
 \begin{description}
 \item[Avec]: y  = $\beta_0 + \beta_1 x$
 \item[Pour un hyperPlan (3d)]: y = $\beta_0 + \beta_1 x_1 + \beta_2 x_2$
 \item[$P-I_n$]: y = $\beta_0 + \beta_1 x_1 + ... \beta_n x_n$
-\end{description}
-
-Exemple:
-\begin{description}
-\item[5] =  $\beta_0 + 2 * \beta_1$
-\item[2] =  $\beta_0 + 1 * \beta_1$
 \end{description}
 
 \pagebreak
@@ -205,7 +212,7 @@ La fonction de logique de régression, les valeur d'entrée X sont combiné en u
 \item[$\beta_0 + \beta_1 * x$] = $ ln(\frac{P(x)}{1 - P(x)})$ aussi appelé odds.
 \end{description}
 
-\section{Linear Discriminant Analysis}
+\chapter{Linear Discriminant Analysis}
 L'analyse discriminante linéaire fait partie des techniques d'analyse discriminante prédictive, il s'agit de prédire l'appartenance d'un individu à une classe prédéfinie à partir de ses caractéristiques mesurées à l'aide de variables prédictives.\\
 A notre disposition, un échantillon de $n$ observations réparties dans $\Bbbk$ groupes d'effectifs $n_{\Bbbk}$.\\
 \begin{description}
@@ -217,12 +224,115 @@ A notre disposition, un échantillon de $n$ observations réparties dans $\Bbbk$
 \item[Où $P(k)$] vaut la probabilité appliqué aux valeurs de $Y$
 \end{description}
 
-\subsection{la règles bayésienne}
+\subsection{bayésien rules}
 L'objectif est de produire une règle d'affection $X(\omega) \rightarrow Y(\omega)$ qui permet de prédire, pour une observation $\omega$ donné, sa valeur associé de $Y$ à partir des valeurs prises par $X$. via une probabilité\\
 \begin{description}
 \item[$P(Y=y_{\Bbbk})$] = $\frac{P(Y=y_{Bbbk})*P(X|Y=y_{\Bbbk})}{\sum_{i=1}^{\Bbbk} P(Y=y_i)*P(X|Y=y_i)}$
 \item[Où $P(Y=y_{\Bbbk})$] est la probabilité à $priori$ d'appartenance à une classe
 \item[$P(X|Y=y_{\Bbbk})$] représente la fonction de densité des X conditionnellement à la classe $y_{\Bbbk}$
 \end{description}
+
+\chapter{Non linear algorithm}
+\section{Classification and régression tree}
+Soit:\\
+\begin{description}
+\item[$G$] $ = \sum_{k=1}^n p_k * (1 - p_k)$
+\item[$V$] = 2.67
+\item[] \begin{tabular}{ll|l}
+  \hline
+  $ X_1 $ & $ X_2 $ &  $Y $\\
+  \hline
+  2.77 & 2.33 & 0\\
+  1.72 & 01.78 & 0\\
+  3.67 & 03.36 & 0\\
+  3.96 & 4.67 & 0\\
+  \hline
+\end{tabular}
+\end{description}
+
+Soit un arbre de décision ayant comme fils gauche des $Yes$ et fils droit des $No$ par rapport à la condition $split$.\\
+Si la valeur $V < X1_i$ alors on crée un fils gauche, sinon on crée un fils droit:\\
+
+\begin{tikzpicture}[sibling distance=8em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$V < 2.77$}
+ 	  child { node {$V < 1.72$ }
+ 	    child { node {$Class Leaf$}}
+ 	    child { node {$V < 3.67$}
+ 	      child { node {$V < 3.96$}
+ 	        child { node {$Class Leaf$} }
+ 	        child { node {$Class Leaf$} }
+ 	      }
+ 	      child { node {$Class Leaf$} }
+ 	    }
+ 	  }
+ 	  child { node {$Class Leaf$} }
+    ;
+\end{tikzpicture}
+\ \\
+\begin{multicols}{2}
+[Soit d'une façon plus calculatoire:
+]
+\begin{description}
+\item[$G$] $=$
+\item[] $left(X1_1) * (1 - left(X1_1))$ + 
+\item[] $right(X1_1) * (1 - right(X1_1))$ + 
+\item[] $left(X1_2) * (1 - left(X1_2))$ + 
+\item[] $right(X1_2) * (1 - right(X1_2))$ + 
+\item[] $left(X1_3) * (1 - left(X1_3))$ + 
+\item[] $right(X1_3) * (1 - right(X1_3))$ + 
+\item[] $left(X1_4) * (1 - left(X1_4))$ + 
+\item[] $right(X1_4) * (1 - right(X1_4))$ + 
+\end{description}
+
+\begin{description}
+\item[] $ $
+\item[] $X1_1 = 2.77$
+\item[] $ = 0$ car $V <$ 2.77 $\rightarrow$ Left
+\item[] $ = 0$ car $1.72 <$ V $\rightarrow$ Right
+\item[] $X1_2 = 1.72$
+\item[] $X1_1 = 3.67$
+\item[] $ = 0$ car $V <$ 3.67 $\rightarrow$ Left
+\item[] $X1_1 = 3.96$
+\item[] $ = 0$ car $V <$ 3.96 $\rightarrow$ Left
+\end{description}
+\end{multicols}
+\pagebreak
+
+\section{K moyen}
+Le K moyen demande une heuristique de type métrique pour comparé les distances entre poins.\\
+Par exemple:
+\begin{description}
+\item[Distance euclidienne] $\sqrt{\sum_{i=1}^n (a_i, b_i)^2}$
+\end{description}
+
+% a remplir
+
+\section{Support vector machines}
+Soit les points:
+\begin{description}
+\item[$\cblue{Blue}$] Une $\cblue{ClassA}$
+\item[$\crouge{Rouge}$] Une $\crouge{ClassB}$
+\end{description}
+Le support vector machines cherche un hyperplan (de couleur noir) pouvant départager les deux classes,
+Il en existe une infinité d'hyperplan qui peuvent les départager, donc introduisons un autre concept, celui de 
+l'hyperplan qui maximise la séparation entre les deux classes (les droites $\corange{Oranges}$ appelé $Margin$.\\
+
+\begin{tikzpicture}
+  \begin{axis} [
+      axis lines = left,
+      xmin       = 0,
+      ymin       = 0,
+    ]
+    \addplot [color=black] coordinates {(0,0)(10,10)};
+    \addplot [color=orange] coordinates {(0,1.3)(8.7,10) };
+    \addplot [color=orange] coordinates {(1,0)(10,9) };
+    \addplot [only marks, mark=*, color=blue] coordinates {(2,6)(1,3)(6,7.6)(3,8.5)(7.5,9.5)(4,9)(3,6)};
+    \addplot [only marks, mark=*, color=red]  coordinates {(2,0.8)(6,2)(9,4)(9.7,8)(8,3)};
+  \end{axis}
+\end{tikzpicture}
+
+Dans le cadre du Soft margin, il n'existe pas de margin séparent les deux classes,il faut donc chercher la droite qui minimise l'erreur.
 
 \pagebreak

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  13 NOV 2018 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  13 NOV 2018 16:50
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -955,7 +955,131 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsevenbox=\box88
 \pgfnodepartsixbox=\box89
 \pgfnodepartfivebox=\box90
-)))
+))) (E:\ProgramFiles\MikTex2.9\tex\latex\pgfplots\pgfplots.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks47
+\t@pgfplots@tokb=\toks48
+\t@pgfplots@tokc=\toks49
+\pgfplots@tmpa=\dimen268
+\c@pgfplots@coordindex=\count167
+\c@pgfplots@scanlineindex=\count168
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.tex
+))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\libs\pgfplotslibrary.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
+pp_loader.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
+pp_pgflibraryfpu.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
+pp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count169
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
+pp_leq.code.tex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotsutil.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsliststruc
+ture.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsliststruc
+tureext.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.cod
+e.tex
+\c@pgfplotsarray@tmp=\count170
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix.co
+de.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\numtable\pgfplotstableshared.co
+de.tex
+\c@pgfplotstable@counta=\count171
+\t@pgfplotstable@a=\toks50
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.cod
+e.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotsbinary.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotsbinary.data.code.t
+ex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotsutil.verb.code.tex
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surfsha
+ding.code.tex
+\c@pgfplotslibrarysurf@no=\count172
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfshad
+ing.pgfsys-pdftex.def)))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotscolormap.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\util\pgfplotscolor.code.tex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsstackedplots.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsplothandlers.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsmeshplothandler.code.te
+x
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsmeshplotimage.code.tex)
+)) (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.scaling.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotscoordprocessing.code.te
+x) (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.errorbars.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.markers.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsticks.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.paths.code.tex)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarydecorations.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.te
+x
+\pgfdecoratedcompleteddistance=\dimen269
+\pgfdecoratedremainingdistance=\dimen270
+\pgfdecoratedinputsegmentcompleteddistance=\dimen271
+\pgfdecoratedinputsegmentremainingdistance=\dimen272
+\pgf@decorate@distancetomove=\dimen273
+\pgf@decorate@repeatstate=\count173
+\pgfdecorationsegmentamplitude=\dimen274
+\pgfdecorationsegmentlength=\dimen275
+)
+\tikz@lib@dec@box=\box91
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarydecorations.pathmorphing.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\decorations\pgflibrarydeco
+rations.pathmorphing.code.tex))
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+rarydecorations.pathreplacing.code.tex
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\decorations\pgflibrarydeco
+rations.pathreplacing.code.tex))
+\pgfplots@numplots=\count174
+\pgfplots@xmin@reg=\dimen276
+\pgfplots@xmax@reg=\dimen277
+\pgfplots@ymin@reg=\dimen278
+\pgfplots@ymax@reg=\dimen279
+\pgfplots@zmin@reg=\dimen280
+\pgfplots@zmax@reg=\dimen281
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
+raryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryplotmarks.code.t
+ex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (E:\ProgramFiles\MikTex2.9\tex\latex\pgfplots\pgfplotstable.sty
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.revision.tex)
+Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (
+1.16)
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\numtable\pgfplotstable.code.tex
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\numtable\pgfplotstable.coltype.
+code.tex)) (E:\ProgramFiles\MikTex2.9\tex\latex\tools\array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen282
+\extrarowheight=\dimen283
+\NC@list=\toks51
+\extratabsurround=\skip49
+\backup@length=\skip50
+))
 
 LaTeX Warning: Unused global option(s):
     [french].
@@ -963,31 +1087,31 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count167
-\scratchdimen=\dimen268
-\scratchbox=\box91
-\nofMPsegments=\count168
-\nofMParguments=\count169
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count170
-\MPscratchDim=\dimen269
-\MPnumerator=\count171
-\makeMPintoPDFobject=\count172
-\everyMPtoPDFconversion=\toks48
+\scratchcounter=\count175
+\scratchdimen=\dimen284
+\scratchbox=\box92
+\nofMPsegments=\count176
+\nofMParguments=\count177
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count178
+\MPscratchDim=\dimen285
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
+\everyMPtoPDFconversion=\toks53
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1033,15 +1157,17 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count173
+\c@lstlisting=\count181
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 56.
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 56.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1058,20 +1184,20 @@ Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
 ] [2] [3]
-Overfull \hbox (5.33537pt too wide) in paragraph at lines 96--96
+Overfull \hbox (5.33537pt too wide) in paragraph at lines 103--103
 []\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 103--103
 []  
  []
 
-[4])
+[4] [5])
 \tf@toc=\write4
 \openout4 = `_memo.toc'.
 
- [5] (fdd.tex [1
+ [6] (fdd.tex [1
 
 ]
 Chapter 1.
@@ -1157,7 +1283,7 @@ Chapter 5.
 [11
 
 ]
-Overfull \vbox (20.8222pt too high) has occurred while \output is active []
+Overfull \vbox (20.97395pt too high) has occurred while \output is active []
 
 
 [12] [13]
@@ -1225,53 +1351,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
 ]
 Chapter 9.
-<img/ap-linear-regression_1.png, id=104, 640.3925pt x 720.6925pt>
-File: img/ap-linear-regression_1.png Graphic file (type png)
 
-<use img/ap-linear-regression_1.png>
-Package pdftex.def Info: img/ap-linear-regression_1.png used on input line 107.
-
-(pdftex.def)             Requested size: 192.11923pt x 216.20941pt.
- [22
-
- <./img/ap-linear-regression_1.png (PNG copy)>] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 136--138
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-[24] [25]
-Chapter 10.
+[22
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--212
+]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+[23] [24]
+Chapter 10.
+[25
+
+]
+Chapter 11.
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 [26
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
+] [27]
+Chapter 12.
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-) [27] (of.tex [28
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--255
+
+ []
+
+Missing character: There is no ] in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--277
+
+ []
+
+[28
+
+] [29]
+Underfull \hbox (badness 10000) in paragraph at lines 318--321
+
+ []
+
+) [30] (of.tex [31
 
 ]
-Chapter 11.
-[29
+Chapter 13.
+[32
 
-] <img/of-coupure.png, id=132, 294.09875pt x 243.91125pt>
+] <img/of-coupure.png, id=144, 294.09875pt x 243.91125pt>
 File: img/of-coupure.png Graphic file (type png)
 
 <use img/of-coupure.png>
 Package pdftex.def Info: img/of-coupure.png used on input line 35.
 (pdftex.def)             Requested size: 88.2303pt x 73.17393pt.
- <img/of-ou.png, id=133, 281.05pt x 136.51pt>
+ <img/of-ou.png, id=145, 281.05pt x 136.51pt>
 File: img/of-ou.png Graphic file (type png)
 
 <use img/of-ou.png>
 Package pdftex.def Info: img/of-ou.png used on input line 37.
 (pdftex.def)             Requested size: 84.31564pt x 40.95331pt.
- <img/of-monotomie.png, id=134, 175.65625pt x 198.7425pt>
+ <img/of-monotomie.png, id=146, 175.65625pt x 198.7425pt>
 File: img/of-monotomie.png Graphic file (type png)
 
 <use img/of-monotomie.png>
@@ -1282,21 +1435,21 @@ Overfull \hbox (2.50609pt too wide) in paragraph at lines 44--45
 []\OT1/cmr/m/n/12 si avec que
  []
 
-[30 <./img/of-coupure.png (PNG copy)> <./img/of-ou.png (PNG copy)> <./img/of-mo
-notomie.png (PNG copy)>] [31]
+[33 <./img/of-coupure.png (PNG copy)> <./img/of-ou.png (PNG copy)> <./img/of-mo
+notomie.png (PNG copy)>] [34]
 Missing character: There is no ] in font nullfont!
 
 Overfull \hbox (18.82834pt too wide) in paragraph at lines 83--117
 []
  []
 
-<img/of-remplacement.png, id=142, 350.30875pt x 156.585pt>
+<img/of-remplacement.png, id=153, 350.30875pt x 156.585pt>
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
 Package pdftex.def Info: img/of-remplacement.png used on input line 120.
 (pdftex.def)             Requested size: 262.73091pt x 117.43845pt.
- [32]
+ [35]
 Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
@@ -1311,14 +1464,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[33 <./img/of-remplacement.png (PNG copy)>]
+[36 <./img/of-remplacement.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[34]
-Chapter 12.
-<img/of-occ-1.png, id=152, 317.185pt x 297.11pt>
+[37]
+Chapter 14.
+<img/of-occ-1.png, id=164, 317.185pt x 297.11pt>
 File: img/of-occ-1.png Graphic file (type png)
  <use img/of-occ-1.png>
 Package pdftex.def Info: img/of-occ-1.png used on input line 187.
@@ -1328,14 +1481,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--192
 
  []
 
-[35
+[38
 
  <./img/of-occ-1.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 199--201
 
  []
 
-[36] [37]
+[39] [40]
 Overfull \hbox (33.84421pt too wide) in paragraph at lines 253--256
 \OT1/cmr/m/n/12 On peut cal-culer cette sous for-mule en ap-pli-quant chaque te
 rme dans l'interpretation
@@ -1356,7 +1509,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
-[38]
+[41]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1369,7 +1522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--364
 
  []
 
-[39]
+[42]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1387,7 +1540,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--423
 
  []
 
-[40]
+[43]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1405,10 +1558,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 490--492
 Overfull \vbox (52.31276pt too high) has occurred while \output is active []
 
 
-[41]) (ro.tex [42
+[44]) (ro.tex [45
 
 ]
-Chapter 13.
+Chapter 15.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--31
 
@@ -1419,17 +1572,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--31
 
  []
 
-[43
+[46
 
 ]
-Chapter 14.
-<img/ro-pl-2var_0.png, id=182, 491.8375pt x 434.62375pt>
+Chapter 16.
+<img/ro-pl-2var_0.png, id=193, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [44
+ [47
 
 ]
 Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
@@ -1437,83 +1590,88 @@ Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
 eme,
  []
 
-<img/ro-pl-2var_1.png, id=186, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=197, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [45 <./img/ro-pl-2var_0.png (PNG copy)>] [46 <./img/ro-pl-2var_1.png (PNG copy
+ [48 <./img/ro-pl-2var_0.png (PNG copy)>] [49 <./img/ro-pl-2var_1.png (PNG copy
 )>]
-Chapter 15.
+Chapter 17.
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[47
+[50
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 130--136
 
  []
 
-[48]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+[52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
-[51] [52]) (rcr.tex [53] [54
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
+
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+
+ []
+
+[55]) [56] (rcr.tex [57
 
 ]
-Chapter 16.
+Chapter 18.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[55
+[58
 
-] [56]
-Chapter 17.
+] [59]
+Chapter 19.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[57
+[60
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[58]
+[61]
 Overfull \hbox (54.46117pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-[59]
+[62]
 Overfull \hbox (23.78946pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
@@ -1523,14 +1681,14 @@ Overfull \hbox (38.8198pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 equivalent?
  []
 
-[60]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-[61]
-Chapter 18.
-[62
+[64]
+Chapter 20.
+[65
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 211--213
@@ -1557,20 +1715,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[63]
+[66]
 Missing character: There is no ] in font nullfont!
- [64]
+ [67]
 Missing character: There is no ] in font nullfont!
- [65]
-Chapter 19.
+ [68]
+Chapter 21.
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[66
+[69
 
-] [67]
+] [70]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
@@ -1590,12 +1748,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-[68]
+[71]
 Missing character: There is no ] in font nullfont!
- [69] [70] [71] [72]) (xml.tex [73] [74
+ [72] [73] [74] [75]) (xml.tex [76] [77
 
 ]
-Chapter 20.
+Chapter 22.
 
 Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 []$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\OT1/cmr/m/n/
@@ -1605,17 +1763,17 @@ Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[75
+[78
 
 ]
-Chapter 21.
+Chapter 23.
 
 Overfull \hbox (28.66399pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
  []
 
-[76
+[79
 
 ]
 Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
@@ -1623,9 +1781,9 @@ Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[77]
-Chapter 22.
-[78
+[80]
+Chapter 24.
+[81
 
 ]
 Overfull \hbox (6.72887pt too wide) in paragraph at lines 98--99
@@ -1654,15 +1812,15 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 105--106
  )"$ 
  []
 
-) [79] (_memo.aux) ) 
+) [82] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 18314 strings out of 493323
- 353580 string characters out of 3139963
- 449158 words of memory out of 3000000
- 21483 multiletter control sequences out of 15000+200000
+ 29120 strings out of 493323
+ 716973 string characters out of 3139963
+ 913839 words of memory out of 3000000
+ 32137 multiletter control sequences out of 15000+200000
  14226 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,36n,79p,444b,3462s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 77i,36n,127p,730b,3472s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 <E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Pr
@@ -1680,9 +1838,9 @@ msfonts/cm/cmtt12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm
 7.pfb>
-Output written on _memo.pdf (85 pages, 462040 bytes).
+Output written on _memo.pdf (89 pages, 450020 bytes).
 PDF statistics:
- 359 PDF objects out of 1000 (max. 8388607)
+ 370 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

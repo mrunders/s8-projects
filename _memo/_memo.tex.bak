@@ -12,7 +12,10 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
 
+\pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
 \newcommand{\cblue}[1]{ \textcolor{blue}{#1}}
