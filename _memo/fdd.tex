@@ -1,8 +1,8 @@
 \part{Fouille de donnée}
 \pagebreak
 
-\chapter{Rappel sur les probabilisées}
-
+\chapter{Rappel}
+\section{Probabilités}
 \begin{description}
 \item[Quelques rappels de probabilités]: Soient X et Y deux variables aléatoires discrètes prenant leurs valeurs dans DX={x1,..,xn} et DY={y1,..,ym} respectivement.  
 \item[$P(x_i)$] = $\frac{|x_i|}{\sum_{j=1}^n |x_j|}$
@@ -59,6 +59,10 @@ Exemple:
 
 \end{multicols}
 
+\section{Logarithmes en base 2}
+$Log_2(\frac{x}{y}) = Log_2(x) - Log_2(y)$\\
+$Log_2(x*y) = Log_2(x) + Log_2(y)$\\
+
 \chapter{Pré traitement des données}
 \section{Nettoyage des données}
 \subsection{Caractéristiques descriptives}
@@ -112,8 +116,8 @@ Exemple:\\
 \item[PCC(\%)] = $ \frac{0+60+23+5}{100} * 100 = 88\% $ 
 \item[Coût d'erreur] = $\sum_1^n cout(class_{reelle}, classe_{predite})$
 \item[coût d'erreur moyen] = $\frac{cout derreur}{N_{erreurs}}$
-\item[$Rappel(C_i)$] = $\frac{N_{c\_i}}{N_{t\_i}} * 100$ $(Horizontal)Ex:$ $Rappel(C_3)=(23/24)\%$
-\item[$Precision(C_i)$] = $\frac{N_{c\_i}}{N_{i}} * 100$ $(Vertical) Ex:$ $Precision(C_3)=(23/30)\%$
+\item[$Rappel(C_i)$] = $\frac{N_{c\_i}}{N_{t\_i}} * 100$ $\ (Horizontal)\ Ex:$ $Rappel(C_3)=(23/24)\%$
+\item[$Precision(C_i)$] = $\frac{N_{c\_i}}{N_{i}} * 100$ $\ (Vertical)\ Ex:$ $Precision(C_3)=(23/30)\%$
 \end{description}
 
 
@@ -162,34 +166,52 @@ Autre exemples:
 
 Propriétés:
 \begin{description}
-\item[$H(X)$] >= 0
+\item[$H(X)$] $>=$ 0
 \item[$H(X)$] est maximale pour une distribution uniforme (toutes les valeurs sont équiprobables).
 \end{description}
 
 \begin{description}
-\item[Entropie conjointe]: L’entropie conjointe de deux variables aléatoires X et Y est l’incertitude relative à ces deux variables conjointement.
-\item[$H(X,Y)$] = $- \sum_{i,j=1}^n p(x_i,y_i) * log_2(p(x_i,y_i))$
+\item[Entropie conjointe]: L’entropie conjointe de deux variables aléatoires X et Y est l'incertitude relative à ces deux variables conjointement.
+\item[$Entropie(X,Y)$] = $- \sum_{i,j=1}^n p(x_i,y_i) * log_2(p(x_i,y_i))$
 \item[Exemple]: $[0.2, 0.1, 0.3, 0.4]: H(X,Y) = 1.85$
 \end{description}
 
 
-Critère de sélection: Gain d'information:
+\subsection{Gain d'information}
+Soit le data suivant, avec ClientSatisfait la variable de classe:\\
+\begin{tabular}{lll|l}
+\hline
+Mémoire & AutonomieBatterie & Prix & ClientSatisfait\\
+\hline
+$<=4$ & longue & $<=150$ & Oui \\
+$>4$ & longue & $>150$ & Oui \\
+$>4$ & longue & $<=150$ & Oui \\
+$<=4$ & longue & $>150$ & Oui \\
+$>4$ & longue & $>150$ & Oui \\
+$>4$ & courte & $>150$ & Oui \\
+$<=4$ & courte & $>150$ & Non \\
+$<=4$ & courte & $>150$ & Non \\
+$>4$ & courte & $<=150$ & Oui \\
+$<=4$ & courte & $<=150$ & Non \\
+$<=4$ & moyen & $<=150$ & Non \\
+$>4$ & moyen & $<=150$ & Non \\
+$<=4$ & moyen & $>150$ & Oui \\
+$>4$ & moyen & $>150$ & Oui \\
+$>4$ & moyen & $<=150$ & Non \\
+\hline
+\end{tabular}
+\ \\
+Le $Gain\ information$ appliqué sur la colonne AutonomieBatterie (AB) serait:\\
 \begin{description}
-\item[$GAIN(T,A)$] = $Info(T) - Info(T|A)$
-\item[Avec $Info(T)$]: Entropie au niveau de T (avant de partitionner)
-\item[$Info(T)$] = $-\sum_{c_i} freq(c_i,T)*log_2(freq(c_i,T))$
-\item[Avec $freq(c_i,T)$] = $p(c_i) = \frac{|c_i|}{|T|}$
-\item[Avec $Info(T|A)$] l'entropie conditionnelle de T une fois partitionné selon les valeurs de l'attribut A.
-\item[$Info(T|A)$] = $ \sum_{a_{j \in A}} freq(a_j,T) * Info(T | a_j)$
+\item[$Gain(AB)$] $ =\ Entropie(AB) - \frac{5}{15}\ Entropie(Longue) - \frac{5}{15}\ Entropie(Courte) - \frac{5}{15}\ Entropie(Moyen)$
+\item[$Entropie(AB)$] $ = -3 (\frac{5}{15} * log_2 (\frac{5}{15} ))$
+\item[$Entropie(Longue)$] $= 0$
+\item[$Entropie(Courte)$] $= \frac{2}{5} * log_2(\frac{2}{5}) - \frac{3}{5} log_2(\frac{3}{5})$
+\item[$Entropie(Moyen)$] $= \frac{3}{5} log_2(\frac{3}{5}) - \frac{2}{5} * log_2(\frac{2}{5})$
 \end{description}
 
-Critère de sélection: Gain Ration:
-\begin{description}
-\item[] Le gain d’information favorise les attributs ayant de larges domaines.
-\item[] Le ratio de gain utilise le gain d’information avec un facteur pénalisant les attributs ayant des domaines trop larges.
-\item[$GainRatio(T,A)$] = $\frac{Gain(T,A)}{Split_Info(T,A)}$
-\item[Avec $Split_Info(T,A)$] = $- \sum_{a_{j \in A}} freq(a_j,T)*log_2(freq(a_j,T)) = $Entropie de A.
-\end{description}
+\subsection{Gain Ratio}
+\cformular{$Gainratio(AB)$}{$= \frac{Gain(AB)}{Entropie(AB)}$}
 
 \section{critères d'arrêt}
 
@@ -367,4 +389,7 @@ Avec l'observation incomplète suivante (Jaune, Sport) la classe associée à ce
 \item[$P(Volee=Oui,Jaune,Sport)$] = $P(Jaune|Oui)*P(Sport|Oui)*\sum P(\theta|Oui)*P(Oui)$
 \item[$                               $] = $ $
 \end{description}
+\pagebreak
+
+\chapter{Clustering}
 \pagebreak

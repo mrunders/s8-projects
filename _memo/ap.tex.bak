@@ -135,11 +135,13 @@ Soit:
 \item[Y] = $[2,4,5,4,5]$ les variables dépendantes d'axe ordonnée
 \item[Calculons] $y = \beta_0 + \beta_1 x$
 \end{description}
+\ \\
 Calcule de la moyenne de X et Y:
 \begin{description}
 \item[Xm] = $ \sum x_i \in X$ = 3
 \item[Ym] = $ \sum y_i \in Y$ = 4
 \end{description}
+\ \\
 Toutes ligne de régression doivent passer par le point (Xm,Ym).\\
 Calculer tout les écarts des $x_i \in X$ par rapport à Xm (resp Y):\\
 
@@ -310,6 +312,7 @@ Par exemple:
 % a remplir
 
 \section{Support vector machines}
+\subsection{Margin classifier}
 Soit les points:
 \begin{description}
 \item[$\cblue{Blue}$] Une $\cblue{ClassA}$
@@ -333,6 +336,29 @@ l'hyperplan qui maximise la séparation entre les deux classes (les droites $\co
   \end{axis}
 \end{tikzpicture}
 
+
+\subsection{Soft margin classifier}
 Dans le cadre du Soft margin, il n'existe pas de margin séparent les deux classes,il faut donc chercher la droite qui minimise l'erreur.
+Soit un ensemble de données divisé en trois parties:
+\begin{description}
+\item[Tranning Set] sont les données qui seront utiliser pour l'apprentissage
+\item[Test Set] les données qui sont utiliser pour vérifier la satisfesabilité de l'algorithme 
+\item[Tunning Set] appeler $C$ qui sera le taux de violation de la margin accepté
+\end{description}
+
+Soit $C$ = $\{ 0.1, 1, 10\}$ les longueurs que peut prendre la margin et:\\
+\begin{center}
+
+\begin{tabular}{l|ll}
+\hline
+$ $ & $longeur de la margin$ & $Taux de bonnes prediction$\\
+\hline
+$C_0$ & $0.1$ & 80$\%$ \\
+$C_1$ & $1$ & 85 $\%$ La meilleur borne\\
+$C_1$ & $10$ & 85 $\%$\\
+\hline
+\end{tabular}
+\end{center}
+
 
 \pagebreak
