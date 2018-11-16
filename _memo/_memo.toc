@@ -104,53 +104,72 @@
 \contentsline {subsection}{\numberline {18.5.2}Choix de la variable sortante}{56}
 \contentsline {subsection}{\numberline {18.5.3}pivotage}{56}
 \contentsline {subsection}{\numberline {18.5.4}Nouveau mod\IeC {\`e}le}{57}
-\contentsline {section}{\numberline {18.6}Exemple simple, troisi\IeC {\`e}me it\IeC {\'e}ration}{58}
-\contentsline {subsection}{\numberline {18.6.1}Nouveau mod\IeC {\`e}le}{58}
+\contentsline {section}{\numberline {18.6}Exemple simple, troisi\IeC {\`e}me it\IeC {\'e}ration}{57}
+\contentsline {subsection}{\numberline {18.6.1}Variable entrante et sortante}{57}
+\contentsline {subsection}{\numberline {18.6.2}Nouveau mod\IeC {\`e}le}{57}
 \contentsline {section}{\numberline {18.7}Exemple simple, derni\IeC {\`e}re it\IeC {\'e}ration}{58}
-\contentsline {part}{V\hspace {1em}Repr\IeC {\'e}sentation des connaissances et raisonnement}{59}
-\contentsline {chapter}{\numberline {19}Logique propositionnel}{60}
-\contentsline {section}{\numberline {19.1}Vocabulaire}{60}
-\contentsline {section}{\numberline {19.2}coh\IeC {\'e}rence d'un ensemble de clauses}{60}
-\contentsline {chapter}{\numberline {20}Introduction \IeC {\`a} la logique de description}{62}
-\contentsline {section}{\numberline {20.1}Attributive Language with Complement}{62}
-\contentsline {subsection}{\numberline {20.1.1}S\IeC {\'e}mantique}{62}
-\contentsline {subsection}{\numberline {20.1.2}Propri\IeC {\'e}t\IeC {\'e}s}{63}
-\contentsline {section}{\numberline {20.2}Logique de description}{63}
-\contentsline {subsection}{\numberline {20.2.1}S\IeC {\'e}mantique}{63}
-\contentsline {subsection}{\numberline {20.2.2}Assertions}{63}
-\contentsline {section}{\numberline {20.3}TBoxes et ABoxes}{64}
-\contentsline {subsection}{\numberline {20.3.1}Subsumption}{64}
-\contentsline {subsection}{\numberline {20.3.2}Classification}{64}
-\contentsline {subsection}{\numberline {20.3.3}Instance checking}{65}
-\contentsline {subsection}{\numberline {20.3.4}Retrieval}{65}
-\contentsline {subsection}{\numberline {20.3.5}Equivalance of concept}{65}
-\contentsline {subsection}{\numberline {20.3.6}Concept satisfiability}{65}
-\contentsline {subsection}{\numberline {20.3.7}ABox consistency}{66}
-\contentsline {subsection}{\numberline {20.3.8}R\IeC {\'e}duction et consistance}{66}
-\contentsline {chapter}{\numberline {21}M\IeC {\'e}thode des Tableau pour les ALC}{67}
-\contentsline {section}{\numberline {21.1}Pre processing}{67}
-\contentsline {subsection}{\numberline {21.1.1}R\IeC {\'e}\IeC {\'e}criture}{67}
-\contentsline {subsection}{\numberline {21.1.2}Vocabulaire}{68}
-\contentsline {subsection}{\numberline {21.1.3}R\IeC {\`e}gles d'expansion}{68}
-\contentsline {section}{\numberline {21.2}Exemple}{69}
-\contentsline {section}{\numberline {21.3}Exemple 2}{70}
-\contentsline {chapter}{\numberline {22}Logique presque tout}{71}
-\contentsline {section}{\numberline {22.1}Syst\IeC {\`e}me P}{72}
-\contentsline {subsection}{\numberline {22.1.1}Exemple}{73}
-\contentsline {section}{\numberline {22.2}Tol\IeC {\'e}rance du Syst\IeC {\`e}me P}{74}
-\contentsline {section}{\numberline {22.3}Stratification du syst\IeC {\`e}me P}{74}
-\contentsline {section}{\numberline {22.4}Exemple de stratification possible}{75}
-\contentsline {subsection}{\numberline {22.4.1}Initialisation}{75}
-\contentsline {subsection}{\numberline {22.4.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{75}
-\contentsline {subsection}{\numberline {22.4.3}Seconde it\IeC {\'e}ration}{76}
-\contentsline {section}{\numberline {22.5}Exemple de stratification non possible}{77}
-\contentsline {subsection}{\numberline {22.5.1}Initialisation}{77}
-\contentsline {subsection}{\numberline {22.5.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{77}
-\contentsline {subsection}{\numberline {22.5.3}Seconde it\IeC {\'e}ration}{78}
-\contentsline {part}{VI\hspace {1em}XML}{79}
-\contentsline {chapter}{\numberline {23}DTD}{80}
-\contentsline {chapter}{\numberline {24}XSD}{81}
-\contentsline {chapter}{\numberline {25}XPATH}{83}
-\contentsline {section}{\numberline {25.1}Syntaxe}{83}
-\contentsline {subsection}{\numberline {25.1.1}S\IeC {\'e}lection}{83}
-\contentsline {subsection}{\numberline {25.1.2}Pr\IeC {\'e}dicats}{83}
+\contentsline {chapter}{\numberline {19}Simplexe \IeC {\`a} deux phases}{59}
+\contentsline {section}{\numberline {19.1}Premi\IeC {\`e}re phase du simplexe \IeC {\`a} deux phases}{60}
+\contentsline {subsection}{\numberline {19.1.1}Nouveau mod\IeC {\`e}le}{60}
+\contentsline {section}{\numberline {19.2}Premier phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{61}
+\contentsline {subsection}{\numberline {19.2.1}Variable entrante et sortante}{61}
+\contentsline {subsection}{\numberline {19.2.2}pivotage}{61}
+\contentsline {subsection}{\numberline {19.2.3}Nouveau mod\IeC {\`e}le}{61}
+\contentsline {section}{\numberline {19.3}Premier phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{61}
+\contentsline {section}{\numberline {19.4}Seconde phase du simplexe \IeC {\`a} deux phases}{62}
+\contentsline {section}{\numberline {19.5}Seconde phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{63}
+\contentsline {subsection}{\numberline {19.5.1}Variable entrante et sortante}{63}
+\contentsline {subsection}{\numberline {19.5.2}pivotage}{63}
+\contentsline {subsection}{\numberline {19.5.3}Nouveau mod\IeC {\`e}le}{63}
+\contentsline {section}{\numberline {19.6}Seconde phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{63}
+\contentsline {subsection}{\numberline {19.6.1}Variable entrante et sortante}{63}
+\contentsline {subsection}{\numberline {19.6.2}pivotage}{64}
+\contentsline {subsection}{\numberline {19.6.3}Nouveau mod\IeC {\`e}le}{64}
+\contentsline {section}{\numberline {19.7}Seconde phase du simplexe \IeC {\`a} deux phases, troisi\IeC {\`e}me it\IeC {\'e}ration}{64}
+\contentsline {part}{V\hspace {1em}Repr\IeC {\'e}sentation des connaissances et raisonnement}{65}
+\contentsline {chapter}{\numberline {20}Logique propositionnel}{66}
+\contentsline {section}{\numberline {20.1}Vocabulaire}{66}
+\contentsline {section}{\numberline {20.2}coh\IeC {\'e}rence d'un ensemble de clauses}{66}
+\contentsline {chapter}{\numberline {21}Introduction \IeC {\`a} la logique de description}{68}
+\contentsline {section}{\numberline {21.1}Attributive Language with Complement}{68}
+\contentsline {subsection}{\numberline {21.1.1}S\IeC {\'e}mantique}{68}
+\contentsline {subsection}{\numberline {21.1.2}Propri\IeC {\'e}t\IeC {\'e}s}{69}
+\contentsline {section}{\numberline {21.2}Logique de description}{69}
+\contentsline {subsection}{\numberline {21.2.1}S\IeC {\'e}mantique}{69}
+\contentsline {subsection}{\numberline {21.2.2}Assertions}{69}
+\contentsline {section}{\numberline {21.3}TBoxes et ABoxes}{70}
+\contentsline {subsection}{\numberline {21.3.1}Subsumption}{70}
+\contentsline {subsection}{\numberline {21.3.2}Classification}{70}
+\contentsline {subsection}{\numberline {21.3.3}Instance checking}{71}
+\contentsline {subsection}{\numberline {21.3.4}Retrieval}{71}
+\contentsline {subsection}{\numberline {21.3.5}Equivalance of concept}{71}
+\contentsline {subsection}{\numberline {21.3.6}Concept satisfiability}{71}
+\contentsline {subsection}{\numberline {21.3.7}ABox consistency}{72}
+\contentsline {subsection}{\numberline {21.3.8}R\IeC {\'e}duction et consistance}{72}
+\contentsline {chapter}{\numberline {22}M\IeC {\'e}thode des Tableau pour les ALC}{73}
+\contentsline {section}{\numberline {22.1}Pre processing}{73}
+\contentsline {subsection}{\numberline {22.1.1}R\IeC {\'e}\IeC {\'e}criture}{73}
+\contentsline {subsection}{\numberline {22.1.2}Vocabulaire}{74}
+\contentsline {subsection}{\numberline {22.1.3}R\IeC {\`e}gles d'expansion}{74}
+\contentsline {section}{\numberline {22.2}Exemple}{75}
+\contentsline {section}{\numberline {22.3}Exemple 2}{76}
+\contentsline {chapter}{\numberline {23}Logique presque tout}{77}
+\contentsline {section}{\numberline {23.1}Syst\IeC {\`e}me P}{78}
+\contentsline {subsection}{\numberline {23.1.1}Exemple}{79}
+\contentsline {section}{\numberline {23.2}Tol\IeC {\'e}rance du Syst\IeC {\`e}me P}{80}
+\contentsline {section}{\numberline {23.3}Stratification du syst\IeC {\`e}me P}{80}
+\contentsline {section}{\numberline {23.4}Exemple de stratification possible}{81}
+\contentsline {subsection}{\numberline {23.4.1}Initialisation}{81}
+\contentsline {subsection}{\numberline {23.4.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{81}
+\contentsline {subsection}{\numberline {23.4.3}Seconde it\IeC {\'e}ration}{82}
+\contentsline {section}{\numberline {23.5}Exemple de stratification non possible}{83}
+\contentsline {subsection}{\numberline {23.5.1}Initialisation}{83}
+\contentsline {subsection}{\numberline {23.5.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{83}
+\contentsline {subsection}{\numberline {23.5.3}Seconde it\IeC {\'e}ration}{84}
+\contentsline {part}{VI\hspace {1em}XML}{85}
+\contentsline {chapter}{\numberline {24}DTD}{86}
+\contentsline {chapter}{\numberline {25}XSD}{87}
+\contentsline {chapter}{\numberline {26}XPATH}{89}
+\contentsline {section}{\numberline {26.1}Syntaxe}{89}
+\contentsline {subsection}{\numberline {26.1.1}S\IeC {\'e}lection}{89}
+\contentsline {subsection}{\numberline {26.1.2}Pr\IeC {\'e}dicats}{89}

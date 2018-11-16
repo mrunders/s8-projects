@@ -420,28 +420,8 @@ Ce modèle est canonique.
 \section{Seconde phase du simplexe à deux phases, seconde itération}
 \subsection{Variable entrante et sortante}
 \rovarinout{$e_3$}{$e_1$}
-  {$\frac{1}{\frac{1}{9}} = \crouge{9}$}
+  {$\frac{1}{\crouge{\frac{1}{9}}} = 9$}
   {$\frac{2}{\frac{1}{9}} = 18$}
   {$ \leqslant 0$}
-  
-\subsection{pivotage}
-\begin{description}
-\item[$e_3$] = $9(-e_1 + \frac{5}{9}e_2 + 1) = -9e_1 + 5e_2 + 9$
-\end{description}
 
-\subsection{Nouveau modèle}
-\romodel{$(x,y,e_1,e_2,e_3) \in \Im^5$}
-        {Maximisant}{$Z = -e_1 -e_2 + 9$}
-        {$e_2,e_1$}{$e_3,y,x$}{$(3,1,0,0,9)$}{$9$}
-        {\begin{description}
-\item[] (1) $9y + 5e_2 + e_3 = 9$
-\item[] (2) $y - e_1 + e_2 = 1$
-\item[] (3) $x + 2e_1 - e_2 = 3$
-\item[] (4-5) $x,y,e_i \geqslant 0$
-\end{description}
-}
-Ce modèle est canonique.
-
-\section{Seconde phase du simplexe à deux phases, troisième itération}
-Il n'existe pas de variable entrante car $e_1$ et $e_3 \leqslant 0$
 \pagebreak
