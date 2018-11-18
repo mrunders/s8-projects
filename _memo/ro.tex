@@ -177,12 +177,10 @@ Puis on crée les nouvelles équations via le nouveau $y$:
 \end{description}
 \end{description}
 \subsection{Nouveau modèle}
-Après cette étape nous voila avec un nouveau modèle:
-\begin{description}
-\item[Déterminer] $(x,y,e_1,e_2,e_3) \in \Im^5$
-\item[Maximisant] $Z = 10x - 7e_1 + 21$
-\item[sous les contraintes]:
-\begin{description}
+\romodel{$(x,y,e_1,e_2,e_3) \in \Im^5$}
+        {Maximisant}{$Z = 10x - 7e_1 + 21$}
+        {$x,e_1$}{$y,e_2,e_3$}{$(0,3,0,5,25)$}{$21$}
+        {\begin{description}
 \item[] (1) $-x + y + e_1 = 3$
 \item[] (2) $x - e_1 + e_2 = 5$
 \item[] (3) $3x - e_1 + e_3 = 25$
@@ -190,11 +188,7 @@ Après cette étape nous voila avec un nouveau modèle:
 \item[] (6) $ 0 \leq y$
 \item[] (7) $ e_1,e_2,e_3 \geq 0$
 \end{description}
-\item[Variable hors base] = $x,e_1$
-\item[Variable Base] = $y,e_2,e_3$
-\item[Avec comme solution admissible] $(0,3,0,5,25) Z=21$
-\end{description}
-
+}
 
 A ne pas oublier de vérifier la canonicité du modèle.\\
 

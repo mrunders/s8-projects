@@ -7,9 +7,25 @@ ELEMENT_DELIMITER = "|"
 KEY_VALUE_DELIMITER = ":"
 END_OF_LINE = "\n"
 
-class ItemSet():
+class ItemSet(object):
 
 	def __init__(self):
+		pass
+
+	def append(self, key, value, pattern, index=-1):
+		pass
+
+	def newLine(self):
+		pass
+
+	def getData(self):
+		return list()
+
+class ItemSetFirstPart(ItemSet):
+
+	def __init__(self):
+		super(ItemSetFirstPart, self).__init__()
+
 		self.__data = [""]
 		self.__pattern_in_last = False
 
@@ -19,7 +35,7 @@ class ItemSet():
 				self.__pattern_in_last = True
 				
 			self.__data[-1] += value + ELEMENT_DELIMITER
-	
+
 	def newLine(self):
 		if self.__pattern_in_last:
 			self.__data[-1] += END_OF_LINE
@@ -28,20 +44,29 @@ class ItemSet():
 			self.__data[-1] = ""
 
 		self.__pattern_in_last = False
-		
+
 	def getData(self):
 		return self.__data
-		
-	def freeData(self):
-		for i in self.__data:
-			i.close()
+
+class ItemSetSecondePart(ItemSet):
+
+	def __init__(self):
+		super(ItemSetSecondePart, self).__init__()
+
+	def append(self, key, value, pattern, index=-1):
+		if (key[0] == 'a' and key[1] == 'u'):
+			file.write(value) 
+			file.write(ELEMENT_DELIMITER)
+
+	def newLine(self):
+		file.write('\n')
 
 class TransformateurXML(xml.sax.ContentHandler):
 
 	ITEMSET_NAME = ["article","inproceedings"]
 
 	def __init__(self, pattern):
-		self.__itemSet = ItemSet()
+		self.__itemSet = ItemSetFirstPart()
 		self.__balise_name = None
 		self.__current_balise = None
 		self.__parser = xml.sax.make_parser()

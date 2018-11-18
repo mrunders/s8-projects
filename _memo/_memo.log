@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  16 NOV 2018 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  18 NOV 2018 11:57
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1087,18 +1087,18 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count175
@@ -1163,11 +1163,11 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 99.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 99.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1627,166 +1627,183 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[54] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 199--200
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
-
- []
-
-[56]
-Underfull \hbox (badness 7308) in paragraph at lines 248--248
+[54]
+Underfull \hbox (badness 7308) in paragraph at lines 191--191
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (13.06572pt too wide) in paragraph at lines 248--248
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 191--191
+[]$\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT
+1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m
+/n/12 25)$
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+[56]
+Underfull \hbox (badness 7308) in paragraph at lines 242--242
+[]$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
+cmsy/m/n/12 2
+ []
+
+
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 242--242
 []$\OT1/cmr/m/n/12 (5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 10)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
-[57]
-Underfull \hbox (badness 7308) in paragraph at lines 271--271
+
+Underfull \hbox (badness 7308) in paragraph at lines 265--265
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (13.06572pt too wide) in paragraph at lines 271--271
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 265--265
 []$\OT1/cmr/m/n/12 (10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \O
 T1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/
 m/n/12 0)$
  []
 
-[58]
+
+Overfull \vbox (4.75836pt too high) has occurred while \output is active []
+
+
+[57] [58]
 Chapter 19.
 
-Underfull \hbox (badness 10000) in paragraph at lines 289--292
+Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
 [59
 
 ]
-Overfull \hbox (15.38187pt too wide) in paragraph at lines 317--317
+Overfull \hbox (15.38187pt too wide) in paragraph at lines 311--311
 []\OT1/cmr/bx/n/17.28 Premiere phase du sim-plexe a deux phases 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 
-Overfull \hbox (18.32954pt too wide) in paragraph at lines 329--329
+Overfull \hbox (18.32954pt too wide) in paragraph at lines 323--323
 []$\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
 
-Overfull \hbox (11.91187pt too wide) in paragraph at lines 332--332
+Overfull \hbox (11.91187pt too wide) in paragraph at lines 326--326
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
 [60]
-Overfull \hbox (20.65489pt too wide) in paragraph at lines 354--354
+Overfull \hbox (20.65489pt too wide) in paragraph at lines 348--348
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)$
  []
 
 
-Overfull \hbox (11.91187pt too wide) in paragraph at lines 356--356
+Overfull \hbox (11.91187pt too wide) in paragraph at lines 350--350
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
 [61]
-Overfull \hbox (6.51181pt too wide) in paragraph at lines 368--368
+Overfull \hbox (6.51181pt too wide) in paragraph at lines 362--362
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases 
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 378--378
+Underfull \hbox (badness 7308) in paragraph at lines 372--372
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (9.51613pt too wide) in paragraph at lines 378--378
+Overfull \hbox (9.51613pt too wide) in paragraph at lines 372--372
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 378--382
+Underfull \hbox (badness 10000) in paragraph at lines 372--376
 
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 392--392
+Underfull \hbox (badness 7308) in paragraph at lines 386--386
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (9.51613pt too wide) in paragraph at lines 392--392
+Overfull \hbox (9.51613pt too wide) in paragraph at lines 386--386
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0)$
  []
 
 
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 395--395
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 389--389
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
 [62]
-Underfull \hbox (badness 7308) in paragraph at lines 417--417
+Underfull \hbox (badness 7308) in paragraph at lines 411--411
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (7.19078pt too wide) in paragraph at lines 417--417
+Overfull \hbox (7.19078pt too wide) in paragraph at lines 411--411
 []$\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 0)$
  []
 
 
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 420--420
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 414--414
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
 [63]
-Underfull \hbox (badness 7308) in paragraph at lines 442--442
+Underfull \hbox (badness 7308) in paragraph at lines 436--436
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (7.19078pt too wide) in paragraph at lines 442--442
+Overfull \hbox (7.19078pt too wide) in paragraph at lines 436--436
 []$\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 9)$
  []
 
 
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 445--445
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 439--439
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
@@ -1899,10 +1916,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
 [79]
 Missing character: There is no ] in font nullfont!
- [80] [81] [82] [83]) (xml.tex [84] [85
+ [80] [81] [82] [83] [84]
+Chapter 24.
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 609--618
+[][] $\U/msa/m/n/12 p \OMS/cmsy/m/n/12 !$
+ []
+
+) [85
+
+] (xml.tex [86
 
 ]
-Chapter 24.
+Chapter 25.
 
 Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 []$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\OT1/cmr/m/n/
@@ -1912,17 +1953,17 @@ Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[86
+[87
 
 ]
-Chapter 25.
+Chapter 26.
 
 Overfull \hbox (28.66399pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
  []
 
-[87
+[88
 
 ]
 Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
@@ -1930,9 +1971,9 @@ Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[88]
-Chapter 26.
-[89
+[89]
+Chapter 27.
+[90
 
 ]
 Overfull \hbox (6.72887pt too wide) in paragraph at lines 98--99
@@ -1961,12 +2002,12 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 105--106
  )"$ 
  []
 
-) [90] (_memo.aux) ) 
+) [91] (_memo.aux) ) 
 Here is how much of TeX's memory you used:
- 29121 strings out of 493323
- 716908 string characters out of 3139963
- 921768 words of memory out of 3000000
- 32141 multiletter control sequences out of 15000+200000
+ 29123 strings out of 493323
+ 716923 string characters out of 3139963
+ 921772 words of memory out of 3000000
+ 32143 multiletter control sequences out of 15000+200000
  14226 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3472s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1987,9 +2028,9 @@ msfonts/cm/cmtt12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm
 7.pfb>
-Output written on _memo.pdf (97 pages, 433654 bytes).
+Output written on _memo.pdf (98 pages, 434216 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
+ 396 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

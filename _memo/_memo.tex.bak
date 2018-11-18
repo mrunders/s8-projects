@@ -91,6 +91,10 @@
 \newcommand{\almost}{\mid\kern-0.40em{\backsim}\ }
 %% ------------------------ END Almost all
 
+%% ------------------------ Inverse DL lite
+\newcommand{\inverse}{\ulcorner\ }
+%% ------------------------ End Inverse DL lite
+
 \title{Memo pour l'année}
 \author{LAURENT Thomas}
 \date{Master 2 informatique 2018}
