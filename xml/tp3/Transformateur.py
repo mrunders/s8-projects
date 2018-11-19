@@ -7,6 +7,8 @@ ELEMENT_DELIMITER = "|"
 KEY_VALUE_DELIMITER = ":"
 END_OF_LINE = "\n"
 
+file = None
+
 class ItemSet(object):
 
 	def __init__(self):
@@ -29,7 +31,7 @@ class ItemSetFirstPart(ItemSet):
 		self.__data = [""]
 		self.__pattern_in_last = False
 
-	def append(self, key, value, pattern, index=-1):
+	def append(self, key, value, pattern):
 		if (key[0] == 'a' and key[1] == 'u'):
 			if value == pattern:
 				self.__pattern_in_last = True
@@ -52,21 +54,43 @@ class ItemSetSecondePart(ItemSet):
 
 	def __init__(self):
 		super(ItemSetSecondePart, self).__init__()
+		self.__previous_one_letter = False
+		self.__previous = ""
 
-	def append(self, key, value, pattern, index=-1):
+	def append(self, key, value, pattern):
 		if (key[0] == 'a' and key[1] == 'u'):
-			file.write(value) 
-			file.write(ELEMENT_DELIMITER)
+
+			if value[0].isupper() or not (value[0] < 128):
+				file.write(ELEMENT_DELIMITER)
+
+			file.write(value.encode('utf-8').strip()) 
+
+			self.__previous = value.encode('utf-8').strip()
 
 	def newLine(self):
 		file.write('\n')
+
+class ItemSetSecondePart2(ItemSet):
+
+	def __init__(self):
+		super(ItemSetSecondePart2, self).__init__()
+		self.__data = []
+		self.__pattern_in_last = False
+
+	def getResult(self, pattern):
+		for line in file:
+			if pattern in line:
+				self.__data.append(line[1:-1])
+
+	def getData(self):
+		return self.__data
 
 class TransformateurXML(xml.sax.ContentHandler):
 
 	ITEMSET_NAME = ["article","inproceedings"]
 
-	def __init__(self, pattern):
-		self.__itemSet = ItemSetFirstPart()
+	def __init__(self, itemSetClass, pattern=""):
+		self.__itemSet = itemSetClass
 		self.__balise_name = None
 		self.__current_balise = None
 		self.__parser = xml.sax.make_parser()
@@ -94,9 +118,6 @@ class TransformateurXML(xml.sax.ContentHandler):
 		self.__parser.parse(file_dir)
 		return self.__itemSet
 
-	def freeData(self):
-		self.__itemSet.freeData()
-
 	def getResult(self):
 		result = []
 		x = []
@@ -121,9 +142,36 @@ class TransformateurXML(xml.sax.ContentHandler):
 		for i in x:
 			print("-" + i)
 
+	def pullResult(self):
+		self.__itemSet.getResult(pattern=self.__pattern)
 
-t = TransformateurXML(pattern=sys.argv[1])
-t.parse(file_dir=sys.argv[2])
-t.getResult()
-## t.freeData()
+## Question 1:  ./dblp-prof-linux2 -name name dblp.xml
+## Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml
+## Question 2b: ./dblp-prof-linux2 -name name -in file.gob
+
+if len(sys.argv) == 1:
+	print("Question 1:  ./dblp-prof-linux2 -name name dblp.xml")
+	print("Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml")
+	print("Question 2b: ./dblp-prof-linux2 -name name -in file.gob")
+
+elif sys.argv[1] == '-name':
+
+	if sys.argv[3] == '-in':
+		t = TransformateurXML(pattern=sys.argv[2], itemSetClass=ItemSetSecondePart2())
+		file = open(sys.argv[4], 'r')
+		t.pullResult()
+		t.getResult()
+		file.close()
+
+	else:
+		t = TransformateurXML(pattern=sys.argv[2], itemSetClass=ItemSetFirstPart())
+		t.parse(file_dir=sys.argv[3])
+		t.getResult()
+
+else:
+
+	file = open(sys.argv[2], 'w')
+	t = TransformateurXML(itemSetClass=ItemSetSecondePart())
+	t.parse(file_dir=sys.argv[3])
+	file.close()
 
