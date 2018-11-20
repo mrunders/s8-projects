@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  18 NOV 2018 11:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 NOV 2018 14:10
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1184,12 +1184,12 @@ Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
 ] [2] [3] [4]
-Overfull \hbox (5.33537pt too wide) in paragraph at lines 129--129
+Overfull \hbox (5.33537pt too wide) in paragraph at lines 130--130
 []\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
 []  
  []
 
@@ -1564,31 +1564,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 520--522
 Overfull \vbox (52.31276pt too high) has occurred while \output is active []
 
 
-[46]) (ro.tex [47
-
-]
+[46]
 Chapter 16.
+) [47
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
-
- []
-
-[48
+] (ro.tex [48
 
 ]
 Chapter 17.
-<img/ro-pl-2var_0.png, id=197, 491.8375pt x 434.62375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+[49
+
+]
+Chapter 18.
+<img/ro-pl-2var_0.png, id=200, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [49
+ [50
 
 ]
 Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
@@ -1596,28 +1600,28 @@ Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
 eme,
  []
 
-<img/ro-pl-2var_1.png, id=201, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=204, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [50 <./img/ro-pl-2var_0.png (PNG copy)>] [51 <./img/ro-pl-2var_1.png (PNG copy
+ [51 <./img/ro-pl-2var_0.png (PNG copy)>] [52 <./img/ro-pl-2var_1.png (PNG copy
 )>]
-Chapter 18.
+Chapter 19.
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[52
+[53
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 130--136
 
  []
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
@@ -1627,7 +1631,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[54]
+[55]
 Underfull \hbox (badness 7308) in paragraph at lines 191--191
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1640,7 +1644,7 @@ Overfull \hbox (13.06572pt too wide) in paragraph at lines 191--191
 /n/12 25)$
  []
 
-[55]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -1655,7 +1659,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
-[56]
+[57]
 Underfull \hbox (badness 7308) in paragraph at lines 242--242
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1690,14 +1694,14 @@ m/n/12 0)$
 Overfull \vbox (4.75836pt too high) has occurred while \output is active []
 
 
-[57] [58]
-Chapter 19.
+[58] [59]
+Chapter 20.
 
 Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
-[59
+[60
 
 ]
 Overfull \hbox (15.38187pt too wide) in paragraph at lines 311--311
@@ -1721,7 +1725,7 @@ Overfull \hbox (11.91187pt too wide) in paragraph at lines 326--326
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
-[60]
+[61]
 Overfull \hbox (20.65489pt too wide) in paragraph at lines 348--348
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)$
@@ -1732,7 +1736,7 @@ Overfull \hbox (11.91187pt too wide) in paragraph at lines 350--350
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
-[61]
+[62]
 Overfull \hbox (6.51181pt too wide) in paragraph at lines 362--362
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases 
  []
@@ -1771,7 +1775,7 @@ Overfull \hbox (11.9118pt too wide) in paragraph at lines 389--389
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-[62]
+[63]
 Underfull \hbox (badness 7308) in paragraph at lines 411--411
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1789,7 +1793,7 @@ Overfull \hbox (11.9118pt too wide) in paragraph at lines 414--414
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-[63]
+[64]
 Underfull \hbox (badness 7308) in paragraph at lines 436--436
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1807,37 +1811,37 @@ Overfull \hbox (11.9118pt too wide) in paragraph at lines 439--439
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-) (rcr.tex [64] [65
+) (rcr.tex [65] [66
 
 ]
-Chapter 20.
+Chapter 21.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[66
+[67
 
-] [67]
-Chapter 21.
+] [68]
+Chapter 22.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[68
+[69
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[69]
+[70]
 Overfull \hbox (54.46117pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-[70]
+[71]
 Overfull \hbox (23.78946pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
@@ -1847,14 +1851,14 @@ Overfull \hbox (38.8198pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 equivalent?
  []
 
-[71]
+[72]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-[72]
-Chapter 22.
-[73
+[73]
+Chapter 23.
+[74
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 211--213
@@ -1881,20 +1885,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[74]
-Missing character: There is no ] in font nullfont!
- [75]
+[75]
 Missing character: There is no ] in font nullfont!
  [76]
-Chapter 23.
+Missing character: There is no ] in font nullfont!
+ [77]
+Chapter 24.
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[77
+[78
 
-] [78]
+] [79]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
@@ -1914,10 +1918,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-[79]
+[80]
 Missing character: There is no ] in font nullfont!
- [80] [81] [82] [83] [84]
-Chapter 24.
+ [81] [82] [83] [84] [85]
+Chapter 25.
 
 Underfull \hbox (badness 10000) in paragraph at lines 591--593
 
@@ -1938,12 +1942,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 609--618
 [][] $\U/msa/m/n/12 p \OMS/cmsy/m/n/12 !$
  []
 
-) [85
+) [86
 
-] (xml.tex [86
+] (xml.tex [87
 
 ]
-Chapter 25.
+Chapter 26.
 
 Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 []$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\OT1/cmr/m/n/
@@ -1953,17 +1957,17 @@ Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[87
+[88
 
 ]
-Chapter 26.
+Chapter 27.
 
 Overfull \hbox (28.66399pt too wide) in paragraph at lines 45--46
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
  []
 
-[88
+[89
 
 ]
 Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
@@ -1971,9 +1975,9 @@ Overfull \hbox (48.42484pt too wide) in paragraph at lines 61--62
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[89]
-Chapter 27.
-[90
+[90]
+Chapter 28.
+[91
 
 ]
 Overfull \hbox (6.72887pt too wide) in paragraph at lines 98--99
@@ -2002,35 +2006,39 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 105--106
  )"$ 
  []
 
-) [91] (_memo.aux) ) 
+) [92] (_memo.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 526 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
  29123 strings out of 493323
  716923 string characters out of 3139963
- 921772 words of memory out of 3000000
+ 927045 words of memory out of 3000000
  32143 multiletter control sequences out of 15000+200000
  14226 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,36n,127p,730b,3472s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Pr
-ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles
-/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1
-/public/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/ams
-fonts/cm/cmr17.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
-r6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/P
-rogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFile
-s/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
-1/public/amsfonts/cm/cmti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/a
-msfonts/cm/cmtt12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/sy
-mbols/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm
-7.pfb>
-Output written on _memo.pdf (98 pages, 434216 bytes).
+ 77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/
+ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Progra
+mFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles/Mik
+Tex2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/font
+s/type1/public/amsfonts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfont
+s/cm/cmr17.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.p
+fb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Progr
+amFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/Mi
+kTex2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/fon
+ts/type1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfo
+nts/cm/cmtt12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbol
+s/msam10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pf
+b>
+Output written on _memo.pdf (99 pages, 435667 bytes).
 PDF statistics:
- 396 PDF objects out of 1000 (max. 8388607)
+ 399 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

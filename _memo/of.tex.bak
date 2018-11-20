@@ -521,5 +521,22 @@ L'ensemble $SFP(\phi)$ des sous-formules premières de $\phi \in FORM_L$ est dé
 $SFP(\phi)$ = $\{$ formules de couleur $\crouge{rouge}$, formules de couleur $\corange{orange}\}\ $,\\ $\phi$ est propositionnellement équivalent à $A => (A \vee B)$ qui est propositionnellement valide donc $\phi$ est valide
 \end{multicols}
 
+\chapter{Calculabilité et Machine de Turing}
+
+Soit une machine de turing M un quadruplet M = {K,$\sum$,$\delta$,s)
+\begin{description}
+\item [K] ensemble fini d'état 
+\item [s] $\in$ K état initial
+\item [$\sum$] ensemble fini de symboles supposé disjoint de K et de deux symboles:
+\begin{description}
+\item [$\triangleright$] marque de début
+\item [$\sqcup$] séparateur ou fin de ruban
+\end{description}
+\item [$\delta$]:$(K$ x $\sum)$ x $((K\cup\{yes,no\})$ x $\sum $ x $\{\leftarrow,\rightarrow,-\})$
+\begin{description}
+\item $\{yes,no\}$ état acceptable
+\item $\{\leftarrow,\rightarrow,-\}$ mouvement de la tête de lecture
+\end{description}
+\end{description}
 
 \pagebreak
