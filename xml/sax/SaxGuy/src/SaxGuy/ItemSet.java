@@ -12,6 +12,7 @@ public class ItemSet {
 	
 	public ItemSet(String pattern) {
 		this.pattern = pattern;
+		this.data.add(new StringBuilder());
 	}
 	
 	public void append(String key, String value) {
@@ -22,7 +23,7 @@ public class ItemSet {
 		}
 	}
 	
-	public void newLine() {
+	public boolean newLine() {
 		if (this.pattern_in_last) {
 			this.data.get(this.index++).append('\n');
 			this.data.add(new StringBuilder());
@@ -31,6 +32,7 @@ public class ItemSet {
 		}
 		
 		this.pattern_in_last = false;
+		return true;
 	}
 	
 	public List<StringBuilder> getData(){

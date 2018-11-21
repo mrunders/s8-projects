@@ -9,11 +9,15 @@ import org.xml.sax.helpers.DefaultHandler;
 
 public class TransformateurHandle extends DefaultHandler {
 	
-	private static List<String> ITEMSET_NAME = new ArrayList<>();
+	public static List<String> BALISES = new ArrayList<>();
+	
+	static {
+		BALISES.add("article");
+		BALISES.add("inproceedings");
+	}
+	
 	private ItemSet itemSet;
 	private String current_balise;
-	
-	@SuppressWarnings("unused")
 	private String pattern;
 	
 	private boolean balise_name = false;
@@ -21,23 +25,16 @@ public class TransformateurHandle extends DefaultHandler {
 	public TransformateurHandle(String pattern) {
 		this.itemSet = new ItemSet(pattern);
 		this.pattern = pattern;
-		
-		ITEMSET_NAME.add("article");
-		ITEMSET_NAME.add("inproceedings");
+	
 	}
 	
 	public void startElement(String namespaceURI, String lname, String qName, Attributes attrs) throws SAXException {
-		
-		this.balise_name = ITEMSET_NAME.contains(qName);
-		if ( this.balise_name ) this.itemSet.newLine();
+		this.balise_name = BALISES.contains(qName) && this.itemSet.newLine();
 		this.current_balise = qName;
-		
 	}
 	
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		if ( ITEMSET_NAME.contains(qName) ) {
-			this.balise_name = false;
-		}
+		this.balise_name = BALISES.contains(qName);
 	}
 	
 	 public void characters(char[] data, int start, int end)  throws SAXException {
@@ -46,6 +43,9 @@ public class TransformateurHandle extends DefaultHandler {
 	 }
 	 
 	  public void endDocument() throws SAXException {
-		  this.itemSet.getData().forEach(System.out::println);
+		  System.out.println(this.pattern + " has " + this.itemSet.getData().size() + " coauthors:");
+		  for (StringBuilder s : this.itemSet.getData()) {
+			  System.out.println("- " + s);
+		  }
 	  }
 }

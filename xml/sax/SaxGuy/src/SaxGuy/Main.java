@@ -12,11 +12,11 @@ public class Main {
 
 	public static void main(String args[]) {
 		
-		System.setProperty("ExpansionLimit", "0");
 		
 		try {
 	        SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
-	        parser.parse("dblp.xml", new TransformateurHandle("Fabien Delorme")); 
+	        TransformateurHandle handler = new TransformateurHandle("Fabien Delorme");
+	        parser.parse("dblp.xml", handler); 
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
