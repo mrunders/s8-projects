@@ -189,15 +189,12 @@ class ExtracteurXML(TransformateurXML):
 	def endDocument(self):
 		file.write('</extract>')
 
-## Question 1:  ./dblp-prof-linux2 -name name dblp.xml
-## Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml
-## Question 2b: ./dblp-prof-linux2 -name name -in file.gob
-
 if len(sys.argv) == 1:
 	print("Question 1:  ./dblp-prof-linux2 -name name dblp.xml")
 	print("Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml")
 	print("Question 2b: ./dblp-prof-linux2 -name name -in file.gob")
-	print("Question 3:  ./dblp-prof-linux2 -name name dblp.xml -extract file.gob (use .gob for gitignore LUL)")
+	print("Question 3:  ./dblp-prof-linux2 -name name dblp.xml -extract file.gob")
+	print("Use *.gob or resultSet.txt as output file for gitignore")
 
 elif sys.argv[1] == '-name':
 
