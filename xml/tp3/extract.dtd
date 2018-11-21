@@ -1,0 +1,10 @@
+<!ELEMENT extract (name, coauthors, article*, inproceedings*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT coauthors (author*)>
+<!ELEMENT article (author+,title,year)*>
+<!ATTLIST article key CDATA #REQUIRED>
+<!ELEMENT inproceedings (author+,title,year)*>
+<!ATTLIST inproceedings key CDATA #REQUIRED>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>

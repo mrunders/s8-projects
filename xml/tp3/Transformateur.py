@@ -85,11 +85,31 @@ class ItemSetSecondePart2(ItemSet):
 	def getData(self):
 		return self.__data
 
-class TransformateurXML(xml.sax.ContentHandler):
+class ItemSetExtract(ItemSet):
+
+	liste = ['a','t','y']
+		
+	def __init__(self):
+		super(ItemSet, self).__init__()
+
+	def append(self, key, value, pattern):
+		if key[0] in self.liste:
+			file.write('<')
+			file.write(key)
+			file.write('>')
+			file.write(value.encode('utf-8'))
+			file.write('</')
+			file.write(key)
+			file.write('>')
+
+	def newLine(self):
+		file.write('\n')
+
+class TransformateurXML(xml.sax.ContentHandler, object):
 
 	ITEMSET_NAME = ["article","inproceedings"]
 
-	def __init__(self, itemSetClass, pattern=""):
+	def __init__(self, pattern="", itemSetClass=""):
 		self.__itemSet = itemSetClass
 		self.__balise_name = None
 		self.__current_balise = None
@@ -99,7 +119,11 @@ class TransformateurXML(xml.sax.ContentHandler):
 	def startElement(self, name, attrs):
 		try:
 			self.__balise_name = self.ITEMSET_NAME.index(name)
-			self.__itemSet.newLine()
+			file.write('<')
+			file.write(name)
+			file.write(' key="')
+			file.write(attrs['key'])
+			file.write('">')
 		except ValueError:
 			index_value = None
 
@@ -108,6 +132,9 @@ class TransformateurXML(xml.sax.ContentHandler):
 	def endElement(self, name):
 		if name in self.ITEMSET_NAME:
 			self.__balise_name = None
+			file.write('</')
+			file.write(name)
+			file.write('>\n')
 	
 	def characters(self, data):
 		if (data != END_OF_LINE) and (self.__balise_name != None):
@@ -145,6 +172,23 @@ class TransformateurXML(xml.sax.ContentHandler):
 	def pullResult(self):
 		self.__itemSet.getResult(pattern=self.__pattern)
 
+class ExtracteurXML(TransformateurXML):
+
+	def __init__(self, *args, **kwargs):
+		super(ExtracteurXML, self).__init__(*args, **kwargs)
+		self.__pattern = kwargs['pattern']
+
+	def startDocument(self):
+		file.write('<?xml version="1.0" encoding="ISO-8859-1"?>\n')
+		file.write('<!DOCTYPE dblp SYSTEM "extract.dtd">\n')
+		file.write('<extract>\n')
+		file.write('<name>')
+		file.write(self.__pattern)
+		file.write('</name>\n')
+
+	def endDocument(self):
+		file.write('</extract>')
+
 ## Question 1:  ./dblp-prof-linux2 -name name dblp.xml
 ## Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml
 ## Question 2b: ./dblp-prof-linux2 -name name -in file.gob
@@ -153,6 +197,7 @@ if len(sys.argv) == 1:
 	print("Question 1:  ./dblp-prof-linux2 -name name dblp.xml")
 	print("Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml")
 	print("Question 2b: ./dblp-prof-linux2 -name name -in file.gob")
+	print("Question 3:  ./dblp-prof-linux2 -name name dblp.xml -extract file.gob (use .gob for gitignore LUL)")
 
 elif sys.argv[1] == '-name':
 
@@ -161,6 +206,12 @@ elif sys.argv[1] == '-name':
 		file = open(sys.argv[4], 'r')
 		t.pullResult()
 		t.getResult()
+		file.close()
+	
+	elif sys.argv[4] == '-extract':
+		t = ExtracteurXML(pattern=sys.argv[2], itemSetClass=ItemSetExtract())
+		file = open(sys.argv[5], 'w')
+		t.parse(file_dir=sys.argv[3])
 		file.close()
 
 	else:
