@@ -1,7 +1,6 @@
 package SaxGuy;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class ItemSet {
@@ -22,7 +21,7 @@ public class ItemSet {
 				this.pattern_in_last = true;
 			
 			this.data.get(this.index).append(value);
-			this.data.get(this.index).append('|');
+			this.data.get(this.index).append("&&");
 		}
 	}
 	
@@ -37,17 +36,30 @@ public class ItemSet {
 		return true;
 	}
 	
-	public List<StringBuilder> getData(){
+	public List<String> getData(){
 		
-		List<String> preResultSet = new ArrayList<String>();
+		List<StringBuilder> preResultSet = new ArrayList<StringBuilder>();
 		
-		for (Iterator<StringBuilder> isb = this.data.iterator() ; isb.hasNext() ; ) {
-			StringBuilder tmp = isb.next();
-			if (!tmp.toString().contains(this.pattern)) isb.remove();
+		for (StringBuilder strb : this.data) {
+			String strs = strb.toString();
+			if (strs.contains(this.pattern)) {
+				for (String str : strs.split("&&")) {
+					if ( !str.equals(this.pattern)) {
+						if ( str.charAt(0) > 127 )
+							preResultSet.get(preResultSet.size()-1).append(str);
+						else 
+							preResultSet.add(new StringBuilder(str));
+					}
+				}
+			}
 		}
 		
-		
-		return this.data;
+		List<String> resultSet = new ArrayList<String>();
+		for (StringBuilder ss : preResultSet)
+			if (!resultSet.contains(ss.toString()))
+				resultSet.add(ss.toString());
+	
+		return resultSet;
 	}
 
 }

@@ -48,8 +48,9 @@ public class TransformateurHandle extends DefaultHandler {
 	 }
 	 
 	  public void endDocument() throws SAXException {
-		  System.out.println(this.pattern + " has " + this.itemSet.getData().size() + " coauthors:");
-		  for (StringBuilder s : this.itemSet.getData()) {
+		  List<String> l = this.itemSet.getData();
+		  System.out.println(this.pattern + " has " + l.size() + " coauthors:");
+		  for (String s :l) {
 			  System.out.println("- " + s);
 		  }
 	  }
