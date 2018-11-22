@@ -29,12 +29,17 @@ public class TransformateurHandle extends DefaultHandler {
 	}
 	
 	public void startElement(String namespaceURI, String lname, String qName, Attributes attrs) throws SAXException {
-		this.balise_name = BALISES.contains(qName) && this.itemSet.newLine();
+		if (BALISES.contains(qName)) {
+			this.balise_name = true;
+			this.itemSet.newLine();
+		}
+		
 		this.current_balise = qName;
 	}
 	
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		this.balise_name = BALISES.contains(qName);
+		if (BALISES.contains(qName)) 
+			this.balise_name = false;
 	}
 	
 	 public void characters(char[] data, int start, int end)  throws SAXException {

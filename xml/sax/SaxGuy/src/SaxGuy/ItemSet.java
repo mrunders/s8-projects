@@ -1,6 +1,7 @@
 package SaxGuy;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ItemSet {
@@ -16,26 +17,36 @@ public class ItemSet {
 	}
 	
 	public void append(String key, String value) {
-		if ( key.charAt(0) == 'a' && key.charAt(1) == 'u' ) {
-			if ( value == this.pattern ) this.pattern_in_last = true;
+		if ( key == "author" ) {
+			if ( this.pattern.equals(value) ) 
+				this.pattern_in_last = true;
+			
 			this.data.get(this.index).append(value);
 			this.data.get(this.index).append('|');
 		}
 	}
 	
 	public boolean newLine() {
-		if (this.pattern_in_last) {
-			this.data.get(this.index++).append('\n');
-			this.data.add(new StringBuilder());
-		} else {
-			this.data.get(this.index).setLength(0);
-		}
+		if (!this.pattern_in_last)
+			this.data.remove(this.index);
+		else this.index++;
 		
+		this.data.add(new StringBuilder());
 		this.pattern_in_last = false;
+		
 		return true;
 	}
 	
 	public List<StringBuilder> getData(){
+		
+		List<String> preResultSet = new ArrayList<String>();
+		
+		for (Iterator<StringBuilder> isb = this.data.iterator() ; isb.hasNext() ; ) {
+			StringBuilder tmp = isb.next();
+			if (!tmp.toString().contains(this.pattern)) isb.remove();
+		}
+		
+		
 		return this.data;
 	}
 
