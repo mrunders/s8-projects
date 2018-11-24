@@ -621,20 +621,20 @@ $(D$ & $, C)$\\
 \section{Requêtes}
 \subsection{Grounded query}
 \begin{description}
-\item[Sous la forme] $(\sqcap_{i=1}^n A_i(a)) \sqcap (\sqcap_{i=1}^m P_j(a,b))$
+\item[Sous la forme] $(\wedge_{i=1}^n A_i(a)) \wedge (\wedge_{i=1}^m P_j(a,b))$
 \item[Avec] $A_1$ des concepts et $P_i$ des rôles.
-\item[Exemple]: $\cblue{Student}(Jean) \sqcap \cblue{Teacher}(Paul) \sqcap ... \sqcap \cviolet{HasSupervisor}(Jean, Paul)$
+\item[Exemple]: $\cblue{Student}(Jean) \wedge \cblue{Teacher}(Paul) \wedge ... \wedge \cviolet{HasSupervisor}(Jean, Paul)$
 \end{description}
 \subsection{Conjonctives Query}
 \begin{description}
-\item[Sous la forme] $q = \{x | \exists y.conj1(x,y) \sqcap conj2(Bob, y) \sqcap conj3(y)\}$
+\item[Sous la forme] $q = \{x | \exists y.conj1(x,y) \wedge conj2(Bob, y) \wedge conj3(y)\}$
 \item[] Si x donne une liste non vide alors c'est une réponse de type $array$
 \item[] Sinon c'est une sortie de type $boolean$
 \end{description}
 
 \section{Fermetures négatives}
 \begin{description}
-\item[] Tout les axiomes négatifs de la $TBox$ sont dans $cln(T)$
+\item[Sur DL-Lit$e_{core}$] Tout les axiomes négatifs de la $TBox$ sont dans $cln(T)$
 \item[] si $B_1 \sqsubseteq B_2 \in T$ and $B_2 \sqsubseteq \neg B_3 \in T$ alors $B_1 \sqsubseteq \neg B_3 \in T$
 \item[] si $B_1 \sqsubseteq B_2 \in T$ and $B_3 \sqsubseteq \neg B_2 \in T$ alors $B_1 \sqsubseteq \neg B_3 \in T$
 \end{description}
@@ -660,5 +660,122 @@ $(D$ & $, C)$\\
 \end{description}
 
 \end{multicols}
+\pagebreak
+\section{Gestion des contraintes et MultiABox}
+\subsection{Expansion}
+
+\begin{multicols}{3}
+[Note $o_{cl}$, Qui va agrandir la ABox avec les axiomes de la TBox]
+\begin{description}
+\item[$TBox$] $ $
+\item[] $\exists P \sqsubseteq B$
+\item[] $A \sqsubseteq B$
+\item[] $A \sqsubseteq \neg C$
+\item[] $ $
+\item[] $ $
+\end{description}
+\begin{description}
+\item[$ABox$] $ $
+\item[] A(a)
+\item[] P(c,b)
+\item[] $\crouge{B(a)}$
+\item[] $\crouge{B(c)}$
+\item[] $ $
+\end{description}
+La MultiABox M est composé que d'une ABox.\\
+$B(a)$ est ajouté grâce au second axiome\\
+$B(c)$ est ajouté grâce au premier axiome\\\\\\
+\end{multicols}
+
+\subsection{Spliting}
+\begin{multicols}{3}
+[Note $o_{incl}$, Qui va Séparer les conflits en créant plusieurs ABox]
+\begin{description}
+\item[$TBox$] $ $
+\item[] $C \sqsubseteq \neg B$
+\item[] $ $
+\item[] $ $
+\end{description}
+\begin{description}
+\item[$MultiAboxs(\ ABox_1,$] $ $
+\item[] B(a)
+\item[] C(a)
+\item[] B(b)
+\end{description}
+\begin{description}
+\item[$ABox_2\ )$] $ $
+\item[] C(e)
+\item[] B(e)
+\item[] B(b)
+\end{description}
+\end{multicols}
+
+$o_{incl} = \{\{B(a),B(b)\},\{B(b),C(a)\},\{C(a)\},\{C(e)\},\{B(e)\}\}$\\
+
+\pagebreak
+\subsection{Selection}
+\begin{multicols}{4}
+[Note $o_{card}$, Qui crée une nouvelle ABox contenant tout les ABox ayant le plus haut cardinal]
+\begin{description}
+\item[$TBox$] $ $
+\item[] $C \sqsubseteq \neg B$
+\item[] $ $
+\end{description}
+\begin{description}
+\item[$ABox_1$] $ $
+\item[] P(c,b)
+\item[] B(a)
+\end{description}
+\begin{description}
+\item[$ABox_2$] $ $
+\item[] C(a)
+\item[] B(b)
+\end{description}
+\begin{description}
+\item[$ABox_3$] $ $
+\item[] B(c)
+\item[] $ $
+\end{description}
+\end{multicols}
+
+$o_{incl} = \{ABox_1, Abox_2\}$\\
+
+\subsection{Modifieurs}
+\begin{description}
+\item[] $o_{cl}(o_{cl}(M)) = o_{cl}(M)$
+\item[] $o_{incl}(o_{incl}(M)) = o_{incl}(M)$
+\item[] $o_{card}(o_{card}(M)) = o_{card}(M)$
+\item[] $o_{cl}(O_d(O_{cl}(M)) = o_d(o_{cl}(M))$
+\item[] $o_{incl}(O_d(O_{incl}(M)) = o_d(o_{incl}(M))$
+\item[$\ _d$] $= \{incl, card, cl\}$
+\end{description}
+
+\subsection{Complex modifieurs}
+\begin{tikzpicture}[sibling distance=7em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$ABox\ conflictuel$}
+    child { node {$Split$} 
+      child { node {$Selection$}
+        child { node {$Expansion$ }
+          child { node {$Selection$ } }
+        }
+      child { node {$Expansion$}
+        child { node {$Selection$} }
+      }
+    }
+    child { node {$Expansion$} 
+      child[missing] {node {}}
+      child { node {$Split$ }
+        child { node {$Selection$ } }
+      }
+     }
+    };
+\end{tikzpicture}\\
+
+\subsection{Décision avec plusieurs ABox}
+\begin{description}
+\item[
+\end{description}
 
 \pagebreak

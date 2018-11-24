@@ -122,8 +122,8 @@
 \contentsline {subsection}{\numberline {20.5.1}Variable entrante et sortante}{64}
 \contentsline {subsection}{\numberline {20.5.2}pivotage}{64}
 \contentsline {subsection}{\numberline {20.5.3}Nouveau mod\IeC {\`e}le}{64}
-\contentsline {section}{\numberline {20.6}Seconde phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{64}
-\contentsline {subsection}{\numberline {20.6.1}Variable entrante et sortante}{64}
+\contentsline {section}{\numberline {20.6}Seconde phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{65}
+\contentsline {subsection}{\numberline {20.6.1}Variable entrante et sortante}{65}
 \contentsline {subsection}{\numberline {20.6.2}pivotage}{65}
 \contentsline {subsection}{\numberline {20.6.3}Nouveau mod\IeC {\`e}le}{65}
 \contentsline {section}{\numberline {20.7}Seconde phase du simplexe \IeC {\`a} deux phases, troisi\IeC {\`e}me it\IeC {\'e}ration}{65}
@@ -173,10 +173,17 @@
 \contentsline {subsection}{\numberline {25.2.1}Grounded query}{86}
 \contentsline {subsection}{\numberline {25.2.2}Conjonctives Query}{87}
 \contentsline {section}{\numberline {25.3}Fermetures n\IeC {\'e}gatives}{87}
-\contentsline {part}{VI\hspace {1em}XML}{88}
-\contentsline {chapter}{\numberline {26}DTD}{89}
-\contentsline {chapter}{\numberline {27}XSD}{90}
-\contentsline {chapter}{\numberline {28}XPATH}{92}
-\contentsline {section}{\numberline {28.1}Syntaxe}{92}
-\contentsline {subsection}{\numberline {28.1.1}S\IeC {\'e}lection}{92}
-\contentsline {subsection}{\numberline {28.1.2}Pr\IeC {\'e}dicats}{92}
+\contentsline {section}{\numberline {25.4}Gestion des contraintes et MultiABox}{88}
+\contentsline {subsection}{\numberline {25.4.1}Expansion}{88}
+\contentsline {subsection}{\numberline {25.4.2}Spliting}{88}
+\contentsline {subsection}{\numberline {25.4.3}Selection}{89}
+\contentsline {subsection}{\numberline {25.4.4}Modifieurs}{89}
+\contentsline {subsection}{\numberline {25.4.5}Complex modifieurs}{90}
+\contentsline {subsection}{\numberline {25.4.6}D\IeC {\'e}cision avec plusieurs ABox}{90}
+\contentsline {part}{VI\hspace {1em}XML}{91}
+\contentsline {chapter}{\numberline {26}DTD}{92}
+\contentsline {chapter}{\numberline {27}XSD}{93}
+\contentsline {chapter}{\numberline {28}XPATH}{95}
+\contentsline {section}{\numberline {28.1}Syntaxe}{95}
+\contentsline {subsection}{\numberline {28.1.1}S\IeC {\'e}lection}{95}
+\contentsline {subsection}{\numberline {28.1.2}Pr\IeC {\'e}dicats}{95}
