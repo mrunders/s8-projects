@@ -12,10 +12,11 @@ public class Main {
 	public static void main(String args[]) {
 		
 		if (args.length == 0) {
-			System.out.println("Question 1:  ./dblp-prof-linux2 -name name dblp.xml");
-			System.out.println("Question 2a: ./dblp-prof-linux2 -out file.gob dblp.xml");
-			System.out.println("Question 2b: ./dblp-prof-linux2 -name name -in file.gob");
-			System.out.println("Question 3:  ./dblp-prof-linux2 -name name dblp.xml -extract file.gob");
+			System.out.println("If you want to run any commandes below, restart with 'java -DentityExpansionLimit=0 -jar saxGuy.jar'");
+			System.out.println("Question 1:  ./saxGuy -name name dblp.xml");
+			System.out.println("Question 2a: ./saxGuy -out file.gob dblp.xml");
+			System.out.println("Question 2b: ./saxGuy -name name -in file.gob");
+			System.out.println("Question 3:  ./saxGuy -name name dblp.xml -extract file.gob");
 			System.out.println("Use *.gob or resultSet.txt as output file for gitignore");
 		}
 		

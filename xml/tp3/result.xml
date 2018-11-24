@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE dblp SYSTEM "extract.dtd">
-<extract>
-<name>Fabien Delorme</name>
-<coauthors><author>Sylvain Lagrue</author><author>Fabien Delorme</author><author>Nicolas Delestre</author><author>Jean-Pierre Pécuchet</author><author>Stéphane Cardon</author><author>Denis Stackowiak</author><author>Nathalie Chetcuti-Sperandio</author><author>Jérôme Lehuen</author></coauthors><inproceedings key='conf/ah/DelormeDP04'><author>Fabien Delorme</author><author>Nicolas Delestre</author><author>Jean-Pierre Pécuchet</author><title>Using Concept Maps for Enhancing Adaptation Processes in Declarative Knowledge Learning.</title><year>2004</year></inproceedings>
-<inproceedings key='conf/ismis/DelormeL03'><author>Fabien Delorme</author><author>Jérôme Lehuen</author><title>Dialog Planning and Domain Knowledge Modeled in Terms of Tasks and Methods: A Flexible Framework for Dialog Managing.</title><year>2003</year></inproceedings>
-<inproceedings key='conf/cig/Chetcuti-SperandioDLS08'><author>Nathalie Chetcuti-Sperandio</author><author>Fabien Delorme</author><author>Sylvain Lagrue</author><author>Denis Stackowiak</author><title>Determination and evaluation of efficient strategies for a stop or roll dice game: Heckmeck am Bratwurmeck (Pickomino).</title><year>2008</year></inproceedings>
-<inproceedings key='conf/cg/CardonCDL10'><author>Stéphane Cardon</author><author>Nathalie Chetcuti-Sperandio</author><author>Fabien Delorme</author><author>Sylvain Lagrue</author><title>A Markovian Process Modeling for Pickomino.</title><year>2010</year></inproceedings>
-</extract>

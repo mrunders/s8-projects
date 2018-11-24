@@ -617,4 +617,48 @@ $(D$ & $, C)$\\
 \end{tabular}
 \end{multicols}
 \end{description}
+
+\section{Requêtes}
+\subsection{Grounded query}
+\begin{description}
+\item[Sous la forme] $(\wedge_{i=1}^n A_i(a)) \wedge (\wedge_{i=1}^m P_j(a,b))$
+\item[Avec] $A_1$ des concepts et $P_i$ des rôles.
+\item[Exemple]: $\cblue{Student}(Jean) \wedge \cblue{Teacher}(Paul) \wedge ... \wedge \cviolet{HasSupervisor}(Jean, Paul)$
+\end{description}
+\subsection{Conjonctives Query}
+\begin{description}
+\item[Sous la forme] $q = \{x | \exists y.conj1(x,y) \wedge conj2(Bob, y) \wedge conj3(y)\}$
+\item[] Si x donne une liste non vide alors c'est une réponse de type $array$
+\item[] Sinon c'est une sortie de type $boolean$
+\end{description}
+
+\section{Fermetures négatives}
+\begin{description}
+\item[Sur DL-Lit$e_{core}$] Tout les axiomes négatifs de la $TBox$ sont dans $cln(T)$
+\item[] si $B_1 \sqsubseteq B_2 \in T$ and $B_2 \sqsubseteq \neg B_3 \in T$ alors $B_1 \sqsubseteq \neg B_3 \in T$
+\item[] si $B_1 \sqsubseteq B_2 \in T$ and $B_3 \sqsubseteq \neg B_2 \in T$ alors $B_1 \sqsubseteq \neg B_3 \in T$
+\end{description}
+\ \\
+\begin{multicols}{2}
+[Avec les règles ce dessus dérivons les $negated\ closure$:]
+\begin{description}
+\item[DL-Lit$e_{core}$ TBox] $ $
+\item[] $\cblue{Teacher} \sqsubseteq \cblue{\neg Student}$
+\item[] $\cblue{Teacher} \sqsubseteq \exists \cviolet{TeachesTo}$
+\item[] $\exists \cviolet{TeachesTo \inverse } \sqsubseteq \cblue{Student}$
+\item[] $\cblue{Student} \sqsubseteq \exists \cviolet{HasSupervisor}$
+\item[] $\exists \cviolet{HasSupervisor \inverse} \sqsubseteq \cblue{Teacher}$
+\end{description}
+
+\begin{description}
+\item[$cln(T)$] $ $
+\item[] $\cblue{Teacher} \sqsubseteq \exists \cviolet{HasSupervisor}$
+\item[] $\exists \cviolet{HasSupervisor \inverse} \sqsubseteq \cblue{\neg Student}$
+\item[] $\exists \cviolet{TeachesTo \inverse } \sqsubseteq \cblue{\neg Teacher}$
+\item[] $ $
+\item[] $ $
+\end{description}
+
+\end{multicols}
+
 \pagebreak

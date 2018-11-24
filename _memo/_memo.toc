@@ -169,10 +169,14 @@
 \contentsline {subsection}{\numberline {24.5.3}Seconde it\IeC {\'e}ration}{85}
 \contentsline {chapter}{\numberline {25}Logique de description DL Lite}{86}
 \contentsline {section}{\numberline {25.1}Op\IeC {\'e}rateurs}{86}
-\contentsline {part}{VI\hspace {1em}XML}{87}
-\contentsline {chapter}{\numberline {26}DTD}{88}
-\contentsline {chapter}{\numberline {27}XSD}{89}
-\contentsline {chapter}{\numberline {28}XPATH}{91}
-\contentsline {section}{\numberline {28.1}Syntaxe}{91}
-\contentsline {subsection}{\numberline {28.1.1}S\IeC {\'e}lection}{91}
-\contentsline {subsection}{\numberline {28.1.2}Pr\IeC {\'e}dicats}{91}
+\contentsline {section}{\numberline {25.2}Requ\IeC {\^e}tes}{86}
+\contentsline {subsection}{\numberline {25.2.1}Grounded query}{86}
+\contentsline {subsection}{\numberline {25.2.2}Conjonctives Query}{87}
+\contentsline {section}{\numberline {25.3}Fermetures n\IeC {\'e}gatives}{87}
+\contentsline {part}{VI\hspace {1em}XML}{88}
+\contentsline {chapter}{\numberline {26}DTD}{89}
+\contentsline {chapter}{\numberline {27}XSD}{90}
+\contentsline {chapter}{\numberline {28}XPATH}{92}
+\contentsline {section}{\numberline {28.1}Syntaxe}{92}
+\contentsline {subsection}{\numberline {28.1.1}S\IeC {\'e}lection}{92}
+\contentsline {subsection}{\numberline {28.1.2}Pr\IeC {\'e}dicats}{92}
