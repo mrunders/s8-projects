@@ -1,5 +1,6 @@
 package SaxGuy;
 
+import java.io.FileReader;
 import java.io.FileWriter;
 
 import javax.xml.parsers.SAXParser;
@@ -24,7 +25,10 @@ public class Main {
 				
 				try {
 			        SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
-			        parser.parse(args[2], new TransformateurHandle(args[1])); 
+			        TransformateurHandle t = new TransformateurHandle(args[1]);
+			        parser.parse(args[2], t); 
+			        t.printResult();
+			        
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -32,11 +36,33 @@ public class Main {
 			} else if ( "-out".equals(args[0]) ){
 				
 				try {
+					FileWriter f = new FileWriter(args[1]);
 			        SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
-			        parser.parse(args[2], new TransformateurHandle(new FileWriter(args[1]))); 
+			        parser.parse(args[2], new TransformateurHandle(f)); 
+			        f.close();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+			}
+		} else if (args.length == 4 && "-in".equals(args[2])) {
+			
+			try {
+				FileReader f = new FileReader(args[3]);
+		        new TransformateurHandle(f, args[1]).printResult();
+		        f.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		} else if (args.length == 5 && "-extract".equals(args[3])) {
+			
+			try {
+				FileWriter f = new FileWriter(args[4]);
+		        SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
+		        parser.parse(args[2], new TransformateurHandlerExtracteur(f, args[1])); 
+		        f.close();
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	

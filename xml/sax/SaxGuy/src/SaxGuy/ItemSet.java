@@ -5,9 +5,9 @@ import java.util.List;
 
 public class ItemSet implements IItemSet {
 	
-	private String pattern;
-	private int index = 0;
-	private List<StringBuilder> data = new ArrayList<StringBuilder>();
+	protected String pattern;
+	protected int index = 0;
+	protected List<StringBuilder> data = new ArrayList<StringBuilder>();
 	
 	public ItemSet(String pattern) {
 		this.pattern = pattern;

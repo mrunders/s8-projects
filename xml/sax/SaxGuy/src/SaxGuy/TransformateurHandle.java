@@ -1,5 +1,6 @@
 package SaxGuy;
 
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,11 +18,11 @@ public class TransformateurHandle extends DefaultHandler {
 		BALISES.add("inproceedings");
 	}
 	
-	private IItemSet itemSet;
-	private String current_balise;
-	private String pattern = null;
+	protected IItemSet itemSet;
+	protected String current_balise;
+	protected String pattern = null;
 	
-	private boolean balise_name = false;
+	protected boolean balise_name = false;
 
 	public TransformateurHandle(String pattern) {
 		this.itemSet = new ItemSet(pattern);
@@ -33,6 +34,11 @@ public class TransformateurHandle extends DefaultHandler {
 		this.itemSet = new ItemSetOutputFile(output);
 	}
 	
+	public TransformateurHandle(FileReader inputFile, String pattern) {
+		this.itemSet = new ItemSetInputFile(inputFile, pattern);
+		this.pattern = pattern;
+	}
+
 	public void startElement(String namespaceURI, String lname, String qName, Attributes attrs) throws SAXException {
 		if (BALISES.contains(qName)) {
 			this.balise_name = true;
@@ -52,7 +58,7 @@ public class TransformateurHandle extends DefaultHandler {
 			 this.itemSet.append(this.current_balise, new String(data, start, end));
 	 }
 	 
-	  public void endDocument() throws SAXException {
+	  public void printResult() {
 		  List<String> l = this.itemSet.getData();
 		  if ( l != null ) {
 			  System.out.println(this.pattern + " has " + l.size() + " coauthors:");

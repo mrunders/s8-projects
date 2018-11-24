@@ -6,9 +6,9 @@ import java.util.List;
 
 public class ItemSetOutputFile implements IItemSet {
 	
-	private int index = 0;
-	private FileWriter output;
-	private StringBuilder data = new StringBuilder();
+	protected int index = 0;
+	protected FileWriter output;
+	protected StringBuilder data = new StringBuilder();
 
 	public ItemSetOutputFile(FileWriter output) {
 		this.output = output;
