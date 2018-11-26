@@ -17,7 +17,7 @@ public class ItemSetOutputFile implements IItemSet {
 	@Override
 	public void append(String key, String value) {
 		if ( key == "author" ) {
-			if (value.charAt(0) > 127 && this.data.length() > 0) {
+			if (value.charAt(0) > 127 && this.data.length() > 0 && value.charAt(0) != 201) {
 				this.data.deleteCharAt(this.data.length()-1);
 				this.data.deleteCharAt(this.data.length()-1);
 			}

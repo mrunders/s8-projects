@@ -49,7 +49,8 @@ public class Main {
 			
 			try {
 				FileReader f = new FileReader(args[3]);
-		        new TransformateurHandle(f, args[1]).printResult();
+		        TransformateurHandle t = new TransformateurHandle(f, args[1]);
+		        t.printResult();
 		        f.close();
 			} catch (Exception e) {
 				e.printStackTrace();

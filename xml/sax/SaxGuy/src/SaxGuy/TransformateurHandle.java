@@ -61,7 +61,7 @@ public class TransformateurHandle extends DefaultHandler {
 	  public void printResult() {
 		  List<String> l = this.itemSet.getData();
 		  if ( l != null ) {
-			  System.out.println(this.pattern + " has " + l.size() + " coauthors:");
+			  System.out.println( "\"" + this.pattern + "\" has " + l.size() + " coauthors:");
 			  for (String s :l) {
 				  System.out.println("- " + s);
 			  }

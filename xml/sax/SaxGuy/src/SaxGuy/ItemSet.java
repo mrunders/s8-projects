@@ -16,7 +16,7 @@ public class ItemSet implements IItemSet {
 	
 	public void append(String key, String value) {
 		if ( key == "author" ) {
-			if (value.charAt(0) > 127 && this.data.get(this.index).length() > 0) {
+			if (value.charAt(0) > 127 && this.data.get(this.index).length() > 0 && value.charAt(0) != 201 ) {
 				this.data.get(this.index).deleteCharAt(this.data.get(this.index).length()-1);
 				this.data.get(this.index).deleteCharAt(this.data.get(this.index).length()-1);
 			}
@@ -55,7 +55,7 @@ public class ItemSet implements IItemSet {
 		for (StringBuilder ss : preResultSet)
 			if (!resultSet.contains(ss.toString()))
 				resultSet.add(ss.toString());
-	
+
 		return resultSet;
 	}
 

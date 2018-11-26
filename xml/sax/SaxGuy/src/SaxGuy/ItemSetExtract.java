@@ -24,7 +24,7 @@ public class ItemSetExtract extends ItemSetOutputFile {
 	@Override
 	public void append(String key, String value) {
 		if ( key == "author" ) {
-			if (value.charAt(0) > 127 && this.data.length() > 0) {
+			if (127 < value.charAt(0) && this.data.length() > 0 && value.charAt(0) != 201) {
 				this.data.deleteCharAt(this.data.length()-1);
 				this.data.deleteCharAt(this.data.length()-1);
 			}
@@ -91,13 +91,17 @@ public class ItemSetExtract extends ItemSetOutputFile {
 	public List<String> getData() {
 		
 		try {
-			append("<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<!DOCTYPE dblp SYSTEM \"extract.dtd\">\n<extract>\n");
+			append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+				 + "<!DOCTYPE dblp SYSTEM \"extract.dtd\">\n"
+				 + "<?xml-stylesheet type=\"text/xsl\" href=\"xsltextract.xsl\" ?>"
+				 + "\n<extract>\n");
+			
 			this.output.write("<name>"); this.output.write(this.pattern); this.output.write("</name>\n");
 			this.output.write("<coauthors>");
 			for (String s : this.authorsList) {
 				this.output.write("<author>"); this.output.write(s); this.output.write("</author>");
 			}
-			this.output.write("</coauthors>");
+			this.output.write("</coauthors>\n");
 			this.output.write(this.fileout.toString());
 			append("</extract>");
 		} catch (IOException e) {
