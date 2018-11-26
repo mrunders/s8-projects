@@ -1,0 +1,47 @@
+TRAINING
+kiev ukraine
+amman jordan
+london england
+vienna austria
+beijing china
+moscow russia
+islamabad pakistan
+canberra australia
+tokyo japan
+athens greece
+cairo egypt
+tripoli libya
+kabul afghanistan
+nassau bahamas
+helsinki finland
+berlin germany
+kampala uganda
+tehran iran
+dublin ireland
+paris france
+baghdad iraq
+brussels belgium
+abuja nigeria
+doha qatar
+warsaw poland
+dhaka bangladesh
+lisbon portugal
+ottawa canada
+kathmandu nepal
+madrid spain
+manila philippines
+rome italy
+TUNING
+accra ghana
+nairobi kenya
+jakarta indonesia
+havana cuba
+TEST
+copenhagen denmark
+ankara turkey
+bangkok thailand
+beirut lebanon
+stockholm sweden
+lima peru
+muscat oman
+kingston jamaica

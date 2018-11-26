@@ -1,0 +1,24 @@
+TRAINING
+pool swimming
+bedroom sleeping
+farm growing
+stadium sports
+office working
+bar drinking
+courthouse judging
+church praying
+library reading
+cafeteria eating
+church prayer
+laboratory experimenting
+mall shopping
+library studying
+kitchen cooking
+house living
+store shopping
+TUNING
+church worship
+restaurant eating
+TEST
+park playing
+sidewalk strolling

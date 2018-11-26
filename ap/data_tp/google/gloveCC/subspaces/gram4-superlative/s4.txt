@@ -1,0 +1,37 @@
+TRAINING
+wide widest
+simple simplest
+easy easiest
+warm warmest
+dark darkest
+large largest
+great greatest
+long longest
+short shortest
+cold coldest
+sharp sharpest
+hot hottest
+quick quickest
+high highest
+strange strangest
+weak weakest
+cool coolest
+weird weirdest
+slow slowest
+young youngest
+bright brightest
+bad worst
+low lowest
+sweet sweetest
+big biggest
+fast fastest
+old oldest
+lucky luckiest
+TUNING
+good best
+strong strongest
+tall tallest
+TEST
+tasty tastiest
+smart smartest
+small smallest

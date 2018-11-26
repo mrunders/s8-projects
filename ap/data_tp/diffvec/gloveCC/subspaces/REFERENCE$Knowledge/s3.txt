@@ -1,0 +1,30 @@
+TRAINING
+zoology animals
+dance movements
+geology rocks
+chemistry elements
+pharmacology drugs
+economics markets
+geology earth
+biology organisms
+anthropology humans
+criminology crimes
+history past
+meteorology weather
+biology life
+geography maps
+anatomy bodies
+mathematics numbers
+architecture buildings
+medicine bodies
+linguistics languages
+dermatology skin
+anthropology people
+genealogy family
+TUNING
+oceanography oceans
+philosophy ideas
+meteorology atmosphere
+TEST
+anatomy body
+topography maps

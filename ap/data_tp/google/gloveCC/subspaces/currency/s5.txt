@@ -1,0 +1,33 @@
+TRAINING
+cambodia riel
+thailand baht
+canada dollar
+russia ruble
+brazil real
+india rupee
+nigeria naira
+usa dollar
+europe euro
+japan yen
+denmark krone
+vietnam dong
+korea won
+algeria dinar
+angola kwanza
+hungary forint
+bulgaria lev
+macedonia denar
+argentina peso
+iran rial
+romania leu
+sweden krona
+poland zloty
+armenia dram
+TUNING
+lithuania litas
+malaysia ringgit
+ukraine hryvnia
+TEST
+latvia lats
+mexico peso
+croatia kuna

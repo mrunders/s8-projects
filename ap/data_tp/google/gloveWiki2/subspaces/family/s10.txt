@@ -1,0 +1,26 @@
+TRAINING
+boy girl
+stepfather stepmother
+brother sister
+grandfather grandmother
+sons daughters
+stepbrother stepsister
+policeman policewoman
+brothers sisters
+nephew niece
+his her
+prince princess
+stepson stepdaughter
+king queen
+husband wife
+grandpa grandma
+father mother
+TUNING
+son daughter
+dad mom
+TEST
+groom bride
+uncle aunt
+man woman
+grandson granddaughter
+he she

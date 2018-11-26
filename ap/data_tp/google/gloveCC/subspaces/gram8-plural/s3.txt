@@ -1,0 +1,40 @@
+TRAINING
+pig pigs
+onion onions
+snake snakes
+monkey monkeys
+hand hands
+bird birds
+elephant elephants
+dollar dollars
+child children
+cat cats
+mango mangoes
+car cars
+dog dogs
+dream dreams
+donkey donkeys
+building buildings
+computer computers
+pineapple pineapples
+mouse mice
+road roads
+cloud clouds
+horse horses
+pear pears
+rat rats
+machine machines
+man men
+cow cows
+banana bananas
+goat goats
+woman women
+color colors
+TUNING
+eye eyes
+finger fingers
+melon melons
+TEST
+lion lions
+bottle bottles
+eagle eagles

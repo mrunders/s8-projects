@@ -1,0 +1,34 @@
+TRAINING
+snarl anger
+growl danger
+frown anger
+handshake cordiality
+nod agreement
+sigh exhaustion
+punch hatred
+groan pain
+kiss love
+crying sadness
+tears sorrow
+scream terror
+lie dishonesty
+wink friendliness
+laugh amusement
+grimace disgust
+cough illness
+yell anger
+frown distaste
+tears sadness
+kiss passion
+discourse relationship
+slap anger
+laughter amusement
+TUNING
+yawn boredom
+wave acknowledgment
+frown sadness
+TEST
+frown discontent
+glare anger
+tear sadness
+laugh happiness

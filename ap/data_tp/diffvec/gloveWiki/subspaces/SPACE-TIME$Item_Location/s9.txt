@@ -1,0 +1,30 @@
+TRAINING
+closet clothes
+prison criminals
+refrigerator food
+cupboard dishes
+supermarket groceries
+garden flower
+bathroom toilet
+carton milk
+closet clothing
+classroom students
+kitchen pots
+fireplace fire
+farm tractor
+aquarium fish
+garage mechanic
+school children
+forest trees
+hangar airplane
+abbey nun
+bakery cake
+store products
+bus passengers
+TUNING
+space planets
+zoo animals
+store shopper
+TEST
+kitchen food
+garage cars

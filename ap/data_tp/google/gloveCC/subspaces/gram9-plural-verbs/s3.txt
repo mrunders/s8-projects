@@ -1,0 +1,33 @@
+TRAINING
+provide provides
+search searches
+say says
+walk walks
+find finds
+decrease decreases
+generate generates
+eat eats
+sing sings
+work works
+go goes
+increase increases
+speak speaks
+estimate estimates
+slow slows
+shuffle shuffles
+enhance enhances
+vanish vanishes
+write writes
+describe describes
+predict predicts
+scream screams
+listen listens
+talk talks
+TUNING
+sit sits
+see sees
+play plays
+TEST
+swim swims
+implement implements
+think thinks

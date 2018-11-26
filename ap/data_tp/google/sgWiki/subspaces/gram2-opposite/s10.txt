@@ -1,0 +1,32 @@
+TRAINING
+informative uninformative
+ethical unethical
+aware unaware
+known unknown
+clear unclear
+convincing unconvincing
+honest dishonest
+acceptable unacceptable
+likely unlikely
+tasteful distasteful
+impressive unimpressive
+competitive uncompetitive
+logical illogical
+certain uncertain
+productive unproductive
+possible impossible
+TUNING
+comfortable uncomfortable
+sure unsure
+TEST
+convenient inconvenient
+possibly impossibly
+decided undecided
+efficient inefficient
+responsible irresponsible
+consistent inconsistent
+informed uninformed
+rational irrational
+reasonable unreasonable
+fortunate unfortunate
+pleasant unpleasant

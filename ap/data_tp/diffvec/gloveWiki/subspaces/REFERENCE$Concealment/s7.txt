@@ -1,0 +1,34 @@
+TRAINING
+boy gender
+glove hand
+curtain window
+makeup blemish
+safe valuables
+basement victim
+frosting cake
+hood head
+curtains room
+clothes body
+costume gender
+sunglasses eyes
+flower plants
+encryption data
+mask face
+lie whereabouts
+clothes fabric
+makeup face
+password access
+hose legs
+makeup wrinkles
+decoy motives
+veil face
+hat hair
+pepper ingredients
+TUNING
+clothing figure
+desk button
+bushes trap
+TEST
+code message
+smile unhappiness
+makeup blemishes

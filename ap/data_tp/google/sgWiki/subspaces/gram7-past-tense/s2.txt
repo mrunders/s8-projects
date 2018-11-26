@@ -1,0 +1,43 @@
+TRAINING
+hiding hid
+going went
+reading read
+shrinking shrank
+paying paid
+taking took
+jumping jumped
+sleeping slept
+saying said
+dancing danced
+knowing knew
+implementing implemented
+slowing slowed
+spending spent
+running ran
+thinking thought
+singing sang
+screaming screamed
+writing wrote
+feeding fed
+swimming swam
+striking struck
+predicting predicted
+falling fell
+selling sold
+decreasing decreased
+flying flew
+vanishing vanished
+describing described
+seeing saw
+listening listened
+increasing increased
+TUNING
+hitting hit
+generating generated
+moving moved
+walking walked
+TEST
+looking looked
+playing played
+sitting sat
+enhancing enhanced

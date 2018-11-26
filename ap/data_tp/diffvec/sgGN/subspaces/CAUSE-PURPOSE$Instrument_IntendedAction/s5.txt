@@ -1,0 +1,23 @@
+TRAINING
+airplane fly
+phone call
+calculator add
+hammer pound
+handle turn
+blender puree
+pen write
+pencil write
+fork eat
+cigarette smoke
+camera photograph
+telephone call
+needle sew
+bed sleep
+knife cut
+car drive
+TUNING
+stove cook
+broom sweep
+TEST
+dollar purchase
+oven cook

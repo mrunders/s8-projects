@@ -1,0 +1,26 @@
+TRAINING
+baghdad iraq
+bern switzerland
+havana cuba
+tehran iran
+madrid spain
+cairo egypt
+bangkok thailand
+oslo norway
+ottawa canada
+athens greece
+islamabad pakistan
+stockholm sweden
+kabul afghanistan
+rome italy
+moscow russia
+beijing china
+canberra australia
+london england
+tokyo japan
+TUNING
+hanoi vietnam
+paris france
+TEST
+helsinki finland
+berlin germany

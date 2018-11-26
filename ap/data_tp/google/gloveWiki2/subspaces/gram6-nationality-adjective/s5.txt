@@ -1,0 +1,44 @@
+TRAINING
+israel israeli
+norway norwegian
+spain spanish
+india indian
+mexico mexican
+bulgaria bulgarian
+argentina argentinean
+ukraine ukrainian
+moldova moldovan
+macedonia macedonian
+malta maltese
+denmark danish
+netherlands dutch
+korea korean
+portugal portuguese
+england english
+albania albanian
+poland polish
+belarus belorussian
+russia russian
+thailand thai
+china chinese
+switzerland swiss
+france french
+iceland icelandic
+ireland irish
+australia australian
+sweden swedish
+italy italian
+slovakia slovakian
+chile chilean
+germany german
+egypt egyptian
+TUNING
+cambodia cambodian
+peru peruvian
+japan japanese
+austria austrian
+TEST
+croatia croatian
+colombia colombian
+greece greek
+brazil brazilian

@@ -1,0 +1,36 @@
+TRAINING
+dance dancing
+walk walking
+swim swimming
+see seeing
+generate generating
+slow slowing
+shuffle shuffling
+run running
+sing singing
+discover discovering
+debug debugging
+implement implementing
+play playing
+decrease decreasing
+look looking
+go going
+enhance enhancing
+think thinking
+describe describing
+invent inventing
+jump jumping
+vanish vanishing
+increase increasing
+sit sitting
+write writing
+code coding
+predict predicting
+TUNING
+move moving
+read reading
+scream screaming
+TEST
+listen listening
+say saying
+fly flying
