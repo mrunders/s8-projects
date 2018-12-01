@@ -45,21 +45,21 @@
 \contentsline {chapter}{\numberline {10}Model Selection}{23}
 \contentsline {section}{\numberline {10.1}Train Test Split}{24}
 \contentsline {section}{\numberline {10.2}Cross validation}{25}
-\contentsline {chapter}{\numberline {11}Linear Algorithms}{26}
-\contentsline {section}{\numberline {11.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{26}
-\contentsline {section}{\numberline {11.2}Least squares linear regression}{28}
-\contentsline {section}{\numberline {11.3}Gradient Descent}{29}
-\contentsline {section}{\numberline {11.4}Logistic Regression}{30}
-\contentsline {subsection}{\numberline {11.4.1}Logistic function}{30}
-\contentsline {section}{\numberline {11.5}Linear Discriminant Analysis}{31}
-\contentsline {subsection}{\numberline {11.5.1}bay\IeC {\'e}sien rules}{31}
-\contentsline {chapter}{\numberline {12}Non linear algorithm}{32}
-\contentsline {section}{\numberline {12.1}Classification and r\IeC {\'e}gression tree}{32}
-\contentsline {section}{\numberline {12.2}K moyen}{35}
-\contentsline {section}{\numberline {12.3}Support vector machines}{36}
-\contentsline {subsection}{\numberline {12.3.1}Margin classifier}{36}
-\contentsline {subsection}{\numberline {12.3.2}Soft margin classifier}{36}
-\contentsline {section}{\numberline {12.4}Matrice de confusion, Pr\IeC {\'e}cision, Pecall, F1}{38}
+\contentsline {section}{\numberline {10.3}Matrice de confusion, Pr\IeC {\'e}cision, Pecall, F1}{26}
+\contentsline {chapter}{\numberline {11}Linear Algorithms}{28}
+\contentsline {section}{\numberline {11.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{28}
+\contentsline {section}{\numberline {11.2}Least squares linear regression}{30}
+\contentsline {section}{\numberline {11.3}Gradient Descent}{31}
+\contentsline {section}{\numberline {11.4}Logistic Regression}{32}
+\contentsline {subsection}{\numberline {11.4.1}Logistic function}{32}
+\contentsline {section}{\numberline {11.5}Linear Discriminant Analysis}{33}
+\contentsline {subsection}{\numberline {11.5.1}bay\IeC {\'e}sien rules}{33}
+\contentsline {chapter}{\numberline {12}Non linear algorithm}{34}
+\contentsline {section}{\numberline {12.1}Classification and r\IeC {\'e}gression tree}{34}
+\contentsline {section}{\numberline {12.2}K moyen}{37}
+\contentsline {section}{\numberline {12.3}Support vector machines}{38}
+\contentsline {subsection}{\numberline {12.3.1}Margin classifier}{38}
+\contentsline {subsection}{\numberline {12.3.2}Soft margin classifier}{38}
 \contentsline {part}{III\hspace {1em}Outils formel}{40}
 \contentsline {chapter}{\numberline {13}Logique classique des propositions}{41}
 \contentsline {section}{\numberline {13.1}Vocabulaire}{41}
