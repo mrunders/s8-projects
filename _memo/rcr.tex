@@ -777,9 +777,141 @@ $o_{incl} = \{ABox_1, Abox_2\}$\\
 \begin{description}
 \item[Universal Inférence]: Si toutes les ABox répondent la réponse R, alors R sera retourné
 \item[Existencial Inférence]: Si au moins une ABox retourne T, alors R sera retourné
-\item[Safe inférence]: La Abox retourné sera l'intersection de touts les R
+\item[Safe inférence]: Faire l'intersection de toutes les ABox puis calculer le résultat
 \item[Mogority inférence]: Si plus de la moiter des ABox répondent avec le résultat R, alors R sera prise
 \item[Base inférence]: Si plus de $\alpha$ ABox répondent avec le résultat R, alors R sera prise
 \end{description}
+
+\pagebreak
+\ \\La différence entre la Safe inférence et l'Universal inférence:\\
+\begin{multicols}{2}
+[Soit $TBox$ = $\{ A \sqsubseteq \neg B, A \sqsubseteq E, B \sqsubseteq E \}$, $ABox$ = $\{A(a), B(a) \}$\\ 
+Via la résolution des contraintes on obtient:\\ $A_1 = \{A(a) \}, A_2 = \{ B(a) \}$\\ avec comme $x = E(a)$\\]
+\begin{description}
+\item[Pour la stratégie $\forall$] $ $
+\item[] $(T,A_1) \models E(a) \rightarrow OUI$
+\item[] $(T,A_2) \models E(a) \rightarrow OUI$
+\item[] Conclusion OUI
+\end{description}
+\begin{description}
+\item[Pour la stratégie $Safe$] $ $
+\item[] $(T,(A_1 \cap A_2)) \models E(a) $
+\item[] $\varnothing  \models E(a) \rightarrow NON$
+\item[] Conclusion NON
+\end{description}
+\end{multicols}
+
+\chapter{Complexité}
+\section{Analyse de complexité pour D(M1,Safe)}
+
+Une approche naïf non satisfiable serait de:
+\begin{description}
+\item[(1)] Calculer les $R_1 ... R_n$ après avoir appliqué le $modifier splitting$
+\item[(2)] Calculer l'intersection des $R_i$
+\end{description}
+
+Un cas extrême pour résoudre le problème
+\begin{description}
+\item[$T$] = $\{ A \sqsubseteq \neg B \}$
+\item[$A$] = $\{ A(a_1), B(a_1), ... A(a_n), B(a_n) \}$
+\end{description}
+
+\begin{tikzpicture}[sibling distance=15em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$T = \{ A \sqsubseteq \neg B \}$}
+    child { node {$\{ A(a_1) \}$} 
+      child { node {$\{ A(a_1), A(a_2) \}$}
+        child { node {$\{ A(a_1), A(a_2), A(a_3) \}$} 
+          child { node {$...$} }
+        }
+        child { node {$\{ A(a_1), A(a_2), B(a_3) \}$} 
+          child { node {$...$} }
+        }
+      }
+      child { node {$\{ A(a_1), B(a_2) \}$}
+        child { node {$...$} }
+      }
+    }
+    child { node {$\{ B(a_1) \}$} 
+      child { node {$...$ }
+      }
+    };
+\end{tikzpicture}
+Complexité $O(2^n)$
+
+\section{Analyse de la complexité pour D(M2,Forall)}
+
+\begin{multicols}{2}
+\begin{tikzpicture}[sibling distance=2em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$K = <T,A>$}
+    child { node {$R_1$} }
+    child { node {$R_2$} }
+    child { node {$R_3$} 
+      child { node {$R'_1, ... R'_2$ } }
+    }
+    child { node {$...$} }
+    child { node {$R_n$} }
+   ;
+\end{tikzpicture}
+\ \\Splitting et Selection selon le cardinal le plus haut:\\
+$R'_1, ... R'_r$
+\end{multicols}
+
+\begin{multicols}{2}
+[Soit la transformation de ce problème vers un problème dont la complexité est connue,
+Prenons K-MIS qui est similaire à ce problème de Splitting et Selection:]
+\begin{description}
+\item[$K = <T,A>$] $ $
+\item[$T$] = $\{ B \sqsubseteq \neg C \}$
+\item[$A$] = $\{ B(a), C(a), R(b,c) \}$
+\end{description}
+\scalebox{0.7}{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=gray!50,draw=none,text=black]
+
+  \node[state]         (A)                    {$B(a)$};
+  \node[state]         (B) [      right of=A] {$C(a)$};
+  \node[state]         (D) [      right of=B] {$R(b,c)$};
+
+  \path (A) edge              node {} (B);
+\end{tikzpicture} }
+\end{multicols}
+
+\begin{multicols}{2}
+[Soit le nouveau graph, effectuer la transformation inverse du K-MIS vers DLlite.\\
+Soit K-MIS un problème NP-Complet qui consiste à déterminer le nombre maximum de nœuds
+tel que ces nœuds une fois colorié ne sont pas adjacent à un autre nœud colorié, K=3 dans l'exemple ci dessous]
+
+\scalebox{0.9}{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=gray!50,draw=none,text=black]
+
+  \node[state]         (A)                    {$\crouge{A}$};
+  \node[state]         (B) [below left  of=A] {$B$};
+  \node[state]         (C) [below right of=B] {$\crouge{C}$};
+  \node[state]         (E) [      right of=C] {$E$};
+  \node[state]         (G) [below right of=A] {$G$};
+  \node[state]         (H) [above right of=G] {$\crouge{H}$};
+
+  \path (A) edge              node {} (B)
+        (B) edge              node {} (C)
+        (C) edge              node {} (E)
+        (H) edge              node {} (G)
+        (G) edge              node {} (A);
+\end{tikzpicture} }
+
+\begin{description}
+\item[] Concept = $\{A,B,C,E,G,H\}$, Individu = $\{e\}$, Role = $\{\}$
+\item[$TBox$] = $\{H \sqsubseteq \neg G, A \sqsubseteq \neg H,B \sqsubseteq \neg A,C \sqsubseteq \neg B,E \sqsubseteq \neg C\}$
+\item[$ABox$] = $\{ A(e), B(e), C(e), E(e), G(e), H(e) \}$
+\item[$Cln(T)$] = $T$
+\end{description}
+
+\end{multicols}
 
 \pagebreak

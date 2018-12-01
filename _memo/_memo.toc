@@ -180,10 +180,13 @@
 \contentsline {subsection}{\numberline {25.4.4}Modifieurs}{89}
 \contentsline {subsection}{\numberline {25.4.5}Complex modifieurs}{90}
 \contentsline {subsection}{\numberline {25.4.6}D\IeC {\'e}cision avec plusieurs ABox}{90}
-\contentsline {part}{VI\hspace {1em}XML}{91}
-\contentsline {chapter}{\numberline {26}DTD}{92}
-\contentsline {chapter}{\numberline {27}XSD}{93}
-\contentsline {chapter}{\numberline {28}XPATH}{95}
-\contentsline {section}{\numberline {28.1}Syntaxe}{95}
-\contentsline {subsection}{\numberline {28.1.1}S\IeC {\'e}lection}{95}
-\contentsline {subsection}{\numberline {28.1.2}Pr\IeC {\'e}dicats}{95}
+\contentsline {chapter}{\numberline {26}Complexit\IeC {\'e}}{92}
+\contentsline {section}{\numberline {26.1}Analyse de complexit\IeC {\'e} pour D(M1,Safe)}{92}
+\contentsline {section}{\numberline {26.2}Analyse de la complexit\IeC {\'e} pour D(M2,Forall)}{93}
+\contentsline {part}{VI\hspace {1em}XML}{94}
+\contentsline {chapter}{\numberline {27}DTD}{95}
+\contentsline {chapter}{\numberline {28}XSD}{96}
+\contentsline {chapter}{\numberline {29}XPATH}{98}
+\contentsline {section}{\numberline {29.1}Syntaxe}{98}
+\contentsline {subsection}{\numberline {29.1.1}S\IeC {\'e}lection}{98}
+\contentsline {subsection}{\numberline {29.1.2}Pr\IeC {\'e}dicats}{98}
