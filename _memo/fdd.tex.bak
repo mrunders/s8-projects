@@ -392,4 +392,43 @@ Avec l'observation incomplète suivante (Jaune, Sport) la classe associée à ce
 \pagebreak
 
 \chapter{Clustering}
+\section{Approche par le Partitionnement}
+
+Soit
+\begin{description}
+\item[une table à segmenter] T = {2,4,6,7,8,11,13}
+\item[une fonction de distance] d() = Distance euclidienne
+\item[k] = 3
+\item[3 clusters au hasard] $C_1$ = {2}, $C_2$ = {4}, $C_3$ = {6}
+\end{description} 
+
+Pour chaque cluster $C_i$, initialiser $C_i^{center}$ à la moyenne de tout les élément de $C_i$.\\
+Pour chaque éléments hors cluster calculer la distance D(), entre tout les $C_i^{center}$ et l'élément courant,
+puis placer cette élément dans le $C_i$ ayant le résultat le plus petit.\\
+Puis recommencer tant qu'il existe pas une redondance.\\
+
+\section{Approche hiérarchiques}
+
+\begin{description}
+\item{Initialisation] Au départ, chaque object forme un cluster.
+\item[Refaire] Regrouper la paire de cluster les plus proche selon D() et mettre à jour la matrice de similarité.
+\item[Cas d'arrêt] il ne reste plus qu'un cluster ou le nombre k de cluster est atteint.
+\end{description}
+
+La mesure de la similarité se fait via la fonction de comparaison D() qui peut par exemple être le MIN,MAX,Centre du groupe,Moyenne du groupe,...\\
+
+\subsection{Exemple avec la fonction d = MIN}
+\begin{multicols}{3}
+[Soit la matrice de similarité ci dessous, avec la condition distance d'arrêt inférieur ou égal à 4.\\
+On commence par trouve l'indice le plus petit pour en suite fusionner:]
+\begin{tabular}{l|llll}
+\hline $ $ & P1 & P2 & P3 & P4 \\\hline P1 & 0 & $ $ & $ $ & $ $\\P2 & $\crouge{1}$ & 0 & $ $ & $ $\\P3 & 7 & 5 & 0 & $ $\\P4 & 2 & 3 & 6 & 0\\
+\end{tabular}
+\begin{tabular}{l|lll}
+\hline $ $ & \{P1,P2\} & P3 & P4 \\\hline \{P1,P2\} & 0 & $ $ & $ $\\P3 & 5 & 0 & $ $\\P4 & $\crouge{2}$ & 6 & 0\\
+\end{tabular}
+\begin{tabular}{l|ll}
+\hline $ $ & \{P1,P2,P4\} & P3 \\\hline \{P1,P2,P4\} & 0 & $ $\\P3 & 5 & 0\\
+\end{tabular}
+\end{multicols}
 \pagebreak

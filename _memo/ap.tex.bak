@@ -159,6 +159,61 @@ Les éléments en rouge seront les éléments sélectionné dans les ensembles d
 \end{description}
 }{}
 
+\section{Matrice de confusion, Précision, Pecall, F1}
+Tout ces paramètres indique la consistance de la dataSet, ils sont calculé via une matrice de confusion:\\
+\lstset{style=mlpythoncode}
+\begin{lstlisting}[language=Python]
+from sklearn.metrics import confusion_matrix
+print(confusion_matrix(ytrain, ypredicted))
+>> array([[tn,  fp],
+          [fn,  tp]])
+          
+tn, fp, fn, tp = confusion_matrix(ytrain,ypredicted).ravel()
+\end{lstlisting}
+
+\funcdoc{sklearn.metrics.confusion\_matrix}{
+\begin{description}
+\item[y\_true] $\paramtype{array}$ les y valides.
+\item[y\_pred] $\paramtype{array}$ les y qui ont était prédit via un classifier.
+\end{description}
+}{
+\begin{description}
+\item[arrays] 
+\end{description}
+}{
+\begin{description}
+\item[ravel()] $\paramtype{arrays}$ retourne les index dans l'ordre de leurs position:
+\begin{description}
+\item[tn] les vrai négatifs
+\item[fp] les faux positifs 
+\item[fn] les faux négatifs
+\item[tp] les vrai positifs
+\end{description}
+\end{description}
+}
+
+Les Précision, Recall, F1 peuvent être calculé depuis le tableau de sortie qu'offre $\cblue{confusion\_matrix}$, mais il existe des méthodes permettent de le faire à notre place:\\
+
+\lstset{style=mlpythoncode}
+\begin{lstlisting}[language=Python]
+from sklearn.metrics import precision_recall_fscore_support
+
+prf = precision_recall_fscore_support(ytest, ypredicted)
+print(zip(["Precision", "Recal", "F1", "Support"], [numpy.mean(row) for row in prf]))
+{"Precision": _, "Recal": _, "F1": _, "Support": _}
+\end{lstlisting}
+
+\funcdoc{sklearn.metrics.precision\_recall\_fscore\_support}{
+\begin{description}
+\item[y\_true] $\paramtype{array}$ les y valides.
+\item[y\_pred] $\paramtype{array}$ les y qui ont était prédit via un classifier.
+\end{description}
+}{
+\begin{description}
+\item[arrays] 
+\end{description}
+}{}
+
 \chapter{Linear Algorithms}
 Soit X l'ensemble des variables indépendantes sur l'axe des l'abscisse et
 Y l'ensemble des variable dépendantes sur l'axe des ordonnée.
@@ -509,60 +564,5 @@ c.score(xtest, ytest)
 \item[score(X,y)] $\paramtype{pandas.DataFrame}$ Retourne le coefficient de prédiction en comparent les $y$ généré avec le $y$ en paramètre.
 \end{description}
 }
-\pagebreak
-\section{Matrice de confusion, Précision, Pecall, F1}
-Tout ces paramètres indique la consistance de la dataSet, ils sont calculé via une matrice de confusion:\\
-\lstset{style=mlpythoncode}
-\begin{lstlisting}[language=Python]
-from sklearn.metrics import confusion_matrix
-print(confusion_matrix(ytrain, ypredicted))
->> array([[tn,  fp],
-          [fn,  tp]])
-          
-tn, fp, fn, tp = confusion_matrix(ytrain,ypredicted).ravel()
-\end{lstlisting}
-
-\funcdoc{sklearn.metrics.confusion\_matrix}{
-\begin{description}
-\item[y\_true] $\paramtype{array}$ les y valides.
-\item[y\_pred] $\paramtype{array}$ les y qui ont était prédit via un classifier.
-\end{description}
-}{
-\begin{description}
-\item[arrays] 
-\end{description}
-}{
-\begin{description}
-\item[ravel()] $\paramtype{arrays}$ retourne les index dans l'ordre de leurs position:
-\begin{description}
-\item[tn] les vrai négatifs
-\item[fp] les faux positifs 
-\item[fn] les faux négatifs
-\item[tp] les vrai positifs
-\end{description}
-\end{description}
-}
-
-Les Précision, Recall, F1 peuvent être calculé depuis le tableau de sortie qu'offre $\cblue{confusion\_matrix}$, mais il existe des méthodes permettent de le faire à notre place:\\
-
-\lstset{style=mlpythoncode}
-\begin{lstlisting}[language=Python]
-from sklearn.metrics import precision_recall_fscore_support
-
-prf = precision_recall_fscore_support(ytest, ypredicted)
-print(zip(["Precision", "Recal", "F1", "Support"], [numpy.mean(row) for row in prf]))
-{"Precision": _, "Recal": _, "F1": _, "Support": _}
-\end{lstlisting}
-
-\funcdoc{sklearn.metrics.precision\_recall\_fscore\_support}{
-\begin{description}
-\item[y\_true] $\paramtype{array}$ les y valides.
-\item[y\_pred] $\paramtype{array}$ les y qui ont était prédit via un classifier.
-\end{description}
-}{
-\begin{description}
-\item[arrays] 
-\end{description}
-}{}
 
 \pagebreak

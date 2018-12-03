@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  1 DEC 2018 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  2 DEC 2018 14:37
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1206,12 +1206,12 @@ Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
 ] [2] [3] [4]
-Overfull \hbox (5.33537pt too wide) in paragraph at lines 134--134
+Overfull \hbox (5.33537pt too wide) in paragraph at lines 138--138
 []\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 138--138
 []  
  []
 
@@ -1359,41 +1359,70 @@ m/it/12 Oui\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  [] \OML/cmm/m/it/12 P\OT1/cmr/m
 
 [15]
 Chapter 6.
-) [16
 
-] (ap.tex [17
+Underfull \hbox (badness 10000) in paragraph at lines 405--409
+
+ []
+
+[16
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Overfull \hbox (1.54248pt too wide) in paragraph at lines 429--436
+[][]
+ []
+
+
+Overfull \hbox (12.96872pt too wide) in paragraph at lines 429--436
+[]
+ []
+
+
+Overfull \hbox (16.55304pt too wide) in paragraph at lines 429--436
+[] 
+ []
+
+[17]
 Chapter 7.
-[18
+) [18
+
+] (ap.tex [19
+
+]
+Chapter 8.
+[20
 
 ]
 Overfull \hbox (17.17168pt too wide) in paragraph at lines 50--53
 []\OT1/cmr/m/n/12 : $[] []$ 
  []
 
-[19]
-Chapter 8.
+[21]
+Chapter 9.
 
 Overfull \hbox (61.03465pt too wide) in paragraph at lines 68--69
 []\OT1/cmr/m/n/12 : Quand les vari-ables en sor-tie sont des Classe $(\OML/cmm/
 m/it/12 Vert; Carre; Homme\OT1/cmr/m/n/12 )$ 
  []
 
-[20
+[22
 
-] [21]
-Chapter 9.
+] [23]
+Chapter 10.
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 
  []
 
-[22
+[24
 
 ]
-Chapter 10.
-[23
+Chapter 11.
+[25
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 104--107
@@ -1421,7 +1450,7 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 126--126
 [][][] 
  []
 
-[24]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
@@ -1446,7 +1475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--165
 
  []
 
-[25]
+[27]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 168.
 
  (E:\ProgramFiles\MikTex2.9\tex\latex\base\omlcmr.fd
@@ -1474,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[26]
+[28]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 203.
 
@@ -1487,26 +1516,26 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 215--215
 [][][] 
  []
 
-[27]
-Chapter 11.
+[29]
+Chapter 12.
 
 Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
-[28
+[30
 
 ]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 260--260
 [][][] 
  []
 
-[29]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
-[30] [31]
+[32] [33]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 365--365
 [][][] 
  []
@@ -1516,13 +1545,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 368--371
 
  []
 
-[32]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 380--382
 
  []
 
-[33]
-Chapter 12.
+[35]
+Chapter 13.
 
 Underfull \hbox (badness 10000) in paragraph at lines 389--391
 
@@ -1539,14 +1568,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--430
 
  []
 
-[34
+[36
 
-] [35]
+] [37]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 471--471
 [][][] 
  []
 
-[36]
+[38]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 499--499
 [][][] 
  []
@@ -1556,12 +1585,12 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 499--499
 [][][] 
  []
 
-[37]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 509--512
 
  []
 
-[38]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
@@ -1571,31 +1600,31 @@ Overfull \hbox (8.33858pt too wide) in paragraph at lines 566--566
 [][][] 
  []
 
-) [39] (of.tex [40
+) [41] (of.tex [42
 
 ]
-Chapter 13.
-[41
+Chapter 14.
+[43
 
-] [42]
+] [44]
 Overfull \hbox (2.50609pt too wide) in paragraph at lines 74--75
 []\OT1/cmr/m/n/12 si avec que
  []
 
-[43]
+[45]
 Missing character: There is no ] in font nullfont!
 
 Overfull \hbox (18.82834pt too wide) in paragraph at lines 113--147
 []
  []
 
-<img/of-remplacement.png, id=185, 350.30875pt x 156.585pt>
+<img/of-remplacement.png, id=191, 350.30875pt x 156.585pt>
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
 Package pdftex.def Info: img/of-remplacement.png used on input line 150.
 (pdftex.def)             Requested size: 262.73091pt x 117.43845pt.
- [44]
+ [46]
 Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
@@ -1610,14 +1639,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
-[45 <./img/of-remplacement.png (PNG copy)>]
+[47 <./img/of-remplacement.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
-[46]
-Chapter 14.
-<img/of-occ-1.png, id=195, 317.185pt x 297.11pt>
+[48]
+Chapter 15.
+<img/of-occ-1.png, id=202, 317.185pt x 297.11pt>
 File: img/of-occ-1.png Graphic file (type png)
  <use img/of-occ-1.png>
 Package pdftex.def Info: img/of-occ-1.png used on input line 217.
@@ -1627,14 +1656,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
-[47
+[49
 
  <./img/of-occ-1.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 229--231
 
  []
 
-[48] [49]
+[50] [51]
 Overfull \hbox (33.84421pt too wide) in paragraph at lines 283--286
 \OT1/cmr/m/n/12 On peut cal-culer cette sous for-mule en ap-pli-quant chaque te
 rme dans l'interpretation
@@ -1655,7 +1684,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
-[50]
+[52]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1668,7 +1697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 392--394
 
  []
 
-[51]
+[53]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1686,7 +1715,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 449--453
 
  []
 
-[52]
+[54]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -1704,35 +1733,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 520--522
 Overfull \vbox (52.31276pt too high) has occurred while \output is active []
 
 
-[53]
-Chapter 15.
-) [54
-
-] (ro.tex [55
-
-]
+[55]
 Chapter 16.
+) [56
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--31
-
- []
-
-[56
+] (ro.tex [57
 
 ]
 Chapter 17.
-<img/ro-pl-2var_0.png, id=228, 491.8375pt x 434.62375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--31
+
+ []
+
+[58
+
+]
+Chapter 18.
+<img/ro-pl-2var_0.png, id=234, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [57
+ [59
 
 ]
 Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
@@ -1740,28 +1769,28 @@ Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
 eme,
  []
 
-<img/ro-pl-2var_1.png, id=232, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=239, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [58 <./img/ro-pl-2var_0.png (PNG copy)>] [59 <./img/ro-pl-2var_1.png (PNG copy
+ [60 <./img/ro-pl-2var_0.png (PNG copy)>] [61 <./img/ro-pl-2var_1.png (PNG copy
 )>]
-Chapter 18.
+Chapter 19.
 
 Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[60
+[62
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 130--136
 
  []
 
-[61]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
@@ -1771,7 +1800,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[62]
+[64]
 Underfull \hbox (badness 7308) in paragraph at lines 191--191
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1784,7 +1813,7 @@ Overfull \hbox (13.06572pt too wide) in paragraph at lines 191--191
 /n/12 25)$
  []
 
-[63]
+[65]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
@@ -1799,7 +1828,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
-[64]
+[66]
 Underfull \hbox (badness 7308) in paragraph at lines 242--242
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1834,14 +1863,14 @@ m/n/12 0)$
 Overfull \vbox (4.75836pt too high) has occurred while \output is active []
 
 
-[65] [66]
-Chapter 19.
+[67] [68]
+Chapter 20.
 
 Underfull \hbox (badness 10000) in paragraph at lines 283--286
 
  []
 
-[67
+[69
 
 ]
 Overfull \hbox (15.38187pt too wide) in paragraph at lines 311--311
@@ -1860,7 +1889,7 @@ Overfull \hbox (18.32954pt too wide) in paragraph at lines 325--325
 /n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
-[68]
+[70]
 Overfull \hbox (11.91187pt too wide) in paragraph at lines 328--328
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
@@ -1876,7 +1905,7 @@ Overfull \hbox (11.91187pt too wide) in paragraph at lines 352--352
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
-[69]
+[71]
 Overfull \hbox (6.51181pt too wide) in paragraph at lines 364--364
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases 
  []
@@ -1910,7 +1939,7 @@ Overfull \hbox (9.51613pt too wide) in paragraph at lines 388--388
 ; []; \OT1/cmr/m/n/12 0)$
  []
 
-[70]
+[72]
 Overfull \hbox (11.9118pt too wide) in paragraph at lines 391--391
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
@@ -1933,7 +1962,7 @@ Overfull \hbox (11.9118pt too wide) in paragraph at lines 416--416
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-[71]
+[73]
 Underfull \hbox (badness 7308) in paragraph at lines 438--438
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -1951,37 +1980,37 @@ Overfull \hbox (11.9118pt too wide) in paragraph at lines 441--441
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-) (rcr.tex [72] [73
+) (rcr.tex [74] [75
 
 ]
-Chapter 20.
+Chapter 21.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[74
+[76
 
-] [75]
-Chapter 21.
+] [77]
+Chapter 22.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[76
+[78
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[77]
+[79]
 Overfull \hbox (54.46117pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-[78]
+[80]
 Overfull \hbox (23.78946pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
@@ -1991,14 +2020,14 @@ Overfull \hbox (38.8198pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 equivalent?
  []
 
-[79]
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-[80]
-Chapter 22.
-[81
+[82]
+Chapter 23.
+[83
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 211--213
@@ -2025,20 +2054,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[82]
+[84]
 Missing character: There is no ] in font nullfont!
- [83]
+ [85]
 Missing character: There is no ] in font nullfont!
- [84]
-Chapter 23.
+ [86]
+Chapter 24.
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[85
+[87
 
-] [86]
+] [88]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
@@ -2058,10 +2087,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-[87]
+[89]
 Missing character: There is no ] in font nullfont!
- [88] [89] [90] [91] [92]
-Chapter 24.
+ [90] [91] [92] [93] [94]
+Chapter 25.
 
 Underfull \hbox (badness 10000) in paragraph at lines 591--593
 
@@ -2090,14 +2119,14 @@ Overfull \hbox (28.276pt too wide) in paragraph at lines 626--627
 /12 Jean; Paul\OT1/cmr/m/n/12 )$ 
  []
 
-[93
+[95
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 641--644
 
  []
 
-[94]
+[96]
 Underfull \hbox (badness 10000) in paragraph at lines 685--688
 \OT1/cmr/m/n/12 com-pose que d'une
  []
@@ -2132,7 +2161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
-[95]
+[97]
 Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
@@ -2143,7 +2172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 774--775
 
  []
 
-[96] [97]
+[98] [99]
 Underfull \hbox (badness 10000) in paragraph at lines 786--790
 
  []
@@ -2153,8 +2182,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--790
 
  []
 
-[98]
-Chapter 25.
+[100]
+Chapter 26.
 Missing character: There is no ] in font nullfont!
 
 Overfull \hbox (63.30937pt too wide) in paragraph at lines 840--842
@@ -2166,7 +2195,7 @@ Overfull \hbox (30.8578pt too wide) in paragraph at lines 843--843
 []\OT1/cmr/bx/n/17.28 Analyse de la com-plexite pour D(M2,Forall) 
  []
 
-[99
+[101
 
 ]
 Missing character: There is no ] in font nullfont!
@@ -2187,10 +2216,10 @@ OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; E\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e\OT1/cmr
 cmsy/m/n/12 g$ 
  []
 
-) [100] (xml.tex [101
+) [102] (xml.tex [103
 
 ]
-Chapter 26.
+Chapter 27.
 
 Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 []$\OML/cmm/m/it/12 <\OT1/cmr/m/n/12 !\OML/cmm/m/it/12 ATTRIBUT <$\OT1/cmr/m/n/
@@ -2200,15 +2229,15 @@ Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[102
+[104
 
 ]
-Chapter 27.
-[103
-
-] [104]
 Chapter 28.
 [105
+
+] [106]
+Chapter 29.
+[107
 
 ]
 Overfull \hbox (6.72887pt too wide) in paragraph at lines 98--99
@@ -2237,7 +2266,7 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 105--106
  )"$ 
  []
 
-) [106] (_memo.aux) )
+) [108] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 526 ({)
@@ -2268,9 +2297,9 @@ sy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><E
 :/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/Pro
 gramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramF
 iles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (114 pages, 499785 bytes).
+Output written on _memo.pdf (116 pages, 503487 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
+ 462 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
