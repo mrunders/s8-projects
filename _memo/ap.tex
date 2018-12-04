@@ -100,7 +100,7 @@ C'est l'inverse de l'overfitting, pas assez de données pour pouvoir généralis
 \chapter{Model Selection}
 \pagebreak
 \section{Train Test Split}
-
+S'applique à de très gros dataset.\\
 Sépare les listes $xset$ et $yset$ en $train,\ test$ sous liste.\\
 Les ensemble de retours $xtrain,ytrain$ et $xtest,ytest$ ont le même nombres de lignes et la taille.\\
 La taille des ensembles $test$ sont une proportion de la taille du $set$ multiplié par la paramètre $text_size$.\\
@@ -126,6 +126,7 @@ xtrain, xtest, ytrain, ytest = train_test_split(xset, yset, test_size=0.1, rando
 }{}
 \pagebreak
 \section{Cross validation}
+S'applique à un jeu de donné de taille moyenne.\\
 La séparation d'un jeu de donnée d'entrainement et de test peuvent donner par hasard des jeux de données non représentatifs.\\
 Pour éviter ce cas, il est nécessaire de reproduire plusieurs fois la procédure puis de moyenner les résultats retournée.\\
 Chaque étape de la cross validation va retournée 2 ensemble (respectivement égaux au indices de $train,test$:\\
@@ -158,6 +159,23 @@ Les éléments en rouge seront les éléments sélectionné dans les ensembles d
 \item[arrays] 
 \end{description}
 }{}
+
+\section{Leave one out}
+S'applique à des dataset de petite taille.\\
+Pour chaque item du dataset, le prendre en tant que $test$ et le reste en tant que $train$.\\
+
+\lstset{style=mlpythoncode}
+\begin{lstlisting}[language=Python]
+from sklearn.model_selection import LeaveOneOut
+loo = LeaveOneOut()
+
+for train_index, test_index in loo.split(X):
+   X_train, X_test = X[train_index], X[test_index]
+   y_train, y_test = y[train_index], y[test_index]
+\end{lstlisting}
+
+
+\pagebreak
 
 \section{Matrice de confusion, Précision, Pecall, F1}
 Tout ces paramètres indique la consistance de la dataSet, ils sont calculé via une matrice de confusion:\\

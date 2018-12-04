@@ -532,11 +532,65 @@ Soit une machine de turing M un quadruplet M = {K,$\sum$,$\delta$,s)
 \item [$\triangleright$] marque de début
 \item [$\sqcup$] séparateur ou fin de ruban
 \end{description}
-\item [$\delta$]:$(K$ x $\sum)$ x $((K\cup\{yes,no\})$ x $\sum $ x $\{\leftarrow,\rightarrow,-\})$
+\item [$\delta$]:$(K$ x $\sum)$ x $((K\cup\{yes,no,\uparrow \})$ x $\sum $ x $\{\leftarrow,\rightarrow,-\})$
 \begin{description}
 \item $\{yes,no\}$ état acceptable
 \item $\{\leftarrow,\rightarrow,-\}$ mouvement de la tête de lecture
 \end{description}
 \end{description}
+\pagebreak
+\section{Machines de Turing}
+Une machine de Turing:
+\begin{description}
+\item[non déterministe] est une machine qui pour un état $n$ donné peut dériver sur deux état $n+1$ diffèrent (un état est aussi appelé une configuration, une dérivation peu aussi s'appeler une transition).
+\item[Déterministe] est une machine qui pour un état $n$ donné n'a qu'une seul possibilité de transition (autrement dit il n'y a que 1 seul $n+1$ unique.
+\item[Décideur] est une machine qui pour un mot $x \in L$ termine avec l'indice $yes$ ou $no$.
+\item[Accepteur] est une machine qui pour un mot$x \in L$ termine avec l'indice $yes$ ou $\uparrow$ (boucle).
+\end{description}
 
+\section{RE, coRE et R}
+\begin{description}
+\item[Un langage Récursif] (R) pour tout $L \in R$ on peut trouver une Machine de Turing $M$ déterministe qui décide L.\\
+$\forall x \in (\sum  \neg \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=no$.
+\item[Un langage récursivement énumérable] (RE) pour tout $L \in RE$ on peut trouver une Machine de Turing $M$ déterministe qui accepte L.\\
+$\forall x \in (\sum \neg \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=\uparrow$.
+\item[] (coRE) sont tout les $\{ L \in \rho artie(\sum \neg \{-\})*)$ tel que $L^- \in RE \}$
+\end{description}
+Remarque: $R \subseteq RE \cap coRE$
+\pagebreak
+\subsection{Preuve de R est inclue dans RE}
+Montrer que $L \in RE$ revient à pour une Machine de Turing Déterministe MT tel que MT accepte L lui associer une output différent.\\
+Si on sait qu'il existe un décideur $Mr \in R$, alors construire un accepteur $Ma \in RE$:\\
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (A)                     {$Ma$};
+  \node[state]         (B)  [right of=A]       {$Mr$};
+  \node[state]         (YE) [below right of=B] {$yes$};
+  \node[state]         (UP) [above right of=B] {$\uparrow$};
+
+  \path (A) edge              node {}      (B)
+        (B) edge              node {yes}   (YE)
+            edge              node {no}    (UP);
+\end{tikzpicture}
+
+\subsection{Preuve de R est inclue dans coRE}
+Montrer que $L \in coRE$ revient à pour une Machine de Turing Déterministe MT tel que MT reconnait L lui associer une output différent.\\
+Si on sait qu'il existe un reconnait $Mr \in R$, alors construire un accepteur $Ma \in coRE$:\\
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (A)                     {$Ma$};
+  \node[state]         (B)  [right of=A]       {$Mr$};
+  \node[state]         (YE) [below right of=B] {$no$};
+  \node[state]         (UP) [above right of=B] {$\uparrow$};
+
+  \path (A) edge              node {}      (B)
+        (B) edge              node {yes}   (YE)
+            edge              node {no}    (UP);
+\end{tikzpicture}
 \pagebreak

@@ -120,7 +120,8 @@
     showtabs=false,                  
     tabsize=2,   
     emph={[2]sklearn, model_selection, train_test_split,KFold, linear_model, LinearRegression, LogisticRegression,
-    DecisionTreeRegressor, tree, neighbors, KNeighborsClassifier, svm, SVC, metrics, confusion_matrix,precision_recall_fscore_support},
+    DecisionTreeRegressor, tree, neighbors, KNeighborsClassifier, svm, SVC, metrics, confusion_matrix,precision_recall_fscore_support,
+    LeaveOneOut},
 	emphstyle=[2]\color{blue}
 }
 
