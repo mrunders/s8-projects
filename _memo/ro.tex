@@ -136,11 +136,14 @@ Donc solution admissible = $(0, 3, 0, 5, 25)$\\
 
 \section{Exemple simple Premier itération}
 \subsection{Choix de la variable entrante}
+\begin{description}
+\item[Gain marginale] prendre la variable non négatif ayant le plus haut coefficient.
+\end{description}
 $(x,y)$ sont deux choix possible, le tout est de choisir une bonne heuristique, comme celle du meilleur gain marginale, ou via la comparaison (en mode graphique):\\
 $Y$ sera choisit, donc $Y$ sera notre variable entrante.\\
 
 \subsection{Choix de la variable sortante}
-Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (devant être positif (car $Y$ est la variable entrante)\\
+Pour chaque résultat d'équation, le diviser par sa valeur de $Y$ (le résultat devant être positif sinon l'ignorer)\\
 
 \begin{description}
 \item[] $ -x + y + e_1 = 3$ donne $\frac{3}{\crouge{1}} = 3$ (1 car $y$ = $1*y$)
