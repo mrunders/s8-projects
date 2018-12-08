@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  4 DEC 2018 14:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  8 DEC 2018 13:26
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1206,12 +1206,12 @@ Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (_memo.toc [1
 
 ] [2] [3] [4]
-Overfull \hbox (5.33537pt too wide) in paragraph at lines 143--143
+Overfull \hbox (5.33537pt too wide) in paragraph at lines 147--147
 []\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 147--147
 []  
  []
 
@@ -1748,16 +1748,22 @@ cmr/m/n/12 donne peut deriver
  []
 
 [58]
-Underfull \hbox (badness 10000) in paragraph at lines 562--564
+Underfull \hbox (badness 10000) in paragraph at lines 565--567
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--582
+Underfull \hbox (badness 10000) in paragraph at lines 583--585
 
  []
 
-) (ro.tex [59] [60
+[59]
+Overfull \hbox (0.88481pt too wide) in paragraph at lines 630--631
+[]\OT1/cmr/m/n/12 revient a prou-ver $\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 HALTI
+NG \OMS/cmsy/m/n/12 []
+ []
+
+) [60] (ro.tex [61
 
 ]
 Chapter 17.
@@ -1771,17 +1777,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--31
 
  []
 
-[61
+[62
 
 ]
 Chapter 18.
-<img/ro-pl-2var_0.png, id=244, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_0.png, id=247, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
 Package pdftex.def Info: img/ro-pl-2var_0.png used on input line 61.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [62
+ [63
 
 ]
 Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
@@ -1789,13 +1795,13 @@ Overfull \hbox (3.56456pt too wide) in paragraph at lines 71--72
 eme,
  []
 
-<img/ro-pl-2var_1.png, id=248, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=251, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
 Package pdftex.def Info: img/ro-pl-2var_1.png used on input line 74.
 (pdftex.def)             Requested size: 270.51146pt x 239.0438pt.
- [63 <./img/ro-pl-2var_0.png (PNG copy)>] [64 <./img/ro-pl-2var_1.png (PNG copy
+ [64 <./img/ro-pl-2var_0.png (PNG copy)>] [65 <./img/ro-pl-2var_1.png (PNG copy
 )>]
 Chapter 19.
 
@@ -1803,77 +1809,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[65
+[66
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 130--136
 
  []
 
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
-
- []
-
 [67]
-Underfull \hbox (badness 7308) in paragraph at lines 191--191
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+[68]
+Underfull \hbox (badness 7308) in paragraph at lines 194--194
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (13.06572pt too wide) in paragraph at lines 191--191
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 194--194
 []$\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 25)$
  []
 
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
-
- []
-
 [69]
-Underfull \hbox (badness 7308) in paragraph at lines 242--242
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+
+ []
+
+[70]
+Underfull \hbox (badness 7308) in paragraph at lines 245--245
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (13.06572pt too wide) in paragraph at lines 242--242
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 245--245
 []$\OT1/cmr/m/n/12 (5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 10)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 265--265
+Underfull \hbox (badness 7308) in paragraph at lines 268--268
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (13.06572pt too wide) in paragraph at lines 265--265
+Overfull \hbox (13.06572pt too wide) in paragraph at lines 268--268
 []$\OT1/cmr/m/n/12 (10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \O
 T1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/
 m/n/12 0)$
@@ -1883,124 +1889,124 @@ m/n/12 0)$
 Overfull \vbox (4.75836pt too high) has occurred while \output is active []
 
 
-[70] [71]
+[71] [72]
 Chapter 20.
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--286
+Underfull \hbox (badness 10000) in paragraph at lines 286--289
 
  []
 
-[72
+[73
 
 ]
-Overfull \hbox (15.38187pt too wide) in paragraph at lines 311--311
+Overfull \hbox (15.38187pt too wide) in paragraph at lines 314--314
 []\OT1/cmr/bx/n/17.28 Premiere phase du sim-plexe a deux phases 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
+Underfull \hbox (badness 10000) in paragraph at lines 315--318
 
  []
 
 
-Overfull \hbox (18.32954pt too wide) in paragraph at lines 325--325
+Overfull \hbox (18.32954pt too wide) in paragraph at lines 328--328
 []$\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
-[73]
-Overfull \hbox (11.91187pt too wide) in paragraph at lines 328--328
+[74]
+Overfull \hbox (11.91187pt too wide) in paragraph at lines 331--331
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
 
-Overfull \hbox (20.65489pt too wide) in paragraph at lines 350--350
+Overfull \hbox (20.65489pt too wide) in paragraph at lines 353--353
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)$
  []
 
 
-Overfull \hbox (11.91187pt too wide) in paragraph at lines 352--352
+Overfull \hbox (11.91187pt too wide) in paragraph at lines 355--355
 []\OT1/cmr/bx/n/17.28 Premier phase du sim-plexe a deux phases,
  []
 
-[74]
-Overfull \hbox (6.51181pt too wide) in paragraph at lines 364--364
+[75]
+Overfull \hbox (6.51181pt too wide) in paragraph at lines 367--367
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases 
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 374--374
+Underfull \hbox (badness 7308) in paragraph at lines 377--377
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (9.51613pt too wide) in paragraph at lines 374--374
+Overfull \hbox (9.51613pt too wide) in paragraph at lines 377--377
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--378
+Underfull \hbox (badness 10000) in paragraph at lines 377--381
 
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 388--388
+Underfull \hbox (badness 7308) in paragraph at lines 391--391
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (9.51613pt too wide) in paragraph at lines 388--388
+Overfull \hbox (9.51613pt too wide) in paragraph at lines 391--391
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0)$
  []
 
-[75]
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 391--391
+[76]
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 394--394
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
 
-Underfull \hbox (badness 7308) in paragraph at lines 413--413
+Underfull \hbox (badness 7308) in paragraph at lines 416--416
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (7.19078pt too wide) in paragraph at lines 413--413
+Overfull \hbox (7.19078pt too wide) in paragraph at lines 416--416
 []$\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 0)$
  []
 
 
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 416--416
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 419--419
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-[76]
-Underfull \hbox (badness 7308) in paragraph at lines 438--438
+[77]
+Underfull \hbox (badness 7308) in paragraph at lines 441--441
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
  []
 
 
-Overfull \hbox (7.19078pt too wide) in paragraph at lines 438--438
+Overfull \hbox (7.19078pt too wide) in paragraph at lines 441--441
 []$\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m
 /n/12 9)$
  []
 
 
-Overfull \hbox (11.9118pt too wide) in paragraph at lines 441--441
+Overfull \hbox (11.9118pt too wide) in paragraph at lines 444--444
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
 
-) (rcr.tex [77] [78
+) (rcr.tex [78] [79
 
 ]
 Chapter 21.
@@ -2009,28 +2015,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
-[79
+[80
 
-] [80]
+] [81]
 Chapter 22.
 
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
-[81
+[82
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-[82]
+[83]
 Overfull \hbox (54.46117pt too wide) in paragraph at lines 131--132
 [][] 
  []
 
-[83]
+[84]
 Overfull \hbox (23.78946pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
@@ -2040,14 +2046,14 @@ Overfull \hbox (38.8198pt too wide) in paragraph at lines 156--157
 []\OT1/cmr/m/n/12 equivalent?
  []
 
-[84]
+[85]
 Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-[85]
+[86]
 Chapter 23.
-[86
+[87
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 211--213
@@ -2074,20 +2080,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
-[87]
-Missing character: There is no ] in font nullfont!
- [88]
+[88]
 Missing character: There is no ] in font nullfont!
  [89]
+Missing character: There is no ] in font nullfont!
+ [90]
 Chapter 24.
 
 Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[90
+[91
 
-] [91]
+] [92]
 Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
@@ -2107,9 +2113,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--418
 
  []
 
-[92]
+[93]
 Missing character: There is no ] in font nullfont!
- [93] [94] [95] [96] [97]
+ [94] [95] [96] [97] [98]
 Chapter 25.
 
 Underfull \hbox (badness 10000) in paragraph at lines 591--593
@@ -2139,14 +2145,14 @@ Overfull \hbox (28.276pt too wide) in paragraph at lines 626--627
 /12 Jean; Paul\OT1/cmr/m/n/12 )$ 
  []
 
-[98
+[99
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 641--644
 
  []
 
-[99]
+[100]
 Underfull \hbox (badness 10000) in paragraph at lines 685--688
 \OT1/cmr/m/n/12 com-pose que d'une
  []
@@ -2181,7 +2187,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
-[100]
+[101]
 Underfull \hbox (badness 10000) in paragraph at lines 741--742
 
  []
@@ -2192,7 +2198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 774--775
 
  []
 
-[101] [102]
+[102] [103]
 Underfull \hbox (badness 10000) in paragraph at lines 786--790
 
  []
@@ -2202,7 +2208,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 790--790
 
  []
 
-[103]
+[104]
 Chapter 26.
 Missing character: There is no ] in font nullfont!
 
@@ -2215,7 +2221,7 @@ Overfull \hbox (30.8578pt too wide) in paragraph at lines 843--843
 []\OT1/cmr/bx/n/17.28 Analyse de la com-plexite pour D(M2,Forall) 
  []
 
-[104
+[105
 
 ]
 Missing character: There is no ] in font nullfont!
@@ -2236,7 +2242,7 @@ OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; E\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 e\OT1/cmr
 cmsy/m/n/12 g$ 
  []
 
-) [105] (xml.tex [106
+) [106] (xml.tex [107
 
 ]
 Chapter 27.
@@ -2249,15 +2255,15 @@ Overfull \hbox (103.2928pt too wide) in paragraph at lines 19--20
 OT1/cmr/m/n/12 ] \OML/cmm/m/it/12 >$ 
  []
 
-[107
+[108
 
 ]
 Chapter 28.
-[108
+[109
 
-] [109]
+] [110]
 Chapter 29.
-[110
+[111
 
 ]
 Overfull \hbox (6.72887pt too wide) in paragraph at lines 98--99
@@ -2286,7 +2292,7 @@ Overfull \hbox (72.39908pt too wide) in paragraph at lines 105--106
  )"$ 
  []
 
-) [111] (_memo.aux) )
+) [112] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 526 ({)
@@ -2317,9 +2323,9 @@ sy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><E
 :/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/Pro
 gramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/ProgramF
 iles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (119 pages, 509540 bytes).
+Output written on _memo.pdf (120 pages, 512272 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
+ 474 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

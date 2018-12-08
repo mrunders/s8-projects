@@ -548,6 +548,9 @@ Une machine de Turing:
 \item[Accepteur] est une machine qui pour un mot$x \in L$ termine avec l'indice $yes$ ou $\uparrow$ (boucle).
 \end{description}
 
+\subsection{Machine de Turing universel}
+Prend un couple M((i,x)) et l'exécute $M_i$(x).
+
 \section{RE, coRE et R}
 \begin{description}
 \item[Un langage Récursif] (R) pour tout $L \in R$ on peut trouver une Machine de Turing $M$ déterministe qui décide L.\\
@@ -593,4 +596,47 @@ Si on sait qu'il existe un reconnait $Mr \in R$, alors construire un accepteur $
         (B) edge              node {yes}   (YE)
             edge              node {no}    (UP);
 \end{tikzpicture}
+
+\section{Problème de l'arrêt}
+\begin{description}
+\item[$T(i,x,n)$] $i$ représente un indice de Machine\\ Vérifier si i décide un programme Si:
+\begin{description}
+\item[No] $\rightarrow$ FAUX
+\item[YES] faire tourner $M_i(x)$ sur $n$ étapes.\\
+Soit $M-i(x)$ s'arrête avant les $n$ étapes $\rightarrow$ VRAI sinon FAUX
+\end{description}
+\end{description}
+
+\section{réduction fonctionnel}
+On dit que $L_1 \leq_f L_2$ si il existe une réduction fonctionnel comme:
+\begin{description}
+\item[$f$] $L_1 \rightarrow L_2$: $x \rightarrow f(x)$
+\end{description}
+
+\subsection{Exemple de réduction fonctionnel}
+Soit $L$ = $\{(i,j)$ tel que i et h sont des indices de machine déterministes telles que pour tout mot d'entrée $x$, on n'a $M_i(x)=\uparrow$ et $M_j(x)\neq \uparrow \}$
+\begin{description}
+\item[Montrer que L est RE-difficile] revient à prouver $HALTING \leq_f L$
+\item[] $f$ (i,x) $\rightarrow$ (j,k):
+\begin{description}
+\item[] (i,x) $\in$ HALTING ssi $M_i(x) \neq \uparrow$
+\item[] (j,k) $\in$ L ssi $M_j(y) = \uparrow$ et $M_k(y) \neq \uparrow$, $\forall y$.
+\end{description}
+$\begin{cases}
+M_j(y) & boucle \\
+M_k(y) & M_i(x)
+\end{cases}$
+
+\item[Montrer que L est coRE-difficile] revient à prouver $\neg HALTING \leq_f L$
+\item[] $f$ (i,x) $\rightarrow$ (j,k):
+\begin{description}
+\item[] (i,x) $\in \neg$ HALTING ssi $M_i(x) \neq \uparrow$
+\item[] (j,k) $\in$ L ssi $M_j(y) \neq \uparrow$ et $M_k(y) = \uparrow$, $\forall y$.
+\end{description}
+$\begin{cases}
+M_j(y) & y \\
+M_k(y) & M_i(x)
+\end{cases}$
+\end{description}
+
 \pagebreak

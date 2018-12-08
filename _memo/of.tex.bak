@@ -548,13 +548,16 @@ Une machine de Turing:
 \item[Accepteur] est une machine qui pour un mot$x \in L$ termine avec l'indice $yes$ ou $\uparrow$ (boucle).
 \end{description}
 
+\subsection{Machine de Turing universel}
+Prend un couple M((i,x)) et l'exécute $M_i$(x).
+
 \section{RE, coRE et R}
 \begin{description}
 \item[Un langage Récursif] (R) pour tout $L \in R$ on peut trouver une Machine de Turing $M$ déterministe qui décide L.\\
-$\forall x \in (\sum \\ \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=no$.
+$\forall x \in (\sum  \neg \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=no$.
 \item[Un langage récursivement énumérable] (RE) pour tout $L \in RE$ on peut trouver une Machine de Turing $M$ déterministe qui accepte L.\\
-$\forall x \in (\sum \\ \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=\uparrow$.
-\item[] (coRE) sont tout les $\{ L \in \rho artie(\sum \\ \{-\})*)$ tel que $L^- \in RE \}$
+$\forall x \in (\sum \neg \{-\})*$, si $x \in L$ alors $M(x)=yes$ sinon $M(x)=\uparrow$.
+\item[] (coRE) sont tout les $\{ L \in \rho artie(\sum \neg \{-\})*)$ tel que $L^- \in RE \}$
 \end{description}
 Remarque: $R \subseteq RE \cap coRE$
 \pagebreak
@@ -578,7 +581,7 @@ Si on sait qu'il existe un décideur $Mr \in R$, alors construire un accepteur $
 
 \subsection{Preuve de R est inclue dans coRE}
 Montrer que $L \in coRE$ revient à pour une Machine de Turing Déterministe MT tel que MT reconnait L lui associer une output différent.\\
-Si on sait qu'il existe un reconnait $Mr \in R$, alors construire un accepteur $Ma \in RE$:\\
+Si on sait qu'il existe un reconnait $Mr \in R$, alors construire un accepteur $Ma \in coRE$:\\
 
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
                     semithick]
@@ -593,4 +596,36 @@ Si on sait qu'il existe un reconnait $Mr \in R$, alors construire un accepteur $
         (B) edge              node {yes}   (YE)
             edge              node {no}    (UP);
 \end{tikzpicture}
+
+\section{Problème de l'arrêt}
+\begin{description}
+\item[$T(i,x,n)$] $i$ représente un indice de Machine\\ Vérifier si i décide un programme Si:
+\begin{description}
+\item[No] $\rightarrow$ FAUX
+\item[YES] faire tourner $M_i(x)$ sur $n$ étapes.\\
+Soit $M-i(x)$ s'arrête avant les $n$ étapes $\rightarrow$ VRAI sinon FAUX
+\end{description}
+\end{description}
+
+\section{réduction fonctionnel}
+On dit que $L_1 \leq_f L_2$ si il existe une réduction fonctionnel comme:
+\begin{description}
+\item[$f$] $L_1 \rightarrow L_2$: $x \rightarrow f(x)$
+\end{description}
+
+\subsection{Exemple de réduction fonctionnel}
+Soit $L$ = $\{(i,j)$ tel que i et h sont des indices de machine déterministes telles que pour tout mot d'entrée $x$, on n'a $M_i(x)=\uparrow$ et $M_j(x)\neq \uparrow \}$\\
+\begin{description}
+\item[Montrer que L est RE-difficile] revient à prouver que $HALTING \leq_f L$\\
+\item[] $f$ (i,x) $\rightarrow$ (j,k):\\
+\begin{description}
+\item[] (i,x) $\in$ HALTING ssi $M_i(x) \neq \uparrow$
+\item[] (j,k) $\in$ L ssi $M_j(y) = \uparrow$ et $M_k(y) \neq \uparrow$, $\forall y$.
+\end{description}
+\begin{cases}
+-x & \text{si $x$ est négatif} \\
+x  & \text{si $x$ est positif (ou nul)}
+\end{cases}
+\end{description}
+
 \pagebreak
