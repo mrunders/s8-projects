@@ -99,7 +99,9 @@ public class ItemSetExtract extends ItemSetOutputFile {
 			this.output.write("<name>"); this.output.write(this.pattern); this.output.write("</name>\n");
 			this.output.write("<coauthors>");
 			for (String s : this.authorsList) {
-				this.output.write("<author>"); this.output.write(s); this.output.write("</author>");
+				if ( !this.pattern.equals(s)) {
+					this.output.write("<author>"); this.output.write(s); this.output.write("</author>");
+				}
 			}
 			this.output.write("</coauthors>\n");
 			this.output.write(this.fileout.toString());
