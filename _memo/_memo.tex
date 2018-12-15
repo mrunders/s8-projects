@@ -15,7 +15,8 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{xifthen}
-
+\usepackage{fancyhdr}
+ 
 \pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
@@ -30,6 +31,15 @@
 \newcommand{\crouge}[1]{ \textcolor{red}{#1}}
 \newcommand{\cvert}[1]{ \textcolor{darkgreen}{#1}}
 \newcommand{\cgris}[1]{ \textcolor{gray}{#1}}
+
+%% ------------------------- Header Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Master 2 IA Memo}
+\fancyhead[RE,LO]{ }
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+% -------------------------- END Header Footer
 
 %% ------------------------- Formular
 \newcommand{\cformular}[2]{
@@ -155,20 +165,39 @@
 \date{Master 2 informatique 2018}
 
 \begin{document}
-\maketitle
-\pagebreak
-\tableofcontents
 
 \begin{titlepage}
+\begin{center}
+       \vspace*{1cm}
+ 
+       \scalebox{2.5}{\textbf{Memo 1}}
+ 
+       \vspace{0.5cm}
+       \scalebox{2}{Master 2 IA}
+ 
+       \vspace{1.5cm}
+ 
+       \textbf{LAURENT Thomas}
+ 
+       \vfill
+ 
+       \vspace{0.8cm}
+ 
+       Années: 2018 - 2019
+ 
+   \end{center}
 \end{titlepage}
 \pagebreak
+\pagebreak
+\pagebreak
+\tableofcontents
 
 \input{fdd}
 \input{ap}
 \input{of}
 \input{ro}
 \input{rcr}
-\input{xml}
+%\input{xml}
 
 \end{document}
 

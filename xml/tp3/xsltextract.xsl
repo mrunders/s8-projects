@@ -15,8 +15,8 @@
               <xsl:value-of select="count(extract/coauthors/author)"/> personnes:
 
               <ul>
-                <xsl:for-each select="extract/coauthors/author">
-                  <xsl:sort select="text()"/> <li> <xsl:value-of select="text()"/> </li>
+                <xsl:for-each select="//extract/coauthors/author[not(preceding::author/. = .)]">
+                    <xsl:sort select="text()"/> <li> <xsl:value-of select="text()"/> </li>
                 </xsl:for-each>
               </ul>
 
@@ -103,8 +103,21 @@
         <h3>Statistiques sur les articles</h3>
 
         <ul>
-          <xsl:for-each select="//extract/inproceedings/year[not(preceding::year/. = .)]">
-            <xsl:sort select="text()"/> <li> <xsl:value-of select="text()"/> </li>
+          <xsl:for-each select="//extract/article/year">
+            <xsl:sort select="current()"/>
+            <xsl:variable name="currentYear" select="current()"/>
+            <li>
+                <xsl:choose>
+                  <xsl:when test="count(//article[year=$currentYear]) &gt; 1">
+                    <xsl:value-of select="//name"/> a ecrit <xsl:value-of select="count(//article[year=$currentYear])"/>
+                    articles en <xsl:value-of select="$currentYear"/>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="//name"/> a ecrit <xsl:value-of select="count(//article[year=$currentYear])"/>
+                    article en <xsl:value-of select="$currentYear"/>
+                  </xsl:otherwise>
+                </xsl:choose>
+            </li>
           </xsl:for-each>
         </ul>
 

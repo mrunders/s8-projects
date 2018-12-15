@@ -1,7 +1,7 @@
 \part{Représentation des connaissances et raisonnement}
 \pagebreak
 
-\chapter{Logique propositionnel}
+\chapter{Logique propositionnel}\pagebreak
 \section{Vocabulaire}
 Les $Logiques propositionnel$ sont définit via les symboles suivant:\\
 $\top, \bot, C, \neg C, C \wedge C, C \vee C, C \Rightarrow C$ \\
@@ -27,30 +27,11 @@ Soit K un ensemble de clauses pouvant être réduit via les axiomes:
 \item[] $K_{x \leftarrow \bot}$ est le résultat du remplacement des occurrences de $x$ par $\bot$
 \end{description}
 
-\chapter{Introduction à la logique de description}
+\chapter{Introduction à la logique de description}\pagebreak
 \section{Attributive Language with Complement}
 
 Les $ALC$ sont définit via les symboles suivant:\\
 $\top, \bot, C, \neg C, C \sqcap C, C \sqcup C, \forall r.C, \exists r.C$\\
-
-\subsection{Sémantique}
-Tuple $\iota =_{def} \langle \delta^I, .^I \rangle$ où
-\begin{description}
-\item[$\delta^I$] est le domaine (ou un ensemble d'objets)
-\item[$.^I$] est une fonction d'interprétation tel que 
-\begin{description}
-\item[] $A^I \subseteq \Delta^I$
-\item[] $r^I \subseteq \Delta^I$ x $ \Delta^I$
-\item[] $a^I \in \Delta^I$
-\end{description}
-\item[$\top^I$] $=_{def} \Delta^I$
-\item[$\bot^I$] $=_{def} \theta$
-\item[$(\neg C)^I$] $=_{def} \Delta^I \\ C^I$
-\item[$C \sqcap D)^I$] $=_{def} C^I \cap C^I$
-\item[$C \sqcup D)^I$] $=_{def} C^I \cup C^I$
-\item[$\exists r.C)^I$] $=_{def} \{ x \in \Delta^I | r^I(x) \cap C^I \neq \theta \}$
-\item[$\forall r.C)^I$] $=_{def} \{ x \in \Delta^I | r^I(x) \subseteq C^I \}$
-\end{description}
 
 \subsection{Propriétés}
 \begin{multicols}{2}
@@ -83,7 +64,7 @@ $\ell_{ALC}, C \sqsubseteq C, \sqsupseteq C$\\
 \item[$a : C$] $a$ est une instance de $C$
 \item[$(a,b) : r$] $a$ et $b$ sont attaché avec la relation $r$
 \end{description}
-
+\pagebreak
 \section{TBoxes et ABoxes}
 Soit une base de connaissance $KB = \langle T,A \rangle$ où:
 \begin{description}
@@ -182,7 +163,7 @@ Soit $KB = \langle T,A \rangle , C, D \in \iota_{ALC}, a \in I$ and $ a^` $ new 
 \item[Is $\cblue{EmpStud} \sqcap \neg \exists \cviolet{pays}.\cblue{Tax}$ satisfiable wrt $KB$ ]?\\ $\ KB \cup \{ \corange{a} : \cblue{EmpStud} \sqcap \neg \exists \cviolet{pays}.\cblue{Tax} \nvDash \bot ?,$ for $\corange{a}$ new
 \end{description}
 
-\chapter{Méthode des Tableau pour les ALC}
+\chapter{Méthode des Tableau pour les ALC}\pagebreak
 \section{Pre processing}
 \subsection{Réécriture}
 Réécrite chaque:
@@ -205,7 +186,7 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
 \item[Blocage/Blocking] l'apparition d'une boucle infini dans le déroulement de l'algorithme 
 \item[Clash] Quand il existe une contradiction d'un noeud feuille vers l'un de ses ascendant
 \end{description}
-
+\pagebreak
 \subsection{Règles d'expansion}
 \begin{description}
 \item[$\sqsubseteq_{T} -$] rule\\
@@ -230,7 +211,7 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
 \item[Si $\{a : \forall R.C, (a,b) : R\} \subseteq A$ et $b : C \notin A$] alors\\ $A := A \cup \{b : C \}$
 \end{description}
 \end{description}
-
+\pagebreak
 \section{Exemple}
 \begin{description}
 \item[$T$] = $\{ A \sqsubseteq \exists r.B \}$ $\equiv$ $\{\top \sqsubseteq \neg A \sqcup \exists r.B \}$
@@ -316,7 +297,7 @@ Changer la $KB$ en $NNF$ ($\neg$ occurs only in front of concept names)
 \end{tikzpicture}
 }
 
-\chapter{Logique presque tout}
+\chapter{Logique presque tout}\pagebreak
 
 Soit le nouvelle opérateur binaire $\Subset$ disent pour $\crouge{presque\ tout}$ A est dans B.\\
 
@@ -355,7 +336,7 @@ Soit le nouvelle opérateur binaire $\Subset$ disent pour $\crouge{presque\ tout
 \node[draw=none] at (-1,1.7) {$\alpha \cap \gamma$};
 \end{tikzpicture}}
 \end{description}
-
+\pagebreak
 \section{Système P}
 \begin{description}
 \item[Réflexivité]:
@@ -586,7 +567,7 @@ Pour $\crouge{ Q \rightarrow F }$ et $\crouge{ ( Q \wedge C) \rightarrow (\neg F
 \ \\
 $\Delta_2$ est vide donc $\{\alpha \rightarrow \neg \beta \} \cup \Delta$ n'est pas stratifiable.
 
-\chapter{Logique de description DL Lite}
+\chapter{Logique de description DL Lite}\pagebreak
 \section{Opérateurs}
 Pour une $ABox$:\\
 \begin{description}
@@ -757,7 +738,7 @@ $o_{incl} = \{ABox_1, Abox_2\}$\\
   \node {$ABox\ conflictuel$}
     child { node {$Split$} 
       child { node {$Selection$}
-        child { node {$Expansion$ }
+        child { node {$Split$ }
           child { node {$Selection$ } }
         }
       child { node {$Expansion$}
@@ -801,7 +782,7 @@ Via la résolution des contraintes on obtient:\\ $A_1 = \{A(a) \}, A_2 = \{ B(a)
 \end{description}
 \end{multicols}
 
-\chapter{Complexité}
+\chapter{Complexité}\pagebreak
 \section{Analyse de complexité pour D(M1,Safe)}
 
 Une approche naïf non satisfiable serait de:
@@ -839,7 +820,7 @@ Un cas extrême pour résoudre le problème
     };
 \end{tikzpicture}
 Complexité $O(2^n)$
-
+\pagebreak
 \section{Analyse de la complexité pour D(M2,Forall)}
 
 \begin{multicols}{2}

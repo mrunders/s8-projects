@@ -1,7 +1,7 @@
 \part{Apprentissage automatique par la pratique}
 \pagebreak
 
-\chapter{Rappel}
+\chapter{Rappel}\pagebreak
 \section{Matrices et calcules sur les Matrices}
 
 \subsection{Addition}
@@ -52,7 +52,7 @@ $ \frac{1}{D} \left(\begin{array}{ccc}
 d & -b \\ -c & a \end{array} \right) $
 \end{description}
 
-\chapter{Algorithms Learn a Mapping From Input to Output}
+\chapter{Algorithms Learn a Mapping From Input to Output}\pagebreak
 \section{linear ML algorithms}
 
 \begin{description}
@@ -87,7 +87,7 @@ La prédiction des erreurs pour les algorithmes sont regroupé en 3 points:
 \item[Irreductible Error]: Ne peut pas être réduit
 \end{description}
 
-\chapter{Overfitting and Underfitting}
+\chapter{Overfitting and Underfitting}\pagebreak
 \section{Overfitting}
 L'overfitting intervient lorsque le modèle sur apprend des connaissances,
 Lorsque l'on sur apprend nous prenons en compte les points plus éloigné de la droite de la fonction.\\
@@ -97,7 +97,7 @@ On peut illustrer l'overfitting en codant un algorithme qui prend en compte les 
 C'est l'inverse de l'overfitting, pas assez de données pour pouvoir généraliser le base de connaissance.\\
 \pagebreak
 
-\chapter{Model Selection}
+\chapter{Model Selection}\pagebreak
 \pagebreak
 \section{Train Test Split}
 S'applique à de très gros dataset.\\
@@ -232,7 +232,7 @@ print(zip(["Precision", "Recal", "F1", "Support"], [numpy.mean(row) for row in p
 \end{description}
 }{}
 
-\chapter{Linear Algorithms}
+\chapter{Linear Algorithms}\pagebreak
 Soit X l'ensemble des variables indépendantes sur l'axe des l'abscisse et
 Y l'ensemble des variable dépendantes sur l'axe des ordonnée.
 
@@ -402,7 +402,7 @@ L'objectif est de produire une règle d'affection $X(\omega) \rightarrow Y(\omeg
 \item[$P(X|Y=y_{\Bbbk})$] représente la fonction de densité des X conditionnellement à la classe $y_{\Bbbk}$
 \end{description}
 
-\chapter{Non linear algorithm}
+\chapter{Non linear algorithm}\pagebreak
 \section{Classification and régression tree}
 Soit:\\
 \begin{description}

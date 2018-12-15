@@ -15,7 +15,8 @@
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{xifthen}
-
+\usepackage{fancyhdr}
+ 
 \pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
@@ -30,6 +31,15 @@
 \newcommand{\crouge}[1]{ \textcolor{red}{#1}}
 \newcommand{\cvert}[1]{ \textcolor{darkgreen}{#1}}
 \newcommand{\cgris}[1]{ \textcolor{gray}{#1}}
+
+%% ------------------------- Header Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Master 2 IA Memo}
+\fancyhead[RE,LO]{ }
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+% -------------------------- END Header Footer
 
 %% ------------------------- Formular
 \newcommand{\cformular}[2]{
@@ -119,7 +129,9 @@
     showstringspaces=false,
     showtabs=false,                  
     tabsize=2,   
-    emph={[2]dblp.xml, file.gob, *.gob, resultSet.txt, <le jar>},
+    emph={[2]sklearn, model_selection, train_test_split,KFold, linear_model, LinearRegression, LogisticRegression,
+    DecisionTreeRegressor, tree, neighbors, KNeighborsClassifier, svm, SVC, metrics, confusion_matrix,precision_recall_fscore_support,
+    LeaveOneOut},
 	emphstyle=[2]\color{blue}
 }
 
@@ -148,59 +160,44 @@
 
 %% ------------------------ END Python code
 
-\title{Projet SaxGuy xml README}
-\author{LAURENT Thomas $|$ STEFANIAK Adam}
+\title{Memo pour l'année}
+\author{LAURENT Thomas}
 \date{Master 2 informatique 2018}
 
 \begin{document}
-\maketitle
-\pagebreak
 
 \begin{titlepage}
+\begin{center}
+       \vspace*{1cm}
+ 
+       \scalebox{2.5}{\textbf{Memo 1}}
+ 
+       \vspace{0.5cm}
+       \scalebox{2}{Master 2 IA}
+ 
+       \vspace{1.5cm}
+ 
+       \textbf{LAURENT Thomas}
+ 
+       \vfill
+ 
+       \vspace{0.8cm}
+ 
+       Années: 2018 - 2019
+ 
+   \end{center}
 \end{titlepage}
 \pagebreak
-
-\section{Que contient l'archive}
-\begin{description}
-\item[un jar] C'est l'exécutable exécutant le projet.
-\item[un fichier xsltextract.xsl] Indispensable pour le second sujet.
-\item[un fichier extract.dtd] Pour la validation du code xml généré lors du second sujet.
-\item[un readme] coucou c'est moi.
-\item[un dossier src] les sources. 
-\end{description}
-
-\section{Prêt requit}
-Les fichiers suivant seront demandé pour la bonne progression du jar (à placer dans le même répertoire)
-\begin{description}
-\item[dblp.xml]
-\item[le jar]
-\item[le fichier xsltextract.xsl]
-\item[la dtd associé au data xml]
-\item[le fichier extract.dtd]
-\end{description}
-
-\section{Comment utiliser le jar}
-Vous pouvez lancer le jar sans argument pour avoir les patterns d'argument
-
-\lstset{style=mlpythoncode}
-\begin{lstlisting}[]
-$ java -jar <le jar>
-If you want to run any commandes below, restart with 'java -DentityExpansionLimit=0 -jar <le jar>'
-Question 1:   -name name dblp.xml
-Question 2a:  -out file.gob dblp.xml
-Question 2b:  -name name -in file.gob
-Question 3:   -name name dblp.xml -extract file.gob
-Use *.gob or resultSet.txt as output file for gitignore
-\end{lstlisting}
 \pagebreak
-Exemple d'utilisation des commandes:
+\pagebreak
+\tableofcontents
 
-\begin{description}
-\item[Question 1] java -DentityExpansionLimit=0 -jar $<le jar>$ -name "Totor le Castor" dblp.xml
-\item[Question 2 (génération du fichier)] java -DentityExpansionLimit=0 -jar $<le jar>$ -out file.gob dblp.xml
-\item[Question 2 (recherche dans le fichier généré)] java -DentityExpansionLimit=0 -jar $<le jar>$ -name "Totor le Castion" -in file.gob
-\item[Question 3 (génération du fichier avec xslt)] java -DentityExpansionLimit=0 -jar $<le jar>$ -name "Totor le Castor dblp.xml -extract fichier.html
-\end{description}
+\input{fdd}
+\input{ap}
+\input{of}
+\input{ro}
+\input{rcr}
+%\input{xml}
 
 \end{document}
 
