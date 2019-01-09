@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  15 DEC 2018 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  9 JAN 2019 18:46
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1279,7 +1279,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6])
+[6]
+Overfull \hbox (0.13202pt too wide) in paragraph at lines 203--203
+\OT1/cmr/bx/n/14.4 VIII Al-go-rithmes pour l'inference et les Con-traintes 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
+[]  
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `_memo.toc'.
 
@@ -2878,14 +2888,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[131] (_memo.aux) )
+[131] (thd.tex [132
+
+]) (ap2.tex [133
+
+]) (aic.tex [134
+
+]) (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29925 strings out of 493323
- 728892 string characters out of 3139963
+ 29934 strings out of 493323
+ 728943 string characters out of 3139963
  938886 words of memory out of 3000000
  32918 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
@@ -2908,9 +2924,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (132 pages, 512887 bytes).
+Output written on _memo.pdf (135 pages, 514841 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
+ 518 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

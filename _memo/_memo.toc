@@ -198,3 +198,6 @@
 \contentsline {chapter}{\numberline {25}Complexit\IeC {\'e}}{129}
 \contentsline {section}{\numberline {25.1}Analyse de complexit\IeC {\'e} pour D(M1,Safe)}{130}
 \contentsline {section}{\numberline {25.2}Analyse de la complexit\IeC {\'e} pour D(M2,Forall)}{131}
+\contentsline {part}{VI\hspace {1em}Th\IeC {\'e}ories de la D\IeC {\'e}cision}{132}
+\contentsline {part}{VII\hspace {1em}Apprentissage}{133}
+\contentsline {part}{VIII\hspace {1em}Algorithmes pour l'inf\IeC {\'e}rence et les Contraintes}{134}
