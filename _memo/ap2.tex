@@ -1,2 +1,109 @@
 \part{Apprentissage}
 \pagebreak
+
+\chapter{Approche par la logique}
+Une approche simple concernant l'apprentissage de problèmes dont le domaine de sortie est boolean
+serait de passer par la logique classique pour pouvoir simplifier la compréhension du problème.\\
+\pagebreak
+\section{Espace de Version}
+Pour un problème suivant:
+
+$\begin{tabular}{cccc|c}
+\hline
+Marque & couleur & nombre de places & transmition & accaptable? \\
+\hline
+Opel & gris & 5 & manuelle & oui\\
+Ford & gris & 2 & manuelle & oui\\
+Ford & rouge & 5 & automatique & oui\\
+Renault & blue & 5 & automatique & non\\
+Opel & rouge & 2 & manuelle & non\\
+\hline
+\end{tabular}$
+
+\ \\
+D'où il suffirait d'une fonction donnant dans le domaine Boolean, associer un algorithme de classification simple:
+
+\begin{tikzpicture}
+  \begin{axis} [
+      xlabel     = X, % label x axis
+      ylabel     = Y, % label y axis
+      axis lines = left, %set the position of the axes
+      clip       = false, 
+      xmin       = 0,
+      ymin       = 0,
+    ]
+    \addplot [color=black] coordinates { (0,0)(10,10) };
+    \addplot [only marks, mark=*, color=blue] coordinates {(1,6)(6,8)(3,8) };
+    \addplot [only marks, mark=*, color=red] coordinates {(9,1)(6,3) };
+  \end{axis}
+\end{tikzpicture}
+
+Ayant comme points de couleurs $\crouge{Rouge}$ les points donnant la valeur de vérité False et les points de couleurs $\cblue{Blue}$ les point donnant la valeur de vérité True.\\
+Mais ce ne serait pas donner un gros mode de résolution à un problème qui peut être simplifié?\\
+\\
+Pour les cas suivants:
+\begin{description}
+\item[-] Faciliter la compréhension du problème
+\item[-] Comprendre pourquoi une décision donné pour une entrée
+\end{description}
+\pagebreak
+
+\subsection{convergence des données}
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (Z)                    {$\{\}$};
+  \node[state]         (B) [below left  of=Z] {$B$};
+  \node[state]         (A) [left  of=B]       {$A$};
+  \node[state]         (C) [below right of=Z] {$C$};
+  \node[state]         (D) [right of=C]       {$D$};
+  \node[state]		   (AC) [below  of=A]     {$AC$};
+  \node[state]		   (AB) [left of=AC]      {$AB$};
+  \node[state]		   (AD) [right of=AC]     {$AD$};
+  \node[state]         (BC) [right of=AD]     {$BC$};
+  \node[state]		   (BD) [right of=BC]	  {$BD$};
+  \node[state]		   (CD) [right of=BD] 	  {$CD$};
+  \node[state]		   (ABD) [below of=AD]    {$ABD$};
+  \node[state] 		   (ABC) [left of=ABD]    {$ABC$};
+  \node[state]		   (ACD) [right of=ABD]   {$ACD$};
+  \node[state]		   (BCD) [right of=ACD]   {$BCD$};
+  \node[state]	       (ABCD) [below of=ABD]  {$ABCD$};
+  
+
+  \path (Z) edge              node {} (A)
+            edge              node {} (B)
+            edge			  node {} (C)
+            edge  			  node {} (D)
+        (A) edge			  node {} (AB)
+        	edge			  node {} (AC)
+        	edge			  node {} (AD)
+        (B) edge			  node {} (AB)
+        	edge			  node {} (BC)
+        	edge 			  node {} (BD)
+        (C) edge 			  node {} (AC)
+        	edge			  node {} (BC)
+        	edge 			  node {} (CD)
+        (D) edge 			  node {} (AD)
+        	edge 			  node {} (BD)
+        	edge 			  node {} (CD)
+        (AB) edge 			  node {} (ABC)
+        	edge 			  node {} (ABD)
+        (AC) edge			  node {} (ABC)
+        	edge 			  node {} (ACD)
+        (AD) edge 			  node {} (ABD)
+        	edge			  node {} (ACD)
+        (BC) edge			  node {} (ABC)
+        	edge  			  node {} (BCD)
+        (BD) edge			  node {} (ABD)
+        	edge 			  node {} (BCD)
+        (CD) edge 			  node {} (ACD)
+        	edge			  node {} (BCD)
+        (ABC) edge 			  node {} (ABCD)
+        (ACD) edge 			  node {} (ABCD)
+        (ABD) edge 			  node {} (ABCD)
+        (BCD) edge 			  node {} (ABCD);
+\end{tikzpicture}
+
+\pagebreak
