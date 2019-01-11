@@ -1,7 +1,7 @@
 \part{Apprentissage}
 \pagebreak
 
-\chapter{Approche d'apprentissage par la logique}
+\chapter{Approche par la logique}
 Une approche simple concernant l'apprentissage de problèmes dont le domaine de sortie est boolean
 serait de passer par la logique classique pour pouvoir simplifier la compréhension du problème.\\
 \pagebreak
@@ -223,11 +223,4 @@ A & B & C & D & accaptable? \\
 \hline
 \end{tabular}$
 \end{multicols}
-
-\ \\
-Par itération et réduction du treillis on sait que $A$ et un attribut très discriminant, qui fait revenir le problème à seulement la valeur de $A$.\\
-
 \pagebreak
-\section{Set Cover Problem}
-\pagebreak
-

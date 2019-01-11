@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  9 JAN 2019 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  11 JAN 2019 17:47
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1280,12 +1280,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Overfull \hbox (0.13202pt too wide) in paragraph at lines 203--203
-\OT1/cmr/bx/n/14.4 VIII Al-go-rithmes pour l'inference et les Con-traintes 
+Overfull \hbox (0.13202pt too wide) in paragraph at lines 207--207
+[]\OT1/cmr/bx/n/14.4 VIII Al-go-rithmes pour l'inference et les Con-traintes 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--203
+Underfull \hbox (badness 10000) in paragraph at lines 207--207
 []  
  []
 
@@ -2892,18 +2892,134 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]) (ap2.tex [133
 
-]) (aic.tex [134
+]
+Chapter 26.
+[134
 
-]) (_memo.aux) )
+]
+Underfull \hbox (badness 10000) in paragraph at lines 21--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[135]
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+
+Overfull \hbox (116.09698pt too wide) in paragraph at lines 116--126
+[][] $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+
+Overfull \hbox (64.13622pt too wide) in paragraph at lines 159--169
+[][] $[]$ 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[136]
+Overfull \hbox (31.94647pt too wide) in paragraph at lines 190--200
+[][] $[]$ 
+ []
+
+
+Overfull \hbox (31.70256pt too wide) in paragraph at lines 215--225
+[][] $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[137]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[138]) (aic.tex [139
+
+]
+Chapter 27.
+[140
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[141]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+<img/aic_csp_1.jpg, id=477, 419.5675pt x 428.60126pt>
+File: img/aic_csp_1.jpg Graphic file (type jpg)
+ <use img/aic_csp_1.jpg>
+Package pdftex.def Info: img/aic_csp_1.jpg used on input line 57.
+(pdftex.def)             Requested size: 251.74243pt x 257.16273pt.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[142 <./img/aic_csp_1.jpg>] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 29934 strings out of 493323
- 728943 string characters out of 3139963
- 938886 words of memory out of 3000000
- 32918 multiletter control sequences out of 15000+200000
+ 30054 strings out of 493323
+ 730640 string characters out of 3139963
+ 963076 words of memory out of 3000000
+ 33036 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2924,9 +3040,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (135 pages, 514841 bytes).
+Output written on _memo.pdf (143 pages, 568596 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
+ 544 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
