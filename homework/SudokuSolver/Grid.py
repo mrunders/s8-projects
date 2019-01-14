@@ -1,17 +1,9 @@
 from Case import *
 from Solver import *
 
-DEFAULT_GRID = [None,7,None,None,4,None,None,6,None,
-                None,None,None,5,2,None,None,4,None,
-                None,None,8,6,None,None,9,None,None,
-                2,9,None,7,None,None,None,None,1,
-                None,1,5,None,None,8,3,None,None,
-                3,None,None,None,None,2,4,None,7,
-                6,3,None,1,None,None,2,None,None,
-                4,None,None,None,None,5,8,None,None,
-                None,None,1,None,9,None,None,None,None]
-
 class Grille():
+
+    solver_heuristique = SolverUtils.SOLVE
 
     def __init__(self, grid):
 
@@ -46,13 +38,31 @@ class Grille():
 
     def solve_find_cell_possible(self):
 
-        solver = Solver()
-        for posy in range(9):
-            for posx in range(9):
-                if self.get(posx, posy).is_tmp() or self.get(posx, posy).is_none():
-                    possible = solver.find_cell_possible(self, posx, posy)
-                    self.get(posx, posy).notify(possible)
+        if self.solver_heuristique == SolverUtils.SOLVE:
+            solver = Solver()
+            for posy in range(9):
+                for posx in range(9):
+                    if self.get(posx, posy).is_tmp() or self.get(posx, posy).is_none():
+                        possible = solver.find_cell_possible(self, posx, posy)
+                        self.get(posx, posy).notify(possible)
+
+        elif self.solver_heuristique == SolverUtils.GRID_REDUCE:
+            for posy in range(0,9,3):
+                for posx in range(0,9,3):
+                    Reducter.grid_elements(self, posx, posy)
+        
+        else:
+            for pos in range(9):
+
+                if self.solver_heuristique == SolverUtils.HORIZONTAL_REDUCE:
+                    Reducter.horizontal_elements(self, pos)
+                elif self.solver_heuristique == SolverUtils.vertical_elements:
+                    Reducter.vertical_elements(self, pos)
+
+        self.solver_heuristique = ( self.solver_heuristique + 1 ) % SolverUtils.SOLVER_SIZE
 
     def validation(self):
         return Validator.validation(grid=self)
-                    
+
+    def getState(self):
+        return SolverUtils.solver_state(self.solver_heuristique)

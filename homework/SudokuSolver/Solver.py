@@ -2,6 +2,46 @@
 from Grid import *
 from Case import *
 
+class SolverUtils():
+
+    SOLVE = 0
+    HORIZONTAL_REDUCE = 1
+    VERTICAL_REDUCE = 2
+    GRID_REDUCE = 3
+    SOLVER_SIZE = 4
+
+    SOLVER_STATES = ["Solve", "Horizontal reduce", "Vertical reduce", "Grid reduce"]
+
+    @staticmethod
+    def solver_state(state):
+        return SolverUtils.SOLVER_STATES[state]
+
+    @staticmethod
+    def unpack_list_of_list(array):
+        return [item for sublist in array for item in sublist]
+
+    @staticmethod
+    def get_grid_elements(grid, ind_grid_x, ind_grid_y):
+
+        multiplier = 0 if ind_grid_y < 3 else 1 if ind_grid_y < 6 else 2
+
+        if ind_grid_x < 3:
+            tmp = grid.get_sequence(map(lambda x: x + 3 *multiplier, [0,1,2,9,10,11,18,19,20]))
+        elif ind_grid_x < 6:
+            tmp = grid.get_sequence(map(lambda x: x + 3 *multiplier, [27,28,29,36,37,38,45,46,47]))
+        else:
+            tmp = grid.get_sequence(map(lambda x: x + 3 * multiplier, [54,55,56,63,64,65,72,73,74]))
+
+        return tmp
+
+    @staticmethod
+    def horizontal_elements(grid, ind_grid_y):
+        return grid.get_sequence(map(lambda x: x + 9 * ind_grid_y, range(9)))
+
+    @staticmethod
+    def vertical_elements(grid, ind_grid_x):
+        return grid.get_sequence(map(lambda x: x + ind_grid_x, [0,9,18,27,36,45,54,63,72]))
+
 class Solver():
 
     def __init__(self):
@@ -28,17 +68,7 @@ class Solver():
         return tmp
 
     def get_grid_line(self, grid, posx, posy):
-        tmp = list()
-        multiplier = 0 if posy < 3 else 1 if posy < 6 else 2
-
-        if posx < 3:
-            tmp = grid.get_sequence(map(lambda x: x + 3 *multiplier, [0,1,2,9,10,11,18,19,20]))
-        elif posx < 6:
-            tmp = grid.get_sequence(map(lambda x: x + 3 *multiplier, [27,28,29,36,37,38,45,46,47]))
-        else:
-            tmp = grid.get_sequence(map(lambda x: x + 3 * multiplier, [54,55,56,63,64,65,72,73,74]))
-
-        return map(lambda x: x.get(), filter(lambda x: x.is_constante(), tmp))
+        return map(lambda x: x.get(), filter(lambda x: x.is_constante(), SolverUtils.get_grid_elements(grid, posx, posy)))
 
     def find_cell_possible(self, grid, posx, posy):
         cell = grid.get(posx, posy)
@@ -49,6 +79,44 @@ class Solver():
         notPossible = set(notPossibletmp)
 
         return filter(lambda x: not x in notPossible , range(1,10))
+
+class Reducter():
+
+    @staticmethod
+    def reduct(picked_elements):
+
+        elements = filter(lambda x: x.is_tmp(), picked_elements)
+
+        if len(elements) > 1:
+            elts = map(lambda x: x.get_all(), elements)
+            all_elts = SolverUtils.unpack_list_of_list(elts)
+
+            tmp_dict = dict()
+            for e in set(all_elts):
+                if all_elts.count(e) == 1:
+                    tmp = filter(lambda elt : e in elt.get_all(), elements)
+                    if len(tmp) == 1:
+                        if tmp[0] in tmp_dict:
+                            tmp_dict[tmp[0]].append(e)
+                        else :
+                            tmp_dict[tmp[0]] = [e]
+            
+            if len(tmp_dict) > 0:
+                for key, values in tmp_dict.items():
+                    if len(values) == 1:
+                        key.notify(values)
+
+    @staticmethod
+    def grid_elements(grid, ind_grid_x, ind_grid_y):
+        Reducter.reduct(SolverUtils.get_grid_elements(grid, ind_grid_x, ind_grid_y))
+
+    @staticmethod
+    def horizontal_elements(grid, ind_grid_y):
+        Reducter.reduct(SolverUtils.horizontal_elements(grid, ind_grid_y))
+
+    @staticmethod
+    def vertical_elements(grid, ind_grid_x):
+        Reducter.reduct(SolverUtils.vertical_elements(grid, ind_grid_x))  
 
 
 class Validator():

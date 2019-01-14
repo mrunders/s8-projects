@@ -73,3 +73,6 @@ class CaseGui(Frame, object):
             self.label.config(bg="#505050", text=self.case)
         else:
             self.label.config(bg="#FFFFFF", text=self.case)
+
+    def swap(self, new_case):
+        self.case = new_case
