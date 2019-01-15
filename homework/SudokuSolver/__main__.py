@@ -62,7 +62,7 @@ class SudokuSolver(Frame, object):
 
     def __init__(self, file_descriptor):
         self.fenetre = Tk()
-        super(SudokuSolver, self).__init__(self.fenetre)
+        super(SudokuSolver, self).__init__(self.fenetre, padx=50)
 
         self.fenetre.title('Sudoku Solver Project')
         self.fenetre.geometry("1600x800")
@@ -72,17 +72,18 @@ class SudokuSolver(Frame, object):
         self.current_grid = GrilleGui(self, file_descriptor)
 
         self.next_state = Button(self.fenetre, text="next state", command=self.solve_find_cell_possible)
-        self.validation = Button(self.fenetre, text="Validate", command=self.validation)
-        self.state = Label(self.fenetre, text="WAITING")
+        self.is_solved = Label(self.fenetre, text="Is Solved?: %10s" % (" "))
+        self.state = Label(self.fenetre, text="Current heristique %30s" % ("WAITING"))
 
         self.pack()
 
-        self.state.pack(side=LEFT)
         self.previous_grid.pack(side=LEFT)
         self.current_grid.pack(side=RIGHT)
 
-        self.next_state.pack()
-        self.validation.pack()
+        self.state.pack(side=TOP)
+        self.next_state.pack(side=RIGHT)
+        self.is_solved.pack(side=BOTTOM)
+
         self.fenetre.mainloop()
 
     def solve_find_cell_possible(self):
@@ -90,8 +91,9 @@ class SudokuSolver(Frame, object):
         self.state.config(text="Current heristique %30s" % (self.current_grid.getState()))
         self.previous_grid.swapGrid(self.current_grid.getGrid().get())
         self.current_grid.solve_find_cell_possible()
+        self.is_solved.config(text="Is Solved?: %10s" % (self.validation()))
 
     def validation(self):
-        print(self.current_grid.validation())
+        return self.current_grid.validation()
 
-g = SudokuSolver("sudoku_hard.txt")
+g = SudokuSolver("sudoku_evil.txt")

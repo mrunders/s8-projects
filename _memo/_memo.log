@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  11 JAN 2019 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  15 JAN 2019 10:43
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1115,21 +1115,39 @@ s
 \f@nch@O@olf=\skip61
 \f@nch@O@orf=\skip62
 )
+(E:\ProgramFiles\MikTex2.9\tex\latex\caption\caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 38.
-
+(E:\ProgramFiles\MikTex2.9\tex\latex\caption\caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen286
+\captionmargin@=\dimen287
+\captionwidth=\dimen288
+\caption@tempdima=\dimen289
+\caption@indent=\dimen290
+\caption@parindent=\dimen291
+\caption@hangindent=\dimen292
+)
+\c@caption@flags=\count178
+\c@ContinuedFloat=\count179
+Package caption Info: listings package is loaded.
+)
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 39.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 40.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 41.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 42.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1138,30 +1156,30 @@ LaTeX Warning: Unused global option(s):
 (_memo.aux)
 \openout1 = `_memo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
+LaTeX Font Info:    ... okay on input line 168.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count178
-\scratchdimen=\dimen286
+\scratchcounter=\count180
+\scratchdimen=\dimen293
 \scratchbox=\box92
-\nofMPsegments=\count179
-\nofMParguments=\count180
+\nofMPsegments=\count181
+\nofMParguments=\count182
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count181
-\MPscratchDim=\dimen287
-\MPnumerator=\count182
-\makeMPintoPDFobject=\count183
+\MPscratchCnt=\count183
+\MPscratchDim=\dimen294
+\MPnumerator=\count184
+\makeMPintoPDFobject=\count185
 \everyMPtoPDFconversion=\toks53
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
@@ -1208,12 +1226,14 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count184
+\c@lstlisting=\count186
 
 ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1280,12 +1300,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Overfull \hbox (0.13202pt too wide) in paragraph at lines 207--207
+Overfull \hbox (0.13202pt too wide) in paragraph at lines 208--208
 []\OT1/cmr/bx/n/14.4 VIII Al-go-rithmes pour l'inference et les Con-traintes 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 208--208
 []  
  []
 
@@ -2890,11 +2910,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [131] (thd.tex [132
 
-]) (ap2.tex [133
-
 ]
 Chapter 26.
-[134
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--16
+
+ []
+
+[133
+
+]) (ap2.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[134] [135
+
+]
+Chapter 27.
+[136
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 21--41
@@ -2912,7 +2953,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[135]
+[137]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -2938,7 +2979,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[136]
+[138]
 Overfull \hbox (31.94647pt too wide) in paragraph at lines 190--200
 [][] $[]$ 
  []
@@ -2959,18 +3000,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[137]
+[139]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[138]) (aic.tex [139
+[140]) (aic.tex [141
 
 ]
-Chapter 27.
-[140
+Chapter 28.
+[142
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -2988,7 +3029,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[141]
+[143]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -2998,7 +3039,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<img/aic_csp_1.jpg, id=477, 419.5675pt x 428.60126pt>
+<img/aic_csp_1.jpg, id=483, 419.5675pt x 428.60126pt>
 File: img/aic_csp_1.jpg Graphic file (type jpg)
  <use img/aic_csp_1.jpg>
 Package pdftex.def Info: img/aic_csp_1.jpg used on input line 57.
@@ -3010,16 +3051,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[142 <./img/aic_csp_1.jpg>] (_memo.aux) )
+[144 <./img/aic_csp_1.jpg>] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 30054 strings out of 493323
- 730640 string characters out of 3139963
- 963076 words of memory out of 3000000
- 33036 multiletter control sequences out of 15000+200000
+ 31151 strings out of 493323
+ 750457 string characters out of 3139963
+ 974506 words of memory out of 3000000
+ 34127 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3040,9 +3081,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (143 pages, 568596 bytes).
+Output written on _memo.pdf (145 pages, 571405 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
+ 552 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
