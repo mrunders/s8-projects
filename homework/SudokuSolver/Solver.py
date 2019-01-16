@@ -1,6 +1,7 @@
 
 from Grid import *
 from Case import *
+from copy import copy, deepcopy
 
 class SolverUtils():
 
@@ -163,5 +164,24 @@ class Validator():
 
     @staticmethod
     def validation(grid):
-        return Validator.horizontal_validation(grid) and Validator.vertical_validation(grid) and Validator.grid_validation(grid)
+        return Validator.horizontal_validation(grid) and Validator.vertical_validation(grid) ## and Validator.grid_validation(grid)
                
+class Prediction():
+
+    def __init__(self, original_grid, test_cell):
+
+        self.test_cell_copy = deepcopy(test_cell)
+        self.original_grid_copy = deepcopy(original_grid)
+        self.selected_indice_prediction = -1
+        self.test_cell = test_cell
+
+    def next_prediction_test(self):
+        self.selected_indice_prediction += 1
+        if self.selected_indice_prediction == 2:
+            return False
+        else:
+            self.test_cell.notify([self.test_cell_copy.get_all()[self.selected_indice_prediction]], is_test=True)
+            return True
+
+    def get_backup(self):
+        return self.original_grid_copy

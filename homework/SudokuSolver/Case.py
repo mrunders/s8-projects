@@ -9,7 +9,8 @@ class Case():
 
     def __init__(self, indice):
 
-        self.test_node = False
+        self.change_before_commit = False
+        self.is_prediction_test_cell = False
 
         if indice == None:
             self.indice = list()
@@ -30,10 +31,13 @@ class Case():
         return len(self.indice) == 0
 
     def is_constante(self):
-        return len(self.indice) == 1 and not self.test_node
+        return len(self.indice) == 1 and not self.change_before_commit and not self.is_prediction_test_cell
 
     def is_tmp(self):
         return len(self.indice) > 1
+
+    def is_prediction_test(self):
+        return self.is_prediction_test_cell
 
     def __str__(self):
         if self.is_none():
@@ -41,16 +45,17 @@ class Case():
 
         return str(self.indice)[1:-1]
 
-    def notify(self, possible):
+    def notify(self, possible, is_test=False):
 
         if self.is_constante():
             return
 
-        self.test_node = True
+        self.change_before_commit = True
         self.indice = possible
+        self.is_prediction_test_cell = is_test
 
     def commit_changes(self):
-        self.test_node = False
+        self.change_before_commit = False
 
 class CaseGui(Frame, object):
 
@@ -71,6 +76,8 @@ class CaseGui(Frame, object):
             self.label.config(bg="#008000", text=self.case)
         elif self.case.is_tmp():
             self.label.config(bg="#505050", text=self.case)
+        elif self.case.is_prediction_test():
+            self.label.config(bg="#FF4500", text=self.case)
         else:
             self.label.config(bg="#FFFFFF", text=self.case)
 

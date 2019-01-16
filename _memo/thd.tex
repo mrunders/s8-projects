@@ -8,7 +8,7 @@ La problématique est celle d'un agent qui doit prendre la meilleure décision, 
 Soient A = \{$a_1$, $...$, $a_k$ \} les actes possibles\\
 Soient S = \{$s_1$, $...$, $s_m$ \} les états du mondes\\
 Soient C = \{$c_1$, $...$, $c_n$ \} les conséquences\\
-On n'a donc $A x S \rightarrow C$\\
+On n'a donc $A $ x $ S \rightarrow C$\\
 Le but est de trouver le $a_i$ qui permet d'obtenir les meilleurs conséquences $c_j$.\\
 \\
 On distingue 3 type de théories de la décision:
@@ -20,7 +20,6 @@ On distingue 3 type de théories de la décision:
 
 \pagebreak
 
-\begin{table}
 \begin{center}
 $\begin{tabular}{c|c}
 train & voiture\\
@@ -28,10 +27,10 @@ train & voiture\\
 10 & 20 \\
 \end{tabular}$
 \end{center}
-\caption{Décision sous certitude} 
-\end{table}
-
-\begin{table}
+\begin{center}
+Décision sous certitude
+\end{center}
+\vspace{1.5cm}
 \begin{center}
 $\begin{tabular}{c|cc}
 \  & train & voiture\\
@@ -40,10 +39,10 @@ Normal & 10 & 20\\
 Bouchon & 10 & 0 \\
 \end{tabular}$
 \end{center}
-\caption{Décision dans incertitude} 
-\end{table}
-
-\begin{table}
+\begin{center}
+Décision dans incertitude
+\end{center}
+\vspace{1.5cm}
 \begin{center}
 $\begin{tabular}{c|c|cc}
 \  & \  & train & voiture\\
@@ -52,5 +51,236 @@ Normal & 80\% & 10 & 20\\
 Bouchon & 20\% & 10 & 0 \\
 \end{tabular}$
 \end{center}
-\caption{Décision dans le risque} 
-\end{table}
+\begin{center}
+Décision dans le risque
+\end{center}
+
+\pagebreak
+\section{Décision dans l'incertain}
+
+\subsection{Critère de Laplace}
+\begin{description}
+\item[] Choisir l'acte dont la conséquence moyenne est la meilleure.
+\item[] $argmax_{a \in A}$ $\sum_{s \in S} \frac{1}{|A|} * u(a(s))$
+\end{description}
+
+\subsection{Critère de Wald}
+\begin{description}
+\item[] Choisir l'acte dont la pire conséquence est la meilleure (maximum).
+\item[] $argmax_{a \in A}$ $min_{s \in S}$ $u(a(s))$
+\end{description}
+
+\subsection{Critère d'Hurwicz}
+\begin{description}
+\item[] Meilleur compromis entre meilleure et pire conséquences ($a \in [0,1]$)
+\item[] $argmax_{a \in A}$ $( \alpha * min_{s \in S}$ $u(a(s))) + (( 1 - \alpha ) * u(a(s)))$
+\end{description}
+
+\subsection{Min Max Regret}
+\begin{description}
+\item[] Choisir l'acte dont on regrettera le moins les conséquences
+\item[] $argmax_{a \in A}$ $max_{s \in S}$ $R(a,s)$ avec $R(a,s) = max_{b \in A} u(b(s)) - u(a(s))$
+\end{description}
+
+\subsection{Example}
+
+\begin{tabular}{c|ccc|cccc}
+\hline
+Actes & Etats & du & monde & $ $ & $ $ & $ $ & $ $\\
+\hline
+$ $  & $s_1$ & $s_2$ & $s_3$ & $Laplace$ & $Wald$ & $Hurwicz_{.5}$ & $MinMax Regret$ \\
+\hline
+$a_1$ & $55_{21}$ & $10_{12}$ & $13_{13}$ & $26$ & $10$ & $34$ & $\crouge{21}$\\
+$a_2$ & $40_{36}$ & $19_3$ & $22_4$ & $\crouge{27}$ & $19$ & $31$ & $36$\\
+$a_3$ & $30_{48}$ & $20_0$ & $26_0$ & $26$ & $\crouge{22}$ & $28$ & $46$\\
+$a_4$ & $76_0$ & $2_{20}$ & $0_{26}$ & $26$ & $0$ & $\crouge{38}$ & $26$\\
+\hline
+\end{tabular}
+
+\pagebreak
+
+\subsection{Différents cadres d'incertitude}
+\begin{description}
+\item[Décision dans le risque (incertitude probabiliste)]: MinMax Regret
+\item[Décision dans l'incertain (incertitude qualitative)]: Prade
+\item[Décision sous incertitude stricte]: Wald, Hurwicz
+\item[Décision sous ignorance total]: Konieczny, Marquis
+\end{description}
+
+\pagebreak
+\chapter{Théorie des jeux}
+\pagebreak
+
+\section{Jeux sous forme stratégique}
+
+Un jeu sous forme stratégique est défini par:
+\begin{description}
+\item[] un ensemble $N$ = $\{1,....,n\}$ de joueurs
+\item[] pour chaque joueurs $i$ un ensemble de stratégies $S_i$ = $\{s_1,.....,S_{n_i}\}$
+\item[] pour chaque joueurs $i$ une fonction de valuation $u_i : S_1$ x ... x $S_n \rightarrow R_i$ qui pour un ensemble de stratégies associe les gains du joueur $i$
+\end{description}
+
+On notera:\\
+\begin{description}
+\item[$s$] un profil de stratégies $\{s_1,...,s_n\}$ où $\forall i s_i \in S_i$
+\item[$s_{-i}$] le profil $s$ des stratégies autre que celle du joueurs $i$
+\item[$S$] l'espace des stratégies 
+\end{description}
+
+\subsection{utilité}
+On appelle utilité la mesure de chaque situation aux yeux de l'agent, celle ci n'est si une mesure du gain matériel, monétaire, etc, mais une mesure subjective du contentement de l'agent.
+\pagebreak
+\subsection{jeux sous forme extensive et stratégique}
+
+\begin{center}
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 4,2 & 3,1\\
+y & 2,5 & 9,0\\
+\end{tabular}
+\end{center}
+\begin{center}
+Forme stratégique
+\end{center}
+\ \\
+x et y étant les choix représenté par le joueur 1.\\
+u et v étant les choix représenté par le joueur 2.\\
+Si le joueur 1 choisis x et le joueur 2 v alors le joueur 1 gagnera 3 et le joueur 2 gagnera 1.\\
+
+\begin{center}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (A)                    {$A$};
+  \node[state]         (B) [below left of=A]  {$B$};
+  \node[state]         (C) [below right of=A] {$C$};
+  \node[state]         (XU)[below left of=B]  {$(4,2)$};
+  \node[state]         (XV) [below of=B]      {$(3,1)$};
+  \node[state]		   (YU) [below of=C]      {$(2,5)$};
+  \node[state]    	   (YV)[below right of=C] {$(9,0)$};
+
+  \path (A) edge 			  node {x} (B)
+  			edge			  node {y} (C)
+  		(B) edge 			  node {u} (XU)
+  		    edge 			  node {v} (XV)
+  		(C) edge 			  node {u} (YU)
+  		    edge			  node {v} (YV);
+\end{tikzpicture}
+\end{center}
+\begin{center}
+Forme Extensive
+\end{center}
+
+\pagebreak
+\subsection{Élimination de stratégies dominées}
+
+Une stratégie $s_i$ est (strictement) dominé pour le joueur $i$ si il existe une stratégie $s_i'$ telle que pour tout profil $s_{-i}$ 
+\begin{description}
+\item[] $u_i(s_i', s_{-i}) > u_i ( s_i, s_{-i})$
+\end{description}
+
+Une stratégie faiblement dominé est sous la forme:
+\begin{description}
+\item[] $u_i(s_i', s_{-i}) \geq u_i ( s_i, s_{-i})$
+\end{description}
+
+\begin{multicols}{3}
+[]
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 4,2 & 3,1\\
+y & 2,5 & 9,0\\
+\end{tabular}
+
+\begin{tabular}{c|cc}
+$ $ & u & $\crouge{v}$\\
+\hline
+x & 4,2 & $\crouge{3,1}$\\
+y & 2,5 & $\crouge{9,0}$\\
+\end{tabular}
+
+\begin{tabular}{c|cc}
+$ $ & u & $\crouge{v}$\\
+\hline
+x & 4,2 & $\crouge{3,1}$\\
+$\crouge{y}$ & $\crouge{2,5}$ & $\crouge{9,0}$\\
+\end{tabular}
+\end{multicols}
+
+Le profil (4,2) est sélectionné donc Joueur 1 gagnera 4 et Joueur 2 gagnera 2.\\
+
+\subsection{Équilibre de Nash}
+
+Un jeu peut avoir plusieurs ou aucun équilibre de Nash.\\
+\begin{tabular}{c|ccc}
+$ $ & u & v & w\\
+\hline
+x & 3,0 & 0,2 & 0,3\\
+y & 2,0 & $\crouge{1,1}$ & 2,0\\
+z & 0,3 & 0,2 & 3,0\\
+\hline
+\end{tabular}
+\ \\\\
+Deux équilibre de Nash sont interchangeable si la permutation des termes gauche garde l'équilibre de Nash actif.\\
+\pagebreak
+\subsection{Critère de Pareto}
+
+\begin{multicols}{2}
+[Soit la table:]
+
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 4,4 & 3,1\\
+y & 2,3 & 7,5\\
+\end{tabular}
+\vspace{1.5cm}
+
+\begin{description}
+\item[] Pour u, x est meilleur que y
+\item[] Pour v, y est meilleur que x
+\item[] Pour x, u est meilleur que v
+\item[] Pour y, v est meilleur que u
+\end{description}
+
+\end{multicols}
+
+\begin{multicols}{2}
+[Un profil s domine un profil s' dans le sens de Pareto si pour tout les joueurs s est au moins meilleur que s' et que pour un joueur s est meilleur strictement que s'.\\
+Un profil s domine strictement un profil s' dans le sens de Pareto si pour tout les joueurs s est meilleur que s'.\\
+]
+
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 4,4 & $\crouge{3,1}$\\
+y & $\crouge{2,3}$ & 7,5\\
+\end{tabular}
+
+\begin{description}
+\item[] (x,u) 4,4
+\item[] (y,v) 7,5 est meilleur
+\end{description}
+
+\end{multicols}
+
+\subsection{Niveau de sécurité}
+Pour un tableau:
+
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 9,9 & 0,8\\
+y & 8,0 & 7,7\\
+\end{tabular}
+\ \\\\
+Dans le cas d'un jeu avec des joueurs non rationnel, l'un des deux joueur peut duper l'autre et ainsi gagner 8 et faire gagner 0 à l'autre joueur. \\\\
+On défini le niveau de sécurité d'une stratégie $s_i$ pour le joueur i comme le gain minimum que peut apporter cette stratégie quel que soit le choix des autres joueurs.\\
+On défini le niveau de sécurité d'un joueur i comme le niveau de sécurité maximal des stratégies de i.\\
+
+Le meilleur choix serait de prendre (y,v) pour assurer un minimum de gain pour chaque personnes.\\
+
+\pagebreak
