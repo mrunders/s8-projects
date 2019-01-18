@@ -228,6 +228,44 @@ A & B & C & D & accaptable? \\
 Par itération et réduction du treillis on sait que $A$ et un attribut très discriminant, qui fait revenir le problème à seulement la valeur de $A$.\\
 
 \pagebreak
-\section{Set Cover Problem}
+\chapter{Apprentissage statistique}
+
+Dans ce chapitre nous nous intéressons à des fonctions $h \in H$ à qui pour une liste $X$ à $d$ dimension de domaine réelle associe un label $y$ dans le domaine $[-1,+1]$. Un $x \in X$ peut être une couleur, un réelle, une chose négatif ou encore une mesure quelconque.
+\pagebreak
+
+\section{Classification binaire réalisable}
+
+Chaque entrée $x \in X$ est tirée aléatoirement et indépendamment selon une distribution de probabilité $d$ qui est fixée mais inconnue de l'apprenant.
+\\
+Chaque sortie $y \in Y$ est calculé via la fonction cible $h* \in H$ qui est inconnue de l'apprenant.
+
+\subsection{Erreur de généralisation et d'entrainement}
+
+La performance d'une hypothèse $h \in H$ est calculé par le nombre d'erreurs que la fonction peut commettre en probabilité selon $d$:
+\begin{description}
+\item[] $l_d(h)$ = $P_{x~d}[h(x) \neq h*(x)]$
+\end{description}
+
+En pratique, l'apprenant n'a accès qu'a une petite partit nommé $S \in X$ (qui peut contenir des doublons) dont les éléments dont générés aléatoirement via $d$, Le risque empirique de $h$ par rapport à $S$ est donné par :
+\begin{description}
+\item[] $l_s(h)$ = $\frac{1}{|S|} |\{x \in S : h(x) \neq h*(x)\}|$
+\end{description}
+Le nombre d'erreur moyen que fait $h$ sur $S$\\
+
+\subsection{Processus d'apprentissage}
+
+Le processus d'apprentissage n'est pas si différent que dans la première partie du Memo:\\
+
+Soit une distribution $d$, chaque requêtes vers $d$ va choisir un échantillons aléatoirement pour crée un ensemble $S$ qui va servir à faire apprendre $h$ lors de la phase d'apprentissage, tester lors de la phase de teste et retenir les erreur vies les fonction d'analyse.\\
+
+\subsection{Incertitude de l'apprentissage}
+\subsection{Modèle PAC réalisable}
+\subsection{Classes d'hypothèses finies}
+\subsection{Minimisation des erreurs empirique}
+\pagebreak
+\section{Classification binaire agnostique}
+\subsection{Régression agnostique}
+
+
 \pagebreak
 
