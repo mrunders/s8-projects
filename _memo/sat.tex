@@ -1,0 +1,94 @@
+\part{Problème de satisfaction SAT}
+\pagebreak
+
+\chapter{définitions de base}
+\pagebreak
+
+\section{Transformation NNF, CNF}
+
+Une forme NNF (Negative Normal Forme) est une formule donné avec uniquement les connecteurs logique $\wedge \vee \neg$.\\
+
+\begin{description}
+\item[] en remplaçant les $\rightarrow$ et $\leftrightarrow$: \begin{description}
+\item[] $\phi \rightarrow \psi$ donne $\neg \phi \vee \psi$
+\item[] $\phi \leftrightarrow \psi$ donne $(\neg \phi \vee \psi) \wedge ( \phi \vee \neg \psi)$
+\end{description}
+\item[] descendre les négations au niveau atomique: \begin{description}
+\item[] $\neg (\phi \wedge \psi)$ donne $\neg \phi \vee \neg \psi$
+\item[] $\neg (\phi \vee \psi)$ donne $\neg \phi \wedge \neg \psi$
+\item[] $\neg \neg \phi$ donne $\phi$
+\end{description}
+\end{description}
+
+Une forme CNF (Normal Conjonctive Forme) est une conjonction de disjonctions de littéraux:
+\begin{description}
+\item[exemple]: $(\neg A \vee B) \wedge (\neg C \vee B \vee D) \wedge (A \vee B)$
+\end{description}
+
+\subsection{Transformation glouton}
+
+Toutes formules peut être réduite à CNF en appliquant récursivement la lois de DeMorgan:
+\begin{description}
+\item[] $(\phi \wedge \psi) \vee \gamma$ donne $(\phi \vee \gamma) \wedge (\psi \vee \gamma)$
+\end{description}
+
+Mais rarement utilisé car la complexité est exponentielle dans le pire des cas.\\
+
+\pagebreak
+\subsection{Transformation via ajout de variables}
+
+Soit la formule suivante:
+\begin{description}
+\item[] $\neg((\neg(a \vee b)) \leftrightarrow ( c\rightarrow d))\rightarrow((e1\wedge e2\wedge e3) \vee (f1 \wedge f2 \wedge f3)\vee (g1 \wedge g2 \wedge g3))$
+\end{description}
+
+réduire en NNF:
+
+\begin{description}
+\item[] $((a \vee b \vee \neg c \vee d) \wedge ((c \wedge \neg d) \vee (\neg a \wedge \neg b)) \vee ((e1 \wedge e2 \wedge e3) \vee (f1 \wedge f2 \wedge f3)\vee(g1 \wedge g2 \wedge g3))$
+\end{description}
+
+Appliquer la formule:\\
+$((a \vee b \vee \neg c \vee d) \wedge (\crouge{(c \wedge \neg d)} \vee \cblue{(\neg a \wedge \neg b)}) \vee (\corange{(e1 \wedge e2 \wedge e3)} \vee \cviolet{(f1 \wedge f2 \wedge f3)}\vee \cvert{(g1 \wedge g2 \wedge g3)})$\\
+
+\begin{description}
+\item[$\crouge{i}$] $\leftrightarrow \crouge{(c \wedge \neg d)}$
+\item[$\cblue{j}$] $\leftrightarrow \cblue{(\neg a \wedge \neg b)}$
+\item[$\corange{k}$] $\leftrightarrow \corange{(e1 \wedge e2 \wedge e3)}$
+\item[$\cviolet{l}$] $\leftrightarrow \cviolet{(f1 \wedge f2 \wedge f3)}$
+\item[$\cvert{m}$] $\leftrightarrow \cvert{(g1 \wedge g2 \wedge g3)}$
+\end{description}
+
+donne:\\
+$(\cgris{(a \vee b \vee \neg c \vee d) \wedge (\crouge{i} \vee \cblue{j})} \vee (\corange{k} \vee \cviolet{l}\vee \cvert{m})$\\
+
+\begin{description}
+\item[$\cgris{n}$] $\leftrightarrow \cgris{(a \vee b \vee \neg c \vee d) \wedge (\crouge{i} \vee \cblue{j})}$
+\end{description}
+
+ce qui donne:\\
+$(\cgris{n} \vee \corange{k} \vee \cviolet{l}\vee \cvert{m})$\\
+
+\pagebreak
+\ \\
+Après distribution des nouvelles variables:\\
+\ \\
+$(\cgris{n} \vee \corange{k} \vee \cviolet{l}\vee \cvert{m}) \wedge $\\
+$\crouge{i} \leftrightarrow \crouge{(c \wedge \neg d)} \wedge $\\ 
+$\cblue{j} \leftrightarrow \cblue{(\neg a \wedge \neg b)} \wedge $\\
+$\corange{k} \leftrightarrow \corange{(e1 \wedge e2 \wedge e3)} \wedge $\\
+$\cviolet{l} \leftrightarrow \cviolet{(f1 \wedge f2 \wedge f3)} \wedge $\\
+$\cvert{m} \leftrightarrow \cvert{(g1 \wedge g2 \wedge g3)} \wedge $\\
+$\cgris{n} \leftrightarrow \cgris{(a \vee b \vee \neg c \vee d) \wedge (\crouge{i} \vee \cblue{j}})$
+\\
+
+donne la formule CNF suivante:\\
+$((n \vee k \vee l \vee m)\wedge (\neg i \vee c)\wedge (\neg i \vee \neg d)\wedge$\\
+$(\neg j \vee \neg a)\wedge(\neg j \vee \neg b)\wedge(\neg k \vee e1)\wedge(\neg k \vee e2)\wedge(\neg k \vee e3)\wedge$\\
+$(\neg l \vee f1)\wedge(\neg l \vee f2)\wedge\neg l \vee f3)\wedge(\neg m \vee g1)\wedge(\neg m \vee g2)\wedge\neg m \vee g3)\wedge$\\
+$(\neg n \vee a \vee b \vee \neg c \ vee d)\wedge(\neg n \vee i \vee j)$\\
+
+
+
+
+\pagebreak

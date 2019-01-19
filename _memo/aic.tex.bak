@@ -1,7 +1,7 @@
 \part{Algorithmes pour l'inférence et les Contraintes}
 \pagebreak
 
-\chapter{Constraint satisfaction problem}
+\chapter{Problème de satisfaction de contraintes CSP}
 \pagebreak
 
 Une Solution d'un problème CSP est une assignation d'une valeur à chaque variables de P tel que toutes les contraintes de P soit satisfaite.\\
@@ -56,4 +56,25 @@ Représenter toutes variables avec des ensemble contenant toutes les valeur de l
 \begin{center}
 \includegraphics[scale=0.6]{img/aic_csp_1.jpg} 
 \end{center}
+\pagebreak
+
+\chapter{Problème de satisfaction SAT}
+\pagebreak
+
+\section{Transformation NNF, CNF}
+
+Une forme NNF (Negative Normal Forme) est une formule donné avec uniquement les connecteurs logique $\wedge \vee \neg$.\\
+
+\begin{description}
+\item[] en remplaçant les $\rightarrow$ et $\leftrightarrow$: \begin{description}
+\item[] $\phi \rightarrow \psi$ donne $\neg \phi \vee \psi$
+\item[] $\phi \leftrightarrow \psi$ donne $(\neg \phi \vee \psi) \wedge ( \phi \vee \neg \psi)$
+\end{description}
+\item[] descendre les négations au niveau atomique: \begin{description}
+\item[] $\neg (\phi \wedge \psi)$ donne $\neg \phi \vee \neg \psi$
+\item[] $\neg (\phi \vee \psi)$ donne $\neg \phi \wedge \neg \psi$
+\item[] $\neg \neg \phi$ donne $\phi$
+\end{description}
+\end{description}
+
 \pagebreak

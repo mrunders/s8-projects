@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  17 JAN 2019 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  19 JAN 2019 10:44
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1306,17 +1306,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-Overfull \hbox (0.13202pt too wide) in paragraph at lines 232--232
-[]\OT1/cmr/bx/n/14.4 VIII Al-go-rithmes pour l'inference et les Con-traintes 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-[]  
- []
-
-)
+[7])
 \tf@toc=\write4
 \openout4 = `_memo.toc'.
 
@@ -3145,7 +3135,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152]) (aic.tex [153
+[152]) (csp.tex [153
 
 ]
 Chapter 30.
@@ -3182,23 +3172,87 @@ File: img/aic_csp_1.jpg Graphic file (type jpg)
  <use img/aic_csp_1.jpg>
 Package pdftex.def Info: img/aic_csp_1.jpg used on input line 57.
 (pdftex.def)             Requested size: 251.74243pt x 257.16273pt.
-)
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[156 <./img/aic_csp_1.jpg>] (_memo.aux) )
+[156 <./img/aic_csp_1.jpg>]) (sat.tex [157
+
+]
+Chapter 31.
+[158
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[159]
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[160]
+Underfull \hbox (badness 10000) in paragraph at lines 73--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--84
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 85--206
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[161] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31172 strings out of 493323
- 750690 string characters out of 3139963
+ 31176 strings out of 493323
+ 750715 string characters out of 3139963
  973931 words of memory out of 3000000
- 34148 multiletter control sequences out of 15000+200000
+ 34149 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3219,9 +3273,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (157 pages, 591153 bytes).
+Output written on _memo.pdf (162 pages, 597700 bytes).
 PDF statistics:
- 590 PDF objects out of 1000 (max. 8388607)
+ 605 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

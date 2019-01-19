@@ -229,8 +229,13 @@
 \contentsline {subsection}{\numberline {29.1.6}Minimisation des erreurs empirique}{151}
 \contentsline {section}{\numberline {29.2}Classification binaire agnostique}{152}
 \contentsline {subsection}{\numberline {29.2.1}R\IeC {\'e}gression agnostique}{152}
-\contentsline {part}{VIII\hspace {1em}Algorithmes pour l'inf\IeC {\'e}rence et les Contraintes}{153}
-\contentsline {chapter}{\numberline {30}Constraint satisfaction problem}{154}
+\contentsline {part}{VIII\hspace {1em}Probl\IeC {\`e}me de satisfaction de contraintes CSP}{153}
+\contentsline {chapter}{\numberline {30}Introduction et mod\IeC {\`e}les}{154}
 \contentsline {section}{\numberline {30.1}exemple simple}{155}
 \contentsline {subsection}{\numberline {30.1.1}Graphe de contraintes}{156}
 \contentsline {subsection}{\numberline {30.1.2}Graphe de compatibilit\IeC {\'e}}{156}
+\contentsline {part}{IX\hspace {1em}Probl\IeC {\`e}me de satisfaction SAT}{157}
+\contentsline {chapter}{\numberline {31}d\IeC {\'e}finitions de base}{158}
+\contentsline {section}{\numberline {31.1}Transformation NNF, CNF}{159}
+\contentsline {subsection}{\numberline {31.1.1}Transformation glouton}{159}
+\contentsline {subsection}{\numberline {31.1.2}Transformation via ajout de variables}{160}
