@@ -259,9 +259,38 @@ Le processus d'apprentissage n'est pas si différent que dans la première parti
 Soit une distribution $d$, chaque requêtes vers $d$ va choisir un échantillons aléatoirement pour crée un ensemble $S$ qui va servir à faire apprendre $h$ lors de la phase d'apprentissage, tester lors de la phase de teste et retenir les erreur vies les fonction d'analyse.\\
 
 \subsection{Incertitude de l'apprentissage}
+
+Il existe deux mesures de l'incertitude en apprentissage statistique
+\begin{description}
+\item[] Paramètre de confiance qui donne la qualité de l'échantillonnage
+\item[] Paramètre d'erreur qui donne un indice sur les bonnes prédictions futures
+\end{description}
+
 \subsection{Modèle PAC réalisable}
-\subsection{Classes d'hypothèses finies}
+Une classe d(hypothèses $H$ est dite PCA (probability approximately correct) s'il existe une fonction $\{0,1\}^2 \rightarrow \{0,1,2.....\}$ telle que pour toute paire ($\phi$(confiance),$\psi$(erreur)) pour toute distribution $d$ sur $X$ et toute fonction cible $h* \in H$:
+\begin{description}
+\item[] Après avoir observé un échantillon $S$ de $X$ tiré aléatoirement selon $d$, et de taille au moins $m(\phi,\psi)$.
+\item[] L'apprenant retourne une hypothèse $h \in H$, telle qu'avec une probabilité au moins $1 - \phi$, l'erreur de génération $l_d(h)$ est d'au plus $\psi$.
+\end{description}
+
+\section{Classes d'hypothèses finies}
+
+Supposons $X$ = $[0,1]^d$
+
+\begin{description}
+\item[] Toutes fonction $h: [0,1]^d \rightarrow [0,1]$ est appelée fonction booléenne.
+\item[] Une classe d'hypothèses booléennes est un sous ensemble $H$ de $[[0,1]^d \rightarrow [0,1]]$.
+\end{description}
+
 \subsection{Minimisation des erreurs empirique}
+Le principe est de trouver dans $H$ l'hypothèse qui fait le moins d'erreurs sur l'échantillon $S$:
+\formula{$h_S \in argmin L_S(h), h \in H$}
+
+
+\subsection{Théorème de PAC des classes finies}
+Toutes classe d'hypothèse $H$ finie est PAC-apprenable avec une complexité d'échantillonnage
+\formula{$m(\phi,\psi) \leq \frac{ln(|H|/\phi)}{\psi}$}
+
 \pagebreak
 \section{Classification binaire agnostique}
 \subsection{Régression agnostique}

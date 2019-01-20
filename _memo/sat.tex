@@ -88,7 +88,37 @@ $(\neg j \vee \neg a)\wedge(\neg j \vee \neg b)\wedge(\neg k \vee e1)\wedge(\neg
 $(\neg l \vee f1)\wedge(\neg l \vee f2)\wedge\neg l \vee f3)\wedge(\neg m \vee g1)\wedge(\neg m \vee g2)\wedge\neg m \vee g3)\wedge$\\
 $(\neg n \vee a \vee b \vee \neg c \ vee d)\wedge(\neg n \vee i \vee j)$\\
 
+\section{Littéral et clause : classification}
 
+Soit la formule suivante avec les littéraux de couleur vert des littéraux équivalent à $\top$ et en bleu les littéraux équivalent à $\bot$:\\
+\formula{$(\cblue{a} \vee \cblue{\neg b}) \wedge (\cvert{\neg a} \vee \cvert{b} \vee \neg c) \wedge (\cblue{a} \vee c \vee d)$}
 
+Via déduction la clause:
+\begin{description}
+\item[] $(\cblue{a} \vee \cblue{\neg b})$ est falsifié
+\item[] $(\cvert{\neg a} \vee \cvert{b} \vee \neg c)$ est satisfaite
+\item[] $(\cblue{a} \vee c \vee d)$ est active
+\end{description}
+
+\pagebreak
+\subsection{Clause active}
+Une clause active est unitaire si elle a exactement un littéral non affecté:
+\begin{description}
+\item[] $(\cvert{a} \vee c) \wedge (\cvert{b} \vee c) \wedge (\blue{\neg a} \vee \cblue{\neg b} \vee \neg c)$
+\item[] est I une interprétation tel que I(a) = $\top$ et I(b) = $\bot$.
+\end{description}
+Dans ce cas, une cause unitaire admet qu'une seul solution pour être satisfaite:
+\formula{$a \wedge b \rightarrow \neg c$}
+$c$ doit être affecté à $\top$.\\
+
+\subsection{Littéral pure}
+Une variable est dite pure dans une formule si ses littéraux sont soit tous positif ou tous négatifs:\\
+\formula{$(a \vee \cblue{c}) \wedge (\neg a \vee \cblue{c})$}
+\pagebreak
+\chapter{Classes polynomiales}
+\pagebreak
+\section{2-SAT}
+\section{Horn-SAT}
+\section{Horn-renommable}
 
 \pagebreak
