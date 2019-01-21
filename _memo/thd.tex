@@ -225,7 +225,22 @@ z & 0,3 & 0,2 & 3,0\\
 \end{tabular}
 \ \\\\
 Deux équilibre de Nash sont interchangeable si la permutation des termes gauche garde l'équilibre de Nash actif.\\
-\pagebreak
+
+Voici un cas particulier:
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & 2,1 & 0,0\\
+y & 0,0 & 1,2\\
+\end{tabular}
+
+Deux équilibre de Nash sont présent $\crouge{(2,1)}$ et $\crouge{(1,2)}$.
+Comme il y a une hésitation entre les deux cas, alors l'utilisation du flip coin est envisageable:
+\begin{description}
+\item[] $u_1(<(x, 1/2), (y, 1/2)>) = 1/2 * 2 + 1/2 * 0 = 1$
+\item[] $u_1(<(u, 1/2), (v, 1/2)>) = 1/2 * 0 + 1/2 * 1 = 1/2$
+\end{description}
+
 \subsection{Critère de Pareto}
 
 \begin{multicols}{2}
@@ -282,5 +297,77 @@ On défini le niveau de sécurité d'une stratégie $s_i$ pour le joueur i comme
 On défini le niveau de sécurité d'un joueur i comme le niveau de sécurité maximal des stratégies de i.\\
 
 Le meilleur choix serait de prendre (y,v) pour assurer un minimum de gain pour chaque personnes.\\
+
+\subsection{autres Stratégies}
+Jusque la nous avons utilisé que les stratégies pures, c'est à dire les option qui se présente au joueurs.\\
+Une stratégies mixte est une distribution de probabilité sur l'ensemble des stratégies pures.\\
+%% comportemental / local
+
+\subsection{Équilibre de Nash en stratèges mixtes}
+Soit le problème:
+\begin{tabular}{cc|cc}
+$ $ &$ $ & y & 1-y\\
+\hline
+$ $& $ $ & f & c\\
+\hline
+x & f & 2,1 & 0,0\\
+1-x & c & 0,0 & 1,2\\
+\end{tabular}
+
+Soit y, la probabilité avec laquelle le joueur 2 jour f, quelle est la meilleure réponse du joueur 1?:
+\begin{description}
+\item[] $u_1(<(f, y), (c, 1-y)>) = y*2 + (1-y)*0 = 2y$
+\item[] $u_1(<(f, y), (c, 1-y)>) = y*0 + (1-y)*1 = 1-y$
+\end{description}
+
+Donc:
+\begin{description}
+\item[] Si $2y > 1 - y$ avec ($y > 1/3$), la meilleur réponse du joueur 1 est de jouer $f$
+\item[] Si $2y < 1 - y$ avec ($y < 1/3$), la meilleur réponse du joueur 1 est de jouer $c$
+\item[] Si $2y = 1 - y$ avec ($y = 1/3$), le joueur 1 peut jouer l'un ou l'autre.
+\end{description}
+
+Soit x, la probabilité avec laquelle le joueur 1 jour f, quelle est la meilleure réponse du joueur 2?:
+\begin{description}
+\item[] $u_1(<(f, x), (c, 1-x)>) = x*1+(1-x)*0 = x$
+\item[] $u_1(<(f, x), (c, 1-x)>) = x*1+(1-x)*0 = 2(1-x)$
+\end{description}
+
+Donc:
+\begin{description}
+\item[] Si $x > 2(1-x)$ avec ($x > 2/3$), la meilleur réponse du joueur 2 est de jouer $f$
+\item[] Si $x < 2(1-x)$ avec ($x < 2/3$), la meilleur réponse du joueur 2 est de jouer $c$
+\item[] Si $x = 2(1-x)$ avec ($x = 2/3$), le joueur 2 peut jouer l'un ou l'autre.
+\end{description}
+
+%%fill
+
+\subsection{Représentation graphique du jeu}
+%% fill
+
+\subsection{Coopération}
+
+\begin{tabular}{c|cc}
+$ $ & f & c\\
+\hline
+f & 2,1 & 0,0\\
+& c & 0,0 & 1,2\\
+\end{tabular}
+
+Que se passe t'il si les 2 joueurs peuvent communiquer avant de jouer?:
+\formula{$u_1 = u_2 = \frac{1}{2} * 2 + \frac{1}{2} = \frac{3}{2}$}
+
+Lorsque tout les joueurs peuvent observer un même événement aléatoire, ils peuvent alors s'accorder sur des équilibres corrélés.\\
+Selon un accord prit via un flip coin, ou via une parution d'un évènement, si les deux joueurs se mette d'accord sur le fait de tirer $f$ ou $c$, mais le joueur désavantagé peut ne pas jouer le choix prit, mais il s'expose à ne rien gagner.\\
+
+\subsection{Itération}
+\begin{tabular}{c|cc}
+$ $ & c & d\\
+\hline
+c & 3,3 & 0,5\\
+d c & 5,0 & 1,1\\
+\end{tabular}
+
+%% fill [DIP]	
 
 \pagebreak
