@@ -1,5 +1,8 @@
 
-from ConsList import *
+NOT = "-"
+AND = "*"
+OR  = "+"
+EQUIV = "="
 
 class Boolean(object):
 
@@ -24,22 +27,3 @@ class Boolean(object):
 
 TOP = Boolean(True)
 BOT = Boolean(False)
-NOT = "-"
-AND = "*"
-OR  = "+"
-EQUIV = "="
-
-class Unary(object):
-
-    @staticmethod
-    def negation(cons, only_current_cons=True):
-
-        if not cons.is_empty():
-
-            if only_current_cons:
-                return ConsFactory.singleton(cons.car().negative())
-            else:
-                return cons.map(lambda x : x.negative())
-
-        else:
-            return cons

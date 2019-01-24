@@ -1,50 +1,41 @@
 from Logic import Boolean,TOP,BOT,OR,AND
 from ConsList import *
+from TseitinTransformation import VAR_SYMBOLE_PREFIX
 
 def remove_variables(cons):
 
-    if type(cons) == Boolean:
-        return cons
-
     if type(cons) == ConsList:
-        return Solve.remove_vars(cons)
+        cons =  Solve.simplity(cons)
 
-    if type(cons) == str:
-        if cons[:4] == "var_":
-            return TOP
-        
-        if cons[:5] == "-var_":
-            return BOT
+        if cons.size() == 1 and cons.car() == TOP:
+            return ""
 
-    return cons
-
-def remove_terms(cons):
-
-    if type(cons) == ConsList:
-
-        cons = Solve.remove_terms(cons)
-
-        if cons.car() == OR:
+        elif cons.car() == OR:
             if cons.contains(lambda x : x == TOP):
                 return ""
 
             cons = cons.filter(lambda x : x != BOT)
 
-        if cons.car() == AND:
+        elif cons.car() == AND:
+            if cons.contains(lambda x : x == BOT):
+                return ""
+
             cons = cons.filter(lambda x : x != TOP)
 
-        if cons.size() == 2:
+        if cons.size() == 2: ## cons like "(OR x)" must be "x"
             return cons.cdr().car()
 
-    return cons
+    elif type(cons) == str:
+        if cons[:len(VAR_SYMBOLE_PREFIX)] == VAR_SYMBOLE_PREFIX:
+            return TOP
+        
+        if cons[:1+len(VAR_SYMBOLE_PREFIX)] == "-" + VAR_SYMBOLE_PREFIX:
+            return BOT
 
+    return cons
 
 class Solve():
 
     @staticmethod
-    def remove_vars(cons):
-        return cons.map(remove_variables)
-        
-    @staticmethod
-    def remove_terms(cons):
-        return cons.map(remove_terms)
+    def simplity(cons):
+        return cons.map(remove_variables).filter(lambda c : c != "")

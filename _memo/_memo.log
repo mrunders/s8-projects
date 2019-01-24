@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 JAN 2019 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  24 JAN 2019 21:08
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1277,12 +1277,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Overfull \hbox (5.33537pt too wide) in paragraph at lines 146--146
-[]\OT1/cmr/bx/n/14.4 V Representation des con-nais-sances et raison-nement 
+Overfull \hbox (11.36871pt too wide) in paragraph at lines 153--153
+[]\OT1/cmr/bx/n/14.4 VI Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--146
+Underfull \hbox (badness 10000) in paragraph at lines 153--153
 []  
  []
 
@@ -1317,7 +1317,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@toc=\write4
 \openout4 = `_memo.toc'.
 
- (fdd.tex
+ (proba.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1328,16 +1328,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--18
+
+ []
+
 [11
 
 ]
-Overfull \hbox (5.63202pt too wide) in paragraph at lines 7--8
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--72
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--112
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+Overfull \hbox (5.63202pt too wide) in paragraph at lines 120--121
 \OT1/cmr/m/n/12 aleatoires discretes prenant leurs valeurs dans DX=x1,..,xn e
 t DY=y1,..,ym
  []
 
 
-Overfull \hbox (4.45865pt too wide) in paragraph at lines 13--14
+Overfull \hbox (4.45865pt too wide) in paragraph at lines 126--127
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT
 1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m
 /it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n
@@ -1347,7 +1389,7 @@ Overfull \hbox (4.45865pt too wide) in paragraph at lines 13--14
  []
 
 
-Overfull \hbox (21.32593pt too wide) in paragraph at lines 32--33
+Overfull \hbox (21.32593pt too wide) in paragraph at lines 145--146
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
 OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
 \OT1/cmr/m/n/12 1) + \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
@@ -1355,7 +1397,7 @@ OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 =
  []
 
 
-Overfull \hbox (11.70662pt too wide) in paragraph at lines 33--34
+Overfull \hbox (11.70662pt too wide) in paragraph at lines 146--147
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
 OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
 \OT1/cmr/m/n/12 2)\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT
@@ -1368,41 +1410,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+[14]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+
  (E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
-
- []
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
+) (fdd.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[15] [16
+
+]
 Chapter 2.
-[14
+[17
 
 ]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[15]
-Chapter 3.
-[16
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 102--104
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
@@ -1412,17 +1442,43 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Chapter 4.
-[18
+[18]
+Chapter 3.
+[19
 
 ]
-Overfull \hbox (1.7259pt too wide) in paragraph at lines 131--133
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+Chapter 4.
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22]
+Chapter 5.
+[23
+
+]
+Overfull \hbox (1.7259pt too wide) in paragraph at lines 74--76
 []\OT1/cmr/m/n/12 : Par-ti-tion-ner recursivement les
  []
 
 
-Overfull \hbox (3.44138pt too wide) in paragraph at lines 140--141
+Overfull \hbox (3.44138pt too wide) in paragraph at lines 83--84
 \OT1/cmr/m/n/12 dans une dis-tri-bu-tion de prob-a-bilites. Soit X une vari-ab
 le aleatoire discrete
  []
@@ -1433,14 +1489,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
-Overfull \hbox (1.77718pt too wide) in paragraph at lines 181--206
+[24]
+Overfull \hbox (1.77718pt too wide) in paragraph at lines 124--149
 \OT1/cmr/m/n/12 Le $\OML/cmm/m/it/12 Gain information$ \OT1/cmr/m/n/12 ap-pliqu
 e sur la colonne Au-tonomieBat-terie (AB) serait: 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--206
+Underfull \hbox (badness 10000) in paragraph at lines 124--149
 
  []
 
@@ -1450,8 +1506,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
-Overfull \hbox (20.89897pt too wide) in paragraph at lines 206--207
+[25]
+Overfull \hbox (20.89897pt too wide) in paragraph at lines 149--150
 []$\OT1/cmr/m/n/12 =  \OML/cmm/m/it/12 Entropie\OT1/cmr/m/n/12 (\OML/cmm/m/it/1
 2 AB\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   [] \OML/cmm/m/it/12 Entropie\OT1/cmr/m
 /n/12 (\OML/cmm/m/it/12 Longue\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   [] \OML/cmm/
@@ -1465,16 +1521,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[26]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
-Chapter 5.
-[23
+[27]
+Chapter 6.
+[28
 
 ]
 
@@ -1483,8 +1539,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
-Overfull \hbox (36.88983pt too wide) in paragraph at lines 292--292
+[29]
+Overfull \hbox (36.88983pt too wide) in paragraph at lines 235--235
 []\OT1/cmr/bx/n/17.28 Construction et clas-si-fi-ca-tion avec des reseaux
  []
 
@@ -1494,8 +1550,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
-Overfull \hbox (1.60611pt too wide) in paragraph at lines 374--375
+[30]
+Overfull \hbox (1.60611pt too wide) in paragraph at lines 317--318
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Rouge\
 OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Non\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/
 cmm/m/it/12 P\OT1/cmr/m/n/12 (4\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 4\OMS/cmsy/m/n
@@ -1503,7 +1559,7 @@ cmm/m/it/12 P\OT1/cmr/m/n/12 (4\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 4\OMS/cmsy/m/n
  []
 
 
-Overfull \hbox (41.00395pt too wide) in paragraph at lines 385--386
+Overfull \hbox (41.00395pt too wide) in paragraph at lines 328--329
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Jaune\
 OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Non\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/
 cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sport\OMS/cmsy/m/n/12 j\OML/cmm/
@@ -1513,7 +1569,7 @@ m/it/12 Non\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  [] \OML/cmm/m/it/12 P\OT1/cmr/m
  []
 
 
-Overfull \hbox (27.7122pt too wide) in paragraph at lines 389--390
+Overfull \hbox (27.7122pt too wide) in paragraph at lines 332--333
 []\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Jaune\
 OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Oui\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/
 cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sport\OMS/cmsy/m/n/12 j\OML/cmm/
@@ -1528,12 +1584,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
-Chapter 6.
-[27
+[31]
+Chapter 7.
+[32
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 405--409
+Underfull \hbox (badness 10000) in paragraph at lines 348--352
 
  []
 
@@ -1543,23 +1599,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
 
 
-Overfull \hbox (1.54248pt too wide) in paragraph at lines 429--436
+Overfull \hbox (1.54248pt too wide) in paragraph at lines 372--379
 [][]
  []
 
 
-Overfull \hbox (12.96872pt too wide) in paragraph at lines 429--436
+Overfull \hbox (12.96872pt too wide) in paragraph at lines 372--379
 []
  []
 
 
-Overfull \hbox (16.55304pt too wide) in paragraph at lines 429--436
+Overfull \hbox (16.55304pt too wide) in paragraph at lines 372--379
 [] 
  []
 
@@ -1569,29 +1625,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
-Chapter 7.
-[30
-
-]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32] (ap.tex [33
-
-]
+[34]
 Chapter 8.
-[34
+[35
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[37] (ap.tex [38
+
+]
+Chapter 9.
+[39
 
 ]
 Overfull \hbox (17.17168pt too wide) in paragraph at lines 50--53
@@ -1604,9 +1660,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
-Chapter 9.
-[36
+[40]
+Chapter 10.
+[41
 
 ]
 Overfull \hbox (61.03465pt too wide) in paragraph at lines 68--69
@@ -1620,16 +1676,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[42]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
-Chapter 10.
-[39
+[43]
+Chapter 11.
+[44
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
@@ -1642,9 +1698,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
-Chapter 11.
-[41
+[45]
+Chapter 12.
+[46
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 103--107
@@ -1678,7 +1734,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[42]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
@@ -1709,14 +1765,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]
+[48]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
@@ -1754,7 +1810,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[50]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 221.
 
@@ -1773,9 +1829,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]
-Chapter 12.
-[47
+[51]
+Chapter 13.
+[52
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 240--241
@@ -1793,14 +1849,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48]
+[53]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[49]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 295--298
 
  []
@@ -1811,14 +1867,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[50]
+[55]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
+[56]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 383--383
 [][][] 
  []
@@ -1834,7 +1890,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 398--400
 
  []
@@ -1845,9 +1901,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[53]
-Chapter 13.
-[54
+[58]
+Chapter 14.
+[59
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 407--409
@@ -1866,14 +1922,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[55]
+[60]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[56]
+[61]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 488--488
 [][][] 
  []
@@ -1884,7 +1940,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[57]
+[62]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 516--516
 [][][] 
  []
@@ -1900,7 +1956,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58]
+[63]
 Underfull \hbox (badness 10000) in paragraph at lines 526--529
 
  []
@@ -1911,7 +1967,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[59]
+[64]
 Underfull \hbox (badness 10000) in paragraph at lines 554--555
 
  []
@@ -1928,11 +1984,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[60] (of.tex [61
+[65] (of.tex [66
 
 ]
-Chapter 14.
-[62
+Chapter 15.
+[67
 
 ]
 
@@ -1941,14 +1997,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[63]
+[68]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[64]
+[69]
 Overfull \hbox (2.50609pt too wide) in paragraph at lines 74--75
 []\OT1/cmr/m/n/12 si avec que
  []
@@ -1959,14 +2015,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[65]
+[70]
 Missing character: There is no ] in font nullfont!
 
 Overfull \hbox (18.82834pt too wide) in paragraph at lines 113--147
 []
  []
 
-<img/of-remplacement.png, id=231, 350.30875pt x 156.585pt>
+<img/of-remplacement.png, id=247, 350.30875pt x 156.585pt>
 File: img/of-remplacement.png Graphic file (type png)
 
 <use img/of-remplacement.png>
@@ -1979,7 +2035,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[66]
+[71]
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -1995,7 +2051,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[67 <./img/of-remplacement.png (PNG copy)>]
+[72 <./img/of-remplacement.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
@@ -2006,11 +2062,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68]
-Chapter 15.
-[69
+[73]
+Chapter 16.
+[74
 
-] <img/of-occ-1.png, id=245, 317.185pt x 297.11pt>
+] <img/of-occ-1.png, id=261, 317.185pt x 297.11pt>
 File: img/of-occ-1.png Graphic file (type png)
  <use img/of-occ-1.png>
 Package pdftex.def Info: img/of-occ-1.png used on input line 209.
@@ -2031,21 +2087,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[70 <./img/of-occ-1.png (PNG copy)>]
+[75 <./img/of-occ-1.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[71]
+[76]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72]
+[77]
 Overfull \hbox (33.84421pt too wide) in paragraph at lines 275--278
 \OT1/cmr/m/n/12 On peut cal-culer cette sous for-mule en ap-pli-quant chaque te
 rme dans l'interpretation
@@ -2072,7 +2128,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73]
+[78]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -2091,7 +2147,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[74]
+[79]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -2115,7 +2171,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[75]
+[80]
 Missing character: There is no ] in font nullfont!
 Missing character: There is no ] in font nullfont!
 
@@ -2134,9 +2190,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[76]
-Chapter 16.
-[77
+[81]
+Chapter 17.
+[82
 
 ]
 
@@ -2145,7 +2201,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78]
+[83]
 Overfull \hbox (3.46361pt too wide) in paragraph at lines 537--538
 []\OT1/cmr/m/n/12 est une ma-chine qui pour un etat $\OML/cmm/m/it/12 n$ \OT1/
 cmr/m/n/12 donne peut deriver
@@ -2157,7 +2213,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79]
+[84]
 Underfull \hbox (badness 10000) in paragraph at lines 557--559
 
  []
@@ -2173,7 +2229,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80]
+[85]
 Overfull \hbox (0.88481pt too wide) in paragraph at lines 622--623
 []\OT1/cmr/m/n/12 revient a prou-ver $\OMS/cmsy/m/n/12 :\OML/cmm/m/it/12 HALTI
 NG \OMS/cmsy/m/n/12 []
@@ -2186,13 +2242,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81] (ro.tex [82
+[86] (ro.tex [87
 
 ]
-Chapter 17.
-[83
+Chapter 18.
+[88
 
-] <img/ro-pl-2var_0.png, id=290, 491.8375pt x 434.62375pt>
+] <img/ro-pl-2var_0.png, id=306, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_0.png Graphic file (type png)
 
 <use img/ro-pl-2var_0.png>
@@ -2205,13 +2261,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[84]
+[89]
 Overfull \hbox (3.56456pt too wide) in paragraph at lines 42--43
 []\OT1/cmr/m/n/12 : est la droite (rouge) la plus haute touchant un point extr^
 eme,
  []
 
-<img/ro-pl-2var_1.png, id=295, 491.8375pt x 434.62375pt>
+<img/ro-pl-2var_1.png, id=310, 491.8375pt x 434.62375pt>
 File: img/ro-pl-2var_1.png Graphic file (type png)
 
 <use img/ro-pl-2var_1.png>
@@ -2224,16 +2280,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[85 <./img/ro-pl-2var_0.png (PNG copy)>]
+[90 <./img/ro-pl-2var_0.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[86 <./img/ro-pl-2var_1.png (PNG copy)>]
-Chapter 18.
-[87
+[91 <./img/ro-pl-2var_1.png (PNG copy)>]
+Chapter 19.
+[92
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 64--67
@@ -2246,7 +2302,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[88]
+[93]
 Underfull \hbox (badness 10000) in paragraph at lines 101--107
 
  []
@@ -2262,7 +2318,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89]
+[94]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
@@ -2273,7 +2329,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[90]
+[95]
 Underfull \hbox (badness 7308) in paragraph at lines 165--165
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -2292,7 +2348,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[91]
+[96]
 Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
@@ -2313,7 +2369,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[92]
+[97]
 Underfull \hbox (badness 7308) in paragraph at lines 216--216
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -2354,16 +2410,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93]
+[98]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[94]
-Chapter 19.
-[95
+[99]
+Chapter 20.
+[100
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 257--260
@@ -2386,7 +2442,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[96]
+[101]
 Overfull \hbox (18.32954pt too wide) in paragraph at lines 299--299
 []$\OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT
 1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m
@@ -2404,7 +2460,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[97]
+[102]
 Overfull \hbox (20.65489pt too wide) in paragraph at lines 324--324
 []$\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; []
 ; []; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0)$
@@ -2438,7 +2494,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98]
+[103]
 Underfull \hbox (badness 10000) in paragraph at lines 348--352
 
  []
@@ -2466,7 +2522,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[99]
+[104]
 Underfull \hbox (badness 7308) in paragraph at lines 387--387
 []$\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; e[]; e[]; e[]\OT1/cmr/m/n/12 ) \OMS/
 cmsy/m/n/12 2
@@ -2503,7 +2559,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[100]
+[105]
 Overfull \hbox (11.9118pt too wide) in paragraph at lines 415--415
 []\OT1/cmr/bx/n/17.28 Seconde phase du sim-plexe a deux phases,
  []
@@ -2515,11 +2571,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[101] [102
+[106] [107
 
 ]
-Chapter 20.
-[103
+Chapter 21.
+[108
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 6--8
@@ -2532,9 +2588,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[104]
-Chapter 21.
-[105
+[109]
+Chapter 22.
+[110
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
@@ -2552,7 +2608,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[106]
+[111]
 Overfull \hbox (54.46117pt too wide) in paragraph at lines 112--113
 [][] 
  []
@@ -2563,7 +2619,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[107]
+[112]
 Overfull \hbox (23.78946pt too wide) in paragraph at lines 136--137
 []\OT1/cmr/m/n/12 equivalent? $\OML/cmm/m/it/12 Yes$ 
  []
@@ -2579,7 +2635,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108]
+[113]
 Underfull \hbox (badness 10000) in paragraph at lines 154--156
 
  []
@@ -2590,9 +2646,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[109]
-Chapter 22.
-[110
+[114]
+Chapter 23.
+[115
 
 ]
 
@@ -2601,7 +2657,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[111]
+[116]
 Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
@@ -2632,7 +2688,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[112]
+[117]
 Missing character: There is no ] in font nullfont!
 
 
@@ -2641,7 +2697,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[113]
+[118]
 Missing character: There is no ] in font nullfont!
 
 
@@ -2650,9 +2706,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[114]
-Chapter 23.
-[115
+[119]
+Chapter 24.
+[120
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 302--303
@@ -2665,14 +2721,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[116]
+[121]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[117]
+[122]
 Underfull \hbox (badness 10000) in paragraph at lines 383--385
 
  []
@@ -2698,7 +2754,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[118]
+[123]
 Missing character: There is no ] in font nullfont!
 
 
@@ -2707,37 +2763,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[119]
+[124]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[120]
+[125]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[121]
+[126]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[122]
+[127]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[123]
-Chapter 24.
-[124
+[128]
+Chapter 25.
+[129
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 572--574
@@ -2773,7 +2829,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[125]
+[130]
 Underfull \hbox (badness 10000) in paragraph at lines 622--625
 
  []
@@ -2784,7 +2840,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[126]
+[131]
 Underfull \hbox (badness 10000) in paragraph at lines 666--669
 \OT1/cmr/m/n/12 com-pose que d'une
  []
@@ -2825,7 +2881,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[127]
+[132]
 Underfull \hbox (badness 10000) in paragraph at lines 722--723
 
  []
@@ -2842,14 +2898,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[128]
+[133]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[129]
+[134]
 Underfull \hbox (badness 10000) in paragraph at lines 767--771
 
  []
@@ -2865,9 +2921,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[130]
-Chapter 25.
-[131
+[135]
+Chapter 26.
+[136
 
 ]
 Missing character: There is no ] in font nullfont!
@@ -2882,7 +2938,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[132]
+[137]
 Overfull \hbox (30.8578pt too wide) in paragraph at lines 824--824
 []\OT1/cmr/bx/n/17.28 Analyse de la com-plexite pour D(M2,Forall) 
  []
@@ -2912,10 +2968,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[133] (thd.tex [134
+[138] (thd.tex [139
 
 ]
-Chapter 26.
+Chapter 27.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--16
 
@@ -2926,7 +2982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--16
 
  []
 
-[135
+[140
 
 ]
 
@@ -2935,7 +2991,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[136]
+[141]
 Overfull \hbox (25.14198pt too wide) in paragraph at lines 87--99
 [] 
  []
@@ -2946,16 +3002,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[137]
+[142]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[138]
-Chapter 27.
-[139
+[143]
+Chapter 28.
+[144
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 123--125
@@ -2968,7 +3024,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140]
+[145]
 Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
@@ -2979,13 +3035,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[141]
+[146]
 Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--229
+Underfull \hbox (badness 10000) in paragraph at lines 217--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--228
 
  []
 
@@ -2995,28 +3056,51 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[142]
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[147]
+Underfull \hbox (badness 10000) in paragraph at lines 270--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--283
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--283
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--283
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[148]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[149]
+Underfull \hbox (badness 10000) in paragraph at lines 360--362
 
  []
 
@@ -3027,18 +3111,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[143]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[144] (ap2.tex [145
+[150] (ap2.tex [151
 
 ]
-Chapter 28.
-[146
+Chapter 29.
+[152
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 21--41
@@ -3056,7 +3133,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[147]
+[153]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -3082,7 +3159,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[148]
+[154]
 Overfull \hbox (31.94647pt too wide) in paragraph at lines 190--200
 [][] $[]$ 
  []
@@ -3103,9 +3180,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[149]
-Chapter 29.
-[150
+[155]
+Chapter 30.
+[156
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 253--254
@@ -3128,25 +3205,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[151]
+[157]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152]
+[158]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153]) (csp.tex [154
+[159]) (csp.tex [160
 
 ]
-Chapter 30.
-[155
+Chapter 31.
+[161
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -3164,7 +3241,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[156]
+[162]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -3174,7 +3251,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<img/aic_csp_1.jpg, id=525, 419.5675pt x 428.60126pt>
+<img/aic_csp_1.jpg, id=544, 419.5675pt x 428.60126pt>
 File: img/aic_csp_1.jpg Graphic file (type jpg)
  <use img/aic_csp_1.jpg>
 Package pdftex.def Info: img/aic_csp_1.jpg used on input line 57.
@@ -3186,11 +3263,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[157 <./img/aic_csp_1.jpg>]) (sat.tex [158
+[163 <./img/aic_csp_1.jpg>]) (sat.tex [164
 
 ]
-Chapter 31.
-[159
+Chapter 32.
+[165
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3208,7 +3285,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[160]
+[166]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
@@ -3229,7 +3306,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[161]
+[167]
 Underfull \hbox (badness 10000) in paragraph at lines 73--84
 
  []
@@ -3261,7 +3338,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[162]
+[168]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -3277,9 +3354,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[163]
-Chapter 32.
-[164
+[169]
+Chapter 33.
+[170
 
 ])
 
@@ -3288,16 +3365,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[165] (_memo.aux) )
+[171] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31177 strings out of 493323
- 750722 string characters out of 3139963
- 973959 words of memory out of 3000000
- 34150 multiletter control sequences out of 15000+200000
+ 31198 strings out of 493323
+ 750955 string characters out of 3139963
+ 974281 words of memory out of 3000000
+ 34168 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3318,9 +3395,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (166 pages, 604401 bytes).
+Output written on _memo.pdf (172 pages, 619165 bytes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
+ 637 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

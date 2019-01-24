@@ -1,0 +1,173 @@
+\part{Probabilité}
+\pagebreak
+
+\chapter{Introduction au Probabilités}
+
+Dans un premier temps les probabilités fréquentiste qui est plus général, un exemple simple est le lancer d'une pièce de monnaies non triqué dont on n'a prit soigneusement d'ignorer tout tombé sur la tranche de la pièce, il y a $50\%$ de chance que la pièce tombe sur Pile ou sur Face. on dit aussi $\frac{1}{2}$ ou $.5$.\\
+Lancer une pièce est prit comme un événement:
+\\\vspace{0.8cm}
+\begin{tabular}{c|cc}
+\hline
+$ $ & Pile & Face\\
+\hline
+Un lancé & .5 & .5\\
+\hline
+\end{tabular}
+\ \\\vspace{0.8cm}
+Dans un second temps les probabilités subjectif où les variable choisit sont indépendant d'un individu à un autre, on peut prendre "quelle est la probabilité qu'une maison s'effondre".\\
+
+On construit une probabilité en répétant la même un même événement puis en notant un ensemble de résultats:
+\formula{$P(A) = limite_{x \rightarrow +\infty} \frac{n_A}{n}$}
+\formula{où $n$ le nombre de lancé total et $n_A$ le nombre de lancé où $A$ est tombé en résultat}
+\ \\
+Mais en pratique $\infty$ n'est pas faisable donc nous prenons un $n$ un très grand nombre mais inférieur à l'infini.\\
+\pagebreak
+
+\section{Mesure de probabilité}
+
+Vous devez lancer des fléchettes sur un carré, vous ne rater aucun tire (toutes les flèches arrive dans ce carré):\\
+
+\begin{multicols}{2}
+[]
+\begin{tikzpicture}
+\draw (0,0) rectangle (2,2);
+\fill[red] (1,0) rectangle (2,2);
+\end{tikzpicture}
+\vspace{0.5cm}
+Il y a $\frac{1}{2}$ chance que la flèche touche le coté rouge.
+\end{multicols}
+
+\begin{multicols}{2}
+[]
+\begin{tikzpicture}
+\draw (0,0) rectangle (2,2);
+\fill[red] (1,1) circle (1);
+\end{tikzpicture}
+\vspace{0.10cm}
+Il y a $\frac{\pi}{4}$ chance que la flèche touche le coté rouge.
+\end{multicols}
+
+\begin{multicols}{2}
+[]
+\begin{tikzpicture}
+\draw (0,0) rectangle (2,2);
+\fill[red] (1.3,1.4) circle (0.5);
+\fill[red] (0.7,0.7) circle (0.5);
+\fill[red] (1,1) rectangle (1.2,1.4);
+\end{tikzpicture}
+\vspace{0.1cm}
+Via un raisonnement similaire aux intégrales nous allons découper la grille en pixels, les pixels rouges et blanc.
+$\frac{nombre de pixel rouge}{nombre de pixel total}$
+\end{multicols}
+
+\section{Variable aléatoire}
+
+Une variable $x$ est dite aléatoire si elle est soumise à l'incertitude (au hasard).\\
+Dans le cas d'un lancé de pièce non truqué, $X_1$ = 0(pile), $X_2$ = 1 (face).\\
+
+\subsection{Probabilité de manière axiomatique}
+
+Une distribution de probabilité est une fonction $P$ qui a un événement $A$ lui associe un réelle borné entre 0 et 1.
+La probabilité sans incertitude (celle qu'on n'est sur quelle va se produire) est égal à 1.\\
+\formula{$0 \leq P(A) \leq 1$}
+
+Si deux événements A et B en exclusion mutuelle ($\nexists x \in A \cap B$) on n'a:
+\formula{$P(A \cup B) = P(A) + P(B)$}
+\formula{$P(A \cap B) = P(A) + P(B) - P(A \cup B)$}
+
+\subsection{Variables aléatoire discrète}
+
+Soit $x$ une variable discrète prennent une valeur dans un ensemble $X$ fini.
+on note $x$ = x $\in X$ et noté $P(x=$x$)$.
+
+\formula{$P(x) \geq 0$}
+\formula{$\sum_{x \in X} P(X) = 1$}
+
+\section{Probabilités conditionnelle}
+Prenons le tirage de 4 billes, 3 rouges et 1 bleu: $\omega = \{r,r,r,b\}$.\\
+Le but est de tirer la seconde bille (sachant que la première na pas était remise) sachant que la première boule tiré est une rouge.\\
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A)                    {$ $};
+  \node[state]         (R) [right of=A]  {$\frac{3}{4}$};
+  \node[state]         (B) [below right of=A] {$\frac{1}{4}$};
+  \node[state]         (RR) [above right of=R]       {$\frac{2}{3}$};
+  \node[state]         (RB) [right of=R]       {$\frac{1}{3}$};
+
+  \path (A) edge              node {$r$} (R)
+            edge              node {$b$} (B)
+        (R) edge              node {$r$} (RR)
+            edge 			  node {$b$} (RB);
+\end{tikzpicture}
+
+S'écrit comme
+\formula{$P(B2 | B1=r) = \frac{P(B1 B2)}{P(B2)}$}
+$P(B1 B2)$ se dit probabilité Jointe.\\
+$P(B2)$ se dit probabilité marginal.\\
+\\
+Si $B1$ et $B2$ sont deux événement indépendant alors 
+\formula{$P(B2 | B1=r) = P(B1,B2)$}
+\ \\
+Dans le cas où on remet la balle tiré en jeu:
+\formula{$P(B2=r) = P(B2=r, B1=r) + P(B2=r, B1=b)$}
+\pagebreak
+
+\section{à classer}
+\begin{description}
+\item[Quelques rappels de probabilités]: Soient X et Y deux variables aléatoires discrètes prenant leurs valeurs dans DX={x1,..,xn} et DY={y1,..,ym} respectivement.  
+\item[$P(x_i)$] = $\frac{|x_i|}{\sum_{j=1}^n |x_j|}$
+\item[] $\sum_{i=1}^n P(x_i) = 1$
+\item[$P(x_i | y_i)$] = $\frac{P(x_i,y_i)}{p(y_i)}$
+\item[$P(x_i,y_i)$] = $p(x_i) * p(y_i)$ Si X et Y sont indépendantes
+\item[règle de bayes] = $P(x_i|y_i) = \frac{P(y_i|x_i)*p(x_i)}{p(y_i)}$
+\item[règle de chainage $P(x_1,x_2,x_3,...x_n$] = $p(x_1)*p(x_2|x_1)*...*p(x_n|x_{n-1}..x_1)$
+\item[distribution conditionnel] $ \forall x \in X, \forall y \in Y => P(x|y)$
+\end{description}
+
+Exemple:
+\begin{description}
+\item[]: 
+\begin{tabular}{ll|ll}
+  \hline
+  Année & Sexe & \# & \%  \\
+  \hline
+   M1 & M  & 25  &  25/55   \\
+   M1 & F  & 4 &  4/55  \\
+   M2 & M  & 25  & 25/55   \\
+   M2 & F  & 1  &  1/55  \\
+  \hline
+\end{tabular}
+\item[]
+\begin{description}
+\item[$P(sexe=M)$] = $P(Sexe=M et Annee=M1) + P(Sexe=M et Annee=M2) = 50/55$
+\item[$P(Annee=M2 | sexe=M)$] = $P(Sexe=M et Annee=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
+\end{description}
+\end{description}
+\pagebreak
+\section{Exemple}
+\begin{multicols}{2}
+[]
+\begin{tabular}{ll|l}
+  \hline
+  $A$&$B$&$P(AB)$\\
+  \hline
+  $a_1$&$b_1$&.1\\
+  $a_2$&$b_1$&.15\\
+  $a_1$&$b_2$&.3\\
+  $a_2$&$b_2$&.45\\
+  \hline
+\end{tabular}
+
+\begin{itemize}
+\item $P(a_1) = .40$
+\item $P(a_1|b_1) = .4$
+\item $P(a_1|b_2) = .4$
+\item $P(a_2) = .60$
+\item $P(a_2|b_1) = .6$
+\item $P(a_2|b_2) = .6$
+\end{itemize}
+
+\end{multicols}

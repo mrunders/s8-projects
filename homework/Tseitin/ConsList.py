@@ -59,6 +59,15 @@ class ConsList(object):
     def contains(self, function):
         return True if function(self.element) else self.next_cons.contains(function)
 
+    def equal(self, cons):
+
+        if self == cons:
+            return True
+
+        if cons == None or cons.is_empty():
+            return False
+
+        return self.car() == cons.car() and self.cdr().equal(cons.cdr())
 
 class NoneConsList(ConsList, object):
 
@@ -95,6 +104,8 @@ class NoneConsList(ConsList, object):
     def contains(self, function):
         return False
 
+    def equal(self, cons):
+        return cons.is_empty()
 
 class ConsFactory(object):
 

@@ -2,63 +2,6 @@
 \pagebreak
 
 \chapter{Rappel}\pagebreak
-\section{Probabilités}
-\begin{description}
-\item[Quelques rappels de probabilités]: Soient X et Y deux variables aléatoires discrètes prenant leurs valeurs dans DX={x1,..,xn} et DY={y1,..,ym} respectivement.  
-\item[$P(x_i)$] = $\frac{|x_i|}{\sum_{j=1}^n |x_j|}$
-\item[] $\sum_{i=1}^n P(x_i) = 1$
-\item[$P(x_i | y_i)$] = $\frac{P(x_i,y_i)}{p(y_i)}$
-\item[$P(x_i,y_i)$] = $p(x_i) * p(y_i)$ Si X et Y sont indépendantes
-\item[règle de bayes] = $P(x_i|y_i) = \frac{P(y_i|x_i)*p(x_i)}{p(y_i)}$
-\item[règle de chainage $P(x_1,x_2,x_3,...x_n$] = $p(x_1)*p(x_2|x_1)*...*p(x_n|x_{n-1}..x_1)$
-\item[distribution conditionnel] $ \forall x \in X, \forall y \in Y => P(x|y)$
-\end{description}
-
-Exemple:
-\begin{description}
-\item[]: 
-\begin{tabular}{ll|ll}
-  \hline
-  Année & Sexe & \# & \%  \\
-  \hline
-   M1 & M  & 25  &  25/55   \\
-   M1 & F  & 4 &  4/55  \\
-   M2 & M  & 25  & 25/55   \\
-   M2 & F  & 1  &  1/55  \\
-  \hline
-\end{tabular}
-\item[]
-\begin{description}
-\item[$P(sexe=M)$] = $P(Sexe=M et Annee=M1) + P(Sexe=M et Annee=M2) = 50/55$
-\item[$P(Annee=M2 | sexe=M)$] = $P(Sexe=M et Annee=M2) / P(Sexe=M) = \frac{25}{55} / \frac{50}{55} = \frac{25}{50} = \frac{1}{2}$
-\end{description}
-\end{description}
-\pagebreak
-\section{Exemple}
-\begin{multicols}{2}
-[]
-\begin{tabular}{ll|l}
-  \hline
-  $A$&$B$&$P(AB)$\\
-  \hline
-  $a_1$&$b_1$&.1\\
-  $a_2$&$b_1$&.15\\
-  $a_1$&$b_2$&.3\\
-  $a_2$&$b_2$&.45\\
-  \hline
-\end{tabular}
-
-\begin{itemize}
-\item $P(a_1) = .40$
-\item $P(a_1|b_1) = .4$
-\item $P(a_1|b_2) = .4$
-\item $P(a_2) = .60$
-\item $P(a_2|b_1) = .6$
-\item $P(a_2|b_2) = .6$
-\end{itemize}
-
-\end{multicols}
-
 \section{Logarithmes en base 2}
 $Log_2(\frac{x}{y}) = Log_2(x) - Log_2(y)$\\
 $Log_2(x*y) = Log_2(x) + Log_2(y)$\\

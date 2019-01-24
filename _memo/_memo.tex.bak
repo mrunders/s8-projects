@@ -163,9 +163,9 @@
 
 %% ------------------------ FORMULA
 \newcommand{\formula}[1]{
-\begin{description}
-\item[] {#1}
-\end{description}
+\begin{center}
+{#1}
+\end{center}
 }
 %% ------------------------ END FORMULA
 
@@ -201,6 +201,7 @@
 \pagebreak
 \tableofcontents
 
+\input{proba}
 \input{fdd}
 \input{ap}
 \input{of}

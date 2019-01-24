@@ -1,7 +1,8 @@
 
 from ConsList import *
-from Logic import AND,OR,NOT,TOP,BOT,EQUIV
+from Logic import *
 
+VAR_SYMBOLE_PREFIX = "q_"
 
 class TseitinTransformation():
 
@@ -14,8 +15,7 @@ class TseitinTransformation():
         self.operator[EQUIV]=self.equiv_gate
 
     def __last_variable(self, negation=False):
-        return "%svar_%d" % (NOT if negation else "" , self.var_indice)
-
+        return "%s%s%d" % (NOT if negation else "" , VAR_SYMBOLE_PREFIX , self.var_indice)
 
     def __next_variable(self):
         self.var_indice += 1
@@ -23,7 +23,7 @@ class TseitinTransformation():
 
     def __negate(self, expr):
         if type(expr) == str:
-            return expr[1:] if  expr[0] == "-" else "-%s" % (expr)
+            return expr[1:] if expr[0] == "-" else "-%s" % (expr)
 
         elif type(expr) == ConsList:
             if expr.car() == NOT:

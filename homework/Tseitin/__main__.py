@@ -5,22 +5,20 @@ from FormParser import Parser
 from TseitinTransformation import *
 from Reduction import *
 
-def evaluate(expr):
+def tseitin(expr):
     return TseitinTransformation().evaluate(Parser(expr).parse())
 
-"""
-print(evaluate("(-p)"))
-print(evaluate("(TRUE)"))
-print(evaluate("(FALSE)"))
-print(evaluate("(* p q)"))
-print(evaluate("(+ p q) "))
-print(evaluate("(+ p -q)"))
-print(evaluate("(* ( + p q ) ( + -p -q))"))
-"""
+def extseitin(expr):
+    print("Pour %s" % (str(expr)))
+    print(">> %s" % (tseitin(expr)))
 
-expr = evaluate("(= p (* p r))")
-print(expr)
-sol = Solve.remove_vars(expr)
-print(sol)
-cc = Solve.remove_terms(sol)
-print(cc)
+
+extseitin("(-p)")
+extseitin("(TRUE)")
+extseitin("(FALSE)")
+extseitin("(* p r)")
+extseitin("(+ p r) ")
+extseitin("(+ p -r)")
+extseitin("(* ( + p r ) ( + -p -r))")
+extseitin("(= p (* p r))")
+extseitin("(= p (* p r))")
