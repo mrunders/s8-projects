@@ -301,7 +301,8 @@ Le meilleur choix serait de prendre (y,v) pour assurer un minimum de gain pour c
 \subsection{autres Stratégies}
 Jusque la nous avons utilisé que les stratégies pures, c'est à dire les option qui se présente au joueurs.\\
 Une stratégies mixte est une distribution de probabilité sur l'ensemble des stratégies pures.\\
-%% comportemental / local
+Une stratégie local du joueur $i$ est une distribution de probabilités $p_i$ définit sur l'ensemble des stratégies pure du joueurs $i$.\\
+Une stratégie comportemental du joueur $i$ est un vecteur de stratégies locales du joueur $i$.\\
 
 \subsection{Équilibre de Nash en stratèges mixtes}
 Soit le problème:
@@ -340,11 +341,25 @@ Donc:
 \item[] Si $x = 2(1-x)$ avec ($x = 2/3$), le joueur 2 peut jouer l'un ou l'autre.
 \end{description}
 
-%%fill
 
 \subsection{Représentation graphique du jeu}
-%% fill
+\begin{tikzpicture}
+\begin{axis}[
+	xmin=0, xmax=1, ymin=0, ymax=1, title={représentation graphique du jeu}
+	]
+    \addplot [color=blue] coordinates { (0,0)(0,0.333) };
+    \addplot [color=red] coordinates { (0,0)(0.666,0) };
+    \addplot [color=blue] coordinates { (0,0.333)(1,0.333) };
+    \addplot [color=blue] coordinates { (1,0.333)(1,1) };
+    \addlegendentry{$Joueur 1$}
+    \addplot [color=red] coordinates { (0.666,0)(0.666,1) };
+    \addplot [color=red] coordinates { (0.666,1)(1,1) };
+    \addlegendentry{$Joueur 2$}
+    \addplot [only marks, mark=*, color=black] coordinates { (0,0) (1,1) (0.666,0.333) };
+\end{axis}
+\end{tikzpicture}
 
+\pagebreak
 \subsection{Coopération}
 
 \begin{tabular}{c|cc}
@@ -360,14 +375,79 @@ Que se passe t'il si les 2 joueurs peuvent communiquer avant de jouer?:
 Lorsque tout les joueurs peuvent observer un même événement aléatoire, ils peuvent alors s'accorder sur des équilibres corrélés.\\
 Selon un accord prit via un flip coin, ou via une parution d'un évènement, si les deux joueurs se mette d'accord sur le fait de tirer $f$ ou $c$, mais le joueur désavantagé peut ne pas jouer le choix prit, mais il s'expose à ne rien gagner.\\
 
-\subsection{Itération}
+\subsection{Itération le dilemme des prisonniers}
+Deux personne sont arrêtées ensemble en possession d'armes à feu sont soupçonnés d'un délit fait en commun, Les policiers les séparent et disent à chacun:
+\begin{description}
+\item[] Si l'un des deux avoue et que l'autre ne dit rien, le premier est libéré et le second emprisonné 5 ans.
+\item[] Si les deux avouent, les deux iront 4 ans en prison.
+\item[] Si les deux ne disent rien alors ils seront emprisonné 2 ans.
+\end{description}
+
+Donnant le tableau suivant:
 \begin{tabular}{c|cc}
-$ $ & c & d\\
+$ $ & P2 avoue & P2 rien\\
 \hline
-c & 3,3 & 0,5\\
-d c & 5,0 & 1,1\\
+P1 avoue & 4,4 & 0,5\\
+P1 rien  & 5,0 & 2,2\\
 \end{tabular}
 
-%% fill [DIP]	
+\ \\
+Mais les valeurs inscrit ne représente pas le gain, donc il faut inverser les valeurs par rapport au maximum ($5$):\\
+
+\begin{tabular}{c|cc}
+$ $ & P2 avoue & P2 rien\\
+\hline
+P1 avoue & 1,1 & 5,0\\
+P1 rien  & 0,5 & 3,3\\
+\end{tabular}
+
+Si le joueur 1 avoue et le joueur 2 ne dit rien alors le joueur 1 gagnera 5 ans et le joueur 2 gagner 0 ans (car il sera en prison).\\
+
+\section{DIP Itérations}
+
+\begin{description}
+\item[] Les joueurs se rencontrent plusieurs fois
+\item[] A chaque itération les joueurs ont connaissances des coups précédents 
+\item[] ils ne connaissent pas les terme du jeu
+\item[] le gain d'un joueur est le cumul des gains de chaque rencontre
+\item[] Pour favoriser le coopération on ajoute la contrainte \formula{$X + T < 2R$}
+\end{description}
+\scalebox{0.8}{
+\begin{tabular}{c|cc}
+$ $ & Coopérer & non coopérer\\
+\hline
+Coopérer & $R=3$ récompense pour coopération mutuelle & $S=0$ salaire de la dupe\\
+non coopérer & $T=5$ tentation à trahir & $P=1$ punition pour la trahison mutuelle\\
+\end{tabular}}
+
+\subsection{Les Stratégies}
+
+Dans une rencontre les joueurs peuvent avoir plusieurs comportements diffèrent, appliquons les sur le problème DIP:
+\begin{description}
+\item[gentille] le joueur sera gentil quitte à perdre
+\item[méchante] le joueur ne laisse rien passé, tout doit être acquérir 
+\item[par pattern] suivre la même séquence de choix à l'infini
+\item[rancunière] donnant donnant jusqu'à l'erreur de l'adversaire
+\item[lunatique] aléatoirement
+\item[majoritaire gentille] joue ce que l'autre joue
+\item[majoritaire méchante] trahir
+\item[donnant donnant] joue le coup précédent de l'autre
+\end{description}
+
+Quand on fait jouer ses stratégies dans le cadre d'un tournois on obtient les scores suivant:
+
+\begin{tabular}{c|cc}
+place & stratégie & points \\
+\hline
+1 & donnant donnant & 42 \\
+2 & majoritaire gentille & 19 \\
+3 & rancunière & 4\\
+4 & lunatique  & 0\\
+\end{tabular}
+
+le top 3 n'est pas compliqué à déduire, se sont tous des stratégies adaptatif (qui s'adapte à l'adversaire).\\
+le top 2 a un pouvoir pour pardonner l'adversaire donc un jugement moins punitif.\\
+le top 1 est simple, il incarne la simplicité.\\
+la gentillesse prime aussi.\\
 
 \pagebreak

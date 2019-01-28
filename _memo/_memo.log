@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  24 JAN 2019 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  27 JAN 2019 17:00
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1277,12 +1277,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Overfull \hbox (11.36871pt too wide) in paragraph at lines 153--153
+Overfull \hbox (11.36871pt too wide) in paragraph at lines 154--154
 []\OT1/cmr/bx/n/14.4 VI Representation des con-nais-sances et raison-nement 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--153
+Underfull \hbox (badness 10000) in paragraph at lines 154--154
 []  
  []
 
@@ -1373,36 +1373,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Overfull \hbox (5.63202pt too wide) in paragraph at lines 120--121
-\OT1/cmr/m/n/12 aleatoires discretes prenant leurs valeurs dans DX=x1,..,xn e
-t DY=y1,..,ym
+Underfull \hbox (badness 10000) in paragraph at lines 127--141
+
  []
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
 
-Overfull \hbox (4.45865pt too wide) in paragraph at lines 126--127
-[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT
-1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m
-/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n
-/12  \OML/cmm/m/it/12 ::: \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12
- (\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]::x[]\OT1/cmr/m/n/1
-2 )$ 
- []
-
-
-Overfull \hbox (21.32593pt too wide) in paragraph at lines 145--146
-[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
-OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
-\OT1/cmr/m/n/12 1) + \OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
-OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 =
- []
-
-
-Overfull \hbox (11.70662pt too wide) in paragraph at lines 146--147
-[]\OT1/cmr/m/n/12 = $\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \
-OT1/cmr/m/n/12 = \OML/cmm/m/it/12 MetAnnee \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 M
-\OT1/cmr/m/n/12 2)\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Sexe \OT
-1/cmr/m/n/12 =
- []
+(E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1411,21 +1392,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 165.
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
- (E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+ []
+
+
+Overfull \hbox (4.49548pt too wide) in paragraph at lines 199--200
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--213
+
+ []
+
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 165.
-) (fdd.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] [16
+[15] (fdd.tex [16
 
 ]
 Chapter 2.
@@ -3082,7 +3070,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--300
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--305
+Underfull \hbox (badness 10000) in paragraph at lines 302--306
 
  []
 
@@ -3100,22 +3088,73 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [149]
-Underfull \hbox (badness 10000) in paragraph at lines 360--362
-
- []
-
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[150] (ap2.tex [151
+[150]
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
+
+ []
+
+
+Overfull \hbox (22.19017pt too wide) in paragraph at lines 379--381
+\OT1/cmr/m/n/12 Deux per-sonne sont arr^etees en-sem-ble en pos-ses-sion d'arm
+es a feu sont soupconnes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[151]
+Overfull \hbox (51.7146pt too wide) in paragraph at lines 421--422
+[] 
+ []
+
+
+Overfull \hbox (10.7014pt too wide) in paragraph at lines 425--427
+\OT1/cmr/m/n/12 Dans une ren-con-tre les joueurs peu-vent avoir plusieurs com-p
+orte-ments different,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 448--452
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[152])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[153] (ap2.tex [154
 
 ]
 Chapter 29.
-[152
+[155
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 21--41
@@ -3133,7 +3172,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153]
+[156]
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
@@ -3159,7 +3198,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[154]
+[157]
 Overfull \hbox (31.94647pt too wide) in paragraph at lines 190--200
 [][] $[]$ 
  []
@@ -3180,9 +3219,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[155]
+[158]
 Chapter 30.
-[156
+[159
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 253--254
@@ -3205,25 +3244,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[157]
+[160]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[158]
+[161]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[159]) (csp.tex [160
+[162]) (csp.tex [163
 
 ]
 Chapter 31.
-[161
+[164
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -3241,7 +3280,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[162]
+[165]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
@@ -3251,7 +3290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
-<img/aic_csp_1.jpg, id=544, 419.5675pt x 428.60126pt>
+<img/aic_csp_1.jpg, id=553, 419.5675pt x 428.60126pt>
 File: img/aic_csp_1.jpg Graphic file (type jpg)
  <use img/aic_csp_1.jpg>
 Package pdftex.def Info: img/aic_csp_1.jpg used on input line 57.
@@ -3263,11 +3302,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[163 <./img/aic_csp_1.jpg>]) (sat.tex [164
+[166 <./img/aic_csp_1.jpg>]) (sat.tex [167
 
 ]
 Chapter 32.
-[165
+[168
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3285,7 +3324,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[166]
+[169]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
@@ -3306,7 +3345,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[167]
+[170]
 Underfull \hbox (badness 10000) in paragraph at lines 73--84
 
  []
@@ -3338,7 +3377,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[168]
+[171]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -3354,9 +3393,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[169]
+[172]
 Chapter 33.
-[170
+[173
 
 ])
 
@@ -3365,16 +3404,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[171] (_memo.aux) )
+[174] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31198 strings out of 493323
- 750955 string characters out of 3139963
- 974281 words of memory out of 3000000
- 34168 multiletter control sequences out of 15000+200000
+ 31222 strings out of 493323
+ 751401 string characters out of 3139963
+ 980062 words of memory out of 3000000
+ 34192 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3395,9 +3434,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (172 pages, 619165 bytes).
+Output written on _memo.pdf (175 pages, 626147 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
+ 647 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
