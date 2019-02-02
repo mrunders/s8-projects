@@ -81,7 +81,6 @@ Avec un filtre AC:\\
 Avec un filtre BC:\\
 \formula{$dom(w) = \{1,3,4,5\}$ et $dom(z) = \{4,5,8\}$}
 
-\pagebreak
 \section{Notion de Support}
 Soit $c_{xyz}$ une contrainte tel que $c_{xyz}$ égal:
 \formula{$dom(x,y) = \{a,b\} et dom(z) = \{b,c\}$}
@@ -95,29 +94,20 @@ On n'a $T = rel(c_{xyz})$ et V = $dom(x)$ x $dom(y)$ x $dom(z)$:\\
 \hline $ $ & T & $ $\\
 \hline
 a & a & a \\
-$\cvert{a}$ & $\cvert{b}$ & $\cvert{b}$\\
+$\cvert{a}$ & $$\cvert{b & b }$\\
 $\crouge{a}$ & $\crouge{c}$ & $\crouge{c}$\\
  b & a & a \\ b & b & b \\
-c & a & a \\
-$\crouge{c}$ & $\crouge{c}$ & $\crouge{c}$\\
+c & a & a \\$\crouge{ c $&$ c $&$ c }$\\
 \hline
 \end{tabular}
 
 \begin{tabular}{|ccc|}
 \hline $ $ & V & $ $\\
 \hline
-a&a&b\\
-$\crouge{a}$&$\crouge{a}$&$\crouge{c}$\\
-$\cvert{a}$&$\cvert{b}$&$\cvert{b}$\\
-$\crouge{a}$&$\crouge{b}$&$\crouge{c}$\\
-b&a&b\\
-$\crouge{b}$&$\crouge{a}$&$\crouge{c}$\\
-b&b&b\\
-$\crouge{b}$&$\crouge{b}$&$\crouge{c}$\\
+a&a&b\\$\crouge{a&a&c}$\\$\cvert{a&b&b}$\\$\crouge{a&b&c}$\\b&a&b\\$\crouge{b&a&c}$\\b&b&b\\$\crouge{b&b&c}$\\
 \hline
 \end{tabular}
-\end{multicols}
-\pagebreak
+
 \section{Arc Consistancy}
 
 \pagebreak
