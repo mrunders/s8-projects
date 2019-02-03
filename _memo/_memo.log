@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  2 FEB 2019 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  3 FEB 2019 16:34
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -3430,11 +3430,84 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[176]) (sat.tex [177
+[176]
+Overfull \hbox (58.13467pt too wide) in paragraph at lines 186--186
+[]\OT1/cmr/m/n/12 Soit un autre ex-em-ple plus com-plexe avec une con-trainte $
+\OML/cmm/m/it/12 allDifferent\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 u; v; w; x; y; z
+\OT1/cmr/m/n/12 )$
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[177]
+Overfull \hbox (13.9519pt too wide) in paragraph at lines 229--231
+\OT1/cmr/m/n/12 Une con-trainte de car-di-nalite note $\OML/cmm/m/it/12 cardin
+ality\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; Y; L; U\OT1/cmr/m/n/12 )$ qui a $\OML
+/cmm/m/it/12 X$ \OT1/cmr/m/n/12 est l'ensemble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+Overfull \hbox (35.41464pt too wide) in paragraph at lines 240--247
+[] 
+ []
+
+
+Overfull \hbox (0.53474pt too wide) in paragraph at lines 322--323
+\OT1/cmr/m/n/12 Soit un fil-tre $\OML/cmm/m/it/12 sum$ \OT1/cmr/m/n/12 avec les
+ vari-ables $(\OML/cmm/m/it/12 x; y; z; a; b; c\OT1/cmr/m/n/12 )$ dans le do-ma
+ine $\OML/cmm/m/it/12 range\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12
+ 5)$
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[178]
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[179]
+Underfull \hbox (badness 10000) in paragraph at lines 353--355
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[180])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[181] (sat.tex [182
 
 ]
 Chapter 34.
-[178
+[183
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3452,7 +3525,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[179]
+[184]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
@@ -3473,7 +3546,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[180]
+[185]
 Underfull \hbox (badness 10000) in paragraph at lines 73--84
 
  []
@@ -3505,7 +3578,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[181]
+[186]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -3521,9 +3594,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[182]
+[187]
 Chapter 35.
-[183
+[188
 
 ])
 
@@ -3532,16 +3605,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[184] (_memo.aux) )
+[189] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31262 strings out of 493323
- 751915 string characters out of 3139963
- 980062 words of memory out of 3000000
- 34232 multiletter control sequences out of 15000+200000
+ 31339 strings out of 493323
+ 753019 string characters out of 3139963
+ 979062 words of memory out of 3000000
+ 34309 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3562,9 +3635,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (185 pages, 646358 bytes).
+Output written on _memo.pdf (190 pages, 658061 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
+ 695 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -118,7 +118,248 @@ $\crouge{b}$&$\crouge{b}$&$\crouge{c}$\\
 \end{tabular}
 \end{multicols}
 \pagebreak
-\section{Arc Consistancy}
+\section{AC filtre AllDifferent}
 
+\begin{multicols}{2}
+[Soit un sudoku block avec la contrainte $allDifferent(w,x,y,z)$:]
+\begin{tabular}{|c|c|c|}
+\hline $\cvert{3}$ & w & $\cvert{6}$\\
+\hline x & $\cvert{8}$ & y\\
+\hline $\cvert{1}$ & $\cvert{4}$ & z\\
+\hline
+\end{tabular}
+\begin{description}
+\item[w] = \{2,5\}
+\item[x] = \{5,7,9\}
+\item[y] = \{7\}
+\item[z] = \{2,5\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[Dans ce cas, y contient un singleton, donc il sera trivialement résolut en affectant y = 7 et en suppriment tout les occurrences de 7 dans les autres variables:]
+\begin{tabular}{|c|c|c|}
+\hline 3 & w & 6\\
+\hline x & 8 & $\cvert{7}$\\
+\hline 1 & 4 & z\\
+\hline
+\end{tabular}
+\begin{description}
+\item[w] = \{2,5\}
+\item[x] = \{5,$\crouge{7}$,9\}
+\item[z] = \{2,5\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[nous pouvons construire le Hall sets suivant: $(w,z) vs (2,5)$ et donc supprimer toutes les occurrences de 2 et 5 dans les autres variables:]
+\begin{tabular}{|c|c|c|}
+\hline 3 & w & 6\\
+\hline $\cvert{9}$ & 8 & 7\\
+\hline 1 & 4 & z\\
+\hline
+\end{tabular}
+\begin{description}
+\item[w] = \{2,5\}
+\item[x] = \{$\crouge{5}$,9\}
+\item[z] = \{2,5\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[Ce qui nous donne 2 solutions, (w=2,z=5) ou (w=5,z=2)]
+\begin{tabular}{|c|c|c|}
+\hline 3 & w & 6\\
+\hline 9 & 8 & 7\\
+\hline 1 & 4 & z\\
+\hline
+\end{tabular}
+\begin{description}
+\item[w] = \{2,5\}
+\item[z] = \{2,5\}
+\end{description}
+\end{multicols}
 \pagebreak
 
+\begin{multicols}{2}
+[Soit un autre exemple plus complexe avec une contrainte $allDifferent(u,v,w,x,y,z)$ et un domaine $\{1,2,5,6,7,9\}$:]
+\begin{description}
+\item[u] = \{1,2\}
+\item[v] = \{2,9\}
+\item[w] = \{1,5,6\}
+\item[x] = \{2,6\}
+\item[y] = \{6,7,9\}
+\item[z] = \{1,9\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[On peut crée une Hall sets de taille 3 $(u,v,z)=(1,2,9)$ et éliminer toutes les occurrences de 1,2,9 dans les autres variables:]
+\begin{description}
+\item[u] = \{1,2\}
+\item[v] = \{2,9\}
+\item[w] = \{5,6\}
+\item[x] = \{6\}
+\item[y] = \{6,7\}
+\item[z] = \{1,9\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[On peut affecter x à 6 et supprimer toutes les occurrences de 6 dans les autres variables:]
+\begin{description}
+\item[u] = \{1,2\}
+\item[v] = \{2,9\}
+\item[w] = 5
+\item[x] = 6
+\item[y] = 7
+\item[z] = \{1,9\}
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[On obtient donc la tableau suivant qui pour n'importe quelle valeurs de u,v,w,x,y,z donne:]
+\begin{tabular}{cccccc}
+u&v&w&x&y&z\\ \hline 1&2&5&6&7&1\\ 2&9&$ $&$ $&$ $&9\\
+\end{tabular}
+\end{multicols}
+\pagebreak
+\section{AC filtre Cardinalité}
+
+Une contrainte de cardinalité note $cardinality(X,Y,L,U)$ qui a $X$ est l'ensemble des variables, $Y$ le domaine des variables de $X$, $(L_i,U_i)$ le range d'occurrences de la variable $Y_i$ dans tout le modèle.\\
+Si $(L_i=1,U_i=3)$ alors la variable $Y_i$ ne pourra être présent de 1 à 3 fois maximum, si $(L_i=2,U_i=2)$ alors la variable $Y_i$ devra être présent 2 fois.\\
+
+Prenons:
+\begin{description}
+\item[X] les agents \{Peter,Paul,Mary,John,Bob,Mike,Julia\}
+\item[Y] les activités \{Morning (M),Day (D),Night (N),Backup (B),Off (O)\}
+\item[L] \{1,1,1,0,0\}
+\item[U] \{2,2,1,2,2\}
+\end{description}
+
+Nous voudrons réduire ce genre de tableau suivant:\\
+\begin{tabular}{c|ccccccc}
+$ $&Monday&Tuesday&Wendsday&Thursday&Friday&Saturday&Sunday\\ \hline
+Peter&D&N&N&N&O&O&O\\
+Paul&O&O&D&D&M&M&B\\
+Mary&M&M&D&D&O&O&N\\
+\end{tabular}
+
+\begin{center} \scalebox{0.8}{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (PETER)                  {$Peter$};
+  \node[state]         (PAUL) [right of=PETER]  {$Paul$};
+  \node[state]         (MARY) [right of=PAUL]   {$Mary$};
+  \node[state]         (JOHN) [right of=MARY]   {$John$};
+  \node[state]         (BOB)  [right of=JOHN]   {$Bob$};
+  \node[state]         (MIKE) [right of=BOB]    {$Mike$};
+  \node[state]         (JULIA)[right of=MIKE]   {$Julia$};
+  \node[state]         (NONE)[below right of=PETER] {$ $};
+  \node[state]         (M)[below right of=NONE]{$M(1,2)$};
+  \node[state]         (D)[right of=M]          {$D(1,2)$};
+  \node[state]         (N)[right of=D]          {$N(1,1)$};
+  \node[state]         (B)[right of=N]          {$B(0,2)$};
+  \node[state]         (O)[right of=B]          {$O(0,2)$};
+
+  \path (M) edge node {} (PETER)
+            edge node {} (PAUL)
+            edge node {} (MARY)
+            edge node {} (JOHN)
+            edge node {} (BOB)
+        (D) edge node {} (PETER)
+            edge node {} (PAUL)
+            edge node {} (JOHN)
+            edge node {} (BOB)
+            edge node {} (MIKE)
+        (N) edge node {} (BOB)
+            edge node {} (MIKE)
+            edge node {} (JULIA)
+        (B) edge node {} (MIKE)
+        (O) edge node {} (MIKE)
+            edge node {} (JULIA);
+\end{tikzpicture}}
+\end{center}
+
+On peut assigner $Bob$ à la tache $N$ et assigner à $Julia$ la tache $O$, le reste sera des combinaison possible:
+\begin{center} \scalebox{0.8}{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (PETER)                  {$Peter$};
+  \node[state]         (PAUL) [right of=PETER]  {$Paul$};
+  \node[state]         (MARY) [right of=PAUL]   {$Mary$};
+  \node[state]         (JOHN) [right of=MARY]   {$John$};
+  \node[state]         (BOB)  [right of=JOHN]   {$Bob$};
+  \node[state]         (MIKE) [right of=BOB]    {$Mike$};
+  \node[state]         (JULIA)[right of=MIKE]   {$Julia$};
+  \node[state]         (NONE)[below right of=PETER] {$ $};
+  \node[state]         (M)[below right of=NONE]{$M(1,2)$};
+  \node[state]         (D)[right of=M]          {$D(1,2)$};
+  \node[state]         (N)[right of=D]          {$N(1,1)$};
+  \node[state]         (B)[right of=N]          {$B(0,2)$};
+  \node[state]         (O)[right of=B]          {$O(0,2)$};
+
+  \path (M) edge node {} (PETER)
+            edge node {} (PAUL)
+            edge node {} (MARY)
+            edge node {} (JOHN)
+        (D) edge node {} (PETER)
+            edge node {} (PAUL)
+            edge node {} (JOHN)
+        (N) edge node {} (BOB)
+        (B) edge node {} (MIKE)
+        (O) edge node {} (MIKE)
+            edge node {} (JULIA);
+\end{tikzpicture}}
+\end{center}
+
+\section{AC filtre Sum à une borne}
+
+Soit un filtre $sum$ avec les variables $(x,y,z,a,b,c)$ dans le domaine $range(1,5)$ appliqué sur l'équation:
+\formula{$2x+3y+2z+a+4b+2c \geq 50$}
+\begin{center}
+\begin{tabular}{cccccc}
+x&y&z&a&b&c\\ \hline
+1&1&1&1&1&1\\ 2&2&2&2&2&2\\ 3&3&3&3&3&3\\ 4&4&4&4&4&4\\
+\end{tabular}
+\end{center}
+Si le somme des maximums de chaque variable ne respecte pas la contrainte, alors il n'existe aucun assignement des variables tel que la contrainte serait satisfaite:
+\formula{$2*4+3*4+2*4+4+4*4+2*4 = 8+12+8+4+16+8 = 56 \geq 50$}
+Pour chaque variables, enlever son impacte dans le résultat précédemment obtenue et refaire l'opération de dépilé avec les différents $x$ tant que un $x_i$ ne satisfait pas la contrainte:\\
+\ \\
+Pour x:
+\begin{description}
+\item[] $2*4+3*4+2*4+4+4*4+2*4 = 8+12+8+4+16+8 = 56 \geq 50$
+\item[] $ 56 - 2*4 + 2*1 = 50 \geq 50$, donc $x=1$ fonctionne
+\item[] (pareil pour z,c)
+\end{description}
+\ \\
+Pour y:
+\begin{description}
+\item[] $ 56 - 3*4 + 3*1 = 44 \geq 50$, donc $y=1$  ne fonctionne pas
+\item[] $ 56 - 3*4 + 3*2 = 50 \geq 50$, donc $y=2$  fonctionne
+\end{description}
+\pagebreak
+Pour b:
+\begin{description}
+\item[] $ 56 - 4*4 + 4*1 = 40 \geq 50$, donc $b=1$  ne fonctionne pas
+\item[] $ 56 - 4*4 + 4*2 = 44 \geq 50$, donc $b=2$  ne fonctionne pas
+\item[] $ 56 - 4*4 + 4*3 = 50 \geq 50$, donc $b=3$  fonctionne
+\end{description}
+\ \\
+On obtient:\\
+\begin{center}
+\begin{tabular}{cccccc}
+x&y&z&a&b&c\\ \hline
+1&$ $&1&1&$ $&1\\ 2&2&2&2&$ $&2\\ 3&3&3&3&3&3\\ 4&4&4&4&4&4\\
+\end{tabular}
+\end{center}
+
+\pagebreak
+\section{AC filtre avec Sum à deux bornes}
+
+\pagebreak
