@@ -306,21 +306,99 @@ L'apprenant reçoit une observation de l'environnement et donne une prédiction,
 \subsection{Combinaison convexe}
 
 Une forme convexe est une forme pour qui n'importe quel droite dont les 2 points font partie de la forme est dans la forme.\\
-%% fill convex true
 
-\subsection{Convex Hull}
+\begin{center}
+\begin{tikzpicture}[scale=2]
+    \matrix[nodes={draw, ultra thick, fill=blue!20},
+        row sep=0.3cm,column sep=0.5cm] {
 
-%% fill l'enveloppe de la forme
+    \node[ellipse] {$Convexe$};&
+    \node[star,star points=5, scale=0.5] {$Non\ convexe$};\\
+    };
+\end{tikzpicture}
+\end{center}
 
-\subsection{Convex Set}
+\subsection{Enveloppe convexe}
 
-%% fill
+L'enveloppe convexe d'une forme est la bordure\\
+\begin{center}
+\begin{tikzpicture}[scale=2]
+    \matrix[nodes={draw, ultra thick, fill=white},
+        row sep=0.3cm,column sep=0.5cm] {
 
-%% si espace d'app est convex, alors pb is polynomial. sinon np dur
+    \node[ellipse] {$Convexe$};\\
+    };
+\end{tikzpicture}
+\end{center}
 
+Si un espace d'application est convexe alors le problème est polynomial, sinon le problème est NP-complet.\\
+
+\cshape{1}{
+\begin{tikzpicture}[scale=3]
+	\draw[step=.5cm,gray!20,very thin] (-1.4,-1.4) grid (1.4,1.4);
+	\filldraw[fill=red!20!white, draw=red!50!black] (-0.7,-0.7) rectangle (0.7,0.6);
+	
+	\foreach \coord in {(-0.5,0.8),(0.8,0.2),(-0.9,-0.5),(0,-1),(0.8,0.9)}{
+		\draw[fill=black, draw=black] \coord circle (0.05cm);
+	}
+	
+	\foreach \coord in {(0.2,0.5),(0.1,-0.4),(-0.6,-0.1),(0.6,-0.6)}{
+		\draw[fill=green, draw=green!20!black] \coord circle (0.05cm);
+	}
+	
+	\foreach \coord in {(-0.7,-0.7),(0.7,0.6)}{
+		\draw[fill=red, draw=red] \coord circle (0.03cm);
+	}
+	
+	\draw (-0.7,-0.7) node[below left] {$(-0.7,-0.7)$};
+	\draw (0.7,0.6)   node[above right]{$(0.7,0.6)$};
+\end{tikzpicture}
+}
+
+Dans cette figure on calcule l'enveloppe en essayant de capturer tout les points vert, un carré de coordonné $(-0.7,-0.7)(0.7,0.6)$ peut largement faire le boulot et résoudre le problème de classification.\\
+Le calcule est polynomial (enfin même inférieur) car le calcul de la classification d'un point se fait en un 4 instructions simple:\\
+\formula{$classification = \cblue{lambda}\ x,y : -0.7 < x < 0.7\ \cviolet{and}\ -0.7 < y < 0.6$}
+Ce raisonnement est valide car il n'y a aucun point noir dans le rectangle rouge.\\
+
+\pagebreak
 \subsection{Theoreme de la séparation des hyperplan}
 
-%% fill
+Un hyperplan est un ensemble de points sous la forme (représenté en blue):
+\formula{$H = \{x | a^T x = b\}, a \neq 0\ and\ b \in R$}
+\ \\
+Un hyperespace est un ensemble de points sous le forme (représenté en rouge):
+\formula{$H = \{x | a^T x \leq b \}, a \neq 0\ and\ b \in R$}
+
+\cshape{0.8}{
+\begin{tikzpicture}[scale=3]
+	\draw[step=.5cm,gray!20,very thin] (-1,-1.4) grid (1.4,1);
+	\filldraw[fill=blue!20!white, draw=blue!100!black] (-1.39,0.01) rectangle (1.39,-0.01);
+	\filldraw[fill=red!20!white, draw=red!0!white] (-1.4,0) rectangle (1.4,-1);
+	
+	\draw (0,-0.5) node [left] {$\crouge{a^T x \leq b}$};
+	\draw (0,0.5)  node [right]{$a^T x \geq b$};
+	\draw (1.4,0) node [right] {$\cblue{a^T x = b}$};
+
+\end{tikzpicture}
+}
+\ \\
+Soit $P$ et $N$ deux ensemble de points connexe tel qu'il n'existe aucune intersection, alors il existe une a ($\neq 0$) et un b tel que:
+\formula{$a^T x < b \forall x \in P$ and}
+\formula{$a^T x \geq b \forall x \in N$}
+L'ensemble des $\{x | a^T x = b\}$ est l'hyperplan de séparation de $P$ et $N$.
+
+\cshape{0.6}{
+\begin{tikzpicture}[scale=3]
+	\draw[step=.5cm,gray!20,very thin] (-1,-1.4) grid (1.4,1);
+	\filldraw[fill=white, draw=black] (-0.1,0.5) circle (0.4cm);
+	\filldraw[fill=blue!20!white, draw=blue!100!black] (-1.39,0.01) rectangle (1.39,-0.01);
+	\filldraw[fill=white, draw=black] (-0.5,-0.1) rectangle (1,-1);
+	
+	\draw (0,0.5) node [left] {$P$};
+	\draw (0,-0.5)  node [right]{$N$};
+
+\end{tikzpicture}
+}
 
 \subsection{Gradient}
 

@@ -12,6 +12,7 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata}
+\usetikzlibrary{shapes,snakes}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{xifthen}
@@ -168,6 +169,15 @@
 \end{center}
 }
 %% ------------------------ END FORMULA
+
+
+%% ------------------------ FORME SHAPE
+\newcommand{\cshape}[2]{
+\begin{center}
+\scalebox{#1}{#2}
+\end{center}
+}
+%% ----------------------- END FORME SHAPE
 
 \title{Memo pour l'année}
 \author{LAURENT Thomas}
