@@ -385,7 +385,7 @@ Un hyperespace est un ensemble de points sous le forme (représenté en rouge):
 Soit $P$ et $N$ deux ensemble de points connexe tel qu'il n'existe aucune intersection, alors il existe une a ($\neq 0$) et un b tel que:
 \formula{$a^T x < b \forall x \in P$ and}
 \formula{$a^T x \geq b \forall x \in N$}
-L'ensemble des $\{x | a^T x = b\}$ est l'hyperplan de séparation de $P$ et $N$.
+L'ensemble des $\{x | a^T x = b\}$ est l'hyperplan de séparation de $P$ et $N$ (et aussi une fonction linéaire de classification).
 
 \cshape{0.6}{
 \begin{tikzpicture}[scale=3]
@@ -400,16 +400,163 @@ L'ensemble des $\{x | a^T x = b\}$ est l'hyperplan de séparation de $P$ et $N$.
 \end{tikzpicture}
 }
 
+\subsection{Fonction convexe et normes}
+Une fonction f est dite convexe si son domaine est un ensemble convexe:
+\formula{$\forall x,y \in dom(f), \theta \in [0,1]$}
+\formula{$f(\theta x + (1-\theta)x) \leq f(x) + (1-\theta) f(x)$}
+
+Autrement dit (via la droite rouge), tout le domaine de la fonction est à l'intérieur de l'ensemble convexe de la fonction parabole:
+\begin{multicols}{2}
+[]
+
+\begin{tikzpicture}
+ \draw[help lines, gray!20] (-3.5,-1) grid (3.5,5);
+
+ \draw [->, thick] (-3,0) -- (0,0) -- (3,0);
+ \draw [->, thick] (0,0) -- (0,5);
+ 
+ \node at (0,-0.2) {$0$}; 
+ \node at (-1,-0.2) {$x$};
+ \node at (2,-0.2) {$y$};
+ \node at (0.4,1.5) {$f(x)$};
+ \node at (-0.5,4.5) {$f(y)$};
+ 
+ \draw [thick, domain=-2:2] plot (\x, {\x*\x});
+ \draw [thick, dashed, red] (-1,1) -- (2,4);
+ 
+ \draw [-, thick, gray!70] (-1,0) -- (-1,1);
+ \draw [-, thick, gray!70] (-1,1) -- (0,1);
+ \draw [-, thick, gray!70] (2,0) --  (2,4);
+ \draw [-, thick, gray!70] (2,4) -- (0,4);
+ 
+ \draw [fill, red] (-1,1) circle [radius=0.05];
+ \draw [fill, red] (2,4) circle [radius=0.05];
+\end{tikzpicture}
+
+
+\begin{description}
+\item[$e^{px}$] est convexe dans R $\forall p \in R$
+\item[$|x|^p$]  est convexe dans R si $p \leq 1$
+\item[$x log x$]est convexe dans $R^+$ (Entropie)
+\item[$||\vec{x}||_p$] Toutes les normes dans $R^n$ sont convexe 
+\end{description}
+\end{multicols}
+
+La $norme\ 1$ est donné par la somme des coefficient sous forme absolu, on dit aussi le calcule de la distance de Manhattan:
+\formula{$||\vec{x}||_1 = |x_1| + ... |x_n|$}
+
+La $norme\ 2$ est obtenu par le produit scalaire, elle est aussi utilisé pour calculer la distance entre 2 points dans un espace vectoriel:
+\formula{$||\vec{x}||_2 = \sqrt{|x_1|^2 + ... |x_n|^2}$}
+
+La $norme\ p$ est une généralisation de l'espace de fonction, si on prend $p=2$ on se réduit au produit scalaire:
+\formula{$||\vec{x}||_p = (|x_1|^p + ... |x_n|^p)^{\frac{1}{p}}$}
+
+La $norme\ \infty$:
+\formula{$||\vec{x}||_{\infty} = max(|x_1|, ... |x_n|)$}
+
 \subsection{Gradient}
+Soit $f: R^n \rightarrow R$ et $x$ un point intérieur du domaine de $f$, Si on peut crée une tangente $\frac{\eth f(x)}{\eth x_i}$ (en rouge), on peut dire que $f$ est différentiable (une dérivée existe) passant par $x$:
+\cshape{0.7}{
+ \begin{tikzpicture}
+ \draw[help lines, gray!20] (-1,-1) grid (8,8);
 
-%% fill
+ \draw [->, thick] (-1,0) -- (0,0) -- (8,0);
+ \draw [->, thick] (0,0) -- (0,8);
+ 
+ \node at (4,-0.2) {$x$}; 
+ \node at (6,-0.2) {$y$};
+ \node at (-1.5,2)   {$f(x)$};
+ \node at (-3,4)   {$f(x)-\nabla f(x)^T(x-y)$};
+ \node at (-1.5,4.5) {$f(y)$};
+ 
+ %% \draw [thick, blue, domain=0:3] plot (\x, {\x });
+ \draw [thick, dashed, red] (2,0) -- (8,6);
+ 
+ \draw [-, thick, gray!50] (0,2) -- (4,2);
+ \draw [-, thick, gray!50] (4,0) -- (4,2);
+ \draw [-, thick, gray!50] (0,4) --  (6,4);
+ \draw [-, thick, gray!50] (6,0) -- (6,4.5);
+ \draw [-, thick, gray!50] (0,4.5) -- (6,4.5);
+ 
+ \draw [fill, red] (4,2) circle [radius=0.05];
+ \draw [fill, red] (6,4) circle [radius=0.05];
+ \draw [fill, red] (6,4.5) circle [radius=0.05];
+\end{tikzpicture}
+}
 
+Si $f: R^n \rightarrow R$ est différentiable, alors $f$ est convexe si et seulement si le domaine de $f$ est convexe et $\forall x,y \in f$:
+\formula{$f(x) - f(y) \leq \nabla f(x)^T (x-y)$}
+
+\pagebreak
 \subsection{Fonction de Perte}
 
-%% fill
+Une fonction de perte est une fonction de $R$ x $R \rightarrow R^+$ tel que pour un couple $(y',y)$ d'une prédiction et d'une vrai réponse, comparer les deux valeurs et retourne si elle sont égal.
+\formula{$f(y',y) \rightarrow y' == y$}
 
+\cshape{1}{
+ \begin{tikzpicture}
+ \draw[help lines, gray!20] (-5,-1) grid (5,5);
+ 
+ \foreach \x in {-4,-1,0,1,4}{
+ 	\node at (\x, -0.5) {\x};
+ }
+ 
+ \draw [->, thick] (-5,0) -- (0,0) -- (5,0);
+ \draw [->, thick] (0,0) -- (0,5);
+ 
+ \node at (-1,4.5) {$\cblue{(y' - y)^2}$}; 
+ \node at (-3,4.5) {$\crouge{|y' - y|}$};
+ \node at (4,1.5) {$\corange{y' == y ? 0 : 1}$};
+ 
+ \draw [thick, blue, domain=-2:2] plot (\x +1, {\x * \x});
+ \draw [thick, red, domain=-4:4]  plot (\x +1, {abs(\x)});
+ 
+ \draw [-, thick, orange] (-4,1) -- (4,1);
+ \draw [-, thick, orange] (1,1)  -- (1,0); 
+
+\end{tikzpicture}
+}
+
+La formule orange nommé $Zero-one$ qui n'est pas convexe et qui est la première au quel on pense:
+\formula{$f(y',y)\rightarrow y' == y ? 0 : 1$}
+
+La formule rouge nommé $absolut$ qui est convexe mais trop punitif pour les petites erreurs:
+\formula{$f(y',y) \rightarrow |y' - y|$}
+
+La formule bleu nommé $quadratique$ qui est convexe et minimise les petits erreurs mais maximise les grosses erreurs:
+\formula{$f(y',y) \rightarrow |y' - y|^2$}
+
+\pagebreak
 \section{Apprentissage par régression}
 
+La régression est un problème de minimisation:\\
+
+\begin{description}
+\item[Paramètre]: Une fonction de mise à jour $f$
+\item[Initialisation] $w_0 = 0$
+\item[Pour toutes les entrées]:\begin{description}
+\item[-] Recevoir l'observation $x_t$
+\item[-] Faire une prédiction $y' = w_{t-1}^T x_i$
+\item[-] Calculer la fonction de perte $(y',y)$
+\item[-] Re apprendre le modèle en cas de mauvaise prédiction $w_t = f(w_{t-1})$
+\end{description}
+\end{description}
+
+\subsection{Gradient Descent}
+
+\begin{description}
+\item[Initialisation] $w_0 = 0$
+\item[Pour toutes les entrées]:\begin{description}
+\item[-] Recevoir l'observation $x_t$
+\item[-] Faire une prédiction $y' = w_{t-1}^T x_i$
+\item[-] Calculer la fonction de perte $(y_t',y_t)^2$
+\item[-] Re apprendre le modèle $w_t = w_{t-1} - \eta(y'_t-y_t) x_t$
+\end{description}
+\end{description}
+
+
+
+\pagebreak
 \section{Apprentissage par classification}
 
 \pagebreak

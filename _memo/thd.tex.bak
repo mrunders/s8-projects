@@ -403,7 +403,7 @@ P1 rien  & 0,5 & 3,3\\
 
 Si le joueur 1 avoue et le joueur 2 ne dit rien alors le joueur 1 gagnera 5 ans et le joueur 2 gagner 0 ans (car il sera en prison).\\
 
-\section{DIP Itérations}
+\subsection{DIP Itérations}
 
 \begin{description}
 \item[] Les joueurs se rencontrent plusieurs fois
@@ -436,17 +436,333 @@ Dans une rencontre les joueurs peuvent avoir plusieurs comportements diffèrent,
 
 Quand on fait jouer ses stratégies dans le cadre d'un tournois on obtient les scores suivant:
 
+\begin{center}
 \begin{tabular}{c|cc}
 place & stratégie & points \\
 \hline
 1 & donnant donnant & 42 \\
 2 & majoritaire gentille & 19 \\
-3 & rancunière & 4
+3 & rancunière & 4\\
 4 & lunatique  & 0\\
 \end{tabular}
-
+\end{center}
+\ \\
 le top 3 n'est pas compliqué à déduire, se sont tous des stratégies adaptatif (qui s'adapte à l'adversaire).\\
 le top 2 a un pouvoir pour pardonner l'adversaire donc un jugement moins punitif.\\
 le top 1 est simple, il incarne la simplicité.\\
+la gentillesse prime aussi.\\
+
+\pagebreak
+\section{Jeux répété}
+
+Soit un jeu $G = \{S, \{u_i \} i=1,...n \}$ où $S$ est l'ensemble fini des profils stratégie et $u_i$ est la fonction d'utilité du joueur $i$.\\
+On note $(G,T)$ le jeu répété obtenu en jouant $T$ fois le jeu de base $G$, $(G,\infty)$ correspond à un nombre infini de tour.\\
+
+On peut également distinguer les jeux répété un nombre fini, mais indéfini de fois : à chaque tour, il y a une probabilité $1 - q$ 
+que le jeu s'arrête.\\
+Facteur d'actualisation: Lorsqu'un jeu est répété, il se peut que les gains obtenus à l'itération courante $u_t$ soient plus/moins importants aux yeux de l'agent que les gains  l'itération suivante $u_{t+1}$. Pour modéliser cela on peut utiliser un facteur d'actualisation $\phi$:
+\formula{$u_t = \phi u_{t+1}$}
+
+Le facteur d'actualisation $\phi = \frac{u_t}{u_{t+1}}$ représente donc l'attrait du joueur pour les gains actuels.
+
+\subsection{Jeux à deux joueurs à somme nulle}
+
+Dans le cas d'un jeu à somme nulle pour chaque case le joueur 1 va gagner la somme indiqué et le joueur 2 va perdre la somme indiqué:\\
+\begin{center}
+\begin{tabular}{c|cccc}
+$ $ & $y_1$ & $y_2$ & $y_3$ & $y_4$ \\
+\hline
+$x_1$ & 18 & 3 & 0 & 2\\
+$x_2$ & 0 & 3 & 8 & 20\\
+$x_3$ & 5 & 4 & 5 & 5\\
+$x_4$ & 9 & 3 & 0 & 20\\
+\end{tabular}
+\end{center}
+\ \\
+si le joueur 1 prend $x_1$ et le joueur 2 $y_1$ alors le joueur 1 gagnera 18 et le joueur 2 perdra 18.\\
+
+Le joueur 1 tente de maximiser son niveau de sécurité:
+\formula{$v_x = max_i(min_j u(x_i,y_j))$}
+
+Le joueur 2 tente de minimiser le niveau de sécurité du joueur 1:
+\formula{$v_y = min_j(max_i u(x_i,y_j))$}
+
+\subsection{Jeu sous forme extensive}
+
+Un jeu se déroulant de la racine jusqu'à une feuille, le noeud indique quel joueur doit jouer, donc un ordre de passage est explicite.\\
+
+Soit le jeu suivant sous forme d'arbre:
+
+\begin{center}
+\scalebox{0.8}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$1$};
+  \node[state]         (B) [below of=A]       {$2$};
+  \node[state]         (C) [right of=A]       {$3$};
+  \node[state]		   (D) [right of=C]       {$(3,2,2)$};
+  \node[state]         (AA)[below left of=A]  {$(3,0,0)$};
+  \node[state]         (BA)[below left of=B]  {$(4,2,4)$};
+  \node[state]		   (BB)[below right of=B] {$(2,3,1)$};
+  \node[state]    	   (CA)[below  of=C]      {$(1,0,3)$};
+
+  \path (A) edge 			  node {x} (AA)
+  			edge			  node {y} (B)
+  		    edge 			  node {z} (C)
+  		(B) edge 			  node {w'} (BA)
+  		    edge 			  node {u'} (BB)
+  		(C) edge              node {u}  (CA)
+  		    edge 			  node {w}  (D);
+\end{tikzpicture}
+}\end{center}
+
+\begin{multicols}{2}
+[Via la récurrence à rebours, On remonte les noeuds optimaux de l'arbre vers la racine:]
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$1$};
+  \node[state]         (B) [below of=A]       {$(2,3,1)$};
+  \node[state]         (C) [right of=A]       {$(1,0,3)$};
+  \node[state]         (AA)[below left of=A]  {$(3,0,0)$};
+
+  \path (A) edge 			  node {x} (AA)
+  			edge			  node {y} (B)
+  		    edge 			  node {z} (C);
+\end{tikzpicture}
+}
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$(3,0,0)$};
+
+\end{tikzpicture}
+}
+\end{multicols}
+
+\subsection{sous jeu}
+Un sous jeu d'un jeu sous forme extensive est un jeu composé d'un noeud (qui est un ensemble d'information singleton) de tous les noeuds successeurs de ce noeud, de tout les arcs reliant ces noeuds, et des unités associées à tout les noueds terminaux successeurs.
+\\
+Le grand arbre ci dessus contient 3 sous jeux ayant comme racine (1,2,3).\\
+
+\pagebreak
+\subsection{Menaces non crédibles}
+
+\begin{multicols}{2}
+[Voici le même jeu sous forme de tableau et sous forme d'arbre]
+\scalebox{0.65}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$1$};
+  \node[state]         (B) [below of=A]       {$2$};
+  \node[state]         (AA)[below left of=A]  {$(2,2)$};
+  \node[state]         (BA)[below left of=B]  {$\crouge{(3,1)}$};
+  \node[state]		   (BB)[below right of=B] {$(0,0)$};
+
+  \path (A) edge 			  node {x} (AA)
+  			edge			  node {y} (B)
+  		(B) edge 			  node {u} (BA)
+  		    edge 			  node {v} (BB);
+\end{tikzpicture}
+}
+
+\begin{tabular}{c|cc}
+$ $ & u & v\\
+\hline
+x & (2,2) & $\crouge{(2,2)}$\\
+y & $\crouge{(3,1)}$ & (0,0)\\
+\end{tabular}
+\end{multicols}
+
+L'équilibre de Nash de l'arbre indique que la meilleur stratégie (d'un point de vue rationnel) est $(3,1)$ et via le tableau on obtient $\{(3,1),(2,2)\}$.\\
+l'équilibre de Nash $(xv)$ n'est pas crédible car il repose sur la menace non-crédible du joueur 2 de joueur $v$, autrement dit, dans le premier tour, si le joueur 1 joue $x$, le joueur 2 n'a aucun choix à faire, hors dans le tableau le joueur 2 peut proposer un choix.\\
+
+Un équilibre de Nash d'un jeu sous forme extensive est un équilibre parfait en sous jeu si toute restriction du profil de stratégies à un sous jeu est un équilibre de Nash pour ce sous jeu.\\
+Pour les jeux à informations parfaites, la notion d'équilibre parfait en sous jeu coïncide avec la notion de récurrence à rebours.\\ 
+
+\pagebreak
+\subsection{Promesse non crédible}
+Soit un contrat pour travailler en entreprise, le joueur 2 étant vous et le joueur 1 étant l'entreprise:
+
+\begin{center}
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$2$};
+  \node[state]         (B) [below right of=A] {$1$};
+  \node[state]         (AA)[below left of=A]  {$\crouge{(0,0)}$};
+  \node[state]         (BA)[below left of=B]  {$(2,-1)$};
+  \node[state]		   (BB)[below right of=B] {$(1,1)$};
+
+  \path (A) edge 			  node {décliner} (AA)
+  			edge			  node {accepter} (B)
+  		(B) edge 			  node {Exploiter} (BA)
+  		    edge 			  node {Ne pas exploiter} (BB);
+\end{tikzpicture}
+}
+\end{center}
+Dans le cas d'un contrat non répété il est mieux de choisir $\crouge{(0,0)}$, mais dans le cas d'un jeu répété si vous êtes le premier candidat et que vous acceptez le poste mais que vous vous faite exploiter, alors vous aller altérer les nouveaux candidats pour qu'ils choisis l'option de ne pas aller travailler la bas, donc l'entreprise ne devrait pas vous exploiter pour son bien.\\
+
+\subsection{Limite de la récurrence à rebours}
+
+Soit le jeu suivant, vous êtes le joueur 1:
+\begin{center}
+\scalebox{0.6}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[initial, state](A)                    {$1$};
+  \node[state]         (B) [right of=A]       {$2$};
+  \node[state]         (C) [right of=B]       {$1$};
+  \node[state]         (D) [right of=C]       {$2$};
+  \node[state]         (AA)[below of=A]       {$\crouge{(98,98)}$};
+  \node[state]         (BA)[below of=B]       {$(97,100)$};
+  \node[state]         (CA)[below of=C]       {$(99,99)$};
+  \node[state]         (DA)[below of=D]       {$(98,101)$};
+  \node[state]         (DB)[right of=D]       {$(100,100)$};
+
+  \path (A) edge 			  node {D} (AA)
+  			edge			  node {R} (B)
+  		(B) edge 			  node {D} (BA)
+  		    edge 			  node {R} (C)
+  		(C) edge              node {D} (CA)
+  		    edge              node {R} (D)
+  		(D) edge              node {D} (DA)
+  		    edge 			  node {R} (DB);
+\end{tikzpicture}
+}
+\end{center}
+Le calcule de l'équilibre de Nash nous donne $\crouge{(98,98)}$ mais cette équilibre ne marche que si le joueur 2 est un robot / rationnel, si on indique que les somme sont des Millions d'euro, les choix seront bien plus différent, si les deux joueurs sont altruiste alors les deux vont gagner $(100,100)$ si l'un des joueur est mauvais alors celui ci va aller le plus haut possible et choisir $D$ juste en guise de dernier choix.\\
+
+\pagebreak
+\section{Jeux coopératifs à 2 joueurs}
+
+%% fill
+
+\pagebreak
+\chapter{Décision de groupe et théorie du vote}
+Soit un ensemble de candidats $X = \{a,b,c....\}$, un sous ensemble de $X$ est noté un agenda.\\
+Soit une relation d'ordre $<, >$ (réflexif, transitif, total) permettent de trier les éléments de X selon des critères.\\
+Un ensemble d'individu est appelé un profil, chaque individu a le même poids.\\
+\\
+On n'aura deux façon de procéder:
+\begin{description}
+\item[] Déterminer la relation de préférence (l'ordre des candidats).
+\item[] Déterminer le gagnant d'un vote. (faisable aussi via la première façon). 
+\end{description}
+\pagebreak
+
+\section{Vote entre 2 candidats}
+$A > B$ si le nombre d'individu qui préfèrent A et plus grande que le nombre d'individu qui préfèrent B.\\
+
+Quatre propriété:
+\begin{description}
+\item[Domaine universel] la méthode de vote donne un résultat quel que soit le profil.
+\item[Anonymat] La méthode de vote traite tout les votant de la même manière.
+\item[Neutralité] La méthode de vote traite tous les candidats de la me manière.
+\item[Monotonie] Si un candidat est élu pour un profil donné, il sera forcément élu pour un profil modifié où ce candidat reçoit plus de vote.
+\end{description}
+\ \\
+
+\section{Gagnant de Condorcet}
+\begin{multicols}{2}
+[Un gagnant de Condorcet $A$ et un profil N si pour tout autre candidat $B \in$ N, le candidat $A$ est majoritairement préféré à $B$.
+]
+\begin{description}
+\item[] $a >_1 b >_1 c$
+\item[] $a >_2 c >_2 b$
+\item[] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Pour X = \{a,b\} a = 2, b = 1
+\item[] Pour X = \{a,c\} a = 2, c = 1
+\item[] a est un gagnant de Condorcet
+\end{description}
+\end{multicols}
+
+\begin{multicols}{2}
+[
+Pour tout les profil, il existe qu'un gagnant, mais il peut en avoir aucun:]
+\begin{description}
+\item[] $a >_1 b >_1 c$
+\item[] $b >_2 c >_2 a$
+\item[] $c >_3 a >_3 b$
+\end{description}
+\begin{description}
+\item[] Pour X = \{a,b\} a = 2, b = 1
+\item[] Pour X = \{a,c\} a = 1, c = 2
+\item[] Pour X = \{b,c\} b = 2, c = 1
+\end{description}
+\end{multicols}
+
+Une méthode de choisir le gagnant de Condorcet quand il existe est appelée Condorcet cohérente.
+
+\section{Scrutin majoritaire simple}
+
+\begin{multicols}{2}
+[Adapter le vote entre 2 candidats, soit 21 votants:]
+\begin{description}
+\item[10:] $a >_1 b >_1 c$
+\item[6:] $b >_2 c >_2 a$
+\item[5:] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Résultat: a 10, b 6, c 5
+\item[] Le candidat a est élu
+\item[] 
+\end{description}
+\end{multicols}
+
+Mais le problème et que plus de vote sont en faveur de $b$ que de $a$, on parle de perdant de Condorcet (ou de vote pour le pire candidat).
+
+\section{Scrutin majoritaire à deux tour}
+\begin{multicols}{2}
+[Hors majorité absolu, le vote se fera via un scrutin à 2 tours:]
+\begin{description}
+\item[10:] $a >_1 b >_1 c$
+\item[6:] $b >_2 c >_2 a$
+\item[5:] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Premier tour: a 10, b 6, c 5, le candidat c est éliminé
+\item[] Second tour : a 10, b 11
+\item[] Le candidat b est élu
+\end{description}
+\end{multicols}
+
+Le scrutin majoritaire à deux tours est manipulable, il peut être profitable à un individu de mentir sur ses préférences.\\
+Le scrutin majoritaire à deux tours est non-monotone et n'incite pas à la participation.\\
+Le scrutin majoritaire à deux tours n'est pas séparable. l'union de ce même vote via deux circonscriptions différente ayant comme élu le même candidat ne garantit pas que ce même candidat sera élu lors de la fusion des circonscriptions.\\
+Le scrutin majoritaire à deux tours permet la dictature de la majorité, si dans deux circonscriptions:
+\begin{description}
+\item[] 51: a > b > c ... > z
+\item[] 49: z > b > c ... > a
+\end{description}
+Le candidat a gagne via utilisation de la règle de dictature alors que le candidat b a 100\% de vote sur le second choix de préférence.\\
+
+\section{Méthode de vote non rangées}
+
+% fill
+
+\section{Méthode par scorage}
+
+% fill like ROC
+
+\section{Méthode de Condorcet cohérentes}
+
+% fill Coperland
+% fill Kramer Simpson
+% règle de tile break
+
+\section{Graphe de majorité}
+
+% fill
+% gagnant de condocet a toute les fléches sortante
 
 \pagebreak

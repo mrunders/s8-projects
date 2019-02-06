@@ -671,27 +671,80 @@ Quatre propriété:
 \ \\
 
 \section{Gagnant de Condorcet}
-Un gagnant de Condorcet $A$ et un profil N si pour tout autre candidat $B \in$ N, le candidat $A$ est majoritairement préféré à $B$.\\
+\begin{multicols}{2}
+[Un gagnant de Condorcet $A$ et un profil N si pour tout autre candidat $B \in$ N, le candidat $A$ est majoritairement préféré à $B$.
+]
+\begin{description}
+\item[] $a >_1 b >_1 c$
+\item[] $a >_2 c >_2 b$
+\item[] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Pour X = \{a,b\} a = 2, b = 1
+\item[] Pour X = \{a,c\} a = 2, c = 1
+\item[] a est un gagnant de Condorcet
+\end{description}
+\end{multicols}
 
-% fill good exemple a>b a>c a>d
-
-Pour tout les profil, il existe qu'un gagnant, mais il peut en avoir aucun:\\
-
-% fill cicle a>b, b>c, c>a
+\begin{multicols}{2}
+[
+Pour tout les profil, il existe qu'un gagnant, mais il peut en avoir aucun:]
+\begin{description}
+\item[] $a >_1 b >_1 c$
+\item[] $b >_2 c >_2 a$
+\item[] $c >_3 a >_3 b$
+\end{description}
+\begin{description}
+\item[] Pour X = \{a,b\} a = 2, b = 1
+\item[] Pour X = \{a,c\} a = 1, c = 2
+\item[] Pour X = \{b,c\} b = 2, c = 1
+\end{description}
+\end{multicols}
 
 Une méthode de choisir le gagnant de Condorcet quand il existe est appelée Condorcet cohérente.
 
 \section{Scrutin majoritaire simple}
-Adapter le vote entre 2 candidats:
 
-% fill 21 votant 10:a>b>c, 6:b>c>a, 5:c>b>a résultat a:10,b:6,c:5
+\begin{multicols}{2}
+[Adapter le vote entre 2 candidats, soit 21 votants:]
+\begin{description}
+\item[10:] $a >_1 b >_1 c$
+\item[6:] $b >_2 c >_2 a$
+\item[5:] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Résultat: a 10, b 6, c 5
+\item[] Le candidat a est élu
+\item[] 
+\end{description}
+\end{multicols}
 
-Mais le problème et que plus de vote sont en faveur de $b$ que de $a$, on parle de perdant de Condorcet (ou de vote pour le pire candidat).\\
+Mais le problème et que plus de vote sont en faveur de $b$ que de $a$, on parle de perdant de Condorcet (ou de vote pour le pire candidat).
 
 \section{Scrutin majoritaire à deux tour}
-Hors majorité absolu, le vote se fera via un scrutin à 2 tours:
+\begin{multicols}{2}
+[Hors majorité absolu, le vote se fera via un scrutin à 2 tours:]
+\begin{description}
+\item[10:] $a >_1 b >_1 c$
+\item[6:] $b >_2 c >_2 a$
+\item[5:] $c >_3 b >_3 a$
+\end{description}
+\begin{description}
+\item[] Premier tour: a 10, b 6, c 5, le candidat c est éliminé
+\item[] Second tour : a 10, b 11
+\item[] Le candidat b est élu
+\end{description}
+\end{multicols}
 
-% fill last exemple with b gagnant second tout b:15, a:6, eliminer c car trop faible premier tour
+Le scrutin majoritaire à deux tours est manipulable, il peut être profitable à un individu de mentir sur ses préférences.\\
+Le scrutin majoritaire à deux tours est non-monotone et n'incite pas à la participation.\\
+Le scrutin majoritaire à deux tours n'est pas séparable. l'union de ce même vote via deux circonscriptions différente ayant comme élu le même candidat ne garantit pas que ce même candidat sera élu lors de la fusion des circonscriptions.\\
+Le scrutin majoritaire à deux tours permet la dictature de la majorité, si dans deux circonscriptions:
+\begin{description}
+\item[] 51: a > b > c ... > z
+\item[] 49: z > b > c ... > a
+\end{description}
+Le candidat a gagne via utilisation de la règle de dictature alors que le candidat b a 100\% de vote sur le second choix de préférence.\\
 
 \section{Méthode de vote non rangées}
 
