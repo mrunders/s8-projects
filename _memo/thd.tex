@@ -741,28 +741,191 @@ Le scrutin majoritaire à deux tours est non-monotone et n'incite pas à la part
 Le scrutin majoritaire à deux tours n'est pas séparable. l'union de ce même vote via deux circonscriptions différente ayant comme élu le même candidat ne garantit pas que ce même candidat sera élu lors de la fusion des circonscriptions.\\
 Le scrutin majoritaire à deux tours permet la dictature de la majorité, si dans deux circonscriptions:
 \begin{description}
-\item[] 51: a > b > c ... > z
-\item[] 49: z > b > c ... > a
+\item[] $51: a > b > c ... > z$
+\item[] $49: z > b > c ... > a$
 \end{description}
 Le candidat a gagne via utilisation de la règle de dictature alors que le candidat b a 100\% de vote sur le second choix de préférence.\\
 
 \section{Méthode de vote non rangées}
 
-% fill
+Soit $m$ candidats, Une méthode de vote non rangé (nonranking voting rule) est un sous ensemble non vide de $\{1,2...,m-1\}$ représentent le nombre de candidats pour lesquels un individu peut voter.\\
+Le candidat ayant le plus de voix est élus.\\
+\begin{description}
+\item[$\{1\}$] scrutin majoritaire simple
+\item[$\{2\}$] Chaque individu doit voter pour 2 candidats
+\item[$\{1,2\}$] Chaque individu peut voter pour 1 ou 2 candidats
+\item[$\{m-1\}$] Chaque individu doit voter contre un candidat
+\item[$\{1,m-1\}$] Chaque individu doit voter pour un candidat ou contre un candidat
+\item[$\{1,2,m-1\}$] Chaque individu doit voter pour autant de candidats qu'il veut. (vote par approbation)
+\end{description}
+
+C'est une méthode de vote la moins manipulable.
 
 \section{Méthode par scorage}
 
-% fill like ROC
+Soit $m$ candidats, une méthode de vote par scorage est défini par:
+\begin{description}
+\item[] Soit une séquence non décroissent d'entiers: $s_0 \leq s_1 \leq ... s_{m-1}$ tel que $s_0 < s_{m-1}$.
+\item[] Chaque individu doit fournir son ordre strict des candidats
+\item[] Pour chaque individu on attribut $s_0$ au dernier candidat, $s_1$ à l'avant dernier ....
+\item[] Le candidat ayant reçu le plus de points est élu.
+\end{description}
 
+La méthode de vote par scorage respecte les propriétés de Monotonie, Séparabilité, Continuité, Participation.\\
+Le méthode de vote pas scorage n'est pas Condorcet cohérente.\\
+
+\pagebreak
 \section{Méthode de Condorcet cohérentes}
 
-% fill Coperland
-% fill Kramer Simpson
-% règle de tile break
+\subsection{Règle de Copeland}
+Le meilleur Candidat est celui qui bat tout les autres candidats:\\
+Pour chaque candidats $a$ lui attribuer la valeur +1 si un candidat $b$ ($b \neq a$) est préféré à $b$ -1 sinon.\\
+Le candidat élu aura le plus le plus haut score de Copeland.\\
 
+\begin{description}
+\item[5:] $a > b > c > d$
+\item[4:] $b > c > d > a$
+\item[3:] $d > c > a > b$
+\end{description}
+
+\begin{multicols}{3}
+$(a,b) = (+1,-1)$\\$(a,c) = (-1,+1)$\\$(a,d) = (-1,+1)$\\
+$(b,c) = (+1,-1)$\\$(b,d) = (+1,-1)$\\$(c,d) = (+1,-1)$\\
+\end{multicols}
+
+\begin{tabular}{c|cccccc|c}
+$cop(a)=$&+1&-1&-1&$ $&$ $&$ $&=-1\\
+$cop(b)=$&-1&$ $&$ $&+1&+1&$ $&=+1\\
+$cop(c)=$&$ $&+1&$ $&-1&$ $&+1&=+1\\
+$cop(d)=$&$ $&$ $&+1&$ $&-1&-1&=-1\\
+\end{tabular}
+
+Les candidats $b$ et $c$ sont élus.
+\pagebreak
+\subsection{Règle de Kramer Simpson}
+Le meilleur candidat est celui qui engendra le moins de regret chez les votants:\\
+Pour chaque candidat $a \neq b$ calculer $N(a,b)$ le nombre d'individus préférant $a$ à $b$.\\
+Le score de Simpson est le minimum des $N(a,b)$, le candidat élu est celui qui a le plus de haut score de Simpson.\\
+
+\begin{description}
+\item[5:] $a > b > c > d$
+\item[4:] $b > c > d > a$
+\item[3:] $d > c > a > b$
+\end{description}
+
+\begin{multicols}{3}
+$(a,b) = (8,4)$\\$(a,c) = (5,7)$\\$(a,d) = (5,7)$\\
+$(b,c) = (9,3)$\\$(b,d) = (9,3)$\\$(c,d) = (9,3)$\\
+\end{multicols}
+
+\begin{tabular}{c|cccccc|c}
+$cop(a)=$&8&5&5&$ $&$ $&$ $&=5\\
+$cop(b)=$&4&$ $&$ $&9&9&$ $&=4\\
+$cop(c)=$&$ $&7&$ $&3&$ $&9&=3\\
+$cop(d)=$&$ $&$ $&7&$ $&3&3&=3\\
+\end{tabular}
+
+Le candidat $a$ est élu.
+
+\subsection{Règle du Tile break}
+
+En cas d'égalité, une règle annexe peut s'appliquer pour départager les élus.\\
+Lors des présidentielle on élit le candidat le plus vieux.\\
+
+\pagebreak
 \section{Graphe de majorité}
 
-% fill
-% gagnant de condocet a toute les fléches sortante
+\begin{multicols}{2}
+[La représentation graphique n'est pas transitif:]
+\begin{description}
+\item[5:] $a > b > c > d$
+\item[4:] $b > c > d > a$
+\item[3:] $d > c > a > b$
+\end{description}
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (A)                    {$A$};
+  \node[state]         (B) [below left of=A]  {$B$};
+  \node[state]         (C) [below right of=A] {$C$};
+  
+
+  \path (A) edge              node {} (B)
+        (B) edge              node {} (C)
+        (C) edge			  node {} (A);
+\end{tikzpicture}
+\end{multicols}
+
+Un gagnant de Condorcet est un candidat qui a un arc vers tous les autres candidats.\\
+
+\begin{description}
+\item[Copeland]: Le meilleur candidat est celui qui requiert le moins de suppression d'autre candidats pour devenir un gagnant de Condorcet.
+\item[Young]: Le meilleur candidat est celui qui requiert le moins de suppression d'individus pour devenir un gagnant de Condorcet.
+\item[Dodgson]: Le meilleur candidat est celui qui demande le poins de changement dans les préférences des individus.
+\item[Kramer-Simpson]: Le meilleur candidat et celui qui assure le moins de regret.
+\item[Kemeny]: Le meilleur candidat et celui qui est rangé le plus haut dans la hiérarchie, une hiérarchie est construit via la relation de préférence $>$ la plus proche du profil.
+\end{description}
+
+Les règles de Copeland et de Kramer-Simpson sont monotones.\\
+Aucune règles Condorcet cohérente ne peut satisfaire la séparabilité.\\
+Aucune règles Condorcet cohérente ne peut satisfaire Participation.\\
+
+\pagebreak
+\section{Vote par comparaison successives}
+
+\begin{multicols}{3}
+[Le résultat dépend de l'ordre des comparaisons:]
+\scalebox{0.5}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$.$}
+    child { node {$.$}
+      child { node {$.$}
+        child { node {$a$}}
+        child { node {$b$}}
+      }
+      child { node {$c$}}
+    }
+    child { node {$d$}}
+    ;
+\end{tikzpicture}}
+\scalebox{0.5}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$.$}
+    child { node {$.$}
+      child { node {$a$}}
+      child { node {$b$}}
+    }
+    child { node {$.$}
+      child { node {$c$}}
+      child { node {$d$}}     
+    };
+\end{tikzpicture}}
+\scalebox{0.5}{
+\begin{tikzpicture}[sibling distance=10em,
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$.$}
+    child { node {$.$}
+      child { node {$a$}}
+      child { node {$c$}}
+    }
+    child { node {$.$}
+      child { node {$b$}}
+      child { node {$d$}}     
+    };
+\end{tikzpicture}}
+\end{multicols}
+
+\section{Vote simple transférable: méthode de Coombs}
+Chaque individu indique son ordre de préférence $>_i$. Pour $n$ candidats, on fait $n-1$ tours (à moins d'avoir la majorité strict sur un candidat), à chaque tours on élimine le candidat qui a le poins de points.
+Si un candidat est éliminé, alors il sera supprimé de toutes les listes de préférences des individus.\\
+
+
+
 
 \pagebreak
