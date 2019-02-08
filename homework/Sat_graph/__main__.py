@@ -11,6 +11,7 @@ GRAPH_EXEMPLE_DATA   = [("wa","nt"),("wa","sa"),("nt","sa"),("nt","gld"),("sa","
 AND_GATE = " . "
 OR_GATE  = " + "
 NOT_GATE = "-"
+NEW_LINE = "\n"
 
 class Sat_graph():
 
@@ -26,7 +27,7 @@ class Sat_graph():
         return AND_GATE.join(map(lambda var : self.__sat_to_cnf_str(self.__variable_to_sat(var)), self.graph_variables))
 
     def __sat_constraints(self):
-        return AND_GATE.join(map(lambda vars : self.__two_vars_constraint_str(*vars), self.graph_data))
+        return AND_GATE.join(self.__twos_vars_constraint_str())
     
     def __variable_to_sat(self, var):
         return map(lambda x : "%s%d" % (var, x) ,range(self.nb_color))
@@ -34,10 +35,16 @@ class Sat_graph():
     def __sat_to_cnf_str(self, sat):
         return "(%s)" % (OR_GATE.join(sat))
 
+    def __twos_vars_constraint_str(self):
+        output = []
+        for var1,var2 in self.graph_data:
+            output.extend(self.__two_vars_constraint_str(var1,var2))
+        return output
+
     def __two_vars_constraint_str(self, var1, var2):
         va1 = self.__variable_to_sat(var1)
         va2 = self.__variable_to_sat(var2)
-        return "(%s)" % (OR_GATE.join(map(lambda vv : "(%s%s%s(%s))" % (vv[0], AND_GATE, NOT_GATE, vv[1]), zip(va1,va1))))
+        return map(lambda vv : "(%s%s%s(%s))" % (vv[0], OR_GATE, NOT_GATE, vv[1]), zip(va1,va2))
 
     def get_variables_names(self):
         return self.graph_variables
@@ -54,17 +61,27 @@ class Sat_graph():
 
     @staticmethod
     def cons_to_dimacs(cons, variables_name):
-        return cons.map(lambda x : ord(x) if type(x) == str else x)
-        
+        vars = { var : abs(hash(var)) for var in variables_name }
+        new_cons = cons.map(lambda x : vars[x] if type(x) == str and len(x) > 1 else x)
+        new_cons_str = "%s" % (new_cons.map(lambda x : NEW_LINE if x == "." else x))
+        return new_cons_str.replace("(","").replace(")","").replace("%s " % (NOT_GATE), NOT_GATE)
 
+    @staticmethod
+    def write_dimacs_file(dimacs_str, variables_name, output_file=None):
+        
+        formated_dimacs = "p cnf %d %d\n%s" % (len(variables_name), dimacs_str.count(NEW_LINE), dimacs_str)
+        
+        if output_file is None:
+            print(formated_dimacs)
+
+        else:
+            with open(output_file, "w") as file:
+                file.write(formated_dimacs)
+        
+        
 
 
 c = Sat_graph(nb_color=3, graph_variables=GRAPH_EXEMPLE_HEADER, graph_data=GRAPH_EXEMPLE_DATA)
 d = Sat_graph.cnf_to_cons(cnf=c.parse())
-print(Sat_graph.cons_to_dimacs(cons=d, variables_name=c.get_all_variables_names()))
-
-
-
-
-## w0 w1 w2  x0 x1 x2
-## w0 . -x0 + w1 . x1 + -w2 . -x2
+e = Sat_graph.cons_to_dimacs(cons=d, variables_name=c.get_all_variables_names())
+Sat_graph.write_dimacs_file(e, variables_name=c.get_all_variables_names())

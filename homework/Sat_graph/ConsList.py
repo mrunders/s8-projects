@@ -47,7 +47,7 @@ class ConsList(object):
         return self.next_cons
 
     def map(self, function):
-        current = function(self.element) if type(self.element) != self else self.element.map(function)
+        current = function(self.element) if type(self.element) != type(self) else self.element.map(function)
         return ConsList(element=current, next_cons=self.next_cons.map(function))
 
     def filter(self, function):

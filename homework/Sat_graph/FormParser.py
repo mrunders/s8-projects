@@ -1,6 +1,5 @@
 
 from ConsList import *
-from Logic import TOP,BOT
 
 class Parser(object):
 
@@ -13,9 +12,9 @@ class Parser(object):
     def value_format(self, expr):
 
         if expr == "TRUE" or expr == "true":
-            return TOP
+            return True
         elif expr == "FALSE" or expr == "false":
-            return BOT
+            return False
 
         return expr
     

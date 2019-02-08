@@ -65,7 +65,7 @@ class SudokuSolver(Frame, object):
         super(SudokuSolver, self).__init__(self.fenetre, padx=50)
 
         self.fenetre.title('Sudoku Solver Project')
-        self.fenetre.geometry("1600x800")
+        self.fenetre.geometry("1000x800")
         self.fenetre.resizable(0, 0)
 
         self.previous_grid = GrilleGui(self, file_descriptor)
@@ -77,7 +77,7 @@ class SudokuSolver(Frame, object):
 
         self.pack()
 
-        self.previous_grid.pack(side=LEFT)
+        ##self.previous_grid.pack(side=LEFT)
         self.current_grid.pack(side=RIGHT)
 
         self.state.pack(side=TOP)
@@ -96,4 +96,4 @@ class SudokuSolver(Frame, object):
     def validation(self):
         return self.current_grid.validation()
 
-g = SudokuSolver("sudoku_evil.txt")
+g = SudokuSolver("demoniac.txt")
