@@ -115,10 +115,81 @@ $c$ doit être affecté à $\top$.\\
 Une variable est dite pure dans une formule si ses littéraux sont soit tous positif ou tous négatifs:\\
 \formula{$(a \vee \cblue{c}) \wedge (\neg a \vee \cblue{c})$}
 \pagebreak
+
 \chapter{Classes polynomiales}
 \pagebreak
 \section{2-SAT}
 \section{Horn-SAT}
 \section{Horn-renommable}
+\pagebreak
+
+\chapter{Algorithmes de résolution syntaxiques}
+\pagebreak
+\section{Algorithmes complets basé sur la résolution}
+\subsection{Méthodes basé sur la résolution}
+
+Soit une règles de résolution:
+\formula{$\frac{w_1 = (\neg a \vee \alpha) \wedge (w_2 = (a \vee \beta)}{(r = (\alpha \vee \beta)}$}
+
+On n'a $w_1 \wedge w_2 \models r$ car via affectation de la valeur de $a$ on retrouve bien $r$.\\
+
+\subsection{Modus Ponuce}
+
+% fill
+
+\subsection{règles de subsumption}
+
+Soit:
+\formula{$(w_1 = (a \vee b)) et (w_2 = (a \vee b \vee c))$}
+
+On peut dire que $w_1 \models w_2$.
+
+\subsection{Règles de fusion}
+
+% fill
+
+\section{Algorithmes complets Procédure de Davis et Putnam}
+
+Prend que des formules CNF.\\
+
+$Tant que(\bot \neg \in) et (\top \neg \in \sigma) faire:$
+\begin{description}
+\item[] appliquer la règles de littéraux unitaires
+\item[] appliquer la règles de littéraux pures
+\item[] choisir une variable $p \in Atomes(\sigma)$ et construire une nouvelle formule $\sigma = \sigma sans p$
+\end{description}
+
+Soit:
+\formula{$(a \vee c) (b \vee c) (d \vee c) (\neg a \vee \neg b \vee \neg c)$}
+Appliquer la règles de littéraux unitaires:
+\formula{$(a \vee c) (b \vee c) (d \vee c) (\neg a \vee \neg b \vee \neg c)$}
+Appliquer la règles de littéraux pures
+\formula{$(a \vee c) (b \vee c) \crouge{(d \vee c)} (\neg a \vee \neg b \vee \neg c)$}
+\formula{$(a \vee c) (b \vee c) (\neg a \vee \neg b \vee \neg c)$}
+Éliminer la variable c
+\formula{$(a \vee \neg a \vee \neg b) (b \vee \neg a \vee \neg b) = \top$}
+
+Rarement utilisé en pratique.
+
+\section{Algorithmes complets Méthodes des tableaux}
+
+Prend n'importe quel type de formules:\\
+
+% fill règles d'élimination
+% lors d'un et c'est sur la même ligne separé par virgule, si c'est un ou c'est 2 branches séparé
+% exemple
+% branche fermé \neg a, a.
+% si toutes les branches fermé -> insat
+
+\chapter{Algorithmes de résolutions sémantique}
+
+\section{Procédure de DPLL}
+
+% fill
+% only cnf
+% si unitaire ou pure : résoudre
+% sinon faire 2 branches d'affectations sur une var
+
+
 
 \pagebreak
