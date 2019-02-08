@@ -362,4 +362,128 @@ x&y&z&a&b&c\\ \hline
 \pagebreak
 \section{AC filtre avec Sum à deux bornes}
 
+\begin{multicols}{3}
+[Soit $x,y,z$ avec comme domaine $dom(x)=dom(y)=dom(z) = {1,2}$ et avec une contrainte $8 \leq 2x + 2y + z \leq 9$.\\
+Via résolution graphique on obtient et réduit le graphe comme ceci:]
+
+\scalebox{0.8}{
+\begin{tikzpicture}
+ \draw[help lines, gray!20] (0,0) grid (4,13);
+ 
+ \node at (1,-0.3) {$x_1:2$};
+ \node at (2,-0.3) {$x_2:2$};
+ \node at (3,-0.3) {$x_3:1$};
+
+ \draw [->, thick] (0,0) -- (4,0);
+ \draw [->, thick] (4,0) -- (4,13);
+ 
+ \foreach \vec in {0,1,2,3,4,5,6,7,10,11,12}{
+ 	\node at (4.3,\vec) {$\vec$};
+ }
+ 
+  \foreach \vec in {8,9}{
+ 	\node at (4.3,\vec) {$\cblue{\vec}$};
+ }
+ 
+ \foreach \vec in {(0,0),(1,2),(1,4),(2,4),(2,6),(2,8),(3,5),(3,6),(3,7),(3,8),(3,9),(3,10)}{
+ 	\draw [fill, red] \vec circle [radius=0.05];
+ }
+ 
+ \draw [thick, black] (0,0) -- (1,2);
+ \draw [thick, black] (0,0) -- (1,4);
+ \draw [thick, black] (1,2) -- (2,4);
+ \draw [thick, black] (1,2) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,8);
+ \draw [thick, black] (2,4) -- (3,5);
+ \draw [thick, black] (2,4) -- (3,6);
+ \draw [thick, black] (2,6) -- (3,7);
+ \draw [thick, black] (2,6) -- (3,8);
+ \draw [thick, black] (2,8) -- (3,9);
+ \draw [thick, black] (2,8) -- (3,10);
+ 
+\end{tikzpicture}}
+
+\scalebox{0.8}{
+\begin{tikzpicture}
+ \draw[help lines, gray!20] (0,0) grid (4,13);
+ 
+ \node at (1,-0.3) {$x_1:2$};
+ \node at (2,-0.3) {$x_2:2$};
+ \node at (3,-0.3) {$x_3:1$};
+
+ \draw [->, thick] (0,0) -- (4,0);
+ \draw [->, thick] (4,0) -- (4,13);
+ 
+ \foreach \vec in {0,1,2,3,4,5,6,7,10,11,12}{
+ 	\node at (4.3,\vec) {$\vec$};
+ }
+ 
+  \foreach \vec in {8,9}{
+ 	\node at (4.3,\vec) {$\cblue{\vec}$};
+ }
+ 
+ \foreach \vec in {(0,0),(1,2),(1,4),(2,4),(2,6),(2,8),(3,5),(3,6),(3,7),(3,8),(3,9),(3,10)}{
+ 	\draw [fill, red] \vec circle [radius=0.05];
+ }
+ 
+ \draw [thick, black] (0,0) -- (1,2);
+ \draw [thick, black] (0,0) -- (1,4);
+ \draw [thick, dashed, red] (1,2) -- (2,4);
+ \draw [thick, black] (1,2) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,8);
+ \draw [thick, dashed, red] (2,4) -- (3,5);
+ \draw [thick, dashed, red] (2,4) -- (3,6);
+ \draw [thick, dashed, red] (2,6) -- (3,7);
+ \draw [thick, black] (2,6) -- (3,8);
+ \draw [thick, black] (2,8) -- (3,9);
+ \draw [thick, dashed, red] (2,8) -- (3,10);
+ 
+\end{tikzpicture}}
+
+\scalebox{0.8}{
+\begin{tikzpicture}
+ \draw[help lines, gray!20] (0,0) grid (4,13);
+ 
+ \node at (1,-0.3) {$x_1:2$};
+ \node at (2,-0.3) {$x_2:2$};
+ \node at (3,-0.3) {$x_3:1$};
+
+ \draw [->, thick] (0,0) -- (4,0);
+ \draw [->, thick] (4,0) -- (4,13);
+ 
+ \foreach \vec in {0,1,2,3,4,5,6,7,10,11,12}{
+ 	\node at (4.3,\vec) {$\vec$};
+ }
+ 
+  \foreach \vec in {8,9}{
+ 	\node at (4.3,\vec) {$\cblue{\vec}$};
+ }
+ 
+ \foreach \vec in {(0,0),(1,2),(1,4),(2,6),(2,8),(3,8),(3,9)}{
+ 	\draw [fill, red] \vec circle [radius=0.05];
+ }
+ 
+ \draw [thick, black] (0,0) -- (1,2);
+ \draw [thick, black] (0,0) -- (1,4);
+ \draw [thick, black] (1,2) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,6);
+ \draw [thick, black] (1,4) -- (2,8);
+ \draw [thick, black] (2,6) -- (3,8);
+ \draw [thick, black] (2,8) -- (3,9);
+ 
+\end{tikzpicture}}
+\end{multicols}
+
+Dans un premier temps on représente toutes les possibilités, dans un second temps on élimine récursivement tout les feuille de l'arbre qui pointe sur des noeuds hors objectif (dans notre cas hors de 8,9). Toutes les branches seul qui ne sont pas relié aux bornes 8 et 9 seront supprimé.\\
+On peut attribuer au variables toutes les possibilités de chemin de l'arbre:
+\begin{description}
+\item[] $x_1=1, x_2=2, x_3=1$ : $1*2 + 2*2 + 1*2 = 8$
+\item[] $x_1=2, x_2=2, x_3=1$ : $2*2 + 2*2 + 1*1 = 9$
+\end{description}
+\pagebreak
+
+
+
 \pagebreak
