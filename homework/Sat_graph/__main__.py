@@ -1,17 +1,24 @@
+from itertools import combinations
+import sys
+import json
 
-#cnf dmax, minisat glucause
-
-from functools import reduce
-from ConsList import *
-from FormParser import *
-
-GRAPH_EXEMPLE_HEADER = ["wa","nt","sa","gld","nsw","vc","tas"]
-GRAPH_EXEMPLE_DATA   = [("wa","nt"),("wa","sa"),("nt","sa"),("nt","gld"),("sa","gld"),("sa","nsw"),("sa","vc"),("gld","nsw"),("nsw","vc")]
-
-AND_GATE = " . "
-OR_GATE  = " + "
 NOT_GATE = "-"
-NEW_LINE = "\n"
+
+class jsonParser():
+
+    def __init__(self, path="tmp.json"):
+        self.data = ""
+        with open(path, "r") as file:
+            self.data = json.load(file)
+
+        self.variables = self.data["variables"]
+        self.constraints = self.data["constraints"]
+
+    def get_variables(self):
+        return self.variables 
+
+    def get_constraints(self):
+        return self.constraints
 
 class Sat_graph():
 
@@ -21,57 +28,67 @@ class Sat_graph():
         self.nb_color = nb_color
 
     def parse(self):
-        return "(%s%s%s)" % (self.__sat_variables(), AND_GATE, self.__sat_constraints())
+        variables = []
+        constraintes = []
 
-    def __sat_variables(self):
-        return AND_GATE.join(map(lambda var : self.__sat_to_cnf_str(self.__variable_to_sat(var)), self.graph_variables))
+        for var in self.graph_variables:
+            tmp = Sat_graph.all_clause_for_one_variable(var, self.nb_color)
+            variables.append(tmp[0])
 
-    def __sat_constraints(self):
-        return AND_GATE.join(self.__twos_vars_constraint_str())
-    
-    def __variable_to_sat(self, var):
-        return map(lambda x : "%s%d" % (var, x) ,range(self.nb_color))
+            for a in tmp[1]:
+                constraintes.append(a)
 
-    def __sat_to_cnf_str(self, sat):
-        return "(%s)" % (OR_GATE.join(sat))
+        for constr1, constr2 in self.graph_data:
+            constr1 = Sat_graph.all_vars_for_one_var(constr1, self.nb_color)
+            constr2 = Sat_graph.all_vars_for_one_var(constr2, self.nb_color)
+            for const in zip(constr1,constr2):
+                constraintes.append(list(const))
 
-    def __twos_vars_constraint_str(self):
-        output = []
-        for var1,var2 in self.graph_data:
-            output.extend(self.__two_vars_constraint_str(var1,var2))
-        return output
+        variables_name = self.get_all_variables_names()
+        vars = { var : variables_name.index(var)+1 for var in variables_name }
 
-    def __two_vars_constraint_str(self, var1, var2):
-        va1 = self.__variable_to_sat(var1)
-        va2 = self.__variable_to_sat(var2)
-        return map(lambda vv : "(%s%s%s(%s))" % (vv[0], OR_GATE, NOT_GATE, vv[1]), zip(va1,va2))
+        variables = list(map(lambda x : ["%s" % (vars[y]) for y in x], variables))
+        constraintes = list(map(lambda x : list(map(lambda y : "%s%s" % (NOT_GATE, vars[y]), x)), constraintes))
 
-    def get_variables_names(self):
-        return self.graph_variables
+        return variables, constraintes, len(vars)
+
+    @staticmethod
+    def all_clause_for_one_variable(var, nb_colors):
+        a = Sat_graph.all_vars_for_one_var(var, nb_colors)
+        return a, Sat_graph.vars_combinations(a)
+
+    @staticmethod
+    def all_vars_for_one_var(var, nb_colors):
+        return ["%s%d" % (var, x) for x in range(nb_colors)]
+
+    @staticmethod
+    def vars_combinations(vars, arite=2):
+        return [[x[0],x[1]] for x in combinations(vars, arite)]
 
     def get_all_variables_names(self):
         output = []
         for var in self.graph_variables:
-            output.extend(self.__variable_to_sat(var))
+            output.extend(Sat_graph.all_vars_for_one_var(var, self.nb_color))
         return output
 
     @staticmethod
-    def cnf_to_cons(cnf):
-        return Parser(cnf).parse()
-
-    @staticmethod
-    def cons_to_dimacs(cons, variables_name):
-        vars = { var : abs(hash(var)) for var in variables_name }
-        new_cons = cons.map(lambda x : vars[x] if type(x) == str and len(x) > 1 else x)
-        new_cons_str = "%s" % (new_cons.map(lambda x : NEW_LINE if x == "." else x))
-        return new_cons_str.replace("(","").replace(")","").replace("%s " % (NOT_GATE), NOT_GATE)
-
-    @staticmethod
-    def write_dimacs_file(dimacs_str, variables_name, output_file=None):
+    def write_dimacs_file(real_variable_names, variables, constraintes, nb_variables, output_file=None):
         
-        formated_dimacs = "p cnf %d %d\n%s" % (len(variables_name), dimacs_str.count(NEW_LINE), dimacs_str)
+        dimacs_str = ""
+
+        comm = " ".join(real_variable_names)
+
+        for vars in variables:
+            dimacs_str += "%s 0\n" % (" ".join(vars))
+
+        comm += "\nc " + dimacs_str[:].replace("0\n","")
+
+        for const in constraintes:
+            dimacs_str += "%s 0\n" % (" ".join(const))
+
+        formated_dimacs = "c %s\np cnf %d %d\n%s" % (comm,nb_variables, len(variables) + len(constraintes), dimacs_str)
         
-        if output_file is None:
+        if output_file is None or output_file.lower() == "none":
             print(formated_dimacs)
 
         else:
@@ -80,8 +97,13 @@ class Sat_graph():
         
         
 
+if __name__ == "__main__":
+    data = jsonParser(path=sys.argv[1])
+    variables, constraints = data.get_variables(), data.get_constraints()
+    sat = Sat_graph(nb_color=int(sys.argv[2]), graph_variables=variables, graph_data=constraints)
 
-c = Sat_graph(nb_color=3, graph_variables=GRAPH_EXEMPLE_HEADER, graph_data=GRAPH_EXEMPLE_DATA)
-d = Sat_graph.cnf_to_cons(cnf=c.parse())
-e = Sat_graph.cons_to_dimacs(cons=d, variables_name=c.get_all_variables_names())
-Sat_graph.write_dimacs_file(e, variables_name=c.get_all_variables_names())
+    variables, constraints, nb_variables = sat.parse()
+    output_file = None if len(sys.argv) == 3 else sys.argv[3]
+    real_variable_names = sat.get_all_variables_names()
+
+    Sat_graph.write_dimacs_file(real_variable_names, variables,constraints,nb_variables, output_file=output_file)

@@ -1,0 +1,299 @@
+	\documentclass[french, 12pt]{report}
+\usepackage[latin1, utf8]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{pstricks}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{shapes,snakes}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{xifthen}
+\usepackage{fancyhdr}
+\usepackage{caption}
+ 
+\pgfplotsset{compat=1.16}
+\setlist[description]{leftmargin=\parindent,labelindent=\parindent}
+
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{darkgreen}{RGB}{0,150,0}
+ 	
+\newcommand{\cblue}[1]{ \textcolor{blue}{#1}}
+\newcommand{\corange}[1]{ \textcolor{orange}{#1}}
+\newcommand{\cviolet}[1]{ \textcolor{violet}{#1}}
+\newcommand{\crouge}[1]{ \textcolor{red}{#1}}
+\newcommand{\cvert}[1]{ \textcolor{darkgreen}{#1}}
+\newcommand{\cgris}[1]{ \textcolor{gray}{#1}}
+
+%% ------------------------- Header Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Master 2 IA Memo}
+\fancyhead[RE,LO]{ }
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+% -------------------------- END Header Footer
+
+%% ------------------------- Formular
+\newcommand{\cformular}[2]{
+\begin{center} 
+\begin{description} 
+\item[#1] #2 
+\end{description} 
+\end{center}
+}
+%% ------------------------- END Formular
+
+%% ------------------------- RO Model
+\newcommand{\rovarinout}[5]{
+\begin{description}
+\item[La variable entrante sera] #1
+\item[La variable sortante sera] #2 car:
+\end{description}
+\begin{multicols}{3}
+#3, #4, #5
+\end{multicols}
+}
+
+\newcommand{\romodel}[8]{
+\begin{multicols}{2}
+[Voici le nouveau modèle:]
+\begin{description}
+\item[Déterminer] #1
+\item[#2] #3 % ((2) maximisant | minimisant )
+\item[Variables hors base] #4
+\item[Variables de Base] #5
+\item[Solution admissible] #6 et Z = #7
+\end{description}
+#8 % contraintes
+\end{multicols}
+}
+%% ------------------------- END RO Model
+
+%% ------------------------- XML
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  showstringspaces=false,
+  commentstyle=\color{gray}\upshape
+}
+
+\lstdefinelanguage{XML}
+{
+  morestring=[b]",
+  morestring=[s]{>}{<},
+  morecomment=[s]{<?}{?>},
+  stringstyle=\color{black},
+  identifierstyle=\color{darkblue},
+  keywordstyle=\color{cyan},
+  morekeywords={xmlns,version,type}% list your attributes here
+}
+%% ------------------------ END XML
+
+%% ------------------------ Almost all
+\newcommand{\almost}{\mid\kern-0.40em{\backsim}\ }
+%% ------------------------ END Almost all
+
+%% ------------------------ Inverse DL lite
+\newcommand{\inverse}{\urcorner\ }
+%% ------------------------ End Inverse DL lite
+
+%% ------------------------ Python code for Machine leaning
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.97,0.97,0.95}
+
+\lstdefinestyle{mlpythoncode}{
+    backgroundcolor=\color{backcolor},   
+    commentstyle=\color{codepurple},
+    keywordstyle=\color{codegreen},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{magenta},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,   
+    emph={[2]sklearn, model_selection, train_test_split,KFold, linear_model, LinearRegression, LogisticRegression,
+    DecisionTreeRegressor, tree, neighbors, KNeighborsClassifier, svm, SVC, metrics, confusion_matrix,precision_recall_fscore_support,
+    LeaveOneOut},
+	emphstyle=[2]\color{blue}
+}
+
+\lstdefinestyle{myjson}{
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    comment=[l]{:},
+    commentstyle=\color{black},
+}
+
+\newcommand{\sepline}{\textcolor{gray}{\noindent\rule{14cm}{0.1pt}}}
+\newcommand{\paramtype}[1]{\textcolor{gray}{\textsf{\textit{#1}}}}
+
+\newcommand{\funcdoc}[4]{
+	\ \\
+	\textit{\textsf{\cblue{#1}}}
+    \ifthenelse{\isempty{#2}}%
+    {}%
+	{    \ \\\sepline\ \\
+	\textbf{Paramètres}
+	{#2}}
+    \ifthenelse{\isempty{#3}}%
+    {}%
+	{    \ \\\sepline\ \\
+	\textbf{Retourné}
+	{#3}}
+    \ifthenelse{\isempty{#4}}%
+    {}%
+	{    \ \\\sepline\ \\
+	\textbf{Méthodes}
+	{#4}}
+}
+
+%% ------------------------ END Python code
+
+%% ------------------------ FORMULA
+\newcommand{\formula}[1]{
+\begin{center}
+{#1}
+\end{center}
+}
+%% ------------------------ END FORMULA
+
+
+%% ------------------------ FORME SHAPE
+\newcommand{\cshape}[2]{
+\begin{center}
+\scalebox{#1}{#2}
+\end{center}
+}
+%% ----------------------- END FORME SHAPE
+
+\title{Coloration de graph avec SAT}
+\author{LAURENT Thomas}
+\date{Master 2 informatique 2019}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\section{Ce que contient l'archive}
+
+\begin{description}
+\item[\_\_main\_\_.py] Le programme qui va parser les graphs en format DIMACS.
+\item[model\_printer.py] Va correctement formater et afficher le modèle obtenue via le solveur SAT.
+\item[tmp.json] Un fichier json contenant un graph (notamment celui de l'Australie).
+\item[sat\_graph.sh] Pour automatiser le déroulement des algorithmes.
+\item[README.pdf] Coucou c'est moi.
+\end{description}
+
+\section{Format du graph dans le fichier json}
+
+\lstset{style=myjson}
+\begin{lstlisting}
+{
+    "variables" : ["wa","nt","sa","gld","nsw","vc","tas"],
+    "constraints": [["wa","nt"],["wa","sa"],...,["nsw","vc"]]
+}
+\end{lstlisting}
+
+\begin{description}
+\item[variables] étant une liste de tout les noms des points présent dans le graph.
+\item[constraints] la représentation de toutes les arêtes du graph.
+\end{description}
+
+\pagebreak
+\section{Utilisation du script}
+Voici un exemple:
+\formula{$./sat\_graph\ \ MiniSat\_v1.14\_linux\ \ tmp.json\ \ 3$}
+
+\begin{description}
+\item[MiniSat\_v1.14\_linux] Est le solveur utilisé en question MiniSat.
+\item[tmp.json] Un fichier au format json valide et étant similaire à l'exemple du dessus.
+\item[3] étant le nombre de couleurs que vous voudrez donner à l'algo. (il n'y a pas vérification si négatif si non numérique)
+\end{description}
+
+\ \\
+Le script, sat et python vont générer deux fichiers lors de leurs exécution:
+
+\begin{description}
+\item[sat.in] Qui sera le fichier formaté en DIMACS qui est créer par python et lu par le solveur. (le fichier contient 2 lignes de commentaires indiquant le noms des variables et leurs ids, ceci pour aider le $model\_printer$).
+\item[sat.out] Qui sera le modèle de base qui est écrit par le solveur et lu par le $model\_printer$ (je ne garantit pas que tout les solveur pourront être lu par le $model\_printer$).
+\end{description}
+
+\pagebreak
+\section{Exemple satisfiable}
+
+\formula{$./sat\_graph\ \ MiniSat\_v1.14\_linux\ \ tmp.json\ \ 3$}
+\ \\
+\begin{lstlisting}
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |      55      117 |      18       0        0     nan |  0.000 % |
+==============================================================================
+restarts              : 1
+conflicts             : 2              (3101 /sec)
+decisions             : 11             (17054 /sec)
+propagations          : 51             (79070 /sec)
+conflict literals     : 5              (0.00 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.000645 s
+
+SATISFIABLE
+======== Model ========
+wa prendra la couleur 1
+nt prendra la couleur 2
+sa prendra la couleur 0
+gld prendra la couleur 1
+nsw prendra la couleur 2
+vc prendra la couleur 1
+tas prendra la couleur 2
+
+\end{lstlisting}
+
+\pagebreak
+\section{Exemple satisfiable}
+
+\formula{$./sat\_graph\ \ MiniSat\_v1.14\_linux\ \ tmp.json\ \ 2$}
+\ \\
+\begin{lstlisting}
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |      32      64  |      10       0        0     nan |  0.000 % |
+==============================================================================
+restarts              : 1
+conflicts             : 2              (3101 /sec)
+decisions             : 1              (17054 /sec)
+propagations          : 10             (79070 /sec)
+conflict literals     : 1              (0.00 % deleted)
+Memory used           : 1.68 MB
+CPU time              : 0.000645 s
+
+UNSATISFIABLE
+
+
+\end{lstlisting}
+
+\end{document}
+

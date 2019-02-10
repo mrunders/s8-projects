@@ -1,0 +1,5 @@
+{
+    "variables" : ["wa","nt","sa","gld","nsw","vc","tas"],
+    "constraints": [["wa","nt"],["wa","sa"],["nt","sa"],["nt","gld"],["sa","gld"],["sa","nsw"],["sa","vc"],["gld","nsw"],["nsw","vc"]]
+}
+
