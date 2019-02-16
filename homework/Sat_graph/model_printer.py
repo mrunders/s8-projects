@@ -29,4 +29,4 @@ for k,v in zip(key,values):
 for m in model:
     if 0 < m:
         var = variables[m]
-        print("%s prendra la couleur %s" % split_color_name(var) )
+        print("%20s prendra la couleur %3s" % split_color_name(var) )

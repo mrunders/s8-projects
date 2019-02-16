@@ -1,312 +1,320 @@
-\contentsline {part}{I\hspace {1em}Probabilit\IeC {\'e}}{11}
-\contentsline {chapter}{\numberline {1}Introduction au Probabilit\IeC {\'e}s}{12}
-\contentsline {section}{\numberline {1.1}Mesure de probabilit\IeC {\'e}}{13}
-\contentsline {section}{\numberline {1.2}Variable al\IeC {\'e}atoire}{13}
-\contentsline {subsection}{\numberline {1.2.1}Probabilit\IeC {\'e} de mani\IeC {\`e}re axiomatique}{13}
-\contentsline {subsection}{\numberline {1.2.2}Variables al\IeC {\'e}atoire discr\IeC {\`e}te}{14}
-\contentsline {section}{\numberline {1.3}Probabilit\IeC {\'e}s conditionnelle}{14}
-\contentsline {section}{\numberline {1.4}Autres r\IeC {\`e}gles}{15}
-\contentsline {section}{\numberline {1.5}Exemples}{15}
-\contentsline {section}{\numberline {1.6}Probabilit\IeC {\'e} Matricielle}{16}
-\contentsline {part}{II\hspace {1em}Fouille de donn\IeC {\'e}e}{17}
-\contentsline {chapter}{\numberline {2}Rappel}{18}
-\contentsline {section}{\numberline {2.1}Logarithmes en base 2}{19}
-\contentsline {chapter}{\numberline {3}Pr\IeC {\'e} traitement des donn\IeC {\'e}es}{20}
-\contentsline {section}{\numberline {3.1}Nettoyage des donn\IeC {\'e}es}{21}
-\contentsline {subsection}{\numberline {3.1.1}Caract\IeC {\'e}ristiques descriptives}{21}
-\contentsline {section}{\numberline {3.2}Normalisation}{21}
-\contentsline {chapter}{\numberline {4}Classification}{22}
-\contentsline {section}{\numberline {4.1}\IeC {\'E}valuation des classifieurs}{23}
-\contentsline {subsection}{\numberline {4.1.1}Matrice de confusion}{23}
-\contentsline {chapter}{\numberline {5}Arbre de d\IeC {\'e}cision}{24}
-\contentsline {section}{\numberline {5.1}crit\IeC {\`e}res de s\IeC {\'e}lection C4.5}{25}
-\contentsline {subsection}{\numberline {5.1.1}Entropie}{25}
-\contentsline {subsection}{\numberline {5.1.2}Gain d'information}{27}
-\contentsline {subsection}{\numberline {5.1.3}Gain Ratio}{27}
-\contentsline {section}{\numberline {5.2}crit\IeC {\`e}res d'arr\IeC {\^e}t}{28}
-\contentsline {subsection}{\numberline {5.2.1}Crit\IeC {\`e}res d'arr\IeC {\^e}t}{28}
-\contentsline {subsection}{\numberline {5.2.2}crit\IeC {\`e}res d'arr\IeC {\^e}t: Param\IeC {\`e}tre utilisateur}{28}
-\contentsline {chapter}{\numberline {6}R\IeC {\'e}seau bay\IeC {\'e}siens}{29}
-\contentsline {section}{\numberline {6.1}Classifieur bay\IeC {\'e}siens}{30}
-\contentsline {section}{\numberline {6.2}Construction et classification avec des r\IeC {\'e}seaux Bay\IeC {\'e}siens}{31}
-\contentsline {subsection}{\numberline {6.2.1}Construction d'un r\IeC {\'e}seau bay\IeC {\'e}sien na\IeC {\"\i }f}{31}
-\contentsline {subsection}{\numberline {6.2.2}R\IeC {\`e}gle de classification bay\IeC {\'e}sienne}{32}
-\contentsline {subsection}{\numberline {6.2.3}R\IeC {\`e}gle de d\IeC {\'e}cision}{32}
-\contentsline {subsection}{\numberline {6.2.4}Observation de classe}{32}
-\contentsline {chapter}{\numberline {7}Clustering}{33}
-\contentsline {section}{\numberline {7.1}Approche par le Partitionnement}{34}
-\contentsline {section}{\numberline {7.2}Approche hi\IeC {\'e}rarchiques}{35}
-\contentsline {subsection}{\numberline {7.2.1}Exemple avec la fonction d = MIN}{35}
-\contentsline {chapter}{\numberline {8}ItemSet mining}{36}
-\contentsline {section}{\numberline {8.1}Itemsets}{37}
-\contentsline {section}{\numberline {8.2}R\IeC {\`e}gles d'association}{37}
-\contentsline {section}{\numberline {8.3}Apriori}{38}
-\contentsline {part}{III\hspace {1em}Apprentissage automatique par la pratique}{39}
-\contentsline {chapter}{\numberline {9}Rappel}{40}
-\contentsline {section}{\numberline {9.1}Matrices et calcules sur les Matrices}{41}
-\contentsline {subsection}{\numberline {9.1.1}Addition}{41}
-\contentsline {subsection}{\numberline {9.1.2}Multiplication}{41}
-\contentsline {subsection}{\numberline {9.1.3}Transposer}{41}
-\contentsline {subsection}{\numberline {9.1.4}Inverse}{41}
-\contentsline {chapter}{\numberline {10}Algorithms Learn a Mapping From Input to Output}{42}
-\contentsline {section}{\numberline {10.1}linear ML algorithms}{43}
-\contentsline {section}{\numberline {10.2}Supervised machine learning}{43}
-\contentsline {section}{\numberline {10.3}Unsupervised machine learning}{43}
-\contentsline {section}{\numberline {10.4}semi-supervised machine leaning}{43}
-\contentsline {section}{\numberline {10.5}Overview of dias and variance}{44}
-\contentsline {chapter}{\numberline {11}Overfitting and Underfitting}{45}
-\contentsline {section}{\numberline {11.1}Overfitting}{46}
-\contentsline {section}{\numberline {11.2}Underfitting}{46}
-\contentsline {chapter}{\numberline {12}Model Selection}{47}
-\contentsline {section}{\numberline {12.1}Train Test Split}{48}
-\contentsline {section}{\numberline {12.2}Cross validation}{49}
-\contentsline {section}{\numberline {12.3}Leave one out}{50}
-\contentsline {section}{\numberline {12.4}Matrice de confusion, Pr\IeC {\'e}cision, Pecall, F1}{51}
-\contentsline {chapter}{\numberline {13}Linear Algorithms}{53}
-\contentsline {section}{\numberline {13.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{54}
-\contentsline {section}{\numberline {13.2}Least squares linear regression}{56}
-\contentsline {section}{\numberline {13.3}Gradient Descent}{57}
-\contentsline {section}{\numberline {13.4}Logistic Regression}{58}
-\contentsline {subsection}{\numberline {13.4.1}Logistic function}{58}
-\contentsline {section}{\numberline {13.5}Linear Discriminant Analysis}{59}
-\contentsline {subsection}{\numberline {13.5.1}bay\IeC {\'e}sien rules}{59}
-\contentsline {chapter}{\numberline {14}Non linear algorithm}{60}
-\contentsline {section}{\numberline {14.1}Classification and r\IeC {\'e}gression tree}{61}
-\contentsline {section}{\numberline {14.2}K moyen}{64}
-\contentsline {section}{\numberline {14.3}Support vector machines}{65}
-\contentsline {subsection}{\numberline {14.3.1}Margin classifier}{65}
-\contentsline {subsection}{\numberline {14.3.2}Soft margin classifier}{65}
-\contentsline {part}{IV\hspace {1em}Outils formel}{67}
-\contentsline {chapter}{\numberline {15}Logique classique des propositions}{68}
-\contentsline {section}{\numberline {15.1}Vocabulaire}{69}
-\contentsline {section}{\numberline {15.2}Propri\IeC {\'e}t\IeC {\'e}s de l'op\IeC {\'e}rateur Models}{69}
-\contentsline {section}{\numberline {15.3}Ensemble de connecteurs fonctionnellement complet}{71}
-\contentsline {section}{\numberline {15.4}Preuve par induction structurelle sur un ensemble de connecteurs non fonctionnellement complet}{71}
-\contentsline {section}{\numberline {15.5}D\IeC {\'e}composition de Shannon}{72}
-\contentsline {section}{\numberline {15.6}Arbre de Shannon, ROBDD}{72}
-\contentsline {subsection}{\numberline {15.6.1}Remplacement ou v\IeC {\'e}rifonctionnalit\IeC {\'e}}{73}
-\contentsline {subsection}{\numberline {15.6.2}Substitution}{73}
-\contentsline {section}{\numberline {15.7}Notion de impliquant premier }{73}
-\contentsline {subsection}{\numberline {15.7.1}Table de Karnaugh}{73}
-\contentsline {subsection}{\numberline {15.7.2}Calcule arithm\IeC {\'e}tique}{74}
-\contentsline {chapter}{\numberline {16}Logique classique et pr\IeC {\'e}dicat du premier ordre}{75}
-\contentsline {section}{\numberline {16.1}Syntaxe via les arbres}{76}
-\contentsline {subsection}{\numberline {16.1.1}Occurrences libre}{76}
-\contentsline {subsection}{\numberline {16.1.2}Occurrences li\IeC {\'e}e}{76}
-\contentsline {subsection}{\numberline {16.1.3}Occurrences quantifi\IeC {\'e}}{77}
-\contentsline {subsection}{\numberline {16.1.4}Vocabulaire}{77}
-\contentsline {section}{\numberline {16.2}S\IeC {\'e}mantique}{78}
-\contentsline {section}{\numberline {16.3}Formule polie}{80}
-\contentsline {section}{\numberline {16.4}\IeC {\'E}quivalences remarquables}{80}
-\contentsline {section}{\numberline {16.5}Forme Pr\IeC {\'e}nexe}{81}
-\contentsline {section}{\numberline {16.6}Scal\IeC {\'e}nisation}{82}
-\contentsline {section}{\numberline {16.7}Forme propositionnelle}{82}
-\contentsline {chapter}{\numberline {17}Calculabilit\IeC {\'e} et Machine de Turing}{83}
-\contentsline {section}{\numberline {17.1}Machines de Turing}{85}
-\contentsline {subsection}{\numberline {17.1.1}Machine de Turing universel}{85}
-\contentsline {section}{\numberline {17.2}RE, coRE et R}{85}
-\contentsline {subsection}{\numberline {17.2.1}Preuve de R est inclue dans RE}{86}
-\contentsline {subsection}{\numberline {17.2.2}Preuve de R est inclue dans coRE}{86}
-\contentsline {section}{\numberline {17.3}Probl\IeC {\`e}me de l'arr\IeC {\^e}t}{87}
-\contentsline {section}{\numberline {17.4}r\IeC {\'e}duction fonctionnel}{87}
-\contentsline {subsection}{\numberline {17.4.1}Exemple de r\IeC {\'e}duction fonctionnel}{87}
-\contentsline {part}{V\hspace {1em}Recherche Op\IeC {\'e}rationnel}{88}
-\contentsline {chapter}{\numberline {18}Introduction \IeC {\`a} la PL}{89}
-\contentsline {section}{\numberline {18.1}Mod\IeC {\`e}le lin\IeC {\'e}aire continus \IeC {\`a} 2 variables}{90}
-\contentsline {subsection}{\numberline {18.1.1}Recherche de solutions}{90}
-\contentsline {subsection}{\numberline {18.1.2}recherche de la solution optimal}{91}
-\contentsline {chapter}{\numberline {19}Le simplexe}{93}
-\contentsline {section}{\numberline {19.1}Initialisation du simplexe}{94}
-\contentsline {section}{\numberline {19.2}Canonicit\IeC {\'e} du mod\IeC {\`e}le}{95}
-\contentsline {section}{\numberline {19.3}Solution admissible}{95}
-\contentsline {section}{\numberline {19.4}Exemple simple Premier it\IeC {\'e}ration}{96}
-\contentsline {subsection}{\numberline {19.4.1}Choix de la variable entrante}{96}
-\contentsline {subsection}{\numberline {19.4.2}Choix de la variable sortante}{96}
-\contentsline {subsection}{\numberline {19.4.3}pivotage}{97}
-\contentsline {subsection}{\numberline {19.4.4}Nouveau mod\IeC {\`e}le}{97}
-\contentsline {section}{\numberline {19.5}Exemple simple Seconde it\IeC {\'e}ration}{98}
-\contentsline {subsection}{\numberline {19.5.1}Choix de la variable entrante}{98}
-\contentsline {subsection}{\numberline {19.5.2}Choix de la variable sortante}{98}
-\contentsline {subsection}{\numberline {19.5.3}pivotage}{98}
-\contentsline {subsection}{\numberline {19.5.4}Nouveau mod\IeC {\`e}le}{98}
-\contentsline {section}{\numberline {19.6}Exemple simple, troisi\IeC {\`e}me it\IeC {\'e}ration}{99}
-\contentsline {subsection}{\numberline {19.6.1}Variable entrante et sortante}{99}
-\contentsline {subsection}{\numberline {19.6.2}Nouveau mod\IeC {\`e}le}{99}
-\contentsline {section}{\numberline {19.7}Exemple simple, derni\IeC {\`e}re it\IeC {\'e}ration}{100}
-\contentsline {chapter}{\numberline {20}Simplexe \IeC {\`a} deux phases}{101}
-\contentsline {section}{\numberline {20.1}Premi\IeC {\`e}re phase du simplexe \IeC {\`a} deux phases}{102}
-\contentsline {subsection}{\numberline {20.1.1}Nouveau mod\IeC {\`e}le}{103}
-\contentsline {section}{\numberline {20.2}Premier phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{103}
-\contentsline {subsection}{\numberline {20.2.1}Variable entrante et sortante}{103}
-\contentsline {subsection}{\numberline {20.2.2}pivotage}{103}
-\contentsline {subsection}{\numberline {20.2.3}Nouveau mod\IeC {\`e}le}{103}
-\contentsline {section}{\numberline {20.3}Premier phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{104}
-\contentsline {section}{\numberline {20.4}Seconde phase du simplexe \IeC {\`a} deux phases}{104}
-\contentsline {section}{\numberline {20.5}Seconde phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{105}
-\contentsline {subsection}{\numberline {20.5.1}Variable entrante et sortante}{105}
-\contentsline {subsection}{\numberline {20.5.2}pivotage}{105}
-\contentsline {subsection}{\numberline {20.5.3}Nouveau mod\IeC {\`e}le}{105}
-\contentsline {section}{\numberline {20.6}Seconde phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{106}
-\contentsline {subsection}{\numberline {20.6.1}Variable entrante et sortante}{106}
-\contentsline {subsection}{\numberline {20.6.2}pivotage}{106}
-\contentsline {subsection}{\numberline {20.6.3}Nouveau mod\IeC {\`e}le}{106}
-\contentsline {section}{\numberline {20.7}Seconde phase du simplexe \IeC {\`a} deux phases, troisi\IeC {\`e}me it\IeC {\'e}ration}{107}
-\contentsline {part}{VI\hspace {1em}Repr\IeC {\'e}sentation des connaissances et raisonnement}{108}
-\contentsline {chapter}{\numberline {21}Logique propositionnel}{109}
-\contentsline {section}{\numberline {21.1}Vocabulaire}{110}
-\contentsline {section}{\numberline {21.2}coh\IeC {\'e}rence d'un ensemble de clauses}{110}
-\contentsline {chapter}{\numberline {22}Introduction \IeC {\`a} la logique de description}{111}
-\contentsline {section}{\numberline {22.1}Attributive Language with Complement}{112}
-\contentsline {subsection}{\numberline {22.1.1}Propri\IeC {\'e}t\IeC {\'e}s}{112}
-\contentsline {section}{\numberline {22.2}Logique de description}{112}
-\contentsline {subsection}{\numberline {22.2.1}S\IeC {\'e}mantique}{112}
-\contentsline {subsection}{\numberline {22.2.2}Assertions}{112}
-\contentsline {section}{\numberline {22.3}TBoxes et ABoxes}{113}
-\contentsline {subsection}{\numberline {22.3.1}Subsumption}{113}
-\contentsline {subsection}{\numberline {22.3.2}Classification}{113}
-\contentsline {subsection}{\numberline {22.3.3}Instance checking}{114}
-\contentsline {subsection}{\numberline {22.3.4}Retrieval}{114}
-\contentsline {subsection}{\numberline {22.3.5}Equivalance of concept}{114}
-\contentsline {subsection}{\numberline {22.3.6}Concept satisfiability}{114}
-\contentsline {subsection}{\numberline {22.3.7}ABox consistency}{115}
-\contentsline {subsection}{\numberline {22.3.8}R\IeC {\'e}duction et consistance}{115}
-\contentsline {chapter}{\numberline {23}M\IeC {\'e}thode des Tableau pour les ALC}{116}
-\contentsline {section}{\numberline {23.1}Pre processing}{117}
-\contentsline {subsection}{\numberline {23.1.1}R\IeC {\'e}\IeC {\'e}criture}{117}
-\contentsline {subsection}{\numberline {23.1.2}Vocabulaire}{117}
-\contentsline {subsection}{\numberline {23.1.3}R\IeC {\`e}gles d'expansion}{118}
-\contentsline {section}{\numberline {23.2}Exemple}{119}
-\contentsline {section}{\numberline {23.3}Exemple 2}{120}
-\contentsline {chapter}{\numberline {24}Logique presque tout}{121}
-\contentsline {section}{\numberline {24.1}Syst\IeC {\`e}me P}{123}
-\contentsline {subsection}{\numberline {24.1.1}Exemple}{124}
-\contentsline {section}{\numberline {24.2}Tol\IeC {\'e}rance du Syst\IeC {\`e}me P}{125}
-\contentsline {section}{\numberline {24.3}Stratification du syst\IeC {\`e}me P}{125}
-\contentsline {section}{\numberline {24.4}Exemple de stratification possible}{126}
-\contentsline {subsection}{\numberline {24.4.1}Initialisation}{126}
-\contentsline {subsection}{\numberline {24.4.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{126}
-\contentsline {subsection}{\numberline {24.4.3}Seconde it\IeC {\'e}ration}{127}
-\contentsline {section}{\numberline {24.5}Exemple de stratification non possible}{128}
-\contentsline {subsection}{\numberline {24.5.1}Initialisation}{128}
-\contentsline {subsection}{\numberline {24.5.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{128}
-\contentsline {subsection}{\numberline {24.5.3}Seconde it\IeC {\'e}ration}{129}
-\contentsline {chapter}{\numberline {25}Logique de description DL Lite}{130}
-\contentsline {section}{\numberline {25.1}Op\IeC {\'e}rateurs}{131}
-\contentsline {section}{\numberline {25.2}Requ\IeC {\^e}tes}{131}
-\contentsline {subsection}{\numberline {25.2.1}Grounded query}{131}
-\contentsline {subsection}{\numberline {25.2.2}Conjonctives Query}{131}
-\contentsline {section}{\numberline {25.3}Fermetures n\IeC {\'e}gatives}{132}
-\contentsline {section}{\numberline {25.4}Gestion des contraintes et MultiABox}{133}
-\contentsline {subsection}{\numberline {25.4.1}Expansion}{133}
-\contentsline {subsection}{\numberline {25.4.2}Spliting}{133}
-\contentsline {subsection}{\numberline {25.4.3}Selection}{134}
-\contentsline {subsection}{\numberline {25.4.4}Modifieurs}{134}
-\contentsline {subsection}{\numberline {25.4.5}Complex modifieurs}{135}
-\contentsline {subsection}{\numberline {25.4.6}D\IeC {\'e}cision avec plusieurs ABox}{135}
-\contentsline {chapter}{\numberline {26}Complexit\IeC {\'e}}{137}
-\contentsline {section}{\numberline {26.1}Analyse de complexit\IeC {\'e} pour D(M1,Safe)}{138}
-\contentsline {section}{\numberline {26.2}Analyse de la complexit\IeC {\'e} pour D(M2,Forall)}{139}
-\contentsline {part}{VII\hspace {1em}Th\IeC {\'e}ories de la D\IeC {\'e}cision}{140}
-\contentsline {chapter}{\numberline {27}Th\IeC {\'e}orie de la d\IeC {\'e}cision}{141}
-\contentsline {section}{\numberline {27.1}D\IeC {\'e}cision dans l'incertain}{143}
-\contentsline {subsection}{\numberline {27.1.1}Crit\IeC {\`e}re de Laplace}{143}
-\contentsline {subsection}{\numberline {27.1.2}Crit\IeC {\`e}re de Wald}{143}
-\contentsline {subsection}{\numberline {27.1.3}Crit\IeC {\`e}re d'Hurwicz}{143}
-\contentsline {subsection}{\numberline {27.1.4}Min Max Regret}{143}
-\contentsline {subsection}{\numberline {27.1.5}Example}{143}
-\contentsline {subsection}{\numberline {27.1.6}Diff\IeC {\'e}rents cadres d'incertitude}{144}
-\contentsline {chapter}{\numberline {28}Th\IeC {\'e}orie des jeux}{145}
-\contentsline {section}{\numberline {28.1}Jeux sous forme strat\IeC {\'e}gique}{146}
-\contentsline {subsection}{\numberline {28.1.1}utilit\IeC {\'e}}{146}
-\contentsline {subsection}{\numberline {28.1.2}jeux sous forme extensive et strat\IeC {\'e}gique}{147}
-\contentsline {subsection}{\numberline {28.1.3}\IeC {\'E}limination de strat\IeC {\'e}gies domin\IeC {\'e}es}{148}
-\contentsline {subsection}{\numberline {28.1.4}\IeC {\'E}quilibre de Nash}{148}
-\contentsline {subsection}{\numberline {28.1.5}Crit\IeC {\`e}re de Pareto}{148}
-\contentsline {subsection}{\numberline {28.1.6}Niveau de s\IeC {\'e}curit\IeC {\'e}}{149}
-\contentsline {subsection}{\numberline {28.1.7}autres Strat\IeC {\'e}gies}{150}
-\contentsline {subsection}{\numberline {28.1.8}\IeC {\'E}quilibre de Nash en strat\IeC {\`e}ges mixtes}{150}
-\contentsline {subsection}{\numberline {28.1.9}Repr\IeC {\'e}sentation graphique du jeu}{151}
-\contentsline {subsection}{\numberline {28.1.10}Coop\IeC {\'e}ration}{152}
-\contentsline {subsection}{\numberline {28.1.11}It\IeC {\'e}ration le dilemme des prisonniers}{152}
-\contentsline {subsection}{\numberline {28.1.12}DIP It\IeC {\'e}rations}{153}
-\contentsline {subsection}{\numberline {28.1.13}Les Strat\IeC {\'e}gies}{153}
-\contentsline {section}{\numberline {28.2}Jeux r\IeC {\'e}p\IeC {\'e}t\IeC {\'e}}{155}
-\contentsline {subsection}{\numberline {28.2.1}Jeux \IeC {\`a} deux joueurs \IeC {\`a} somme nulle}{155}
-\contentsline {subsection}{\numberline {28.2.2}Jeu sous forme extensive}{156}
-\contentsline {subsection}{\numberline {28.2.3}sous jeu}{156}
-\contentsline {subsection}{\numberline {28.2.4}Menaces non cr\IeC {\'e}dibles}{157}
-\contentsline {subsection}{\numberline {28.2.5}Promesse non cr\IeC {\'e}dible}{158}
-\contentsline {subsection}{\numberline {28.2.6}Limite de la r\IeC {\'e}currence \IeC {\`a} rebours}{158}
-\contentsline {section}{\numberline {28.3}Jeux coop\IeC {\'e}ratifs \IeC {\`a} 2 joueurs}{159}
-\contentsline {chapter}{\numberline {29}D\IeC {\'e}cision de groupe et th\IeC {\'e}orie du vote}{160}
-\contentsline {section}{\numberline {29.1}Vote entre 2 candidats}{161}
-\contentsline {section}{\numberline {29.2}Gagnant de Condorcet}{161}
-\contentsline {section}{\numberline {29.3}Scrutin majoritaire simple}{162}
-\contentsline {section}{\numberline {29.4}Scrutin majoritaire \IeC {\`a} deux tour}{162}
-\contentsline {section}{\numberline {29.5}M\IeC {\'e}thode de vote non rang\IeC {\'e}es}{163}
-\contentsline {section}{\numberline {29.6}M\IeC {\'e}thode par scorage}{163}
-\contentsline {section}{\numberline {29.7}M\IeC {\'e}thode de Condorcet coh\IeC {\'e}rentes}{164}
-\contentsline {subsection}{\numberline {29.7.1}R\IeC {\`e}gle de Copeland}{164}
-\contentsline {subsection}{\numberline {29.7.2}R\IeC {\`e}gle de Kramer Simpson}{165}
-\contentsline {subsection}{\numberline {29.7.3}R\IeC {\`e}gle du Tile break}{165}
-\contentsline {section}{\numberline {29.8}Graphe de majorit\IeC {\'e}}{166}
-\contentsline {section}{\numberline {29.9}Vote par comparaison successives}{167}
-\contentsline {section}{\numberline {29.10}Vote simple transf\IeC {\'e}rable: m\IeC {\'e}thode de Coombs}{167}
-\contentsline {part}{VIII\hspace {1em}Apprentissage}{168}
-\contentsline {chapter}{\numberline {30}Approche d'apprentissage par la logique}{169}
-\contentsline {section}{\numberline {30.1}Espace de Version}{170}
-\contentsline {subsection}{\numberline {30.1.1}convergence des donn\IeC {\'e}es}{171}
-\contentsline {chapter}{\numberline {31}Apprentissage statistique}{173}
-\contentsline {section}{\numberline {31.1}Classification binaire r\IeC {\'e}alisable}{174}
-\contentsline {subsection}{\numberline {31.1.1}Erreur de g\IeC {\'e}n\IeC {\'e}ralisation et d'entrainement}{174}
-\contentsline {subsection}{\numberline {31.1.2}Processus d'apprentissage}{174}
-\contentsline {subsection}{\numberline {31.1.3}Incertitude de l'apprentissage}{174}
-\contentsline {subsection}{\numberline {31.1.4}Mod\IeC {\`e}le PAC r\IeC {\'e}alisable}{175}
-\contentsline {section}{\numberline {31.2}Classes d'hypoth\IeC {\`e}ses finies}{175}
-\contentsline {subsection}{\numberline {31.2.1}Minimisation des erreurs empirique}{175}
-\contentsline {subsection}{\numberline {31.2.2}Th\IeC {\'e}or\IeC {\`e}me de PAC des classes finies}{175}
-\contentsline {section}{\numberline {31.3}Classification binaire agnostique}{176}
-\contentsline {subsection}{\numberline {31.3.1}R\IeC {\'e}gression agnostique}{176}
-\contentsline {subsection}{\numberline {31.3.2}Apprentissage agnostique}{176}
-\contentsline {subsection}{\numberline {31.3.3}Principe de minimisation de risque empirique}{176}
-\contentsline {section}{\numberline {31.4}VC Dimension}{176}
-\contentsline {subsection}{\numberline {31.4.1}Fonctions lin\IeC {\'e}aires}{176}
-\contentsline {subsection}{\numberline {31.4.2}Fonctions de croissance et VC-Dimension}{176}
-\contentsline {subsection}{\numberline {31.4.3}Th\IeC {\'e}or\IeC {\`e}me fondamental de l'apprentissage statistique}{176}
-\contentsline {subsection}{\numberline {31.4.4}VC-Dimensions Utiles}{176}
-\contentsline {chapter}{\numberline {32}Apprentissage Online}{177}
-\contentsline {section}{\numberline {32.1}Analyse convexe}{178}
-\contentsline {subsection}{\numberline {32.1.1}Combinaison convexe}{178}
-\contentsline {subsection}{\numberline {32.1.2}Enveloppe convexe}{178}
-\contentsline {subsection}{\numberline {32.1.3}Theoreme de la s\IeC {\'e}paration des hyperplan}{180}
-\contentsline {subsection}{\numberline {32.1.4}Fonction convexe et normes}{181}
-\contentsline {subsection}{\numberline {32.1.5}Gradient}{182}
-\contentsline {subsection}{\numberline {32.1.6}Fonction de Perte}{183}
-\contentsline {section}{\numberline {32.2}Apprentissage par r\IeC {\'e}gression}{184}
-\contentsline {subsection}{\numberline {32.2.1}Gradient Descent}{184}
-\contentsline {section}{\numberline {32.3}Apprentissage par classification}{185}
-\contentsline {part}{IX\hspace {1em}Probl\IeC {\`e}me de satisfaction de contraintes CSP}{186}
-\contentsline {chapter}{\numberline {33}Introduction et mod\IeC {\`e}les}{187}
-\contentsline {section}{\numberline {33.1}exemple simple}{188}
-\contentsline {subsection}{\numberline {33.1.1}Graphe de contraintes}{189}
-\contentsline {subsection}{\numberline {33.1.2}Graphe de compatibilit\IeC {\'e}}{189}
-\contentsline {chapter}{\numberline {34}Filtrage}{190}
-\contentsline {section}{\numberline {34.1}Filtrage du domaine via les contraintes}{191}
-\contentsline {subsection}{\numberline {34.1.1}Exemple}{191}
-\contentsline {section}{\numberline {34.2}Notion de Support}{192}
-\contentsline {section}{\numberline {34.3}AC filtre AllDifferent}{193}
-\contentsline {section}{\numberline {34.4}AC filtre Cardinalit\IeC {\'e}}{195}
-\contentsline {section}{\numberline {34.5}AC filtre Sum \IeC {\`a} une borne}{196}
-\contentsline {section}{\numberline {34.6}AC filtre avec Sum \IeC {\`a} deux bornes}{198}
-\contentsline {part}{X\hspace {1em}Probl\IeC {\`e}me de satisfaction SAT}{199}
-\contentsline {chapter}{\numberline {35}d\IeC {\'e}finitions de base}{200}
-\contentsline {section}{\numberline {35.1}Transformation NNF, CNF}{201}
-\contentsline {subsection}{\numberline {35.1.1}Transformation glouton}{201}
-\contentsline {subsection}{\numberline {35.1.2}Transformation via ajout de variables}{202}
-\contentsline {section}{\numberline {35.2}Litt\IeC {\'e}ral et clause : classification}{203}
-\contentsline {subsection}{\numberline {35.2.1}Clause active}{204}
-\contentsline {subsection}{\numberline {35.2.2}Litt\IeC {\'e}ral pure}{204}
-\contentsline {chapter}{\numberline {36}Classes polynomiales}{205}
-\contentsline {section}{\numberline {36.1}2-SAT}{206}
-\contentsline {section}{\numberline {36.2}Horn-SAT}{206}
-\contentsline {section}{\numberline {36.3}Horn-renommable}{206}
+\contentsline {part}{I\hspace {1em}Probabilit\IeC {\'e}}{12}
+\contentsline {chapter}{\numberline {1}Introduction au Probabilit\IeC {\'e}s}{13}
+\contentsline {section}{\numberline {1.1}Mesure de probabilit\IeC {\'e}}{14}
+\contentsline {section}{\numberline {1.2}Variable al\IeC {\'e}atoire}{14}
+\contentsline {subsection}{\numberline {1.2.1}Probabilit\IeC {\'e} de mani\IeC {\`e}re axiomatique}{14}
+\contentsline {subsection}{\numberline {1.2.2}Variables al\IeC {\'e}atoire discr\IeC {\`e}te}{15}
+\contentsline {section}{\numberline {1.3}Probabilit\IeC {\'e}s conditionnelle}{15}
+\contentsline {section}{\numberline {1.4}Autres r\IeC {\`e}gles}{16}
+\contentsline {section}{\numberline {1.5}Exemples}{16}
+\contentsline {section}{\numberline {1.6}Probabilit\IeC {\'e} Matricielle}{17}
+\contentsline {part}{II\hspace {1em}Fouille de donn\IeC {\'e}e}{18}
+\contentsline {chapter}{\numberline {2}Rappel}{19}
+\contentsline {section}{\numberline {2.1}Logarithmes en base 2}{20}
+\contentsline {chapter}{\numberline {3}Pr\IeC {\'e} traitement des donn\IeC {\'e}es}{21}
+\contentsline {section}{\numberline {3.1}Nettoyage des donn\IeC {\'e}es}{22}
+\contentsline {subsection}{\numberline {3.1.1}Caract\IeC {\'e}ristiques descriptives}{22}
+\contentsline {section}{\numberline {3.2}Normalisation}{22}
+\contentsline {chapter}{\numberline {4}Classification}{23}
+\contentsline {section}{\numberline {4.1}\IeC {\'E}valuation des classifieurs}{24}
+\contentsline {subsection}{\numberline {4.1.1}Matrice de confusion}{24}
+\contentsline {chapter}{\numberline {5}Arbre de d\IeC {\'e}cision}{25}
+\contentsline {section}{\numberline {5.1}crit\IeC {\`e}res de s\IeC {\'e}lection C4.5}{26}
+\contentsline {subsection}{\numberline {5.1.1}Entropie}{26}
+\contentsline {subsection}{\numberline {5.1.2}Gain d'information}{28}
+\contentsline {subsection}{\numberline {5.1.3}Gain Ratio}{28}
+\contentsline {section}{\numberline {5.2}crit\IeC {\`e}res d'arr\IeC {\^e}t}{29}
+\contentsline {subsection}{\numberline {5.2.1}Crit\IeC {\`e}res d'arr\IeC {\^e}t}{29}
+\contentsline {subsection}{\numberline {5.2.2}crit\IeC {\`e}res d'arr\IeC {\^e}t: Param\IeC {\`e}tre utilisateur}{29}
+\contentsline {chapter}{\numberline {6}R\IeC {\'e}seau bay\IeC {\'e}siens}{30}
+\contentsline {section}{\numberline {6.1}Classifieur bay\IeC {\'e}siens}{31}
+\contentsline {section}{\numberline {6.2}Construction et classification avec des r\IeC {\'e}seaux Bay\IeC {\'e}siens}{32}
+\contentsline {subsection}{\numberline {6.2.1}Construction d'un r\IeC {\'e}seau bay\IeC {\'e}sien na\IeC {\"\i }f}{32}
+\contentsline {subsection}{\numberline {6.2.2}R\IeC {\`e}gle de classification bay\IeC {\'e}sienne}{33}
+\contentsline {subsection}{\numberline {6.2.3}R\IeC {\`e}gle de d\IeC {\'e}cision}{33}
+\contentsline {subsection}{\numberline {6.2.4}Observation de classe}{33}
+\contentsline {chapter}{\numberline {7}Clustering}{34}
+\contentsline {section}{\numberline {7.1}Approche par le Partitionnement}{35}
+\contentsline {section}{\numberline {7.2}Approche hi\IeC {\'e}rarchiques}{36}
+\contentsline {subsection}{\numberline {7.2.1}Exemple avec la fonction d = MIN}{36}
+\contentsline {chapter}{\numberline {8}ItemSet mining}{37}
+\contentsline {section}{\numberline {8.1}Itemsets}{38}
+\contentsline {section}{\numberline {8.2}R\IeC {\`e}gles d'association}{38}
+\contentsline {section}{\numberline {8.3}Apriori}{39}
+\contentsline {part}{III\hspace {1em}Apprentissage automatique par la pratique}{40}
+\contentsline {chapter}{\numberline {9}Rappel}{41}
+\contentsline {section}{\numberline {9.1}Matrices et calcules sur les Matrices}{42}
+\contentsline {subsection}{\numberline {9.1.1}Addition}{42}
+\contentsline {subsection}{\numberline {9.1.2}Multiplication}{42}
+\contentsline {subsection}{\numberline {9.1.3}Transposer}{42}
+\contentsline {subsection}{\numberline {9.1.4}Inverse}{42}
+\contentsline {chapter}{\numberline {10}Algorithms Learn a Mapping From Input to Output}{43}
+\contentsline {section}{\numberline {10.1}linear ML algorithms}{44}
+\contentsline {section}{\numberline {10.2}Supervised machine learning}{44}
+\contentsline {section}{\numberline {10.3}Unsupervised machine learning}{44}
+\contentsline {section}{\numberline {10.4}semi-supervised machine leaning}{44}
+\contentsline {section}{\numberline {10.5}Overview of dias and variance}{45}
+\contentsline {chapter}{\numberline {11}Overfitting and Underfitting}{46}
+\contentsline {section}{\numberline {11.1}Overfitting}{47}
+\contentsline {section}{\numberline {11.2}Underfitting}{47}
+\contentsline {chapter}{\numberline {12}Model Selection}{48}
+\contentsline {section}{\numberline {12.1}Train Test Split}{49}
+\contentsline {section}{\numberline {12.2}Cross validation}{50}
+\contentsline {section}{\numberline {12.3}Leave one out}{51}
+\contentsline {section}{\numberline {12.4}Matrice de confusion, Pr\IeC {\'e}cision, Pecall, F1}{52}
+\contentsline {chapter}{\numberline {13}Linear Algorithms}{54}
+\contentsline {section}{\numberline {13.1}R\IeC {\'e}gression lin\IeC {\'e}aire}{55}
+\contentsline {section}{\numberline {13.2}Least squares linear regression}{57}
+\contentsline {section}{\numberline {13.3}Gradient Descent}{58}
+\contentsline {section}{\numberline {13.4}Logistic Regression}{59}
+\contentsline {subsection}{\numberline {13.4.1}Logistic function}{59}
+\contentsline {section}{\numberline {13.5}Linear Discriminant Analysis}{60}
+\contentsline {subsection}{\numberline {13.5.1}bay\IeC {\'e}sien rules}{60}
+\contentsline {chapter}{\numberline {14}Non linear algorithm}{61}
+\contentsline {section}{\numberline {14.1}Classification and r\IeC {\'e}gression tree}{62}
+\contentsline {section}{\numberline {14.2}K moyen}{65}
+\contentsline {section}{\numberline {14.3}Support vector machines}{66}
+\contentsline {subsection}{\numberline {14.3.1}Margin classifier}{66}
+\contentsline {subsection}{\numberline {14.3.2}Soft margin classifier}{66}
+\contentsline {part}{IV\hspace {1em}Outils formel}{68}
+\contentsline {chapter}{\numberline {15}Logique classique des propositions}{69}
+\contentsline {section}{\numberline {15.1}Vocabulaire}{70}
+\contentsline {section}{\numberline {15.2}Propri\IeC {\'e}t\IeC {\'e}s de l'op\IeC {\'e}rateur Models}{70}
+\contentsline {section}{\numberline {15.3}Ensemble de connecteurs fonctionnellement complet}{72}
+\contentsline {section}{\numberline {15.4}Preuve par induction structurelle sur un ensemble de connecteurs non fonctionnellement complet}{72}
+\contentsline {section}{\numberline {15.5}D\IeC {\'e}composition de Shannon}{73}
+\contentsline {section}{\numberline {15.6}Arbre de Shannon, ROBDD}{73}
+\contentsline {subsection}{\numberline {15.6.1}Remplacement ou v\IeC {\'e}rifonctionnalit\IeC {\'e}}{74}
+\contentsline {subsection}{\numberline {15.6.2}Substitution}{74}
+\contentsline {section}{\numberline {15.7}Notion de impliquant premier }{74}
+\contentsline {subsection}{\numberline {15.7.1}Table de Karnaugh}{74}
+\contentsline {subsection}{\numberline {15.7.2}Calcule arithm\IeC {\'e}tique}{75}
+\contentsline {chapter}{\numberline {16}Logique classique et pr\IeC {\'e}dicat du premier ordre}{76}
+\contentsline {section}{\numberline {16.1}Syntaxe via les arbres}{77}
+\contentsline {subsection}{\numberline {16.1.1}Occurrences libre}{77}
+\contentsline {subsection}{\numberline {16.1.2}Occurrences li\IeC {\'e}e}{77}
+\contentsline {subsection}{\numberline {16.1.3}Occurrences quantifi\IeC {\'e}}{78}
+\contentsline {subsection}{\numberline {16.1.4}Vocabulaire}{78}
+\contentsline {section}{\numberline {16.2}S\IeC {\'e}mantique}{79}
+\contentsline {section}{\numberline {16.3}Formule polie}{81}
+\contentsline {section}{\numberline {16.4}\IeC {\'E}quivalences remarquables}{81}
+\contentsline {section}{\numberline {16.5}Forme Pr\IeC {\'e}nexe}{82}
+\contentsline {section}{\numberline {16.6}Scal\IeC {\'e}nisation}{83}
+\contentsline {section}{\numberline {16.7}Forme propositionnelle}{83}
+\contentsline {chapter}{\numberline {17}Calculabilit\IeC {\'e} et Machine de Turing}{84}
+\contentsline {section}{\numberline {17.1}Machines de Turing}{86}
+\contentsline {subsection}{\numberline {17.1.1}Machine de Turing universel}{86}
+\contentsline {section}{\numberline {17.2}RE, coRE et R}{86}
+\contentsline {subsection}{\numberline {17.2.1}Preuve de R est inclue dans RE}{87}
+\contentsline {subsection}{\numberline {17.2.2}Preuve de R est inclue dans coRE}{87}
+\contentsline {section}{\numberline {17.3}Probl\IeC {\`e}me de l'arr\IeC {\^e}t}{88}
+\contentsline {section}{\numberline {17.4}r\IeC {\'e}duction fonctionnel}{88}
+\contentsline {subsection}{\numberline {17.4.1}Exemple de r\IeC {\'e}duction fonctionnel}{88}
+\contentsline {part}{V\hspace {1em}Recherche Op\IeC {\'e}rationnel}{89}
+\contentsline {chapter}{\numberline {18}Introduction \IeC {\`a} la PL}{90}
+\contentsline {section}{\numberline {18.1}Mod\IeC {\`e}le lin\IeC {\'e}aire continus \IeC {\`a} 2 variables}{91}
+\contentsline {subsection}{\numberline {18.1.1}Recherche de solutions}{91}
+\contentsline {subsection}{\numberline {18.1.2}recherche de la solution optimal}{92}
+\contentsline {chapter}{\numberline {19}Le simplexe}{94}
+\contentsline {section}{\numberline {19.1}Initialisation du simplexe}{95}
+\contentsline {section}{\numberline {19.2}Canonicit\IeC {\'e} du mod\IeC {\`e}le}{96}
+\contentsline {section}{\numberline {19.3}Solution admissible}{96}
+\contentsline {section}{\numberline {19.4}Exemple simple Premier it\IeC {\'e}ration}{97}
+\contentsline {subsection}{\numberline {19.4.1}Choix de la variable entrante}{97}
+\contentsline {subsection}{\numberline {19.4.2}Choix de la variable sortante}{97}
+\contentsline {subsection}{\numberline {19.4.3}pivotage}{98}
+\contentsline {subsection}{\numberline {19.4.4}Nouveau mod\IeC {\`e}le}{98}
+\contentsline {section}{\numberline {19.5}Exemple simple Seconde it\IeC {\'e}ration}{99}
+\contentsline {subsection}{\numberline {19.5.1}Choix de la variable entrante}{99}
+\contentsline {subsection}{\numberline {19.5.2}Choix de la variable sortante}{99}
+\contentsline {subsection}{\numberline {19.5.3}pivotage}{99}
+\contentsline {subsection}{\numberline {19.5.4}Nouveau mod\IeC {\`e}le}{99}
+\contentsline {section}{\numberline {19.6}Exemple simple, troisi\IeC {\`e}me it\IeC {\'e}ration}{100}
+\contentsline {subsection}{\numberline {19.6.1}Variable entrante et sortante}{100}
+\contentsline {subsection}{\numberline {19.6.2}Nouveau mod\IeC {\`e}le}{100}
+\contentsline {section}{\numberline {19.7}Exemple simple, derni\IeC {\`e}re it\IeC {\'e}ration}{101}
+\contentsline {chapter}{\numberline {20}Simplexe \IeC {\`a} deux phases}{102}
+\contentsline {section}{\numberline {20.1}Premi\IeC {\`e}re phase du simplexe \IeC {\`a} deux phases}{103}
+\contentsline {subsection}{\numberline {20.1.1}Nouveau mod\IeC {\`e}le}{104}
+\contentsline {section}{\numberline {20.2}Premier phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{104}
+\contentsline {subsection}{\numberline {20.2.1}Variable entrante et sortante}{104}
+\contentsline {subsection}{\numberline {20.2.2}pivotage}{104}
+\contentsline {subsection}{\numberline {20.2.3}Nouveau mod\IeC {\`e}le}{104}
+\contentsline {section}{\numberline {20.3}Premier phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{105}
+\contentsline {section}{\numberline {20.4}Seconde phase du simplexe \IeC {\`a} deux phases}{105}
+\contentsline {section}{\numberline {20.5}Seconde phase du simplexe \IeC {\`a} deux phases, premi\IeC {\`e}re it\IeC {\'e}ration}{106}
+\contentsline {subsection}{\numberline {20.5.1}Variable entrante et sortante}{106}
+\contentsline {subsection}{\numberline {20.5.2}pivotage}{106}
+\contentsline {subsection}{\numberline {20.5.3}Nouveau mod\IeC {\`e}le}{106}
+\contentsline {section}{\numberline {20.6}Seconde phase du simplexe \IeC {\`a} deux phases, seconde it\IeC {\'e}ration}{107}
+\contentsline {subsection}{\numberline {20.6.1}Variable entrante et sortante}{107}
+\contentsline {subsection}{\numberline {20.6.2}pivotage}{107}
+\contentsline {subsection}{\numberline {20.6.3}Nouveau mod\IeC {\`e}le}{107}
+\contentsline {section}{\numberline {20.7}Seconde phase du simplexe \IeC {\`a} deux phases, troisi\IeC {\`e}me it\IeC {\'e}ration}{108}
+\contentsline {part}{VI\hspace {1em}Repr\IeC {\'e}sentation des connaissances et raisonnement}{109}
+\contentsline {chapter}{\numberline {21}Logique propositionnel}{110}
+\contentsline {section}{\numberline {21.1}Vocabulaire}{111}
+\contentsline {section}{\numberline {21.2}coh\IeC {\'e}rence d'un ensemble de clauses}{111}
+\contentsline {chapter}{\numberline {22}Introduction \IeC {\`a} la logique de description}{112}
+\contentsline {section}{\numberline {22.1}Attributive Language with Complement}{113}
+\contentsline {subsection}{\numberline {22.1.1}Propri\IeC {\'e}t\IeC {\'e}s}{113}
+\contentsline {section}{\numberline {22.2}Logique de description}{113}
+\contentsline {subsection}{\numberline {22.2.1}S\IeC {\'e}mantique}{113}
+\contentsline {subsection}{\numberline {22.2.2}Assertions}{113}
+\contentsline {section}{\numberline {22.3}TBoxes et ABoxes}{114}
+\contentsline {subsection}{\numberline {22.3.1}Subsumption}{114}
+\contentsline {subsection}{\numberline {22.3.2}Classification}{114}
+\contentsline {subsection}{\numberline {22.3.3}Instance checking}{115}
+\contentsline {subsection}{\numberline {22.3.4}Retrieval}{115}
+\contentsline {subsection}{\numberline {22.3.5}Equivalance of concept}{115}
+\contentsline {subsection}{\numberline {22.3.6}Concept satisfiability}{115}
+\contentsline {subsection}{\numberline {22.3.7}ABox consistency}{116}
+\contentsline {subsection}{\numberline {22.3.8}R\IeC {\'e}duction et consistance}{116}
+\contentsline {chapter}{\numberline {23}M\IeC {\'e}thode des Tableau pour les ALC}{117}
+\contentsline {section}{\numberline {23.1}Pre processing}{118}
+\contentsline {subsection}{\numberline {23.1.1}R\IeC {\'e}\IeC {\'e}criture}{118}
+\contentsline {subsection}{\numberline {23.1.2}Vocabulaire}{118}
+\contentsline {subsection}{\numberline {23.1.3}R\IeC {\`e}gles d'expansion}{119}
+\contentsline {section}{\numberline {23.2}Exemple}{120}
+\contentsline {section}{\numberline {23.3}Exemple 2}{121}
+\contentsline {chapter}{\numberline {24}Logique presque tout}{122}
+\contentsline {section}{\numberline {24.1}Syst\IeC {\`e}me P}{124}
+\contentsline {subsection}{\numberline {24.1.1}Exemple}{125}
+\contentsline {section}{\numberline {24.2}Tol\IeC {\'e}rance du Syst\IeC {\`e}me P}{126}
+\contentsline {section}{\numberline {24.3}Stratification du syst\IeC {\`e}me P}{126}
+\contentsline {section}{\numberline {24.4}Exemple de stratification possible}{127}
+\contentsline {subsection}{\numberline {24.4.1}Initialisation}{127}
+\contentsline {subsection}{\numberline {24.4.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{127}
+\contentsline {subsection}{\numberline {24.4.3}Seconde it\IeC {\'e}ration}{128}
+\contentsline {section}{\numberline {24.5}Exemple de stratification non possible}{129}
+\contentsline {subsection}{\numberline {24.5.1}Initialisation}{129}
+\contentsline {subsection}{\numberline {24.5.2}Premi\IeC {\`e}re it\IeC {\'e}ration}{129}
+\contentsline {subsection}{\numberline {24.5.3}Seconde it\IeC {\'e}ration}{130}
+\contentsline {chapter}{\numberline {25}Logique de description DL Lite}{131}
+\contentsline {section}{\numberline {25.1}Op\IeC {\'e}rateurs}{132}
+\contentsline {section}{\numberline {25.2}Requ\IeC {\^e}tes}{132}
+\contentsline {subsection}{\numberline {25.2.1}Grounded query}{132}
+\contentsline {subsection}{\numberline {25.2.2}Conjonctives Query}{132}
+\contentsline {section}{\numberline {25.3}Fermetures n\IeC {\'e}gatives}{133}
+\contentsline {section}{\numberline {25.4}Gestion des contraintes et MultiABox}{134}
+\contentsline {subsection}{\numberline {25.4.1}Expansion}{134}
+\contentsline {subsection}{\numberline {25.4.2}Spliting}{134}
+\contentsline {subsection}{\numberline {25.4.3}Selection}{135}
+\contentsline {subsection}{\numberline {25.4.4}Modifieurs}{135}
+\contentsline {subsection}{\numberline {25.4.5}Complex modifieurs}{136}
+\contentsline {subsection}{\numberline {25.4.6}D\IeC {\'e}cision avec plusieurs ABox}{136}
+\contentsline {chapter}{\numberline {26}Complexit\IeC {\'e}}{138}
+\contentsline {section}{\numberline {26.1}Analyse de complexit\IeC {\'e} pour D(M1,Safe)}{139}
+\contentsline {section}{\numberline {26.2}Analyse de la complexit\IeC {\'e} pour D(M2,Forall)}{140}
+\contentsline {part}{VII\hspace {1em}Th\IeC {\'e}ories de la D\IeC {\'e}cision}{141}
+\contentsline {chapter}{\numberline {27}Th\IeC {\'e}orie de la d\IeC {\'e}cision}{142}
+\contentsline {section}{\numberline {27.1}D\IeC {\'e}cision dans l'incertain}{144}
+\contentsline {subsection}{\numberline {27.1.1}Crit\IeC {\`e}re de Laplace}{144}
+\contentsline {subsection}{\numberline {27.1.2}Crit\IeC {\`e}re de Wald}{144}
+\contentsline {subsection}{\numberline {27.1.3}Crit\IeC {\`e}re d'Hurwicz}{144}
+\contentsline {subsection}{\numberline {27.1.4}Min Max Regret}{144}
+\contentsline {subsection}{\numberline {27.1.5}Example}{144}
+\contentsline {subsection}{\numberline {27.1.6}Diff\IeC {\'e}rents cadres d'incertitude}{145}
+\contentsline {chapter}{\numberline {28}Th\IeC {\'e}orie des jeux}{146}
+\contentsline {section}{\numberline {28.1}Jeux sous forme strat\IeC {\'e}gique}{147}
+\contentsline {subsection}{\numberline {28.1.1}utilit\IeC {\'e}}{147}
+\contentsline {subsection}{\numberline {28.1.2}jeux sous forme extensive et strat\IeC {\'e}gique}{148}
+\contentsline {subsection}{\numberline {28.1.3}\IeC {\'E}limination de strat\IeC {\'e}gies domin\IeC {\'e}es}{149}
+\contentsline {subsection}{\numberline {28.1.4}\IeC {\'E}quilibre de Nash}{149}
+\contentsline {subsection}{\numberline {28.1.5}Crit\IeC {\`e}re de Pareto}{149}
+\contentsline {subsection}{\numberline {28.1.6}Niveau de s\IeC {\'e}curit\IeC {\'e}}{150}
+\contentsline {subsection}{\numberline {28.1.7}autres Strat\IeC {\'e}gies}{151}
+\contentsline {subsection}{\numberline {28.1.8}\IeC {\'E}quilibre de Nash en strat\IeC {\`e}ges mixtes}{151}
+\contentsline {subsection}{\numberline {28.1.9}Repr\IeC {\'e}sentation graphique du jeu}{152}
+\contentsline {subsection}{\numberline {28.1.10}Coop\IeC {\'e}ration}{153}
+\contentsline {subsection}{\numberline {28.1.11}It\IeC {\'e}ration le dilemme des prisonniers}{153}
+\contentsline {subsection}{\numberline {28.1.12}DIP It\IeC {\'e}rations}{154}
+\contentsline {subsection}{\numberline {28.1.13}Les Strat\IeC {\'e}gies}{154}
+\contentsline {section}{\numberline {28.2}Jeux r\IeC {\'e}p\IeC {\'e}t\IeC {\'e}}{156}
+\contentsline {subsection}{\numberline {28.2.1}Jeux \IeC {\`a} deux joueurs \IeC {\`a} somme nulle}{156}
+\contentsline {subsection}{\numberline {28.2.2}Jeu sous forme extensive}{157}
+\contentsline {subsection}{\numberline {28.2.3}sous jeu}{157}
+\contentsline {subsection}{\numberline {28.2.4}Menaces non cr\IeC {\'e}dibles}{158}
+\contentsline {subsection}{\numberline {28.2.5}Promesse non cr\IeC {\'e}dible}{159}
+\contentsline {subsection}{\numberline {28.2.6}Limite de la r\IeC {\'e}currence \IeC {\`a} rebours}{159}
+\contentsline {section}{\numberline {28.3}Jeux coop\IeC {\'e}ratifs \IeC {\`a} 2 joueurs}{160}
+\contentsline {chapter}{\numberline {29}D\IeC {\'e}cision de groupe et th\IeC {\'e}orie du vote}{161}
+\contentsline {section}{\numberline {29.1}Vote entre 2 candidats}{162}
+\contentsline {section}{\numberline {29.2}Gagnant de Condorcet}{162}
+\contentsline {section}{\numberline {29.3}Scrutin majoritaire simple}{163}
+\contentsline {section}{\numberline {29.4}Scrutin majoritaire \IeC {\`a} deux tour}{163}
+\contentsline {section}{\numberline {29.5}M\IeC {\'e}thode de vote non rang\IeC {\'e}es}{164}
+\contentsline {section}{\numberline {29.6}M\IeC {\'e}thode par scorage}{164}
+\contentsline {section}{\numberline {29.7}M\IeC {\'e}thode de Condorcet coh\IeC {\'e}rentes}{165}
+\contentsline {subsection}{\numberline {29.7.1}R\IeC {\`e}gle de Copeland}{165}
+\contentsline {subsection}{\numberline {29.7.2}R\IeC {\`e}gle de Kramer Simpson}{166}
+\contentsline {subsection}{\numberline {29.7.3}R\IeC {\`e}gle du Tile break}{166}
+\contentsline {section}{\numberline {29.8}Graphe de majorit\IeC {\'e}}{167}
+\contentsline {section}{\numberline {29.9}Vote par comparaison successives}{168}
+\contentsline {section}{\numberline {29.10}Vote simple transf\IeC {\'e}rable: m\IeC {\'e}thode de Coombs}{168}
+\contentsline {part}{VIII\hspace {1em}Apprentissage}{169}
+\contentsline {chapter}{\numberline {30}Approche d'apprentissage par la logique}{170}
+\contentsline {section}{\numberline {30.1}Espace de Version}{171}
+\contentsline {subsection}{\numberline {30.1.1}convergence des donn\IeC {\'e}es}{172}
+\contentsline {chapter}{\numberline {31}Apprentissage statistique}{174}
+\contentsline {section}{\numberline {31.1}Classification binaire r\IeC {\'e}alisable}{175}
+\contentsline {subsection}{\numberline {31.1.1}Erreur de g\IeC {\'e}n\IeC {\'e}ralisation et d'entrainement}{175}
+\contentsline {subsection}{\numberline {31.1.2}Processus d'apprentissage}{175}
+\contentsline {subsection}{\numberline {31.1.3}Incertitude de l'apprentissage}{175}
+\contentsline {subsection}{\numberline {31.1.4}Mod\IeC {\`e}le PAC r\IeC {\'e}alisable}{176}
+\contentsline {section}{\numberline {31.2}Classes d'hypoth\IeC {\`e}ses finies}{176}
+\contentsline {subsection}{\numberline {31.2.1}Minimisation des erreurs empirique}{176}
+\contentsline {subsection}{\numberline {31.2.2}Th\IeC {\'e}or\IeC {\`e}me de PAC des classes finies}{176}
+\contentsline {section}{\numberline {31.3}Apprentissage agnostique}{177}
+\contentsline {subsection}{\numberline {31.3.1}Principe de minimisation de risque empirique}{177}
+\contentsline {section}{\numberline {31.4}VC Dimension}{177}
+\contentsline {subsection}{\numberline {31.4.1}Fonctions lin\IeC {\'e}aires}{177}
+\contentsline {subsection}{\numberline {31.4.2}Fonctions de croissance et VC-Dimension}{177}
+\contentsline {subsection}{\numberline {31.4.3}Th\IeC {\'e}or\IeC {\`e}me fondamental de l'apprentissage statistique}{177}
+\contentsline {subsection}{\numberline {31.4.4}VC-Dimensions Utiles}{177}
+\contentsline {chapter}{\numberline {32}Apprentissage Online}{178}
+\contentsline {section}{\numberline {32.1}Analyse convexe}{179}
+\contentsline {subsection}{\numberline {32.1.1}Combinaison convexe}{179}
+\contentsline {subsection}{\numberline {32.1.2}Enveloppe convexe}{179}
+\contentsline {subsection}{\numberline {32.1.3}Theoreme de la s\IeC {\'e}paration des hyperplan}{181}
+\contentsline {subsection}{\numberline {32.1.4}Fonction convexe et normes}{182}
+\contentsline {subsection}{\numberline {32.1.5}Gradient}{183}
+\contentsline {subsection}{\numberline {32.1.6}Fonction de Perte}{184}
+\contentsline {section}{\numberline {32.2}Apprentissage par r\IeC {\'e}gression}{185}
+\contentsline {subsection}{\numberline {32.2.1}Gradient Descent}{185}
+\contentsline {section}{\numberline {32.3}Apprentissage par classification}{186}
+\contentsline {part}{IX\hspace {1em}Probl\IeC {\`e}me de satisfaction de contraintes CSP}{187}
+\contentsline {chapter}{\numberline {33}Introduction et mod\IeC {\`e}les}{188}
+\contentsline {section}{\numberline {33.1}exemple simple}{189}
+\contentsline {subsection}{\numberline {33.1.1}Graphe de contraintes}{190}
+\contentsline {subsection}{\numberline {33.1.2}Graphe de compatibilit\IeC {\'e}}{190}
+\contentsline {chapter}{\numberline {34}Filtrage}{191}
+\contentsline {section}{\numberline {34.1}Filtrage du domaine via les contraintes}{192}
+\contentsline {subsection}{\numberline {34.1.1}Exemple}{192}
+\contentsline {section}{\numberline {34.2}Notion de Support}{193}
+\contentsline {section}{\numberline {34.3}AC filtre AllDifferent}{194}
+\contentsline {section}{\numberline {34.4}AC filtre Cardinalit\IeC {\'e}}{196}
+\contentsline {section}{\numberline {34.5}AC filtre Sum \IeC {\`a} une borne}{197}
+\contentsline {section}{\numberline {34.6}AC filtre avec Sum \IeC {\`a} deux bornes}{199}
+\contentsline {part}{X\hspace {1em}Probl\IeC {\`e}me de satisfaction SAT}{200}
+\contentsline {chapter}{\numberline {35}d\IeC {\'e}finitions de base}{201}
+\contentsline {section}{\numberline {35.1}Transformation NNF, CNF}{202}
+\contentsline {subsection}{\numberline {35.1.1}Transformation glouton}{202}
+\contentsline {subsection}{\numberline {35.1.2}Transformation via ajout de variables}{203}
+\contentsline {section}{\numberline {35.2}Litt\IeC {\'e}ral et clause : classification}{204}
+\contentsline {subsection}{\numberline {35.2.1}Clause active}{205}
+\contentsline {subsection}{\numberline {35.2.2}Litt\IeC {\'e}ral pure}{205}
+\contentsline {chapter}{\numberline {36}Classes polynomiales}{206}
+\contentsline {section}{\numberline {36.1}2-SAT}{207}
+\contentsline {section}{\numberline {36.2}Horn-SAT}{207}
+\contentsline {section}{\numberline {36.3}Horn-renommable}{207}
+\contentsline {chapter}{\numberline {37}Algorithmes de r\IeC {\'e}solution syntaxiques}{208}
+\contentsline {section}{\numberline {37.1}Algorithmes complets bas\IeC {\'e} sur la r\IeC {\'e}solution}{209}
+\contentsline {subsection}{\numberline {37.1.1}M\IeC {\'e}thodes bas\IeC {\'e} sur la r\IeC {\'e}solution}{209}
+\contentsline {subsection}{\numberline {37.1.2}Modus Ponuce}{209}
+\contentsline {subsection}{\numberline {37.1.3}r\IeC {\`e}gles de subsumption}{209}
+\contentsline {subsection}{\numberline {37.1.4}R\IeC {\`e}gles de fusion}{209}
+\contentsline {section}{\numberline {37.2}Algorithmes complets Proc\IeC {\'e}dure de Davis et Putnam}{209}
+\contentsline {section}{\numberline {37.3}Algorithmes complets M\IeC {\'e}thodes des tableaux}{210}
+\contentsline {chapter}{\numberline {38}Algorithmes de r\IeC {\'e}solutions s\IeC {\'e}mantique}{211}
+\contentsline {section}{\numberline {38.1}Proc\IeC {\'e}dure de DPLL}{211}
