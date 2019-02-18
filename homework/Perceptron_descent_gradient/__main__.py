@@ -1,114 +1,85 @@
 
-import pandas
 import numpy
 
-from math import floor
-from random import randint
-from GradientDescent import *
-from Perceptron import *
+from AlgoClass import LearningClass
+from PlotBuilder import Plot_builder
 
-from matplotlib import pyplot as plt
-
-from sklearn.model_selection import train_test_split
-
-CROSS_VALIDATION_POURCENTAGE = 0.1
+from libs import *
 
 IRIS_HEADER = ["Sepal lenght", "Sepal width", "Petal lenght", "Petal width", "Iris"]
 IRIS_DATA   = "iris_data.gob"
 
-class Plot_builder():
+class Algo(object):
 
-    def __init__(self, save_pas=10):
-        self.save_pas = save_pas
-        self.pas = 0
-        self.x_plot = list()
-        self.y_plot = list()
-        self.plt = plt
+    def __init__(self, data_path, data_header, update_weights, predictions_func, err_func, plot_builder_save_pas=10, shuffle_data=True):
 
-    def savable(self):
-        self.pas += 1
-        if self.pas == self.save_pas:
-            self.pas = 0
-            return True
-
-        return False
-
-    def save(self, xplot, yplot):
-        self.x_plot.append(xplot)
-        self.y_plot.append(yplot)
-
-    def draw_plot(self, name, max_x, color="b", xlabel="", ylabel=""):
-        self.plt.plot(self.x_plot, self.y_plot, color, linewidth=0.8, marker=".")
-        self.plt.axis([0, max_x, 0, 1])
-        self.plt.ylabel(ylabel)
-        self.plt.xlabel(xlabel)
-
-    def show_plot(self):
-        plt.show()
-
-
-class Data():
-
-    @staticmethod
-    def read_data(path, header):
-        return pandas.read_csv(path, names=header)
-
-    @staticmethod
-    def shuffle(dataset):
-        return dataset.iloc[np.random.permutation(len(dataset))]
-
-    @staticmethod
-    def iloc(dataset):
-        return dataset.iloc[:,:-1], dataset.iloc[:,-1] ## X, y
-
-    @staticmethod
-    def train_test_split(X, y):
-        return train_test_split(X, y, test_size=CROSS_VALIDATION_POURCENTAGE, random_state=0)
-
-    @staticmethod
-    def format_y_to_list(y):
-        yfinal = y.tolist()
-        ylist = list(set(yfinal))
-        for ind,elt in enumerate(yfinal):
-            yfinal[ind] = ylist.index(elt)
-
-        return yfinal
-
-    @staticmethod
-    def format_X_to_list(X):
-        return X.values
-
-class PerceptronAlgo():
-
-    def __init__(self, data_path, data_header, plot_builder_save_pas=10, error_func=quadradique):
         self.plt = Plot_builder(save_pas=plot_builder_save_pas)
         self.dataset = Data.read_data(data_path, data_header)
-        self.dataset = Data.shuffle(self.dataset)
+
+        if shuffle_data:
+            self.dataset = Data.shuffle(self.dataset)
+
         self.X, self.y = Data.iloc(self.dataset)
         self.X = Data.format_X_to_list(self.X)
         self.y = Data.format_y_to_list(self.y)
         self.Xtrain, self.Xtest, self.ytrain, self.ytest = Data.train_test_split(self.X, self.y)
-        self.perceptron = Perceptron(default_weights=list(repeat(0, len(self.Xtrain[0]))))
-        self.error_func = error_func
+
+        self.err_func = err_func
+        self.shuffle_data = shuffle_data
+        self.update_weights = update_weights
+        self.predictions_func = predictions_func
+        self.plot_builder_save_pas = plot_builder_save_pas
+
+        self.algo = LearningClass(default_weights=npzeros(len(self.Xtrain[0])), 
+                update_weights=update_weights, predictions_func=predictions_func, err_func=err_func)
 
     def run(self, nb_iterations):
-        for think_function, iteration in self.perceptron.train(self.Xtrain, self.ytrain, nb_iterations):
+        for think_function, iteration in self.algo.train(self.Xtrain, self.ytrain, nb_iterations):
             if self.plt.savable():
                 good_predictions = 0
                 for i in range(len(self.ytest)):
                     xtest, ytest = self.Xtest[i], self.ytest[i]
                     ypred = think_function(xtest)
-                    good_predictions += self.error_func(ytest, ypred)
+                    good_predictions += self.algo.error(ytest, ypred)
 
-                self.plt.save(iteration, good_predictions / (0.0 + i))
+                self.plt.save(iteration, good_predictions / (0.0 + len(self.ytest)))
 
     def get_plot(self):
         return self.plt
 
+    def __str__(self):
+        return "Algo: %s, plot_builder save pas: %d, shuffled data: %s, error func: %s, update weights: %s, predictions func: %s" %\
+        (self.__name__(), self.plot_builder_save_pas,  self.shuffle_data, self.err_func.__name__, self.update_weights.__name__, self.predictions_func.__name__)
 
+class PerceptronAlgo(Algo):
 
-p = PerceptronAlgo(IRIS_DATA, IRIS_HEADER)
-p.run(4500)
+    def __init__(self, data_path, data_header, plot_builder_save_pas, shuffle_data=True, err_func=zero_one, update_weights=course_update, predictions_func=simple_dot):
+        super(PerceptronAlgo, self).__init__(data_path, data_header, err_func=err_func, plot_builder_save_pas=plot_builder_save_pas, 
+                                            update_weights=update_weights, predictions_func=predictions_func, shuffle_data=shuffle_data)
+
+    def __name__(self):
+        return "Perceptron"
+
+class GradientDescentAlgo(Algo):
+
+    def __init__(self, data_path, data_header, plot_builder_save_pas, shuffle_data=True, err_func=quadradique, update_weights=course_update, predictions_func=simple_dot):
+        super(GradientDescentAlgo, self).__init__(data_path, data_header, err_func=err_func, plot_builder_save_pas=plot_builder_save_pas, 
+                                            update_weights=update_weights, predictions_func=predictions_func, shuffle_data=shuffle_data)
+
+    def __name__(self):
+        return "Gradient Descent"
+
+p = PerceptronAlgo(data_path=IRIS_DATA, data_header=IRIS_HEADER, plot_builder_save_pas=10, shuffle_data=True)
+print(p)
+p.run(nb_iterations=100)
 pl = p.get_plot()
-pl.draw_plot("perceptron iris", max_x=4500)
+pl.draw_plot(name="perceptron iris", max_x=14000)
 pl.show_plot()
+
+
+q = GradientDescentAlgo(data_path=IRIS_DATA, data_header=IRIS_HEADER, plot_builder_save_pas=10, shuffle_data=True)
+print(q)
+q.run(nb_iterations=100)
+ql = q.get_plot()
+ql.draw_plot(name="gradient descent iris", max_x=14000)
+ql.show_plot()
