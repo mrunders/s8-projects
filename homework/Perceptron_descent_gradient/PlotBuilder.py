@@ -3,20 +3,10 @@ from matplotlib import pyplot as plt
 
 class Plot_builder():
 
-    def __init__(self, save_pas=10):
-        self.save_pas = save_pas
-        self.pas = 0
+    def __init__(self):
         self.x_plot = list()
         self.y_plot = list()
         self.plt = plt
-
-    def savable(self):
-        self.pas += 1
-        if self.pas == self.save_pas:
-            self.pas = 0
-            return True
-
-        return False
 
     def save(self, xplot, yplot):
         self.x_plot.append(xplot)
