@@ -1,6 +1,12 @@
 
 On parle du premier OCR créé dans le monde en parlant des travaux de l'américain \cauthors{Charles R Carey} en 1870 qui inventa un scanneur rétinien appliquant des patterns en mosaïque et étant appliqué sur une image envoyé en entré.\\
+\\
 Dans certaines littératures on parle du premier OCR en 1900 par un russe du nom de \cauthors{Tyurin} qui a tenté d'aider sur des travaux de reconnaissance de symbole pour les personnes handicapé.\\
-On parle du premier OCR automatique en 1940 lors de l'introduction à l'air digital (4 ans après la machine de \cauthors{Turing}), dans un premier temps  les travaux d'automatisation OCR ont était réalisé directement des caractères issue d'une machine ou ont était réalisé via un petit ensemble de papier manuscrit où les caractères était finement bien représenté et distingué des autres. La conversion des papiers en binaire était faible, en effet l'extraction des caractères en format vectoriel était une procédure légère. Ses vecteurs était ensuite apprit via un classifier statistique.
+\\
+La première machine OCR a était crée en 1929 par un ingénieur Australien du nom de \cauthors{Gustav Tauschek}, $'the\ reading\ machine'$, le processus est fait en lisant le caractère avec une source lumineuse puis de comparer le caractère à une suite d'images de référence.\\
+\\
+On parle du premier OCR automatique en 1940 lors de l'introduction à l'air digital (4 ans après la machine de \cauthors{Turing}), dans un premier temps  les travaux d'automatisation OCR ont était réalisé directement des caractères issue d'une machine ou ont était réalisé via un petit ensemble de papier manuscrit où les caractères était finement bien représenté et distingué des autres. La conversion des papiers en binaire était faible, en effet l'extraction des caractères en format vectoriel était une procédure légère.\\
+\\
+L'ORC a commencé son assertion lorsque les entreprisses avaient un besoin de convertir les rapports de vente en carte perforé 
 
 \pagebreak

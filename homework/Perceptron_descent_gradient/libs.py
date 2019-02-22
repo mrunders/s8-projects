@@ -34,8 +34,8 @@ class Data():
 
     @staticmethod
     def shuffle(dataset):
-        ##return dataset.iloc[np.random.permutation(len(dataset))]
-        return dataset.iloc[TMP]
+        return dataset.iloc[np.random.permutation(len(dataset))]
+        ##return dataset.iloc[TMP]
 
     @staticmethod
     def iloc(dataset):
