@@ -1,5 +1,6 @@
 
 from matplotlib import pyplot as plt
+import pandas
 
 class Plot_builder():
 
@@ -21,3 +22,11 @@ class Plot_builder():
 
     def show_plot(self):
         plt.show()
+
+    @staticmethod
+    def y_repartition(dataset_y, title):
+        plt.figure()
+        pandas.Series(dataset_y).value_counts().sort_index().plot(kind = 'bar')
+        plt.ylabel("Count")
+        plt.xlabel("y")
+        plt.title(title)

@@ -28,10 +28,9 @@ class Perceptron():
         len_zip = len(tmp_zip)
         while iteration_number < iterations:
 
-            x,y = tmp_zip[iteration_number % len_zip]
-
             for _ in range(self.yielding_pas):
 
+                x,y = tmp_zip[iteration_number % len_zip]
                 yp = self.think(x)
 
                 if Perceptron.__false_prediction(self.weights, x, yp):
@@ -73,10 +72,9 @@ class GradientDescent():
         len_zip = len(tmp_zip)
         while iteration_number < iterations:
 
-            x,y = tmp_zip[iteration_number % len_zip]
-
             for _ in range(self.yielding_pas):
 
+                x,y = tmp_zip[iteration_number % len_zip]
                 tmp_weights = (1 / self.eta) * self.weights
                 yp = self.__tmp_think(x)
 

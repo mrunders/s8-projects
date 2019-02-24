@@ -10,11 +10,28 @@
 import numpy as np 
 import pandas
 
+from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
-CROSS_VALIDATION_POURCENTAGE = 0.1
-IRIS_TRUE_VALUE = "Iris-versicolor"
+CROSS_VALIDATION_POURCENTAGE = 0.10
 
+IRIS_TRUE_VALUE = "Iris-versicolor"
+IRIS_HEADER = ["Sepal lenght", "Sepal width", "Petal lenght", "Petal width", "Iris"]
+IRIS_DATA   = "iris_data.gob"
+
+MUSHROOM_TRUE_VALUE = "e"
+MUSHROOM_HEADER = ["class", "cap-shape", "cap-surface", "cap-color", "bruises", "odor", "gill-attachment", "gill-spacing", "gill-size", "gill-color",
+"stalk-shape", "stalk-root", "stalk-surface-above-ring", "stalk-surface-below-ring", "stalk-color-above-ring", "stalk-color-below-ring",
+"veil-type", "veil-color", "ring-number", "ring-type", "spore-print-color", "population", "habitat"]
+MUSHROOM_DATA = "mushroom_data.gob"
+
+SPAMBASE_TRUE_VALUE = 1
+SPAMBASE_HEADER = ["make","address","all","3d","our","over","remove","internet","order","mail","receive","will","people","report","addresses","free","business",
+"email","you","credit","your","font","000","money","hp","hpl","george","650","lab","labs","telnet","857","data","415","85","technology","1999","parts","pm","direct",
+"cs","meeting","original","project","re","edu","table","conference","char_freq_;","char_freq_(","char_freq_[","char_freq_!","char_freq_$","char_freq_#","capital_run_length_average",
+"capital_run_length_longest","capital_run_length_total"]
+SPAMBASE_DATA = "spambase_data.gob"
 
 TMP = [5,101,28,89,26,72,25,139,119,13,3,143,80,75,77,69,93,76
 ,8,10,43,114,23,9,116,35,134,53,96,131,40,145,144,87,14,39
@@ -38,30 +55,58 @@ class Data():
         ##return dataset.iloc[TMP]
 
     @staticmethod
-    def iloc(dataset):
-        return dataset.iloc[:,:-1], dataset.iloc[:,-1] ## X, y
-
-    @staticmethod
     def train_test_split(X, y):
         return train_test_split(X, y, test_size=CROSS_VALIDATION_POURCENTAGE, random_state=0)
 
     @staticmethod
-    def format_y_to_list(y):
-        yfinal = y.tolist()
-        ylist = list(set(yfinal))
-        for ind,elt in enumerate(yfinal):
-            yfinal[ind] = ylist.index(elt)
-
-        return yfinal
-
-    @staticmethod
-    def format_iris_y_to_list(y):
+    def format_y_to_list(y, true_value):
         yfinal = y.tolist()
         for ind,elt in enumerate(yfinal):
-            yfinal[ind] = 1 if elt == IRIS_TRUE_VALUE else -1
+            yfinal[ind] = 1 if elt == true_value else -1
 
         return yfinal
 
     @staticmethod
     def format_X_to_list(X):
-        return X.values
+        lb = LabelEncoder()
+        xx = X.values
+        for i in range(len(xx)):
+            xx[i] = lb.fit_transform(xx[i])
+        return xx 
+
+    @staticmethod
+    def load_iris_data(shuffle=True):
+        dataset = Data.read_data(IRIS_DATA, IRIS_HEADER)
+
+        if shuffle:
+            dataset = Data.shuffle(dataset)
+
+        X, y = dataset.iloc[:,:-1], dataset.iloc[:,-1] 
+        return Data.format_X_to_list(X), Data.format_y_to_list(y, true_value=IRIS_TRUE_VALUE)
+
+    @staticmethod
+    def load_mushroom_data(shuffle=True):
+        dataset = Data.read_data(MUSHROOM_DATA, MUSHROOM_HEADER)
+
+        if shuffle:
+            dataset = Data.shuffle(dataset)
+
+        X, y = dataset.iloc[:,1:], dataset.iloc[:,0] 
+        return Data.format_X_to_list(X), Data.format_y_to_list(y, true_value=MUSHROOM_TRUE_VALUE)
+
+    @staticmethod
+    def load_spambase_data(shuffle=True):
+        dataset = Data.read_data(SPAMBASE_DATA, SPAMBASE_HEADER)
+
+        if shuffle:
+            dataset = Data.shuffle(dataset)
+
+        X, y = dataset.iloc[:,:-1], dataset.iloc[:,-1] 
+        return Data.format_X_to_list(X), Data.format_y_to_list(y, true_value=SPAMBASE_TRUE_VALUE)
+
+    """
+    @staticmethod
+    def error_pourcentage(YT,YP):
+        _, fp, fn, _ = confusion_matrix(YT,YP).ravel()
+        return (fp + fn) / (0.0 + len(YT))
+    """
