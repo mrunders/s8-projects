@@ -19,7 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage{caption}
  
-\pgfplotsset{compat=1.16}
+%%\pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
@@ -37,7 +37,7 @@
 %% ------------------------- Header Footer
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{Master 2 IA Memo}
+\fancyhead[LE,RO]{OCR}
 \fancyhead[RE,LO]{ }
 \fancyfoot[CE,CO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
@@ -217,8 +217,11 @@
 \input{introduction}
 \input{problematique}
 
-\part{État de l'art}
+\part{Historique de l'ocr}
 \input{etatdelart}
+
+\part{Machine learning et OCR}
+\input{deepocr}
 
 \end{document}
 
