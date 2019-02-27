@@ -1,0 +1,21 @@
+==================================[MINISAT]===================================
+| Conflicts |     ORIGINAL     |              LEARNT              | Progress |
+|           | Clauses Literals |   Limit Clauses Literals  Lit/Cl |          |
+==============================================================================
+|         0 |      60      126 |      20       0        0     nan |  0.000 % |
+==============================================================================
+restarts              : 1
+conflicts             : 3              (1373 /sec)
+decisions             : 8              (3661 /sec)
+propagations          : 38             (17391 /sec)
+conflict literals     : 8              (0.00 % deleted)
+Memory used           : 2.68 MB
+CPU time              : 0.002185 s
+
+SATISFIABLE
+                   p prendra la couleur   3
+                   f prendra la couleur   1
+                   e prendra la couleur   2
+                   m prendra la couleur   2
+                   s prendra la couleur   1
+                   v prendra la couleur   3
