@@ -19,7 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage{caption}
  
-\pgfplotsset{compat=1.16}
+%%\pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
@@ -153,17 +153,17 @@
     \ifthenelse{\isempty{#2}}%
     {}%
 	{    \ \\\sepline\ \\
-	\textbf{Paramètres}
+	\textbf{Variables}
 	{#2}}
     \ifthenelse{\isempty{#3}}%
     {}%
 	{    \ \\\sepline\ \\
-	\textbf{Retourné}
+	\textbf{Contraintes}
 	{#3}}
     \ifthenelse{\isempty{#4}}%
     {}%
 	{    \ \\\sepline\ \\
-	\textbf{Méthodes}
+	\textbf{}
 	{#4}}
 }
 
@@ -239,6 +239,64 @@ Le script, sat et python vont générer deux fichiers lors de leurs exécution:
 \end{description}
 
 \pagebreak
+
+\section{Description du Modèle}
+
+L'explication du choix de la modélisation se fera via l'exemple ci dessous pour le point nommé $B$ et pour un nombre de couleurs maximum de $3$:
+
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2.8cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A)                    {$A$};
+  \node[state]         (B) [above right of=A] {$\cblue{B}$};
+  \node[state]         (C) [below right of=B] {$C$};
+
+  \path (B) edge              node {} (A)
+            edge              node {} (C);
+\end{tikzpicture}
+
+\funcdoc{Soit $B$ le point concerné}{
+\begin{description}
+\item[] $A_1,A_2,A_3,B_1,B_2,B_3,C_1,C_2,C_3$, les 9 variables boolean des points $A,B,C$ tel que pour chaque couleurs lui associe un indice.
+\item[] Si $B_3 \models \top$ alors $B$ prendra la couleur d'indice $3$.
+\end{description}
+}{
+\begin{description}
+\item[$B$] doit être composé d'au moins une couleur: $(B_1 \vee B_2 \vee B_3)$
+\item[$B_i$] ne doit avoir d'une sauf affectation à $\top$ : $(\neg B_1 \vee \neg B_2) \wedge (\neg B_2 \vee \neg B_3) \wedge (\neg B_1 \vee \neg B_3)$
+\item[le point $A$ doit avoir une couleur différente de celle de $B$] $(\neg A_1 \vee \neg B_1) \wedge (\neg A_2 \vee \neg B_2) \wedge (\neg A_3 \vee \neg B_3)$
+\item[le point $C$ doit avoir une couleur différente de celle de $B$] $(\neg C_1 \vee \neg B_1) \wedge (\neg C_2 \vee \neg B_2) \wedge (\neg C_3 \vee \neg B_3)$
+\end{description}
+}{$ $}
+
+\pagebreak
+
+\section{Exemples}
+Soit les deux exemples suivant sur le graph suivant:
+
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=2.8cm,semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (wa)                     {$wa$};
+  \node[state]         (nt) [above right of=wa] {$nt$};
+  \node[state]         (sa) [below right of=wa] {$sa$};
+  \node[state]         (gld) [right of=nt] 		{$gld$};
+  \node[state]         (nsw) [below right of=gld]{$nsw$};
+  \node[state]         (vc) [below of=nsw] 		{$vc$};
+  \node[state]         (tas) [below of=vc] 		{$tas$};
+
+  \path (wa) edge              node {} (nt)
+             edge              node {} (sa)
+        (nt) edge              node {} (sa)
+             edge 			   node {} (gld)
+        (sa) edge              node {} (gld)
+             edge              node {} (nsw)
+             edge              node {} (vc)
+        (gld) edge             node {} (nsw)
+        (nsw) edge 			   node {} (vc);
+\end{tikzpicture}
+\pagebreak
+
 \section{Exemple satisfiable}
 
 \formula{$./sat\_graph\ \ MiniSat\_v1.14\_linux\ \ tmp.json\ \ 3$}
@@ -268,10 +326,9 @@ nsw prendra la couleur 2
 vc prendra la couleur 1
 tas prendra la couleur 2
 
-\end{lstlisting}
+\end{lstlisting}\pagebreak
 
-\pagebreak
-\section{Exemple satisfiable}
+\section{Exemple non satisfiable}
 
 \formula{$./sat\_graph\ \ MiniSat\_v1.14\_linux\ \ tmp.json\ \ 2$}
 \ \\
