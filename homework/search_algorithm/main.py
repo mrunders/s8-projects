@@ -1,47 +1,57 @@
 
 import os
-
+import numpy
+from copy import deepcopy
+from itertools import repeat
 from sklearn.preprocessing import normalize
 
-FILE_PATH = "data-00007-of-00010.gob"
-SHORTER_FILE = "shorter.gob"
+FILE_PATH = "data-00007-of-00010_shorter.gob"
+SHORTER_FILE = "data_shorter.gob"
+WORDS_KEYS = "words_link.gob"
+LINKS_LIST = "link_list.gob"
 
-if not os.path.exists(SHORTER_FILE):
-	print("generating %s file" % (SHORTER_FILE))
+links = list()
+
+if not os.path.exists(LINKS_LIST):
 	## reduce data by ignore useless lines
-	output = open(SHORTER_FILE, "w")
-	with open(FILE_PATH, "r") as inpu:
-	    for line in inpu:
-	        if line[0] == 'U':
-	            output.write(line)
-	        elif line[0] == '\n':
-	            output.write("\n")
-	        elif line[0] == 'M':
-	            items = line.split("\t")
-	            output.write(items[3])
-	        
-	output.close()
-	print("done")
+	if not os.path.exists(SHORTER_FILE):
+		print("generating %s file" % (SHORTER_FILE))
+		output = open(SHORTER_FILE, "w")
+		with open(FILE_PATH, "r") as inpu:
+			for line in inpu:
+				if line[0] == 'U':
+					output.write(line)
+					links.append(line[4:])
+				elif line[0] == '\n':
+					output.write("\n")
+				elif line[0] == 'M':
+					items = line.split("\t")
+					output.write("LINK ")
+					output.write(items[1])
+					output.write(" ")
+					output.write(items[3])
+				
+		output.close()
+		print("done")
 
+	with open(LINKS_LIST, "w") as output:
+		print("saving all links")
+		for l in links:
+			output.write(l)
+		print("done")
 
-print("size reduction")
-data = dict()
+else:
+	with open(LINKS_LIST, "r") as inpu:
+		print("getting all links")
+		for l in inpu:
+			links.append(l)
+		print("done")
 
-with open(SHORTER_FILE, "r") as inpu:
-    for line in inpu:
-        if line[0] == 'U':
-            url = line.split("\t")[1][:-1]
-        elif line[0] != "\n":
-            line = line[:-1]
-            try:
-                data[line] += 1
-            except:
-                data[line] = 1
+print(len(links))
+len_matrix = len(links)
+matrix = numpy.zeros((len_matrix,len_matrix), dtype='?')
 
-print("done")
+for i in range(len_matrix):
+	matrix[i][i] = 1
 
-data_header = data.keys()
-data_values = data.values()
-data.clear()
-
-data_values_normalized = normalize(data_values, norm=’l2’, axis=1, copy=True, return_norm=False)
+print(matrix)
