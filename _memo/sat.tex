@@ -119,8 +119,25 @@ Une variable est dite pure dans une formule si ses littéraux sont soit tous pos
 \chapter{Classes polynomiales}
 \pagebreak
 \section{2-SAT}
+Une formule sous forme 2-SAT est une formule où chaque termes de la formule est binaire.
+La résolution est en temps polynomiale.\\
+
+
 \section{Horn-SAT}
+Une clause est dite de Horn si elle contient au plus un littéral positif:
+\begin{description}
+\item[] $(a) \rightarrow a$ 
+\item[] $(a \vee \neg b \vee \neg c) \rightarrow a :- b, c$
+\item[] $(\neg a \vee \neg b \vee \neg c) \rightarrow :- a, b, c$
+\end{description}
+
 \section{Horn-renommable}
+Une formule est Horn renommable si une fois avoir appliquer l'inverser sur tout les littéraux d'une formule, celle ci devient Horn-SAT:\\
+\begin{description}
+\item[$\phi$] = $(\neg a \vee b) \wedge (a \vee b \vee c)$
+\item[$H(\phi)$] = $(a \vee \neg b) \wedge (\neg a \vee \neg b \vee \neg c)$
+\end{description}
+
 \pagebreak
 
 \chapter{Algorithmes de résolution syntaxiques}
@@ -174,14 +191,9 @@ Rarement utilisé en pratique.
 \section{Algorithmes complets Méthodes des tableaux}
 
 Prend n'importe quel type de formules:\\
+Voir cours de Représentation des connaissances et raisonnement.\\
 
-% fill règles d'élimination
-% lors d'un et c'est sur la même ligne separé par virgule, si c'est un ou c'est 2 branches séparé
-% exemple
-% branche fermé \neg a, a.
-% si toutes les branches fermé -> insat
-
-\chapter{Algorithmes de résolutions sémantique}
+\chapter{Algorithmes de résolutions avec backtraking}
 
 \section{Procédure de DPLL}
 
@@ -189,6 +201,123 @@ Prend n'importe quel type de formules:\\
 % only cnf
 % si unitaire ou pure : résoudre
 % sinon faire 2 branches d'affectations sur une var
+
+\chapter{Solveurs SAT modernes}
+\pagebreak
+
+\chapter{Algorithmes incomplets}
+
+\section{GSAT recherche locale}
+
+Partir d'une formule où tout les littéraux sont affecté aléatoirement à $\top$ ou $\bot$ puis pour un nombre d'itération donné si la formule n'est pas satisfiable alors prendre un terme aléatoirement et l'inverser.\\
+
+\section{Tabou pour Sat}
+
+Une amélioration de GSAT et d'utiliser une File, inverser un littéral c'est l'enfiler dans le File, une fois dans le File ce littéral de peut plus être inversé, au bout de n tours, le littéral en File est enlevé.\\
+Lors d'un 3-SAT le nombre n de tours est optimisé si il veut le nombre de variables de la formule\\
+
+\pagebreak
+\chapter{Méthodes mixtes ROBDD, OBDD, BDD}
+\pagebreak
+
+\section{BDD}
+Tout formule peut être reproduit sous forme INF ($if\ then\ else\ normal\ forme$), soi l'opérateur $if-then-else (ite)$:
+\formula{$x \hookrightarrow y, z = (x \wedge y) \vee (\neg x \wedge z)$}
+\begin{description}
+\item[] $\neg x$ par $x \hookrightarrow 0,1$
+\item[] $x \Rightarrow y$ par $x \hookrightarrow (y \hookrightarrow 1, 0), 1$
+\item[] $x \Leftrightarrow y$ par $x \hookrightarrow (y \hookrightarrow 1,0), (y \hookrightarrow 0,1)$
+\item[] $x \wedge y$ par  $x \hookrightarrow (y \hookrightarrow 1, 0), 0$
+\item[] $x \vee y$ par $x \hookrightarrow 1, (y \hookrightarrow 1,0)$
+\end{description}
+
+Soit la formule suivante:
+\formula{$\phi = (x_1 \Leftrightarrow y_1) \wedge (x_2 \Leftrightarrow y_2)$}
+\begin{multicols}{2}
+[En appliquant récursivement le théorème de Shanon sur les variables (mises dans un ordre) on obtient:]
+\begin{description}
+\item[$\phi$] = $x_1 \hookrightarrow \phi_1, \phi_0$
+\item[$\phi_0$] = $y_1 \hookrightarrow 0, \phi_{00}$
+\item[$\phi_1$] = $y_1 \hookrightarrow \phi_{11}, 0$
+\item[$\phi_{00}$] = $x_2 \hookrightarrow \phi_{001}, \phi_{000}$
+\item[$\phi_{11}$] = $x_2 \hookrightarrow \phi_{111}, \phi_{110}$
+\item[$\phi_{000}$] = $y_2 \hookrightarrow 0, 1$
+\item[$\phi_{001}$] = $y_2 \hookrightarrow 1, 0$
+\item[$\phi_{110}$] = $y_2 \hookrightarrow 0, 1$
+\item[$\phi_{111}$] = $y_2 \hookrightarrow 1, 0$
+\end{description}
+
+\begin{tikzpicture}[
+  level distance=15mm,
+  text depth=.1em,
+  text height=.8em,
+  level 1/.style={sibling distance=8em},
+  level 2/.style={sibling distance=4em},
+  level 3/.style={sibling distance=4em},
+  level 4/.style={sibling distance=2em},
+  every node/.style = {scale=1,
+    draw=none, align=center}]]
+  \node {$x_1$}
+    child { node {$y_1$} 
+      child { node {$x_2$}
+        child { node {$y_2$ }
+            child { node {$\top$ }}
+        	child { node {$\bot$ }}
+        }
+        child { node {$y_2$ }
+            child { node {$\bot$ }}
+        	child { node {$\top$ }}
+        }
+      }
+      child { node {$\bot$}
+      }
+    }
+    child { node {$y_1$} 
+      child { node {$\bot$}
+      }
+      child { node {$x_2$}
+        child { node {$y_2$ }
+            child { node {$\top$ }}
+        	child { node {$\bot$ }}
+        }
+        child { node {$y_2$ }
+            child { node {$\bot$ }}
+        	child { node {$\top$ }}
+        }
+      }
+    };
+\end{tikzpicture}
+\end{multicols}
+
+\pagebreak
+Vers un ROBDD, la simplification se fait en fusionnant les noeuds ayant le même parent, et en instance que 2 feuilles ($\top$ et $\bot$):
+
+\scalebox{0.7}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=4cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state]         (x1) [] {$x_1$};
+  \node[state]         (y1t) [below left of=x1] {$y_1$};
+  \node[state]         (y1f) [below right of=x1] {$y_1$};
+  \node[state]         (x2) [below of=y1t] {$x_2$};
+  \node[state]         (y2t) [below right of=x2] {$y_2$};
+  \node[state]         (y2f) [below left of=x2] {$y_2$};
+  \node[state]         (r0) [below left of=y2f] {$0$};
+  \node[state]         (r1) [below left of=y2t] {$1$};
+
+  \path (y1t) edge              node {} (x1)
+  		(y1f) edge node {} (x1)
+  		(x2) edge node {} (y1f)
+  		 edge node {} (y1t)
+  		 (y2f) edge node {} (x2)
+  		 (y2t) edge node {} (x2)
+  		 (r0) edge node {} (y1f)
+  		 edge node {} (y2t)
+  		 (r1) edge node {} (y2f)
+  		 edge node {} (y2t);
+\end{tikzpicture}
+}
 
 
 
