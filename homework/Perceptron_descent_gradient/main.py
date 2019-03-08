@@ -35,7 +35,7 @@ class Algo(object):
         return self.plt
 
 
-
+"""
 MAX_PLOT_X = 4500
 
 iris_X, iris_y = Data.load_iris_data()
@@ -45,7 +45,7 @@ perceptron_plot = perceptron.get_plot()
 perceptron_plot.draw_plot(name="perceptron iris", max_x=MAX_PLOT_X)
 perceptron_plot.show_plot()
 
-"""
+
 gradient_descent = Algo(iris_X, iris_y, algo=GradientDescent, yielding_pas=10, shuffle_data=True, gradient_eta=2)
 gradient_descent.run(nb_iterations=MAX_PLOT_X)
 gradient_descent_plot = gradient_descent.get_plot()
