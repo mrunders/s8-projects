@@ -484,6 +484,258 @@ On peut attribuer au variables toutes les possibilités de chemin de l'arbre:
 \end{description}
 \pagebreak
 
+\chapter{Recherche de réponses}
+Selon les problèmes, l'arbre de décision peut être assez profond / large à explorer, on peut inféré sur les contraintes par filtrage ou par propagation pour ne pas à avoir à explorer certains sous arbres.
+\pagebreak
 
+\section{recherche avec backtrack}
+Tout dépend du niveau de l'algorithme de filtrage utilisé, en utilisant $look-ahead$ algorithme on obtient:
+\begin{description}
+\item[BT] $ $
+\item[FC] (Forward Checking)
+\item[MAC] (Maintaining Arc Consistency)
+\end{description}
+
+Pour l'algorithme $look-back$ effectuant des choses plus intelligente:
+\begin{description}
+\item[CBJ] (Conflict-directed backjumping)
+\item[DBT] (Dynamic Backtracking)
+\end{description}
+
+\pagebreak
+\subsection{BT}
+BT est le plus simple, pour chaque node, on va regarder si celui ci satisfait toutes les contraintes.
+Sur le problème des N-queens=4:
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$X$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$\crouge{X}$&$ $&$\crouge{X}$&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$X$&$ $\\\hline
+$X$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$X$&$ $\\\hline
+$\crouge{X}$&$ $&$ $&$\crouge{X}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$\crouge{X}$&$\crouge{X}$\\\hline
+$X$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$\crouge{X}$\\\hline
+$ $&$ $&$\crouge{X}$&$ $\\\hline
+$X$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$\crouge{X}$\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$X$&$ $\\\hline
+$\crouge{X}$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$\crouge{X}$&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$\crouge{X}$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$\crouge{X}$&$\crouge{X}$&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$X$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$X$&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$\crouge{X}$&$ $&$ $&$ $\\\hline
+$ $&$\crouge{X}$&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$\crouge{X}$&$\crouge{X}$&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\
+\end{tabular}
+}
+\end{multicols}
+\pagebreak
+
+\subsection{FC}
+FC, toutes les nodes utilisé réduire le domaine des autres nodes, si un domaine est vide, plus besoin de continuer il n'y a pas de solution:
+Sur le problème des N-queens=4:
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$\crouge{\#}$\\\hline
+$ $&$ $&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$ $&$\crouge{\#}$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$X$&$\crouge{\#}$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$X$&$\crouge{\#}$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$\crouge{\#}$&$ $&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$\crouge{\#}$\\\hline
+$ $&$ $&$\crouge{\#}$&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$ $&$ $&$ $\\
+\end{tabular}
+}
+\end{multicols}
+
+\begin{multicols}{3}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$ $&$X$&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$X$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$ $&$X$&$ $\\
+\end{tabular}
+}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$ $&$ $\\\hline
+$ $&$ $&$ $&$X$\\\hline
+$X$&$ $&$ $&$ $\\\hline
+$ $&$ $&$X$&$ $\\
+\end{tabular}
+}
+\end{multicols}
+\pagebreak
+\subsection{MAC binary AC search}
+
+%% fill
+
+\subsection{CBJ}
+
+%% fill
+
+\section{Heuristiques de recherche}
+
+%% fill
 
 \pagebreak
