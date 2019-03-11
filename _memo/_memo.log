@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  21 FEB 2019 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  9 MAR 2019 07:50
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -3837,11 +3837,121 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[199]) (sat.tex [200
+[199]
+Chapter 35.
+[200
 
 ]
-Chapter 35.
-[201
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[201]
+Underfull \hbox (badness 10000) in paragraph at lines 517--534
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--534
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--561
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--561
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--588
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 571--588
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--615
+[][]
+ []
+
+
+Overfull \hbox (20.4388pt too wide) in paragraph at lines 598--615
+[] [] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[202]
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--673
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--673
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--700
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--700
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--727
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--727
+[]
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[203])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[204] (sat.tex [205
+
+]
+Chapter 36.
+[206
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3859,7 +3969,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[202]
+[207]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
@@ -3880,7 +3990,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[203]
+[208]
 Underfull \hbox (badness 10000) in paragraph at lines 73--84
 
  []
@@ -3912,7 +4022,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[204]
+[209]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -3928,38 +4038,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[205]
-Chapter 36.
-[206
+[210]
+Chapter 37.
+[211
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[207]
-Chapter 37.
-[208
+[212]
+Chapter 38.
+[213
 
 ]
-Overfull \hbox (26.33984pt too wide) in paragraph at lines 128--128
+Overfull \hbox (26.33984pt too wide) in paragraph at lines 145--145
 []\OT1/cmr/bx/n/17.28 Algorithmes com-plets base sur la resolution 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
-Overfull \hbox (14.30385pt too wide) in paragraph at lines 151--151
+Overfull \hbox (14.30385pt too wide) in paragraph at lines 168--168
 []\OT1/cmr/bx/n/17.28 Algorithmes com-plets Procedure de Davis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
@@ -3969,13 +4088,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[209]
-Overfull \hbox (43.29182pt too wide) in paragraph at lines 174--174
+[214]
+Overfull \hbox (43.29182pt too wide) in paragraph at lines 191--191
 []\OT1/cmr/bx/n/17.28 Algorithmes com-plets Methodes des tableaux 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
@@ -3985,20 +4104,67 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[210]
-Chapter 38.
-) [211
+[215]
+Chapter 39.
+[216
 
-] (_memo.aux) )
+]
+Chapter 40.
+[217
+
+]
+Chapter 41.
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+[218
+
+]
+Chapter 42.
+[219
+
+]
+Overfull \hbox (6.19478pt too wide) in paragraph at lines 224--225
+\OT1/cmr/m/n/12 Tout for-mule peut ^etre re-pro-duit sous forme INF ($\OML/cmm/
+m/it/12 if then else normal forme$\OT1/cmr/m/n/12 ),
+ []
+
+Missing character: There is no ] in font nullfont!
+
+Overfull \hbox (60.20499pt too wide) in paragraph at lines 289--290
+[][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[220])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[221] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 33196 strings out of 493323
- 802574 string characters out of 3139963
- 1039517 words of memory out of 3000000
- 36124 multiletter control sequences out of 15000+200000
+ 33363 strings out of 493323
+ 806099 string characters out of 3139963
+ 1039516 words of memory out of 3000000
+ 36291 multiletter control sequences out of 15000+200000
  13425 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4019,9 +4185,9 @@ fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
 pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
 E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (212 pages, 705634 bytes).
+Output written on _memo.pdf (222 pages, 722595 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
+ 799 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
