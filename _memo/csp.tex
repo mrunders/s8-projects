@@ -512,7 +512,7 @@ Sur le problème des N-queens=4:
 $ $&$X$&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
-$X$&$ $&$ $&$ $\\
+$X$&$ $&$\ $&$\ $\\
 \end{tabular}
 }
 \scalebox{0.9}{
@@ -520,7 +520,7 @@ $X$&$ $&$ $&$ $\\
 $ $&$X$&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
-$\crouge{X}$&$ $&$\crouge{X}$&$ $\\
+$\crouge{X}$&$ $&$\crouge{X}$&$\ $\\
 \end{tabular}
 }
 \scalebox{0.9}{
@@ -528,7 +528,7 @@ $\crouge{X}$&$ $&$\crouge{X}$&$ $\\
 $ $&$X$&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$X$&$ $\\\hline
-$X$&$ $&$ $&$ $\\
+$X$&$ $&$ $&$\ $\\
 \end{tabular}
 }
 \end{multicols}
@@ -593,7 +593,7 @@ $X$&$ $&$ $&$ $\\
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
 $X$&$ $&$ $&$ $\\\hline
-$ $&$ $&$ $&$ $\\
+$ $&$\ $&$\ $&$\ $\\
 \end{tabular}
 }
 \scalebox{0.9}{
@@ -601,14 +601,14 @@ $ $&$ $&$ $&$ $\\
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
 $\crouge{X}$&$ $&$ $&$ $\\\hline
-$ $&$\crouge{X}$&$ $&$ $\\
+$ $&$\crouge{X}$&$\ $&$\ $\\
 \end{tabular}
 }
 \scalebox{0.9}{
 \begin{tabular}{c|c|c|c}
 $ $&$ $&$ $&$ $\\\hline
 $ $&$ $&$ $&$ $\\\hline
-$\crouge{X}$&$\crouge{X}$&$ $&$ $\\\hline
+$\crouge{X}$&$\crouge{X}$&$\ $&$\ $\\\hline
 $ $&$ $&$ $&$ $\\
 \end{tabular}
 }
@@ -728,14 +728,98 @@ $ $&$ $&$X$&$ $\\
 \pagebreak
 \subsection{MAC binary AC search}
 
-%% fill
+A chaque noeud de l'arbre, MAC va appliquer la consistance d'arc (AC).
+
+\cshape{1}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$X$&$\ $&$\ $&$\ $\\
+\end{tabular}}
+
+\begin{multicols}{3}
+[Quand on place notre node $X$ on assigne à $\crouge{\#}$ toutes les cases toutes les cases qui sont éliminé par la contrainte porté par $X$. (tout ce qui est fait en dessous et fait en une étape une étape)]
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$\crouge{\#}$\\\hline
+$ $&$ $&$\crouge{\#}$&$ $\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$\cblue{\#}$&$\crouge{\#}$\\\hline
+$ $&$\cblue{X}$&$\crouge{\#}$&$\cblue{\#}$\\\hline
+$ $&$\crouge{\#}$&$ $&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$\cblue{\#}$&$\crouge{\#}$\\\hline
+$ $&$\cblue{X}$&$\crouge{\#}$&$\cblue{\#}$\\\hline
+$ $&$\crouge{\#}$&$\cvert{X}$&$\cvert{\#}$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}}
+\end{multicols}
+
+Ce qui donne:
+\cshape{1}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$ $&$\crouge{\#}$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\
+\end{tabular}}
+
+\begin{multicols}{3}
+[Avec assignation de $X$ ce dessous]
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$ $&$ $\\\hline
+$ $&$ $&$ $&$ $\\\hline
+$X$&$ $&$ $&$ $\\\hline
+$\crouge{\#}$&$\ $&$\ $&$\ $\\
+\end{tabular}}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$ $&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$ $\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$\crouge{\#}$&$ $&$\crouge{\#}$\\
+\end{tabular}}
+\scalebox{0.9}{
+\begin{tabular}{c|c|c|c}
+$ $&$X$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$ $&$\crouge{\#}$&$\crouge{\#}$&$X$\\\hline
+$X$&$\crouge{\#}$&$\crouge{\#}$&$\crouge{\#}$\\\hline
+$\crouge{\#}$&$\crouge{\#}$&$X$&$\crouge{\#}$\\
+\end{tabular}}
+\end{multicols}
+\pagebreak
 
 \subsection{CBJ}
 
 %% fill
 
-\section{Heuristiques de recherche}
+\section{Heuristique d'ordre des variables}
+
+Selon l'ordre des variable, l'arbre de résolution peut avoir une petite comme une grande profondeur, le but d'une bonne heuristique d'ordonnancement des variables et de minimiser la profondeur de l'arbre.\\
+Il existe aussi $Lexico$, $random$, $min_conflit$, $max_confilts$.\\
+
+\subsection{ MinDom}
+Cette heuristique ordonnance les variables par rapport au cardinal de son domaine, la première variable aura le domaine le plus petit de tout l'arbre.
+
+\subsection{ maxDeg}
+On ordonnance les variables selon leur plus grand degré, la première variable a le plus haut degré.
+
+\section{Recherche à partir des conflits}
 
 %% fill
+
+\pagebreak
+\section{Avec Restarts (nogood)}
+Lorsque la profondeur de l'arbre de recherche devient très grand, il se peut qu'a un moment donné on n'est envie de recommencer la recherche sur d'autres noeuds.\\
+
 
 \pagebreak
