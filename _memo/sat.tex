@@ -292,32 +292,57 @@ Soit la formule suivante:
 \pagebreak
 Vers un ROBDD, la simplification se fait en fusionnant les noeuds ayant le même parent, et en instance que 2 feuilles ($\top$ et $\bot$):
 
-\scalebox{0.7}{
-\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=4cm,
+\cshape{0.7}{
+\begin{tikzpicture}[-,>=stealth',shorten >=1pt,auto,node distance=4cm,
                     semithick]
   \tikzstyle{every state}=[fill=white,draw=none,text=black]
 
   \node[state]         (x1) [] {$x_1$};
-  \node[state]         (y1t) [below left of=x1] {$y_1$};
-  \node[state]         (y1f) [below right of=x1] {$y_1$};
+  \node[state]         (y1t) [below right of=x1] {$y_1$};
+  \node[state]         (y1f) [below left of=x1] {$y_1$};
   \node[state]         (x2) [below of=y1t] {$x_2$};
   \node[state]         (y2t) [below right of=x2] {$y_2$};
   \node[state]         (y2f) [below left of=x2] {$y_2$};
   \node[state]         (r0) [below left of=y2f] {$0$};
   \node[state]         (r1) [below left of=y2t] {$1$};
 
-  \path (y1t) edge              node {} (x1)
-  		(y1f) edge node {} (x1)
-  		(x2) edge node {} (y1f)
-  		 edge node {} (y1t)
+  \path (y1t) edge              node {$\top$} (x1)
+  		(y1f) edge node {$\bot$} (x1)
+  		(x2) edge node {$\top$} (y1f)
+  		 edge node {$\top$} (y1t)
   		 (y2f) edge node {} (x2)
   		 (y2t) edge node {} (x2)
-  		 (r0) edge node {} (y1f)
+  		 (r0) edge node {$\bot$} (y1f)
   		 edge node {} (y2t)
-  		 (r1) edge node {} (y2f)
-  		 edge node {} (y2t);
+  		 (r1) edge node {$\top$} (y2f)
+  		 edge node {$\top$} (y2t);
 \end{tikzpicture}
 }
+
+\pagebreak
+
+
+\chapter{MaxSat}
+
+Dans beaucoup de cas, SAT ne dit pas qu'un ensemble de clauses est satisfiable, mais dans certains cas nous devons obtenir un sous ensemble de clauses pouvant être satisfait, le but de MaxSat est de minimiser le nombres de clauses non satisfaite:\\
+Soit le formule écrit en format DIMACS:
+\formula{6 2 \& -6 2 \& -2 1 \& -1 \& -6 8 \& 6 -8 \& 2 4 \& -4 5 \& 7 5 \& -7 5 \& -5 3 \& -3}
+
+Cette formule est non satisfiable mais si on enlève $-1$ et $-3$ alors cette formule devient satisfiable.\\
+\pagebreak
+
+\section{B et B}
+
+%% appeler SAT quelque fois et relaxer les clauses en ajoutant des variables, minimiser le nombres de variables ajouté 
+
+\section{Fu et Maliks}
+
+%% relaxer toutes les clauses qui sont dans les sous ensembles de conflits itérativement until devient SAT
+
+\section{MSU3}
+
+%% relaxer le sous ensemble de conflit (au plus une variables en plus par clauses) itérativement until devient SAT
+
 
 
 
