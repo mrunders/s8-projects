@@ -820,6 +820,56 @@ On ordonnance les variables selon leur plus grand degré, la première variable 
 \pagebreak
 \section{Avec Restarts (nogood)}
 Lorsque la profondeur de l'arbre de recherche devient très grand, il se peut qu'a un moment donné on n'est envie de recommencer la recherche sur d'autres noeuds.\\
+Cela permet de crée un algorithme multi heuristique.\\
+
+Tout problème de recherche dans un arbre peut sa voir comme une séquence de décisions positives et négatives, pour chaque branche de l'arbre on peut généraliser un nogood via sa branche négative, appelé nld-nogood.\\
+
+%% fill decision tree example figure A
+
+\pagebreak
+Via réduction on obtient:
+\cshape{0.5}{
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=5cm,
+                    semithick]
+  \tikzstyle{every state}=[fill=white,draw=none,text=black]
+
+  \node[state] 		   (A0)                    {$v=a,w=b$};
+  \node[state]         (A1) [right of=A0]      {$v=a,w\neq b,y=b$};
+  \node[state]         (B0) [below  of=A0] {$\crouge{v=a,y=b}$};
+  \node[state]         (B1) [right of=B0]      {$v=a,w\neq b,y \neq b,x=c,w=a$};
+  \node[state]         (C0) [below  of=B0] {$v=a,w=b$};
+  \node[state]         (C1) [right of=C0]      {$v=a,w\neq b,x=c,w=a$};
+  \node[state]         (D0) [below  of=C0] {$\crouge{v=	nw=c,w=a}$};
+  \node[state]         (D1) [right of=D0]      {$v=a,w\neq bny\neq b,x=c,w\neq a,z=b$};
+  \node[state]         (E0) [below  of=D0] {$v=a,w=b$};
+  \node[state]         (E1) [right of=E0]      {$v=a,w\neq b,y\neq b,x=c,z=b$};
+  \node[state]         (F0) [below  of=E0] {$v=a,y\neq b,x=c,z=b$};
+  \node[state]         (F1) [right of=F0]      {$v=a,y=b$};
+  \node[state]         (G)  [below  of=F0] {$\crouge{v=a,x=c,z=b}$};
+
+  \path (A0) edge              node {} (B0)
+   (A1) edge              node {} (B0)
+   (B0) edge              node {} (C0)
+   (B1) edge              node {} (C0)
+   (C0) edge              node {} (D0)
+   (C1) edge              node {} (D0)
+   (D0) edge              node {} (E0)
+   (D1) edge              node {} (E0)
+   (E0) edge              node {} (F0)
+   (E1) edge              node {} (F0)
+   (F0) edge              node {} (G)
+   (F1) edge              node {} (G)
+
+  ;
+\end{tikzpicture}}
+\pagebreak
+
+\section{Symmetry Breaking}
+
+%% fill
+
+\section{•}
+
 
 
 \pagebreak
