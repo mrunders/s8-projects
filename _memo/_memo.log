@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  9 MAR 2019 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  26 MAR 2019 10:56
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -3884,8 +3884,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 598--615
  []
 
 
-Overfull \hbox (20.4388pt too wide) in paragraph at lines 598--615
-[] [] 
+Underfull \hbox (badness 10000) in paragraph at lines 598--615
+[]
  []
 
 
@@ -3940,18 +3940,87 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[203])
+[203]
+Underfull \hbox (badness 10000) in paragraph at lines 749--764
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--764
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--798
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--798
+[]
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[204] (sat.tex [205
+[204]
+Underfull \hbox (badness 10000) in paragraph at lines 807--809
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[205]
+Underfull \hbox (badness 10000) in paragraph at lines 822--824
+
+ []
+
+
+Overfull \hbox (5.44867pt too wide) in paragraph at lines 825--826
+[]\OT1/cmr/m/n/12 Tout probleme de recherche dans un ar-bre peut sa voir comme
+ une sequence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[206]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[207]
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <17.28> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 871.
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[208] (sat.tex [209
 
 ]
 Chapter 36.
-[206
+[210
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
@@ -3969,7 +4038,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[207]
+[211]
 Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
@@ -3990,7 +4059,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[208]
+[212]
 Underfull \hbox (badness 10000) in paragraph at lines 73--84
 
  []
@@ -4022,7 +4091,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[209]
+[213]
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
@@ -4038,9 +4107,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[210]
+[214]
 Chapter 37.
-[211
+[215
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 122--124
@@ -4058,9 +4127,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[212]
+[216]
 Chapter 38.
-[213
+[217
 
 ]
 Overfull \hbox (26.33984pt too wide) in paragraph at lines 145--145
@@ -4088,7 +4157,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[214]
+[218]
 Overfull \hbox (43.29182pt too wide) in paragraph at lines 191--191
 []\OT1/cmr/bx/n/17.28 Algorithmes com-plets Methodes des tableaux 
  []
@@ -4104,13 +4173,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[215]
+[219]
 Chapter 39.
-[216
+[220
 
 ]
 Chapter 40.
-[217
+[221
 
 ]
 Chapter 41.
@@ -4124,11 +4193,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--218
 
  []
 
-[218
+[222
 
 ]
 Chapter 42.
-[219
+[223
 
 ]
 Overfull \hbox (6.19478pt too wide) in paragraph at lines 224--225
@@ -4148,46 +4217,58 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[220])
+[224]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[221] (_memo.aux) )
+[225]
+Chapter 43.
+[226
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[227] (_memo.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 518 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 33363 strings out of 493323
- 806099 string characters out of 3139963
- 1039516 words of memory out of 3000000
- 36291 multiletter control sequences out of 15000+200000
- 13425 words of font info for 48 fonts, out of 3000000 for 9000
+ 33438 strings out of 493323
+ 807007 string characters out of 3139963
+ 1039517 words of memory out of 3000000
+ 36365 multiletter control sequences out of 15000+200000
+ 13680 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,36n,127p,730b,3527s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/
-ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/Progra
-mFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/ProgramFiles/Mik
-Tex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles/MikTex2.9/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12
-.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Pro
-gramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/ProgramFiles/Mi
-kTex2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><E:/ProgramFiles/MikTex2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1
-/public/amsfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cm
-ti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.
-pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (222 pages, 722595 bytes).
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbsy
+10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><E:
+/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/ProgramFi
+les/MikTex2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><E:/ProgramFiles/Mi
+kTex2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/ProgramFiles/MikTex2.9/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/
+public/amsfonts/cm/cmmi6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr
+10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/
+ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles
+/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/ProgramFiles/MikTex2.9/f
+onts/type1/public/amsfonts/cm/cmssi12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/a
+msfonts/cm/cmsy6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/
+cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/P
+rogramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/Progra
+mFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on _memo.pdf (228 pages, 741575 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
+ 822 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  38 words of extra memory for PDF output out of 10000 (max. 10000000)
 

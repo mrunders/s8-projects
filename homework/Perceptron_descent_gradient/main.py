@@ -34,6 +34,12 @@ class Algo(object):
     def get_plot(self):
         return self.plt
 
+    def do_all(self, nb_iterations=4500, name=None, max_x=4500):
+        self.run(nb_iterations)
+        p = self.get_plot()
+        p.draw_plot(name=name, max_x=max_x)
+        p.show_plot()
+
 
 """
 MAX_PLOT_X = 4500
