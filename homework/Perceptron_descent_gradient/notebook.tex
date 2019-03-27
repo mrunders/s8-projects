@@ -286,14 +286,20 @@
 \end{Verbatim}
 
 
-    
-    \begin{verbatim}
-<Figure size 640x480 with 1 Axes>
-    \end{verbatim}
+    \begin{itemize}
+\tightlist
+\item
+  'yielding\_pas' mean how many \textbf{rows} you learn between each
+  testing process.
+\end{itemize}
 
-    
+the data is readed in cycle.
+
+during all testing process we add an other point on the plot graph.
+
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{MAX\PYZus{}PLOT\PYZus{}X} \PY{o}{=} \PY{l+m+mi}{4500}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON} \PY{o}{=} \PY{l+m+mi}{100}
+        \PY{n}{MAX\PYZus{}PLOT\PYZus{}X} \PY{o}{=} \PY{l+m+mi}{4500}
         
         \PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y} \PY{o}{=} \PY{n}{Data}\PY{o}{.}\PY{n}{load\PYZus{}iris\PYZus{}data}\PY{p}{(}\PY{p}{)}
         \PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y} \PY{o}{=} \PY{n}{Data}\PY{o}{.}\PY{n}{load\PYZus{}mushroom\PYZus{}data}\PY{p}{(}\PY{p}{)}
@@ -307,7 +313,7 @@
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_2_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_3_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -317,7 +323,7 @@
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_3_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -327,44 +333,15 @@
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{shuffle\PYZus{}data}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{run}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot} \PY{o}{=} \PY{n}{perceptron}\PY{o}{.}\PY{n}{get\PYZus{}plot}\PY{p}{(}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{draw\PYZus{}plot}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{show\PYZus{}plot}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_5_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{shuffle\PYZus{}data}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{run}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot} \PY{o}{=} \PY{n}{perceptron}\PY{o}{.}\PY{n}{get\PYZus{}plot}\PY{p}{(}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{draw\PYZus{}plot}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{show\PYZus{}plot}\PY{p}{(}\PY{p}{)}
-\end{Verbatim}
+    \section{Perceptron}\label{perceptron}
 
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_6_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{shuffle\PYZus{}data}\PY{o}{=}\PY{n+nb+bp}{True}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{run}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot} \PY{o}{=} \PY{n}{perceptron}\PY{o}{.}\PY{n}{get\PYZus{}plot}\PY{p}{(}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{draw\PYZus{}plot}\PY{p}{(}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-        \PY{n}{perceptron\PYZus{}plot}\PY{o}{.}\PY{n}{show\PYZus{}plot}\PY{p}{(}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -373,6 +350,150 @@
     \end{center}
     { \hspace*{\fill} \\}
     
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_8_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section{Descent gradient}\label{descent-gradient}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+        \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_11_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_12_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_13_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section{searching for best ETA}\label{searching-for-best-eta}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}15}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1000}\PY{p}{,}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{:}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_2.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_3.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_4.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{notting change}\label{notting-change}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}18}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1000}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{500}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{100}\PY{p}{]}\PY{p}{:}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_2.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{l+m+mf}{0.2}\PY{p}{,} \PY{l+m+mf}{0.8}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.7}\PY{p}{]}\PY{p}{:}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_2.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_3.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Still the same.
+
 
     % Add a bibliography block to the postdoc
     
