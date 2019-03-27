@@ -281,25 +281,6 @@
 
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{k+kn}{from} \PY{n+nn}{IPython.display} \PY{k+kn}{import} \PY{n}{display}\PY{p}{,} \PY{n}{HTML}
-        
-        \PY{n}{display}\PY{p}{(}\PY{n}{HTML}\PY{p}{(}\PY{n}{data}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}\PYZdq{}\PYZdq{}}
-        \PY{l+s+s2}{\PYZlt{}style\PYZgt{}}
-        \PY{l+s+s2}{    div\PYZsh{}notebook\PYZhy{}container    \PYZob{} width: 40}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{; \PYZcb{}}
-        \PY{l+s+s2}{    div\PYZsh{}menubar\PYZhy{}container     \PYZob{} width: 65}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{; \PYZcb{}}
-        \PY{l+s+s2}{    div\PYZsh{}maintoolbar\PYZhy{}container \PYZob{} width: 99}\PY{l+s+s2}{\PYZpc{}}\PY{l+s+s2}{; \PYZcb{}}
-        \PY{l+s+s2}{\PYZlt{}/style\PYZgt{}}
-        \PY{l+s+s2}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{)}\PY{p}{)}
-\end{Verbatim}
-
-
-    
-    \begin{verbatim}
-<IPython.core.display.HTML object>
-    \end{verbatim}
-
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}1}]:} \PY{k+kn}{from} \PY{n+nn}{main} \PY{k+kn}{import} \PY{o}{*}
         \PY{k+kn}{from} \PY{n+nn}{PlotBuilder} \PY{k+kn}{import} \PY{o}{*}
 \end{Verbatim}
@@ -327,13 +308,12 @@ during all testing process we add an other point on the plot graph.
 
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Iris }\PY{l+s+se}{\PYZbs{}}
-        \PY{l+s+s2}{(\PYZhy{}1=others, 1=Iris\PYZus{}versicolor)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Iris (\PYZhy{}1=others, 1=Iris\PYZus{}versicolor)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_3_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -344,18 +324,17 @@ during all testing process we add an other point on the plot graph.
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_5_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_4_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Spambase }\PY{l+s+se}{\PYZbs{}}
-        \PY{l+s+s2}{(\PYZhy{}1=spam, 1=not a spam)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Spambase (\PYZhy{}1=spam, 1=not a spam)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_6_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_5_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -363,8 +342,18 @@ during all testing process we add an other point on the plot graph.
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}6}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                          \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_7_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -374,9 +363,8 @@ during all testing process we add an other point on the plot graph.
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}
-                          \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
+        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -385,25 +373,22 @@ during all testing process we add an other point on the plot graph.
     \end{center}
     { \hspace*{\fill} \\}
     
+    \section{Descent gradient}\label{descent-gradient}
+
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}
-                          \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+        \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_10_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_11_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
-    \section{Descent gradient}\label{descent-gradient}
-
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-        \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -413,10 +398,8 @@ during all testing process we add an other point on the plot graph.
     { \hspace*{\fill} \\}
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                 \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                 \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
+         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -425,53 +408,37 @@ during all testing process we add an other point on the plot graph.
     \end{center}
     { \hspace*{\fill} \\}
     
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                 \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                 \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
     \section{searching for best ETA}\label{searching-for-best-eta}
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}15}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{l+m+mi}{100}\PY{p}{,}\PY{l+m+mi}{1000}\PY{p}{,}\PY{l+m+mi}{200}\PY{p}{)}\PY{p}{:}
-             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                     \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
-             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                     \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                                     \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
 \end{Verbatim}
 
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_1.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_1.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_2.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_2.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_3.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_3.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_4.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_4.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -479,12 +446,30 @@ during all testing process we add an other point on the plot graph.
 
     \begin{Verbatim}[commandchars=\\\{\}]
 {\color{incolor}In [{\color{incolor}18}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1000}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{500}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{100}\PY{p}{]}\PY{p}{:}
-             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} 
-                                     \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
-                                     \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
-             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                     \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                                     \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+\end{Verbatim}
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_1.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_2.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}19}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{l+m+mf}{0.2}\PY{p}{,} \PY{l+m+mf}{0.8}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.7}\PY{p}{]}\PY{p}{:}
+             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
+             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -503,33 +488,8 @@ during all testing process we add an other point on the plot graph.
     \end{center}
     { \hspace*{\fill} \\}
     
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}19}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{l+m+mf}{0.2}\PY{p}{,} \PY{l+m+mf}{0.8}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.3}\PY{p}{,} \PY{o}{\PYZhy{}}\PY{l+m+mf}{0.7}\PY{p}{]}\PY{p}{:}
-             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                     \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
-             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                     \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                                     \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_19_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_19_1.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_19_2.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_19_3.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_3.png}
     \end{center}
     { \hspace*{\fill} \\}
     
