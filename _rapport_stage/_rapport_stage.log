@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  7 APR 2019 13:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  7 APR 2019 19:56
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1380,16 +1380,32 @@ chema du cerveaux
 <img/neurone.jpg, id=29, 918.43124pt x 457.71pt>
 File: img/neurone.jpg Graphic file (type jpg)
  <use img/neurone.jpg>
-Package pdftex.def Info: img/neurone.jpg used on input line 48.
+Package pdftex.def Info: img/neurone.jpg used on input line 47.
 (pdftex.def)             Requested size: 275.5315pt x 137.31406pt.
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./img/neurone.jpg>] (_rapport_stage.aux) ) 
+[6 <./img/neurone.jpg>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
  30799 strings out of 493323
  749217 string characters out of 3139963
@@ -1397,16 +1413,16 @@ Here is how much of TeX's memory you used:
  33765 multiletter control sequences out of 15000+200000
  11850 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,127p,793b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/ProgramFiles/MikTex2.9/fonts/
-type1/public/amsfonts/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts
-/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
-b><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/Prog
-ramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (7 pages, 130063 bytes).
+ 73i,11n,127p,831b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10
+.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Pr
+ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/M
+ikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/f
+onts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on _rapport_stage.pdf (8 pages, 132557 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
+ 57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

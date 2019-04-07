@@ -43,21 +43,15 @@ L'hypothèse du monde clos est une échappatoire fréquemment utilisé dans les 
 L'approche connexionniste est l'approche la plus proche du schéma du cerveaux au vue de requêtes. Le processus de réflexion du cerveau est représenté par une série de mini processus ne pouvant répondre qu'a un type de problème qui est définit lors de la création de ce mini processus, un mini processus est nommé neurone dans le cerveau, et nous allons préférer l'utilisation du terme neurone pour la suite. \\
 Chaque neurone est définit par plusieurs entrées, et une seul sortie et peu être semblable à un \textit{Perceptron} en machine learning:
 
-\begin{tikzpicture}
-\begin{scope}[every child node/.style={circle,draw}]
- \node [every child node] {A} [level distance=15mm,sibling distance=30mm]
-child { node [coordinate] (i) {}
-        child {node {B}}
-        edge from parent node[left] {1}
-}
-child {node [coordinate] (j) {} [sibling distance=3.5em,
-                                 every child/.style={->}]
-       child {node {C} edge from parent node[right] {3}}
-       child {node {D} edge from parent node[right] {4}}
-       child {node {E} edge from parent node[right] {5}}
-       child {node {F} edge from parent node[right] {6}}
-       edge from parent node[right] {2}
-};
-\draw[dotted] (j) +(0,20mm) -- +(0,20mm);
-\end{scope}
-\end{tikzpicture}
+\begin{center}
+\includegraphics[scale=0.3]{img/neurone.jpg} 
+\end{center}
+
+En informatique, Chacun de ses neurones sont équipé d'une capacité d'apprentissage qui va influer sur les futures résultats, via un vecteur de variables (dites Poids ou weight en anglais) ce sont ses variables couplé au données d'entré (via un dot) qui va donner le résultat de l'opération, lors de la période de création du neurone, ils se voit attribuer son vecteur de poids à des valeurs aléatoire (plus généralement que des zero), une base de connaissance de référence,  une fonction de résultat, et d'une fonction d'erreur pour donner une signification future au vecteur de poids.\\
+\linebreak
+Chaque sample (ou ligne) de la base de connaissance de référence est doté d'une variable réponse (noté étiquette) indiquant la réponse que le neurone devrait donner si dans le future on demande au neurone le résultat de ce sample. Avant de rendre le neurone fonctionnel, il se doit de passer les testes d'apprentissages, pour chaque sample dans la base de connaissance de référence, il va le multiplier avec le vecteur de poids et en tirer le résultat via une fonction de résultat et calculer l'indice d'erreur avec le résultat donné et la variable étiquette du sample, via l'indice d'erreur les poids du neurone vont s'équilibrer jusqu'à converger vers un vecteur dit optimal. Une fois optimal ce neurone donnera les meilleurs résultats qu'il pourra donner.\\
+\linebreak
+Les résultats donné par le neurone ne sont pas viable à 100\%, il se peu qu'il y ai des faux positif qui passe pour de vrai négatif, mais nous en discuterons plus bas dans ce rapport.
+
+
+\pagebreak
