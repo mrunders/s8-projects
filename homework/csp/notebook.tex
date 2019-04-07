@@ -141,7 +141,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{README}
+    \title{untitled}
     
     
     
@@ -301,204 +301,191 @@
     
     \subsubsection{LAURENT Thomas}\label{laurent-thomas}
 
-M2 IA
+M2 ia csp
 
-Apprentissage
+    \section{Latin Square}\label{latin-square}
 
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}2}]:} \PY{k+kn}{from} \PY{n+nn}{main} \PY{k+kn}{import} \PY{o}{*}
-        \PY{k+kn}{from} \PY{n+nn}{PlotBuilder} \PY{k+kn}{import} \PY{o}{*}
-\end{Verbatim}
+    Un \emph{Latin square} d'ordre \textbf{n} est un carré de \textbf{n x n}
+dimension remplit avec \textbf{n} sumboles différents. Chaque lignes et
+colonnes douvent contenir au plus un seul occurance du même symbole.
 
+    Ceci est un \emph{Latin Square} valide:
 
-    \begin{itemize}
-\tightlist
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+<tr style="background-color:#fff"><td>3</td><td>4</td><td>1</td><td>2</td></tr>
+<tr style="background-color:#fff"><td>4</td><td>3</td><td>2</td><td>1</td></tr>
+<tr style="background-color:#fff"><td>2</td><td>1</td><td>4</td><td>3</td></tr>
+\end{verbatim}
+
+    On dit que deux \emph{Latin Squares} sont orthogonal que si la
+superposition de ses deux tableaux forment un tableau où aucun élement
+n'apparait plus d'une fois:
+
+Ceci sont deux \emph{Latin Squares} orthogonal:
+
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td>2</td><td>3</td></tr>
+<tr style="background-color:#fff"><td>2</td><td>3</td><td>1</td></tr>
+<tr style="background-color:#fff"><td>3</td><td>1</td><td>2</td></tr>
+\end{verbatim}
+
+\begin{itemize}
 \item
-  'yielding\_pas' mean how many \textbf{rows} you learn between each
-  tests process.
-\item
-  The data is readed in cycle.
-\item
-  During all testing process we add an other point on the plot graph.
+  1
+
+  2
+
+  3
+
+  3
+
+  1
+
+  2
+
+  2
+
+  3
+
+  1
 \end{itemize}
 
+=
+
+\begin{verbatim}
+<tr style="background-color:#fff"><td>11</td><td>22</td><td>33</td></tr>
+<tr style="background-color:#fff"><td>32</td><td>13</td><td>21</td></tr>
+<tr style="background-color:#fff"><td>23</td><td>31</td><td>12</td></tr>
+\end{verbatim}
+
+    \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+    Une technique de résolution glouton serait de procéder comme ceci:
+
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}3}]:} \PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON} \PY{o}{=} \PY{l+m+mi}{100}
-        \PY{n}{MAX\PYZus{}PLOT\PYZus{}X} \PY{o}{=} \PY{l+m+mi}{4500}
+{\color{incolor}In [{\color{incolor}2}]:} \PY{k}{def} \PY{n+nf}{model}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+            \PY{n}{a} \PY{o}{=} \PY{n}{array}\PY{p}{(}\PY{n}{dimensions}\PY{o}{=}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
         
-        \PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y} \PY{o}{=} \PY{n}{Data}\PY{o}{.}\PY{n}{load\PYZus{}iris\PYZus{}data}\PY{p}{(}\PY{p}{)}
-        \PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y} \PY{o}{=} \PY{n}{Data}\PY{o}{.}\PY{n}{load\PYZus{}mushroom\PYZus{}data}\PY{p}{(}\PY{p}{)}
-        \PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y} \PY{o}{=} \PY{n}{Data}\PY{o}{.}\PY{n}{load\PYZus{}spambase\PYZus{}data}\PY{p}{(}\PY{p}{)}
+            \PY{k}{for} \PY{n}{line} \PY{o+ow}{in} \PY{n}{a}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{line}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{column} \PY{o+ow}{in} \PY{n}{a}\PY{o}{.}\PY{n}{Transpose}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{column}\PY{p}{)}
 \end{Verbatim}
 
+
+    \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+    \subsection{\texorpdfstring{Quand on regarde certain \emph{Latin
+Squares} on voit des
+similitudes:}{Quand on regarde certain Latin Squares on voit des similitudes:}}\label{quand-on-regarde-certain-latin-squares-on-voit-des-similitudes}
+
+    \begin{verbatim}
+<tr style="background-color:#fff"><td style="color:#f00">1</td><td style="color:#f00">2</td><td style="color:#f00">3</td><td style="color:#f00">4</td><td style="color:#f00">5</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">2</td><td>3</td><td>4</td><td>5</td><td>1</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">3</td><td>4</td><td>5</td><td>1</td><td>2</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">4</td><td>5</td><td>1</td><td>2</td><td>3</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">5</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+\end{verbatim}
+
+    \begin{verbatim}
+<tr style="background-color:#fff"><td style="color:#f00">1</td><td style="color:#f00">2</td><td style="color:#f00">3</td><td style="color:#f00">4</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">2</td><td>1</td><td>4</td><td>3</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">3</td><td>4</td><td>1</td><td>2</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">4</td><td>3</td><td>2</td><td>1</td></tr>
+\end{verbatim}
+
+    \begin{verbatim}
+<tr style="background-color:#fff"><td style="color:#f00">1</td><td style="color:#f00">2</td><td style="color:#f00">3</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">2</td><td>3</td><td>1</td></tr>
+<tr style="background-color:#fff"><td style="color:#f00">3</td><td>1</td><td>2</td></tr>
+\end{verbatim}
+
+    Pour ces \emph{latin squares} on remarque qu'on peut directement
+assigner les valeurs de la première ligne et colonne:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}4}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Iris }\PY{l+s+se}{\PYZbs{}}
-        \PY{l+s+s2}{(\PYZhy{}1=others, 1=Iris\PYZus{}versicolor)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}3}]:} \PY{k}{def} \PY{n+nf}{model}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+            \PY{n}{a} \PY{o}{=} \PY{n}{array}\PY{p}{(}\PY{n}{dimensions}\PY{o}{=}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{a}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{=} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}
+            \PY{n}{a}\PY{o}{.}\PY{n}{Transpose}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{=} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{line} \PY{o+ow}{in} \PY{n}{a}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{line}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{column} \PY{o+ow}{in} \PY{n}{a}\PY{o}{.}\PY{n}{Transpose}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{column}\PY{p}{)}
 \end{Verbatim}
 
 
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_5_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}5}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Mushrooms}\PY{l+s+se}{\PYZbs{}}
-        \PY{l+s+s2}{(\PYZhy{}1=poisonous, 1=edible)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
+    On remarque aussi une symétrie diagonale, chaque éléments dans le coté
+en bas à gauche et le même en haut à droite:
 
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_6_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}6}]:} \PY{n}{Plot\PYZus{}builder}\PY{o}{.}\PY{n}{y\PYZus{}repartition}\PY{p}{(}\PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{title}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{repartition of Spambase }\PY{l+s+se}{\PYZbs{}}
-        \PY{l+s+s2}{(\PYZhy{}1=spam, 1=not a spam)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_7_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \section{Perceptron}\label{perceptron}
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td style="color:#f06">2</td><td style="color:#f09">3</td><td style="color:#f0c">4</td></tr>
+<tr style="background-color:#fff"><td style="color:#f06">2</td><td>1</td><td style="color:#00f">4</td><td style="color:#0ff">3</td></tr>
+<tr style="background-color:#fff"><td style="color:#f09">3</td><td style="color:#00f">4</td><td>1</td><td style="color:#ff0">2</td></tr>
+<tr style="background-color:#fff"><td style="color:#f0c">4</td><td style="color:#0ff">3</td><td style="color:#ff0">2</td><td>1</td></tr>
+\end{verbatim}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}7}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}\PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                          \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}4}]:} \PY{k}{def} \PY{n+nf}{model}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+            \PY{n}{a} \PY{o}{=} \PY{n}{array}\PY{p}{(}\PY{n}{dimensions}\PY{o}{=}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{a}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{=} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}
+            \PY{n}{a}\PY{o}{.}\PY{n}{Transpose}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]} \PY{o}{=} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}
+            
+            \PY{k}{for} \PY{n}{x}\PY{p}{,}\PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{,}\PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+                \PY{n}{a}\PY{p}{[}\PY{n}{x}\PY{p}{]}\PY{p}{[}\PY{n}{y}\PY{p}{]} \PY{o}{==} \PY{n}{a}\PY{p}{[}\PY{n}{y}\PY{p}{]}\PY{p}{[}\PY{n}{x}\PY{p}{]}
+        
+            \PY{k}{for} \PY{n}{line} \PY{o+ow}{in} \PY{n}{a}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{line}\PY{p}{)}
+        
+            \PY{k}{for} \PY{n}{column} \PY{o+ow}{in} \PY{n}{a}\PY{o}{.}\PY{n}{Transpose}\PY{p}{:}
+                \PY{n}{alldifferent}\PY{p}{(}\PY{n}{column}\PY{p}{)}
 \end{Verbatim}
 
 
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_9_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}8}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}
-                          \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
-\end{Verbatim}
+    \subsubsection{Certain sont même très simple à
+raisoudre}\label{certain-sont-muxeame-truxe8s-simple-uxe0-raisoudre}
 
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+<tr style="background-color:#fff"><td>2</td><td>3</td><td>4</td><td>5</td><td>1</td></tr>
+<tr style="background-color:#fff"><td>3</td><td>4</td><td>5</td><td>1</td><td>2</td></tr>
+<tr style="background-color:#fff"><td>4</td><td>5</td><td>1</td><td>2</td><td>3</td></tr>
+<tr style="background-color:#fff"><td>5</td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+\end{verbatim}
 
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_10_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}9}]:} \PY{n}{perceptron} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{Perceptron}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{)}
-        \PY{n}{perceptron}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{,}
-                          \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{perceptron spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X\PYZus{}PERCEPTRON}\PY{p}{)}
-\end{Verbatim}
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+<tr style="background-color:#fff"><td>2</td><td>3</td><td>4</td><td>1</td></tr>
+<tr style="background-color:#fff"><td>3</td><td>4</td><td>1</td><td>2</td></tr>
+<tr style="background-color:#fff"><td>4</td><td>1</td><td>2</td><td>3</td></tr>
+\end{verbatim}
 
+    \begin{verbatim}
+<tr style="background-color:#fff"><td>1</td><td>2</td><td>3</td></tr>
+<tr style="background-color:#fff"><td>2</td><td>3</td><td>1</td></tr>
+<tr style="background-color:#fff"><td>3</td><td>1</td><td>2</td></tr>
+\end{verbatim}
 
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_11_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \section{Descent gradient}\label{descent-gradient}
-
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}10}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{iris\PYZus{}X}\PY{p}{,} \PY{n}{iris\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                 \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                 \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent iris}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_13_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}11}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                 \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                 \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}12}]:} \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                 \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{l+m+mi}{2}\PY{p}{)}
-         \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                 \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent spambase}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_15_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \section{searching for best ETA}\label{searching-for-best-eta}
+    Chaque ligne est identique à celle du dessus sauf qu'on n'a inséré le
+première élement au bout de la liste, ce qui rend le problème
+trivialement résolvable:
 
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}15}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1000}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1000}\PY{p}{]}\PY{p}{:}
-             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{mushroom\PYZus{}X}\PY{p}{,} \PY{n}{mushroom\PYZus{}y}\PY{p}{,} 
-                                     \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} 
-                                     \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
-             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                     \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                                     \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
+{\color{incolor}In [{\color{incolor}5}]:} \PY{k}{def} \PY{n+nf}{model}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+            \PY{n}{a} \PY{o}{=} \PY{n}{array}\PY{p}{(}\PY{n}{dimensions}\PY{o}{=}\PY{p}{(}\PY{n}{n}\PY{p}{,}\PY{n}{n}\PY{p}{)}\PY{p}{,} \PY{n}{domain}\PY{o}{=}\PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{)}
+            
+            \PY{n}{tmp} \PY{o}{=} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}
+            \PY{k}{for} \PY{n}{line} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{n}\PY{p}{)}\PY{p}{:}
+                \PY{n}{a}\PY{p}{[}\PY{n}{line}\PY{p}{]} \PY{o}{=} \PY{n}{tmp}
+                \PY{n}{tmp} \PY{o}{=} \PY{n}{tmp}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]} \PY{o}{+} \PY{n}{tmp}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
 \end{Verbatim}
 
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_1.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_17_2.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}16}]:} \PY{k}{for} \PY{n}{eta} \PY{o+ow}{in} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1000}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{1000}\PY{p}{]}\PY{p}{:}
-             \PY{n}{gradient\PYZus{}descent} \PY{o}{=} \PY{n}{Algo}\PY{p}{(}\PY{n}{spambase\PYZus{}X}\PY{p}{,} \PY{n}{spambase\PYZus{}y}\PY{p}{,} \PY{n}{algo}\PY{o}{=}\PY{n}{GradientDescent}\PY{p}{,} 
-                                     \PY{n}{yielding\PYZus{}pas}\PY{o}{=}\PY{l+m+mi}{10}\PY{p}{,} \PY{n}{gradient\PYZus{}eta}\PY{o}{=}\PY{n}{eta}\PY{p}{)}
-             \PY{n}{gradient\PYZus{}descent}\PY{o}{.}\PY{n}{do\PYZus{}all}\PY{p}{(}\PY{n}{nb\PYZus{}iterations}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{,}
-                                     \PY{n}{name}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{gradient descent mushroom}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} 
-                                     \PY{n}{max\PYZus{}x}\PY{o}{=}\PY{n}{MAX\PYZus{}PLOT\PYZus{}X}\PY{p}{)}
-\end{Verbatim}
-
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_1.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_2.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    
-    Notting change, i tried to test with eta = (0.7,0.2,-0.2,-.07) and
-range(1,10000,100)
 
 
     % Add a bibliography block to the postdoc

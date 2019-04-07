@@ -1,0 +1,3 @@
+\contentsline {chapter}{\numberline {1}Introduction G\IeC {\'e}n\IeC {\'e}rale}{2}
+\contentsline {section}{\numberline {1.1}L'approche symbolique}{4}
+\contentsline {section}{\numberline {1.2}L'approche connexionniste}{6}
