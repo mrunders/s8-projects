@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  7 APR 2019 19:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  11 APR 2019 21:39
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1398,14 +1398,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./img/neurone.jpg>])
+[6 <./img/neurone.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] (_rapport_stage.aux) ) 
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 69--73
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
  30799 strings out of 493323
  749217 string characters out of 3139963
@@ -1413,16 +1447,16 @@ Here is how much of TeX's memory you used:
  33765 multiletter control sequences out of 15000+200000
  11850 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,127p,831b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/Pr
-ogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/M
-ikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (8 pages, 132557 bytes).
+ 73i,11n,127p,1123b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
+<E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/P
+rogramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/
+MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/
+fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on _rapport_stage.pdf (11 pages, 139737 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 66 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

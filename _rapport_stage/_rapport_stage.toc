@@ -1,3 +1,6 @@
 \contentsline {chapter}{\numberline {1}Introduction G\IeC {\'e}n\IeC {\'e}rale}{2}
 \contentsline {section}{\numberline {1.1}L'approche symbolique}{4}
 \contentsline {section}{\numberline {1.2}L'approche connexionniste}{6}
+\contentsline {section}{\numberline {1.3}L'approche statistique}{8}
+\contentsline {section}{\numberline {1.4}L'approche d\IeC {\'e}cisionnel}{9}
+\contentsline {section}{\numberline {1.5}L'approche par satisfaction}{10}
