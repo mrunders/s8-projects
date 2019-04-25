@@ -5,3 +5,8 @@
 \contentsline {section}{\numberline {1.4}L'approche d\IeC {\'e}cisionnel}{9}
 \contentsline {section}{\numberline {1.5}L'approche par satisfaction}{10}
 \contentsline {section}{\numberline {1.6}L'approche par repr\IeC {\'e}sentation et raisonnement}{11}
+\contentsline {chapter}{\numberline {2}Le Machine Learning}{12}
+\contentsline {section}{\numberline {2.1}Les premiers pas}{13}
+\contentsline {section}{\numberline {2.2}Algorithmes d'apprentissage}{14}
+\contentsline {section}{\numberline {2.3}Langage naturel}{15}
+\contentsline {subsection}{\numberline {2.3.1}Nettoyage des donn\IeC {\'e}es}{15}

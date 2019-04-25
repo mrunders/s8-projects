@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  13 APR 2019 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  25 APR 2019 07:25
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1339,12 +1339,12 @@ File: lstlang2.sty 2015/06/04 1.6 listings language file
 (E:\ProgramFiles\MikTex2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 12--22
+Underfull \hbox (badness 10000) in paragraph at lines 12--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--22
+Underfull \hbox (badness 10000) in paragraph at lines 12--18
 
  []
 
@@ -1355,13 +1355,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Overfull \hbox (4.6612pt too wide) in paragraph at lines 37--40
+Overfull \hbox (4.6612pt too wide) in paragraph at lines 33--35
 \OT1/cmr/m/n/12 Philippe et un homme, n'ayant au-cune in-for-ma-tions sur un d
 enomme Philippe,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
+Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
 
@@ -1372,7 +1372,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \hbox (7.63338pt too wide) in paragraph at lines 43--45
+Overfull \hbox (7.63338pt too wide) in paragraph at lines 38--40
 \OT1/cmr/m/n/12 L'approche con-nex-ion-niste est l'approche la plus proche du s
 chema du cerveaux
  []
@@ -1380,15 +1380,15 @@ chema du cerveaux
 <img/neurone.jpg, id=29, 918.43124pt x 457.71pt>
 File: img/neurone.jpg Graphic file (type jpg)
  <use img/neurone.jpg>
-Package pdftex.def Info: img/neurone.jpg used on input line 47.
+Package pdftex.def Info: img/neurone.jpg used on input line 42.
 (pdftex.def)             Requested size: 275.5315pt x 137.31406pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--55
+Underfull \hbox (badness 10000) in paragraph at lines 45--50
 
  []
 
@@ -1406,12 +1406,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--62
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
@@ -1422,7 +1422,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
  []
 
@@ -1433,7 +1433,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
@@ -1450,15 +1450,86 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (_rapport_stage.aux) ) 
+[11] (approche.tex
+Chapter 2.
+
+Overfull \hbox (25.70134pt too wide) in paragraph at lines 3--7
+\OT1/cmr/m/n/12 Dans le cadre du rap-port de stage, je vais me fo-caliser sur l
+'approche \OT1/cmr/m/it/12 representation
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--7
+
+ []
+
+[12
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 71--88
+
+ []
+
+Missing character: There is no ] in font nullfont!
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+[][][] 
+ []
+
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+[][][] 
+ []
+
+
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--128
+
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
- 30800 strings out of 493323
- 749225 string characters out of 3139963
- 964045 words of memory out of 3000000
- 33766 multiletter control sequences out of 15000+200000
- 11850 words of font info for 46 fonts, out of 3000000 for 9000
+ 31350 strings out of 493323
+ 764143 string characters out of 3139963
+ 969606 words of memory out of 3000000
+ 34313 multiletter control sequences out of 15000+200000
+ 12455 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,127p,1123b,1277s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 74i,14n,127p,1179b,2025s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi
 12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/
@@ -1466,9 +1537,9 @@ ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/ProgramFile
 s/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (12 pages, 151167 bytes).
+Output written on _rapport_stage.pdf (16 pages, 172178 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

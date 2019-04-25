@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  26 MAR 2019 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  20 APR 2019 11:02
 entering extended mode
 **./_memo.tex
 (_memo.tex
@@ -1377,6 +1377,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 311.
+
+ (E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 311.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1446,14 +1454,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Underfull \hbox (badness 10000) in paragraph at lines 127--141
 
  []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 156.
-
-(E:\ProgramFiles\MikTex2.9\tex\latex\base\omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 156.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4243,7 +4243,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Here is how much of TeX's memory you used:
  33438 strings out of 493323
  807007 string characters out of 3139963
- 1039517 words of memory out of 3000000
+ 1038517 words of memory out of 3000000
  36365 multiletter control sequences out of 15000+200000
  13680 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4266,7 +4266,7 @@ cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 <E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/P
 rogramFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><E:/Progra
 mFiles/MikTex2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on _memo.pdf (228 pages, 741575 bytes).
+Output written on _memo.pdf (228 pages, 741877 bytes).
 PDF statistics:
  822 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
