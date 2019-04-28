@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  25 APR 2019 07:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 APR 2019 21:35
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1495,38 +1495,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--114
  []
 
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
 [][][] 
  []
 
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
 [][][] 
  []
 
 
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 121--128
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--128
+Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--144
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15] (_rapport_stage.aux) ) 
+[16])
+Overfull \hbox (25.9634pt too wide) in paragraph at lines 145--216
+[][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--216
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
- 31350 strings out of 493323
- 764143 string characters out of 3139963
- 969606 words of memory out of 3000000
- 34313 multiletter control sequences out of 15000+200000
+ 31351 strings out of 493323
+ 764152 string characters out of 3139963
+ 970607 words of memory out of 3000000
+ 34314 multiletter control sequences out of 15000+200000
  12455 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,14n,127p,1179b,2025s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1537,9 +1568,9 @@ ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/ProgramFile
 s/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
 1/public/amsfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (16 pages, 172178 bytes).
+Output written on _rapport_stage.pdf (18 pages, 180967 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 92 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
