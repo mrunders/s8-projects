@@ -133,7 +133,7 @@ Le français est un langage riche en dérivé de lettres notamment pour ses cara
 \sepline\\
 Bonjour, je viens parce-que j'ai une fuite d'eau sur mon plafond, j'ai déjà prit contact avec une entreprise pour ses réparations mais elle n'a pas donné suite.\\
 \sepline\\
-bonjour je viens parce que j ai une fuite d eau sur mon plafond, j ai deja prit contact avec une entreprise pour ses reparations mais elle n a pas donne suite\\
+bonjour je viens parce que j ai une fuite d eau sur mon plafond j ai deja prit contact avec une entreprise pour ses reparations mais elle n a pas donne suite\\
 \sepline\\
 
 Selon la documentation de scikit-learn (librairie python) la méthode la plus optimisée serait le \textit{Bag of words},pour chaque document \textit{i}, pour chaque mot du texte \textit{w}, associer un indice unique \textit{j} au mot \textit{w}, et affecter le nombre d'occurrences de \textit{w} dans $List[i,j]$. Transformer toutes les occurrences en fréquences. Une fois ces étapes terminer, nous pouvons utiliser un classifier pour faire des prédictions sur les textes.\\
@@ -142,10 +142,48 @@ Lors du stage, selon les testes effectué sur presque 4000 corps de mail de long
 Concernant des techniques de nettoyage de données, 2 ETL (Extrac Ttransform Load) ont été essayé, Talend et DataIku, j'ai une préférence pour DataIku étant meilleur en python qu'en java, le même travail peut être fait avec ses deux ETL, mais la librairie de DataIku est bien plus remplit et permet de faire la plupart des traitements sur le Data sans écrire une ligne de code, là où Talend le code est quasiment omniprésent. De plus la où Talend s'arrête sur le traitement et la transformation des données, DataIku permet d'exécuter des algorithmes de Machine Learning, tous ses algorithmes sont issu du paquet scikit-learn.
 \pagebreak
 
-\sepline\\
 Plus haut j'ai parlé de Machine learning, de traitement des chaines textuels, de génération de chaines textuels, ce qui une fois additionné fait une jolie intelligence artificielle qui pour un besoin peut nous répondre ce qu'il faut. Prenons un exemple présent dans certains films qui se veulent futuriste, tient prenons le film \textit{Her} sortie en 2013.\\
 \linebreak
 Pour faire très court et rester dans le sujet du stage, le personnage principal du film nommé Theodore devenais ami avec un système d'exploitation (os) nommé Amy, une os tellement proche de l'être humain, celle ci pouvais apprendre, comprendre et communiquer sans aucun problème avec Theodore.\\
 Comme quoi qu'avec un Speech To Text et de bons algorithmes nous pouvons créer un processus qui simule la conscience d'un humain. Prendre par exemple un film n'est pas très pertinent, car tout est réalisable avec de l'argent, revenons dans la vrai vie. Un outil présent dans le monde de L'IOT (internet des objets) qui justement commence à bien se développer, Commencé en 2008 par Google et largement plus connu sous la firme Apple, je parle bien des logiciel ou objets de reconnaissance vocal.\\
 \linebreak
-La reconnaissance vocal passe son temps à écouter son environnement et à traduire ce qu'elle peut prendre comme étant de la parole en chaine de caractère, les intérêts ne sont pas multiple, la plus part du temps c'est pour simplifier la vie des utilisateurs, "Quelle sera la Méteo pour demain.", "Comment préparer des cookies", "Appeler Papa". L'utilisateur fait des requêtes à son logiciel qui lui va transformer l'information en chaine de caractère qui lui va faire une requête ailleurs. On peut comparer la reconnaissance vocal comme des requêtes en base de données, la base de données étant internet. 
+La reconnaissance vocal passe son temps à écouter son environnement et à traduire ce qu'elle peut prendre comme étant de la parole en chaine de caractère, les intérêts ne sont pas multiple, la plus part du temps c'est pour simplifier la vie des utilisateurs, "Quelle sera la Méteo pour demain.", "Comment préparer des cookies", "Appeler Papa". L'utilisateur fait des requêtes à son logiciel qui lui va transformer l'information en chaine de caractère qui lui va faire une requête ailleurs. On peut comparer la reconnaissance vocal comme des requêtes en base de données, la base de données étant le monde.\\
+\pagebreak
+
+\section{Détection d'anomalies}
+L’intelligence artificiel qui traduit les données ou celle qui fait des prédictions ont une précision linéaire à la taille des données d'apprentissage qu'il a eu, plus les données d'apprentissage sont importante plus l'ia va gagner en précision dans ses fonctions, moins la taille des données d'apprentissage sont petite plus il va faire d'erreurs. Ce procéder est très robuste si on travail avec des données numérique, des valeurs énumératif d'un ensemble, mais avec des chaînes textuels le travail doit être doublement affiné, la où dans les modèles numériques il y a une valeur par cellule, les textes sont souvent composé de plusieurs mots.\\
+\linebreak
+La détection d'anomalies en un cas d'utilisation, L'entreprise Coyote  est spécialisé dans tout ce qui est préventions des bouchons, travaux et tout autres événements peuvent impacter un conducteur allant d'un poins A à un point B, celui ci étant équipé de l'application Coyote peut être prévenu à tout moment d'un événement qui risque de perturber sa route. Mais le problème étant que l'entreprise doit être assez réactif que l'envoie des données, si un utilisateur est dans les bouchons et que son apli vient tout juste de le prévenir, l'image que l'utilisateur aura du produit ne sera pas positif.\\
+Donc l'entreprise a décidé de faire appelle au Machine Learning pour optimiser la circulation des informations à travers tout le réseaux qu'il couvrait. Pour s'y faire ils ont découpé tout le réseau en petit segments et ont analysé le trafique segment par segment, via une batterie de tests, ils ont pu trouver des segment qui était instable pour le transfert de données. On peut modéliser ce problème en un graphe qui pour chaque nœuds un poids de stabilité est donné et pour une arrête donnant la distance.\\
+\linebreak
+En 4 mois ils ont réussi à augmenter la fiabilité de transfert de 9\%.\\
+
+Dans les chaînes textuels plus haut, on a vue que tout les \textit{stopwords} peuvent être supprimé car ils ne représentent pas des caractères pertinent, reprenons le texte plus en haut et enlevons les \textit{stopwords} de taille 1 et 2:\\
+\sepline\\
+bonjour viens parce que une fuite eau sur mon plafond deja prit contact avec entreprise pour reparations mais elle pas donne suite\\
+\sepline
+\pagebreak
+
+Le text reste encore viable, nous arrivons encore à comprendre ce que le client veut dire, mais il reste encore du bruit, si on supprime les \textit{stopwords} de taille 3, on obtient:\\
+\sepline\\
+bonjour viens parce une fuite eau plafond deja prit contact avec entreprise pour reparations mais elle donne suite\\
+\sepline\\
+
+Étonnamment le mot "une" n'est pas prit comme un \textit{stopword}.\\
+Une première erreur mineur apparaît à la fin du texte, on passe du fait qu'une entreprise a était contacté mais elle n'a pas donné suite" à "on n'a contacté une entreprise et elle a donné suite".
+Dans ce cadre, cette anomalie et mineur, car cette partie de la phrase n'est pas pertinente, seul le début de la phrase l'ai.\\
+En suppriment les \textit{stopwords} de taille 4:\\
+\sepline\\
+bonjour viens parce une fuite eau plafond deja prit contact entreprise reparations donne suite\\
+\sepline\\
+On n'est tenté d'encore retirer des mots, retirer la fin de la phrase et le début, par exemple, ce qui nous donnerai:\\
+\sepline\\
+fuite eau plafond\\
+\sepline\\
+Nous avons optimisé notre exemple au maximum, on ne peut construire une phrase plus petite sans perdre d'informations.\\
+\linebreak
+Pour le viens de cette section nous allons créer une anomalie en suppriment le mot "eau", Notre algorithme d'apprentissage a comme étiquette "Dégât des eau" et "Problème de gaz", le motif doit être le bon, si nous appelons un techniciens spécialisé dans le gaz pour une fuite d'eau, alors la prédiction en plus d'avoir été mauvaise a fait perdre du temps et de l'argent à l'entreprise qui a était appelé.\\
+\linebreak
+
+Le problème et le suivant, après nettoyage des données, nous devons crée un algorithme capable de pour une chaîne textuel de retourner la bonne étiquette nommant le mieux parmi une liste d'étiquettes connus.\\
+Le monde de la fouille de donnée pourrait nous aider à résoudre notre problème, revenons à une liste de chaînes textuels de ce type "fuite eau plafond", L'algorithme Apriori peut nous aider à résoudre ce problème mais vu la diversité des données et le fait que plusieurs même motifs peuvent avoir une étiquettes différent, cela ne nous aidera pas. Nous allons préférer partir sur des technologies plus avancé comme \textit{Tensorflow}, \textit{Keras}, en python bien entendu.
