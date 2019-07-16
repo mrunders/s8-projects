@@ -37,7 +37,7 @@
 %% ------------------------- Header Footer
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{Master 2 IA Memo}
+\fancyhead[LE,RO]{Master 2 État de l'art}
 \fancyhead[RE,LO]{ }
 \fancyfoot[CE,CO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
@@ -179,7 +179,7 @@
 }
 %% ----------------------- END FORME SHAPE
 
-\title{Memo pour l'année}
+\title{État de l'art}
 \author{LAURENT Thomas}
 \date{Master 2 informatique 2018}
 
@@ -213,6 +213,7 @@
 \pagebreak
 \input{introduction}
 \input{approche}
+\input{chatbot}
 
 \pagebreak
 \end{document}

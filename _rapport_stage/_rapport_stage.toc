@@ -11,3 +11,8 @@
 \contentsline {section}{\numberline {2.3}Langage naturel}{15}
 \contentsline {subsection}{\numberline {2.3.1}G\IeC {\'e}n\IeC {\'e}ration de texte}{15}
 \contentsline {subsection}{\numberline {2.3.2}Nettoyage des donn\IeC {\'e}es}{16}
+\contentsline {section}{\numberline {2.4}D\IeC {\'e}tection d'anomalies}{18}
+\contentsline {part}{I\hspace {1em}Un chatbot}{21}
+\contentsline {chapter}{\numberline {3}Le langage naturelle}{23}
+\contentsline {section}{\numberline {3.1}Les r\IeC {\'e}seaux bay\IeC {\'e}siens naif}{24}
+\contentsline {section}{\numberline {3.2}Conditional Random Field}{26}
