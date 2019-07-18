@@ -16,3 +16,8 @@
 \contentsline {chapter}{\numberline {3}Le langage naturelle}{23}
 \contentsline {section}{\numberline {3.1}Les r\IeC {\'e}seaux bay\IeC {\'e}siens naif}{24}
 \contentsline {section}{\numberline {3.2}Conditional Random Field}{26}
+\contentsline {section}{\numberline {3.3}Sequence To Sequence}{27}
+\contentsline {section}{\numberline {3.4}Named Entities Recognition}{28}
+\contentsline {section}{\numberline {3.5}Long Short Terme memory}{29}
+\contentsline {chapter}{\numberline {4}Rasa le chatbot}{31}
+\contentsline {section}{\numberline {4.1}le NLU}{32}

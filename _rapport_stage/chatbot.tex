@@ -58,7 +58,7 @@ Pour avoir une implémentation complète venant de $scikit-learn$, la $tokenizat
 \pagebreak
 
 \section{Conditional Random Field}
-Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple encodage des variables, mais prend aussi en compte les variables voisines, pour correctement illustrer, prenons trois mots d'une phrase, comme $"pour$ $correctement$ $illustrer"$, et prenons le mot $"correctement"$, ce mot sera inséré dans une structure de données ayant comme champs:
+Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple encodage des variables mais à de l'extraction de sous chaînes, mais prend aussi en compte les variables voisines, pour correctement illustrer, prenons trois mots d'une phrase, comme $"pour$ $correctement$ $illustrer"$, et prenons le mot $"correctement"$, ce mot sera inséré dans une structure de données ayant comme champs:
 \begin{description}
 \item[lower]: le mot en minuscule (donc $"correctement"$)
 \item[digit]: un boolean disant si le mot est un nombre ou pas
@@ -70,3 +70,101 @@ Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple 
 Ce modèle largement utilisé lorsque qu'on veut traiter le langage naturelle donne d'assez bon résultats.\\
 \linebreak
 Pour appuyer la qualité des résultats, en 2018, l'entreprise Google a développé un algorithme nommé \textbf{BERT} un outils de pré traitement du langage naturelle qui a significativement amélioré les algorithmes de traitement du langage naturelle. Dans le cadre du CRF nous utilisons le mot $n+/-1$ pour $n$, la où \textbf{BERT} prend en compte aussi les mots $n+/-2$, mais ce n'est pas tout, quand l'algorithme devait être testé, celui-ci devait deviner un mot en index $n$ de la phrase en ayant que ses 4 mots, les résultats était correct sans plus, donc en amélioration ils ont finalement laisser le pouvoir à l'algorithme de pouvoir lire la phrase en entier du sens normal (de gauche à droite) et aussi de lire la phrase de droite à gauche, ainsi de considérablement augmenter la précision des réponses.
+
+\pagebreak
+\section{Sequence To Sequence}
+Le modèle Seq2Seq est très puissant, sa structure est donné par deux colonnes, la première étant n'importe quoi de type texte et la sortie étant aussi n'importe quoi de type texte. Les exemples simples donnés sur le net sont un traducteur anglais vers français ou un générateur de réponses à des questions.\\
+\linebreak
+Ce processus demande de connaitre à l'avance tout les caractères utilisées pour ainsi transformer chacune des lettres en indice numérique unique, tout les mots seront ensuite remplit de caractère dit "vide" pour avoir l'unicité de la longueurs des mots.\\
+
+\begin{multicols}{3}
+\begin{tabular}{c|c}
+j & 0\\
+e & 1\\
+s & 2\\
+u & 3\\
+i & 4\\
+l & 5\\
+a & 6\\
+\end{tabular}
+\begin{description}
+\item[] je: 01
+\item[] suis: 2342
+\item[] la: 56
+\end{description}
+\begin{tabular}{c|cccccccc}
+- & j & e & s & u & i & l & a\\
+\hline
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+2 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+3 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+\end{tabular}
+\end{multicols}
+
+\pagebreak
+\section{Named Entities Recognition}
+Dans la catégorie de l'extraction de données, l'extraction des entités nommés consiste à extraire un groupe de mots pouvant décrire des mots clef de type Entreprise, Localisation comme des villes ou des noms...\\
+Un exemple de base serait:\\
+
+\formula{la firme Mafirme était présent le mois dernier à Paris pour tenter de gagner 100 000 euros.}
+
+\begin{tabular}{c|cc|c}
+Mot & index début & index fin & catégorie \\
+\hline
+Mafirme & 9 & 15 & Entreprise\\
+Paris & 49 & 54 & Localisation\\
+100 000 euros & 78 & 91 & Argent\\
+\end{tabular}
+
+\ \linebreak
+En important un modèle personnalisé notre NER pourrait avoir d'autres utilités, comme par exemple, nous voulons que notre bot réponde une phrase dés qu'il a comprit le problème, nous utilisons un NER personnalisé avec une cinquantaine d'exemples afin que notre modèle sache répondre correctement, il bot sait extraire le sujet d'une phrase, par exemple:
+
+\begin{description}
+\item[Client]: Depuis 5 jours le tuyau de mon évier de salle de bain fuit à grosse goutte
+\item[Bot]: tuyau de mon évier de salle de bain fuit
+\end{description}
+
+\pagebreak
+\section{Long Short Terme memory}
+Commençons les gros algorithmes avec le LSTM, il fait partit de la famille des \textit{Recurrent Neural Network (RNN)}. Les réseaux de neurones récurrents peuvent être vu comme des combinaisons de circuits imprimés (comme des nos ordinateurs) relié ensemble par des petits ponts de transferts de données. 
+Un circuit est représenté par cette illustration suivante:
+
+%% INSERT IMG
+
+\begin{description}
+\item[Forget Gate]: Prenant en entrée le mot à l'indice $N$ et l'information du circuit $N-1$, 
+la fonction sigmoid va décider si le circuit va oublier ou garder le mot courant. 
+\item[Input Gate]: Ce bout de circuit fait appel aux fonctions sigmoid et tangente, le produit des résultats va déterminer l'importance du mot courant.
+\item[Cell State]: Cette partie du circuit va calculer la variable de sortie du circuit.
+\item[Output Gate]: Cette dernière partie du circuit va calculer pour le circuit suivant si le prochain mot doit être conservé ou oublier par rapport au résultat donné tout au long du circuit courant.
+\end{description}
+\ \linebreak
+
+LSTM est comme Seq2Seq, dans son fonctionnement général ils sont égaux, mais LSTM peut couvrir plus de choses que Seq2Seq qui lui a plus une utilité FAQ (pour les Foires Aux Questions il est très adapté) tandis que LSTM peut vraiment tout couvrir, le seul défaut c'est qu'il demande énormément de données, il a un temps d'apprentissage énorme et demande des cœurs GPU (carte graphiques) pour un gain de vitesse considérable.\\
+
+\pagebreak
+Pour résumer, les réseaux naïves sont des algorithmes qui pour des entrées de types chaînes textuelles retourne une catégorie, Seq2Seq et LSTM sont des algorithmes de générations de chaînes textuelles, CRF est utilisé pour la prédiction de mots selon une chaînes de mots passé en entrée puis NER va extraire des motifs depuis une chaîne textuelle et lui attribuer une étiquette.\\
+\linebreak
+Ces cinq algorithmes seront utilisés dans les futures api utilisées lors de l'élaboration du chatbot.\\
+\pagebreak
+
+\chapter{Rasa le chatbot}
+
+Dans ce chapitre nous allons aborder la moteur même du chatbot, l'api RASA qui met à disposition un bot vierge configurable et bien réalisé. \linebreak
+En description général, RASA se décompose en deux parties, l'unité NLU et l'unité CORE, l'unité NLU peut être utilisé sans l'unité CORE, mais le CORE a besoin du NLU pour fonctionner (Ces deux termes seront expliqué plus bas).
+La mise en place de cette brique est crucial, car c'est cette api qui devra répondre au mieux au attentes du client.
+
+\pagebreak
+\section{le NLU}
+NLU où \textit{Natural Language understanding} est la brique de compréhension du langage naturelle, cette brique fonctionne sous une pipeline. Une pipeline est un enchaînement de composants qui va traiter la donné textuelle envoyé depuis l'utilisateur du bot.\\
+\linebreak
+
+Je vais énumérer tout les composants que j'ai utilité afin de réaliser la pipeline:
+\begin{description}
+\item[WhitespaceTokenizer]: Dans un premier temps, notre texte doit être formaté en une liste de mot, une liste de mot sans caractères spéciaux ni url.
+\item[CRFEntityExtractor]: Ajouter aux explications sur le CRF, le \textit{CRFEntityExtractor} en ai une dérivé à la différence que le CRFEE va nous générer un modèle donnant une liste de mot intéressant. La liste des mots intéressant sont crée lors du processus d'apprentissage du NLU, qui pour une série de phrases et une série d'index de sous phrases dit intéressant, le NLU va apprend a les extraire de toutes les phrases dans le futur.
+\item[EntitySynonymMapper]: Le corpus de mot généré via le CRFEE peu être factorisé en moins d'entrées, c'est le travail de ce composant.
+\item[CountVectorsFeaturizer]: le \textit{CountVector} va comme indiqué plus haut dans la section parlant des réseaux bayésiens naïf, va représenter une chaîne textuelle en un vecteur d'entiers.
+\item[EmbeddingIntentClassifier]: ce processus fait appelle à de l'apprentissage supervisé, pour une série de catégories déterminé par le fichier \textit{nlu.md} (qui sera présenté plus bas) et un vecteur précédaient crée par \textit{CountVector}.
+\end{description}

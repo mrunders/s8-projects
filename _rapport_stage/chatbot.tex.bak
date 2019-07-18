@@ -69,4 +69,31 @@ Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple 
 
 Ce modèle largement utilisé lorsque qu'on veut traiter le langage naturelle donne d'assez bon résultats.\\
 \linebreak
-Pour appuyer la qualité des résultats, en 2018, l'entreprise Google a développé un algorithme nommé \textbf{BERT} un outils de pré traitement du langage naturelle qui a significativement amélioré les algorithmes de traitement du langage naturelle. Dans le cadre du CRF nous utilisons le mo
+Pour appuyer la qualité des résultats, en 2018, l'entreprise Google a développé un algorithme nommé \textbf{BERT} un outils de pré traitement du langage naturelle qui a significativement amélioré les algorithmes de traitement du langage naturelle. Dans le cadre du CRF nous utilisons le mot $n+/-1$ pour $n$, la où \textbf{BERT} prend en compte aussi les mots $n+/-2$, mais ce n'est pas tout, quand l'algorithme devait être testé, celui-ci devait deviner un mot en index $n$ de la phrase en ayant que ses 4 mots, les résultats était correct sans plus, donc en amélioration ils ont finalement laisser le pouvoir à l'algorithme de pouvoir lire la phrase en entier du sens normal (de gauche à droite) et aussi de lire la phrase de droite à gauche, ainsi de considérablement augmenter la précision des réponses.
+
+\pagebreak
+\section{Sequence To Sequence}
+Le modèle Seq2Seq est très puissant, sa structure est donné par deux colonnes, la première étant n'importe quoi de type texte et la sortie étant aussi n'importe quoi de type texte. Les exemples simples donnés sur le net sont un traducteur anglais vers français ou un générateur de réponses à des questions.\\
+\linebreak
+Ce processus demande de connaitre à l'avance tout les caractères utilisées pour ainsi transformer chacune des lettres en indice numérique unique, tout les mots seront ensuite remplit de caractère dit "vide" pour avoir l'unicité de la longueurs des mots.\\
+
+\begin{multicols}{3}
+\begin{tabular}{c|c}
+j & 0\\
+e & 1\\
+s & 2\\
+u & 3\\
+i & 4\\
+l & 5\\
+a & 6\\
+\end{tabular}
+\begin{description}
+\item[] je: 01
+\item[] suis: 2342
+\item[] la: 56
+\end{description}
+\begin{tabular}{cccc}
+- & j & e & s & u & i & l & a\\
+\
+\end{tabular}
+\end{multicols}

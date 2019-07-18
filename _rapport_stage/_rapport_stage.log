@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  16 JUL 2019 07:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  18 JUL 2019 21:42
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1746,8 +1746,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25])
-Underfull \hbox (badness 10000) in paragraph at lines 70--217
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
 
@@ -1757,11 +1757,130 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] (_rapport_stage.aux) ) 
+[26]
+Overfull \hbox (0.97511pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/n/12 Le modele Seq2Seq est tres puis-sant, sa struc-ture est donn
+e par deux colonnes,
+ []
+
+
+Overfull \hbox (4.14313pt too wide) in paragraph at lines 76--79
+\OT1/cmr/m/n/12 la premiere etant n'importe quoi de type texte et la sor-tie 
+etant aussi n'importe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
+
+ []
+
+
+Overfull \hbox (20.71895pt too wide) in paragraph at lines 95--103
+[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+[]
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 147--151
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+Chapter 4.
+
+Underfull \hbox (badness 3601) in paragraph at lines 154--157
+\OT1/cmr/m/n/12 qui met a dis-po-si-tion un bot vierge con-fig-urable et bien 
+realise.
+ []
+
+[31
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+
+Overfull \hbox (0.37791pt too wide) in paragraph at lines 168--169
+[]\OT1/cmr/m/n/12 : le \OT1/cmr/m/it/12 CountVec-tor \OT1/cmr/m/n/12 va comme i
+n-dique plus haut
+ []
+
+
+Overfull \hbox (18.64046pt too wide) in paragraph at lines 169--170
+[]\OT1/cmr/m/n/12 : ce pro-ces-sus fait ap-pelle a de l'apprentissage
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
  31362 strings out of 493323
  764267 string characters out of 3139963
- 969616 words of memory out of 3000000
+ 969617 words of memory out of 3000000
  34320 multiletter control sequences out of 15000+200000
  13076 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1774,9 +1893,9 @@ s/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/am
 sfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (27 pages, 212134 bytes).
+Output written on _rapport_stage.pdf (33 pages, 223728 bytes).
 PDF statistics:
- 125 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
