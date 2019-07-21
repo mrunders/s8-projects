@@ -8,9 +8,9 @@ Pour qu'un chatbot soit intéressant, celui-ci doit savoir de quoi on parle et s
 \linebreak
 Dans cette partie, nous allons voir les technologies utilisées, les algorithmes utilisées, des papiers théoriques et pratiques des recherches sur certains algorithmes utilisées et l'assemblage de tout ses composant pour aboutir à un prototype du projet final.
 
-\chapter{Le langage naturelle}
+\chapter{Le langage naturel}
 
-Le langage naturelle n'est pas aussi facile à interprété que une série de valeurs pour les algorithmes de machine learning, c'est pour cela que pour gérer le langage naturelle, nous avons d'autres algorithmes que ce cité ci dessus.
+Le langage naturel n'est pas aussi facile à interprété que une série de valeurs pour les algorithmes de machine learning, c'est pour cela que pour gérer le langage naturel, nous avons d'autres algorithmes que ce cité ci dessus.
 Nous parlerons de \textit{Sequence To Sequence}, \textit{Long Short Term Memory},  \textit{Conditional Random Field}, \textit{Named Entities Recognition} ou de réseaux bayésiens naïf.\\
 
 \pagebreak
@@ -26,7 +26,7 @@ D'après le module \textit{Scikit-Learn}, la variante Multinomial se démarque d
 \linebreak
 Prenons ses deux corpus suivant, extrait de wikipedia. (le label de chaque corpus est représenté par un mot en gras):\\
 \begin{description}
-\item[Pomme]: La pomme est un fruit comestible à pépins d'un goût sucré et acidulé et à la propriété plus ou moins astringente selon les variétés. D'un point de vue botanique, il s'agit d'un faux-fruit. Elle est produite par les pommiers.
+\item[Pomme]: La pomme est un fruit comestible à pépins d'un goût sucré et acidulé et à la propriété plus ou moins astringente, selon les variétés. D'un point de vue botanique, il s'agit d'un faux-fruit. Elle est produite par les pommiers.
 \item[Automobile]: Le terme populaire automobile désigne un véhicule à roues mû par un moteur et destiné au transport terrestre de personnes et de biens.
 \end{description}
 
@@ -67,15 +67,56 @@ Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple 
 \item[trois champs +1]: qui lui contient les trois champs du dessus mais avec le mot $n+1$ 
 \end{description}
 
-Ce modèle largement utilisé lorsque qu'on veut traiter le langage naturelle donne d'assez bon résultats.\\
+Ce modèle largement utilisé lorsque qu'on veut traiter le langage naturel donne d'assez bon résultats.\\
 \linebreak
-Pour appuyer la qualité des résultats, en 2018, l'entreprise Google a développé un algorithme nommé \textbf{BERT} un outils de pré traitement du langage naturelle qui a significativement amélioré les algorithmes de traitement du langage naturelle. Dans le cadre du CRF nous utilisons le mot $n+/-1$ pour $n$, la où \textbf{BERT} prend en compte aussi les mots $n+/-2$, mais ce n'est pas tout, quand l'algorithme devait être testé, celui-ci devait deviner un mot en index $n$ de la phrase en ayant que ses 4 mots, les résultats était correct sans plus, donc en amélioration ils ont finalement laisser le pouvoir à l'algorithme de pouvoir lire la phrase en entier du sens normal (de gauche à droite) et aussi de lire la phrase de droite à gauche, ainsi de considérablement augmenter la précision des réponses.
+Pour appuyer la qualité des résultats, en 2018, l'entreprise Google a développé un algorithme nommé \textbf{BERT} un outil de pré traitement du langage naturel qui a significativement amélioré les algorithmes de traitement du langage naturel. Dans le cadre du CRF nous utilisons le mot $n+/-1$ pour $n$, la où \textbf{BERT} prend en compte aussi les mots $n+/-2$, mais ce n'est pas tout, quand l'algorithme devait être testé, celui-ci devait deviner un mot en index $n$ de la phrase en ayant que ses quatre mots, les résultats étaient correct sans plus, donc en amélioration ils ont finalement laissé le pouvoir à l'algorithme de pouvoir lire la phrase en entier du sens normal (de gauche à droite) et aussi de lire la phrase de droits à gauche, ainsi de considérablement augmenter la précision des réponses.
 
 \pagebreak
+\section{Named Entities Recognition}
+Dans la catégorie de l'extraction de données, l'extraction des entités nommées consistent à extraire un groupe de mots pouvant décrire des mots clef de type Entreprise, Localisation comme des villes ou des noms...\\
+Un exemple de base serait:\\
+
+\formula{la firme Mafirme était présent le mois dernier à Paris pour tenter de gagner 100 000 euros.}
+
+\begin{tabular}{c|cc|c}
+Mot & index début & index fin & catégorie \\
+\hline
+Mafirme & 9 & 15 & Entreprise\\
+Paris & 49 & 54 & Localisation\\
+100 000 euros & 78 & 91 & Argent\\
+\end{tabular}
+
+\ \linebreak
+En important un modèle personnalisé notre NER pourrait avoir d'autres utilités, comme par exemple,  nous voulons que notre bot sache répondre dès qu'il  a compris le problème, nous utilisons un NER personnalisé avec une cinquantaine d'exemples afin que notre modèle sache répondre correctement, il bot sait extraire le sujet d'une phrase, par exemple:
+
+\begin{description}
+\item[Client]: Depuis 5 jours le tuyau de mon évier de salle de bain fuit à grosse goutte
+\item[Bot]: tuyau de mon évier de salle de bain fuit
+\end{description}
+
+\pagebreak
+\section{Long Short Terme memory}
+Commençons les gros algorithmes avec le LSTM, il fait partie de la famille des \textit{Recurrent Neural Network (RNN)}. Les réseaux de neurones récurrents peut être vu comme des combinaisons de circuits imprimés (comme des nos ordinateurs) relié ensemble par des petits ponts de transferts de données. 
+Un circuit est représenté par cette illustration suivante:
+
+\includegraphics[scale=0.4]{img/lstm.jpg} 
+
+\begin{description}
+\item[Forget Gate]: Prenant en entrée le mot à l'indice $N$ et l'information du circuit $N-1$, 
+la fonction sigmoid va décider si le circuit va oublier ou garder le mot courant. 
+\item[Input Gate]: Ce bout de circuit fait appel aux fonctions sigmoid et tangente, le produit des résultats va déterminer l'importance du mot courant.
+\item[Cell State]: Cette partie du circuit va calculer la variable de sortie du circuit.
+\item[Output Gate]: Cette dernière partie du circuit va calculer pour le circuit suivant si le prochain mot doit être conservé ou oublier par rapport au résultat donné tout au long du circuit courant.
+\end{description}
+\ \linebreak
+
+LSTM est comme Seq2Seq, dans son fonctionnement général ils sont égaux, mais LSTM peut couvrir plus de choses que Seq2Seq qui lui a plus une utilité FAQ (pour les Foires Aux Questions il est très adapté) tandis que LSTM peut vraiment tout couvrir, le seul défaut c'est qu'il demande énormément de données, il a un temps d'apprentissage énorme et demande des cœurs GPU (carte graphiques) pour un gain de vitesse considérable.\\
+\pagebreak
+
 \section{Sequence To Sequence}
-Le modèle Seq2Seq est très puissant, sa structure est donné par deux colonnes, la première étant n'importe quoi de type texte et la sortie étant aussi n'importe quoi de type texte. Les exemples simples donnés sur le net sont un traducteur anglais vers français ou un générateur de réponses à des questions.\\
+Le modèle Seq2Seq est très puissant, sa structure est donnée par deux colonnes, la première étant n'importe quoi de type texte et la sortie étant aussi n'importe quoi de type texte. Les exemples simples donnés sur le net sont un traducteur anglais vers français ou un générateur de réponses à des questions.\\
 \linebreak
-Ce processus demande de connaitre à l'avance tout les caractères utilisées pour ainsi transformer chacune des lettres en indice numérique unique, tout les mots seront ensuite remplit de caractère dit "vide" pour avoir l'unicité de la longueurs des mots.\\
+Ce processus demande de connaitre à l'avance tous les caractères utilisées pour ainsi transformer chacune des lettres en indice numérique unique, tous les mots seront ensuite remplit de caractère dit "vide" pour avoir l'unicité de la longueur des mots.\\
 
 \begin{multicols}{3}
 \begin{tabular}{c|c}
@@ -103,47 +144,7 @@ a & 6\\
 \end{multicols}
 
 \pagebreak
-\section{Named Entities Recognition}
-Dans la catégorie de l'extraction de données, l'extraction des entités nommés consiste à extraire un groupe de mots pouvant décrire des mots clef de type Entreprise, Localisation comme des villes ou des noms...\\
-Un exemple de base serait:\\
 
-\formula{la firme Mafirme était présent le mois dernier à Paris pour tenter de gagner 100 000 euros.}
-
-\begin{tabular}{c|cc|c}
-Mot & index début & index fin & catégorie \\
-\hline
-Mafirme & 9 & 15 & Entreprise\\
-Paris & 49 & 54 & Localisation\\
-100 000 euros & 78 & 91 & Argent\\
-\end{tabular}
-
-\ \linebreak
-En important un modèle personnalisé notre NER pourrait avoir d'autres utilités, comme par exemple, nous voulons que notre bot réponde une phrase dés qu'il a comprit le problème, nous utilisons un NER personnalisé avec une cinquantaine d'exemples afin que notre modèle sache répondre correctement, il bot sait extraire le sujet d'une phrase, par exemple:
-
-\begin{description}
-\item[Client]: Depuis 5 jours le tuyau de mon évier de salle de bain fuit à grosse goutte
-\item[Bot]: tuyau de mon évier de salle de bain fuit
-\end{description}
-
-\pagebreak
-\section{Long Short Terme memory}
-Commençons les gros algorithmes avec le LSTM, il fait partit de la famille des \textit{Recurrent Neural Network (RNN)}. Les réseaux de neurones récurrents peuvent être vu comme des combinaisons de circuits imprimés (comme des nos ordinateurs) relié ensemble par des petits ponts de transferts de données. 
-Un circuit est représenté par cette illustration suivante:
-
-%% INSERT IMG
-
-\begin{description}
-\item[Forget Gate]: Prenant en entrée le mot à l'indice $N$ et l'information du circuit $N-1$, 
-la fonction sigmoid va décider si le circuit va oublier ou garder le mot courant. 
-\item[Input Gate]: Ce bout de circuit fait appel aux fonctions sigmoid et tangente, le produit des résultats va déterminer l'importance du mot courant.
-\item[Cell State]: Cette partie du circuit va calculer la variable de sortie du circuit.
-\item[Output Gate]: Cette dernière partie du circuit va calculer pour le circuit suivant si le prochain mot doit être conservé ou oublier par rapport au résultat donné tout au long du circuit courant.
-\end{description}
-\ \linebreak
-
-LSTM est comme Seq2Seq, dans son fonctionnement général ils sont égaux, mais LSTM peut couvrir plus de choses que Seq2Seq qui lui a plus une utilité FAQ (pour les Foires Aux Questions il est très adapté) tandis que LSTM peut vraiment tout couvrir, le seul défaut c'est qu'il demande énormément de données, il a un temps d'apprentissage énorme et demande des cœurs GPU (carte graphiques) pour un gain de vitesse considérable.\\
-
-\pagebreak
 Pour résumer, les réseaux naïves sont des algorithmes qui pour des entrées de types chaînes textuelles retourne une catégorie, Seq2Seq et LSTM sont des algorithmes de générations de chaînes textuelles, CRF est utilisé pour la prédiction de mots selon une chaînes de mots passé en entrée puis NER va extraire des motifs depuis une chaîne textuelle et lui attribuer une étiquette.\\
 \linebreak
 Ces cinq algorithmes seront utilisés dans les futures api utilisées lors de l'élaboration du chatbot.\\
@@ -157,14 +158,67 @@ La mise en place de cette brique est crucial, car c'est cette api qui devra rép
 
 \pagebreak
 \section{le NLU}
-NLU où \textit{Natural Language understanding} est la brique de compréhension du langage naturelle, cette brique fonctionne sous une pipeline. Une pipeline est un enchaînement de composants qui va traiter la donné textuelle envoyé depuis l'utilisateur du bot.\\
-\linebreak
-
-Je vais énumérer tout les composants que j'ai utilité afin de réaliser la pipeline:
+NLU où \textit{Natural Language understanding} est la brique de compréhension du langage naturel, cette brique fonctionne sous une pipeline. Une pipeline est un enchainement de composants qui va traiter la donnée textuelle qui a été envoyée depuis l'utilisateur du bot.\\
+\ \linebreak
+Je vais énumérer toutes les composants que j'ai utilités afin de réaliser la pipeline:
 \begin{description}
 \item[WhitespaceTokenizer]: Dans un premier temps, notre texte doit être formaté en une liste de mot, une liste de mot sans caractères spéciaux ni url.
-\item[CRFEntityExtractor]: Ajouter aux explications sur le CRF, le \textit{CRFEntityExtractor} en ai une dérivé à la différence que le CRFEE va nous générer un modèle donnant une liste de mot intéressant. La liste des mots intéressant sont crée lors du processus d'apprentissage du NLU, qui pour une série de phrases et une série d'index de sous phrases dit intéressant, le NLU va apprend a les extraire de toutes les phrases dans le futur.
-\item[EntitySynonymMapper]: Le corpus de mot généré via le CRFEE peu être factorisé en moins d'entrées, c'est le travail de ce composant.
-\item[CountVectorsFeaturizer]: le \textit{CountVector} va comme indiqué plus haut dans la section parlant des réseaux bayésiens naïf, va représenter une chaîne textuelle en un vecteur d'entiers.
-\item[EmbeddingIntentClassifier]: ce processus fait appelle à de l'apprentissage supervisé, pour une série de catégories déterminé par le fichier \textit{nlu.md} (qui sera présenté plus bas) et un vecteur précédaient crée par \textit{CountVector}.
+\item[CRFEntityExtractor]: Ajouter aux explications sur le CRF, le \textit{CRFEntityExtractor} en ai une dérivée à la différence que le CRFEE va nous générer un modèle donnant une liste de mot intéressant. La liste des mots intéressants sont créer lors du processus d'apprentissage du NLU, qui pour une série de phrases et une série d'index de sous phrases dit intéressant.
+\item[EntitySynonymMapper]: Le corpus de mot généré via le CRFEE peut être factorisé en moins d'entrées, c'est le travail de ce composant.
+\item[CountVectorsFeaturizer]: le \textit{CountVector} va comme indiquée plus haut dans la section parlant des réseaux bayésiens naïf, va représenter une chaîne textuelle en un vecteur d'entiers.
+\item[EmbeddingIntentClassifier]: ce processus fait appel à l'apprentissage supervisé, pour une série de catégories déterminé par le fichier \textit{nlu.md} (qui sera présenté plus bas) et un vecteur précédaient crée par \textit{CountVector}.
 \end{description}
+
+\pagebreak
+
+Un exemple serait mieux histoire d'illustrer ces cinq composants, leurs effets sur les entrées et les structures de données demandé.\\
+La structure de données pour l'apprentissage sont représenté au format \textit{Markdown}, tous les étiquettes sont représenté par des titres de niveau 1 et tous les entrées sont représenté par une liste à puce.\\
+
+\begin{lstlisting}
+#intent:ClassA
+- Input1
+- Input2
+
+#intent:ClassB
+- Input3
+- Input4
+- Input5
+\end{lstlisting}
+
+Ceci représente la structure de base utilisée pour la pipeline, les \textit{InputX} sonr tout les textes d'entrées, ils peuvent être de type entier, chaine de caractères, des phrases, les \textit{ClassX} représente l'étiquette du groupe d'entrée.\\
+Prenons, deux étiquettes pour deux phrases à classifier:\\
+
+\begin{lstlisting}
+#intent:Voiture
+- Avec ces quatre roues motrice et son nouveau moteur, ce bolide va probablement passer les 100 kilometres heurs dans les virages.
+
+#intent:Alimentaire
+- Ce pommier va bientot nous donner de belles pommes.
+\end{lstlisting}
+
+\subsection{WhitespaceTokenizer}
+\subsection{CRFEntityExtractor}
+\subsection{EntitySynonymMapper}
+\subsection{CountVectorsFeaturizer}
+\subsection{EmbeddingIntentClassifier}
+
+\pagebreak
+\section{Les slots}
+
+Reprenons notre fichier \textit{Markdown}, à nos entrées, nous pouvons introduire des variables, les variables sont emplacements dans le coeur du chatbot pour retenir des informations, ainsi pour aider à la compréhension de la conversation, les variables sont introduit dans les Inputs.
+\ \linebreak
+\begin{lstlisting}
+#intent:Voiture
+- Avec ces quatre [roues motrice](automobile) et son nouveau [moteur](automobile), ce [bolide](automobile) va probablement passer les 100 [kilometres heurs](automobile) dans les [virages](automobile).
+
+#intent:Alimentaire
+- Ce [pommier](alimentaire) va bientot nous donner de belles [pommes](alimentaire).
+\end{lstlisting}
+\ \linebreak
+Lors de la phase de classification (\textit{EmbeddingIntentClassifier}) après la sélection de l'étiquette, c'est au tour du NER d'extraire ces termes et ainsi automatiquement stocker des informations ciblé sur des axes clef de la conversation dans le cœur du chatbot. Plusieurs variables peuvent êtres utilisé dans une phrase:
+
+\ \linebreak
+\begin{lstlisting}
+- Avec ces quatre [roues motrice](equipement) et son nouveau [moteur](equipement), ce [bolide](appellation) va probablement passer les [100 kilometres heurs](vitesse) dans les [virages](typeroute).
+\end{lstlisting}
+\ \linebreak 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  18 JUL 2019 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  21 JUL 2019 21:30
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -1309,15 +1309,22 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [1
+
+])
 \tf@toc=\write4
 \openout4 = `_rapport_stage.toc'.
 
- [1
 
-] (introduction.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2] (introduction.tex
 Chapter 1.
-[2
+[3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--8
@@ -1330,7 +1337,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] (E:\ProgramFiles\MikTex2.9\tex\latex\listings\lstlang1.sty
+[4] (E:\ProgramFiles\MikTex2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (E:\ProgramFiles\MikTex2.9\tex\latex\listings\lstlang2.sty
@@ -1354,7 +1361,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
+[5]
 Overfull \hbox (4.6612pt too wide) in paragraph at lines 33--35
 \OT1/cmr/m/n/12 Philippe et un homme, n'ayant au-cune in-for-ma-tions sur un d
 enomme Philippe,
@@ -1371,13 +1378,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]
+[6]
 Overfull \hbox (7.63338pt too wide) in paragraph at lines 38--40
 \OT1/cmr/m/n/12 L'approche con-nex-ion-niste est l'approche la plus proche du s
 chema du cerveaux
  []
 
-<img/neurone.jpg, id=29, 918.43124pt x 457.71pt>
+<img/neurone.jpg, id=33, 918.43124pt x 457.71pt>
 File: img/neurone.jpg Graphic file (type jpg)
  <use img/neurone.jpg>
 Package pdftex.def Info: img/neurone.jpg used on input line 42.
@@ -1398,23 +1405,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6 <./img/neurone.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
+[7 <./img/neurone.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -1422,7 +1413,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 64--68
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
@@ -1433,6 +1429,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+Underfull \hbox (badness 10000) in paragraph at lines 64--68
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
@@ -1443,14 +1450,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])
+[11])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11] (approche.tex
+[12] (approche.tex
 Chapter 2.
 
 Overfull \hbox (25.70134pt too wide) in paragraph at lines 3--7
@@ -1463,7 +1470,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-[12
+[13
 
 ]
 
@@ -1472,7 +1479,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 71--88
 
  []
@@ -1484,7 +1491,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
@@ -1500,7 +1507,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[16]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
 [][][] 
  []
@@ -1531,7 +1538,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[17]
 Overfull \hbox (5.60562pt too wide) in paragraph at lines 145--152
 []\OT1/cmr/m/n/12 Plus haut j'ai parle de Ma-chine learn-ing, de traite-ment d
 es chaines textuels,
@@ -1553,7 +1560,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
@@ -1584,7 +1591,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18]
+[19]
 Overfull \hbox (8.33858pt too wide) in paragraph at lines 167--171
 [][][] 
  []
@@ -1646,14 +1653,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19]
+[20]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20] [21
+[21] [22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
@@ -1686,14 +1693,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22]
+[23]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-[23
+[24
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
@@ -1711,7 +1718,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
+[25]
 Overfull \hbox (4.96918pt too wide) in paragraph at lines 35--37
 \OT1/cmr/m/n/12 sur la donnee, la premiere est nomme $\OML/cmm/m/it/12 Token
 ization$ \OT1/cmr/m/n/12 et la sec-onde $\OML/cmm/m/it/12 Frequencies$\OT1/cmr/
@@ -1746,7 +1753,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
@@ -1757,46 +1764,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
-Overfull \hbox (0.97511pt too wide) in paragraph at lines 76--79
-\OT1/cmr/m/n/12 Le modele Seq2Seq est tres puis-sant, sa struc-ture est donn
-e par deux colonnes,
- []
-
-
-Overfull \hbox (4.14313pt too wide) in paragraph at lines 76--79
-\OT1/cmr/m/n/12 la premiere etant n'importe quoi de type texte et la sor-tie 
-etant aussi n'importe
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
-
- []
-
-
-Overfull \hbox (20.71895pt too wide) in paragraph at lines 95--103
-[] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 []
  []
 
@@ -1806,18 +1780,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+[28] <img/lstm.jpg, id=105, 803.0pt x 602.25pt>
+File: img/lstm.jpg Graphic file (type jpg)
+ <use img/lstm.jpg>
+Package pdftex.def Info: img/lstm.jpg used on input line 102.
+(pdftex.def)             Requested size: 321.1943pt x 240.89572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
@@ -1827,11 +1801,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 147--151
-
- []
-
+[29 <./img/lstm.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -1839,49 +1809,139 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [30]
-Chapter 4.
-
-Underfull \hbox (badness 3601) in paragraph at lines 154--157
-\OT1/cmr/m/n/12 qui met a dis-po-si-tion un bot vierge con-fig-urable et bien 
-realise.
- []
-
-[31
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
+Overfull \hbox (6.19728pt too wide) in paragraph at lines 117--120
+\OT1/cmr/m/n/12 Le modele Seq2Seq est tres puis-sant, sa struc-ture est donn
+ee par deux colonnes,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
+Overfull \hbox (4.14313pt too wide) in paragraph at lines 117--120
+\OT1/cmr/m/n/12 la premiere etant n'importe quoi de type texte et la sor-tie 
+etant aussi n'importe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
 
-Overfull \hbox (0.37791pt too wide) in paragraph at lines 168--169
-[]\OT1/cmr/m/n/12 : le \OT1/cmr/m/it/12 CountVec-tor \OT1/cmr/m/n/12 va comme i
-n-dique plus haut
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
+
  []
 
 
-Overfull \hbox (18.64046pt too wide) in paragraph at lines 169--170
-[]\OT1/cmr/m/n/12 : ce pro-ces-sus fait ap-pelle a de l'apprentissage
+Overfull \hbox (20.71895pt too wide) in paragraph at lines 136--144
+[] 
  []
 
-)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] (_rapport_stage.aux) ) 
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+Chapter 4.
+
+Underfull \hbox (badness 3601) in paragraph at lines 155--158
+\OT1/cmr/m/n/12 qui met a dis-po-si-tion un bot vierge con-fig-urable et bien 
+realise.
+ []
+
+[33
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 161--165
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+\OT1/cmr/m/n/12 tion, les vari-ables sont in-tro-duit dans les In-puts. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
+
+ []
+
+
+Overfull \hbox (5.53477pt too wide) in paragraph at lines 217--219
+\OT1/cmr/m/n/12 Lors de la phase de clas-si-fi-ca-tion (\OT1/cmr/m/it/12 Em-bed
+-ding-In-tent-Clas-si-fier\OT1/cmr/m/n/12 ) apres la selection
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 224--217
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--217
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
- 31362 strings out of 493323
- 764267 string characters out of 3139963
- 969617 words of memory out of 3000000
- 34320 multiletter control sequences out of 15000+200000
+ 31469 strings out of 493323
+ 765591 string characters out of 3139963
+ 995617 words of memory out of 3000000
+ 34426 multiletter control sequences out of 15000+200000
  13076 words of font info for 50 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,14n,127p,1179b,2025s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1893,9 +1953,9 @@ s/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/am
 sfonts/cm/cmti12.pfb>
-Output written on _rapport_stage.pdf (33 pages, 223728 bytes).
+Output written on _rapport_stage.pdf (37 pages, 296522 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 160 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
