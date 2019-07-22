@@ -196,11 +196,44 @@ Prenons, deux étiquettes pour deux phrases à classifier:\\
 - Ce pommier va bientot nous donner de belles pommes.
 \end{lstlisting}
 
-\subsection{WhitespaceTokenizer}
-\subsection{CRFEntityExtractor}
-\subsection{EntitySynonymMapper}
-\subsection{CountVectorsFeaturizer}
-\subsection{EmbeddingIntentClassifier}
+\subsubsection{WhitespaceTokenizer}
+Pour chaque mots, nous allons lui associer une structure stockant, la position de la première et de la dernière lettre. 
+
+\begin{description}
+\item[Input:] Ce pommier va bientot nous donner de belles pommes.\\
+\item[Output:] $[Ce,0-2],[pommier,3-10][va,11-13][bientot,14-21][nous,22-26][donner,27-33][de,34-36][belles,37-43][pommes,44-50]$
+\end{description}
+
+\pagebreak
+\subsubsection{CRFEntityExtractor}
+Pour un mot donné, remplir tous les champs demandé, le champ $-1$ est le mot précédant (si il existe), et le champ $+1$ est le champ suivant (si il existe).\\
+Le champ $prefixX$ est représenté par les $X$ premières lettres d'un mot, le champ $suffixX$ est représenté par les $X$ derniers caractères.
+
+\begin{description}
+\item[Input:] Pour le mot \textit{belles}
+\item[Parsed Input:] $\{'-1:low': 'de', '-1:title': False, '-1:upper': False, 
+'0:bias': 'bias', '0:low': 'belles', '0:prefix5': 'belle', '0:prefix2': 
+'be', '0:suffix5': 'elles', '0:suffix3': 'les', '0:suffix2': 'es', 
+'0:upper': False, '0:title': False, '0:digit': False, '1:low': 'pommes',
+'1:title': False, '1:upper': False\}$
+\end{description}
+\ \\
+L'algorithme utilisé pour le \textit{CRFEE} est la chaîne de Markov où chaque arrêtes est étiqueté par un mot et les nœuds par des étiquettes, les autres paramètres vu plus haut donnent des probabilités d'appartenance sur certaines étiquette.
+
+\subsubsection{EntitySynonymMapper}
+Fondamentalement pour la classification de textes, cette brique n'est pas utile, mais elle sera utilisé plus tard lors de la section sur les Slots.
+
+\subsubsection{CountVectorsFeaturizer}
+Comme précisé au dessus dans la section \textit{CountVectorsFeaturizer}, notre phrase se retrouve convertit en un très grand vecteur de bit.
+
+\subsubsection{EmbeddingIntentClassifier}
+Cette algorithme va classifier notre phrase précédemment vectorisé, la base de cette algorithme est \textit{StarSpace} qui d'après l'université Cornell à New York peut résoudre tout les problèmes de classification de textes.\linebreak
+Grâce à cette algorithme, nous nous retrouvons avec la liste des probabilités associé à chaque étiquettes:
+
+\begin{lstlisting}
+{'name':'Voiture', 'confidence': '0.10'}
+{'name':'Alimentaire', 'confidence': '0.90'}
+\end{lstlisting}
 
 \pagebreak
 \section{Les slots}
@@ -215,10 +248,69 @@ Reprenons notre fichier \textit{Markdown}, à nos entrées, nous pouvons introdu
 - Ce [pommier](alimentaire) va bientot nous donner de belles [pommes](alimentaire).
 \end{lstlisting}
 \ \linebreak
-Lors de la phase de classification (\textit{EmbeddingIntentClassifier}) après la sélection de l'étiquette, c'est au tour du NER d'extraire ces termes et ainsi automatiquement stocker des informations ciblé sur des axes clef de la conversation dans le cœur du chatbot. Plusieurs variables peuvent êtres utilisé dans une phrase:
+Lors de la phase de classification (\textit{EntitySynonymMapper}) c'est au tour du NER d'extraire ces termes et ainsi automatiquement stocker des informations ciblé sur des axes clef de la conversation dans le cœur du chatbot. Plusieurs variables peuvent êtres utilisé dans une phrase:
 
 \ \linebreak
 \begin{lstlisting}
 - Avec ces quatre [roues motrice](equipement) et son nouveau [moteur](equipement), ce [bolide](appellation) va probablement passer les [100 kilometres heurs](vitesse) dans les [virages](typeroute).
 \end{lstlisting}
+
+\ \linebreak
+Ce qui donne après exécution de \textit{EntitySynonymMapper}, une liste de mots avec leurs appartenance:
+
+\begin{lstlisting}
+[{'start': 46, 'end': 51 'value': 'moteur', 'entity': 'equipement', 'confidence': 0.8474657889627953}]
+\end{lstlisting}
 \ \linebreak 
+
+La validation des slots peut se faire dans les \textbf{Actions} (qui seront expliqué dans la section Actions), ce-ci permet de contrôler les affectations dans les slots, par exemple si on veut une identifiant numérique, alors nous pouvons faire une condition sur le slot en question et lui dire ne de pas accepter la valeur si elle n'est pas numérique. Dans un autre sens on peut ré affecter la valeur comme par exemple dans notre cas, utiliser la phrase pour faire une prédiction puis insérer la prédiction à la place de la phrase initial.
+
+\chapter{Le Core}
+
+Comme indiqué plus haut, le chatbot se décompose en deux grande brique, l'une étant le \textit{NLU} et l'autre le \textit{Core}. Le core est le cœur de chatbot, c'est cette partie qui s'occupera de réfléchir à la réponse qu'il faudra donner à l'utilisateur, c'est aussi là où le concept de \textit{Slots} sera utilisé, le Concept \textit{D'actions}, les \textit{stories}, \textit{domaine},\textit{formulaires} puis enfin l'apprentissage interactif.\\
+\pagebreak
+
+\section{Le Domaine et les stories}
+Si le fichier \textit{nlu.md} est l'entrée de l'algorithme, alors le fichier \textit{domains.yml} en ai la sortie, ce fichier répertorie toutes:
+
+\begin{description}
+\item[-] les slots utilisé
+\item[-] les intents utilisé
+\item[-] des réponses près définit 
+\end{description}
+
+Les réponses près définit sont des phrase que le bot va envoyer à l'utilisateur lorsque le nom associé à la phrase près définit est déclenché soit via la \textit{Storie} ou soit via les \textit{Actions}, (les \textit{$utter\_$} et \textit{$utter\_ask\_$} sont des conventions:
+
+\begin{lstlisting}
+templates:
+  utter_oui:
+  - text: "Vous avez dit Oui!"
+
+  utter_non:
+  - text: "Vous avez dit Non"
+  
+  utter_ask_demander:
+  - text: "Voulez vous une glace?"
+\end{lstlisting}
+\ \linebreak
+Les \textit{$utter\_$} décrit la phrase comme étant une réponse alors que les \textit{$utter\_ask\_$} décrivent plutôt une question.
+Les stories font le lien entre le fichier \textit{nlu.md} et le fichier \textit{domains.yml}, celui-ci, au format \textit{Markdown} donne une ligne directeur concernant la conversation, par exemple pour notre marchant de glace il ressemblerai à:
+
+\begin{lstlisting}
+## story_je_veux_une_glace
+* intent_bonjour
+ - utter_bonjour
+ - utter_ask_glace
+* intent_oui
+ - utter_oui
+ 
+## story_pas_de_glace
+* intent_bonjour
+ - utter_bonjour
+ - utter_ask_glace
+* intent_non
+ - utter_non
+\end{lstlisting}
+
+Deux scénarios sont possible, soit vous dites $Oui$ à la glace soit $Non$, mais ce qui est sûr c'est que vous devez dire bonjour et que le vendeur doit vous demander si vous voulez une glace.
+Le changement de \textit{story} se fait via deux facteurs qui sont l' \textit{EmbeddingIntentClassifier} et les \textit{Slots}.
