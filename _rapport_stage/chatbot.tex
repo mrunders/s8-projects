@@ -143,6 +143,10 @@ a & 6\\
 \end{tabular}
 \end{multicols}
 
+Le \textit{Seq2Seq} fait partit de la famille des réseaux neuronale, celui ci fonctionnant comme le \texttt{LSTM} donc ayant une couche d'encodage et de décodage.\linebreak
+Dans les travaux théorique, cette algorithme peut aussi servir à raccourcir un texte plutôt long comme une histoire, en un résumé sans trop perdre le sens de l'histoire.\linebreak
+D'autres travaux, plus dans l'ordre de la recherche a permis le fait que \textit{Seq2Seq} pourrait probablement servir comme traducteur \textit{Text To Speech}.
+
 \pagebreak
 
 Pour résumer, les réseaux naïves sont des algorithmes qui pour des entrées de types chaînes textuelles retourne une catégorie, Seq2Seq et LSTM sont des algorithmes de générations de chaînes textuelles, CRF est utilisé pour la prédiction de mots selon une chaînes de mots passé en entrée puis NER va extraire des motifs depuis une chaîne textuelle et lui attribuer une étiquette.\\
@@ -267,7 +271,7 @@ La validation des slots peut se faire dans les \textbf{Actions} (qui seront expl
 
 \chapter{Le Core}
 
-Comme indiqué plus haut, le chatbot se décompose en deux grande brique, l'une étant le \textit{NLU} et l'autre le \textit{Core}. Le core est le cœur de chatbot, c'est cette partie qui s'occupera de réfléchir à la réponse qu'il faudra donner à l'utilisateur, c'est aussi là où le concept de \textit{Slots} sera utilisé, le Concept \textit{D'actions}, les \textit{stories}, \textit{domaine},\textit{formulaires} puis enfin l'apprentissage interactif.\\
+Comme indiqué plus haut, le chatbot se décompose en deux grande brique, l'une étant le \textit{NLU} et l'autre le \textit{Core}. Le core est le cœur de chatbot, c'est cette partie qui s'occupera de réfléchir à la réponse qu'il faudra donner à l'utilisateur, c'est aussi là où le concept de \textit{Slots} sera utilisé, le Concept \textit{D'actions}, les \textit{stories}, \textit{domaine} puis les \textit{formulaires}.\\
 \pagebreak
 
 \section{Le Domaine et les stories}
@@ -314,3 +318,112 @@ Les stories font le lien entre le fichier \textit{nlu.md} et le fichier \textit{
 
 Deux scénarios sont possible, soit vous dites $Oui$ à la glace soit $Non$, mais ce qui est sûr c'est que vous devez dire bonjour et que le vendeur doit vous demander si vous voulez une glace.
 Le changement de \textit{story} se fait via deux facteurs qui sont l' \textit{EmbeddingIntentClassifier} et les \textit{Slots}.
+
+\section{Les Actions et les Formulaires}
+Pour l'instant, notre Chatbot permet de réponde simplement à des phrases via des réponses près définit, le concept d'action et de personnaliser l'action que le bot va réaliser. Plus haut nous avons vu que les slots sont des variables qui sont extraits des entrées de l'utilisateur, nous pouvons utiliser ces fameux slots pour diriger le chatbot dans une direction précise.
+
+\begin{lstlisting}
+Stories.md:
+
+## story_je_veux_une_glace
+* intent_bonjour
+ - utter_bonjour
+ - action_conseil_glace_du_moment
+ - utter_conseil_glace_du_moment
+\end{lstlisting}
+
+\begin{lstlisting}
+Actions.md:
+
+class Action_conseil_glace_du_moment:
+
+	def run(self, domain, tracker, dispatcher):
+		prediction = Predire_la_glace_du_moment()
+		set_slot("glace_du_moment", prediction")
+		return []
+		
+\end{lstlisting}
+
+\begin{lstlisting}
+domain.yml:
+
+templates:
+ utter_conseil_glace_du_moment:
+ - text: "Nous vous conseillons la {glace_du_moment}"
+\end{lstlisting}
+
+Avec ce processus nous pouvons exécuter une tache externe comme appeler des algorithmes d'apprentissage sur les données de l'utilisateur.\linebreak
+Les formulaires sont un moyen d'automatiser le remplissage des slots, tout les slots qui seront inséré dans un formulaire seront obligatoirement à remplir. Le Core va avec les slots présent dans sa base va générer une liste de slot à remplir, tant que cette liste n'est pas vide, le chatbot va poser des questions afin que l'utilisateur puise donner des informations requit.
+
+\chapter{l'api de prédiction}
+La brique du chatbot étant fini, reste la partie Machine Learning, j'ai décidé de séparer le chatbot des programmes d'intelligence artificiel et de placer tout les programmes dans une API qui est obtenable via requêtes \textit{REST}, ainsi, l'implémentation du projet se fait beaucoup plus facilement, d'un coté tout les programmes de prédictions et de l'autre le chatbot.\\
+Les requêtes à l'api de Machine Learning se fait dans les Actions du chatbot.\\
+\linebreak
+Pour aboutir à un chatbot qui répond plutôt bien au attente des utilisateurs, nous devons d'extraire la nature du problème ($nature\_probleme$) les équipements concerné (comme les murs, fenêtres, grillage) ($equipement$) et les demandes techniques (une réclamation, renseignement, incident) ($demande\_technique$).
+
+\pagebreak
+\section{Les ontologies}
+Une ontologie est un ensemble de concepts qui donne un sens à un groupe de mots, dans le chapitre précédant lors de l'introduction des slots, il y a eu une petite notion d'ontologie, dans le fait que pour une phrase on extrait des mots pour les associer à des slots.\\
+Mais l'implémentation de la déduction des variables demandé ($nature\_probleme$, $equipement$ et $demande\_technique$) est plus complexe. Pour un corpus de mot construit à partir de 8 Gigabit de données clients et de quelques programmes d'automatisation de l'extraction et d'analyse fait nous même, nous avons pus construire les corpus comme suit:
+
+\begin{lstlisting}
+Mots_Clef_Demande_technique.csv
+
+Clef,Synonyme
+adaptation,"adaptation,adaptations,adapter,adapte,ajustement,ajustements,ajuster,..."
+effraction,"effraction,pillage,piller,pille,vol ,voller,voleur,vol avec effraction, ..."
+epave,"epave,epave,epaves,delabre,delabrer,ruine,debris, ..."
+deratisation,"deratisation,deratisation,presence de rat,des rats"
+...
+\end{lstlisting}
+
+Pour chaque mots dans les synonymes, on lui associe sa clef, ce qui donne par un exemple:
+\begin{lstlisting}
+str = "Il y a une epave de voiture qui est devant une maison abandonne depuis longtemps, ce matin des rats sont venue m'attaquer."
+print(ontologies(demande_technique, str)
+> ["epave", "deratisation"]
+\end{lstlisting}
+
+Nous avons résumé en ontologie la phrase donné pour en obtenir un série de mot clefs, ainsi coupler avec un algorithme d'apprentissage travaillant sur les chaînes de caractères, comme un réseau bayésiens naïf nous obtenons le type de $demande\_technique$ associé à la phrase posé ci dessus:
+
+\begin{lstlisting}
+Demande_technique_train.csv
+
+Class,Input
+adaptation,"[adaptation]"
+amenagement,"[voirie]"
+maintenance,"[maintenance,reclamation]"
+incident,"[degradation,garantie]"
+reclamation,"[change,degradation,reclamation]"
+occupation_vide,"[epave]"
+\end{lstlisting}
+
+Nous comptons respectivement pour les trois ontologies ($nature\_probleme$, $equipement$ et $demande\_technique$), au moins deux cent synonymes pour respectivement 30, 52 et 23 clefs pour les fichiers des mots clefs, et respectivement 975, 1242 et 156 lignes d'apprentissage pour l'algorithme de réseau bayésiens naïf.\\
+A l'aide d'un de nos programme, nous avons pu faire un estimateur sur le pouvoir de notre ontologie, nous avons semi automatisé la classification des 8 Gigabit de transcripts et nous avons appelé l'entièreté des phrases utilises (donc des phrases autre que "oui","bonjour", "au revoir"...) sur notre api, les résultats pour $demande\_technique$ ne sont pas mauvais
+
+\begin{lstlisting}
+comportement_invervenant: OK:    0 | NOK:    0 | TOTAL:    0 | RATIO:0.00000
+                        securiter: OK:    1 | NOK:    1 | TOTAL:    2 | RATIO:0.50000
+                  contestation: OK:  127 | NOK:   85 | TOTAL:  212 | RATIO:0.59906
+                amenagement: OK:  373 | NOK:  154 | TOTAL:  527 | RATIO:0.70778
+                    abandonne: OK:   68 | NOK:   27 | TOTAL:   95 | RATIO:0.71579
+                 maintenance: OK:  130 | NOK:   42 | TOTAL:  172 | RATIO:0.75581
+                  reclamation: OK: 2126 | NOK:  678 | TOTAL: 2804 | RATIO:0.75820
+                     adaptation: OK:   70 | NOK:   12 | TOTAL:   82 | RATIO:0.85366
+             eclairage_collectif: OK:   51 | NOK:    8 | TOTAL:   59 | RATIO:0.86441
+                            epave: OK:   14 | NOK:    2 | TOTAL:   16 | RATIO:0.87500
+                       effraction: OK:   27 | NOK:    3 | TOTAL:   30 | RATIO:0.90000
+                           voirie: OK:  411 | NOK:   35 | TOTAL:  446 | RATIO:0.92152
+                   intervention: OK:  743 | NOK:   55 | TOTAL:  798 | RATIO:0.93108
+                    degradation: OK:  282 | NOK:    8 | TOTAL:  290 | RATIO:0.97241
+                    information: OK: 4999 | NOK:  107 | TOTAL: 5106 | RATIO:0.97904
+                          change: OK:  691 | NOK:   10 | TOTAL:  701 | RATIO:0.98573
+                        garantie: OK:  530 | NOK:    7 | TOTAL:  537 | RATIO:0.98696
+                        incident: OK:  403 | NOK:    3 | TOTAL:  406 | RATIO:0.99261
+                deinsectisation: OK:    1 | NOK:    0 | TOTAL:    1 | RATIO:1.00000
+                     non_resolu: OK:    2 | NOK:    0 | TOTAL:    2 | RATIO:1.00000
+                   amelioration: OK:   21 | NOK:    0 | TOTAL:   21 | RATIO:1.00000
+                            squat: OK:    5 | NOK:    0 | TOTAL:    5 | RATIO:1.00000
+                   deratisation: OK:   16 | NOK:    0 | TOTAL:   16 | RATIO:1.00000
+\end{lstlisting}
+
