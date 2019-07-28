@@ -19,7 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage{caption}
  
-\pgfplotsset{compat=1.16}
+% \pgfplotsset{compat=1.16}
 \setlist[description]{leftmargin=\parindent,labelindent=\parindent}
 
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
@@ -211,10 +211,16 @@
 \pagebreak
 \tableofcontents
 \pagebreak
+
+\input{remerciements}
 \input{introduction}
 \input{approche}
+\input{entreprise}
 \input{chatbot}
+\input{restia}
+\input{assemblage}
 
 \pagebreak
 \end{document}
+
 

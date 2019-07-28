@@ -1,45 +1,45 @@
 
 \part{Un chatbot}
 
-Le but initiale d'un chatbot est un agent pouvant dialoguer avec un utilisateur dans un certain contexte, un contexte est un ensemble de mots donnant lieu à un langage.\linebreak
-Un modèle très basique de chatbot est une simplement un programme qui récupère clavier de l'utilisateur puis affiche une réponse formaté, les chatbot basique sont pas aussi intelligent, le contexte de la conversation a besoin d'être conservé pour pouvoir donner un meilleur sens et une interaction bien plus intéressante avec l'utilisateur.\linebreak
+Le but initial d'un chatbot est un agent pouvant dialoguer avec un utilisateur dans un certain contexte, un contexte est un ensemble de mots donnant lieu à un langage.\linebreak
+Un modèle très basique de chatbot est un simple programme qui récupère clavier de l'utilisateur puis affiche une réponse formaté, les chatbot basique sont pas aussi intelligents, le contexte de la conversation a besoin d'être conservé pour pouvoir donner un meilleur sens et une interaction bien plus intéressante avec l'utilisateur.\linebreak
 \\
 Pour qu'un chatbot soit intéressant, celui-ci doit savoir de quoi on parle et savoir donner des réponses pertinentes, sans compter sur la qualité des réponses qui doivent être humainement compréhensible.\linebreak
 \linebreak
-Dans cette partie, nous allons voir les technologies utilisées, les algorithmes utilisées, des papiers théoriques et pratiques des recherches sur certains algorithmes utilisées et l'assemblage de tout ses composant pour aboutir à un prototype du projet final.
+Dans cette partie, nous allons voir les technologies utilisées, les algorithmes utilisés, des papiers théoriques et pratiques des recherches sur certains algorithmes utilisés et l'assemblage de tous ses composant pour aboutir à un prototype du projet final.
 
 \chapter{Le langage naturel}
 
-Le langage naturel n'est pas aussi facile à interprété que une série de valeurs pour les algorithmes de machine learning, c'est pour cela que pour gérer le langage naturel, nous avons d'autres algorithmes que ce cité ci dessus.
+Le langage naturel n'est pas aussi facile à interpréter qu'une série de valeurs pour les algorithmes de machine learning, c'est pour cela que pour gérer le langage naturel, nous avons d'autres algorithmes que ceux cité ci dessus.
 Nous parlerons de \textit{Sequence To Sequence}, \textit{Long Short Term Memory},  \textit{Conditional Random Field}, \textit{Named Entities Recognition} ou de réseaux bayésiens naïf.\\
 
 \pagebreak
 \section{Les réseaux bayésiens naif}
 
-C'est la première référence que nous avons quand on cherche dans le registre du travail avec les chaines textuelles.\\
-L'idée du réseau bayésiens naïf est de représenter un ensemble de documents en une liste de fréquences de pairs $(w, |w|)$, w était un mot dans le langage des documents concerné, pour chaque labels, nous allons construire un modèle de probabilité via la formule suivante:
+C'est la première référence que nous avons quand on cherche dans le registre du travail avec les chaînes textuelles.\\
+L'idée du réseau bayésiens naïf est de représenter un ensemble de documents en une liste de fréquences de pairs $(w, |w|)$, w était un mot dans le langage des documents concernés, pour chaque labels, nous allons construire un modèle de probabilité via la formule suivante:
 \formula{$P(X|Y=y)$}
-Pour classifier un document, nous allons utilisé la formule ci dessous et retirer le meilleur résultat en tant que prédiction:
+Pour classifier un document, nous allons utiliser la formule ci-dessous et retirer le meilleur résultat en tant que prédiction:
 \formula{$ pred = P(X|y) * P(y)$}
 
-D'après le module \textit{Scikit-Learn}, la variante Multinomial se démarque des autres variantes pour des raison de fonctionnement, la où les autres variantes demandent des cardinaux des mots, le multinomial fonctionne avec l'algorithme nommé \textit{TF-IDF}, cette algorithme sera introduit sous peu.\linebreak
+D'après le module \textit{Scikit-Learn}, la variante Multinomial se démarque des autres variantes pour des raisons de fonctionnement, la où les autres variantes demandent des cardinaux des mots, le multinomial fonctionne avec l'algorithme nommé \textit{TF-IDF}, cette algorithme sera introduit sous peu.\linebreak
 \linebreak
-Prenons ses deux corpus suivant, extrait de wikipedia. (le label de chaque corpus est représenté par un mot en gras):\\
+Prenons ses deux corpus suivants, extrait de wikipedia. (le label de chaque corpus est représenté par un mot en gras):\\
 \begin{description}
-\item[Pomme]: La pomme est un fruit comestible à pépins d'un goût sucré et acidulé et à la propriété plus ou moins astringente, selon les variétés. D'un point de vue botanique, il s'agit d'un faux-fruit. Elle est produite par les pommiers.
+\item[Pomme]: La pomme est un fruit comestible à pépins d'un goût sucré et acidulé et à la propriété la plus ou moins astringente, selon les variétés. D'un point de vue botanique, il s'agit d'un faux-fruit. Elle est produite par les pommiers.
 \item[Automobile]: Le terme populaire automobile désigne un véhicule à roues mû par un moteur et destiné au transport terrestre de personnes et de biens.
 \end{description}
 
 \pagebreak
 
-La procédure d'apprentissage par Multinomial demande deux traitement sur la donnée, la première est nommé $Tokenization$ et la seconde $Frequencies$:\\
+La procédure d'apprentissage par Multinomial demande deux traitements sur la donnée, la première est nommée $Tokenization$ et la seconde $Frequencies$:\\
 \begin{description}
-\item[$Tokenization$]: Pour une chaine textuelle, nous allons supprimer tout les mots dit $stopwords$ comme $'le','la','ces',...$ des mots qui n'ont aucun impacte sur le sens général du texte, si on applique à $\textbf{Automobile}$ ceci donnerai: 
+\item[$Tokenization$]: Pour une chaine textuelle, nous allons supprimer tous les mots $stopwords$ comme $'le','la','ces',...$ des mots qui n'ont aucun impacte sur le sens général du texte, si on applique à $\textbf{Automobile}$ ceci donnerai: 
 \begin{description}
 \item[] terme populaire automobile désigne véhicule roues moteur destiné transport terrestre personnes.
 \end{description}
 
-\item[$Frequencies$]: Pour chaque mots présent dans le texte courant, nous allons lui associer un un dans son vecteur, la valeur vide étant zero. Pour que le tableau ne soit pas très large, nous allons prendre ses deux textes suivant: 
+\item[$Frequencies$]: Pour tous les mots présent dans le texte courant, nous allons lui associer un dans son vecteur, la valeur vide étant zero. Pour que le tableau ne soit pas très large, nous allons prendre ces deux textes suivant: 
 \begin{description}
 \item[1:] gare train gauche gauche magasin
 \item[2:] chaussures rangé haut magasin
@@ -58,13 +58,13 @@ Pour avoir une implémentation complète venant de $scikit-learn$, la $tokenizat
 \pagebreak
 
 \section{Conditional Random Field}
-Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple encodage des variables mais à de l'extraction de sous chaînes, mais prend aussi en compte les variables voisines, pour correctement illustrer, prenons trois mots d'une phrase, comme $"pour$ $correctement$ $illustrer"$, et prenons le mot $"correctement"$, ce mot sera inséré dans une structure de données ayant comme champs:
+Un autre modèle statistique, mais qui cette fois ne s'arrête pas à un simple encodage des variables, mais à de l'extraction de sous chaînes, mais prend aussi en compte les variables voisines, pour correctement illustrer, prenons trois mots d'une phrase, comme $"pour$ $correctement$ $illustrer"$, et prenons le mot $"correctement"$, ce mot sera inséré dans une structure de données ayant comme champs:
 \begin{description}
 \item[lower]: le mot en minuscule (donc $"correctement"$)
 \item[digit]: un boolean disant si le mot est un nombre ou pas
-\item[title]: si ce mot est un titre (sous la forme capitalisé)
-\item[trois champs -1]: qui lui contient les trois champs du dessus mais avec le mot $n-1$ 
-\item[trois champs +1]: qui lui contient les trois champs du dessus mais avec le mot $n+1$ 
+\item[title]: si ce mot est un titre (sous la forme capitalisée)
+\item[trois champs -1]: qui lui contient les trois champs du dessus, mais avec le mot $n-1$ 
+\item[trois champs +1]: qui lui contient les trois champs du dessus, mais avec le mot $n+1$ 
 \end{description}
 
 Ce modèle largement utilisé lorsque qu'on veut traiter le langage naturel donne d'assez bon résultats.\\
@@ -90,13 +90,13 @@ Paris & 49 & 54 & Localisation\\
 En important un modèle personnalisé notre NER pourrait avoir d'autres utilités, comme par exemple,  nous voulons que notre bot sache répondre dès qu'il  a compris le problème, nous utilisons un NER personnalisé avec une cinquantaine d'exemples afin que notre modèle sache répondre correctement, il bot sait extraire le sujet d'une phrase, par exemple:
 
 \begin{description}
-\item[Client]: Depuis 5 jours le tuyau de mon évier de salle de bain fuit à grosse goutte
+\item[Client]: Depuis cinq jours le tuyau de mon évier de salle de bain fuit à grosse goutte
 \item[Bot]: tuyau de mon évier de salle de bain fuit
 \end{description}
 
 \pagebreak
 \section{Long Short Terme memory}
-Commençons les gros algorithmes avec le LSTM, il fait partie de la famille des \textit{Recurrent Neural Network (RNN)}. Les réseaux de neurones récurrents peut être vu comme des combinaisons de circuits imprimés (comme des nos ordinateurs) relié ensemble par des petits ponts de transferts de données. 
+Commençons les gros algorithmes avec le LSTM, il fait partie de la famille des \textit{Recurrent Neural Network (RNN)}. Les réseaux de neurones récurrents peut être vu comme des combinaisons de circuits imprimés (comme des nos ordinateurs) relié ensemble par de petits ponts de transferts de données. 
 Un circuit est représenté par cette illustration suivante:
 
 \includegraphics[scale=0.4]{img/lstm.jpg} 
@@ -143,40 +143,40 @@ a & 6\\
 \end{tabular}
 \end{multicols}
 
-Le \textit{Seq2Seq} fait partit de la famille des réseaux neuronale, celui ci fonctionnant comme le \texttt{LSTM} donc ayant une couche d'encodage et de décodage.\linebreak
-Dans les travaux théorique, cette algorithme peut aussi servir à raccourcir un texte plutôt long comme une histoire, en un résumé sans trop perdre le sens de l'histoire.\linebreak
+Le \textit{Seq2Seq} fait partie de la famille des réseaux neuronales, celui-ci fonctionnant comme le \texttt{LSTM} donc ayant une couche d'encodage et de décodage.\linebreak
+Dans les travaux théoriques, cet algorithme peut aussi servir à raccourcir les longs textes comme des histoires, en un résumé sans trop perdre le sens de celle-ci.\linebreak
 D'autres travaux, plus dans l'ordre de la recherche a permis le fait que \textit{Seq2Seq} pourrait probablement servir comme traducteur \textit{Text To Speech}.
 
 \pagebreak
 
-Pour résumer, les réseaux naïves sont des algorithmes qui pour des entrées de types chaînes textuelles retourne une catégorie, Seq2Seq et LSTM sont des algorithmes de générations de chaînes textuelles, CRF est utilisé pour la prédiction de mots selon une chaînes de mots passé en entrée puis NER va extraire des motifs depuis une chaîne textuelle et lui attribuer une étiquette.\\
+Pour résumer, les réseaux naïves sont des algorithmes qui pour des entrées de types chaînes textuelles retourne une catégorie, Seq2Seq et LSTM sont des algorithmes de générations de chaînes textuel, CRF est utilisé pour la prédiction de mots, selon une chaînes de mots passé en entrée puis NER va extraire des motifs depuis une chaîne textuel et lui attribuer une étiquette.\\
 \linebreak
 Ces cinq algorithmes seront utilisés dans les futures api utilisées lors de l'élaboration du chatbot.\\
 \pagebreak
 
 \chapter{Rasa le chatbot}
 
-Dans ce chapitre nous allons aborder la moteur même du chatbot, l'api RASA qui met à disposition un bot vierge configurable et bien réalisé. \linebreak
-En description général, RASA se décompose en deux parties, l'unité NLU et l'unité CORE, l'unité NLU peut être utilisé sans l'unité CORE, mais le CORE a besoin du NLU pour fonctionner (Ces deux termes seront expliqué plus bas).
-La mise en place de cette brique est crucial, car c'est cette api qui devra répondre au mieux au attentes du client.
+Dans ce chapitre nous allons aborder le moteur même du chatbot, l'api RASA qui met à disposition un bot vierge configurable et bien réalisé. \linebreak
+En description générale, RASA se décompose en deux parties, l'unité NLU et l'unité CORE, l'unité NLU peut être utilisé sans unité CORE, mais le CORE a besoin du NLU pour fonctionner (Ces deux termes seront expliqué plus bas).
+La mise en place de cette brique est cruciale, car c'est cette api qui devra répondre au mieux au attentes du client.
 
 \pagebreak
 \section{le NLU}
-NLU où \textit{Natural Language understanding} est la brique de compréhension du langage naturel, cette brique fonctionne sous une pipeline. Une pipeline est un enchainement de composants qui va traiter la donnée textuelle qui a été envoyée depuis l'utilisateur du bot.\\
+NLU où \textit{Natural Language understanding} est la brique de compréhension du langage naturel, cette brique fonctionne sous une pipeline. Une pipeline est un enchainement de composants qui va traiter la donnée textuelle qui a été reçu de l'utilisateur.\\
 \ \linebreak
 Je vais énumérer toutes les composants que j'ai utilités afin de réaliser la pipeline:
 \begin{description}
 \item[WhitespaceTokenizer]: Dans un premier temps, notre texte doit être formaté en une liste de mot, une liste de mot sans caractères spéciaux ni url.
-\item[CRFEntityExtractor]: Ajouter aux explications sur le CRF, le \textit{CRFEntityExtractor} en ai une dérivée à la différence que le CRFEE va nous générer un modèle donnant une liste de mot intéressant. La liste des mots intéressants sont créer lors du processus d'apprentissage du NLU, qui pour une série de phrases et une série d'index de sous phrases dit intéressant.
+\item[CRFEntityExtractor]: Ajouter aux explications sur le CRF, le \textit{CRFEntityExtractor} en ai une dérivée à la différence que le CRFEE va nous générer un modèle donnant une liste de mot intéressant. La liste des mots intéressants sont crée lors du processus d'apprentissage du NLU, qui pour une série de phrases et une série d'index de sous phrases dit intéressant.
 \item[EntitySynonymMapper]: Le corpus de mot généré via le CRFEE peut être factorisé en moins d'entrées, c'est le travail de ce composant.
-\item[CountVectorsFeaturizer]: le \textit{CountVector} va comme indiquée plus haut dans la section parlant des réseaux bayésiens naïf, va représenter une chaîne textuelle en un vecteur d'entiers.
+\item[CountVectorsFeaturizer]: le \textit{CountVector} va comme indiqué plus haut dans la section parlant des réseaux bayésiens naïf, va représenter une chaîne textuelle en un vecteur d'entiers.
 \item[EmbeddingIntentClassifier]: ce processus fait appel à l'apprentissage supervisé, pour une série de catégories déterminé par le fichier \textit{nlu.md} (qui sera présenté plus bas) et un vecteur précédaient crée par \textit{CountVector}.
 \end{description}
 
 \pagebreak
 
-Un exemple serait mieux histoire d'illustrer ces cinq composants, leurs effets sur les entrées et les structures de données demandé.\\
-La structure de données pour l'apprentissage sont représenté au format \textit{Markdown}, tous les étiquettes sont représenté par des titres de niveau 1 et tous les entrées sont représenté par une liste à puce.\\
+Un exemple serait mieux histoire d'illustrer ces cinq composants, leurs effets sur les entrées et les structures de données demandés.\\
+La structure de données pour l'apprentissage sont représentés au format \textit{Markdown}, toutes les étiquettes sont représentés par des titres de niveau 1, et tous les entrées sont représentés par une liste à puce.\\
 
 \begin{lstlisting}
 #intent:ClassA
@@ -189,7 +189,7 @@ La structure de données pour l'apprentissage sont représenté au format \texti
 - Input5
 \end{lstlisting}
 
-Ceci représente la structure de base utilisée pour la pipeline, les \textit{InputX} sonr tout les textes d'entrées, ils peuvent être de type entier, chaine de caractères, des phrases, les \textit{ClassX} représente l'étiquette du groupe d'entrée.\\
+Ceci représente la structure de base utilisée pour la pipeline, les \textit{InputX} sont tous les textes d'entrées, ils peuvent être de type entier, chaine de caractères, des phrases, les \textit{ClassX} représente l'étiquette du groupe d'entrée.\\
 Prenons, deux étiquettes pour deux phrases à classifier:\\
 
 \begin{lstlisting}
@@ -201,7 +201,7 @@ Prenons, deux étiquettes pour deux phrases à classifier:\\
 \end{lstlisting}
 
 \subsubsection{WhitespaceTokenizer}
-Pour chaque mots, nous allons lui associer une structure stockant, la position de la première et de la dernière lettre. 
+Pour tout les mots, nous allons lui associer une structure stockant, la position de la première et de la dernière lettre. 
 
 \begin{description}
 \item[Input:] Ce pommier va bientot nous donner de belles pommes.\\
@@ -222,17 +222,17 @@ Le champ $prefixX$ est représenté par les $X$ premières lettres d'un mot, le 
 '1:title': False, '1:upper': False\}$
 \end{description}
 \ \\
-L'algorithme utilisé pour le \textit{CRFEE} est la chaîne de Markov où chaque arrêtes est étiqueté par un mot et les nœuds par des étiquettes, les autres paramètres vu plus haut donnent des probabilités d'appartenance sur certaines étiquette.
+L'algorithme utilisé pour le \textit{CRFEE} est la chaîne de Markov où chaque arrêtes est étiqueté par un mot et les nœuds par des étiquettes, les autres paramètres vu plus haut donnent des probabilités d'appartenance sur certaines étiquettes.
 
 \subsubsection{EntitySynonymMapper}
-Fondamentalement pour la classification de textes, cette brique n'est pas utile, mais elle sera utilisé plus tard lors de la section sur les Slots.
+Fondamentalement pour la classification de textes, cette brique n'est pas utile, mais elle sera utilisée plus tard lors de la section sur les Slots.
 
 \subsubsection{CountVectorsFeaturizer}
-Comme précisé au dessus dans la section \textit{CountVectorsFeaturizer}, notre phrase se retrouve convertit en un très grand vecteur de bit.
+Précisé au-dessus dans la section \textit{CountVectorsFeaturizer}, notre phrase se retrouve convertit en un très grand vecteur de bit.
 
 \subsubsection{EmbeddingIntentClassifier}
-Cette algorithme va classifier notre phrase précédemment vectorisé, la base de cette algorithme est \textit{StarSpace} qui d'après l'université Cornell à New York peut résoudre tout les problèmes de classification de textes.\linebreak
-Grâce à cette algorithme, nous nous retrouvons avec la liste des probabilités associé à chaque étiquettes:
+Cet algorithme va classifier notre phrase précédemment vectorisé, la base de cet algorithme est \textit{StarSpace} qui d'après l'université Cornell à New York peut résoudre tout les problèmes de classification de textes.\linebreak
+Grâce à cet algorithme, nous nous retrouvons avec la liste des probabilités associées à chaque étiquettes:
 
 \begin{lstlisting}
 {'name':'Voiture', 'confidence': '0.10'}
@@ -252,7 +252,7 @@ Reprenons notre fichier \textit{Markdown}, à nos entrées, nous pouvons introdu
 - Ce [pommier](alimentaire) va bientot nous donner de belles [pommes](alimentaire).
 \end{lstlisting}
 \ \linebreak
-Lors de la phase de classification (\textit{EntitySynonymMapper}) c'est au tour du NER d'extraire ces termes et ainsi automatiquement stocker des informations ciblé sur des axes clef de la conversation dans le cœur du chatbot. Plusieurs variables peuvent êtres utilisé dans une phrase:
+Lors de la phase de classification (\textit{EntitySynonymMapper}) c'est au tour du NER d'extraire ces termes et ainsi automatiquement stocker des informations ciblé sur des axes clef de la conversation dans le cœur du chatbot. Plusieurs variables peuvent être utilisé dans une phrase:
 
 \ \linebreak
 \begin{lstlisting}
@@ -267,23 +267,23 @@ Ce qui donne après exécution de \textit{EntitySynonymMapper}, une liste de mot
 \end{lstlisting}
 \ \linebreak 
 
-La validation des slots peut se faire dans les \textbf{Actions} (qui seront expliqué dans la section Actions), ce-ci permet de contrôler les affectations dans les slots, par exemple si on veut une identifiant numérique, alors nous pouvons faire une condition sur le slot en question et lui dire ne de pas accepter la valeur si elle n'est pas numérique. Dans un autre sens on peut ré affecter la valeur comme par exemple dans notre cas, utiliser la phrase pour faire une prédiction puis insérer la prédiction à la place de la phrase initial.
+La validation des slots peut se faire dans les \textbf{Actions} (qui seront expliqués dans la section Actions), ce-ci permet de contrôler les affectations dans les slots, par exemple si on veut une identifiant numérique, alors nous pouvons faire une condition sur le slot en question et lui dire de ne  pas accepter la valeur si elle n'est pas numérique. Dans un autre sens on peut ré affecter la valeur comme par exemple dans notre cas, utiliser la phrase pour faire une prédiction puis insérer la prédiction à la place de la phrase initiale.
 
 \chapter{Le Core}
 
-Comme indiqué plus haut, le chatbot se décompose en deux grande brique, l'une étant le \textit{NLU} et l'autre le \textit{Core}. Le core est le cœur de chatbot, c'est cette partie qui s'occupera de réfléchir à la réponse qu'il faudra donner à l'utilisateur, c'est aussi là où le concept de \textit{Slots} sera utilisé, le Concept \textit{D'actions}, les \textit{stories}, \textit{domaine} puis les \textit{formulaires}.\\
+Comme indiquée plus haut, le chatbot se décompose en deux grande brique, l'une étant le \textit{NLU} et l'autre le \textit{Core}. Le core est le cœur de chatbot, c'est cette partie qui s'occupera de réfléchir à la réponse qu'il faudra donner à l'utilisateur, c'est aussi là où le concept de \textit{Slots} sera utilisé, le Concept \textit{D'actions}, les \textit{stories}, \textit{domaine} puis les \textit{formulaires}.\\
 \pagebreak
 
 \section{Le Domaine et les stories}
-Si le fichier \textit{nlu.md} est l'entrée de l'algorithme, alors le fichier \textit{domains.yml} en ai la sortie, ce fichier répertorie toutes:
+Si le fichier \textit{nlu.md} est l'entrée de l'algorithme, alors le fichier \textit{domains.yml} en ait la sortie, ce fichier répertorie toutes:
 
 \begin{description}
-\item[-] les slots utilisé
-\item[-] les intents utilisé
+\item[-] les slots utilisés
+\item[-] les intents utilisés
 \item[-] des réponses près définit 
 \end{description}
 
-Les réponses près définit sont des phrase que le bot va envoyer à l'utilisateur lorsque le nom associé à la phrase près définit est déclenché soit via la \textit{Storie} ou soit via les \textit{Actions}, (les \textit{$utter\_$} et \textit{$utter\_ask\_$} sont des conventions:
+Les réponses près définit sont des phrase que le bot va envoyer à l'utilisateur lorsque le nom associé à la phrases près définit est déclenché soit via la \textit{Storie} ou soit via les \textit{Actions}, (les \textit{$utter\_$} et \textit{$utter\_ask\_$} sont des conventions:
 
 \begin{lstlisting}
 templates:
@@ -298,7 +298,7 @@ templates:
 \end{lstlisting}
 \ \linebreak
 Les \textit{$utter\_$} décrit la phrase comme étant une réponse alors que les \textit{$utter\_ask\_$} décrivent plutôt une question.
-Les stories font le lien entre le fichier \textit{nlu.md} et le fichier \textit{domains.yml}, celui-ci, au format \textit{Markdown} donne une ligne directeur concernant la conversation, par exemple pour notre marchant de glace il ressemblerai à:
+Les stories font le lien entre le fichier \textit{nlu.md} et le fichier \textit{domains.yml}, celui-ci, au format \textit{Markdown} donne une ligne directeur concernant la conversation, par exemple pour notre marchant de glace il ressemblerait à:
 
 \begin{lstlisting}
 ## story_je_veux_une_glace
@@ -316,7 +316,7 @@ Les stories font le lien entre le fichier \textit{nlu.md} et le fichier \textit{
  - utter_non
 \end{lstlisting}
 
-Deux scénarios sont possible, soit vous dites $Oui$ à la glace soit $Non$, mais ce qui est sûr c'est que vous devez dire bonjour et que le vendeur doit vous demander si vous voulez une glace.
+Deux scénarios sont possibles, soit vous dites $Oui$ à la glace soit $Non$, mais ce qui est sûr c'est que vous devez dire bonjour et que le vendeur doit vous demander si vous voulez une glace.
 Le changement de \textit{story} se fait via deux facteurs qui sont l' \textit{EmbeddingIntentClassifier} et les \textit{Slots}.
 
 \section{Les Actions et les Formulaires}
@@ -352,78 +352,5 @@ templates:
  - text: "Nous vous conseillons la {glace_du_moment}"
 \end{lstlisting}
 
-Avec ce processus nous pouvons exécuter une tache externe comme appeler des algorithmes d'apprentissage sur les données de l'utilisateur.\linebreak
-Les formulaires sont un moyen d'automatiser le remplissage des slots, tout les slots qui seront inséré dans un formulaire seront obligatoirement à remplir. Le Core va avec les slots présent dans sa base va générer une liste de slot à remplir, tant que cette liste n'est pas vide, le chatbot va poser des questions afin que l'utilisateur puise donner des informations requit.
-
-\chapter{l'api de prédiction}
-La brique du chatbot étant fini, reste la partie Machine Learning, j'ai décidé de séparer le chatbot des programmes d'intelligence artificiel et de placer tout les programmes dans une API qui est obtenable via requêtes \textit{REST}, ainsi, l'implémentation du projet se fait beaucoup plus facilement, d'un coté tout les programmes de prédictions et de l'autre le chatbot.\\
-Les requêtes à l'api de Machine Learning se fait dans les Actions du chatbot.\\
-\linebreak
-Pour aboutir à un chatbot qui répond plutôt bien au attente des utilisateurs, nous devons d'extraire la nature du problème ($nature\_probleme$) les équipements concerné (comme les murs, fenêtres, grillage) ($equipement$) et les demandes techniques (une réclamation, renseignement, incident) ($demande\_technique$).
-
-\pagebreak
-\section{Les ontologies}
-Une ontologie est un ensemble de concepts qui donne un sens à un groupe de mots, dans le chapitre précédant lors de l'introduction des slots, il y a eu une petite notion d'ontologie, dans le fait que pour une phrase on extrait des mots pour les associer à des slots.\\
-Mais l'implémentation de la déduction des variables demandé ($nature\_probleme$, $equipement$ et $demande\_technique$) est plus complexe. Pour un corpus de mot construit à partir de 8 Gigabit de données clients et de quelques programmes d'automatisation de l'extraction et d'analyse fait nous même, nous avons pus construire les corpus comme suit:
-
-\begin{lstlisting}
-Mots_Clef_Demande_technique.csv
-
-Clef,Synonyme
-adaptation,"adaptation,adaptations,adapter,adapte,ajustement,ajustements,ajuster,..."
-effraction,"effraction,pillage,piller,pille,vol ,voller,voleur,vol avec effraction, ..."
-epave,"epave,epave,epaves,delabre,delabrer,ruine,debris, ..."
-deratisation,"deratisation,deratisation,presence de rat,des rats"
-...
-\end{lstlisting}
-
-Pour chaque mots dans les synonymes, on lui associe sa clef, ce qui donne par un exemple:
-\begin{lstlisting}
-str = "Il y a une epave de voiture qui est devant une maison abandonne depuis longtemps, ce matin des rats sont venue m'attaquer."
-print(ontologies(demande_technique, str)
-> ["epave", "deratisation"]
-\end{lstlisting}
-
-Nous avons résumé en ontologie la phrase donné pour en obtenir un série de mot clefs, ainsi coupler avec un algorithme d'apprentissage travaillant sur les chaînes de caractères, comme un réseau bayésiens naïf nous obtenons le type de $demande\_technique$ associé à la phrase posé ci dessus:
-
-\begin{lstlisting}
-Demande_technique_train.csv
-
-Class,Input
-adaptation,"[adaptation]"
-amenagement,"[voirie]"
-maintenance,"[maintenance,reclamation]"
-incident,"[degradation,garantie]"
-reclamation,"[change,degradation,reclamation]"
-occupation_vide,"[epave]"
-\end{lstlisting}
-
-Nous comptons respectivement pour les trois ontologies ($nature\_probleme$, $equipement$ et $demande\_technique$), au moins deux cent synonymes pour respectivement 30, 52 et 23 clefs pour les fichiers des mots clefs, et respectivement 975, 1242 et 156 lignes d'apprentissage pour l'algorithme de réseau bayésiens naïf.\\
-A l'aide d'un de nos programme, nous avons pu faire un estimateur sur le pouvoir de notre ontologie, nous avons semi automatisé la classification des 8 Gigabit de transcripts et nous avons appelé l'entièreté des phrases utilises (donc des phrases autre que "oui","bonjour", "au revoir"...) sur notre api, les résultats pour $demande\_technique$ ne sont pas mauvais
-
-\begin{lstlisting}
-comportement_invervenant: OK:    0 | NOK:    0 | TOTAL:    0 | RATIO:0.00000
-                        securiter: OK:    1 | NOK:    1 | TOTAL:    2 | RATIO:0.50000
-                  contestation: OK:  127 | NOK:   85 | TOTAL:  212 | RATIO:0.59906
-                amenagement: OK:  373 | NOK:  154 | TOTAL:  527 | RATIO:0.70778
-                    abandonne: OK:   68 | NOK:   27 | TOTAL:   95 | RATIO:0.71579
-                 maintenance: OK:  130 | NOK:   42 | TOTAL:  172 | RATIO:0.75581
-                  reclamation: OK: 2126 | NOK:  678 | TOTAL: 2804 | RATIO:0.75820
-                     adaptation: OK:   70 | NOK:   12 | TOTAL:   82 | RATIO:0.85366
-             eclairage_collectif: OK:   51 | NOK:    8 | TOTAL:   59 | RATIO:0.86441
-                            epave: OK:   14 | NOK:    2 | TOTAL:   16 | RATIO:0.87500
-                       effraction: OK:   27 | NOK:    3 | TOTAL:   30 | RATIO:0.90000
-                           voirie: OK:  411 | NOK:   35 | TOTAL:  446 | RATIO:0.92152
-                   intervention: OK:  743 | NOK:   55 | TOTAL:  798 | RATIO:0.93108
-                    degradation: OK:  282 | NOK:    8 | TOTAL:  290 | RATIO:0.97241
-                    information: OK: 4999 | NOK:  107 | TOTAL: 5106 | RATIO:0.97904
-                          change: OK:  691 | NOK:   10 | TOTAL:  701 | RATIO:0.98573
-                        garantie: OK:  530 | NOK:    7 | TOTAL:  537 | RATIO:0.98696
-                        incident: OK:  403 | NOK:    3 | TOTAL:  406 | RATIO:0.99261
-                deinsectisation: OK:    1 | NOK:    0 | TOTAL:    1 | RATIO:1.00000
-                     non_resolu: OK:    2 | NOK:    0 | TOTAL:    2 | RATIO:1.00000
-                   amelioration: OK:   21 | NOK:    0 | TOTAL:   21 | RATIO:1.00000
-                            squat: OK:    5 | NOK:    0 | TOTAL:    5 | RATIO:1.00000
-                   deratisation: OK:   16 | NOK:    0 | TOTAL:   16 | RATIO:1.00000
-\end{lstlisting}
-
+Avec ce processus nous pouvons exécuter une tâche externe comme appeler des algorithmes d'apprentissage sur les données de l'utilisateur.\linebreak
+Les formulaires sont un moyen d'automatiser le remplissage des slots, tous les slots qui seront insérés dans un formulaire seront obligatoirement à remplir. Le Core va avec les slots présents dans sa base va générer une liste de slot à remplir, tant que cette liste n'est pas vide, le chatbot va poser des questions afin que l'utilisateur puise donner des informations requit.

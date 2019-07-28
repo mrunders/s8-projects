@@ -1,0 +1,19 @@
+
+\chapter{Fonctionnement de l'application}
+Toutes les pièces du puzzle ont été introduit, il ne manque plus qu'a les assembler pour construire le chatbot. Comme expliqué ci-dessus, les algorithmes de prédictions seront tous dans l'api via le protocole REST, le chatbot sera équipé d'une brique NLU et CORE, un formulaire d'action qui va s'occuper de remplir les slots et appeler l'api de prédiction.\linebreak
+Dans ce chapitre nous allons voir le bot en action.
+\pagebreak
+
+Voici une interaction avec le chatbot:
+
+\begin{description}
+\item[user]: bonjour
+\item[bot]: Bonjour je suis marie, quelle est votre soucie
+\item[user]: voilà je vous appel car ma chaudière est en panne
+\item[bot]: Parler moi plus en détail de votre chaudière qui est en panne, si vous en avait
+\item[user]: elle ne fonctionne plus quand je l'allume
+\item[bot]: Je vais faire monter l'information au service concerné qui vous rappellera
+\item[bot]: au revoir.	
+\end{description}
+
+Le chatbot possède aussi un port serveur, les appelles se font via le protocole REST entièrement en \textit{POST}.
