@@ -8,6 +8,7 @@
 \usepackage{pstricks}
 \usepackage{enumitem}
 \usepackage{multicol}
+\usepackage[paper=a4paper,margin=1in]{geometry}
 \usepackage{verbatim}
 \usepackage{listings}
 \usepackage{tikz}
@@ -184,28 +185,51 @@
 \date{Master 2 informatique 2018}
 
 \begin{document}
-
+\newgeometry{top=0.6in,bottom=1in,right=0.4in,left=0.4in}
 \begin{titlepage}
+
+\begin{multicols}{2}
+\begin{flushleft}
+    \includegraphics[width=4cm]{img/entreprise.jpg}
+\end{flushleft}
+\begin{flushright}
+    \includegraphics[width=4cm]{img/artois.eps}
+\end{flushright}
+\end{multicols}
+
 \begin{center}
-       \vspace*{1cm}
  
+	   \sepline
+       \vspace{3cm}
        \scalebox{2.5}{\textbf{Rapport de stage}}
  
-       \vspace{0.5cm}
-       \scalebox{2}{Master 2 IA}
- 
+       \vspace{3cm}
+       \scalebox{2}{Master Informatique de l’Université d’Artois}
+	   \scalebox{1.5}{Parcours Intelligence Artificielle}
+	   
+	   \vspace{1.5cm}
+	   par 
        \vspace{1.5cm}
  
        \textbf{LAURENT Thomas}
  
        \vfill
  
-       \vspace{0.8cm}
+       \vspace{0.6cm}
  
-       Années: 2018 - 2019
+       Du 1 Avril au 31 Septembre\\
+       Année: 2019
+       
+       \vspace{0.8cm}
+       
+       \textbf{Encadrant en entreprise: DM\\}
+       \textbf{Encadrant pédagogique: SB\\}
+       \textbf{Établissement d’accueil: $\_$\\}
  
    \end{center}
 \end{titlepage}
+\newgeometry{top=1.3in,bottom=1.3in,right=1in,left=1in}
+
 \pagebreak
 \pagebreak
 \pagebreak
@@ -219,6 +243,7 @@
 \input{chatbot}
 \input{restia}
 \input{assemblage}
+\input{ref}
 
 \pagebreak
 \end{document}
