@@ -1,13 +1,13 @@
 \chapter{Le Machine Learning}
 
-Dans le cadre du rapport de stage, je vais me focaliser sur l'approche \textit{représentation et raisonnement}.\\
+Dans le cadre du rapport de stage, je vais me focaliser sur l'approche \textit{'représentation et raisonnement'}.\\
 \linebreak
 Un \textit{Dataset} est un tableau représentant pour chaque colonne une donnée et pour chaque ligne un \textit{sample}, les samples sont composés d'une et d'une seule valeur par colonne, cette valeur peut être n'importe quoi (chaine de caractère, tableau, entier, boolean, ...). Un des formats les plus utilisés pour illustrer la table est le format \textit{csv}, \textit{SQL} ou \textit{excel}.\\
 \pagebreak
 
 \section{Les premiers pas}
 
-Dans les années 1950, on ne parlait pas encore du \textit{Machine Learning} que l'on n'a maintenant, on parlait de méthode de généralisation d'un modèle.\\
+Dans les années 1950, on ne parlait pas encore du \textit{Machine Learning} que l'on a maintenant, on parlait de méthode de généralisation d'un modèle.\\
 Imaginons que vous vouliez prédire un résultat de type boolean à partir de données que vous avez enregistré.
 
 \begin{center}
@@ -64,13 +64,13 @@ Ci dessus, deux modèles du machine learning, le Gradient est un modèle dit \te
 
 \section{Algorithmes d'apprentissage}
 
-De nos jours il existe une tonne d'algorithme d'apprentissage, tout ont plus ou moins leurs utilités, avantage, faiblesse, d'où le fait que pour le data scientiste doit essayer un peu tous les algorithmes et de juger de leur efficacité via les résultats données. Bien-sûr si un Gradient suffit pourquoi vouloir utiliser un réseau de neurones.\\
+De nos jours il existe une tonne d'algorithme d'apprentissage, tous ont plus ou moins leurs utilités, avantage, faiblesse, d'où le fait que le data scientiste doit essayer un peu tous les algorithmes et de juger de leur efficacité via les résultats données. Bien-sûr si un Gradient suffit pourquoi vouloir utiliser un réseau de neurones.\\
 En voici une liste non exhaustive utilisé lors du stage à des fins de teste (via la librairie sci-kit-learn de python):
 
 \begin{description}
 \item[Support Vector Machine]: Le support vector machines cherche un hyperplan (de couleur noir) pouvant départager des classes,
 Il en existe une infinité d'hyperplan qui peuvent les départager, donc introduisons un autre concept, celui de 
-l'hyperplan qui maximise la séparation entre les deux classes (les droites $\corange{Oranges}$ appelé $Margin$.\\
+l'hyperplan qui maximise la séparation entre les deux classes (les droites $\corange{Oranges}$ appelé $Margin$).\\
 \cshape{0.5}{
 \begin{tikzpicture}
   \begin{axis} [
@@ -87,7 +87,7 @@ l'hyperplan qui maximise la séparation entre les deux classes (les droites $\co
 \end{tikzpicture}
 }
 
-\item[Decision Tree]: Un arbre de décision est une suite de nœuds relié par au moins une arrête, on emprunte une arrête par rapport à la décision qui est à prendre via le nœuds courant. L'ordre des nœuds est choisis selon des critères (les trois les plus utilisé sont \textit{Entropy}, \textit{Information grain} et \textit{Gini}), ces trois critères de sélection appliqué au même dataset peut donner un arbre diffèrent. Une feuille d'arbre est un nœuds n'ayant aucun fils, les étiquettes des prédictions s'y trouve.
+\item[Decision Tree]: Un arbre de décision est une suite de nœuds relié par au moins une arrête, on emprunte une arrête par rapport à la décision qui est à prendre via le nœuds courant. L'ordre des nœuds est choisis selon des critères (les trois les plus utilisé sont \textit{Entropy}, \textit{Information grain} et \textit{Gini}), ces trois critères de sélection appliqué au même dataset peut donner un arbre diffèrent. Une feuille d'arbre est un nœud n'ayant aucun fils, les étiquettes des prédictions s'y trouve.
 \cshape{0.5}{
 \begin{tikzpicture}[sibling distance=8em,
   every node/.style = {scale=1,
@@ -109,18 +109,18 @@ l'hyperplan qui maximise la séparation entre les deux classes (les droites $\co
 
 \pagebreak
 Traiter les samples de type numérique donne beaucoup de possibilités de traiter un problème.\\
-L'évolution a fait que de plus de données sont de type textuel, pour des dates et durées, le problème reste simple à résoudre, pour une suite de mots fini, il suffit de les énumérer, mais pour les données du langage naturel?\\
+L'évolution a fait que de plus en plus de données sont de type textuel, pour des dates et durées, le problème reste simple à résoudre, pour une suite de mots fini, il suffit de les énumérer. Mais pour les données du langage naturel?\\
 \linebreak
 
 \section{Langage naturel}
 
-Un texte peut être long ou court, contenant des liens, des caractères spéciaux, on ne peut pas utiliser lancer un algorithme comme ci dessus sur des textes et en espérer en tirer de bons résultats, plusieurs étapes sont nécessaires pour pouvoir utiliser des algorithmes qui travaillent avec des textes. 
+Un texte peut être long ou court, contenant des liens, des caractères spéciaux, on ne peut pas utiliser lancer un algorithme comme ci dessus sur des textes et en espérer en tirer de bon résultat, plusieurs étapes sont nécessaires pour pouvoir utiliser des algorithmes qui travaillent avec des textes. 
 
 \subsection{Génération de texte}
 La génération de texte peut être aléatoire ou provenant d'aucune source, mais ce n'est pas le sujet, restons proche des missions abordées en stage. Les deux méthodes de génération de texte ci dessous font appel à beaucoup d'algorithmes de machine learning pour créer un modèle d'interprétation des entrées.
 
 \begin{description}
-\item[Optical Caracteres Reconization]: Le but est de lire les caractères présents sur du support physique, des feuilles de papier, des photos. Après un traitement de l'image, l'algorithme lisant les entrées utilisent des méthodes de \textit{Deep Learning} pour reconnaitre qu'un motif et un caractère. Puis l'algorithme va faire des prédictions vua ce qu'il a apprit, il apprend via des samples représentant des représentations vectorielle des caractères. En pratique \textit{Open CV} et \textit{Sklearn ou tensorflow} sont utilisés.
+\item[Optical Caracteres Reconization]: Le but est de lire les caractères présents sur du support physique, des feuilles de papier, des photos. Après un traitement de l'image, l'algorithme lisant les entrées utilisent des méthodes de \textit{Deep Learning} pour reconnaitre qu'un motif et un caractère. Puis l'algorithme va faire des prédictions via ce qu'il a apprit, il apprend via des samples représentant des représentations vectorielle des caractères. En pratique \textit{Open CV} et \textit{Sklearn ou tensorflow} sont utilisés.
 
 \item[Speech To Text (STT)]: Dans le cadre du stage, nous avons utilisé un de ses algorithmes pour nourrir nos IA, le STT a besoin de beaucoup de données d'entrainement pour pouvoir modéliser le graph du langage souhaité, un sample d'entrainement et tout simplement une piste audio et son transcrit en format textuel, après de longues heures et le graphe généré, nous pouvons entrer de nouvelles pistes audios sans transcrit pour recevoir des prédictions.
 \end{description}

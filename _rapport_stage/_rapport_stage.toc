@@ -2,41 +2,44 @@
 \contentsline {chapter}{\numberline {2}Introduction G\IeC {\'e}n\IeC {\'e}rale}{4}
 \contentsline {section}{\numberline {2.1}L'approche symbolique}{6}
 \contentsline {section}{\numberline {2.2}L'approche connexionniste}{8}
-\contentsline {section}{\numberline {2.3}L'approche statistique}{10}
-\contentsline {section}{\numberline {2.4}L'approche d\IeC {\'e}cisionnel}{11}
-\contentsline {section}{\numberline {2.5}L'approche par satisfaction}{12}
-\contentsline {section}{\numberline {2.6}L'approche par repr\IeC {\'e}sentation et raisonnement}{13}
-\contentsline {chapter}{\numberline {3}Le Machine Learning}{14}
-\contentsline {section}{\numberline {3.1}Les premiers pas}{15}
-\contentsline {section}{\numberline {3.2}Algorithmes d'apprentissage}{16}
-\contentsline {section}{\numberline {3.3}Langage naturel}{17}
-\contentsline {subsection}{\numberline {3.3.1}G\IeC {\'e}n\IeC {\'e}ration de texte}{17}
-\contentsline {subsection}{\numberline {3.3.2}Nettoyage des donn\IeC {\'e}es}{18}
-\contentsline {section}{\numberline {3.4}D\IeC {\'e}tection d'anomalies}{20}
-\contentsline {chapter}{\numberline {4}Contexte du Stage}{23}
-\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation de l'entreprise}{24}
-\contentsline {section}{\numberline {4.2}Pr\IeC {\'e}sentation de la mission}{24}
-\contentsline {section}{\numberline {4.3}Cadre de travail}{25}
-\contentsline {section}{\numberline {4.4}Outils de travail}{25}
-\contentsline {part}{I\hspace {1em}Un chatbot}{26}
-\contentsline {chapter}{\numberline {5}Le langage naturel}{28}
-\contentsline {section}{\numberline {5.1}Les r\IeC {\'e}seaux bay\IeC {\'e}siens naif}{29}
-\contentsline {section}{\numberline {5.2}Conditional Random Field}{31}
-\contentsline {section}{\numberline {5.3}Named Entities Recognition}{32}
-\contentsline {section}{\numberline {5.4}Long Short Terme memory}{33}
-\contentsline {section}{\numberline {5.5}Sequence To Sequence}{35}
-\contentsline {chapter}{\numberline {6}Rasa le chatbot}{37}
-\contentsline {section}{\numberline {6.1}le NLU}{38}
-\contentsline {subsubsection}{WhitespaceTokenizer}{39}
-\contentsline {subsubsection}{CRFEntityExtractor}{40}
-\contentsline {subsubsection}{EntitySynonymMapper}{40}
-\contentsline {subsubsection}{CountVectorsFeaturizer}{40}
-\contentsline {subsubsection}{EmbeddingIntentClassifier}{40}
-\contentsline {section}{\numberline {6.2}Les slots}{41}
-\contentsline {chapter}{\numberline {7}Le Core}{42}
-\contentsline {section}{\numberline {7.1}Le Domaine et les stories}{43}
-\contentsline {section}{\numberline {7.2}Les Actions et les Formulaires}{44}
-\contentsline {chapter}{\numberline {8}l'api de pr\IeC {\'e}diction}{45}
-\contentsline {section}{\numberline {8.1}Les ontologies}{46}
-\contentsline {section}{\numberline {8.2}Les algorithmes annexes}{48}
-\contentsline {chapter}{\numberline {9}Fonctionnement de l'application}{49}
+\contentsline {section}{\numberline {2.3}L'approche statistique}{9}
+\contentsline {section}{\numberline {2.4}L'approche d\IeC {\'e}cisionnel}{10}
+\contentsline {section}{\numberline {2.5}L'approche par satisfaction}{11}
+\contentsline {section}{\numberline {2.6}L'approche par repr\IeC {\'e}sentation et raisonnement}{12}
+\contentsline {chapter}{\numberline {3}Le Machine Learning}{13}
+\contentsline {section}{\numberline {3.1}Les premiers pas}{14}
+\contentsline {section}{\numberline {3.2}Algorithmes d'apprentissage}{15}
+\contentsline {section}{\numberline {3.3}Langage naturel}{16}
+\contentsline {subsection}{\numberline {3.3.1}G\IeC {\'e}n\IeC {\'e}ration de texte}{16}
+\contentsline {subsection}{\numberline {3.3.2}Nettoyage des donn\IeC {\'e}es}{17}
+\contentsline {section}{\numberline {3.4}D\IeC {\'e}tection d'anomalies}{19}
+\contentsline {chapter}{\numberline {4}Contexte du Stage}{21}
+\contentsline {section}{\numberline {4.1}Pr\IeC {\'e}sentation de l'entreprise}{22}
+\contentsline {section}{\numberline {4.2}Pr\IeC {\'e}sentation de la mission}{22}
+\contentsline {section}{\numberline {4.3}Cadre de travail}{23}
+\contentsline {section}{\numberline {4.4}Outils de travail}{23}
+\contentsline {part}{I\hspace {1em}Un chatbot}{24}
+\contentsline {chapter}{\numberline {5}Le langage naturel}{26}
+\contentsline {section}{\numberline {5.1}Les r\IeC {\'e}seaux bay\IeC {\'e}siens naif}{27}
+\contentsline {section}{\numberline {5.2}Conditional Random Field}{29}
+\contentsline {section}{\numberline {5.3}Named Entities Recognition}{30}
+\contentsline {section}{\numberline {5.4}Long Short Terme memory}{31}
+\contentsline {section}{\numberline {5.5}Sequence To Sequence}{32}
+\contentsline {chapter}{\numberline {6}Rasa le chatbot}{34}
+\contentsline {section}{\numberline {6.1}le NLU}{35}
+\contentsline {subsubsection}{WhitespaceTokenizer}{36}
+\contentsline {subsubsection}{CRFEntityExtractor}{37}
+\contentsline {subsubsection}{EntitySynonymMapper}{37}
+\contentsline {subsubsection}{CountVectorsFeaturizer}{37}
+\contentsline {subsubsection}{EmbeddingIntentClassifier}{37}
+\contentsline {section}{\numberline {6.2}Les slots}{38}
+\contentsline {chapter}{\numberline {7}Le Core}{39}
+\contentsline {section}{\numberline {7.1}Le Domaine et les stories}{40}
+\contentsline {section}{\numberline {7.2}Les Actions et les Formulaires}{41}
+\contentsline {chapter}{\numberline {8}l'api de pr\IeC {\'e}diction}{42}
+\contentsline {section}{\numberline {8.1}Les ontologies}{43}
+\contentsline {section}{\numberline {8.2}Les algorithmes annexes}{45}
+\contentsline {chapter}{\numberline {9}Fonctionnement de l'application}{46}
+\contentsline {section}{\numberline {9.1}Impl\IeC {\'e}mentations futures}{47}
+\contentsline {chapter}{\numberline {10}Conclusion}{48}
+\contentsline {part}{II\hspace {1em}R\IeC {\'e}f\IeC {\'e}rences}{49}

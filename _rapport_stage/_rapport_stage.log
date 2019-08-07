@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  28 JUL 2019 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.9.27)  4 AUG 2019 11:39
 entering extended mode
 **./_rapport_stage.tex
 (_rapport_stage.tex
@@ -699,19 +699,46 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \colbreak@box=\box60
 \mc@col@check@num=\count149
 )
+(E:\ProgramFiles\MikTex2.9\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(E:\ProgramFiles\MikTex2.9\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count150
+\Gm@cntv=\count151
+\c@Gm@tempcnt=\count152
+\Gm@bindingoffset=\dimen166
+\Gm@wd@mp=\dimen167
+\Gm@odd@mp=\dimen168
+\Gm@even@mp=\dimen169
+\Gm@layoutwidth=\dimen170
+\Gm@layoutheight=\dimen171
+\Gm@layouthoffset=\dimen172
+\Gm@layoutvoffset=\dimen173
+\Gm@dimlist=\toks39
+
+(E:\ProgramFiles\MikTex2.9\tex\latex\geometry\geometry.cfg))
 (E:\ProgramFiles\MikTex2.9\tex\latex\tools\verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks39
-\verbatim@line=\toks40
+\every@verbatim=\toks40
+\verbatim@line=\toks41
 \verbatim@in@stream=\read1
 )
 (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\frontendlayer\tikz.sty
 (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\basiclayer\pgf.sty
 (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\utilities\pgfrcs.sty
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks41
-\pgfutil@tempdima=\dimen166
-\pgfutil@tempdimb=\dimen167
+\pgfutil@everybye=\toks42
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-common-lists.tex))
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfutil-latex.def
@@ -731,23 +758,23 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\utilities\pgfkeys.code.tex)
-\pgf@x=\dimen168
-\pgf@y=\dimen169
-\pgf@xa=\dimen170
-\pgf@ya=\dimen171
-\pgf@xb=\dimen172
-\pgf@yb=\dimen173
-\pgf@xc=\dimen174
-\pgf@yc=\dimen175
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count150
-\c@pgf@countb=\count151
-\c@pgf@countc=\count152
-\c@pgf@countd=\count153
-\t@pgf@toka=\toks42
-\t@pgf@tokb=\toks43
-\t@pgf@tokc=\toks44
+\c@pgf@counta=\count153
+\c@pgf@countb=\count154
+\c@pgf@countc=\count155
+\c@pgf@countd=\count156
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -762,8 +789,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ))) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count154
-\pgfsyssoftpath@bigbuffer@items=\count155
+\pgfsyssoftpath@smallbuffer@items=\count157
+\pgfsyssoftpath@bigbuffer@items=\count158
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -773,49 +800,49 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\math\pgfmath.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen176
-\pgf@picmaxx=\dimen177
-\pgf@picminy=\dimen178
-\pgf@picmaxy=\dimen179
-\pgf@pathminx=\dimen180
-\pgf@pathmaxx=\dimen181
-\pgf@pathminy=\dimen182
-\pgf@pathmaxy=\dimen183
-\pgf@xx=\dimen184
-\pgf@xy=\dimen185
-\pgf@yx=\dimen186
-\pgf@yy=\dimen187
-\pgf@zx=\dimen188
-\pgf@zy=\dimen189
+\pgf@picminx=\dimen184
+\pgf@picmaxx=\dimen185
+\pgf@picminy=\dimen186
+\pgf@picmaxy=\dimen187
+\pgf@pathminx=\dimen188
+\pgf@pathmaxx=\dimen189
+\pgf@pathminy=\dimen190
+\pgf@pathmaxy=\dimen191
+\pgf@xx=\dimen192
+\pgf@xy=\dimen193
+\pgf@yx=\dimen194
+\pgf@yy=\dimen195
+\pgf@zx=\dimen196
+\pgf@zy=\dimen197
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code
 .tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen190
-\pgf@path@lasty=\dimen191
+\pgf@path@lastx=\dimen198
+\pgf@path@lasty=\dimen199
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen192
-\pgf@shorten@start@additional=\dimen193
+\pgf@shorten@end@additional=\dimen256
+\pgf@shorten@start@additional=\dimen257
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box62
 \pgf@hbox=\box63
 \pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count156
+\pgf@picture@serial@count=\count159
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.
 tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen194
+\pgflinewidth=\dimen258
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoretransformations.co
 de.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen195
-\pgf@pt@y=\dimen196
-\pgf@pt@temp=\dimen197
+\pgf@pt@x=\dimen259
+\pgf@pt@y=\dimen260
+\pgf@pt@temp=\dimen261
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -829,12 +856,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen198
+\pgfarrowsep=\dimen262
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen199
-\pgf@sys@shading@range@num=\count157
+\pgf@max=\dimen263
+\pgf@sys@shading@range@num=\count160
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -859,8 +886,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen256
-\pgf@nodesepend=\dimen257
+\pgf@nodesepstart=\dimen264
+\pgf@nodesepend=\dimen265
 )
 (E:\ProgramFiles\MikTex2.9\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
@@ -873,10 +900,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\math\pgfmath.code.tex)
-\pgffor@iter=\dimen258
-\pgffor@skip=\dimen259
-\pgffor@stack=\toks45
-\pgffor@toks=\toks46
+\pgffor@iter=\dimen266
+\pgffor@skip=\dimen267
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
 ))
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -884,31 +911,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryplothandlers.cod
 e.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count158
-\pgfplotmarksize=\dimen260
+\pgf@plot@mark@count=\count161
+\pgfplotmarksize=\dimen268
 )
-\tikz@lastx=\dimen261
-\tikz@lasty=\dimen262
-\tikz@lastxsaved=\dimen263
-\tikz@lastysaved=\dimen264
-\tikzleveldistance=\dimen265
-\tikzsiblingdistance=\dimen266
+\tikz@lastx=\dimen269
+\tikz@lasty=\dimen270
+\tikz@lastxsaved=\dimen271
+\tikz@lastysaved=\dimen272
+\tikzleveldistance=\dimen273
+\tikzsiblingdistance=\dimen274
 \tikz@figbox=\box67
 \tikz@figbox@bg=\box68
 \tikz@tempbox=\box69
 \tikz@tempbox@bg=\box70
-\tikztreelevel=\count159
-\tikznumberofchildren=\count160
-\tikznumberofcurrentchild=\count161
-\tikz@fig@count=\count162
+\tikztreelevel=\count162
+\tikznumberofchildren=\count163
+\tikznumberofcurrentchild=\count164
+\tikz@fig@count=\count165
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count163
-\pgfmatrixcurrentcolumn=\count164
-\pgf@matrix@numberofcolumns=\count165
+\pgfmatrixcurrentrow=\count166
+\pgfmatrixcurrentcolumn=\count167
+\pgf@matrix@numberofcolumns=\count168
 )
-\tikz@expandcount=\count166
+\tikz@expandcount=\count169
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
 rarytopaths.code.tex
@@ -920,7 +947,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen267
+\arrowsize=\dimen275
 ))
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
 raryautomata.code.tex
@@ -1013,14 +1040,14 @@ rarydecorations.pathmorphing.code.tex
 rarydecorations.code.tex
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\modules\pgfmoduledecorations.code.te
 x
-\pgfdecoratedcompleteddistance=\dimen268
-\pgfdecoratedremainingdistance=\dimen269
-\pgfdecoratedinputsegmentcompleteddistance=\dimen270
-\pgfdecoratedinputsegmentremainingdistance=\dimen271
-\pgf@decorate@distancetomove=\dimen272
-\pgf@decorate@repeatstate=\count167
-\pgfdecorationsegmentamplitude=\dimen273
-\pgfdecorationsegmentlength=\dimen274
+\pgfdecoratedcompleteddistance=\dimen276
+\pgfdecoratedremainingdistance=\dimen277
+\pgfdecoratedinputsegmentcompleteddistance=\dimen278
+\pgfdecoratedinputsegmentremainingdistance=\dimen279
+\pgf@decorate@distancetomove=\dimen280
+\pgf@decorate@repeatstate=\count170
+\pgfdecorationsegmentamplitude=\dimen281
+\pgfdecorationsegmentlength=\dimen282
 )
 \tikz@lib@dec@box=\box91
 )
@@ -1040,12 +1067,12 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.code.tex
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks47
-\t@pgfplots@tokb=\toks48
-\t@pgfplots@tokc=\toks49
-\pgfplots@tmpa=\dimen275
-\c@pgfplots@coordindex=\count168
-\c@pgfplots@scanlineindex=\count169
+\t@pgfplots@toka=\toks48
+\t@pgfplots@tokb=\toks49
+\t@pgfplots@tokc=\toks50
+\pgfplots@tmpa=\dimen283
+\c@pgfplots@coordindex=\count171
+\c@pgfplots@scanlineindex=\count172
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\sys\pgfplotssysgeneric.code.tex
 ))
@@ -1059,7 +1086,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 pp_pgflibraryfpu.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
 pp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count170
+\c@pgfmathroundto@lastzeros=\count173
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\oldpgfcompatib\pgfplotsoldpgfsu
 pp_leq.code.tex))
@@ -1070,14 +1097,14 @@ ture.code.tex)
 tureext.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsarray.cod
 e.tex
-\c@pgfplotsarray@tmp=\count171
+\c@pgfplotsarray@tmp=\count174
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsmatrix.co
 de.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\numtable\pgfplotstableshared.co
 de.tex
-\c@pgfplotstable@counta=\count172
-\t@pgfplotstable@a=\toks50
+\c@pgfplotstable@counta=\count175
+\t@pgfplotstable@a=\toks51
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\liststructure\pgfplotsdeque.cod
 e.tex)
@@ -1088,7 +1115,7 @@ ex))
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\libs\pgflibrarypgfplots.surfsha
 ding.code.tex
-\c@pgfplotslibrarysurf@no=\count173
+\c@pgfplotslibrarysurf@no=\count176
 
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\sys\pgflibrarypgfplots.surfshad
 ing.pgfsys-pdftex.def)))
@@ -1105,13 +1132,13 @@ x) (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.errorbars.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.markers.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplotsticks.code.tex)
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\pgfplots.paths.code.tex)
-\pgfplots@numplots=\count174
-\pgfplots@xmin@reg=\dimen276
-\pgfplots@xmax@reg=\dimen277
-\pgfplots@ymin@reg=\dimen278
-\pgfplots@ymax@reg=\dimen279
-\pgfplots@zmin@reg=\dimen280
-\pgfplots@zmax@reg=\dimen281
+\pgfplots@numplots=\count177
+\pgfplots@xmin@reg=\dimen284
+\pgfplots@xmax@reg=\dimen285
+\pgfplots@ymin@reg=\dimen286
+\pgfplots@ymax@reg=\dimen287
+\pgfplots@zmin@reg=\dimen288
+\pgfplots@zmax@reg=\dimen289
 )
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlib
 raryplotmarks.code.tex
@@ -1130,9 +1157,9 @@ Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (
 (E:\ProgramFiles\MikTex2.9\tex\generic\pgfplots\numtable\pgfplotstable.coltype.
 code.tex)) (E:\ProgramFiles\MikTex2.9\tex\latex\tools\array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen282
-\extrarowheight=\dimen283
-\NC@list=\toks51
+\col@sep=\dimen290
+\extrarowheight=\dimen291
+\NC@list=\toks52
 \extratabsurround=\skip49
 \backup@length=\skip50
 ))
@@ -1141,15 +1168,15 @@ Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\tools\calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count175
-\calc@Bcount=\count176
-\calc@Adimen=\dimen284
-\calc@Bdimen=\dimen285
+\calc@Acount=\count178
+\calc@Bcount=\count179
+\calc@Adimen=\dimen292
+\calc@Bdimen=\dimen293
 \calc@Askip=\skip51
 \calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count177
+\calc@Ccount=\count180
 \calc@Cskip=\skip53
 )
 (E:\ProgramFiles\MikTex2.9\tex\latex\base\ifthen.sty
@@ -1177,33 +1204,33 @@ Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 (E:\ProgramFiles\MikTex2.9\tex\latex\caption\caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen286
-\captionmargin@=\dimen287
-\captionwidth=\dimen288
-\caption@tempdima=\dimen289
-\caption@indent=\dimen290
-\caption@parindent=\dimen291
-\caption@hangindent=\dimen292
+\captionmargin=\dimen294
+\captionmargin@=\dimen295
+\captionwidth=\dimen296
+\caption@tempdima=\dimen297
+\caption@indent=\dimen298
+\caption@parindent=\dimen299
+\caption@hangindent=\dimen300
 )
-\c@caption@flags=\count178
-\c@ContinuedFloat=\count179
+\c@caption@flags=\count181
+\c@ContinuedFloat=\count182
 Package caption Info: listings package is loaded.
 )
-
-Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 40.
-
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 41.
 
 
-Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less on input line 42.
 
 
 Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less on input line 43.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 44.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1212,31 +1239,31 @@ LaTeX Warning: Unused global option(s):
 (_rapport_stage.aux)
 \openout1 = `_rapport_stage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 186.
-LaTeX Font Info:    ... okay on input line 186.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 187.
+LaTeX Font Info:    ... okay on input line 187.
  (E:\ProgramFiles\MikTex2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count180
-\scratchdimen=\dimen293
+\scratchcounter=\count183
+\scratchdimen=\dimen301
 \scratchbox=\box92
-\nofMPsegments=\count181
-\nofMParguments=\count182
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count183
-\MPscratchDim=\dimen294
-\MPnumerator=\count184
-\makeMPintoPDFobject=\count185
-\everyMPtoPDFconversion=\toks53
+\nofMPsegments=\count184
+\nofMParguments=\count185
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count186
+\MPscratchDim=\dimen302
+\MPnumerator=\count187
+\makeMPintoPDFobject=\count188
+\everyMPtoPDFconversion=\toks54
 ) (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -1244,9 +1271,6 @@ Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 (E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(E:\ProgramFiles\MikTex2.9\tex\generic\oberdiek\ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -1282,37 +1306,150 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count186
+\c@lstlisting=\count189
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 186.
+ on input line 187.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-[1
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.90755pt, 539.69278pt, 28.90755pt)
+* v-part:(T,H,B)=(43.36243pt, 729.41443pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=539.69278pt
+* \textheight=729.41443pt
+* \oddsidemargin=-43.36244pt
+* \evensidemargin=-43.36244pt
+* \topmargin=-65.90756pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<img/entreprise.jpg, id=4, 20.075pt x 20.075pt>
+File: img/entreprise.jpg Graphic file (type jpg)
+ <use img/entreprise.jpg>
+Package pdftex.def Info: img/entreprise.jpg used on input line 193.
+(pdftex.def)             Requested size: 113.81102pt x 113.8371pt.
 
-Non-PDF special ignored!
-Non-PDF special ignored!
-Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(_rapport_stage.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
+<img/artois.jpg, id=5, 20.075pt x 20.075pt>
+File: img/artois.jpg Graphic file (type jpg)
+ <use img/artois.jpg>
+Package pdftex.def Info: img/artois.jpg used on input line 196.
+(pdftex.def)             Requested size: 113.81102pt x 113.8371pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 227.
+
+(E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 227.
 
 (E:\ProgramFiles\MikTex2.9\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/entreprise.jpg> <./
+img/artois.jpg>]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(93.95122pt, 657.14441pt, 93.95122pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=657.14441pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-15.31877pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (_rapport_stage.toc [1
+
 
 ])
 \tf@toc=\write4
@@ -1329,7 +1466,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
-\OT1/cmr/m/n/12 re-mercier tout les ac-teurs de ce pro-jet.
+\OT1/cmr/m/n/12 tout les ac-teurs de ce pro-jet.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+\OT1/cmr/m/n/12 ou de les refuter.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
  []
 
 ) [3
@@ -1363,6 +1510,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--18
  []
 
 
+Underfull \hbox (badness 1642) in paragraph at lines 12--18
+\OT1/cmr/m/n/12 Prenons un ex-em-ple sim-ple, pour une base de con-nais-sance d
+onne ci dessous:
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 12--18
 
  []
@@ -1374,12 +1527,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [6]
-Overfull \hbox (4.6612pt too wide) in paragraph at lines 33--35
-\OT1/cmr/m/n/12 Philippe et un homme, n'ayant au-cune in-for-ma-tions sur un d
-enomme Philippe,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 33--35
 
  []
@@ -1390,13 +1537,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]
-Overfull \hbox (7.63338pt too wide) in paragraph at lines 38--40
-\OT1/cmr/m/n/12 L'approche con-nex-ion-niste est l'approche la plus proche du s
-chema du cerveaux
- []
-
-<img/neurone.jpg, id=37, 918.43124pt x 457.71pt>
+[7] <img/neurone.jpg, id=39, 918.43124pt x 457.71pt>
 File: img/neurone.jpg Graphic file (type jpg)
  <use img/neurone.jpg>
 Package pdftex.def Info: img/neurone.jpg used on input line 42.
@@ -1418,6 +1559,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8 <./img/neurone.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -1425,22 +1575,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10]
 Underfull \hbox (badness 10000) in paragraph at lines 64--68
 
  []
@@ -1451,7 +1585,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
@@ -1462,27 +1596,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12])
+[11])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] (approche.tex
+[12] (approche.tex
 Chapter 3.
-
-Overfull \hbox (25.70134pt too wide) in paragraph at lines 3--7
-\OT1/cmr/m/n/12 Dans le cadre du rap-port de stage, je vais me fo-caliser sur l
-'approche \OT1/cmr/m/it/12 representation
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
 
-[14
+[13
 
 ]
 
@@ -1491,7 +1619,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15]
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 71--88
 
  []
@@ -1503,7 +1631,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16]
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 111--114
 
  []
@@ -1519,22 +1647,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17]
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 131--138
-[][][] 
- []
-
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 131--138
 
  []
@@ -1550,19 +1663,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--152
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [18]
-Overfull \hbox (5.60562pt too wide) in paragraph at lines 145--152
-[]\OT1/cmr/m/n/12 Plus haut j'ai parle de Ma-chine learn-ing, de traite-ment d
-es chaines textuels,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--152
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--160
 
  []
 
@@ -1573,69 +1701,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 154--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--160
-
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 161--166
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 161--166
-[][][] 
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 167--171
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 167--171
-[][][] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 167--171
 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 172--187
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 172--187
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 172--187
-[][][] 
- []
-
-
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 172--187
-[][][] 
  []
 
 
@@ -1654,18 +1721,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--187
  []
 
 ) (entreprise.tex
-Overfull \hbox (7.17644pt too wide) in paragraph at lines 188--1
-\OT1/cmr/m/n/12 Le monde de la fouille de donnee pour-rait nous aider a reso
-udre notre probleme,
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[20]
+Chapter 4.
+[21
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+\OT1/cmr/m/n/12 le quel nous baignons.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--9
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -1673,38 +1748,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Chapter 4.
-[23
-
-]
-Overfull \hbox (4.66534pt too wide) in paragraph at lines 7--9
-\OT1/cmr/m/n/12 per-son-nes ma^trisant leurs su-jets le tout pour don-ner une 
-equipe operationnelle
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
-\OT1/cmr/m/n/12 pour toutes realisations de pro-jets.
- []
-
-
-Underfull \hbox (badness 1688) in paragraph at lines 7--9
-\OT1/cmr/m/n/12 grands stan-dards du monde numerique dans le quel nous baignon
-s.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[24]
 Underfull \hbox (badness 10000) in paragraph at lines 20--23
 
  []
@@ -1721,16 +1764,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[25] (chatbot.tex [26
+[23] (chatbot.tex [24
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
-\OT1/cmr/m/n/12 lieu a un lan-gage.
+\OT1/cmr/m/n/12 meilleur sens et une in-ter-ac-tion bien plus interessante ave
+c l'utilisateur.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
-\OT1/cmr/m/n/12 interessante avec l'utilisateur.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+\OT1/cmr/m/n/12 maine-ment comprehensible.
  []
 
 
@@ -1739,12 +1788,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--10
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
-\OT1/cmr/m/n/12 reponses qui doivent ^etre hu-maine-ment comprehensible.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
+
+ []
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+\OT1/cmr/m/n/12 rithme sera in-tro-duit sous peu.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
 
  []
 
@@ -1755,40 +1824,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
-
- []
-
-[28
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-
- []
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[29]
-Overfull \hbox (10.19135pt too wide) in paragraph at lines 35--37
-\OT1/cmr/m/n/12 sur la donnee, la premiere est nommee $\OML/cmm/m/it/12 Toke
-nization$ \OT1/cmr/m/n/12 et la sec-onde $\OML/cmm/m/it/12 Frequencies$\OT1/cmr
-/m/n/12 : 
+Overfull \hbox (6.02179pt too wide) in paragraph at lines 35--37
+[]\OT1/cmr/m/n/12 La procedure d'apprentissage par Multi-no-mial de-mande deux
+ traite-ments sur la donnee,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
+ []
+
+
+Overfull \hbox (14.7094pt too wide) in paragraph at lines 37--39
+[]\OT1/cmr/m/n/12 : Pour une chaine textuelle, nous al-lons sup-primer tous les
+ mots $\OML/cmm/m/it/12 stopwords$
  []
 
 
@@ -1802,19 +1851,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
  []
 
 
-Overfull \hbox (18.55121pt too wide) in paragraph at lines 56--59
-\OT1/cmr/m/n/12 Pour avoir une implementation complete venant de $\OML/cmm/m/
-it/12 scikit \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 learn$\OT1/cmr/m/n/12 , la $\O
-ML/cmm/m/it/12 tokenization$
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 70--73
 
  []
@@ -1825,7 +1867,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
@@ -1841,7 +1883,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[32] <img/lstm.jpg, id=118, 803.0pt x 602.25pt>
+[30] <img/lstm.jpg, id=114, 803.0pt x 602.25pt>
 File: img/lstm.jpg Graphic file (type jpg)
  <use img/lstm.jpg>
 Package pdftex.def Info: img/lstm.jpg used on input line 102.
@@ -1862,26 +1904,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33 <./img/lstm.jpg>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 15.71667pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34]
-Overfull \hbox (6.19728pt too wide) in paragraph at lines 117--120
-\OT1/cmr/m/n/12 Le modele Seq2Seq est tres puis-sant, sa struc-ture est donn
-ee par deux colonnes,
- []
-
-
-Overfull \hbox (4.14313pt too wide) in paragraph at lines 117--120
-\OT1/cmr/m/n/12 la premiere etant n'importe quoi de type texte et la sor-tie 
-etant aussi n'importe
- []
-
-
+[31 <./img/lstm.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
@@ -1889,16 +1912,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
 Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
- []
-
-
-Overfull \hbox (20.71895pt too wide) in paragraph at lines 136--144
-[] 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 146--149
-\OT1/cmr/m/n/12 celle-ci.
+\OT1/cmr/m/n/12 comme le \OT1/cmtt/m/n/12 LSTM \OT1/cmr/m/n/12 donc ayant une c
+ouche d'encodage et de decodage.
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 146--149
+\OT1/cmr/m/n/12 comme des his-toires, en un resume sans trop per-dre le sens 
+de celle-ci.
  []
 
 
@@ -1907,7 +1932,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[35]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 152--156
 
  []
@@ -1918,25 +1943,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[36]
+[33]
 Chapter 6.
 
-Underfull \hbox (badness 3601) in paragraph at lines 159--162
-\OT1/cmr/m/n/12 qui met a dis-po-si-tion un bot vierge con-fig-urable et bien 
-realise.
+Underfull \hbox (badness 10000) in paragraph at lines 159--162
+\OT1/cmr/m/n/12 dis-po-si-tion un bot vierge con-fig-urable et bien realise.
  []
 
-[37
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 165--169
 
- []
-
-
-Overfull \hbox (0.37791pt too wide) in paragraph at lines 172--173
-[]\OT1/cmr/m/n/12 : le \OT1/cmr/m/it/12 CountVec-tor \OT1/cmr/m/n/12 va comme i
-n-dique plus haut
  []
 
 
@@ -1945,7 +1963,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
@@ -1961,13 +1979,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--208
  []
 
 
-Overfull \hbox (10.13687pt too wide) in paragraph at lines 208--209
+Overfull \hbox (27.98976pt too wide) in paragraph at lines 208--209
 []$\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 Ce; \OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12   \
 OT1/cmr/m/n/12 2]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 [\OML/cmm/m/it/12 pommier; 
 \OT1/cmr/m/n/12 3 \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 10][\OML/cmm/m/it/12 va; \
 OT1/cmr/m/n/12 11 \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 13][\OML/cmm/m/it/12 bient
 ot; \OT1/cmr/m/n/12 14 \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 21][\OML/cmm/m/it/12 
-nous; \OT1/cmr/m/n/12 22 \OMS/cmsy/m/n/12  
+nous; \OT1/cmr/m/n/12 22 \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 26][\OML/cmm/m/it/1
+2 donner; \OT1/cmr/m/n/12 27 \OMS/cmsy/m/n/12  
  []
 
 
@@ -1976,9 +1995,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 234--236
-\OT1/cmr/m/n/12 resoudre tout les problemes de clas-si-fi-ca-tion de textes.
+\OT1/cmr/m/n/12 problemes de clas-si-fi-ca-tion de textes.
  []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 238.
@@ -1995,9 +2014,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 245--247
-\OT1/cmr/m/n/12 tion, les vari-ables sont in-tro-duit dans les In-puts. 
+\OT1/cmr/m/n/12 In-puts. 
  []
 
 
@@ -2041,17 +2060,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[38]
 Chapter 7.
-[42
+[39
 
 ]
-Overfull \hbox (5.2834pt too wide) in paragraph at lines 286--287
-[]\OT1/cmr/m/n/12 Les reponses pres definit sont des phrase que le bot va en
--voyer a l'utilisateur
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 299--302
 
  []
@@ -2062,10 +2075,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[43]) (restia.tex
-Underfull \hbox (badness 1178) in paragraph at lines 355--1
-\OT1/cmr/m/n/12 peler des al-go-rithmes d'apprentissage sur les donnees de l'u
-tilisateur.
+[40]) (restia.tex
+Underfull \hbox (badness 10000) in paragraph at lines 355--1
+\OT1/cmr/m/n/12 rithmes d'apprentissage sur les donnees de l'utilisateur.
  []
 
 
@@ -2074,7 +2086,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[44]
+[41]
 Chapter 8.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
@@ -2082,22 +2094,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
  []
 
 
-Overfull \hbox (66.98787pt too wide) in paragraph at lines 2--6
-\OT1/cmr/m/n/12 les de-man-des tech-niques (une reclamation, ren-seigne-ment, 
-in-ci-dent) ($\OML/cmm/m/it/12 demande[]technique$\OT1/cmr/m/n/12 ). 
+Overfull \hbox (25.17172pt too wide) in paragraph at lines 2--6
+\OT1/cmr/m/n/12 (comme les murs, fen^etres, gril-lage) ($\OML/cmm/m/it/12 equip
+ement$\OT1/cmr/m/n/12 ) et les de-man-des tech-niques (une reclamation,
  []
 
-[45
+[42
 
 ]
-Overfull \hbox (14.27023pt too wide) in paragraph at lines 9--12
+Overfull \hbox (24.13644pt too wide) in paragraph at lines 9--12
 \OT1/cmr/m/n/12 Mais l'implementation de la deduction des vari-ables de-mand
-e ($\OML/cmm/m/it/12 nature[]probleme$\OT1/cmr/m/n/12 ,
+ees ($\OML/cmm/m/it/12 nature[]probleme$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 equ
+ipement$
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
-\OT1/cmr/m/n/12 nous avons pus con-stru-ire les cor-pus comme suit: 
+\OT1/cmr/m/n/12 suit: 
  []
 
 
@@ -2108,11 +2121,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--12
 
 Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 22--25
-\OT1/cmr/m/n/12 un ex-em-ple: 
  []
 
 
@@ -2142,10 +2150,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46]
-Overfull \hbox (2.06342pt too wide) in paragraph at lines 48--50
+[43]
+Overfull \hbox (2.07278pt too wide) in paragraph at lines 48--50
 []\OT1/cmr/m/n/12 Nous comp-tons re-spec-tive-ment pour les trois on-tolo-gies 
-($\OML/cmm/m/it/12 nature[]probleme$\OT1/cmr/m/n/12 ,
+($\OML/cmm/m/it/12 nature[]probleme$\OT1/cmr/m/n/12 , $\OML/cmm/m/it/12 equipem
+ent$
  []
 
 
@@ -2154,29 +2163,77 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[47]
-Overfull \hbox (6.10144pt too wide) in paragraph at lines 87--88
-\OT1/cmr/m/n/12 precedemment predit va predire si une as-treinte est re-qui
-t pour le probleme. 
- []
-
-) (assemblage.tex
+[44]) (assemblage.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[48]
+[45]
 Chapter 9.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
-\OT1/cmr/m/n/12 de rem-plir les slots et ap-peler l'api de prediction.
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+\OT1/cmr/m/n/12 entierement en \OT1/cmr/m/it/12 POST\OT1/cmr/m/n/12 .
  []
 
-[49
+<img/plans.jpg, id=164, 295.5843pt x 373.6359pt>
+File: img/plans.jpg Graphic file (type jpg)
+ <use img/plans.jpg>
+Package pdftex.def Info: img/plans.jpg used on input line 22.
+(pdftex.def)             Requested size: 266.0234pt x 336.2692pt.
+ [46
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+\OT1/cmr/m/n/12 tel end-point de telle adresse de tel ser-vice.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+\OT1/cmr/m/n/12 nos be-soins.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 15.71667pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[47 <./img/plans.jpg>]
+Chapter 10.
+) (ref.tex
+Underfull \hbox (badness 10000) in paragraph at lines 33--1
+\OT1/cmr/m/n/12 cha^ne avec du tra-vail sur le lan-gage na-turelle.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--1
+\OT1/cmr/m/n/12 que la dead-line du pro-jet.
+ []
+
+[48
+
+] [49
+
+]
+Overfull \hbox (59.03914pt too wide) in paragraph at lines 13--14
+[]\OT1/cmr/m/n/12 : $\OML/cmm/m/it/12 https \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 
+==github:com=dongjun \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 Lee=text \OMS/cmsy/m/n
+/12   \OML/cmm/m/it/12 summarization \OMS/cmsy/m/n/12  
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 15.71667pt.
@@ -2185,26 +2242,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [50] (_rapport_stage.aux) ) 
 Here is how much of TeX's memory you used:
- 31773 strings out of 493323
- 769740 string characters out of 3139963
- 1236182 words of memory out of 3000000
- 34709 multiletter control sequences out of 15000+200000
- 13946 words of font info for 53 fonts, out of 3000000 for 9000
+ 32272 strings out of 493323
+ 777145 string characters out of 3139963
+ 1249663 words of memory out of 3000000
+ 35190 multiletter control sequences out of 15000+200000
+ 14305 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,14n,96p,1179b,1996s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 74i,14n,96p,1194b,1994s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi
-10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:
-/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/ProgramFil
-es/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.
-9/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/a
-msfonts/cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/
-cmti12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
->
-Output written on _rapport_stage.pdf (51 pages, 344406 bytes).
+ts/cm/cmbx12.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmbx
+ti10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/Program
+Files/MikTex2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/ProgramFiles/MikTe
+x2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/ProgramFiles/MikTex2.9/fonts/
+type1/public/amsfonts/cm/cmr6.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmti12.p
+fb><E:/ProgramFiles/MikTex2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on _rapport_stage.pdf (51 pages, 391650 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
+ 219 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 38 words of extra memory for PDF output out of 10000 (max. 10000000)
 
