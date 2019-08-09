@@ -38,7 +38,7 @@
 %% ------------------------- Header Footer
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{Master 2 État de l'art}
+\fancyhead[LE,RO]{Master 2 Rapport de stage}
 \fancyhead[RE,LO]{ }
 \fancyfoot[CE,CO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
@@ -193,7 +193,7 @@
     \includegraphics[width=4cm]{img/entreprise.jpg}
 \end{flushleft}
 \begin{flushright}
-    \includegraphics[width=4cm]{img/artois.jpg}
+    \includegraphics[width=4cm]{img/artois.eps}
 \end{flushright}
 \end{multicols}
 
@@ -222,19 +222,34 @@
        
        \vspace{0.8cm}
        
-       \textbf{Encadrant en entreprise: DM\\}
-       \textbf{Encadrant pédagogique: SB\\}
-       \textbf{Établissement d’accueil: $\_$\\}
+       \textbf{Encadrant en entreprise: M\\}
+       \textbf{Encadrant pédagogique: B\\}
+       \textbf{Établissement d’accueil: q\\}
  
    \end{center}
 \end{titlepage}
 \newgeometry{top=1.3in,bottom=1.3in,right=1in,left=1in}
+\pagebreak
 
+\pagestyle{empty}
+\vspace*{\fill}
+\textit{Écrit en \LaTeX, Base du document: $thomas\_laurent\_memo$}
 \pagebreak
-\pagebreak
-\pagebreak
+
 \tableofcontents
 \pagebreak
+\ \linebreak
+\pagebreak
+
+%% ------------------------- Header Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Master 2 Rapport de stage}
+\fancyhead[RE,LO]{ }
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+% -------------------------- END Header Footer
+
 
 \input{remerciements}
 \input{introduction}
@@ -245,6 +260,7 @@
 \input{assemblage}
 \input{ref}
 
+\pagebreak
 \pagebreak
 \end{document}
 

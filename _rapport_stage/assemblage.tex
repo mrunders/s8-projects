@@ -8,7 +8,7 @@ Voici une interaction avec le chatbot:
 \begin{description}
 \item[user]: bonjour
 \item[bot]: Bonjour je suis marie, quelle est votre soucie
-\item[user]: voilà je vous appel car ma chaudière est en panne
+\item[user]: voilà je vous appelle car ma chaudière est en panne
 \item[bot]: Parler moi plus en détail de votre chaudière qui est en panne, si vous en avait
 \item[user]: elle ne fonctionne plus quand je l'allume
 \item[bot]: Je vais faire monter l'information au service concerné qui vous rappellera
@@ -26,7 +26,9 @@ Lors de la phase de développement du projet, le programme routeur était un pro
 
 \section{Implémentations futures}
 
-Dans ce qu'il reste du projet, nous devons brancher le chatbot sur une interface pouvant être compatible avec un téléphone, donc nous devons avoir une brique transformant la voix en texte et inversement, nous allons utiliser \textit{DeepSpeech} la librairie de Mozilla qui va nous permettre via des algorithmes Tensorflow et Seq2Seq de générer un modèle répondant à nos besoins.\linebreak
+Dans ce qu'il reste du projet, nous devons brancher le chatbot sur une interface pouvant être compatible avec un téléphone, pour le travail en cours, nous avons choisis une solution nommé \textit{Softphone} qui va simuler un vrai téléphone mais en logiciel. La sortie de celui-ci sera redirigé dans le programme et l'entrée du softphone est réglé sur auto commutateur téléphonique nommé \textit{Asterisk}, il va lui s'occuper de la liaison entre les vrai téléphone et le softphone.
+
+Nous devons avoir une brique transformant la voix en texte et inversement, nous allons utiliser \textit{DeepSpeech} la librairie de Mozilla qui va nous permettre via des algorithmes Tensorflow et Seq2Seq de générer un modèle répondant à nos besoins.\linebreak
 
 \chapter{Conclusion}
 
